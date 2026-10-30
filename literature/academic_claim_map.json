@@ -1,0 +1,134 @@
+{
+  "source_cutoff": "2026-10-29",
+  "scope": "Public prior-work notes for a new standalone operation/receipt/decision experiment. Focused coverage, not an exhaustive survey.",
+  "experimental_results": "None asserted in this literature package. Scientific claims must use fresh independent implementation and observations.",
+  "clusters": [
+    {
+      "id": "rpc_effect_identity",
+      "source_keys": [
+        "birrell1984implementing",
+        "lee2015implementing"
+      ],
+      "public_prior_claim": "A failed call can leave its effect uncertain. Stable operation identity, durable completion evidence, retry routing and safe record reclamation are established execution concerns.",
+      "relevance": "Define logical operation identity separately from delivery attempt identity. State what a retained receipt proves and when replay recognition expires.",
+      "limits": "RIFL requires atomic completion metadata and mutation and couples safe reclamation to acknowledgements/client validity. A separate receipt and effect store does not inherit those guarantees."
+    },
+    {
+      "id": "persisted_decisions",
+      "source_keys": [
+        "zhang2020fault",
+        "mohan1992aries",
+        "langchain2026langgraph",
+        "langchain2026langgraphb",
+        "technologies2026temporal",
+        "zheng2026acrfence"
+      ],
+      "public_prior_claim": "Logged recovery, replaying retained nondeterministic results and durable task boundaries precede this experiment. Post-restoration semantic drift is already documented.",
+      "relevance": "A decision-persistence experiment should distinguish reusing an operation identifier from retaining the selected operation arguments. Measure those as separate policies.",
+      "limits": "Beldi assumes its API/storage model. ARIES is database-level logged recovery. ACRFence evaluates attacks and proposes an unimplemented replay-or-fork mitigation. Neither a JSON decision nor a receipt alone supplies their full guarantees."
+    },
+    {
+      "id": "transactions_compensation",
+      "source_keys": [
+        "garciamolina1987sagas",
+        "chang2025sagallm",
+        "mohammadi2026atomix",
+        "sun2026agentic"
+      ],
+      "public_prior_claim": "Compensation, grouped effect settlement and agent transaction semantics are established subjects. Compensating an effect need not erase its execution history.",
+      "relevance": "Keep final state, committed-effect multiplicity and compensation observations distinct. Define exactly which operation classes the independent executor supports.",
+      "limits": "Do not label a replay protocol ACID or atomic across independent stores. Atomix explicitly limits distributed crash-safe exactly-once and relies on adapter/frontier assumptions."
+    },
+    {
+      "id": "fault_oracles_and_scope",
+      "source_keys": [
+        "alvaro2015lineage",
+        "li2026where",
+        "marla2026permission"
+      ],
+      "public_prior_claim": "Fault-driven counterexamples, hidden effect-side scoring, matched native recovery policies and finite conformance are prior methodology. LIMBO already covers redelivery, partial batches and ambiguous writes.",
+      "relevance": "Fresh independent results may show which authored operation/receipt/decision policies satisfy a declared contract. Preserve raw histories and an independently specified oracle.",
+      "limits": "Manual schedules do not establish exhaustive bounded coverage. Isomorphic fixtures are not independent population samples. Framework agreement is conditional on the shared authored application contracts."
+    },
+    {
+      "id": "memory_lifecycle_evaluation",
+      "source_keys": [
+        "zhou2026timlmembench",
+        "bilgin2026capture",
+        "wu2024longmemeval",
+        "maharana2024evaluating",
+        "hu2025evaluating",
+        "chen2025halumem",
+        "qing2026utilmem",
+        "uddin2026memora"
+      ],
+      "public_prior_claim": "Recall, semantic updates, provenance, governed use, authority-sensitive forgetting and memory hallucinations already have targeted evaluations.",
+      "relevance": "If the standalone experiment models memory operations, explain why content-only state can conceal execution defects. Keep semantic memory quality separate from operation execution correctness.",
+      "limits": "A generic operation/receipt prototype is not automatically a new conversational-memory benchmark. Do not claim first beyond-recall evaluation or improved recall without measuring it.",
+      "memora_scope_note": "Memora supplies consolidation/mutation evaluation and forgetting-aware semantic response criteria; no process-fault or effect-ledger guarantee is attributed to it."
+    },
+    {
+      "id": "memory_architecture_context",
+      "source_keys": [
+        "packer2023memgpt",
+        "zhong2023memorybank",
+        "chhikara2025mem",
+        "xu2025amem",
+        "rasmussen2025zep",
+        "latimer2025hindsight",
+        "li2025memos"
+      ],
+      "public_prior_claim": "Memory systems already retain, consolidate, revise, link and retire information in multiple representations.",
+      "relevance": "Use a small relevant subset if the standalone motivation needs a memory architecture example.",
+      "limits": "These sources are context, not experimentally defeated baselines. Do not force all architecture citations into a generic operation experiment."
+    },
+    {
+      "id": "adversarial_content_boundary",
+      "source_keys": [
+        "chen2024agentpoison",
+        "dong2025memory"
+      ],
+      "public_prior_claim": "Correctly executed storage can retain malicious content. AgentPoison assumes poisoning access and embedder information for optimization; MINJA studies query-induced records under its retrieval/shared-memory setting.",
+      "relevance": "State whether adversarial source content is outside the new experiment. Faithful decision replay does not establish that the retained decision is benign or factually true.",
+      "limits": "No poisoning defense or cross-user security claim follows from operation/receipt correctness. Keep threat-model assumptions visible."
+    },
+    {
+      "id": "cloud_interface_context",
+      "source_keys": [
+        "services2026configuring",
+        "services2026handling",
+        "services2026amazon",
+        "services2026time"
+      ],
+      "public_prior_claim": "Official queue, transaction and TTL interfaces impose specific delivery and retention contracts.",
+      "relevance": "Cite only if the independent study actually discusses those services or uses their documented behavior as motivation.",
+      "limits": "A local generic simulator does not validate a cloud queue, DynamoDB transaction integration or TTL deletion timing. These documentation entries are optional contextual sources."
+    },
+    {
+      "id": "writing_workflow",
+      "source_keys": [
+        "song2026paperorchestra"
+      ],
+      "public_prior_claim": "PaperOrchestra supplies the requested literature/writing workflow.",
+      "relevance": "Credit in the assistance/reproducibility disclosure if used in the independent paper.",
+      "limits": "Writing assistance does not establish experiment validity, authorship, novelty or literature completeness."
+    }
+  ],
+  "novelty_constraints": {
+    "already_prior_art": [
+      "Stable logical identifiers and duplicate suppression.",
+      "Durable completion records and safe reclamation.",
+      "Logging selected nondeterministic outputs before dependent effects.",
+      "Recovery histories and effect-side conformance oracles.",
+      "Memory lifecycle/forgetting evaluation beyond recall."
+    ],
+    "potential_study_contribution": "A clearly specified, independently implemented experiment that separates operation identity, retained decision arguments and completion receipts, with fresh traces demonstrating their distinct effects under declared fault and interleaving contracts. This is a proposed empirical contribution, not a result or a novelty guarantee.",
+    "stronger_claims_require": [
+      "A precise claim that differs from RIFL/Beldi/LIMBO and other retained direct predecessors.",
+      "New measured results with a fresh implementation and independently specified oracle.",
+      "Explicit failures and exclusions rather than only passing histories.",
+      "No inference of production or adversarial-memory safety from scripted local tests."
+    ]
+  },
+  "citation_policy": "The 36-source library is a working collection, not a citation target. Select references for the final standalone scope. Do not add self-citations, peripheral architectures or cloud documentation to meet a percentage or count."
+}

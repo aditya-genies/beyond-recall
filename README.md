@@ -63,8 +63,10 @@ python run_one.py --policy D1P1R0 --profile mixed \
 
 The source hash and all final outcomes are checked independently of the
 participant's metric functions. GitHub Actions reruns the tests and complete
-campaign on Python 3.12 and 3.14. Workflow status is evidence only after the run
-has completed; the mere presence of a workflow is not a successful result.
+campaign on Python 3.12 and 3.14. Both complete Ubuntu matrix jobs have passed, including raw-state verification
+and equality against the frozen aggregate outcomes. Their evidence is archived
+in `checks/github_actions/`; these repetitions are not pooled with the primary
+case count.
 
 ## Scope and status
 

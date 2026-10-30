@@ -1,0 +1,42 @@
+{
+  "figure": "fig_experiment_architecture",
+  "kind": "independent public algorithmic experiment architecture; no measured results",
+  "design_basis": "Final experiment design supplied by parent research agent",
+  "geometry": {
+    "pixels": [
+      1680,
+      945
+    ],
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "aspect_ratio": "16:9 exact"
+  },
+  "policy_switches": {
+    "D": "stable effect addresses",
+    "P": "durably retained chosen plan including target bindings",
+    "R": "terminal completion receipt and later-attempt fast path"
+  },
+  "retention": "P1 plans remain after success for both R0 and R1; no completion-triggered plan garbage collection is depicted.",
+  "shared_frontend": "Same synthetic conversation and generation frontend in all eight variants.",
+  "storage": "Separate SQLite coordinator and effect-store files. Commit audit is read only by external evaluator.",
+  "fault_model": "Fresh actual Python subprocess every attempt; abrupt os._exit at four declared phases; committed-effect exceptions; real coordinator generation reset through parent/child handshake.",
+  "boundary_legend": {
+    "dashed": "controlled conversation/failure histories or decision tape",
+    "solid": "executed algorithm, storage or process control"
+  },
+  "scope": "Diagram of declared experiment architecture; no measured chart, success rate, historical code, source identity or previous experiment evidence is consumed.",
+  "visual_review": "Complete: text shortened to fit boxes; arrows routed through whitespace; no label overlap or clipping observed.",
+  "figure_lint": "figure_lint: 1 caption(s), 0 error(s), 0 warning(s)\nOK: figures and captions are consistent\n",
+  "hashes": {
+    "fig_experiment_architecture.png": "b01ae1bbac18227135a664f976ebe596bbd07b15189de47f547fd41294292aeb",
+    "fig_experiment_architecture.pdf": "0143db6c88725fcff7d35d785d762074931efe8d5eefbcb45d0ecdc89e73c750",
+    "fig_experiment_architecture.svg": "470fd79a1a823b68c1a2b6ffa0cf2154573f415873799ab8f796799e762de8ee",
+    "render_architecture.py": "3e13e9642ed550e8d5f68aa3b5ce74742a2e592285cdcfe6512e56133bcc6fd2"
+  },
+  "awaiting_fresh_results_for_numeric_figures": true,
+  "implementation_validation": "Verified against frozen independent study.py: generation check precedes receipt fast path; receipt and retained-plan hits bypass common source query; plans retained for both R settings; separate databases and unread audit.",
+  "source_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+  "barrier_precision": "First put, not first effect: retire may commit its leading delete before the first put barrier."
+}

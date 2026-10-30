@@ -1,0 +1,301 @@
+{
+  "status": "pass",
+  "accepted_for_promotion": true,
+  "reviewed_at_utc": "2026-10-30T00:55:16.182302+00:00",
+  "review_scope": "Visual layout and readability review of every page of the frozen final PDF; this is not a new scientific-result verification.",
+  "artifact": {
+    "pdf": "manuscript/main.pdf",
+    "pdf_sha256": "008c115414054b12bdc1df6c6248ae5d8cbfd48a4e2857dd50cecda05303bb49",
+    "pdf_bytes": 681639,
+    "source": "manuscript/main.tex",
+    "source_sha256": "6f0cd51706f7178497ec16293804b04ee9a26459c431206d952c647b8d43f390",
+    "pages": 16,
+    "main_pages": 12,
+    "reference_pages": 3,
+    "appendix_pages": 1
+  },
+  "rendering": {
+    "tool": "pdftoppm",
+    "arguments": "-scale-to 1600 -png",
+    "page_prefix": "worklog/pdf_qa/page",
+    "all_pages_rendered": true,
+    "all_pages_visually_inspected": true,
+    "final_build_manifest_authoritative": true,
+    "obsolete_preliminary_files_are_not_evidence_for_this_review": true
+  },
+  "acceptance_checks": {
+    "title_and_supplied_author_identity": "pass",
+    "author_background_footnote": "pass",
+    "all_three_figures_legible": "pass",
+    "both_tables_legible": "pass",
+    "equations_and_algorithm_legible": "pass",
+    "references_and_urls_fit": "pass",
+    "appendix_complete_on_one_page": "pass",
+    "private_availability_qualification_present": "pass",
+    "companion_hyperlink_destination": "pass",
+    "no_visible_clipping": "pass",
+    "no_visible_overlap": "pass",
+    "no_visible_missing_glyphs_or_unresolved_citations": "pass",
+    "no_blocking_defects": "pass",
+    "manuscript_modified_by_visual_reviewer": false
+  },
+  "companion_links": [
+    {
+      "page": 16,
+      "uri": "https://github.com/aditya-genies/beyond-recall"
+    },
+    {
+      "page": 16,
+      "uri": "https://github.com/aditya-genies/beyond-recall"
+    }
+  ],
+  "build_warning_review": {
+    "matching_warning_lines": [],
+    "no_overfull_underfull_or_undefined_warnings": true
+  },
+  "readability_assessment": "The manuscript is technically dense but its explicit contracts, research questions, algorithm steps, concrete failure walkthroughs, paired factor contrasts, and limits make the argument assessable. The writing is consistent and professional; the review does not assert similarity of findings or impact to any reference paper.",
+  "nonblocking_observations": [
+    {
+      "page": 6,
+      "issue": "Architecture float splits the numbered recovery procedure between steps 4 and 5.",
+      "disposition": "Readable continuation; no manuscript change required."
+    },
+    {
+      "page": 15,
+      "issue": "Two bibliography entries occupy the final reference page.",
+      "disposition": "Accepted 16-page extent; no font reduction or content cut required."
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-01.png",
+      "image_sha256": "da9b04bbcd3e75821db5be3718de3f82512be00348a98408c475fbdf8c0344a0",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Title, sole author Aditya Mantri, Independent Researcher line, supplied background footnote, abstract and introduction are readable and correctly placed."
+    },
+    {
+      "page": 2,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-02.png",
+      "image_sha256": "e168b1a61dc16b4ea2d06d964e573f7e53b0351b901223de6c6fd5255ea949f5",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Introduction continuation and related work are readable; citations and paragraph spacing are clean."
+    },
+    {
+      "page": 3,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-03.png",
+      "image_sha256": "2cd7b206d9e615447acbe47f88dda91d55a8c8fb32cb6f21f40b1b37d976715e",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Recovery and fault-history related work and contract opening are readable; no clipped text or equation."
+    },
+    {
+      "page": 4,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-04.png",
+      "image_sha256": "13ce866817f2e0b14665538116dcb652444fb7af5b56b8beeee2288e5a9bcfa7",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Decision notation, displayed contracts, and D/P/R definitions fit within margins."
+    },
+    {
+      "page": 5,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-05.png",
+      "image_sha256": "7b20a01312a32d55753d65ec5679fd446de4bffe7b207b30be009c344feafa3a",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Continuity definition and implementation/commit-boundary discussion are readable. Algorithm steps 1–4 continue on page 6."
+    },
+    {
+      "page": 6,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-06.png",
+      "image_sha256": "278d68efdebfe3e110543368fe471868a1ce688fffd65dcca9b972da61836aec",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Architecture diagram and all controlled/observed labels are readable. Caption and algorithm steps 5–6 fit. Float interrupts the procedure between steps 4 and 5; this is a minor nonblocking flow issue."
+    },
+    {
+      "page": 7,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-07.png",
+      "image_sha256": "55e17755e4a50db605d02658cd846c6fc6daa828959da064d9c8051ce633b948",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Three research questions, campaign specification, and concrete case walkthrough are readable. The previously observed one-line continuation orphan is corrected in this frozen build."
+    },
+    {
+      "page": 8,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-08.png",
+      "image_sha256": "dd4d7d1a7704df326139c3422e3cedc5269e0983817d14a4dfba6d4e879d2f2d",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Eight-row results table and factorial-oracle figure are sharp, well separated, and legible. Counts, policy names, axes, legend, and caption fit."
+    },
+    {
+      "page": 9,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-09.png",
+      "image_sha256": "143b4b94266a0100161bc10b37051cd0b1e6ddf0216412e43eb83feec1cd6464",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Boundary-probe table and finite paired-factor contrasts are legible. Table placement is acceptable and numbers are not clipped."
+    },
+    {
+      "page": 10,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-10.png",
+      "image_sha256": "45f7af6c6148292c587d255169474093eca680fec8ae91b61070534777a443f1",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "All 17 history labels and eight policy columns in the history matrix are legible. Boundary interpretation and negative external-write observation fit."
+    },
+    {
+      "page": 11,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-11.png",
+      "image_sha256": "86efb0aaab47ab3bf4ffb89525f74aaf483a70e4c603edb7ebecde65b895e303",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Independent checking, reproduction including the Ubuntu note, and discussion are readable. Technical density is high but definitions and distinctions are explicit."
+    },
+    {
+      "page": 12,
+      "section": "main",
+      "image": "worklog/pdf_qa/page-12.png",
+      "image_sha256": "d5627990bc799b264c66613eb66fa503112a09de468fc19a3fa63bc922bf7fe0",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Limitations and conclusion are readable and finish without spill. White space below the conclusion is acceptable."
+    },
+    {
+      "page": 13,
+      "section": "references",
+      "image": "worklog/pdf_qa/page-13.png",
+      "image_sha256": "295183ec5f16ad6cc7ca5c1148adb481539f962b957d3f0f93ae0ca32e2f3565",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "References 1–14 are readable, including wrapped URLs; no visible overflow."
+    },
+    {
+      "page": 14,
+      "section": "references",
+      "image": "worklog/pdf_qa/page-14.png",
+      "image_sha256": "d0d377f06e34ef68aff751857dccf43f6776175d1591968439db82c07466db0d",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "References 15–30 are readable, including documentation and Memora entries; URLs remain inside margins."
+    },
+    {
+      "page": 15,
+      "section": "references",
+      "image": "worklog/pdf_qa/page-15.png",
+      "image_sha256": "062e538b2c91425832002fc10e7ee6c3c80b485ebb562e20fbc0c8fcd86b82e2",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "References 31–32 are readable. This short final reference page is a nonblocking pagination choice accepted for this version."
+    },
+    {
+      "page": 16,
+      "section": "appendix",
+      "image": "worklog/pdf_qa/page-16.png",
+      "image_sha256": "a709c3ad11b55f43f6407e278f8872af9a81ccf3e97fa09b6f361524c3a7f610",
+      "dimensions_px": [
+        1237,
+        1600
+      ],
+      "visually_inspected": true,
+      "status": "pass",
+      "notes": "Complete appendix fits on one page. Private companion URL, standard-library reproduction commands, source/data hashes, coverage caveats, and AI-assistance disclosure are readable."
+    }
+  ],
+  "montages": [
+    {
+      "path": "worklog/pdf_qa/montage-01-04.png",
+      "sha256": "fd15005d408fbed1a093a405aee9f8434d0d1ac1dc99f91858da3523e8365c8c"
+    },
+    {
+      "path": "worklog/pdf_qa/montage-05-08.png",
+      "sha256": "e154abf6c3f420ace5c989f139c949b08178b62af92d4262a595ea69766c8f18"
+    },
+    {
+      "path": "worklog/pdf_qa/montage-09-12.png",
+      "sha256": "083a6038145bfda2cb8987255f1cb05777078a9b3ecc5a4570a1d5f193af58a8"
+    },
+    {
+      "path": "worklog/pdf_qa/montage-13-16.png",
+      "sha256": "4e52350bda63bb5f5da55659c0c7a52cc889e0d8e06baf29e4920209e603a906"
+    }
+  ],
+  "final_hash_guard": {
+    "pdf_unchanged_during_review": true,
+    "source_unchanged_during_review": true
+  }
+}

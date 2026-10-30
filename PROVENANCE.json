@@ -1,0 +1,42 @@
+{
+  "study_type": "Independent synthetic factorial mechanism study",
+  "author": "Aditya Mantri",
+  "author_line": "Independent Researcher",
+  "author_background": {
+    "role": "AI Engineer at Genies",
+    "education": "M.S. in Engineering, Purdue University",
+    "current_university_affiliation_asserted": false
+  },
+  "proprietary_application_code_used": false,
+  "nonpublic_conversation_data_used": false,
+  "experimental_dependencies": "Python standard library and bundled SQLite only",
+  "frozen_study_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+  "primary_case_archive_sha256": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
+  "primary_structural_cases": 528,
+  "primary_process_attempts": 928,
+  "primary_abrupt_exits": 256,
+  "boundary_probes": 5,
+  "distinct_focused_tests": 10,
+  "replications_not_pooled": true,
+  "local_reproduction": "checks/reproduction_equivalence.json",
+  "ubuntu_actions_reproduction": "checks/github_actions/equivalence.json",
+  "private_repository": "https://github.com/aditya-genies/beyond-recall",
+  "repository_visibility_verified": "private",
+  "bibliography_sources": 32,
+  "research_papers": 30,
+  "runtime_documentation": 2,
+  "academic_coverage": "Focused primary-source review, not an exhaustive survey",
+  "paperorchestra": {
+    "url": "https://github.com/a-mantri/PaperOrchestra",
+    "commit": "961c168f28718ee9082607eea1a9cfd0ad53b1c1",
+    "role": "Agent workflow and authoring/checking guidance; not an experimental dependency"
+  },
+  "reference_paper": {
+    "doi": "10.18653/v1/2026.findings-acl.1337",
+    "arxiv": "2604.20006",
+    "use": "Public academic reference and presentation standards only; no repository/code/data reused"
+  },
+  "manuscript_source_sha256": "6f0cd51706f7178497ec16293804b04ee9a26459c431206d952c647b8d43f390",
+  "manuscript_pdf_sha256": "008c115414054b12bdc1df6c6248ae5d8cbfd48a4e2857dd50cecda05303bb49",
+  "status": "Working paper; no academic submission or public release asserted"
+}

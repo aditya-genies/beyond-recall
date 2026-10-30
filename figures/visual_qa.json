@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "figures": [
+    {
+      "figure": "fig_experiment_architecture",
+      "pixels": [
+        1680,
+        945
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "visually_inspected": true,
+      "clipping_or_overlap": false,
+      "png_sha256": "b01ae1bbac18227135a664f976ebe596bbd07b15189de47f547fd41294292aeb"
+    },
+    {
+      "figure": "fig_factorial_oracles",
+      "pixels": [
+        1680,
+        1260
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "visually_inspected": true,
+      "clipping_or_overlap": false,
+      "png_sha256": "8ab01a4cc6d0841e38074a865054d8af11be05efd4cf0b4e8de556e75a9a56b1"
+    },
+    {
+      "figure": "fig_history_matrix",
+      "pixels": [
+        1680,
+        1260
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "visually_inspected": true,
+      "clipping_or_overlap": false,
+      "png_sha256": "5e430d39c9a5d5131fdb61615e85313479d74f7e5186c8eb7b39bea856a190da"
+    }
+  ],
+  "numerical_verification": "All 528 raw case metrics independently recomputed from read-only SQLite records/audit tables and process events; exact agreement with serialized cases and summary. Five boundary probes checked separately.",
+  "interpretation": "Finite structural runs, not independent statistical samples; no error bars or inferential statistics; participant put/delete commit metric excludes cleanup and reset.",
+  "source_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+  "figure_lint": "figure_lint: 3 caption(s), 0 error(s), 0 warning(s)\nOK: figures and captions are consistent\n",
+  "no_historical_code_or_results_consumed": true,
+  "figure_notes": {
+    "fig_experiment_architecture": "Source-validated actual/control boundaries, common conditional source query, retained plans after completion and optional receipt fast path are explicit.",
+    "fig_factorial_oracles": "Separate oracle and workload axes, integer labels, all eight policies, highlighted equal-terminal D1P1 pair with 317 versus 275 committed calls; legends clear of bar labels.",
+    "fig_history_matrix": "All 17 histories and eight policies shown; each cell labeled by passing/applicable structural runs (four profiles except two in lost-delete-reply)."
+  }
+}

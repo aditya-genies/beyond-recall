@@ -1,0 +1,1234 @@
+{
+  "source_cutoff": "2026-10-29",
+  "papers": [
+    {
+      "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "year": 2024,
+      "venue": "arXiv preprint",
+      "publicationDate": "2024-10-14",
+      "key": "wu2024longmemeval",
+      "bibtex_key": "wu2024longmemeval",
+      "authors": [
+        {
+          "name": "Di Wu"
+        },
+        {
+          "name": "Hongwei Wang"
+        },
+        {
+          "name": "Wenhao Yu"
+        },
+        {
+          "name": "Yuwei Zhang"
+        },
+        {
+          "name": "Kai-Wei Chang"
+        },
+        {
+          "name": "Dong Yu"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2410.10813"
+      },
+      "semantic_scholar_id": "fd48dc6b433cfcd220b6e769c6179d8ef6fcf862",
+      "primary_source_url": "https://arxiv.org/pdf/2410.10813",
+      "primary_source_path": "public/primary/wu2024longmemeval.pdf",
+      "primary_source_sha256": "05c5d055201466a241a56e082cdd02d39ad566fa04b3804891983e4e069a3fda",
+      "pdf_pages": 28,
+      "url": "https://arxiv.org/abs/2410.10813",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/wu2024longmemeval.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "publicationDate": "2025-04-28",
+      "key": "chhikara2025mem",
+      "bibtex_key": "chhikara2025mem",
+      "authors": [
+        {
+          "name": "Prateek Chhikara"
+        },
+        {
+          "name": "Dev Khant"
+        },
+        {
+          "name": "Saket Aryan"
+        },
+        {
+          "name": "Taranjeet Singh"
+        },
+        {
+          "name": "Deshraj Yadav"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2504.19413"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2504.19413",
+      "primary_source_path": "public/primary/chhikara2025mem.pdf",
+      "primary_source_sha256": "bec870b657aa73405275a6d8fe27bcd4271799e028bc62986ab9c4cd27a3712d",
+      "pdf_pages": 23,
+      "url": "https://arxiv.org/abs/2504.19413",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/chhikara2025mem.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "MemGPT: Towards LLMs as Operating Systems",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "publicationDate": "2023-10-12",
+      "key": "packer2023memgpt",
+      "bibtex_key": "packer2023memgpt",
+      "authors": [
+        {
+          "name": "Charles Packer"
+        },
+        {
+          "name": "Sarah Wooders"
+        },
+        {
+          "name": "Kevin Lin"
+        },
+        {
+          "name": "Vivian Fang"
+        },
+        {
+          "name": "Shishir G. Patil"
+        },
+        {
+          "name": "Ion Stoica"
+        },
+        {
+          "name": "Joseph E. Gonzalez"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2310.08560"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2310.08560",
+      "primary_source_path": "public/primary/packer2023memgpt.pdf",
+      "primary_source_sha256": "9f674bcff69c86f11c813dcfad613d8841f5f8ed17979e3c4df06a91df7762e0",
+      "pdf_pages": 13,
+      "url": "https://arxiv.org/abs/2310.08560",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/packer2023memgpt.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "MemoryBank: Enhancing Large Language Models with Long-Term Memory",
+      "year": 2023,
+      "venue": "arXiv preprint",
+      "publicationDate": "2023-05-17",
+      "key": "zhong2023memorybank",
+      "bibtex_key": "zhong2023memorybank",
+      "authors": [
+        {
+          "name": "Wanjun Zhong"
+        },
+        {
+          "name": "Lianghong Guo"
+        },
+        {
+          "name": "Qiqi Gao"
+        },
+        {
+          "name": "He Ye"
+        },
+        {
+          "name": "Yanlin Wang"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2305.10250"
+      },
+      "semantic_scholar_id": "c3a59e1e405e7c28319e5a1c5b5241f9b340cf63",
+      "primary_source_url": "https://arxiv.org/pdf/2305.10250",
+      "primary_source_path": "public/primary/zhong2023memorybank.pdf",
+      "primary_source_sha256": "6c60f7f95a872de85179b770edaba584da7a30da37490522394a3e4888aa0059",
+      "pdf_pages": 11,
+      "url": "https://arxiv.org/abs/2305.10250",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/zhong2023memorybank.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "A-MEM: Agentic Memory for LLM Agents",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "publicationDate": "2025-02-17",
+      "key": "xu2025amem",
+      "bibtex_key": "xu2025amem",
+      "authors": [
+        {
+          "name": "Wujiang Xu"
+        },
+        {
+          "name": "Zujie Liang"
+        },
+        {
+          "name": "Kai Mei"
+        },
+        {
+          "name": "Hang Gao"
+        },
+        {
+          "name": "Juntao Tan"
+        },
+        {
+          "name": "Yongfeng Zhang"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2502.12110"
+      },
+      "semantic_scholar_id": "1f35a15fe9df43d24ec6ea551ec6c9766c17eccf",
+      "primary_source_url": "https://arxiv.org/pdf/2502.12110",
+      "primary_source_path": "public/primary/xu2025amem.pdf",
+      "primary_source_sha256": "fec32b521c4a1f793442bf1aeb26139c583078350d1cd4ab8f4eccc54a0694f0",
+      "pdf_pages": 28,
+      "url": "https://arxiv.org/abs/2502.12110",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/xu2025amem.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Zep: A Temporal Knowledge Graph Architecture for Agent Memory",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "publicationDate": "2025-01-20",
+      "key": "rasmussen2025zep",
+      "bibtex_key": "rasmussen2025zep",
+      "authors": [
+        {
+          "name": "Preston Rasmussen"
+        },
+        {
+          "name": "Pavlo Paliychuk"
+        },
+        {
+          "name": "Travis Beauvais"
+        },
+        {
+          "name": "Jack Ryan"
+        },
+        {
+          "name": "Daniel Chalef"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2501.13956"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2501.13956",
+      "primary_source_path": "public/primary/rasmussen2025zep.pdf",
+      "primary_source_sha256": "d26f7eb599540e8b14d75e7efda58a07661abbb1b864e58323b5768475a15d42",
+      "pdf_pages": 12,
+      "url": "https://arxiv.org/abs/2501.13956",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/rasmussen2025zep.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "publicationDate": "2025-12-14",
+      "key": "latimer2025hindsight",
+      "bibtex_key": "latimer2025hindsight",
+      "authors": [
+        {
+          "name": "Chris Latimer"
+        },
+        {
+          "name": "Nicol\u00f3 Boschi"
+        },
+        {
+          "name": "Andrew Neeser"
+        },
+        {
+          "name": "Chris Bartholomew"
+        },
+        {
+          "name": "Gaurav Srivastava"
+        },
+        {
+          "name": "Xuan Wang"
+        },
+        {
+          "name": "Naren Ramakrishnan"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2512.12818"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2512.12818",
+      "primary_source_path": "public/primary/latimer2025hindsight.pdf",
+      "primary_source_sha256": "1c0bb9fd4e53f45107e587766d6fc3b4b3441877567b17bdbbb5172015c120d4",
+      "pdf_pages": 28,
+      "url": "https://arxiv.org/abs/2512.12818",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/latimer2025hindsight.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "MemOS: An Operating System for Memory-Augmented Generation (MAG) in Large Language Models",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "publicationDate": "2025-05-28",
+      "key": "li2025memos",
+      "bibtex_key": "li2025memos",
+      "authors": [
+        {
+          "name": "Zhiyu Li"
+        },
+        {
+          "name": "Shichao Song"
+        },
+        {
+          "name": "Hanyu Wang"
+        },
+        {
+          "name": "Simin Niu"
+        },
+        {
+          "name": "Ding Chen"
+        },
+        {
+          "name": "Jiawei Yang"
+        },
+        {
+          "name": "Chenyang Xi"
+        },
+        {
+          "name": "Huayi Lai"
+        },
+        {
+          "name": "Jihao Zhao"
+        },
+        {
+          "name": "Yezhaohui Wang"
+        },
+        {
+          "name": "Junpeng Ren"
+        },
+        {
+          "name": "Zehao Lin"
+        },
+        {
+          "name": "Jiahao Huo"
+        },
+        {
+          "name": "Tianyi Chen"
+        },
+        {
+          "name": "Kai Chen"
+        },
+        {
+          "name": "Kehang Li"
+        },
+        {
+          "name": "Zhiqiang Yin"
+        },
+        {
+          "name": "Qingchen Yu"
+        },
+        {
+          "name": "Bo Tang"
+        },
+        {
+          "name": "Hongkang Yang"
+        },
+        {
+          "name": "Zhi-Qin John Xu"
+        },
+        {
+          "name": "Feiyu Xiong"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2505.22101"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2505.22101",
+      "primary_source_path": "public/primary/li2025memos.pdf",
+      "primary_source_sha256": "39fcd2d6cbd3d75c2d0b7373c56ad8228906306accb6af2a20e74947d50c859e",
+      "pdf_pages": 10,
+      "url": "https://arxiv.org/abs/2505.22101",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/li2025memos.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "publicationDate": "2025-07-07",
+      "key": "hu2025evaluating",
+      "bibtex_key": "hu2025evaluating",
+      "authors": [
+        {
+          "name": "Yuanzhe Hu"
+        },
+        {
+          "name": "Yu Wang"
+        },
+        {
+          "name": "Julian McAuley"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2507.05257"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2507.05257",
+      "primary_source_path": "public/primary/hu2025evaluating.pdf",
+      "primary_source_sha256": "022d3771fd643d3bece04841e71331ef6963ff0eba43166849072caeb1b79508",
+      "pdf_pages": 33,
+      "url": "https://arxiv.org/abs/2507.05257",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/hu2025evaluating.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "HaluMem: Evaluating Hallucinations in Memory Systems of Agents",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "publicationDate": "2025-11-05",
+      "key": "chen2025halumem",
+      "bibtex_key": "chen2025halumem",
+      "authors": [
+        {
+          "name": "Ding Chen"
+        },
+        {
+          "name": "Simin Niu"
+        },
+        {
+          "name": "Kehang Li"
+        },
+        {
+          "name": "Peng Liu"
+        },
+        {
+          "name": "Xiangping Zheng"
+        },
+        {
+          "name": "Bo Tang"
+        },
+        {
+          "name": "Xinchi Li"
+        },
+        {
+          "name": "Feiyu Xiong"
+        },
+        {
+          "name": "Zhiyu Li"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2511.03506"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2511.03506",
+      "primary_source_path": "public/primary/chen2025halumem.pdf",
+      "primary_source_sha256": "b5a902419951ac5207441d71c6d9588d593ddfb4136d5a258a0485ec03db710c",
+      "pdf_pages": 39,
+      "url": "https://arxiv.org/abs/2511.03506",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/chen2025halumem.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "SagaLLM: Context Management, Validation, and Transaction Guarantees for Multi-Agent LLM Planning",
+      "year": 2025,
+      "venue": "arXiv preprint",
+      "publicationDate": "2025-03-15",
+      "key": "chang2025sagallm",
+      "bibtex_key": "chang2025sagallm",
+      "authors": [
+        {
+          "name": "Edward Y. Chang"
+        },
+        {
+          "name": "Longling Geng"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2503.11951"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2503.11951",
+      "primary_source_path": "public/primary/chang2025sagallm.pdf",
+      "primary_source_sha256": "08100ebfe396a32579547cd89cb4bb664b891e7299a50c7d454bc5a5a6753da7",
+      "pdf_pages": 13,
+      "url": "https://arxiv.org/abs/2503.11951",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/chang2025sagallm.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Atomix: Timely, Transactional Tool Use for Reliable Agentic Workflows",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "publicationDate": "2026-02-16",
+      "key": "mohammadi2026atomix",
+      "bibtex_key": "mohammadi2026atomix",
+      "authors": [
+        {
+          "name": "Bardia Mohammadi"
+        },
+        {
+          "name": "Nearchos Potamitis"
+        },
+        {
+          "name": "Lars Klein"
+        },
+        {
+          "name": "Akhil Arora"
+        },
+        {
+          "name": "Laurent Bindschaedler"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2602.14849"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2602.14849",
+      "primary_source_path": "public/primary/mohammadi2026atomix.pdf",
+      "primary_source_sha256": "d11f797ac196295c138274d8d446cc5ebc67e91c3a0e718765102a0ebe4a82ed",
+      "pdf_pages": 25,
+      "url": "https://arxiv.org/abs/2602.14849",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/mohammadi2026atomix.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Agentic Transaction: Towards ACID-Compliant Agent Systems",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "publicationDate": "2026-08-14",
+      "key": "sun2026agentic",
+      "bibtex_key": "sun2026agentic",
+      "authors": [
+        {
+          "name": "Zhaoyan Sun"
+        },
+        {
+          "name": "Xiaoxiao Wang"
+        },
+        {
+          "name": "Guoliang Li"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2608.13900"
+      },
+      "semantic_scholar_id": "e1124325b0457d29a08b3b048b3f86503a8d5b44",
+      "primary_source_url": "https://arxiv.org/pdf/2608.13900",
+      "primary_source_path": "public/primary/sun2026agentic.pdf",
+      "primary_source_sha256": "7ea69c3898af476afc643239270247fddc0901687f71aee74fa53517f62e9ba6",
+      "pdf_pages": 6,
+      "url": "https://arxiv.org/abs/2608.13900",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/sun2026agentic.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Permission to Retry: A Study of Authorization and Recovery in AI Agent Workflows",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "publicationDate": "2026-10-22",
+      "key": "marla2026permission",
+      "bibtex_key": "marla2026permission",
+      "authors": [
+        {
+          "name": "Deekshith Marla"
+        },
+        {
+          "name": "Kushagra Bhatnagar"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2610.31916"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2610.31916",
+      "primary_source_path": "public/primary/marla2026permission.pdf",
+      "primary_source_sha256": "d7651b65c1fcbbbba0f57440ec43de30c4a1f3548e81972a08792ba1971b2a1d",
+      "pdf_pages": 7,
+      "url": "https://arxiv.org/abs/2610.31916",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/marla2026permission.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "publicationDate": "2026-04-06",
+      "key": "song2026paperorchestra",
+      "bibtex_key": "song2026paperorchestra",
+      "authors": [
+        {
+          "name": "Yiwen Song"
+        },
+        {
+          "name": "Yale Song"
+        },
+        {
+          "name": "Tomas Pfister"
+        },
+        {
+          "name": "Jinsung Yoon"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2604.05018"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2604.05018",
+      "primary_source_path": "public/primary/song2026paperorchestra.pdf",
+      "primary_source_sha256": "c70dc0dda3ad6b337129477da3485bd19d2e0a808c7454f506c064d4b9b12551",
+      "pdf_pages": 65,
+      "url": "https://arxiv.org/abs/2604.05018",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/song2026paperorchestra.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents",
+      "year": 2024,
+      "venue": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "publicationDate": "2024-8",
+      "key": "maharana2024evaluating",
+      "bibtex_key": "maharana2024evaluating",
+      "authors": [
+        {
+          "name": "Adyasha Maharana"
+        },
+        {
+          "name": "Dong-Ho Lee"
+        },
+        {
+          "name": "Sergey Tulyakov"
+        },
+        {
+          "name": "Mohit Bansal"
+        },
+        {
+          "name": "Francesco Barbieri"
+        },
+        {
+          "name": "Yuwei Fang"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2402.17753",
+        "DOI": "10.18653/v1/2024.acl-long.747"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2402.17753",
+      "primary_source_path": "public/primary/maharana2024evaluating.pdf",
+      "primary_source_sha256": "218188e1d66a553afe324491e3e5e5d0af107196c9ff32c65bb3640ebf638539",
+      "pdf_pages": 19,
+      "url": "https://aclanthology.org/2024.acl-long.747/",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/maharana2024evaluating.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "TimlMemBench: A Diagnostic Benchmark for Governed Use of Long-Term Memory in Dialogue Agents",
+      "year": 2026,
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2026",
+      "publicationDate": "2026-10",
+      "key": "zhou2026timlmembench",
+      "bibtex_key": "zhou2026timlmembench",
+      "authors": [
+        {
+          "name": "Fangxing Zhou"
+        },
+        {
+          "name": "Yifei Sun"
+        },
+        {
+          "name": "Jiachen Li"
+        },
+        {
+          "name": "Jinyu Xu"
+        },
+        {
+          "name": "Yuhan Wang"
+        },
+        {
+          "name": "Ruixin Li"
+        },
+        {
+          "name": "Qing Xie"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {},
+      "primary_source_url": "https://aclanthology.org/2026.findings-emnlp.507.pdf",
+      "primary_source_path": "public/primary/zhou2026timlmembench.pdf",
+      "primary_source_sha256": "fa3e711e0c74fbaddabfb1641a41132745ae196c4267fb47f07d91e31342ca7a",
+      "pdf_pages": 15,
+      "url": "https://aclanthology.org/2026.findings-emnlp.507/",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/zhou2026timlmembench.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Capture Is Easy, Forgetting Is Hard: Benchmarking Prospective Memory in Conversational Agents",
+      "year": 2026,
+      "venue": "Proceedings of the Second Workshop for REsearch on Agent Language Models (REALM 2026)",
+      "publicationDate": "2026-10",
+      "key": "bilgin2026capture",
+      "bibtex_key": "bilgin2026capture",
+      "authors": [
+        {
+          "name": "Deniz Bilgin"
+        },
+        {
+          "name": "Jonas Schewior"
+        },
+        {
+          "name": "Andreas Wendemuth"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {},
+      "primary_source_url": "https://aclanthology.org/2026.realm-1.43.pdf",
+      "primary_source_path": "public/primary/bilgin2026capture.pdf",
+      "primary_source_sha256": "90edabb954aa2e9758cdb0ccb2734a2c8fcdf5c8d8ae87d588f93629347c134b",
+      "pdf_pages": 16,
+      "url": "https://aclanthology.org/2026.realm-1.43/",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/bilgin2026capture.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "UTILMEM: Benchmarking Evidence Utilization in Long-Term Conversational Memory",
+      "year": 2026,
+      "venue": "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+      "publicationDate": "2026-10",
+      "key": "qing2026utilmem",
+      "bibtex_key": "qing2026utilmem",
+      "authors": [
+        {
+          "name": "Peijun Qing"
+        },
+        {
+          "name": "Fobo Shi"
+        },
+        {
+          "name": "Soroush Vosoughi"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {},
+      "semantic_scholar_id": "5cdd78a83a670ac8a89fc16883781d437d62acac",
+      "primary_source_url": "https://aclanthology.org/2026.emnlp-main.1639.pdf",
+      "primary_source_path": "public/primary/qing2026utilmem.pdf",
+      "primary_source_sha256": "7b3e48d40c45bcd8f066e6e7ae116d3369b5111203f5a5a28e7da8052daf0f38",
+      "pdf_pages": 24,
+      "url": "https://aclanthology.org/2026.emnlp-main.1639/",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/qing2026utilmem.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "ACRFence: Preventing Semantic Rollback Attacks in Agent Checkpoint-Restore",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "publicationDate": "2026-03-21",
+      "key": "zheng2026acrfence",
+      "bibtex_key": "zheng2026acrfence",
+      "authors": [
+        {
+          "name": "Yusheng Zheng"
+        },
+        {
+          "name": "Yiwei Yang"
+        },
+        {
+          "name": "Wei Zhang"
+        },
+        {
+          "name": "Andi Quinn"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2603.20625"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2603.20625",
+      "primary_source_path": "public/primary/zheng2026acrfence.pdf",
+      "primary_source_sha256": "5b88ebb1f9dc1cb136c2e8b282a5b9d31122dc172ecd9c1893f4a5b578e86263",
+      "pdf_pages": 4,
+      "url": "https://arxiv.org/abs/2603.20625",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/zheng2026acrfence.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Where Does Exactly-Once Live? Model, Harness, and Tool-Contract Effects on Duplicate Side Effects in LLM Agents",
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "publicationDate": "2026-09-24",
+      "key": "li2026where",
+      "bibtex_key": "li2026where",
+      "authors": [
+        {
+          "name": "Jiapeng Li"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "ArXiv": "2609.29095"
+      },
+      "primary_source_url": "https://arxiv.org/pdf/2609.29095",
+      "primary_source_path": "public/primary/li2026where.pdf",
+      "primary_source_sha256": "e3bad2caf7041a4a0db5b15fad343098742ba17221bbfd77716b43fba5916d94",
+      "pdf_pages": 23,
+      "url": "https://arxiv.org/abs/2609.29095",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/li2026where.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Implementing Linearizability at Large Scale and Low Latency",
+      "year": 2015,
+      "venue": "Proceedings of the 25th Symposium on Operating Systems Principles",
+      "accessedDate": "2026-10-29",
+      "key": "lee2015implementing",
+      "bibtex_key": "lee2015implementing",
+      "authors": [
+        {
+          "name": "Collin Lee"
+        },
+        {
+          "name": "Seo Jin Park"
+        },
+        {
+          "name": "Ankita Kejriwal"
+        },
+        {
+          "name": "Satoshi Matsushita"
+        },
+        {
+          "name": "John Ousterhout"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "DOI": "10.1145/2815400.2815416"
+      },
+      "primary_source_url": "https://web.stanford.edu/~ouster/cgi-bin/papers/rifl.pdf",
+      "primary_source_path": "public/primary/lee2015implementing.pdf",
+      "primary_source_sha256": "f609f9508beaf936027f31428a8f06dc86d8201faadc5b340ffead7706863969",
+      "pdf_pages": 16,
+      "primary_metadata": "https://seojinpark.net/projects/rifl/",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "crossref_metadata_path": "public/metadata/lee2015implementing.crossref.json",
+      "primary_metadata_path": "public/metadata/lee2015implementing.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Fault-tolerant and transactional stateful serverless workflows",
+      "year": 2020,
+      "venue": "14th USENIX Symposium on Operating Systems Design and Implementation (OSDI 20)",
+      "accessedDate": "2026-10-29",
+      "key": "zhang2020fault",
+      "bibtex_key": "zhang2020fault",
+      "authors": [
+        {
+          "name": "Haoran Zhang"
+        },
+        {
+          "name": "Adney Cardoza"
+        },
+        {
+          "name": "Peter Baile Chen"
+        },
+        {
+          "name": "Sebastian Angel"
+        },
+        {
+          "name": "Vincent Liu"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {},
+      "primary_source_url": "https://www.usenix.org/system/files/osdi20-zhang_haoran.pdf",
+      "primary_source_path": "public/primary/zhang2020fault.pdf",
+      "primary_source_sha256": "3b08a01341f85c0e15deee5c9140dd55d99d565a385d27b67b93db6c6d919049",
+      "pdf_pages": 19,
+      "primary_metadata": "https://www.usenix.org/conference/osdi20/presentation/zhang-haoran",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "primary_metadata_path": "public/metadata/zhang2020fault.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Sagas",
+      "year": 1987,
+      "venue": "Proceedings of the 1987 ACM SIGMOD international conference on Management of data  - SIGMOD '87",
+      "accessedDate": "2026-10-29",
+      "key": "garciamolina1987sagas",
+      "bibtex_key": "garciamolina1987sagas",
+      "authors": [
+        {
+          "name": "Hector Garcia-Molina"
+        },
+        {
+          "name": "Kenneth Salem"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "DOI": "10.1145/38713.38742"
+      },
+      "primary_source_url": "https://www.cs.princeton.edu/techreports/1987/070.pdf",
+      "primary_source_path": "public/primary/garciamolina1987sagas.pdf",
+      "primary_source_sha256": "4ff5b64509883c68f823718822c73fb7ac1fbbe707b20d19fbce303f7fabddcf",
+      "pdf_pages": 20,
+      "primary_metadata": "https://www.cs.princeton.edu/research/techreps/598",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "crossref_metadata_path": "public/metadata/garciamolina1987sagas.crossref.json",
+      "primary_metadata_path": "public/metadata/garciamolina1987sagas.primary.html",
+      "version_note": "The primary full text is Princeton TR-070-87 (January 1987); DOI metadata refers to the SIGMOD proceedings publication.",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "ARIES: A Transaction Recovery Method Supporting Fine-Granularity Locking and Partial Rollbacks Using Write-Ahead Logging",
+      "year": 1992,
+      "venue": "ACM Transactions on Database Systems",
+      "accessedDate": "2026-10-29",
+      "key": "mohan1992aries",
+      "bibtex_key": "mohan1992aries",
+      "authors": [
+        {
+          "name": "C. Mohan"
+        },
+        {
+          "name": "Don Haderle"
+        },
+        {
+          "name": "Bruce Lindsay"
+        },
+        {
+          "name": "Hamid Pirahesh"
+        },
+        {
+          "name": "Peter Schwarz"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "DOI": "10.1145/128765.128770"
+      },
+      "primary_source_url": "https://people.eecs.berkeley.edu/~brewer/cs262/Aries2.pdf",
+      "primary_source_path": "public/primary/mohan1992aries.pdf",
+      "primary_source_sha256": "1007fcedb6b8b465f97ee1c4e4d88420450b50b18ff5ad400a130b21e4961817",
+      "pdf_pages": 35,
+      "primary_metadata": "https://research.ibm.com/publications/aries-a-transaction-recovery-method-supporting-fine-granularity-locking-and-partial-rollbacks-using-write-ahead-logging",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "crossref_metadata_path": "public/metadata/mohan1992aries.crossref.json",
+      "primary_metadata_path": "public/metadata/mohan1992aries.primary.html",
+      "version_note": "Original journal paper in an institutional two-up scanned copy; PDF is authoritative.",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Implementing Remote Procedure Calls",
+      "year": 1984,
+      "venue": "ACM Transactions on Computer Systems",
+      "accessedDate": "2026-10-29",
+      "key": "birrell1984implementing",
+      "bibtex_key": "birrell1984implementing",
+      "authors": [
+        {
+          "name": "Andrew D. Birrell"
+        },
+        {
+          "name": "Bruce Jay Nelson"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "DOI": "10.1145/2080.357392"
+      },
+      "primary_source_url": "https://www.cl.cam.ac.uk/teaching/0708/DigiCommI/birrell1984rpc.pdf",
+      "primary_source_path": "public/primary/birrell1984implementing.pdf",
+      "primary_source_sha256": "20982d07692fd62d199e2b3357f4578250c1e05808512966a3fce2a959eed8a1",
+      "pdf_pages": 21,
+      "primary_metadata": "https://www.birrell.org/andrew/papers/",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "crossref_metadata_path": "public/metadata/birrell1984implementing.crossref.json",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Lineage-driven Fault Injection",
+      "year": 2015,
+      "venue": "Proceedings of the 2015 ACM SIGMOD International Conference on Management of Data",
+      "accessedDate": "2026-10-29",
+      "key": "alvaro2015lineage",
+      "bibtex_key": "alvaro2015lineage",
+      "authors": [
+        {
+          "name": "Peter Alvaro"
+        },
+        {
+          "name": "Joshua Rosen"
+        },
+        {
+          "name": "Joseph M. Hellerstein"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "DOI": "10.1145/2723372.2723711"
+      },
+      "primary_source_url": "https://people.ucsc.edu/~palvaro/molly.pdf",
+      "primary_source_path": "public/primary/alvaro2015lineage.pdf",
+      "primary_source_sha256": "6189925547555dea428ca7c8f199988cbf2e970b2aaaf5d69056776e1cc3c31a",
+      "pdf_pages": 16,
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "crossref_metadata_path": "public/metadata/alvaro2015lineage.crossref.json",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+      "year": 2024,
+      "venue": "Advances in Neural Information Processing Systems 37",
+      "accessedDate": "2026-10-29",
+      "key": "chen2024agentpoison",
+      "bibtex_key": "chen2024agentpoison",
+      "authors": [
+        {
+          "name": "Zhaorun Chen"
+        },
+        {
+          "name": "Zhen Xiang"
+        },
+        {
+          "name": "Chaowei Xiao"
+        },
+        {
+          "name": "Dawn Song"
+        },
+        {
+          "name": "Bo Li"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "DOI": "10.52202/079017-4136"
+      },
+      "primary_source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/eb113910e9c3f6242541c1652e30dfd6-Paper-Conference.pdf",
+      "primary_source_path": "public/primary/chen2024agentpoison.pdf",
+      "primary_source_sha256": "c01e3700b63462dafc6f1da7da7349d5db5c49ca4712c5780b313c63fc8a61fb",
+      "pdf_pages": 29,
+      "primary_metadata": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/eb113910e9c3f6242541c1652e30dfd6-Abstract-Conference.html",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "crossref_metadata_path": "public/metadata/chen2024agentpoison.crossref.json",
+      "primary_metadata_path": "public/metadata/chen2024agentpoison.primary.html",
+      "manuscript_status": "integrated"
+    },
+    {
+      "title": "Memory Injection Attacks on LLM Agents via Query-Only Interaction",
+      "year": 2025,
+      "venue": "Advances in Neural Information Processing Systems 38",
+      "accessedDate": "2026-10-29",
+      "key": "dong2025memory",
+      "bibtex_key": "dong2025memory",
+      "authors": [
+        {
+          "name": "Shen Dong"
+        },
+        {
+          "name": "Shaochen Xu"
+        },
+        {
+          "name": "Pengfei He"
+        },
+        {
+          "name": "Yige Li"
+        },
+        {
+          "name": "Jiliang Tang"
+        },
+        {
+          "name": "Tianming Liu"
+        },
+        {
+          "name": "Hui Liu"
+        },
+        {
+          "name": "Zhen J. Xiang"
+        }
+      ],
+      "record_kind": "research_paper",
+      "externalIds": {
+        "DOI": "10.52202/085713-1554"
+      },
+      "primary_source_url": "https://proceedings.neurips.cc/paper_files/paper/2025/file/42a97bbd9844d2bf68596730af80bcdf-Paper-Conference.pdf",
+      "primary_source_path": "public/primary/dong2025memory.pdf",
+      "primary_source_sha256": "cf8efceb77e47685584876c63bb1d2245b8a20af2a7dfedaaff12b483ef5be1f",
+      "pdf_pages": 35,
+      "primary_metadata": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/42a97bbd9844d2bf68596730af80bcdf-Abstract-Conference.html",
+      "verification": "Primary public text archived; bibliographic identity checked against public primary metadata and available DOI/index records.",
+      "crossref_metadata_path": "public/metadata/dong2025memory.crossref.json",
+      "primary_metadata_path": "public/metadata/dong2025memory.primary.html",
+      "metadata_note": "Publisher author rendering Zhen J. Xiang is retained; Crossref omits the middle initial.",
+      "manuscript_status": "integrated"
+    },
+    {
+      "key": "sqlite2026atomiccommit",
+      "bibtex_key": "sqlite2026atomiccommit",
+      "title": "Atomic Commit In SQLite",
+      "authors": [
+        {
+          "name": "SQLite"
+        }
+      ],
+      "year": 2026,
+      "record_kind": "official_documentation",
+      "url": "https://www.sqlite.org/atomiccommit.html",
+      "source_summary": "Official account of rollback-journal atomic commit, hardware assumptions and SQLite crash testing. It does not make two separately committed database files an application-level atomic unit.",
+      "support_locations": [
+        "\u00a71 Introduction",
+        "\u00a72 Hardware Assumptions",
+        "\u00a73 Single File Commit",
+        "\u00a75 Multi-file Commit",
+        "\u00a78 Testing Atomic Commit Behavior"
+      ],
+      "primary_source_url": "https://www.sqlite.org/atomiccommit.html",
+      "primary_source_path": "public/primary/sqlite2026atomiccommit.html",
+      "primary_source_sha256": "5a5be7b660217c9408c8a81eaf2faa2d08832ed3790f895a0a713916ad856ea1",
+      "accessedDate": "2026-10-29",
+      "publicationDate": null,
+      "date_note": "Publication date unspecified; year denotes access year, not an asserted publication date.",
+      "verification": "Official project documentation fetched directly and inspected at the cited support locations.",
+      "abstract_kind": "Auditor-written source summary, not a published abstract.",
+      "manuscript_status": "integrated"
+    },
+    {
+      "key": "python2026osexit",
+      "bibtex_key": "python2026osexit",
+      "title": "os._exit: process termination in Python 3.12",
+      "authors": [
+        {
+          "name": "Python Software Foundation"
+        }
+      ],
+      "year": 2026,
+      "record_kind": "official_documentation",
+      "url": "https://docs.python.org/3.12/library/os.html#os._exit",
+      "source_summary": "The documented primitive exits the process without normal cleanup handlers or stdio flushing. This identifies process termination, not power-loss or a failure inside a database commit.",
+      "support_locations": [
+        "os._exit(n)"
+      ],
+      "primary_source_url": "https://docs.python.org/3.12/library/os.html#os._exit",
+      "primary_source_path": "public/primary/python2026osexit.html",
+      "primary_source_sha256": "0fcd482cfe5a5998da64c6100b44d5c7eba8ca29e7c40c7ee13d5911db6e1239",
+      "accessedDate": "2026-10-29",
+      "publicationDate": null,
+      "date_note": "Publication date unspecified; year denotes access year, not an asserted publication date.",
+      "verification": "Official project documentation fetched directly and inspected at the cited support locations.",
+      "abstract_kind": "Auditor-written source summary, not a published abstract.",
+      "manuscript_status": "integrated"
+    },
+    {
+      "key": "uddin2026memora",
+      "bibtex_key": "uddin2026memora",
+      "title": "From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents",
+      "authors": [
+        {
+          "name": "Md Nayem Uddin"
+        },
+        {
+          "name": "Kumar Shubham"
+        },
+        {
+          "name": "Eduardo Blanco"
+        },
+        {
+          "name": "Chitta Baral"
+        },
+        {
+          "name": "Gengyu Wang"
+        }
+      ],
+      "year": 2026,
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2026",
+      "pages": "26814--26841",
+      "publicationDate": "2026-07",
+      "externalIds": {
+        "DOI": "10.18653/v1/2026.findings-acl.1337",
+        "ArXiv": "2604.20006"
+      },
+      "url": "https://aclanthology.org/2026.findings-acl.1337/",
+      "primary_source_url": "https://aclanthology.org/2026.findings-acl.1337.pdf",
+      "primary_source_path": "selected/uddin2026memora.acl.pdf",
+      "primary_source_sha256": "f1219ad993c5e2dc43c6ce9d829df008f0535132eb0918a08f9cbc3c2822a9c1",
+      "arxiv_original_date": "2026-04-21",
+      "arxiv_pdf_path": "literature/selected/uddin2026memora.pdf",
+      "arxiv_pdf_sha256": "683a21a6b6fa09f1a6ad270832b3d891e41ecff6e6893298d8efe0df702566b2",
+      "record_kind": "research_paper",
+      "verification": "ACL Anthology citation metadata and exact-DOI Crossref record agree on title, authors, year, venue and pages. Both public PDF versions archived.",
+      "accessedDate": "2026-10-29",
+      "read_locations": {
+        "arxiv_main_pdf_pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "published_appendix_pdf_pages": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          27,
+          28
+        ],
+        "scope": "Focused conceptual-overlap and evaluation-standards reading; bibliography and repetitive example pages were not individually analyzed."
+      },
+      "artifact_reuse": "Public paper/metadata only. No repository, code or dataset inspected or reused.",
+      "integration_status": "Integrated in manuscript/main.tex and the root/manuscript bibliography.",
+      "source_summary": "Memora evaluates semantic memory consolidation and mutation with forgetting-aware response criteria; it is prior work complementary to execution conformance.",
+      "manuscript_status": "integrated"
+    }
+  ],
+  "counts": {
+    "research_papers": 30,
+    "implemented_runtime_docs": 2,
+    "total": 32
+  },
+  "excluded_from_manuscript": "Seven working-library documentation entries for services/frameworks not used in the independent implementation.",
+  "source_summary_policy": "Auditor-written prose remains distinct from published abstracts.",
+  "citation_policy": "Cite for substantive relevance; research selection and source verification do not establish exhaustive literature coverage.",
+  "selection_status": "Integrated in manuscript/main.tex; working library remains a separate broader collection."
+}

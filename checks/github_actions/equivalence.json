@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "private_repository": true,
+  "run_url": "https://github.com/aditya-genies/beyond-recall/actions/runs/40981888580",
+  "code_commit": "a15c003e83d3bea18d00092def42f3478fe8c1dc",
+  "runner": "ubuntu-latest (specified in pinned workflow)",
+  "jobs": [
+    {
+      "artifact": "independent-verification-python-3.14",
+      "python": "3.14.9",
+      "sqlite": "3.45.1",
+      "case_count": 528,
+      "independent_verification": "PASS",
+      "aggregate_match": true,
+      "source_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9"
+    },
+    {
+      "artifact": "independent-verification-python-3.12",
+      "python": "3.12.15",
+      "sqlite": "3.45.1",
+      "case_count": 528,
+      "independent_verification": "PASS",
+      "aggregate_match": true,
+      "source_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9"
+    }
+  ],
+  "counts_not_combined_with_primary": true
+}

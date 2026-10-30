@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "run_metadata": "checks/github_actions/run.json",
+  "head_commit": "a15c003e83d3bea18d00092def42f3478fe8c1dc",
+  "run_url": "https://github.com/aditya-genies/beyond-recall/actions/runs/40981888580",
+  "runner_family": "Ubuntu (workflow ubuntu-latest)",
+  "jobs_verified": 2,
+  "campaigns": [
+    {
+      "artifact": "checks/github_actions/independent-verification-python-3.12",
+      "python": "3.12.15",
+      "sqlite": "3.45.1",
+      "case_count": 528,
+      "boundary_count": 5,
+      "summary_matches_primary": true,
+      "all_case_scalar_metrics_match_primary": true,
+      "raw_event_and_record_metrics_recomputed": true,
+      "ci_verifier_passed": true,
+      "cases_sha256": "3830c1cbe6ed20fe84be8229c5f6571706fa4d39b75a4c86fed4cd6b6c63fd7f"
+    },
+    {
+      "artifact": "checks/github_actions/independent-verification-python-3.14",
+      "python": "3.14.9",
+      "sqlite": "3.45.1",
+      "case_count": 528,
+      "boundary_count": 5,
+      "summary_matches_primary": true,
+      "all_case_scalar_metrics_match_primary": true,
+      "raw_event_and_record_metrics_recomputed": true,
+      "ci_verifier_passed": true,
+      "cases_sha256": "145bac71e2239b4d62f2d66415ba6055ab069b1bf5185e9e80a90f06a0dda0c7"
+    }
+  ],
+  "main_denominator_remains": 528,
+  "ci_rows_not_pooled": true,
+  "local_scope": "Raw serialized rows/events, frozen hashes, uploaded verification reports, workflow and completed successful run/job metadata checked. CI itself checked physical SQLite before artifact upload."
+}
