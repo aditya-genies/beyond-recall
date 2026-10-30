@@ -16,6 +16,12 @@ def main():
  assert reviewed['manuscript_sha256']==sha(ROOT/'manuscript/main.tex')
  assert reviewed['plan_binding_sha256']==sha(ROOT/'manuscript/plan_binding.tex')
  assert qa['artifact']['plan_binding_source_sha256']==sha(ROOT/'manuscript/plan_binding.tex')
+ for name in ['public_memory.tex','contract_portability.tex']:
+  rel='manuscript/'+name
+  assert qa['artifact']['included_sources'][rel]==sha(ROOT/rel)
+  assert reviewed['included_sources'][rel]==sha(ROOT/rel)
+ assert qa['artifact']['bibliography_sha256']==sha(ROOT/'manuscript/refs.bib')
+ assert reviewed['bibliography_sha256']==sha(ROOT/'manuscript/refs.bib')
  payload=OUT/'repository-payload'
  if payload.exists():shutil.rmtree(payload)
  payload.mkdir(parents=True,exist_ok=True)
@@ -24,8 +30,13 @@ def main():
   files.append(ROOT/name)
  for folder in ['results','reproduction','.github','figures','manuscript','extensions']:
   for p in (ROOT/folder).rglob('*'):
-   if any(part.startswith('my-') or part.startswith('.venv') for part in p.relative_to(ROOT).parts):continue
-   if p.is_file() and '__pycache__' not in p.parts and p.suffix not in {'.pyc','.aux','.bbl','.blg','.log','.out','.xdv','.toc'}:files.append(p)
+   rel=p.relative_to(ROOT)
+   if any(part.startswith('my-') or part.startswith('.venv') or part.startswith('development_campaign') or part=='reproduced-results' for part in rel.parts):continue
+   if p.name.startswith('development_spec'):continue
+   suffixes={'.pyc','.aux','.bbl','.blg','.log','.out','.xdv','.toc'}
+   if rel.as_posix().startswith('extensions/replanning_contracts/'):
+    suffixes.remove('.log') # These selected study logs are public evidence.
+   if p.is_file() and '__pycache__' not in p.parts and p.suffix not in suffixes:files.append(p)
  for p in (ROOT/'checks').rglob('*'):
   if not p.is_file() or '__pycache__' in p.parts or 'initial' in p.name:continue
   if p.suffix=='.py' and p.name not in {'__init__.py','check_results.py','audit_protocol.py','derive_factors.py','public_release_audit.py'}:continue
@@ -47,7 +58,7 @@ def main():
   rel=p.relative_to(ROOT);q=payload/rel;q.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,q)
  forbidden=['development_pilots','development_single_case','literature/private','literature/public/primary','worklog/pdf_qa']
  assert not any(any(p.relative_to(ROOT).as_posix().startswith(f) for f in forbidden) for p in files)
- manifest={'study':'Independent synthetic mechanism study','paper_source_sha256':sha(ROOT/'manuscript/main.tex'),'paper_pdf_sha256':sha(ROOT/'manuscript/main.pdf'),'files':[{'path':p.relative_to(ROOT).as_posix(),'bytes':p.stat().st_size,'sha256':sha(p)} for p in sorted(files)],'excluded':'Development pilots, installed environments, Git objects, writing-only helpers, unused background documentation, third-party full texts and private publication-review notes'}
+ manifest={'study':'Independent synthetic/public-implementation admission and recovery study','paper_source_sha256':sha(ROOT/'manuscript/main.tex'),'paper_pdf_sha256':sha(ROOT/'manuscript/main.pdf'),'included_tex_sources':{str(p.relative_to(ROOT)):sha(p) for p in sorted((ROOT/'manuscript').glob('*.tex'))},'files':[{'path':p.relative_to(ROOT).as_posix(),'bytes':p.stat().st_size,'sha256':sha(p)} for p in sorted(files)],'excluded':'Development pilots/dry-run state, installed environments, Git objects, writing-only helpers, unused background documentation, third-party full texts and private publication-review notes'}
  (payload/'ARTIFACT_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
  repro=OUT/'beyond-recall-independent-reproducibility.zip'
  with zipfile.ZipFile(repro,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
@@ -57,7 +68,7 @@ def main():
  with zipfile.ZipFile(paper,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
   for p in sorted((ROOT/'manuscript').rglob('*')):
    if p.is_file() and p.suffix in {'.tex','.bib','.pdf','.png','.svg'}:z.write(p,'beyond-recall-paper/'+p.relative_to(ROOT/'manuscript').as_posix())
-  z.writestr('beyond-recall-paper/README.txt','Aditya Mantri: Beyond Recall, working research manuscript.\nCompile main.tex (including plan_binding.tex) with Tectonic or standard LaTeX/BibTeX.\nPublic companion repository: https://github.com/aditya-genies/beyond-recall\nPublic availability is not peer-reviewed acceptance.\n')
+  z.writestr('beyond-recall-paper/README.txt','Aditya Mantri: Beyond Recall, working research manuscript.\nCompile main.tex with its three included .tex sections using Tectonic or standard LaTeX/BibTeX.\nPublic companion repository: https://github.com/aditya-genies/beyond-recall\nPublic availability is not peer-reviewed acceptance.\n')
  for p in [repro,paper]:
   with zipfile.ZipFile(p) as z:assert z.testzip() is None
  (OUT/'SHA256SUMS.txt').write_text(''.join(sha(p)+'  '+p.name+'\n' for p in [paper,repro]))

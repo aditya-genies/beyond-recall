@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "All reachable Git-history blobs plus staged index; known credential shapes and personal absolute paths. Separate source/data review checks synthetic provenance.",
+  "tracked_paths": 5463,
+  "unique_blobs_scanned": 2221,
+  "bytes_scanned": 68132695,
+  "findings": [],
+  "forbidden_release_paths": [],
+  "blob_digest_manifest_sha256": "ea213c5163d481df51ccbba3b52c9fa779d892a860690b9316181c1878dd4956",
+  "excluded": "Installed environments, raw review attachment, reference full texts, cached venue/source pages, private CLI diagnostics, hidden reasoning and auth/config files.",
+  "authorised_background": "Supplied author employment/degree biography and user-authorized companion repository URL.",
+  "limit": "Pattern and provenance checks reduce accidental disclosure; no universal absence-of-secrets proof is asserted."
+}

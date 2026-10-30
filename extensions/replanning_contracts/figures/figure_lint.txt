@@ -1,0 +1,2 @@
+figure_lint: 1 caption(s), 0 error(s), 1 warning(s)
+  WARN  [no-pipeline-figure] (set): no caption describes an architecture/pipeline/overview figure; papers without one make the reader reconstruct the method from prose

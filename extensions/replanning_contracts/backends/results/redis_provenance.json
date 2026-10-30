@@ -1,0 +1,25 @@
+{
+  "binding": "127.0.0.1, ephemeral host port",
+  "docker_client_config": "Fresh temporary empty auth config; explicit local Unix socket",
+  "image": {
+    "Architecture": "arm64",
+    "Created": "2026-10-26T16:41:25.380557127Z",
+    "Id": "sha256:2c933526722b4126a61d5c170f766dc159adf97682f0b1cbbc27b1666ba96d84",
+    "Os": "linux",
+    "RepoDigests": [
+      "redis@sha256:2c933526722b4126a61d5c170f766dc159adf97682f0b1cbbc27b1666ba96d84"
+    ]
+  },
+  "network": "Fresh dedicated Docker bridge with only the study server; loopback host publication",
+  "persistence": {
+    "appendfsync": "always",
+    "appendonly": "yes"
+  },
+  "redis_py_version": "8.1.0",
+  "redis_version": "7.2.17",
+  "resolved_image": "redis@sha256:2c933526722b4126a61d5c170f766dc159adf97682f0b1cbbc27b1666ba96d84",
+  "server_arch_bits": 64,
+  "server_os": "Linux 7.0.14-linuxkit aarch64",
+  "study_only_random_credential": true,
+  "volume": "Fresh study-only volume"
+}

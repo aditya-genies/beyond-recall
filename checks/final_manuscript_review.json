@@ -1,23 +1,27 @@
 {
   "status": "PASS_FOR_BOUNDED_WORKING_CLAIMS",
-  "review_type": "Skeptical source/evidence review of stated finite claims, not publication acceptance",
+  "review_type": "Skeptical same-study source/evidence review of bounded claims; not external peer review or acceptance",
   "manuscript": "manuscript/main.tex",
-  "manuscript_sha256": "0b5a97df2669cdc62a1dcb7475abd19deb630921d9adc10abd7b25f079012eab",
+  "manuscript_sha256": "45e6f655177de8f40695e1b9d005f6b1799f9710db76bf1d4aab23cbd25d1fb8",
   "plan_binding_sha256": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088",
-  "bibliography_sha256": "0c9af335cb78222b6782ba0a94cd3ba37b09784de3587c0afaee3bb5d58e286e",
+  "included_sources": {
+    "manuscript/public_memory.tex": "1760543d8131d5f8de66bda6cd89e29bc441d9b381b3ecb38e43f19bb5e410eb",
+    "manuscript/contract_portability.tex": "e9db003699923e6c3ce9791265ba6809c43a0a4b0aee609fb711692b5a9018b5"
+  },
+  "bibliography_sha256": "a39d5ab800a2a419c85f497d8f37119f0d9060b1790de9048b935df424349bfe",
   "frozen_study_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
   "main_cases_sha256": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
   "remaining_material_corrections": [],
-  "scientific_review": "revisions/review1/final_scientific_review.json",
-  "evidence_reconciliation": "revisions/review1/final_evidence_reconciliation.json",
+  "scientific_review": "extensions/replanning_contracts/review/final_scientific_review.json",
+  "evidence_reconciliation": "checks/new_evidence_verification.json",
   "journal_research_gaps": [
-    "The primitives and broad fault/conformance method have strong direct antecedents. A synthetic factorial and an adapter counterexample do not automatically establish a generalizable leading-journal advance.",
-    "The24calls are a single-alias/single-harness pilot with no semantic adjudication or natural workload distribution. The36recorded-plan integrations reuse those outputs and are not more independent model samples.",
-    "The native implementation shares controlled fixtures/planner and application semantics. More independent memory implementations and contract/workload changes would be needed to demonstrate transfer beyond this authored setup.",
-    "Bounded sequential schedules and one race per process cell do not cover arbitrary interleavings, remote consistency, mid-commit failure, retention reclamation or transient-reader isolation.",
-    "Outside replication, stronger independently specified oracles and a clearly useful new conditional insight remain research opportunities. Listing these gaps is not evidence they have been solved, and no acceptance-readiness conclusion is made."
+    "Post hoc retrieval self-queries and selected fresh-history stores do not establish held-out natural-workload generalization or semantic/QA harm.",
+    "The counting bound is elementary; broader bounded-candidate dependence, stable identity, receipts, decision logs, fences and lifecycle correctness have close prior art.",
+    "One requested model/harness and finite authored batches provide witnesses, not model error rates or independently attested backend model weights.",
+    "Native baselines and backend profiles are scoped authored integrations, not framework optimality or vendor ranking.",
+    "Same-author checkers and computational reproductions do not replace outside replication; server power loss, remote late commits, cluster consistency and scalable concurrent uniqueness remain untested.",
+    "A leading-journal contribution is not established by this review or by counts. No acceptance score or publication guarantee is provided."
   ],
-  "publication_status": "Working manuscript; peer review and journal acceptance have not occurred",
-  "figure_defect": "Original figure QA was overbroad; corrected figure and latest pixel QA supersede it",
-  "authorship": "Supplied sole author and background retained; research independently authored from synthetic inputs"
+  "publication_status": "Working manuscript; external peer review and journal acceptance have not occurred",
+  "authorship": "Supplied sole author/background retained; independent synthetic/public-source study"
 }

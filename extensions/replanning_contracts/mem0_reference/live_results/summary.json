@@ -1,0 +1,119 @@
+{
+  "baseline_attempts": 4,
+  "actual_baseline_exit87": 4,
+  "retry_attempts_or_not_runnable_cells": 48,
+  "successful_retry_attempts": 48,
+  "planned_live_requests": 28,
+  "recorded_live_request_status_files": 28,
+  "groups": [
+    {
+      "history": "fresh_recent_context",
+      "arm": "native_k10",
+      "strategy": "fresh_model",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 46,
+      "new_records": 46
+    },
+    {
+      "history": "fresh_recent_context",
+      "arm": "native_k10",
+      "strategy": "recorded_model_result",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 46,
+      "new_records": 46
+    },
+    {
+      "history": "fresh_recent_context",
+      "arm": "widened_candidates",
+      "strategy": "fresh_model",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 0,
+      "new_records": 0
+    },
+    {
+      "history": "fresh_recent_context",
+      "arm": "widened_candidates",
+      "strategy": "recorded_model_result",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 0,
+      "new_records": 0
+    },
+    {
+      "history": "fresh_recent_context",
+      "arm": "exact_admission",
+      "strategy": "fresh_model",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 0,
+      "new_records": 0
+    },
+    {
+      "history": "fresh_recent_context",
+      "arm": "exact_admission",
+      "strategy": "recorded_model_result",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 0,
+      "new_records": 0
+    },
+    {
+      "history": "aged_recent_context",
+      "arm": "native_k10",
+      "strategy": "fresh_model",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 45,
+      "new_records": 46
+    },
+    {
+      "history": "aged_recent_context",
+      "arm": "native_k10",
+      "strategy": "recorded_model_result",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 46,
+      "new_records": 46
+    },
+    {
+      "history": "aged_recent_context",
+      "arm": "widened_candidates",
+      "strategy": "fresh_model",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 0,
+      "new_records": 0
+    },
+    {
+      "history": "aged_recent_context",
+      "arm": "widened_candidates",
+      "strategy": "recorded_model_result",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 0,
+      "new_records": 0
+    },
+    {
+      "history": "aged_recent_context",
+      "arm": "exact_admission",
+      "strategy": "fresh_model",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 0,
+      "new_records": 0
+    },
+    {
+      "history": "aged_recent_context",
+      "arm": "exact_admission",
+      "strategy": "recorded_model_result",
+      "planned": 4,
+      "successful": 4,
+      "new_exact_copies": 0,
+      "new_records": 0
+    }
+  ],
+  "interpretation": "Finite authored source batches, one requested model/harness, no inferential or semantic-error-rate claim. Recorded-result strategy is not a new model observation."
+}

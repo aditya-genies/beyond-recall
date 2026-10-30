@@ -1,0 +1,120 @@
+{
+  "reviewed_utc": "2026-10-30T04:59:50.655074+00:00",
+  "source_cutoff": "2026-10-29 inclusive",
+  "no_exhaustiveness_claim": true,
+  "no_new_recovery_algorithm_claim": true,
+  "terminology": {
+    "standard": "No formal industry standard or certification is claimed. Jepsen is a testing practice/tool; linearizability and serializability are mathematical correctness conditions; vendor contracts are product-specific."
+  },
+  "records": [
+    {
+      "id": "stable_receipts",
+      "antecedents": [
+        "RIFL",
+        "Beldi",
+        "Permission to Retry",
+        "LIMBO",
+        "Verified Tool Calls"
+      ],
+      "established": "Stable logical identity, a retained completion/effect record and logged nondeterministic decisions are established recovery mechanisms.",
+      "residual_or_caveat": "An implementation comparison may expose violated preconditions; combining these mechanisms is not a new algorithm."
+    },
+    {
+      "id": "changed_plan_binding",
+      "antecedents": [
+        "Beldi",
+        "TOKI",
+        "Temporal deterministic replay",
+        "LangGraph durable execution order documentation",
+        "AWS idempotency guidance"
+      ],
+      "established": "Regenerating or compacting a plan while retaining positional identities can bind a different operation to an old identity. Replay keys and retained decisions directly precede this question.",
+      "residual_or_caveat": "A fresh-model witness can illustrate the known order/identity hazard, not establish its first discovery."
+    },
+    {
+      "id": "revocation_fence",
+      "antecedents": [
+        "Root-Scoped Quiescence (2609.21284)",
+        "Revocation Is Not Complete at Receipt (2610.15991)",
+        "Chubby",
+        "Hazelcast FencedLock",
+        "Temporal MCP cancellation docs"
+      ],
+      "established": "Revocation or cancellation must reach protected-effect admission; an old worker or completed transport acknowledgement is insufficient.",
+      "residual_or_caveat": "A memory API with no promised quiescence has a feature boundary, not automatically a contract defect."
+    },
+    {
+      "id": "immutable_binding_current_authority",
+      "antecedents": [
+        "Root-Scoped Quiescence (2609.21284)",
+        "Authority Succession (2610.00347)",
+        "ACRFence",
+        "RIFL"
+      ],
+      "established": "Immutable accepted-operation binding and monotone current authority answer different questions; epochs, exact rebind and historical obligations already make this distinction.",
+      "residual_or_caveat": "Dedup-before-fence can return historical success without new mutation; fence-before-dedup can deny. Typed status contracts are required before declaring either incorrect."
+    },
+    {
+      "id": "memory_history_lifecycle",
+      "antecedents": [
+        "MemTX",
+        "TOKI",
+        "MemState/GEM",
+        "Revoked but Still Authoritative (2609.08258)",
+        "Execution-State Unlearning (2609.04875)",
+        "Memora",
+        "TimlMemBench"
+      ],
+      "established": "Lifecycle changes, stale writes, dependency repair, memory exposure and trajectory correctness already extend evaluation beyond recall.",
+      "residual_or_caveat": "No first beyond-recall memory benchmark claim is supportable from this audit."
+    },
+    {
+      "id": "multi_record_constraints",
+      "antecedents": [
+        "Classical SQL write skew",
+        "Serializable snapshot isolation",
+        "Verified Concurrency Anomalies (2606.17182)",
+        "TOKI",
+        "Cordon",
+        "Agentic Transaction"
+      ],
+      "established": "Independently valid conditional writes can jointly violate a predicate; per-key linearizability and snapshot isolation do not supply arbitrary multi-record serializability.",
+      "residual_or_caveat": "Write skew is classical. A MemTX partial-commit path should not be scored against an unclaimed whole-plan invariant."
+    },
+    {
+      "id": "identity_lifetime_reuse",
+      "antecedents": [
+        "RIFL safe reclamation",
+        "AWS DynamoDB TransactWriteItems token window",
+        "Stripe API v1 idempotency",
+        "Temporal Nexus retention",
+        "Authority Succession"
+      ],
+      "established": "Dedup state has an explicit validity/reclamation scope. Legitimate later occurrences and stale earlier retries must be distinguished.",
+      "residual_or_caveat": "Reexecution after an advertised retention window is not a violation. Permanent content-hash suppression is not equivalent to operation identity."
+    },
+    {
+      "id": "public_implementation_conformance",
+      "antecedents": [
+        "MemTX primary/code pair",
+        "Mem0 public issues/discussions",
+        "Jepsen",
+        "Elle"
+      ],
+      "established": "Independent histories and effect/cardinality oracles can test whether a pinned implementation realizes a narrowly stated contract.",
+      "residual_or_caveat": "A bounded discrepancy is useful evidence but does not by itself establish a new protocol, general prevalence or journal readiness."
+    },
+    {
+      "id": "bounded_retrieval_dedup",
+      "antecedents": [
+        "Mem0 discussion #6726",
+        "MiniMem public Mem0 code-reading note",
+        "Lore pinned-source audit",
+        "Mem0 issue #6515",
+        "Mem0 issue #7612"
+      ],
+      "established": "Write-time semantic duplicate recognition is publicly described as candidate bounded; concurrency and expiration separately affect exact-hash handling.",
+      "residual_or_caveat": "A conditional sequential literal N−k capacity witness is narrower than these reports, but broad retrieval-to-write dependence is already described."
+    }
+  ]
+}

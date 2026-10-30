@@ -1,0 +1,155 @@
+{
+  "reviewed_utc": "2026-10-30T04:59:50.655074+00:00",
+  "scope": "Focused public issue, discussion, audit-note and pinned-source search; absence of an identical witness is not proof of first discovery.",
+  "source_cutoff": "2026-10-29 inclusive",
+  "full_text_or_code_redistributed": false,
+  "pinned_commit": "26cdefb46600c0fa5953c4b5ee5003c125539fc4",
+  "pinned_source": [
+    {
+      "key": "mem0_main_pinned",
+      "url": "https://raw.githubusercontent.com/mem0ai/mem0/26cdefb46600c0fa5953c4b5ee5003c125539fc4/mem0/memory/main.py",
+      "retrieved_utc": "2026-10-30T04:57:04.041414+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "f329ca4a17af1fbefb32ac10d4cc7ae7ddbdb7435a87eb74c30915cff98b8b7c",
+      "bytes": 169881
+    },
+    {
+      "key": "mem0_prompt_pinned",
+      "url": "https://raw.githubusercontent.com/mem0ai/mem0/26cdefb46600c0fa5953c4b5ee5003c125539fc4/mem0/configs/prompts.py",
+      "retrieved_utc": "2026-10-30T04:57:04.041685+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "10bc8a34b3b5f0ce24560a2a3190c9112b979a891b981f48393bbd168d915a5c",
+      "bytes": 64064
+    }
+  ],
+  "source_locations": [
+    {
+      "path": "mem0/memory/main.py",
+      "locations": [
+        "881–1034 sync inferred add",
+        "2556–2710 async counterpart"
+      ],
+      "observation": "One top_k=10 existing_results cohort supplies both extraction context and existing_hashes; current-batch hashes are separate and accepted facts receive new UUIDs."
+    },
+    {
+      "path": "mem0/configs/prompts.py",
+      "locations": [
+        "503",
+        "511",
+        "578"
+      ],
+      "observation": "Prompt suppression is a separate model-dependent defense; it does not transform a partial exact-hash set into a complete index."
+    }
+  ],
+  "strongest_antecedent": "Discussion #6726 explicitly states the bounded candidate dependency; MiniMem independently states its semantic duplicate consequence.",
+  "remaining_question": "Measure literal replay and derive its conditional capacity bound; no universal deduplication or exactly-once promise is inferred.",
+  "records": [
+    {
+      "id": "discussion6726",
+      "url": "https://github.com/mem0ai/mem0/discussions/6726",
+      "type": "First-person public design discussion; not peer-reviewed evidence",
+      "summary": "Identifies top-ten write-time candidate visibility as a limit on semantic recurrence recognition. Separately assumes exact repeats are caught by MD5; no literal N−k batch experiment was found in the inspected body.",
+      "evidence": {
+        "key": "mem0_discussion6726",
+        "url": "https://github.com/mem0ai/mem0/discussions/6726",
+        "retrieved_utc": "2026-10-30T04:53:57.338794+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "61f8ba1fb2554e8c107ef82298bcb06731baa68cd4392e22bacba049334a245c",
+        "bytes": 235616
+      }
+    },
+    {
+      "id": "issue6515",
+      "url": "https://github.com/mem0ai/mem0/issues/6515",
+      "type": "Public issue with reported reproducer; not rerun in this audit",
+      "summary": "Reports same-fact concurrent calls reading stale pre-insert hashes and inserting distinct UUIDs. This is a TOCTOU race, distinct from sequential candidate capacity.",
+      "evidence": {
+        "key": "mem0_issue6515",
+        "url": "https://github.com/mem0ai/mem0/issues/6515",
+        "retrieved_utc": "2026-10-30T04:53:57.339066+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "b4aa5cee721583a49d5b4253a6bc2a2b8376a8d411be4260ae0a25273e5c6084",
+        "bytes": 281660
+      }
+    },
+    {
+      "id": "issue7612",
+      "url": "https://github.com/mem0ai/mem0/issues/7612",
+      "type": "Public issue with reported real-backend reproducer; not rerun here",
+      "summary": "Reports expired records suppressing a fresh inferred write of the same fact while default reads hide the old record. It demonstrates why exact-content identity needs an explicit validity scope.",
+      "evidence": {
+        "key": "mem0_issue7612",
+        "url": "https://github.com/mem0ai/mem0/issues/7612",
+        "retrieved_utc": "2026-10-30T04:53:57.339154+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "53af83ee9fc2ab010ae4aea8728be5d4e4ab88e3896e86c6f297d8c7c968b3af",
+        "bytes": 364966
+      }
+    },
+    {
+      "id": "issue4896",
+      "url": "https://github.com/mem0ai/mem0/issues/4896",
+      "type": "Public issue and maintainer response",
+      "summary": "Maintainer distinguishes intentional ADD-only contradiction history from exact-text MD5 duplicate suppression. Neither means that inferred ingestion promises request exactly-once semantics.",
+      "evidence": {
+        "key": "mem0_issue4896",
+        "url": "https://github.com/mem0ai/mem0/issues/4896",
+        "retrieved_utc": "2026-10-30T04:53:57.339206+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "2053bf42ff133d6eb596b4639e47848e872e4384fb96a14777d7d178d73b42ee",
+        "bytes": 280623
+      }
+    },
+    {
+      "id": "minimem_note",
+      "url": "https://github.com/jianglong-nie/MiniMem/blob/56da9878747104aefc29a51d178cff22d5bf6870/references/paper-reading/Mem0.md",
+      "type": "Independent public source-reading note; primary evidence of an antecedent claim, not primary evidence for all Mem0 behavior",
+      "summary": "Describes top-ten extraction context and growth of paraphrastic duplicates, while treating MD5 as exact-repeat protection. The file cites June inspection; verifiable repository history is July 30, 2026, commit 56da9878747104aefc29a51d178cff22d5bf6870.",
+      "evidence": {
+        "key": "minimem_pinned_audit",
+        "url": "https://raw.githubusercontent.com/jianglong-nie/MiniMem/56da9878747104aefc29a51d178cff22d5bf6870/references/paper-reading/Mem0.md",
+        "retrieved_utc": "2026-10-30T04:57:04.041773+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "ad2cd4741829e9d81790cd5d86ccaa370c4d41f6323d3847a45ebcb7f595543d",
+        "bytes": 35112
+      }
+    },
+    {
+      "id": "lore_note",
+      "url": "https://github.com/corespeed-io/lore/blob/main/docs/research/mem0-token-efficient-algorithm-audit.md",
+      "type": "Independent pinned-source audit; primary evidence of an antecedent analysis",
+      "summary": "An August-dated audit distinguishes OSS from managed platform and lists ten retrieved records, exact hashing and batch UUID insertion. The inspected passage does not derive or test the literal batch-capacity bound.",
+      "evidence": {
+        "key": "lore_mem0_audit",
+        "url": "https://raw.githubusercontent.com/corespeed-io/lore/main/docs/research/mem0-token-efficient-algorithm-audit.md",
+        "retrieved_utc": "2026-10-30T04:56:24.217273+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "55c21420a8bd1f085d095a87cae76ca4d61204bb555de8856363a571a971b00c",
+        "bytes": 25232
+      }
+    },
+    {
+      "id": "platform_architecture",
+      "url": "https://github.com/mem0ai/mem0/blob/26cdefb46600c0fa5953c4b5ee5003c125539fc4/skills/mem0/references/architecture.md",
+      "type": "Official managed-platform architecture document; platform/OSS scope differs",
+      "summary": "Describes hash duplicate prevention for managed v3. Its top-level platform scope prevents transferring every statement into a guarantee for the tested OSS path.",
+      "evidence": {
+        "key": "mem0_architecture_pinned",
+        "url": "https://raw.githubusercontent.com/mem0ai/mem0/26cdefb46600c0fa5953c4b5ee5003c125539fc4/skills/mem0/references/architecture.md",
+        "retrieved_utc": "2026-10-30T04:56:24.217220+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "65d7404258c323b6310e33c5850f4d0323c8a84151ab46d73ca852b972514342",
+        "bytes": 12488
+      }
+    }
+  ]
+}

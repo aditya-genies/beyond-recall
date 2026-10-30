@@ -1,6 +1,6 @@
 {
   "source_cutoff": "2026-10-29",
-  "scope": "Public prior-work notes for a new standalone operation/receipt/decision experiment. Focused coverage, not an exhaustive survey.",
+  "scope": "Focused original plus expanded public-source literature for independent admission/recovery study; not exhaustive.",
   "experimental_results": "None asserted in this literature package. Scientific claims must use fresh independent implementation and observations.",
   "clusters": [
     {
@@ -130,5 +130,12 @@
       "No inference of production or adversarial-memory safety from scripted local tests."
     ]
   },
-  "citation_policy": "The 36-source library is a working collection, not a citation target. Select references for the final standalone scope. Do not add self-citations, peripheral architectures or cloud documentation to meet a percentage or count."
+  "citation_policy": "The 36-source library is a working collection, not a citation target. Select references for the final standalone scope. Do not add self-citations, peripheral architectures or cloud documentation to meet a percentage or count.",
+  "new_source_claim_map": "extensions/replanning_contracts/literature/new_claim_map.json",
+  "current_experimental_claim_ledger": "extensions/replanning_contracts/new_study_claim_ledger.json",
+  "new_novelty_constraints": [
+    "Public Mem0 candidate-window duplicate risks predate this study; exact-literal admission bound and retrieval exposure are narrower conditional evidence, without a first claim.",
+    "MemTX snapshot probes do not refute its separate action-gating/repair invariants.",
+    "Receipt/epoch/fencing composition, snapshot anomalies, deduplication and backend rollback distinctions have close established antecedents."
+  ]
 }

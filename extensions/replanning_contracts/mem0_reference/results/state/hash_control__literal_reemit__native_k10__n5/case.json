@@ -1,0 +1,509 @@
+{
+  "embedder": "hash_control",
+  "extractor": "literal_reemit",
+  "arm": "native_k10",
+  "n": 5,
+  "attempts": [
+    {
+      "attempt": 0,
+      "result": {
+        "results": [
+          {
+            "id": "5dee63cf-94b2-41b5-aeef-57a75750f7a4",
+            "memory": "The synthetic user prefers mango as a fruit.",
+            "event": "ADD"
+          },
+          {
+            "id": "16f31f21-5adb-4d9e-bac7-672c4b8de3d0",
+            "memory": "The synthetic user prefers jasmine as a flower.",
+            "event": "ADD"
+          },
+          {
+            "id": "5cc5ccde-8b7a-40a0-933b-1cb7ea146ee4",
+            "memory": "The synthetic user prefers emerald as a color.",
+            "event": "ADD"
+          },
+          {
+            "id": "181d892f-4659-4c87-a5d7-d7907604e570",
+            "memory": "The synthetic user prefers cycling as a sport.",
+            "event": "ADD"
+          },
+          {
+            "id": "62cde808-02ee-4f49-9e2b-60b2e5d08b0e",
+            "memory": "The synthetic user prefers chess as a board game.",
+            "event": "ADD"
+          }
+        ]
+      },
+      "records": [
+        {
+          "id": "16f31f21-5adb-4d9e-bac7-672c4b8de3d0",
+          "memory": "The synthetic user prefers jasmine as a flower.",
+          "hash": "de944539935e65890059d8c6daf09839",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690769+00:00",
+          "updated_at": "2026-10-30T05:01:45.690769+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "181d892f-4659-4c87-a5d7-d7907604e570",
+          "memory": "The synthetic user prefers cycling as a sport.",
+          "hash": "a5446bb64a34ff0ad7620c5ad86d8b6b",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690780+00:00",
+          "updated_at": "2026-10-30T05:01:45.690780+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "5cc5ccde-8b7a-40a0-933b-1cb7ea146ee4",
+          "memory": "The synthetic user prefers emerald as a color.",
+          "hash": "6ae50e672fabfe1477808e93d73c6f39",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690775+00:00",
+          "updated_at": "2026-10-30T05:01:45.690775+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "5dee63cf-94b2-41b5-aeef-57a75750f7a4",
+          "memory": "The synthetic user prefers mango as a fruit.",
+          "hash": "ea10f4e3b0fec6eccdf060eb84c7e861",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690761+00:00",
+          "updated_at": "2026-10-30T05:01:45.690761+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "62cde808-02ee-4f49-9e2b-60b2e5d08b0e",
+          "memory": "The synthetic user prefers chess as a board game.",
+          "hash": "099e49886f0923eb687ac870de27a024",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690785+00:00",
+          "updated_at": "2026-10-30T05:01:45.690785+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        }
+      ],
+      "physical_records": 5,
+      "extraction_calls_this_attempt": 1,
+      "search_calls_this_attempt": 1,
+      "distinct_facts": 5,
+      "extra_copies": 0,
+      "fact_set_matches": true,
+      "add_history_rows": 5,
+      "extraction": {
+        "existing": [],
+        "emitted_before_admission_filter": [
+          "The synthetic user prefers mango as a fruit.",
+          "The synthetic user prefers jasmine as a flower.",
+          "The synthetic user prefers emerald as a color.",
+          "The synthetic user prefers cycling as a sport.",
+          "The synthetic user prefers chess as a board game."
+        ],
+        "emitted_texts": [
+          "The synthetic user prefers mango as a fruit.",
+          "The synthetic user prefers jasmine as a flower.",
+          "The synthetic user prefers emerald as a color.",
+          "The synthetic user prefers cycling as a sport.",
+          "The synthetic user prefers chess as a board game."
+        ],
+        "response": {
+          "memory": [
+            {
+              "id": "0",
+              "text": "The synthetic user prefers mango as a fruit.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "1",
+              "text": "The synthetic user prefers jasmine as a flower.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "2",
+              "text": "The synthetic user prefers emerald as a color.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "3",
+              "text": "The synthetic user prefers cycling as a sport.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "4",
+              "text": "The synthetic user prefers chess as a board game.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            }
+          ]
+        },
+        "system_prompt_sha256": "ad19187a37813ef77ee156e714c0650e6ec749e0264bdc07d499bc9b24115155",
+        "user_prompt_sha256": "edca037a731fb90bf5479560bdee93e75d147a47f4dedc8906bd0f38df96f747"
+      },
+      "search": {
+        "requested_top_k": 10,
+        "effective_top_k": 10,
+        "filters": {
+          "user_id": "synthetic-study-user"
+        },
+        "query_sha256": "722da5bfbc90c8bd4cc942ad46d6addcdf4e6ee1ed2b6d74fed13887efa96d79",
+        "returned": []
+      }
+    },
+    {
+      "attempt": 1,
+      "result": {
+        "results": []
+      },
+      "records": [
+        {
+          "id": "16f31f21-5adb-4d9e-bac7-672c4b8de3d0",
+          "memory": "The synthetic user prefers jasmine as a flower.",
+          "hash": "de944539935e65890059d8c6daf09839",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690769+00:00",
+          "updated_at": "2026-10-30T05:01:45.690769+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "181d892f-4659-4c87-a5d7-d7907604e570",
+          "memory": "The synthetic user prefers cycling as a sport.",
+          "hash": "a5446bb64a34ff0ad7620c5ad86d8b6b",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690780+00:00",
+          "updated_at": "2026-10-30T05:01:45.690780+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "5cc5ccde-8b7a-40a0-933b-1cb7ea146ee4",
+          "memory": "The synthetic user prefers emerald as a color.",
+          "hash": "6ae50e672fabfe1477808e93d73c6f39",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690775+00:00",
+          "updated_at": "2026-10-30T05:01:45.690775+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "5dee63cf-94b2-41b5-aeef-57a75750f7a4",
+          "memory": "The synthetic user prefers mango as a fruit.",
+          "hash": "ea10f4e3b0fec6eccdf060eb84c7e861",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690761+00:00",
+          "updated_at": "2026-10-30T05:01:45.690761+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "62cde808-02ee-4f49-9e2b-60b2e5d08b0e",
+          "memory": "The synthetic user prefers chess as a board game.",
+          "hash": "099e49886f0923eb687ac870de27a024",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690785+00:00",
+          "updated_at": "2026-10-30T05:01:45.690785+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        }
+      ],
+      "physical_records": 5,
+      "extraction_calls_this_attempt": 1,
+      "search_calls_this_attempt": 1,
+      "distinct_facts": 5,
+      "extra_copies": 0,
+      "fact_set_matches": true,
+      "add_history_rows": 5,
+      "extraction": {
+        "existing": [
+          {
+            "id": "0",
+            "text": "The synthetic user prefers cycling as a sport."
+          },
+          {
+            "id": "1",
+            "text": "The synthetic user prefers mango as a fruit."
+          },
+          {
+            "id": "2",
+            "text": "The synthetic user prefers emerald as a color."
+          },
+          {
+            "id": "3",
+            "text": "The synthetic user prefers chess as a board game."
+          },
+          {
+            "id": "4",
+            "text": "The synthetic user prefers jasmine as a flower."
+          }
+        ],
+        "emitted_before_admission_filter": [
+          "The synthetic user prefers mango as a fruit.",
+          "The synthetic user prefers jasmine as a flower.",
+          "The synthetic user prefers emerald as a color.",
+          "The synthetic user prefers cycling as a sport.",
+          "The synthetic user prefers chess as a board game."
+        ],
+        "emitted_texts": [
+          "The synthetic user prefers mango as a fruit.",
+          "The synthetic user prefers jasmine as a flower.",
+          "The synthetic user prefers emerald as a color.",
+          "The synthetic user prefers cycling as a sport.",
+          "The synthetic user prefers chess as a board game."
+        ],
+        "response": {
+          "memory": [
+            {
+              "id": "0",
+              "text": "The synthetic user prefers mango as a fruit.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "1",
+              "text": "The synthetic user prefers jasmine as a flower.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "2",
+              "text": "The synthetic user prefers emerald as a color.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "3",
+              "text": "The synthetic user prefers cycling as a sport.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "4",
+              "text": "The synthetic user prefers chess as a board game.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            }
+          ]
+        },
+        "system_prompt_sha256": "ad19187a37813ef77ee156e714c0650e6ec749e0264bdc07d499bc9b24115155",
+        "user_prompt_sha256": "f45173763dc13604c7225a2c0d2b46f0e215229bd86795cde7e16ac008959e61"
+      },
+      "search": {
+        "requested_top_k": 10,
+        "effective_top_k": 10,
+        "filters": {
+          "user_id": "synthetic-study-user"
+        },
+        "query_sha256": "722da5bfbc90c8bd4cc942ad46d6addcdf4e6ee1ed2b6d74fed13887efa96d79",
+        "returned": [
+          {
+            "id": "181d892f-4659-4c87-a5d7-d7907604e570",
+            "text": "The synthetic user prefers cycling as a sport.",
+            "hash": "a5446bb64a34ff0ad7620c5ad86d8b6b"
+          },
+          {
+            "id": "5dee63cf-94b2-41b5-aeef-57a75750f7a4",
+            "text": "The synthetic user prefers mango as a fruit.",
+            "hash": "ea10f4e3b0fec6eccdf060eb84c7e861"
+          },
+          {
+            "id": "5cc5ccde-8b7a-40a0-933b-1cb7ea146ee4",
+            "text": "The synthetic user prefers emerald as a color.",
+            "hash": "6ae50e672fabfe1477808e93d73c6f39"
+          },
+          {
+            "id": "62cde808-02ee-4f49-9e2b-60b2e5d08b0e",
+            "text": "The synthetic user prefers chess as a board game.",
+            "hash": "099e49886f0923eb687ac870de27a024"
+          },
+          {
+            "id": "16f31f21-5adb-4d9e-bac7-672c4b8de3d0",
+            "text": "The synthetic user prefers jasmine as a flower.",
+            "hash": "de944539935e65890059d8c6daf09839"
+          }
+        ]
+      }
+    },
+    {
+      "attempt": 2,
+      "result": {
+        "results": []
+      },
+      "records": [
+        {
+          "id": "16f31f21-5adb-4d9e-bac7-672c4b8de3d0",
+          "memory": "The synthetic user prefers jasmine as a flower.",
+          "hash": "de944539935e65890059d8c6daf09839",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690769+00:00",
+          "updated_at": "2026-10-30T05:01:45.690769+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "181d892f-4659-4c87-a5d7-d7907604e570",
+          "memory": "The synthetic user prefers cycling as a sport.",
+          "hash": "a5446bb64a34ff0ad7620c5ad86d8b6b",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690780+00:00",
+          "updated_at": "2026-10-30T05:01:45.690780+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "5cc5ccde-8b7a-40a0-933b-1cb7ea146ee4",
+          "memory": "The synthetic user prefers emerald as a color.",
+          "hash": "6ae50e672fabfe1477808e93d73c6f39",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690775+00:00",
+          "updated_at": "2026-10-30T05:01:45.690775+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "5dee63cf-94b2-41b5-aeef-57a75750f7a4",
+          "memory": "The synthetic user prefers mango as a fruit.",
+          "hash": "ea10f4e3b0fec6eccdf060eb84c7e861",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690761+00:00",
+          "updated_at": "2026-10-30T05:01:45.690761+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "62cde808-02ee-4f49-9e2b-60b2e5d08b0e",
+          "memory": "The synthetic user prefers chess as a board game.",
+          "hash": "099e49886f0923eb687ac870de27a024",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:45.690785+00:00",
+          "updated_at": "2026-10-30T05:01:45.690785+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        }
+      ],
+      "physical_records": 5,
+      "extraction_calls_this_attempt": 1,
+      "search_calls_this_attempt": 1,
+      "distinct_facts": 5,
+      "extra_copies": 0,
+      "fact_set_matches": true,
+      "add_history_rows": 5,
+      "extraction": {
+        "existing": [
+          {
+            "id": "0",
+            "text": "The synthetic user prefers cycling as a sport."
+          },
+          {
+            "id": "1",
+            "text": "The synthetic user prefers mango as a fruit."
+          },
+          {
+            "id": "2",
+            "text": "The synthetic user prefers emerald as a color."
+          },
+          {
+            "id": "3",
+            "text": "The synthetic user prefers chess as a board game."
+          },
+          {
+            "id": "4",
+            "text": "The synthetic user prefers jasmine as a flower."
+          }
+        ],
+        "emitted_before_admission_filter": [
+          "The synthetic user prefers mango as a fruit.",
+          "The synthetic user prefers jasmine as a flower.",
+          "The synthetic user prefers emerald as a color.",
+          "The synthetic user prefers cycling as a sport.",
+          "The synthetic user prefers chess as a board game."
+        ],
+        "emitted_texts": [
+          "The synthetic user prefers mango as a fruit.",
+          "The synthetic user prefers jasmine as a flower.",
+          "The synthetic user prefers emerald as a color.",
+          "The synthetic user prefers cycling as a sport.",
+          "The synthetic user prefers chess as a board game."
+        ],
+        "response": {
+          "memory": [
+            {
+              "id": "0",
+              "text": "The synthetic user prefers mango as a fruit.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "1",
+              "text": "The synthetic user prefers jasmine as a flower.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "2",
+              "text": "The synthetic user prefers emerald as a color.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "3",
+              "text": "The synthetic user prefers cycling as a sport.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "4",
+              "text": "The synthetic user prefers chess as a board game.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            }
+          ]
+        },
+        "system_prompt_sha256": "ad19187a37813ef77ee156e714c0650e6ec749e0264bdc07d499bc9b24115155",
+        "user_prompt_sha256": "b3f8f2dcca0c5d81db1ea2b63263d1dbec3b63691150be5b2a367b50a437ca76"
+      },
+      "search": {
+        "requested_top_k": 10,
+        "effective_top_k": 10,
+        "filters": {
+          "user_id": "synthetic-study-user"
+        },
+        "query_sha256": "722da5bfbc90c8bd4cc942ad46d6addcdf4e6ee1ed2b6d74fed13887efa96d79",
+        "returned": [
+          {
+            "id": "181d892f-4659-4c87-a5d7-d7907604e570",
+            "text": "The synthetic user prefers cycling as a sport.",
+            "hash": "a5446bb64a34ff0ad7620c5ad86d8b6b"
+          },
+          {
+            "id": "5dee63cf-94b2-41b5-aeef-57a75750f7a4",
+            "text": "The synthetic user prefers mango as a fruit.",
+            "hash": "ea10f4e3b0fec6eccdf060eb84c7e861"
+          },
+          {
+            "id": "5cc5ccde-8b7a-40a0-933b-1cb7ea146ee4",
+            "text": "The synthetic user prefers emerald as a color.",
+            "hash": "6ae50e672fabfe1477808e93d73c6f39"
+          },
+          {
+            "id": "62cde808-02ee-4f49-9e2b-60b2e5d08b0e",
+            "text": "The synthetic user prefers chess as a board game.",
+            "hash": "099e49886f0923eb687ac870de27a024"
+          },
+          {
+            "id": "16f31f21-5adb-4d9e-bac7-672c4b8de3d0",
+            "text": "The synthetic user prefers jasmine as a flower.",
+            "hash": "de944539935e65890059d8c6daf09839"
+          }
+        ]
+      }
+    }
+  ]
+}

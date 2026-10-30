@@ -1,0 +1,57 @@
+{
+  "full_text_or_code_included_in_repository": false,
+  "records": [
+    {
+      "key": "mem0_main_pinned",
+      "url": "https://raw.githubusercontent.com/mem0ai/mem0/26cdefb46600c0fa5953c4b5ee5003c125539fc4/mem0/memory/main.py",
+      "retrieved_utc": "2026-10-30T04:57:04.041414+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/mem0ai/mem0/26cdefb46600c0fa5953c4b5ee5003c125539fc4/mem0/memory/main.py",
+      "content_type": "text/plain; charset=utf-8",
+      "status": "saved_external_cache",
+      "cache_filename": "mem0_main_pinned.py",
+      "sha256": "f329ca4a17af1fbefb32ac10d4cc7ae7ddbdb7435a87eb74c30915cff98b8b7c",
+      "bytes": 169881
+    },
+    {
+      "key": "mem0_prompt_pinned",
+      "url": "https://raw.githubusercontent.com/mem0ai/mem0/26cdefb46600c0fa5953c4b5ee5003c125539fc4/mem0/configs/prompts.py",
+      "retrieved_utc": "2026-10-30T04:57:04.041685+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/mem0ai/mem0/26cdefb46600c0fa5953c4b5ee5003c125539fc4/mem0/configs/prompts.py",
+      "content_type": "text/plain; charset=utf-8",
+      "status": "saved_external_cache",
+      "cache_filename": "mem0_prompt_pinned.py",
+      "sha256": "10bc8a34b3b5f0ce24560a2a3190c9112b979a891b981f48393bbd168d915a5c",
+      "bytes": 64064
+    },
+    {
+      "key": "minimem_pinned_audit",
+      "url": "https://raw.githubusercontent.com/jianglong-nie/MiniMem/56da9878747104aefc29a51d178cff22d5bf6870/references/paper-reading/Mem0.md",
+      "retrieved_utc": "2026-10-30T04:57:04.041773+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/jianglong-nie/MiniMem/56da9878747104aefc29a51d178cff22d5bf6870/references/paper-reading/Mem0.md",
+      "content_type": "text/plain; charset=utf-8",
+      "status": "saved_external_cache",
+      "cache_filename": "minimem_pinned_audit.md",
+      "sha256": "ad2cd4741829e9d81790cd5d86ccaa370c4d41f6323d3847a45ebcb7f595543d",
+      "bytes": 35112
+    },
+    {
+      "key": "lore_audit_history",
+      "url": "https://api.github.com/repos/corespeed-io/lore/commits?path=docs/research/mem0-token-efficient-algorithm-audit.md&per_page=10",
+      "retrieved_utc": "2026-10-30T04:57:04.041829+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/corespeed-io/lore/commits?path=docs/research/mem0-token-efficient-algorithm-audit.md&per_page=10",
+      "content_type": "application/json; charset=utf-8",
+      "status": "saved_external_cache",
+      "cache_filename": "lore_audit_history.json",
+      "sha256": "f1b31cce243272fb17c68805e09334fe0964eadce70fbe79ffb08f63bc7e36e6",
+      "bytes": 3252
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "full_text_or_code_redistributed": false,
+  "records": [
+    {
+      "key": "qdrant_client_v1200_readme",
+      "url": "https://raw.githubusercontent.com/qdrant/qdrant-client/v1.20.0/README.md",
+      "retrieved_utc": "2026-10-30T05:07:30.393805+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/qdrant/qdrant-client/v1.20.0/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "status": "saved_external_cache",
+      "cache_filename": "qdrant_client_v1200_readme.md",
+      "sha256": "af98ffcf41e43b1f2313acb8014c573f2a0c9261c3ff3ee5f3005a008dc3720c",
+      "bytes": 10211
+    },
+    {
+      "key": "fastembed_v091_readme",
+      "url": "https://raw.githubusercontent.com/qdrant/fastembed/v0.9.1/README.md",
+      "retrieved_utc": "2026-10-30T05:07:30.394087+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/qdrant/fastembed/v0.9.1/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "status": "saved_external_cache",
+      "cache_filename": "fastembed_v091_readme.md",
+      "sha256": "b668f400f8f275e634c62aa828c03595369f2d5d4a2724b540b1cfafcab24334",
+      "bytes": 8931
+    },
+    {
+      "key": "bge_small_model_card",
+      "url": "https://huggingface.co/BAAI/bge-small-en-v1.5/raw/main/README.md",
+      "retrieved_utc": "2026-10-30T05:07:30.394177+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://huggingface.co/BAAI/bge-small-en-v1.5/raw/main/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "status": "saved_external_cache",
+      "cache_filename": "bge_small_model_card.md",
+      "sha256": "ddb964361a55c6e5dfca6361615854b260c9c960205d04c7520151aaa1d75837",
+      "bytes": 94783
+    },
+    {
+      "key": "qdrant_client_1200_pypi",
+      "url": "https://pypi.org/pypi/qdrant-client/1.20.0/json",
+      "retrieved_utc": "2026-10-30T05:08:59.948702+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://pypi.org/pypi/qdrant-client/1.20.0/json",
+      "content_type": "application/json",
+      "status": "saved_external_cache",
+      "cache_filename": "qdrant_client_1200_pypi.json",
+      "sha256": "080805b24b422cc46f80e856e6bdd342f4b32cb6f3df09022305d813e8b23594",
+      "bytes": 14245
+    },
+    {
+      "key": "fastembed_091_pypi",
+      "url": "https://pypi.org/pypi/fastembed/0.9.1/json",
+      "retrieved_utc": "2026-10-30T05:08:59.949039+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://pypi.org/pypi/fastembed/0.9.1/json",
+      "content_type": "application/json",
+      "status": "saved_external_cache",
+      "cache_filename": "fastembed_091_pypi.json",
+      "sha256": "17953f6e9bd683fade11cebe66e400e6e8731bf9340d122d199690d5d38e6f79",
+      "bytes": 13280
+    },
+    {
+      "key": "mem0_221_pypi",
+      "url": "https://pypi.org/pypi/mem0ai/2.2.1/json",
+      "retrieved_utc": "2026-10-30T05:08:59.949170+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://pypi.org/pypi/mem0ai/2.2.1/json",
+      "content_type": "application/json",
+      "status": "saved_external_cache",
+      "cache_filename": "mem0_221_pypi.json",
+      "sha256": "ae80a8d48f789fd35a821573f3a76117b751e22d801390da817d5ef1f57619e9",
+      "bytes": 17206
+    }
+  ]
+}

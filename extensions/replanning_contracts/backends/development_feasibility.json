@@ -1,0 +1,49 @@
+{
+  "phase": "DEVELOPMENT_FEASIBILITY_ONLY",
+  "not_part_of_any_frozen_campaign": true,
+  "python": "3.14.3",
+  "sqlite": "3.51.2",
+  "redis_py": "8.1.0",
+  "existing_services_or_credentials_used": false,
+  "probes": {
+    "fresh_random_authentication_enforced": true,
+    "native_lua_effect_and_receipt_success": true,
+    "redis_runtime_wrongtype_after_write_retains_prior_effect": true,
+    "watch_multi_exec_rejects_intervening_write": true,
+    "aof_survives_controlled_server_restart": true,
+    "sqlite_explicit_rollback_removes_effect_after_receipt_error": true
+  },
+  "redis_runtime": {
+    "image": {
+      "Id": "sha256:2c933526722b4126a61d5c170f766dc159adf97682f0b1cbbc27b1666ba96d84",
+      "RepoDigests": [
+        "redis@sha256:2c933526722b4126a61d5c170f766dc159adf97682f0b1cbbc27b1666ba96d84"
+      ],
+      "Architecture": "arm64",
+      "Os": "linux",
+      "Created": "2026-10-26T16:41:25.380557127Z"
+    },
+    "resolved_image": "redis@sha256:2c933526722b4126a61d5c170f766dc159adf97682f0b1cbbc27b1666ba96d84",
+    "redis_version": "7.2.17",
+    "server_os": "Linux 7.0.14-linuxkit aarch64",
+    "server_arch_bits": 64,
+    "binding": "127.0.0.1, ephemeral host port",
+    "study_only_random_credential": true,
+    "docker_client_config": "Fresh temporary empty auth config; explicit local Unix socket",
+    "persistence": {
+      "appendonly": "yes",
+      "appendfsync": "always"
+    },
+    "network": "Fresh dedicated Docker bridge with only the study server; loopback host publication",
+    "volume": "Fresh study-only volume"
+  },
+  "error_probe_script_sha256": "353f468b499f9b0d3c61e67f1ec2bb3b6be3f64f47b802a572d8c46891199142",
+  "restart_scope": "Docker graceful restart with same fresh volume; no power-loss or failover claim",
+  "owned_service_cleanup": {
+    "container": true,
+    "volume": true,
+    "network": true
+  },
+  "status": "PASS_DEVELOPMENT_FEASIBILITY",
+  "interpretation": "Native transaction/script capabilities and one known runtime-error difference; not a frozen contract campaign, performance result or new backend discovery."
+}

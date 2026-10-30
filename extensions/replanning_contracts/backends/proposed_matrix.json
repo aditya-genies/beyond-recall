@@ -1,0 +1,25 @@
+{
+  "phase": "PROPOSED_NOT_FROZEN",
+  "histories": 13,
+  "implementation_profiles": 4,
+  "backends": 2,
+  "declared_cells": 104,
+  "not_applicable_cells": 8,
+  "proposed_applicable_cells": 96,
+  "n_a_rules": [
+    "Separate receipt-storage WRONGTYPE/schema case has no separate key/table in envelope:2cells.",
+    "After-effect/before-receipt external cut applies only to split:6cells."
+  ],
+  "protocol": "DESIGN.md",
+  "development_evidence": "development_feasibility.json",
+  "needs_root_model_alignment": [
+    "Durable prepared-body binding owned by backend or caller journal",
+    "Exact authority/version/visibility transition on revoke",
+    "Grouped new-write primitive is explicitly weaker than a robust in-script receipt lookup"
+  ],
+  "source_hashes": {
+    "services.py": "b42651edc8bcbf33200f5d67796e971fd820aea594cfa439cd1dbf2f3a210efc",
+    "probe_feasibility.py": "ca4c6dcaec14ce00158137d7ce83af98aaca0da62497172eb561a2716c9c22ff",
+    "DESIGN.md": "6ed7c1a6813e5cdf618619d14f4a38c9c6366794f838e549e17e072dd5ea1fac"
+  }
+}

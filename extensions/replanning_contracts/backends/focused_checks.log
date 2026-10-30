@@ -1,0 +1,26 @@
+test_actual_abrupt_child_exit_and_new_process_retry (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_actual_abrupt_child_exit_and_new_process_retry) ... ok
+test_checker_reads_sqlite_without_mutation (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_reads_sqlite_without_mutation) ... ok
+test_checker_rejects_altered_physical_sqlite (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_altered_physical_sqlite) ... ok
+test_checker_rejects_changed_prepared_body (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_changed_prepared_body) ... ok
+test_checker_rejects_fake_crash_barrier (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_fake_crash_barrier) ... ok
+test_checker_rejects_forged_acknowledgement (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_forged_acknowledgement) ... ok
+test_checker_rejects_forged_aof_grouping_with_identical_key_writes (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_forged_aof_grouping_with_identical_key_writes) ... ok
+test_checker_rejects_forged_native_return (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_forged_native_return) ... ok
+test_checker_rejects_hidden_native_aof_write_even_if_final_state_same (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_hidden_native_aof_write_even_if_final_state_same) ... ok
+test_checker_rejects_hidden_state_change (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_hidden_state_change) ... ok
+test_checker_rejects_impossible_two_process_outcome (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_impossible_two_process_outcome) ... ok
+test_checker_rejects_misclassified_na (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_misclassified_na) ... ok
+test_checker_rejects_missing_success_receipt (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_missing_success_receipt) ... ok
+test_effect_time_epoch_guard_uses_unchanged_version (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_effect_time_epoch_guard_uses_unchanged_version) ... ok
+test_preflight_cannot_predict_valid_schema_trigger_error (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_preflight_cannot_predict_valid_schema_trigger_error) ... ok
+test_prepared_journal_is_immutable_before_success (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_prepared_journal_is_immutable_before_success) ... ok
+test_receipt_retry_historic_ack_does_not_restore_revoked_value (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_receipt_retry_historic_ack_does_not_restore_revoked_value) ... ok
+test_redis_grouped_real_wrongtype_keeps_effect_preflight_prevents (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_redis_grouped_real_wrongtype_keeps_effect_preflight_prevents) ... ok
+test_same_matrix_has_104_declared_96_applicable_8_na (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_same_matrix_has_104_declared_96_applicable_8_na) ... ok
+test_sqlite_grouped_error_rolls_back_but_split_keeps_effect (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_sqlite_grouped_error_rolls_back_but_split_keeps_effect) ... ok
+test_two_fresh_processes_native_receipt_recheck (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_two_fresh_processes_native_receipt_recheck) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 1.968s
+
+OK

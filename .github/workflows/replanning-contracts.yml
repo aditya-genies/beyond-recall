@@ -1,0 +1,177 @@
+name: Verify replanning contracts
+
+on:
+  push:
+    paths:
+      - 'extensions/replanning_contracts/**'
+      - '.github/workflows/replanning-contracts.yml'
+  pull_request:
+    paths:
+      - 'extensions/replanning_contracts/**'
+      - '.github/workflows/replanning-contracts.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  PIP_CONFIG_FILE: /dev/null
+  PIP_INDEX_URL: https://pypi.org/simple
+  PIP_EXTRA_INDEX_URL: ''
+  PIP_FIND_LINKS: ''
+  PIP_KEYRING_PROVIDER: disabled
+  PIP_DISABLE_PIP_VERSION_CHECK: '1'
+  HF_HUB_OFFLINE: '1'
+  TRANSFORMERS_OFFLINE: '1'
+  MEM0_TELEMETRY: 'false'
+
+jobs:
+  archived-evidence:
+    name: Check archived Mem0 and MemTX evidence without model calls
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      CI_EVIDENCE: ${{ runner.temp }}/replanning-archive-evidence
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.14.3'
+      - name: Install recorded public runtime packages
+        timeout-minutes: 12
+        run: |
+          mkdir -p "$CI_EVIDENCE"
+          python -m pip install --index-url https://pypi.org/simple -r extensions/replanning_contracts/mem0_reference/requirements-runtime.lock.txt
+          python -m pip check
+          python -m pip freeze > "$CI_EVIDENCE/resolved-runtime.txt"
+          python -c "import sys,sqlite3; print(sys.version); print('SQLite',sqlite3.sqlite_version)" > "$CI_EVIDENCE/platform.txt"
+      - name: Exercise controlled, live and retrieval forgery fixtures
+        timeout-minutes: 3
+        run: python -m unittest discover -v -s extensions/replanning_contracts/mem0_reference -p 'test_check*.py' 2>&1 | tee "$CI_EVIDENCE/negative-fixtures.txt"
+      - name: Verify archived controlled Mem0 stores and calls
+        timeout-minutes: 3
+        run: python extensions/replanning_contracts/mem0_reference/check.py --out extensions/replanning_contracts/mem0_reference/results --report "$CI_EVIDENCE/mem0-controlled.json"
+      - name: Verify archived live Mem0 evidence without a live request
+        timeout-minutes: 3
+        run: python extensions/replanning_contracts/mem0_reference/check_live.py --out extensions/replanning_contracts/mem0_reference/live_results --report "$CI_EVIDENCE/mem0-live.json"
+      - name: Audit retrieval stores and retained reproduction with a declared runtime limit
+        timeout-minutes: 3
+        run: |
+          python - <<'PY'
+          import importlib.metadata, json, os, sqlite3, sys
+          from pathlib import Path
+          here=Path('extensions/replanning_contracts/mem0_reference').resolve()
+          sys.path.insert(0,str(here))
+          import check_retrieval as checker
+          report=checker.audit(here,here/'retrieval_results')
+          report['computational_reproduction']=checker.verify_reproduction(here,here/'retrieval_results',here/'retrieval_reproduction',report)
+          report['checker_sha256']=checker.digest(here/'check_retrieval.py')
+          # Do not monkeypatch or weaken verify_runtime(): it requires the exact
+          # original macOS sys.version/build text and SQLite, unavailable here.
+          frozen=checker.load(here/'results/frozen_spec.json')['environment']
+          versions={name:importlib.metadata.version(name) for name in frozen['packages']}
+          checker.require(versions==frozen['packages'],'Frozen runtime package versions differ')
+          report['runtime_integrity']={
+              'status':'NOT_RUN',
+              'reason':'Exact original macOS Python build string/SQLite equality is not asserted on Ubuntu; unchanged audit and retained-store reconciliation ran separately.',
+              'frozen_package_versions_match':True,
+              'frozen_python':frozen['python'],'frozen_sqlite':frozen['sqlite'],
+              'current_python':sys.version,'current_sqlite':sqlite3.sqlite_version,
+              'model_calls_made_by_this_job':0}
+          target=Path(os.environ['CI_EVIDENCE'])/'mem0-retrieval-raw-audit.json'
+          target.write_text(json.dumps(report,indent=2)+'\n')
+          print(json.dumps({key:report[key] for key in ['status','native_search_calls','unique_baseline_queries','runtime_integrity']},indent=2))
+          PY
+      - name: Verify archived MemTX traces in a temporary copy
+        timeout-minutes: 2
+        run: |
+          python - <<'PY'
+          import os, shutil, subprocess, sys
+          from pathlib import Path
+          source=Path('extensions/replanning_contracts/memtx_reference')
+          target=Path(os.environ['CI_EVIDENCE'])/'memtx-archive'
+          shutil.copytree(source,target)
+          # This unchanged checker has no output flag and writes HERE/results.
+          # Only the temporary copy receives its regenerated verification.json.
+          subprocess.run([sys.executable,str(target/'check.py')],check=True,timeout=60)
+          PY
+      - name: Confirm tracked frozen evidence was not rewritten
+        if: always()
+        timeout-minutes: 1
+        run: git diff --exit-code -- extensions/replanning_contracts/mem0_reference extensions/replanning_contracts/memtx_reference
+      - name: Retain archive verification reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: replanning-archived-evidence
+          path: ${{ env.CI_EVIDENCE }}
+          retention-days: 7
+
+  backend-reproduction:
+    name: Reproduce bounded native SQLite and Redis contracts
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      CI_EVIDENCE: ${{ runner.temp }}/replanning-backend-evidence
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.14.3'
+      - name: Install the pinned public Redis client
+        timeout-minutes: 2
+        run: |
+          mkdir -p "$CI_EVIDENCE"
+          python -m pip install --index-url https://pypi.org/simple -r extensions/replanning_contracts/backends/requirements.lock.txt
+          python -m pip check
+          python -m pip freeze > "$CI_EVIDENCE/resolved-runtime.txt"
+          python -c "import sys,sqlite3; print(sys.version); print('SQLite',sqlite3.sqlite_version)" > "$CI_EVIDENCE/platform.txt"
+      - name: Run native backend and negative-checker tests
+        timeout-minutes: 5
+        run: python -m unittest -v extensions.replanning_contracts.backends.test_backends 2>&1 | tee "$CI_EVIDENCE/focused-tests.txt"
+      - name: Verify archived raw SQLite databases and native Redis AOF
+        timeout-minutes: 2
+        run: python -m extensions.replanning_contracts.backends.check extensions/replanning_contracts/backends/results --report "$CI_EVIDENCE/archived-backends.json"
+      - name: Reproduce the frozen 104-cell matrix with fresh owned resources
+        timeout-minutes: 5
+        run: python -m extensions.replanning_contracts.backends.campaign run extensions/replanning_contracts/backends/my-ci-results --spec extensions/replanning_contracts/backends/frozen_spec.json 2>&1 | tee "$CI_EVIDENCE/campaign.txt"
+      - name: Independently verify reproduced physical state and compare bounded outcomes
+        timeout-minutes: 2
+        run: |
+          python -m extensions.replanning_contracts.backends.check extensions/replanning_contracts/backends/my-ci-results --report "$CI_EVIDENCE/reproduced-backends.json" --csv "$CI_EVIDENCE/reproduced-cells.csv"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          root=Path(os.environ['CI_EVIDENCE'])
+          old=json.loads((root/'archived-backends.json').read_text())
+          new=json.loads((root/'reproduced-backends.json').read_text())
+          fields=['declared_cells','applicable_cells','not_applicable_cells','attempts','abrupt_exit_87','by_backend_profile']
+          for field in fields:
+              if new[field]!=old[field]:raise AssertionError('Reproduction outcome mismatch: '+field)
+          report={'status':'PASS','compared_fields':fields,
+              'meaning':'Same bounded aggregate outcomes, not byte-identical race winners or independent statistical samples.',
+              'declared_cells':new['declared_cells'],'executed_cells':new['applicable_cells'],'not_applicable_cells':new['not_applicable_cells']}
+          (root/'aggregate-comparison.json').write_text(json.dumps(report,indent=2)+'\n')
+          print(json.dumps(report,indent=2))
+          PY
+      - name: Confirm tracked frozen backend evidence was not rewritten
+        if: always()
+        timeout-minutes: 1
+        run: git diff --exit-code -- extensions/replanning_contracts/backends
+      - name: Retain backend verification and native raw evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: replanning-backend-reproduction
+          path: |
+            ${{ env.CI_EVIDENCE }}
+            extensions/replanning_contracts/backends/my-ci-results
+          retention-days: 7

@@ -1,0 +1,911 @@
+{
+  "embedder": "bge_small",
+  "extractor": "visible_delta",
+  "arm": "widened_candidates",
+  "n": 13,
+  "attempts": [
+    {
+      "attempt": 0,
+      "result": {
+        "results": [
+          {
+            "id": "a5b9f22b-ec6e-40e7-ab18-eea666d270fc",
+            "memory": "The synthetic user prefers mango as a fruit.",
+            "event": "ADD"
+          },
+          {
+            "id": "c42f6fa5-e2ca-4f08-bbe4-22d18e264977",
+            "memory": "The synthetic user prefers jasmine as a flower.",
+            "event": "ADD"
+          },
+          {
+            "id": "ec3c96db-5ab7-4296-9acc-af077746faba",
+            "memory": "The synthetic user prefers emerald as a color.",
+            "event": "ADD"
+          },
+          {
+            "id": "68daf7c1-ccc7-4b4d-9e5a-583c8f097850",
+            "memory": "The synthetic user prefers cycling as a sport.",
+            "event": "ADD"
+          },
+          {
+            "id": "b5ee1c61-b8e6-40e0-a92e-423b5d198a7e",
+            "memory": "The synthetic user prefers chess as a board game.",
+            "event": "ADD"
+          },
+          {
+            "id": "029f8e2c-df00-4a51-8ad7-79693fe61b8a",
+            "memory": "The synthetic user prefers violin as an instrument.",
+            "event": "ADD"
+          },
+          {
+            "id": "d7a4b4fe-59ee-401f-bea7-2b294d7864ec",
+            "memory": "The synthetic user prefers espresso as a coffee.",
+            "event": "ADD"
+          },
+          {
+            "id": "ec797c25-d0ce-4a27-90ec-ef4e6f541a12",
+            "memory": "The synthetic user prefers chamomile as a tea.",
+            "event": "ADD"
+          },
+          {
+            "id": "9ac325c2-5a72-4381-b8db-a20100bee07f",
+            "memory": "The synthetic user prefers rye as a bread.",
+            "event": "ADD"
+          },
+          {
+            "id": "6374248a-97d8-4c40-bc0a-3a223a8c5ee9",
+            "memory": "The synthetic user prefers lentils as a soup.",
+            "event": "ADD"
+          },
+          {
+            "id": "12f6ff03-e7a5-4468-bb98-02129618d72e",
+            "memory": "The synthetic user prefers pine as a tree.",
+            "event": "ADD"
+          },
+          {
+            "id": "4bb73585-b870-460a-b367-d5b26969bdd6",
+            "memory": "The synthetic user prefers quartz as a mineral.",
+            "event": "ADD"
+          },
+          {
+            "id": "183fc672-3e55-4ec8-a22d-796feb87d403",
+            "memory": "The synthetic user prefers astronomy as a science.",
+            "event": "ADD"
+          }
+        ]
+      },
+      "records": [
+        {
+          "id": "029f8e2c-df00-4a51-8ad7-79693fe61b8a",
+          "memory": "The synthetic user prefers violin as an instrument.",
+          "hash": "d3a37751756651da6bf1b7a6087cee1b",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790325+00:00",
+          "updated_at": "2026-10-30T05:01:57.790325+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "12f6ff03-e7a5-4468-bb98-02129618d72e",
+          "memory": "The synthetic user prefers pine as a tree.",
+          "hash": "533ac5ee74ae1748d42979831856e79d",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790347+00:00",
+          "updated_at": "2026-10-30T05:01:57.790347+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "183fc672-3e55-4ec8-a22d-796feb87d403",
+          "memory": "The synthetic user prefers astronomy as a science.",
+          "hash": "630e1314a59f43449911ad8da4d3e220",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790356+00:00",
+          "updated_at": "2026-10-30T05:01:57.790356+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "4bb73585-b870-460a-b367-d5b26969bdd6",
+          "memory": "The synthetic user prefers quartz as a mineral.",
+          "hash": "c9f0292ff776c6b9b2383d8b5e4d5bd2",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790352+00:00",
+          "updated_at": "2026-10-30T05:01:57.790352+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "6374248a-97d8-4c40-bc0a-3a223a8c5ee9",
+          "memory": "The synthetic user prefers lentils as a soup.",
+          "hash": "4728301044f76a58749d8ab6c2301a02",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790343+00:00",
+          "updated_at": "2026-10-30T05:01:57.790343+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "68daf7c1-ccc7-4b4d-9e5a-583c8f097850",
+          "memory": "The synthetic user prefers cycling as a sport.",
+          "hash": "a5446bb64a34ff0ad7620c5ad86d8b6b",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790315+00:00",
+          "updated_at": "2026-10-30T05:01:57.790315+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "9ac325c2-5a72-4381-b8db-a20100bee07f",
+          "memory": "The synthetic user prefers rye as a bread.",
+          "hash": "e508ce8cd8a4e6d93abdd4e273524433",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790339+00:00",
+          "updated_at": "2026-10-30T05:01:57.790339+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "a5b9f22b-ec6e-40e7-ab18-eea666d270fc",
+          "memory": "The synthetic user prefers mango as a fruit.",
+          "hash": "ea10f4e3b0fec6eccdf060eb84c7e861",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790293+00:00",
+          "updated_at": "2026-10-30T05:01:57.790293+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "b5ee1c61-b8e6-40e0-a92e-423b5d198a7e",
+          "memory": "The synthetic user prefers chess as a board game.",
+          "hash": "099e49886f0923eb687ac870de27a024",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790320+00:00",
+          "updated_at": "2026-10-30T05:01:57.790320+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "c42f6fa5-e2ca-4f08-bbe4-22d18e264977",
+          "memory": "The synthetic user prefers jasmine as a flower.",
+          "hash": "de944539935e65890059d8c6daf09839",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790305+00:00",
+          "updated_at": "2026-10-30T05:01:57.790305+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "d7a4b4fe-59ee-401f-bea7-2b294d7864ec",
+          "memory": "The synthetic user prefers espresso as a coffee.",
+          "hash": "b4cf209eb0b679a144c121a12502c7c6",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790330+00:00",
+          "updated_at": "2026-10-30T05:01:57.790330+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "ec3c96db-5ab7-4296-9acc-af077746faba",
+          "memory": "The synthetic user prefers emerald as a color.",
+          "hash": "6ae50e672fabfe1477808e93d73c6f39",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790310+00:00",
+          "updated_at": "2026-10-30T05:01:57.790310+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "ec797c25-d0ce-4a27-90ec-ef4e6f541a12",
+          "memory": "The synthetic user prefers chamomile as a tea.",
+          "hash": "119788638c84c4c677d7d6594a29c5f6",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790334+00:00",
+          "updated_at": "2026-10-30T05:01:57.790334+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        }
+      ],
+      "physical_records": 13,
+      "extraction_calls_this_attempt": 1,
+      "search_calls_this_attempt": 1,
+      "distinct_facts": 13,
+      "extra_copies": 0,
+      "fact_set_matches": true,
+      "add_history_rows": 13,
+      "extraction": {
+        "existing": [],
+        "emitted_before_admission_filter": [
+          "The synthetic user prefers mango as a fruit.",
+          "The synthetic user prefers jasmine as a flower.",
+          "The synthetic user prefers emerald as a color.",
+          "The synthetic user prefers cycling as a sport.",
+          "The synthetic user prefers chess as a board game.",
+          "The synthetic user prefers violin as an instrument.",
+          "The synthetic user prefers espresso as a coffee.",
+          "The synthetic user prefers chamomile as a tea.",
+          "The synthetic user prefers rye as a bread.",
+          "The synthetic user prefers lentils as a soup.",
+          "The synthetic user prefers pine as a tree.",
+          "The synthetic user prefers quartz as a mineral.",
+          "The synthetic user prefers astronomy as a science."
+        ],
+        "emitted_texts": [
+          "The synthetic user prefers mango as a fruit.",
+          "The synthetic user prefers jasmine as a flower.",
+          "The synthetic user prefers emerald as a color.",
+          "The synthetic user prefers cycling as a sport.",
+          "The synthetic user prefers chess as a board game.",
+          "The synthetic user prefers violin as an instrument.",
+          "The synthetic user prefers espresso as a coffee.",
+          "The synthetic user prefers chamomile as a tea.",
+          "The synthetic user prefers rye as a bread.",
+          "The synthetic user prefers lentils as a soup.",
+          "The synthetic user prefers pine as a tree.",
+          "The synthetic user prefers quartz as a mineral.",
+          "The synthetic user prefers astronomy as a science."
+        ],
+        "response": {
+          "memory": [
+            {
+              "id": "0",
+              "text": "The synthetic user prefers mango as a fruit.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "1",
+              "text": "The synthetic user prefers jasmine as a flower.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "2",
+              "text": "The synthetic user prefers emerald as a color.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "3",
+              "text": "The synthetic user prefers cycling as a sport.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "4",
+              "text": "The synthetic user prefers chess as a board game.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "5",
+              "text": "The synthetic user prefers violin as an instrument.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "6",
+              "text": "The synthetic user prefers espresso as a coffee.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "7",
+              "text": "The synthetic user prefers chamomile as a tea.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "8",
+              "text": "The synthetic user prefers rye as a bread.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "9",
+              "text": "The synthetic user prefers lentils as a soup.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "10",
+              "text": "The synthetic user prefers pine as a tree.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "11",
+              "text": "The synthetic user prefers quartz as a mineral.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            },
+            {
+              "id": "12",
+              "text": "The synthetic user prefers astronomy as a science.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            }
+          ]
+        },
+        "system_prompt_sha256": "ad19187a37813ef77ee156e714c0650e6ec749e0264bdc07d499bc9b24115155",
+        "user_prompt_sha256": "c2f944467f0142f1dc2ba8803add2e035df9713cf1fc9a536fd9781c3b14e23f"
+      },
+      "search": {
+        "requested_top_k": 10,
+        "effective_top_k": 10000,
+        "filters": {
+          "user_id": "synthetic-study-user"
+        },
+        "query_sha256": "f3c6fd7df2aecd8b83a29f5b0b78c6638ddfacf03cada71d6fab13f720dc3bd3",
+        "returned": []
+      }
+    },
+    {
+      "attempt": 1,
+      "result": {
+        "results": []
+      },
+      "records": [
+        {
+          "id": "029f8e2c-df00-4a51-8ad7-79693fe61b8a",
+          "memory": "The synthetic user prefers violin as an instrument.",
+          "hash": "d3a37751756651da6bf1b7a6087cee1b",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790325+00:00",
+          "updated_at": "2026-10-30T05:01:57.790325+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "12f6ff03-e7a5-4468-bb98-02129618d72e",
+          "memory": "The synthetic user prefers pine as a tree.",
+          "hash": "533ac5ee74ae1748d42979831856e79d",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790347+00:00",
+          "updated_at": "2026-10-30T05:01:57.790347+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "183fc672-3e55-4ec8-a22d-796feb87d403",
+          "memory": "The synthetic user prefers astronomy as a science.",
+          "hash": "630e1314a59f43449911ad8da4d3e220",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790356+00:00",
+          "updated_at": "2026-10-30T05:01:57.790356+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "4bb73585-b870-460a-b367-d5b26969bdd6",
+          "memory": "The synthetic user prefers quartz as a mineral.",
+          "hash": "c9f0292ff776c6b9b2383d8b5e4d5bd2",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790352+00:00",
+          "updated_at": "2026-10-30T05:01:57.790352+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "6374248a-97d8-4c40-bc0a-3a223a8c5ee9",
+          "memory": "The synthetic user prefers lentils as a soup.",
+          "hash": "4728301044f76a58749d8ab6c2301a02",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790343+00:00",
+          "updated_at": "2026-10-30T05:01:57.790343+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "68daf7c1-ccc7-4b4d-9e5a-583c8f097850",
+          "memory": "The synthetic user prefers cycling as a sport.",
+          "hash": "a5446bb64a34ff0ad7620c5ad86d8b6b",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790315+00:00",
+          "updated_at": "2026-10-30T05:01:57.790315+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "9ac325c2-5a72-4381-b8db-a20100bee07f",
+          "memory": "The synthetic user prefers rye as a bread.",
+          "hash": "e508ce8cd8a4e6d93abdd4e273524433",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790339+00:00",
+          "updated_at": "2026-10-30T05:01:57.790339+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "a5b9f22b-ec6e-40e7-ab18-eea666d270fc",
+          "memory": "The synthetic user prefers mango as a fruit.",
+          "hash": "ea10f4e3b0fec6eccdf060eb84c7e861",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790293+00:00",
+          "updated_at": "2026-10-30T05:01:57.790293+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "b5ee1c61-b8e6-40e0-a92e-423b5d198a7e",
+          "memory": "The synthetic user prefers chess as a board game.",
+          "hash": "099e49886f0923eb687ac870de27a024",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790320+00:00",
+          "updated_at": "2026-10-30T05:01:57.790320+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "c42f6fa5-e2ca-4f08-bbe4-22d18e264977",
+          "memory": "The synthetic user prefers jasmine as a flower.",
+          "hash": "de944539935e65890059d8c6daf09839",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790305+00:00",
+          "updated_at": "2026-10-30T05:01:57.790305+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "d7a4b4fe-59ee-401f-bea7-2b294d7864ec",
+          "memory": "The synthetic user prefers espresso as a coffee.",
+          "hash": "b4cf209eb0b679a144c121a12502c7c6",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790330+00:00",
+          "updated_at": "2026-10-30T05:01:57.790330+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "ec3c96db-5ab7-4296-9acc-af077746faba",
+          "memory": "The synthetic user prefers emerald as a color.",
+          "hash": "6ae50e672fabfe1477808e93d73c6f39",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790310+00:00",
+          "updated_at": "2026-10-30T05:01:57.790310+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "ec797c25-d0ce-4a27-90ec-ef4e6f541a12",
+          "memory": "The synthetic user prefers chamomile as a tea.",
+          "hash": "119788638c84c4c677d7d6594a29c5f6",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790334+00:00",
+          "updated_at": "2026-10-30T05:01:57.790334+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        }
+      ],
+      "physical_records": 13,
+      "extraction_calls_this_attempt": 1,
+      "search_calls_this_attempt": 1,
+      "distinct_facts": 13,
+      "extra_copies": 0,
+      "fact_set_matches": true,
+      "add_history_rows": 13,
+      "extraction": {
+        "existing": [
+          {
+            "id": "0",
+            "text": "The synthetic user prefers mango as a fruit."
+          },
+          {
+            "id": "1",
+            "text": "The synthetic user prefers chamomile as a tea."
+          },
+          {
+            "id": "2",
+            "text": "The synthetic user prefers espresso as a coffee."
+          },
+          {
+            "id": "3",
+            "text": "The synthetic user prefers jasmine as a flower."
+          },
+          {
+            "id": "4",
+            "text": "The synthetic user prefers quartz as a mineral."
+          },
+          {
+            "id": "5",
+            "text": "The synthetic user prefers emerald as a color."
+          },
+          {
+            "id": "6",
+            "text": "The synthetic user prefers rye as a bread."
+          },
+          {
+            "id": "7",
+            "text": "The synthetic user prefers lentils as a soup."
+          },
+          {
+            "id": "8",
+            "text": "The synthetic user prefers pine as a tree."
+          },
+          {
+            "id": "9",
+            "text": "The synthetic user prefers violin as an instrument."
+          },
+          {
+            "id": "10",
+            "text": "The synthetic user prefers astronomy as a science."
+          },
+          {
+            "id": "11",
+            "text": "The synthetic user prefers cycling as a sport."
+          },
+          {
+            "id": "12",
+            "text": "The synthetic user prefers chess as a board game."
+          }
+        ],
+        "emitted_before_admission_filter": [],
+        "emitted_texts": [],
+        "response": {
+          "memory": []
+        },
+        "system_prompt_sha256": "ad19187a37813ef77ee156e714c0650e6ec749e0264bdc07d499bc9b24115155",
+        "user_prompt_sha256": "9166b13926f5e9c9ccb130bfa1e07e31ef6c977bd8ee38743542aa7c36d9a2e0"
+      },
+      "search": {
+        "requested_top_k": 10,
+        "effective_top_k": 10000,
+        "filters": {
+          "user_id": "synthetic-study-user"
+        },
+        "query_sha256": "f3c6fd7df2aecd8b83a29f5b0b78c6638ddfacf03cada71d6fab13f720dc3bd3",
+        "returned": [
+          {
+            "id": "a5b9f22b-ec6e-40e7-ab18-eea666d270fc",
+            "text": "The synthetic user prefers mango as a fruit.",
+            "hash": "ea10f4e3b0fec6eccdf060eb84c7e861"
+          },
+          {
+            "id": "ec797c25-d0ce-4a27-90ec-ef4e6f541a12",
+            "text": "The synthetic user prefers chamomile as a tea.",
+            "hash": "119788638c84c4c677d7d6594a29c5f6"
+          },
+          {
+            "id": "d7a4b4fe-59ee-401f-bea7-2b294d7864ec",
+            "text": "The synthetic user prefers espresso as a coffee.",
+            "hash": "b4cf209eb0b679a144c121a12502c7c6"
+          },
+          {
+            "id": "c42f6fa5-e2ca-4f08-bbe4-22d18e264977",
+            "text": "The synthetic user prefers jasmine as a flower.",
+            "hash": "de944539935e65890059d8c6daf09839"
+          },
+          {
+            "id": "4bb73585-b870-460a-b367-d5b26969bdd6",
+            "text": "The synthetic user prefers quartz as a mineral.",
+            "hash": "c9f0292ff776c6b9b2383d8b5e4d5bd2"
+          },
+          {
+            "id": "ec3c96db-5ab7-4296-9acc-af077746faba",
+            "text": "The synthetic user prefers emerald as a color.",
+            "hash": "6ae50e672fabfe1477808e93d73c6f39"
+          },
+          {
+            "id": "9ac325c2-5a72-4381-b8db-a20100bee07f",
+            "text": "The synthetic user prefers rye as a bread.",
+            "hash": "e508ce8cd8a4e6d93abdd4e273524433"
+          },
+          {
+            "id": "6374248a-97d8-4c40-bc0a-3a223a8c5ee9",
+            "text": "The synthetic user prefers lentils as a soup.",
+            "hash": "4728301044f76a58749d8ab6c2301a02"
+          },
+          {
+            "id": "12f6ff03-e7a5-4468-bb98-02129618d72e",
+            "text": "The synthetic user prefers pine as a tree.",
+            "hash": "533ac5ee74ae1748d42979831856e79d"
+          },
+          {
+            "id": "029f8e2c-df00-4a51-8ad7-79693fe61b8a",
+            "text": "The synthetic user prefers violin as an instrument.",
+            "hash": "d3a37751756651da6bf1b7a6087cee1b"
+          },
+          {
+            "id": "183fc672-3e55-4ec8-a22d-796feb87d403",
+            "text": "The synthetic user prefers astronomy as a science.",
+            "hash": "630e1314a59f43449911ad8da4d3e220"
+          },
+          {
+            "id": "68daf7c1-ccc7-4b4d-9e5a-583c8f097850",
+            "text": "The synthetic user prefers cycling as a sport.",
+            "hash": "a5446bb64a34ff0ad7620c5ad86d8b6b"
+          },
+          {
+            "id": "b5ee1c61-b8e6-40e0-a92e-423b5d198a7e",
+            "text": "The synthetic user prefers chess as a board game.",
+            "hash": "099e49886f0923eb687ac870de27a024"
+          }
+        ]
+      }
+    },
+    {
+      "attempt": 2,
+      "result": {
+        "results": []
+      },
+      "records": [
+        {
+          "id": "029f8e2c-df00-4a51-8ad7-79693fe61b8a",
+          "memory": "The synthetic user prefers violin as an instrument.",
+          "hash": "d3a37751756651da6bf1b7a6087cee1b",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790325+00:00",
+          "updated_at": "2026-10-30T05:01:57.790325+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "12f6ff03-e7a5-4468-bb98-02129618d72e",
+          "memory": "The synthetic user prefers pine as a tree.",
+          "hash": "533ac5ee74ae1748d42979831856e79d",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790347+00:00",
+          "updated_at": "2026-10-30T05:01:57.790347+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "183fc672-3e55-4ec8-a22d-796feb87d403",
+          "memory": "The synthetic user prefers astronomy as a science.",
+          "hash": "630e1314a59f43449911ad8da4d3e220",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790356+00:00",
+          "updated_at": "2026-10-30T05:01:57.790356+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "4bb73585-b870-460a-b367-d5b26969bdd6",
+          "memory": "The synthetic user prefers quartz as a mineral.",
+          "hash": "c9f0292ff776c6b9b2383d8b5e4d5bd2",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790352+00:00",
+          "updated_at": "2026-10-30T05:01:57.790352+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "6374248a-97d8-4c40-bc0a-3a223a8c5ee9",
+          "memory": "The synthetic user prefers lentils as a soup.",
+          "hash": "4728301044f76a58749d8ab6c2301a02",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790343+00:00",
+          "updated_at": "2026-10-30T05:01:57.790343+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "68daf7c1-ccc7-4b4d-9e5a-583c8f097850",
+          "memory": "The synthetic user prefers cycling as a sport.",
+          "hash": "a5446bb64a34ff0ad7620c5ad86d8b6b",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790315+00:00",
+          "updated_at": "2026-10-30T05:01:57.790315+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "9ac325c2-5a72-4381-b8db-a20100bee07f",
+          "memory": "The synthetic user prefers rye as a bread.",
+          "hash": "e508ce8cd8a4e6d93abdd4e273524433",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790339+00:00",
+          "updated_at": "2026-10-30T05:01:57.790339+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "a5b9f22b-ec6e-40e7-ab18-eea666d270fc",
+          "memory": "The synthetic user prefers mango as a fruit.",
+          "hash": "ea10f4e3b0fec6eccdf060eb84c7e861",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790293+00:00",
+          "updated_at": "2026-10-30T05:01:57.790293+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "b5ee1c61-b8e6-40e0-a92e-423b5d198a7e",
+          "memory": "The synthetic user prefers chess as a board game.",
+          "hash": "099e49886f0923eb687ac870de27a024",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790320+00:00",
+          "updated_at": "2026-10-30T05:01:57.790320+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "c42f6fa5-e2ca-4f08-bbe4-22d18e264977",
+          "memory": "The synthetic user prefers jasmine as a flower.",
+          "hash": "de944539935e65890059d8c6daf09839",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790305+00:00",
+          "updated_at": "2026-10-30T05:01:57.790305+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "d7a4b4fe-59ee-401f-bea7-2b294d7864ec",
+          "memory": "The synthetic user prefers espresso as a coffee.",
+          "hash": "b4cf209eb0b679a144c121a12502c7c6",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790330+00:00",
+          "updated_at": "2026-10-30T05:01:57.790330+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "ec3c96db-5ab7-4296-9acc-af077746faba",
+          "memory": "The synthetic user prefers emerald as a color.",
+          "hash": "6ae50e672fabfe1477808e93d73c6f39",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790310+00:00",
+          "updated_at": "2026-10-30T05:01:57.790310+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        },
+        {
+          "id": "ec797c25-d0ce-4a27-90ec-ef4e6f541a12",
+          "memory": "The synthetic user prefers chamomile as a tea.",
+          "hash": "119788638c84c4c677d7d6594a29c5f6",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.790334+00:00",
+          "updated_at": "2026-10-30T05:01:57.790334+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        }
+      ],
+      "physical_records": 13,
+      "extraction_calls_this_attempt": 1,
+      "search_calls_this_attempt": 1,
+      "distinct_facts": 13,
+      "extra_copies": 0,
+      "fact_set_matches": true,
+      "add_history_rows": 13,
+      "extraction": {
+        "existing": [
+          {
+            "id": "0",
+            "text": "The synthetic user prefers mango as a fruit."
+          },
+          {
+            "id": "1",
+            "text": "The synthetic user prefers chamomile as a tea."
+          },
+          {
+            "id": "2",
+            "text": "The synthetic user prefers espresso as a coffee."
+          },
+          {
+            "id": "3",
+            "text": "The synthetic user prefers jasmine as a flower."
+          },
+          {
+            "id": "4",
+            "text": "The synthetic user prefers quartz as a mineral."
+          },
+          {
+            "id": "5",
+            "text": "The synthetic user prefers emerald as a color."
+          },
+          {
+            "id": "6",
+            "text": "The synthetic user prefers rye as a bread."
+          },
+          {
+            "id": "7",
+            "text": "The synthetic user prefers lentils as a soup."
+          },
+          {
+            "id": "8",
+            "text": "The synthetic user prefers pine as a tree."
+          },
+          {
+            "id": "9",
+            "text": "The synthetic user prefers violin as an instrument."
+          },
+          {
+            "id": "10",
+            "text": "The synthetic user prefers astronomy as a science."
+          },
+          {
+            "id": "11",
+            "text": "The synthetic user prefers cycling as a sport."
+          },
+          {
+            "id": "12",
+            "text": "The synthetic user prefers chess as a board game."
+          }
+        ],
+        "emitted_before_admission_filter": [],
+        "emitted_texts": [],
+        "response": {
+          "memory": []
+        },
+        "system_prompt_sha256": "ad19187a37813ef77ee156e714c0650e6ec749e0264bdc07d499bc9b24115155",
+        "user_prompt_sha256": "8d33fe0a2fa1841e35dc8960514101c973dccb95e511ec6e18b517f5f194d52c"
+      },
+      "search": {
+        "requested_top_k": 10,
+        "effective_top_k": 10000,
+        "filters": {
+          "user_id": "synthetic-study-user"
+        },
+        "query_sha256": "f3c6fd7df2aecd8b83a29f5b0b78c6638ddfacf03cada71d6fab13f720dc3bd3",
+        "returned": [
+          {
+            "id": "a5b9f22b-ec6e-40e7-ab18-eea666d270fc",
+            "text": "The synthetic user prefers mango as a fruit.",
+            "hash": "ea10f4e3b0fec6eccdf060eb84c7e861"
+          },
+          {
+            "id": "ec797c25-d0ce-4a27-90ec-ef4e6f541a12",
+            "text": "The synthetic user prefers chamomile as a tea.",
+            "hash": "119788638c84c4c677d7d6594a29c5f6"
+          },
+          {
+            "id": "d7a4b4fe-59ee-401f-bea7-2b294d7864ec",
+            "text": "The synthetic user prefers espresso as a coffee.",
+            "hash": "b4cf209eb0b679a144c121a12502c7c6"
+          },
+          {
+            "id": "c42f6fa5-e2ca-4f08-bbe4-22d18e264977",
+            "text": "The synthetic user prefers jasmine as a flower.",
+            "hash": "de944539935e65890059d8c6daf09839"
+          },
+          {
+            "id": "4bb73585-b870-460a-b367-d5b26969bdd6",
+            "text": "The synthetic user prefers quartz as a mineral.",
+            "hash": "c9f0292ff776c6b9b2383d8b5e4d5bd2"
+          },
+          {
+            "id": "ec3c96db-5ab7-4296-9acc-af077746faba",
+            "text": "The synthetic user prefers emerald as a color.",
+            "hash": "6ae50e672fabfe1477808e93d73c6f39"
+          },
+          {
+            "id": "9ac325c2-5a72-4381-b8db-a20100bee07f",
+            "text": "The synthetic user prefers rye as a bread.",
+            "hash": "e508ce8cd8a4e6d93abdd4e273524433"
+          },
+          {
+            "id": "6374248a-97d8-4c40-bc0a-3a223a8c5ee9",
+            "text": "The synthetic user prefers lentils as a soup.",
+            "hash": "4728301044f76a58749d8ab6c2301a02"
+          },
+          {
+            "id": "12f6ff03-e7a5-4468-bb98-02129618d72e",
+            "text": "The synthetic user prefers pine as a tree.",
+            "hash": "533ac5ee74ae1748d42979831856e79d"
+          },
+          {
+            "id": "029f8e2c-df00-4a51-8ad7-79693fe61b8a",
+            "text": "The synthetic user prefers violin as an instrument.",
+            "hash": "d3a37751756651da6bf1b7a6087cee1b"
+          },
+          {
+            "id": "183fc672-3e55-4ec8-a22d-796feb87d403",
+            "text": "The synthetic user prefers astronomy as a science.",
+            "hash": "630e1314a59f43449911ad8da4d3e220"
+          },
+          {
+            "id": "68daf7c1-ccc7-4b4d-9e5a-583c8f097850",
+            "text": "The synthetic user prefers cycling as a sport.",
+            "hash": "a5446bb64a34ff0ad7620c5ad86d8b6b"
+          },
+          {
+            "id": "b5ee1c61-b8e6-40e0-a92e-423b5d198a7e",
+            "text": "The synthetic user prefers chess as a board game.",
+            "hash": "099e49886f0923eb687ac870de27a024"
+          }
+        ]
+      }
+    }
+  ]
+}

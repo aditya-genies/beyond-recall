@@ -1,0 +1,38 @@
+{
+  "raw": {
+    "receipts_data": {
+      "B": "{\"outcome\":{\"value\":\"contender\",\"epoch\":0,\"version\":1},\"body\":\"{\\\"expected_epoch\\\":0,\\\"expected_version\\\":0,\\\"target\\\":\\\"record\\\",\\\"value\\\":\\\"contender\\\"}\"}"
+    },
+    "receipts_type": "hash",
+    "state_json": "{\"visible\":true,\"history\":[{\"version\":1,\"epoch\":0,\"value\":\"contender\",\"kind\":\"participant\",\"opid\":\"B\",\"body\":\"{\\\"expected_epoch\\\":0,\\\"expected_version\\\":0,\\\"target\\\":\\\"record\\\",\\\"value\\\":\\\"contender\\\"}\"}],\"version\":1,\"origin\":\"B\",\"value\":\"contender\",\"epoch\":0,\"record_epoch\":0}"
+  },
+  "receipt_storage": "hash",
+  "receipts": {
+    "B": {
+      "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"contender\"}",
+      "outcome": {
+        "epoch": 0,
+        "value": "contender",
+        "version": 1
+      }
+    }
+  },
+  "state": {
+    "epoch": 0,
+    "history": [
+      {
+        "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"contender\"}",
+        "epoch": 0,
+        "kind": "participant",
+        "opid": "B",
+        "value": "contender",
+        "version": 1
+      }
+    ],
+    "origin": "B",
+    "record_epoch": 0,
+    "value": "contender",
+    "version": 1,
+    "visible": true
+  }
+}

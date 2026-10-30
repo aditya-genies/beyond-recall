@@ -1,0 +1,706 @@
+{
+  "status": "PASS",
+  "coordinate_system": "300-DPI pixels, bottom-left origin",
+  "canvas_px": [
+    1350,
+    1080
+  ],
+  "bboxes": {
+    "axes": [
+      202.5,
+      221.4,
+      1235.25,
+      788.4
+    ],
+    "legend": [
+      202.5,
+      810.037,
+      870.333,
+      948.24
+    ],
+    "title": [
+      47.25,
+      1024.292,
+      950.25,
+      1058.4
+    ],
+    "subtitle": [
+      47.25,
+      976.894,
+      850.25,
+      1004.4
+    ],
+    "xlabel": [
+      570.875,
+      115.983,
+      866.875,
+      145.15
+    ],
+    "ylabel": [
+      72.75,
+      319.4,
+      101.917,
+      690.4
+    ],
+    "limit_note": [
+      465.382,
+      674.89,
+      748.382,
+      735.9
+    ],
+    "endpoint_label_0": [
+      1168.397,
+      415.933,
+      1210.664,
+      446.867
+    ],
+    "endpoint_label_1": [
+      1168.397,
+      573.433,
+      1210.664,
+      604.367
+    ],
+    "endpoint_label_2": [
+      1168.397,
+      730.933,
+      1229.664,
+      761.867
+    ],
+    "footer_0": [
+      47.25,
+      66.554,
+      1007.25,
+      90.721
+    ],
+    "footer_1": [
+      47.25,
+      21.294,
+      1058.25,
+      45.044
+    ],
+    "xtick_0": [
+      194.0,
+      170.15,
+      211.0,
+      196.817
+    ],
+    "xtick_1": [
+      420.216,
+      170.15,
+      454.216,
+      196.817
+    ],
+    "xtick_2": [
+      654.932,
+      170.15,
+      688.932,
+      196.817
+    ],
+    "xtick_3": [
+      889.648,
+      170.15,
+      923.648,
+      196.817
+    ],
+    "xtick_4": [
+      1124.364,
+      170.15,
+      1158.364,
+      196.817
+    ],
+    "ytick_0": [
+      160.917,
+      204.864,
+      177.917,
+      231.53
+    ],
+    "ytick_1": [
+      143.917,
+      309.864,
+      177.917,
+      336.53
+    ],
+    "ytick_2": [
+      143.917,
+      414.864,
+      177.917,
+      441.53
+    ],
+    "ytick_3": [
+      143.917,
+      519.864,
+      177.917,
+      546.53
+    ],
+    "ytick_4": [
+      143.917,
+      624.864,
+      177.917,
+      651.53
+    ],
+    "ytick_5": [
+      126.917,
+      729.864,
+      177.917,
+      756.53
+    ],
+    "endpoint_marker_0": [
+      1134.697,
+      424.733,
+      1148.03,
+      438.067
+    ],
+    "endpoint_marker_1": [
+      1134.697,
+      582.233,
+      1148.03,
+      595.567
+    ],
+    "endpoint_marker_2": [
+      1134.697,
+      739.733,
+      1148.03,
+      753.067
+    ]
+  },
+  "checks": [
+    {
+      "first": "legend",
+      "second": "axes",
+      "gap_px": 21.637,
+      "required_gap_px": 12,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "legend",
+      "second": "subtitle",
+      "gap_px": 28.654,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "subtitle",
+      "second": "title",
+      "gap_px": 19.892,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "legend",
+      "second": "limit_note",
+      "gap_px": 74.137,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "legend",
+      "second": "endpoint_label_0",
+      "gap_px": 363.171,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "endpoint_label_0",
+      "second": "endpoint_marker_0",
+      "gap_px": 20.367,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "endpoint_label_0",
+      "second": "endpoint_label_1",
+      "gap_px": 126.567,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "endpoint_label_0",
+      "second": "endpoint_label_2",
+      "gap_px": 284.067,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "legend",
+      "second": "endpoint_label_1",
+      "gap_px": 298.064,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "endpoint_label_1",
+      "second": "endpoint_marker_1",
+      "gap_px": 20.367,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "endpoint_label_1",
+      "second": "endpoint_label_2",
+      "gap_px": 126.567,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "legend",
+      "second": "endpoint_label_2",
+      "gap_px": 298.064,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "endpoint_label_2",
+      "second": "endpoint_marker_2",
+      "gap_px": 20.367,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "axes",
+      "gap_px": 130.679,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "legend",
+      "gap_px": 719.316,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "title",
+      "gap_px": 933.571,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "subtitle",
+      "gap_px": 886.173,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "xlabel",
+      "gap_px": 25.262,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "ylabel",
+      "gap_px": 228.679,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "limit_note",
+      "gap_px": 584.169,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "endpoint_label_0",
+      "gap_px": 325.212,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "endpoint_label_1",
+      "gap_px": 482.712,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "endpoint_label_2",
+      "gap_px": 640.212,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "xtick_0",
+      "gap_px": 79.429,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "xtick_1",
+      "gap_px": 79.429,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "xtick_2",
+      "gap_px": 79.429,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "xtick_3",
+      "gap_px": 79.429,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "xtick_4",
+      "gap_px": 117.114,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "ytick_0",
+      "gap_px": 114.143,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "ytick_1",
+      "gap_px": 219.143,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "ytick_2",
+      "gap_px": 324.143,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "ytick_3",
+      "gap_px": 429.143,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "ytick_4",
+      "gap_px": 534.143,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "ytick_5",
+      "gap_px": 639.143,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "endpoint_marker_0",
+      "gap_px": 334.012,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "endpoint_marker_1",
+      "gap_px": 491.512,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "endpoint_marker_2",
+      "gap_px": 649.012,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "axes",
+      "gap_px": 176.356,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "legend",
+      "gap_px": 764.993,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "title",
+      "gap_px": 979.248,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "subtitle",
+      "gap_px": 931.849,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "xlabel",
+      "gap_px": 70.939,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "ylabel",
+      "gap_px": 274.356,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "limit_note",
+      "gap_px": 629.846,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "endpoint_label_0",
+      "gap_px": 370.889,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "endpoint_label_1",
+      "gap_px": 528.389,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "endpoint_label_2",
+      "gap_px": 685.889,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "xtick_0",
+      "gap_px": 125.106,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "xtick_1",
+      "gap_px": 125.106,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "xtick_2",
+      "gap_px": 125.106,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "xtick_3",
+      "gap_px": 125.106,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "xtick_4",
+      "gap_px": 125.106,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "ytick_0",
+      "gap_px": 159.819,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "ytick_1",
+      "gap_px": 264.819,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "ytick_2",
+      "gap_px": 369.819,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "ytick_3",
+      "gap_px": 474.819,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "ytick_4",
+      "gap_px": 579.819,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "ytick_5",
+      "gap_px": 684.819,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "endpoint_marker_0",
+      "gap_px": 379.689,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "endpoint_marker_1",
+      "gap_px": 537.189,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_1",
+      "second": "endpoint_marker_2",
+      "gap_px": 694.689,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "footer_0",
+      "second": "footer_1",
+      "gap_px": 21.51,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "xlabel",
+      "second": "xtick_0",
+      "gap_px": 359.875,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "xlabel",
+      "second": "xtick_1",
+      "gap_px": 116.659,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "xlabel",
+      "second": "xtick_2",
+      "gap_px": 25.0,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "xlabel",
+      "second": "xtick_3",
+      "gap_px": 25.0,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    },
+    {
+      "first": "xlabel",
+      "second": "xtick_4",
+      "gap_px": 257.489,
+      "required_gap_px": 6,
+      "overlap": false,
+      "passed": true
+    }
+  ],
+  "outside_canvas": [],
+  "scope": "Critical legend/axes/labels and footer/xlabel/labels separations; explicit endpoint marker clearance. Pixel inspection is additionally required."
+}

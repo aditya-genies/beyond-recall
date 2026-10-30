@@ -1,0 +1,750 @@
+{
+  "reviewed_utc": "2026-10-30T04:59:50.655074+00:00",
+  "scope": "Evidence index for the overlap matrix; inclusion is not a request to add every source to the manuscript bibliography.",
+  "new_scholarly_records": [
+    {
+      "arxiv_id": "2607.23929",
+      "title": "MemTX: Transactional Belief Commit for Stateful Agent Memory",
+      "evidence": [
+        {
+          "key": "2607_23929_abs",
+          "url": "https://arxiv.org/abs/2607.23929",
+          "retrieved_utc": "2026-10-30T04:47:37.309819+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "479f2eabcaf714aecb2e8d7ac7cd675540461d39341a882f233f22e64efc7a97",
+          "bytes": 42624
+        },
+        {
+          "key": "2607_23929_html",
+          "url": "https://arxiv.org/html/2607.23929",
+          "retrieved_utc": "2026-10-30T04:47:37.310281+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "2a5e53179a9510c8ec95bf966d91f0a2f7907bf4bcbd3a9b2616930dfea52299",
+          "bytes": 266309
+        },
+        {
+          "key": "2607_23929_pdf",
+          "url": "https://arxiv.org/pdf/2607.23929",
+          "retrieved_utc": "2026-10-30T04:47:37.310356+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "70a55fada7121a5d47fae3185fd09dca18d69826020dcb165323c044c65b1944",
+          "bytes": 848643
+        },
+        {
+          "key": "2607_23929_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2607.23929",
+          "retrieved_utc": "2026-10-30T04:47:37.310407+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "f99fa012fec4683cdcb0e69588a8edb988c0fc623f132c0f98fe8a2bcab360d6",
+          "bytes": 10920
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2609.21284",
+      "title": "Authorization Revocation for Long-Running AI Agents: Root-Scoped Quiescence under Delegation and Asynchronous Execution",
+      "evidence": [
+        {
+          "key": "2609_21284_abs",
+          "url": "https://arxiv.org/abs/2609.21284",
+          "retrieved_utc": "2026-10-30T04:47:37.471780+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "e67ae75dc3175e4d454880b75d66bb79474628ce69f59b06467cf758964c09d1",
+          "bytes": 44161
+        },
+        {
+          "key": "2609_21284_html",
+          "url": "https://arxiv.org/html/2609.21284",
+          "retrieved_utc": "2026-10-30T04:47:37.510622+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "72a0c60a827177b8f510b849f2d954ca0742066701268d59fcf6879daa3c94da",
+          "bytes": 542604
+        },
+        {
+          "key": "2609_21284_pdf",
+          "url": "https://arxiv.org/pdf/2609.21284",
+          "retrieved_utc": "2026-10-30T04:47:37.527266+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "9c00c4fc6f5a112b5551ba94f843df468d6056e522e0b3325180e824ac4c0b95",
+          "bytes": 672986
+        },
+        {
+          "key": "2609_21284_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2609.21284",
+          "retrieved_utc": "2026-10-30T04:47:37.531282+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "d365d907c05298bbdb4fbdf8bdc42516a6bd2a1082672227a2ab3aa4a6c1d142",
+          "bytes": 10073
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2609.08258",
+      "title": "Revoked but Still Authoritative: An Empirical Study of Revocation Enforcement in Agent-Memory Systems",
+      "evidence": [
+        {
+          "key": "2609_08258_abs",
+          "url": "https://arxiv.org/abs/2609.08258",
+          "retrieved_utc": "2026-10-30T04:47:37.699027+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "ba04d1f2209a6f38eee7e3824c019ed7cc75b6c6ee85740f7def89e86d4d5bad",
+          "bytes": 41650
+        },
+        {
+          "key": "2609_08258_html",
+          "url": "https://arxiv.org/html/2609.08258",
+          "retrieved_utc": "2026-10-30T04:47:37.765507+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "e080127ddbd61e563074b7475447611567b8539d45c64d370f38a498730f370d",
+          "bytes": 589702
+        },
+        {
+          "key": "2609_08258_pdf",
+          "url": "https://arxiv.org/pdf/2609.08258",
+          "retrieved_utc": "2026-10-30T04:47:37.811390+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "3596c76611a32b4a5cfe803e26dff7ba4134504099f0fb9e8dafe747587e81c9",
+          "bytes": 460448
+        },
+        {
+          "key": "2609_08258_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2609.08258",
+          "retrieved_utc": "2026-10-30T04:47:37.876641+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "d87d78e45c0b9a4811f86c61dcf0f37b20920a8c327db60fa0bc15ce5087df5e",
+          "bytes": 8360
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2609.04875",
+      "title": "Forgetting Without Restarting: Execution-State Unlearning for Stateful LLM Agents",
+      "evidence": [
+        {
+          "key": "2609_04875_abs",
+          "url": "https://arxiv.org/abs/2609.04875",
+          "retrieved_utc": "2026-10-30T04:47:37.956138+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "e66fa8987b51ccd1a49b4043b40625ae141c89149a9b0c576dd528843535c8df",
+          "bytes": 43554
+        },
+        {
+          "key": "2609_04875_html",
+          "url": "https://arxiv.org/html/2609.04875",
+          "retrieved_utc": "2026-10-30T04:47:38.065206+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "eff5c28654b85b96d582647b007f33f85541884ec3c6a47a6489831038177863",
+          "bytes": 242340
+        },
+        {
+          "key": "2609_04875_pdf",
+          "url": "https://arxiv.org/pdf/2609.04875",
+          "retrieved_utc": "2026-10-30T04:47:38.089916+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "b419c1cc1a1bdc505cff0ec7889b435b529d5d5c7ad40b4e8311fa9d871cc79f",
+          "bytes": 1559385
+        },
+        {
+          "key": "2609_04875_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2609.04875",
+          "retrieved_utc": "2026-10-30T04:47:38.150489+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "09f6a587b8ad33a7d8ea865810f69944a1b2b576b6b0652a0759e91ddf2d6838",
+          "bytes": 10866
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2606.06240",
+      "title": "TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory",
+      "evidence": [
+        {
+          "key": "2606_06240_abs",
+          "url": "https://arxiv.org/abs/2606.06240",
+          "retrieved_utc": "2026-10-30T04:52:21.326660+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "bb5234b64ba09ddab6f8d1f438ebf2bb24e79a5230f49dfc844f030dda0a53e7",
+          "bytes": 44166
+        },
+        {
+          "key": "2606_06240_html",
+          "url": "https://arxiv.org/html/2606.06240",
+          "retrieved_utc": "2026-10-30T04:52:21.326994+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "8120820d48120b1a14582aa02da337b5836e29c93c0431a471a1e772558e6043",
+          "bytes": 1693551
+        },
+        {
+          "key": "2606_06240_pdf",
+          "url": "https://arxiv.org/pdf/2606.06240",
+          "retrieved_utc": "2026-10-30T04:52:21.327088+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "a023c0daece0d767a2c7100ab556bbdda4c6e90edf2c31e5e17e8360ef857904",
+          "bytes": 1427813
+        },
+        {
+          "key": "2606_06240_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2606.06240",
+          "retrieved_utc": "2026-10-30T04:52:21.327146+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "3cf02dd8751b18b6feba8a16a2e7effbc598c7a05300747b376534f90d25f3b2",
+          "bytes": 10196
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2606.17182",
+      "title": "Verified Detection and Prevention of Concurrency Anomalies in Multi-Agent Large Language Model Systems",
+      "evidence": [
+        {
+          "key": "2606_17182_abs",
+          "url": "https://arxiv.org/abs/2606.17182",
+          "retrieved_utc": "2026-10-30T04:52:21.327194+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "97820b2de94d187d01bb78f74e386a05220029321847076a4a873f60b76d58b7",
+          "bytes": 46838
+        },
+        {
+          "key": "2606_17182_html",
+          "url": "https://arxiv.org/html/2606.17182",
+          "retrieved_utc": "2026-10-30T04:52:21.396191+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "bed70d2bae25ac95f88131d2625d1b342124c5cf0b6c993093f9e756dd874dc3",
+          "bytes": 860015
+        },
+        {
+          "key": "2606_17182_pdf",
+          "url": "https://arxiv.org/pdf/2606.17182",
+          "retrieved_utc": "2026-10-30T04:52:21.404422+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "9b6bda07a1491118cd7358b058df2fc850d6230a1fdfd67d63182fa5205767e7",
+          "bytes": 644105
+        },
+        {
+          "key": "2606_17182_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2606.17182",
+          "retrieved_utc": "2026-10-30T04:52:21.485565+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "2a2fe0a6db89ddb27f3abcb94bd281aff2071ac4f722ee687b4f052eaac60937",
+          "bytes": 10878
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2606.17573",
+      "title": "Cordon: Semantic Transactions for Tool-Using LLM Agents",
+      "evidence": [
+        {
+          "key": "2606_17573_abs",
+          "url": "https://arxiv.org/abs/2606.17573",
+          "retrieved_utc": "2026-10-30T04:52:21.493277+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "ab229aad7a348ae349d85e49835c5051bec5a05ce3b4e8057803ffee113335b2",
+          "bytes": 42202
+        },
+        {
+          "key": "2606_17573_html",
+          "url": "https://arxiv.org/html/2606.17573",
+          "retrieved_utc": "2026-10-30T04:52:21.543320+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "1644a38274a8d1a6f741aec0f62440287b3c7acefe8906808c8415704363efd4",
+          "bytes": 373729
+        },
+        {
+          "key": "2606_17573_pdf",
+          "url": "https://arxiv.org/pdf/2606.17573",
+          "retrieved_utc": "2026-10-30T04:52:21.677504+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "4abfc0bd9941559b6eb0b15a268c91f67601f72539f85fbc19848b7801f7a713",
+          "bytes": 2026087
+        },
+        {
+          "key": "2606_17573_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2606.17573",
+          "retrieved_utc": "2026-10-30T04:52:21.711244+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "76d892fce7d580d51b25485e800d6c67ff6837308b5f45a288b49ba3bb1e938d",
+          "bytes": 10454
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2605.26252",
+      "title": "Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory",
+      "evidence": [
+        {
+          "key": "2605_26252_abs",
+          "url": "https://arxiv.org/abs/2605.26252",
+          "retrieved_utc": "2026-10-30T04:52:22.079665+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "796267ed0ed6cd00e64bced009a281c6df63359d8934d42a49472698ead7495c",
+          "bytes": 42037
+        },
+        {
+          "key": "2605_26252_html",
+          "url": "https://arxiv.org/html/2605.26252",
+          "retrieved_utc": "2026-10-30T04:52:22.194939+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "58e58edf41bc34540084d92e7c29297b42331c8b71e0541d99ecd59012838f10",
+          "bytes": 241666
+        },
+        {
+          "key": "2605_26252_pdf",
+          "url": "https://arxiv.org/pdf/2605.26252",
+          "retrieved_utc": "2026-10-30T04:52:22.228589+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "7eaee6297d1b5fb84d67e11b4354a4d99f67c02d9df2021fed445741c76b0cf0",
+          "bytes": 1539295
+        },
+        {
+          "key": "2605_26252_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2605.26252",
+          "retrieved_utc": "2026-10-30T04:52:22.318574+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "e1ff3b6fcf8978cf4b589ef53bf9a2030bc7c37b1cb375e2e233aa312d1461eb",
+          "bytes": 8666
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2610.15991",
+      "title": "Revocation Is Not Complete at Receipt: An Executable Outcome Contract for Distributed Agent-Tool Gateways",
+      "evidence": [
+        {
+          "key": "2610_15991_abs",
+          "url": "https://arxiv.org/abs/2610.15991",
+          "retrieved_utc": "2026-10-30T04:52:22.379322+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "75a3048c40e0ccbbfcb87280da8f71f012238037afd328ad172eea037e617c5e",
+          "bytes": 44139
+        },
+        {
+          "key": "2610_15991_html",
+          "url": "https://arxiv.org/html/2610.15991",
+          "retrieved_utc": "2026-10-30T04:52:22.386183+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "b6c3fb0a378153633350b67451d22b5687079e34e24419b9ea4b1afc24504c77",
+          "bytes": 212855
+        },
+        {
+          "key": "2610_15991_pdf",
+          "url": "https://arxiv.org/pdf/2610.15991",
+          "retrieved_utc": "2026-10-30T04:52:22.483417+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "805f42965f1342bc9c54cb02816291b43a96aa618d7d3e51ec2d3cb6d6e1d117",
+          "bytes": 603972
+        },
+        {
+          "key": "2610_15991_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2610.15991",
+          "retrieved_utc": "2026-10-30T04:52:22.500316+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "97850239704856d8d36b58558e7f74f057d9483f3be65405095ee9d93d39f329",
+          "bytes": 10225
+        }
+      ]
+    },
+    {
+      "arxiv_id": "2610.00347",
+      "title": "Authorization for Self-Modifying AI Agent Populations: Conserving Authority across Replacement, Forking, and Rollback",
+      "evidence": [
+        {
+          "key": "2610_00347_abs",
+          "url": "https://arxiv.org/abs/2610.00347",
+          "retrieved_utc": "2026-10-30T04:52:22.540262+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "159c987a3659965095716c5a572076270bb48191c7d7f1a2c28a5d1e7ddd0778",
+          "bytes": 44235
+        },
+        {
+          "key": "2610_00347_html",
+          "url": "https://arxiv.org/html/2610.00347",
+          "retrieved_utc": "2026-10-30T04:52:22.587877+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "e8ba8c64a1ead2404af8a11269e4eae6df5d997d25e8d002b0a983baf3e09bea",
+          "bytes": 546014
+        },
+        {
+          "key": "2610_00347_pdf",
+          "url": "https://arxiv.org/pdf/2610.00347",
+          "retrieved_utc": "2026-10-30T04:52:22.634560+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "0ad0a7238a7df92ee4e6aafdb8980227555791320ab771a0ec23f82b5641e7bb",
+          "bytes": 674666
+        },
+        {
+          "key": "2610_00347_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2610.00347",
+          "retrieved_utc": "2026-10-30T04:52:22.768677+00:00",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "sha256": "87f9da73d6e4213102762052ded58833dd52270f3abb1f853a3b80199c44b811",
+          "bytes": 10124
+        }
+      ]
+    }
+  ],
+  "official_docs_and_classical_landing_pages": [
+    {
+      "key": "mem0_delete",
+      "url": "https://docs.mem0.ai/core-concepts/memory-operations/delete",
+      "retrieved_utc": "2026-10-30T04:52:22.842362+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "305253d25361f7654f8bc9f4fa5c6b08176332b7f1a4f51ed132d1b2d208f7eb",
+      "bytes": 292534
+    },
+    {
+      "key": "mem0_add_v3",
+      "url": "https://docs.mem0.ai/api-reference/memory/add-memories",
+      "retrieved_utc": "2026-10-30T04:52:23.047553+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "f57b80c6d549deffa94b4f54218cdd7eec6a8257bbe04a79036dfb6472d86286",
+      "bytes": 375980
+    },
+    {
+      "key": "letta_blocks",
+      "url": "https://docs.letta.com/v1-sdk/memory/memory-blocks",
+      "retrieved_utc": "2026-10-30T04:52:23.174982+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "e3a11cefef849ab4d1fc883979189f913fdc4cfdc0710288c11ca105743e7c6a",
+      "bytes": 252619
+    },
+    {
+      "key": "letta_detach",
+      "url": "https://docs.letta.com/tutorials/attaching-detaching-blocks/",
+      "retrieved_utc": "2026-10-30T04:52:23.197572+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "aa65f6abde857078d2832e660e1e7c574f3fca69f1bb38cc50b4d9efbc02dd13",
+      "bytes": 82144
+    },
+    {
+      "key": "temporal_replay",
+      "url": "https://docs.temporal.io/workflow-definition",
+      "retrieved_utc": "2026-10-30T04:52:23.290579+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "432b2c700a806ce83640e51edd0d54f936a043d46f50adde6edf3775327e9d77",
+      "bytes": 103689
+    },
+    {
+      "key": "temporal_mcp",
+      "url": "https://docs.temporal.io/develop/python/integrations/mcp",
+      "retrieved_utc": "2026-10-30T04:52:23.363607+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "0bd195accabab20444665a498b570cad0c5318e5eda384c52cc63ec2dbb94bb4",
+      "bytes": 109550
+    },
+    {
+      "key": "temporal_nexus",
+      "url": "https://docs.temporal.io/nexus/operations",
+      "retrieved_utc": "2026-10-30T04:52:23.452561+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "32c6dd989a36883b35345d0ce7537abeb483f1a74bead2867707e98867e2fc3f",
+      "bytes": 92130
+    },
+    {
+      "key": "hazelcast_fencedlock",
+      "url": "https://docs.hazelcast.com/hazelcast/5.7/data-structures/fencedlock",
+      "retrieved_utc": "2026-10-30T04:52:23.491226+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "e11cf110375f8b036af3dc4f183624eabbc2de63940b2a7ec7a5a3b83187c194",
+      "bytes": 49105
+    },
+    {
+      "key": "aws_idempotent_window",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactWriteItems.html",
+      "retrieved_utc": "2026-10-30T04:52:23.564991+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "7e3d56e4bf6614eaea0011c39f4398bb8e5f7553a6178ae951c4fa5e3f935a5a",
+      "bytes": 76848
+    },
+    {
+      "key": "stripe_idempotency",
+      "url": "https://docs.stripe.com/api/idempotent_requests",
+      "retrieved_utc": "2026-10-30T04:52:23.689278+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "c9ba81558e6e02df80865491872c0f6e6780ac4da2648f158622b8e15d002219",
+      "bytes": 1412024
+    },
+    {
+      "key": "jepsen_linearizability",
+      "url": "https://jepsen.io/consistency/models/linearizable",
+      "retrieved_utc": "2026-10-30T04:52:23.698986+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "ff49eb88569ec8d8db6a3a5140e1fcae5251b4b53e5df1d456b493f94cba4a47",
+      "bytes": 4461
+    },
+    {
+      "key": "jepsen_serializability",
+      "url": "https://jepsen.io/consistency/models/strong-serializable",
+      "retrieved_utc": "2026-10-30T04:52:23.710082+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "629ba9efd417e5b08a988327fad9c6fb72b4f94d3d30ff056d01d5bb739fe24d",
+      "bytes": 4908
+    },
+    {
+      "key": "chubby",
+      "url": "https://www.usenix.org/legacy/event/osdi06/tech/full_papers/burrows/burrows_html/index.html",
+      "retrieved_utc": "2026-10-30T04:52:23.897345+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "e77ee8412020b2fb4038641e231bf070abbbfbda170aa235b2968f094c452f41",
+      "bytes": 111202
+    },
+    {
+      "key": "sql_isolation",
+      "url": "https://www.microsoft.com/en-us/research/publication/a-critique-of-ansi-sql-isolation-levels/",
+      "retrieved_utc": "2026-10-30T04:52:23.959274+00:00",
+      "http_status": 200,
+      "status": "saved_external_cache",
+      "sha256": "7c5eb799d9c0c8737af11775e4c406b69a72efa2a3af98988e606d9d37b747c3",
+      "bytes": 172013
+    }
+  ],
+  "supplementary_method_source": {
+    "title": "Elle: Inferring Isolation Anomalies from Experimental Observations",
+    "evidence": [
+      {
+        "key": "elle_abs",
+        "url": "https://arxiv.org/abs/2003.10554",
+        "retrieved_utc": "2026-10-30T04:53:57.876980+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "6142ae13ff71d54de6c78c87e7f72f115971d95584a14b25f9f6e2f7d34ffa11",
+        "bytes": 42851
+      },
+      {
+        "key": "elle_pdf",
+        "url": "https://arxiv.org/pdf/2003.10554",
+        "retrieved_utc": "2026-10-30T04:53:57.973175+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "70389ebc0fe4ff716910eef2e7395df8c3f553a2ed85e085a619893a7bf4ffdc",
+        "bytes": 406440
+      }
+    ],
+    "review_scope": "Supplementary primary method reference; not one of the ten newly audited close agent/memory papers."
+  },
+  "inherited_public_primary_sources": [
+    {
+      "key": "sun2026agentic",
+      "url": "https://arxiv.org/pdf/2608.13900",
+      "sha256": "7ea69c3898af476afc643239270247fddc0901687f71aee74fa53517f62e9ba6",
+      "verification_provenance": "Inherited from the existing public-reference audit/catalog; not freshly fetched in this extension pass.",
+      "full_text_included_in_repository": false
+    },
+    {
+      "key": "marla2026permission",
+      "url": "https://arxiv.org/pdf/2610.31916",
+      "sha256": "d7651b65c1fcbbbba0f57440ec43de30c4a1f3548e81972a08792ba1971b2a1d",
+      "verification_provenance": "Inherited from the existing public-reference audit/catalog; not freshly fetched in this extension pass.",
+      "full_text_included_in_repository": false
+    },
+    {
+      "key": "zhou2026timlmembench",
+      "url": "https://aclanthology.org/2026.findings-emnlp.507.pdf",
+      "sha256": "fa3e711e0c74fbaddabfb1641a41132745ae196c4267fb47f07d91e31342ca7a",
+      "verification_provenance": "Inherited from the existing public-reference audit/catalog; not freshly fetched in this extension pass.",
+      "full_text_included_in_repository": false
+    },
+    {
+      "key": "zheng2026acrfence",
+      "url": "https://arxiv.org/pdf/2603.20625",
+      "sha256": "5b88ebb1f9dc1cb136c2e8b282a5b9d31122dc172ecd9c1893f4a5b578e86263",
+      "verification_provenance": "Inherited from the existing public-reference audit/catalog; not freshly fetched in this extension pass.",
+      "full_text_included_in_repository": false
+    },
+    {
+      "key": "li2026where",
+      "url": "https://arxiv.org/pdf/2609.29095",
+      "sha256": "e3bad2caf7041a4a0db5b15fad343098742ba17221bbfd77716b43fba5916d94",
+      "verification_provenance": "Inherited from the existing public-reference audit/catalog; not freshly fetched in this extension pass.",
+      "full_text_included_in_repository": false
+    },
+    {
+      "key": "lee2015implementing",
+      "url": "https://web.stanford.edu/~ouster/cgi-bin/papers/rifl.pdf",
+      "sha256": "f609f9508beaf936027f31428a8f06dc86d8201faadc5b340ffead7706863969",
+      "verification_provenance": "Inherited from the existing public-reference audit/catalog; not freshly fetched in this extension pass.",
+      "full_text_included_in_repository": false
+    },
+    {
+      "key": "zhang2020fault",
+      "url": "https://www.usenix.org/system/files/osdi20-zhang_haoran.pdf",
+      "sha256": "3b08a01341f85c0e15deee5c9140dd55d99d565a385d27b67b93db6c6d919049",
+      "verification_provenance": "Inherited from the existing public-reference audit/catalog; not freshly fetched in this extension pass.",
+      "full_text_included_in_repository": false
+    },
+    {
+      "key": "uddin2026memora",
+      "url": "https://aclanthology.org/2026.findings-acl.1337.pdf",
+      "sha256": "f1219ad993c5e2dc43c6ce9d829df008f0535132eb0918a08f9cbc3c2822a9c1",
+      "verification_provenance": "Inherited from the existing public-reference audit/catalog; not freshly fetched in this extension pass.",
+      "full_text_included_in_repository": false
+    },
+    {
+      "key": "mansoor2026verified",
+      "url": "https://arxiv.org/pdf/2608.02645",
+      "sha256": "dee29b0250eb6d40677b1477184662073d995053f28ae111a98dc83b759b74ac",
+      "verification_provenance": "Inherited from the existing public-reference audit/catalog; not freshly fetched in this extension pass.",
+      "full_text_included_in_repository": false
+    },
+    {
+      "key": "langchainGraphAPI",
+      "url": "https://docs.langchain.com/oss/python/langgraph/graph-api",
+      "sha256": "9d6acc04f87885ff2245525970c112a3aef3fc01f28e5fcfd78ded594bd4a9e9",
+      "verification_provenance": "Inherited from the existing public-reference audit/catalog; not freshly fetched in this extension pass.",
+      "full_text_included_in_repository": false
+    },
+    {
+      "key": "featonbyIdempotentAPIs",
+      "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "sha256": "91c5e61042e27df7cecd9440949033323cb2c7fba12eaa176f74e3c024116fdd",
+      "verification_provenance": "Inherited from the existing public-reference audit/catalog; not freshly fetched in this extension pass.",
+      "full_text_included_in_repository": false
+    }
+  ],
+  "mem0_antecedents": [
+    {
+      "id": "discussion6726",
+      "url": "https://github.com/mem0ai/mem0/discussions/6726",
+      "evidence": {
+        "key": "mem0_discussion6726",
+        "url": "https://github.com/mem0ai/mem0/discussions/6726",
+        "retrieved_utc": "2026-10-30T04:53:57.338794+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "61f8ba1fb2554e8c107ef82298bcb06731baa68cd4392e22bacba049334a245c",
+        "bytes": 235616
+      }
+    },
+    {
+      "id": "issue6515",
+      "url": "https://github.com/mem0ai/mem0/issues/6515",
+      "evidence": {
+        "key": "mem0_issue6515",
+        "url": "https://github.com/mem0ai/mem0/issues/6515",
+        "retrieved_utc": "2026-10-30T04:53:57.339066+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "b4aa5cee721583a49d5b4253a6bc2a2b8376a8d411be4260ae0a25273e5c6084",
+        "bytes": 281660
+      }
+    },
+    {
+      "id": "issue7612",
+      "url": "https://github.com/mem0ai/mem0/issues/7612",
+      "evidence": {
+        "key": "mem0_issue7612",
+        "url": "https://github.com/mem0ai/mem0/issues/7612",
+        "retrieved_utc": "2026-10-30T04:53:57.339154+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "53af83ee9fc2ab010ae4aea8728be5d4e4ab88e3896e86c6f297d8c7c968b3af",
+        "bytes": 364966
+      }
+    },
+    {
+      "id": "issue4896",
+      "url": "https://github.com/mem0ai/mem0/issues/4896",
+      "evidence": {
+        "key": "mem0_issue4896",
+        "url": "https://github.com/mem0ai/mem0/issues/4896",
+        "retrieved_utc": "2026-10-30T04:53:57.339206+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "2053bf42ff133d6eb596b4639e47848e872e4384fb96a14777d7d178d73b42ee",
+        "bytes": 280623
+      }
+    },
+    {
+      "id": "minimem_note",
+      "url": "https://github.com/jianglong-nie/MiniMem/blob/56da9878747104aefc29a51d178cff22d5bf6870/references/paper-reading/Mem0.md",
+      "evidence": {
+        "key": "minimem_pinned_audit",
+        "url": "https://raw.githubusercontent.com/jianglong-nie/MiniMem/56da9878747104aefc29a51d178cff22d5bf6870/references/paper-reading/Mem0.md",
+        "retrieved_utc": "2026-10-30T04:57:04.041773+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "ad2cd4741829e9d81790cd5d86ccaa370c4d41f6323d3847a45ebcb7f595543d",
+        "bytes": 35112
+      }
+    },
+    {
+      "id": "lore_note",
+      "url": "https://github.com/corespeed-io/lore/blob/main/docs/research/mem0-token-efficient-algorithm-audit.md",
+      "evidence": {
+        "key": "lore_mem0_audit",
+        "url": "https://raw.githubusercontent.com/corespeed-io/lore/main/docs/research/mem0-token-efficient-algorithm-audit.md",
+        "retrieved_utc": "2026-10-30T04:56:24.217273+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "55c21420a8bd1f085d095a87cae76ca4d61204bb555de8856363a571a971b00c",
+        "bytes": 25232
+      }
+    },
+    {
+      "id": "platform_architecture",
+      "url": "https://github.com/mem0ai/mem0/blob/26cdefb46600c0fa5953c4b5ee5003c125539fc4/skills/mem0/references/architecture.md",
+      "evidence": {
+        "key": "mem0_architecture_pinned",
+        "url": "https://raw.githubusercontent.com/mem0ai/mem0/26cdefb46600c0fa5953c4b5ee5003c125539fc4/skills/mem0/references/architecture.md",
+        "retrieved_utc": "2026-10-30T04:56:24.217220+00:00",
+        "http_status": 200,
+        "status": "saved_external_cache",
+        "sha256": "65d7404258c323b6310e33c5850f4d0323c8a84151ab46d73ca852b972514342",
+        "bytes": 12488
+      }
+    }
+  ]
+}

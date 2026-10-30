@@ -1,0 +1,179 @@
+{
+  "embedder": "bge_small",
+  "extractor": "visible_delta",
+  "arm": "widened_candidates",
+  "n": 1,
+  "attempts": [
+    {
+      "attempt": 0,
+      "result": {
+        "results": [
+          {
+            "id": "4dd0ee3b-313d-4281-9614-1dcd5cdb743c",
+            "memory": "The synthetic user prefers mango as a fruit.",
+            "event": "ADD"
+          }
+        ]
+      },
+      "records": [
+        {
+          "id": "4dd0ee3b-313d-4281-9614-1dcd5cdb743c",
+          "memory": "The synthetic user prefers mango as a fruit.",
+          "hash": "ea10f4e3b0fec6eccdf060eb84c7e861",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.153107+00:00",
+          "updated_at": "2026-10-30T05:01:57.153107+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        }
+      ],
+      "physical_records": 1,
+      "extraction_calls_this_attempt": 1,
+      "search_calls_this_attempt": 1,
+      "distinct_facts": 1,
+      "extra_copies": 0,
+      "fact_set_matches": true,
+      "add_history_rows": 1,
+      "extraction": {
+        "existing": [],
+        "emitted_before_admission_filter": [
+          "The synthetic user prefers mango as a fruit."
+        ],
+        "emitted_texts": [
+          "The synthetic user prefers mango as a fruit."
+        ],
+        "response": {
+          "memory": [
+            {
+              "id": "0",
+              "text": "The synthetic user prefers mango as a fruit.",
+              "attributed_to": "user",
+              "linked_memory_ids": []
+            }
+          ]
+        },
+        "system_prompt_sha256": "ad19187a37813ef77ee156e714c0650e6ec749e0264bdc07d499bc9b24115155",
+        "user_prompt_sha256": "949d7e646647c820ac2f93e49443939c5d16acbc3d8dd52f0bb18e235d4fa0c7"
+      },
+      "search": {
+        "requested_top_k": 10,
+        "effective_top_k": 10000,
+        "filters": {
+          "user_id": "synthetic-study-user"
+        },
+        "query_sha256": "3b7916338f07b999d1e82990f05f15eef4281729bc6b568b6c8544105bf00de9",
+        "returned": []
+      }
+    },
+    {
+      "attempt": 1,
+      "result": {
+        "results": []
+      },
+      "records": [
+        {
+          "id": "4dd0ee3b-313d-4281-9614-1dcd5cdb743c",
+          "memory": "The synthetic user prefers mango as a fruit.",
+          "hash": "ea10f4e3b0fec6eccdf060eb84c7e861",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.153107+00:00",
+          "updated_at": "2026-10-30T05:01:57.153107+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        }
+      ],
+      "physical_records": 1,
+      "extraction_calls_this_attempt": 1,
+      "search_calls_this_attempt": 1,
+      "distinct_facts": 1,
+      "extra_copies": 0,
+      "fact_set_matches": true,
+      "add_history_rows": 1,
+      "extraction": {
+        "existing": [
+          {
+            "id": "0",
+            "text": "The synthetic user prefers mango as a fruit."
+          }
+        ],
+        "emitted_before_admission_filter": [],
+        "emitted_texts": [],
+        "response": {
+          "memory": []
+        },
+        "system_prompt_sha256": "ad19187a37813ef77ee156e714c0650e6ec749e0264bdc07d499bc9b24115155",
+        "user_prompt_sha256": "1c9183ed8b1235f5d86d0570a7513248407f7ed511d9d48aef60d2b04ca8b17d"
+      },
+      "search": {
+        "requested_top_k": 10,
+        "effective_top_k": 10000,
+        "filters": {
+          "user_id": "synthetic-study-user"
+        },
+        "query_sha256": "3b7916338f07b999d1e82990f05f15eef4281729bc6b568b6c8544105bf00de9",
+        "returned": [
+          {
+            "id": "4dd0ee3b-313d-4281-9614-1dcd5cdb743c",
+            "text": "The synthetic user prefers mango as a fruit.",
+            "hash": "ea10f4e3b0fec6eccdf060eb84c7e861"
+          }
+        ]
+      }
+    },
+    {
+      "attempt": 2,
+      "result": {
+        "results": []
+      },
+      "records": [
+        {
+          "id": "4dd0ee3b-313d-4281-9614-1dcd5cdb743c",
+          "memory": "The synthetic user prefers mango as a fruit.",
+          "hash": "ea10f4e3b0fec6eccdf060eb84c7e861",
+          "metadata": null,
+          "created_at": "2026-10-30T05:01:57.153107+00:00",
+          "updated_at": "2026-10-30T05:01:57.153107+00:00",
+          "user_id": "synthetic-study-user",
+          "attributed_to": "user"
+        }
+      ],
+      "physical_records": 1,
+      "extraction_calls_this_attempt": 1,
+      "search_calls_this_attempt": 1,
+      "distinct_facts": 1,
+      "extra_copies": 0,
+      "fact_set_matches": true,
+      "add_history_rows": 1,
+      "extraction": {
+        "existing": [
+          {
+            "id": "0",
+            "text": "The synthetic user prefers mango as a fruit."
+          }
+        ],
+        "emitted_before_admission_filter": [],
+        "emitted_texts": [],
+        "response": {
+          "memory": []
+        },
+        "system_prompt_sha256": "ad19187a37813ef77ee156e714c0650e6ec749e0264bdc07d499bc9b24115155",
+        "user_prompt_sha256": "ab8b45a29263cb18fd2acdaa0e20f816586c8bb2450c8ba98307885cffb714c2"
+      },
+      "search": {
+        "requested_top_k": 10,
+        "effective_top_k": 10000,
+        "filters": {
+          "user_id": "synthetic-study-user"
+        },
+        "query_sha256": "3b7916338f07b999d1e82990f05f15eef4281729bc6b568b6c8544105bf00de9",
+        "returned": [
+          {
+            "id": "4dd0ee3b-313d-4281-9614-1dcd5cdb743c",
+            "text": "The synthetic user prefers mango as a fruit.",
+            "hash": "ea10f4e3b0fec6eccdf060eb84c7e861"
+          }
+        ]
+      }
+    }
+  ]
+}

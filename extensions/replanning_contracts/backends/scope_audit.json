@@ -1,0 +1,43 @@
+{
+  "checker_hardening": "Post-campaign checker-only extension independently validates each native Redis key mutation sequence and SET/HSET MULTI/EXEC grouping; negative hidden-write/group-boundary and physical SQLite forgery tests. No engine/spec/result changes.",
+  "clarifications": [
+    {
+      "clarification": "Implemented receipt existence/body, receipt hash type/SQL column names, and effect-time version/epoch predicates over declared valid record inputs. Not arbitrary corrupt-state or universal schema validation.",
+      "frozen_phrase": "validate the full logical envelope"
+    },
+    {
+      "clarification": "Authored weaker prepared-new-write baseline; entry receipt/type inspection is outside primitive. Real Redis WRONGTYPE occurs after entry and before EVAL, not an external interleaving inside EVAL.",
+      "topic": "grouped path"
+    },
+    {
+      "clarification": "Physical accepted participant effects are distinct from foreign writes, revocation, acknowledgement, and usable receipt availability. Explicit GC intentionally removes receipts and is retained.",
+      "topic": "effect count and receipt coupling"
+    },
+    {
+      "clarification": "Common caller-side fsync/atomic-replace prepared journal, read before every request. Not supplied by Redis or SQLite operation receipt.",
+      "topic": "identity binding"
+    },
+    {
+      "clarification": "Actual os._exit(87) at semantic client barriers, not network packet loss, arbitrary instruction crash or power loss.",
+      "topic": "process termination"
+    },
+    {
+      "clarification": "Redis script non-interleaving, SQL explicit exception rollback, AOF policy, and one application envelope mutation are different guarantees. Graceful server restart is a separate control.",
+      "topic": "atomicity and persistence"
+    },
+    {
+      "clarification": "Four authored bundles with different primitive/storage shapes and applicability. No vendor ranking or single-factor causal effect estimate.",
+      "topic": "causal inference"
+    },
+    {
+      "clarification": "Epoch increments, target version holds, current visibility cleared, historical outcomes retained. Visibility revocation, not physical erasure/unlearning.",
+      "topic": "revocation"
+    }
+  ],
+  "expected_fault_cells_retained": true,
+  "frozen_engine_unchanged": true,
+  "na_cells_retained": 8,
+  "no_formal_proof": true,
+  "no_new_algorithm_claim": true,
+  "status": "bounded_claims_required"
+}

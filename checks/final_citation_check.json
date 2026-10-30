@@ -1,27 +1,30 @@
 {
   "status": "PASS",
-  "scope": "Current revision source identity/coverage check, with fresh primary audits and historical reference-cache hashes explicitly distinguished.",
+  "scope": "Current four TeX inputs; original reference audits retained, new focused primary-source checks and claim maps reconciled.",
   "manuscript_sources": {
-    "manuscript/main.tex": "0b5a97df2669cdc62a1dcb7475abd19deb630921d9adc10abd7b25f079012eab",
+    "manuscript/main.tex": "45e6f655177de8f40695e1b9d005f6b1799f9710db76bf1d4aab23cbd25d1fb8",
+    "manuscript/public_memory.tex": "1760543d8131d5f8de66bda6cd89e29bc441d9b381b3ecb38e43f19bb5e410eb",
+    "manuscript/contract_portability.tex": "e9db003699923e6c3ce9791265ba6809c43a0a4b0aee609fb711692b5a9018b5",
     "manuscript/plan_binding.tex": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088"
   },
-  "bibliography_sha256": "0c9af335cb78222b6782ba0a94cd3ba37b09784de3587c0afaee3bb5d58e286e",
+  "bibliography_sha256": "a39d5ab800a2a419c85f497d8f37119f0d9060b1790de9048b935df424349bfe",
   "source_counts": {
-    "research_papers": 31,
-    "primary_documentation": 5,
-    "total": 36
+    "research_papers": 39,
+    "software_documentation_model_card_public_notes": 15,
+    "total": 54
   },
-  "cited_sources": 36,
+  "cited_sources": 54,
   "missing_keys": [],
   "uncited_keys": [],
   "duplicate_keys": false,
   "root_and_manuscript_bibliographies_identical": true,
-  "historical_source_cache_hashes_rechecked": 32,
-  "new_review_source_hashes_checked": 4,
+  "original_source_audit": "checks/archive/v2/final_citation_check.json",
+  "new_reference_audit": "extensions/replanning_contracts/literature/expanded_scholarly_source_audits.json",
+  "new_primary_identity_audit": "extensions/replanning_contracts/literature/pdf_identity_check.json",
+  "new_sources_claim_map": "extensions/replanning_contracts/literature/new_claim_map.json",
+  "new_focused_antecedent_audit": "extensions/replanning_contracts/literature/mem0_antecedent_audit.json",
   "full_texts_redistributed": false,
-  "source_claim_review": "revisions/review1/final_scientific_review.json",
-  "flagged_reference_audit": "revisions/review1/references/citation_audit.json",
-  "new_sources_claim_map": "revisions/review1/references/additions_claim_map.json",
   "self_publications_added_without_substantive_relation": false,
-  "claim": "Focused primary-source coverage, not exhaustive academic coverage or peer-review validation."
+  "claim": "Focused primary-source coverage, not exhaustive literature review or evidence of journal acceptance.",
+  "source_claim_review": "extensions/replanning_contracts/review/final_scientific_review.json"
 }

@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "properties": {
+    "memory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "attributed_to": {
+            "type": "string"
+          },
+          "linked_memory_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "attributed_to",
+          "linked_memory_ids"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "memory"
+  ],
+  "additionalProperties": false
+}

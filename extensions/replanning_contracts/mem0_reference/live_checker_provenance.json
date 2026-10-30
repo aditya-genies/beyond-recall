@@ -1,0 +1,27 @@
+{
+  "created_at_utc": "2026-10-30T05:18:17.007961+00:00",
+  "status": "PASS",
+  "live_checker_sha256": "214fe216015f5f28eb31ffc53e3ac450d5cef1555b0ab96a896b438d78a8583f",
+  "raw_decoder_sha256": "2ed808573a44d4fc1907c260d2d64a7ac1d09db893a040a17347cdc896520601",
+  "forgery_tests_sha256": "a1d2fcc49ef62518350d8cce65b54811cea302061bacb511808849d17a2a2f7c",
+  "protocol_sha256": "ef43341976042926fd10034a25cc1dbd47bb917e5298faa746b145a80aebecf0",
+  "driver_sha256": "0897da4fed013cad3103fd98b5b6f214bb400ce7a1bec8c7f872e26e86216ee3",
+  "verification_sha256": "0d2e18b5ba8b5373455686bbb46d1df2080ba49ad5c84c700bccdec751c0bb3c",
+  "raw_artifact_count": 553,
+  "raw_artifacts_unchanged": true,
+  "tests": {
+    "status": "PASS",
+    "unique_forgery_tests": 3,
+    "real_raw_datasets_mutated": false,
+    "names": [
+      "test_rejects_false_success_instead_of_actual_baseline_exit",
+      "test_rejects_used_response_bypassing_exact_filter",
+      "test_rejects_copied_baseline_value_change"
+    ]
+  },
+  "independence": "Separate checker implementation written after campaign and known outcomes; not external replication.",
+  "live_requests": 28,
+  "recorded_result_retries_without_new_requests": 24,
+  "baseline_process_exit87": 4,
+  "retry_process_success": 48
+}

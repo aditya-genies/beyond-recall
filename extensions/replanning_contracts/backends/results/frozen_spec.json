@@ -1,0 +1,50 @@
+{
+  "applicable_cells": 96,
+  "application_binding": "Identical durable caller journal before every backend request; not a backend guarantee.",
+  "backends": [
+    "sqlite",
+    "redis"
+  ],
+  "boundaries": "Child os._exit(87) at semantic barriers; no mid-commit, power-loss, cluster or performance claim.",
+  "declared_cells": 104,
+  "design_sha256": "6ea06db5638096889f724c6103baa6cbcd8eb7565a2743543471a3c4d1ccbb5f",
+  "envelope": "One application key/row replacement; no physical disk write-count claim.",
+  "group": "Authored prepared-new-write baseline, not strongest vendor implementation; all profiles guard effect-time version and epoch.",
+  "histories": [
+    "normal",
+    "before_effect_error",
+    "receipt_storage_error",
+    "lost_reply",
+    "changed_body",
+    "stale_version",
+    "foreign_before_retry",
+    "revoke_before_submit",
+    "exit_after_effect",
+    "revoke_before_retry",
+    "receipt_gc",
+    "race_same_id",
+    "race_distinct_ids"
+  ],
+  "not_applicable_cells": 8,
+  "profiles": [
+    "split",
+    "grouped",
+    "preflight",
+    "envelope"
+  ],
+  "protocol": "bounded-cross-backend-v1",
+  "revoke": "epoch increments; version holds; value/visibility/origin removed; successful receipts retained.",
+  "runtime": {
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.3",
+    "sqlite": "3.51.2"
+  },
+  "source": {
+    "actor.py": "5aec6afba019b742d42b985d0b2b7d32270d892839f58015708de029fe02eb85",
+    "campaign.py": "3edc5f239926cb43f7e3488ab29c55911f200b4e57b4178a87023246b11f6c87",
+    "contract.py": "bde854059771d2182cd58716b8513105a08b9812bf78a256529897794115181a",
+    "redis_store.py": "61f7f41552c73a56f1603e5e48bc1e3df66c3f781bf93c101f17c69f11b160e4",
+    "services.py": "a992820e290f9af4eea6d331af8efcebd6b66b5918590e4b1646ca68ad66b380",
+    "sqlite_store.py": "5c6ccb3536219bfb5e27c21ca503849de20fb4e568e632a38ee55e7d6e7afdb5"
+  }
+}

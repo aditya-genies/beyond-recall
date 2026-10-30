@@ -1,0 +1,109 @@
+{
+  "scope": "Static inspection of pinned public MemTX source, compared with latest v2 primary paper. No third-party execution performed by this audit; parent delegated independent probes.",
+  "repository": "https://github.com/lxy1134/MEMTX_",
+  "commit": "4e1124ccd5fd384857463020e3497aa73ec93be6",
+  "cache_completeness": "52 selected source/test/driver files, not a complete checkout; do not run full suite against this selected cache.",
+  "license_status": "No license identified in public tree/API at this commit. No third-party code redistributed.",
+  "questions": [
+    {
+      "question": "Does commit validate arbitrary read sets or multi-record predicates?",
+      "answer": "No such validation found. Validation recomputes active beliefs per staged record; its detector compares same entity/attribute slots, authority, validity, scope and dependencies. No general cross-slot constraint checker is exposed.",
+      "classification": "A stronger multi-record invariant is an assumption/feature boundary; do not label ordinary write skew a violation of a contract that permits partial commit.",
+      "sources": [
+        {
+          "path": "src/memtx/memtx_manager.py",
+          "lines": [
+            194,
+            283
+          ],
+          "url": "https://github.com/lxy1134/MEMTX_/blob/4e1124ccd5fd384857463020e3497aa73ec93be6/src/memtx/memtx_manager.py#L194-L283",
+          "sha256": "b742036ae5a02615803e8cdec454cfafa390f438479d86a205a7859383a4f660"
+        },
+        {
+          "path": "src/memtx/conflict_detector.py",
+          "lines": [
+            108,
+            178
+          ],
+          "url": "https://github.com/lxy1134/MEMTX_/blob/4e1124ccd5fd384857463020e3497aa73ec93be6/src/memtx/conflict_detector.py#L108-L178",
+          "sha256": "e4ca7de8061fa0d8d3dc9fbc2a3ad69cd7cddcfab300f804770e5a2989aed31f"
+        }
+      ]
+    },
+    {
+      "question": "Are snapshot reads physically pinned to the captured visible IDs?",
+      "answer": "begin_tx captures visible IDs, while retrieve scans current store/lifecycle/permissions and contains no membership restriction to those IDs.",
+      "classification": "Candidate implementation-description discrepancy; test a brand-new unrelated record committed after begin, avoiding revocation-as-current-authorization ambiguity. A latest-read description would falsify the discrepancy label.",
+      "sources": [
+        {
+          "path": "src/memtx/memtx_manager.py",
+          "lines": [
+            77,
+            94
+          ],
+          "url": "https://github.com/lxy1134/MEMTX_/blob/4e1124ccd5fd384857463020e3497aa73ec93be6/src/memtx/memtx_manager.py#L77-L94",
+          "sha256": "b742036ae5a02615803e8cdec454cfafa390f438479d86a205a7859383a4f660"
+        },
+        {
+          "path": "src/memtx/memtx_manager.py",
+          "lines": [
+            136,
+            166
+          ],
+          "url": "https://github.com/lxy1134/MEMTX_/blob/4e1124ccd5fd384857463020e3497aa73ec93be6/src/memtx/memtx_manager.py#L136-L166",
+          "sha256": "b742036ae5a02615803e8cdec454cfafa390f438479d86a205a7859383a4f660"
+        }
+      ]
+    },
+    {
+      "question": "Does empty-snapshot handling preserve late-write rejection?",
+      "answer": "The detector enables its post-snapshot rival check only when the captured set is nonempty; otherwise normal authority/correction logic can decide.",
+      "classification": "Candidate boundary discrepancy; use unequal same-slot values, same source or stronger old writer, overlapping validity/scope and sufficient evidence. Include fresh-after-rival and nonempty-before-rival anchors. No test outcome asserted here.",
+      "sources": [
+        {
+          "path": "src/memtx/conflict_detector.py",
+          "lines": [
+            127,
+            178
+          ],
+          "url": "https://github.com/lxy1134/MEMTX_/blob/4e1124ccd5fd384857463020e3497aa73ec93be6/src/memtx/conflict_detector.py#L127-L178",
+          "sha256": "e4ca7de8061fa0d8d3dc9fbc2a3ad69cd7cddcfab300f804770e5a2989aed31f"
+        }
+      ]
+    },
+    {
+      "question": "Is action validation atomic with external effect acceptance?",
+      "answer": "The runner calls the gate, then dispatches the mock tool, then records the tool effect as separate ordinary calls. The invariant harness checks these in one API-level transition.",
+      "classification": "No arbitrary gate/dispatch-interleaving guarantee demonstrated; a TOCTOU probe identifies an enforcement assumption, not automatically a violation of the published API-transition model.",
+      "sources": [
+        {
+          "path": "src/llm_runner.py",
+          "lines": [
+            343,
+            363
+          ],
+          "url": "https://github.com/lxy1134/MEMTX_/blob/4e1124ccd5fd384857463020e3497aa73ec93be6/src/llm_runner.py#L343-L363",
+          "sha256": "deb5595ef9768068507bc28ca328f57c26a75be14b3b3b08109786b664ca0bc3"
+        },
+        {
+          "path": "tests/test_invariants_property.py",
+          "lines": [
+            191,
+            222
+          ],
+          "url": "https://github.com/lxy1134/MEMTX_/blob/4e1124ccd5fd384857463020e3497aa73ec93be6/tests/test_invariants_property.py#L191-L222",
+          "sha256": "8dbc415089a9d6bc7674a6f123fa3cfeb7dd870b2420a087787905ad46561017"
+        }
+      ]
+    }
+  ],
+  "verification_bounds": {
+    "paper_location": "v2 \u00a73.5; physical PDF page5",
+    "source": "scripts/verify_invariants.py",
+    "observed_default_cli": "Three records/two transactions/depth8; flags permit the stronger paper-reported bound.",
+    "transition_boundary": "Whole manager operations; no OS crash, durable reload, in-flight external operation or model-decision identity stream.",
+    "alphabet": "Generated bounded records use one entity/attribute/value; lifecycle/provenance/gate states vary. General arbitrary semantic constraints are not that checked invariant."
+  },
+  "runnable_baseline_recommendation": "Use the actual pinned MemTXManager for small CPU conformance probes first. Fetch a complete public commit archive before full-suite reproduction; optional tau2 imports and data availability need separate checks. The declared requirements include pytest/hypothesis and broader analysis/model dependencies, but the core schema/manager are standard-library Python.",
+  "no_novelty_inference": "A confirmed implementation discrepancy would be a bounded public-artifact counterexample. It would not establish a new isolation principle, failure of all memory systems, or journal readiness."
+}

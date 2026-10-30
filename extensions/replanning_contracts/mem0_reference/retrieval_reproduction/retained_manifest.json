@@ -1,0 +1,244 @@
+{
+  "captures": [
+    {
+      "ordinal": 0,
+      "n_source_preferences": 8,
+      "state": "baseline",
+      "path": "retained_raw/n8__baseline",
+      "captured_at_utc": "2026-10-30T05:19:08Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "dda09e3cb82984413502e834c80feb4b12d95e9c0cc01184da240ecde709324c",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "b173cef171bf7b8b14d3e0611ab0bb4ac9001675d34099895551e276eccf0e26"
+      }
+    },
+    {
+      "ordinal": 1,
+      "n_source_preferences": 8,
+      "state": "native_k10",
+      "path": "retained_raw/n8__native_k10",
+      "captured_at_utc": "2026-10-30T05:19:09Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "c83255d209f478e6436c002b777f8eaa55ab1937c02cdfcf7f0c972358082531",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "b173cef171bf7b8b14d3e0611ab0bb4ac9001675d34099895551e276eccf0e26"
+      }
+    },
+    {
+      "ordinal": 2,
+      "n_source_preferences": 8,
+      "state": "widened_candidates",
+      "path": "retained_raw/n8__widened_candidates",
+      "captured_at_utc": "2026-10-30T05:19:09Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "2d9df91def814856f549cfdfe56104d7af39b1eeb99832186468010658d77872",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "b173cef171bf7b8b14d3e0611ab0bb4ac9001675d34099895551e276eccf0e26"
+      }
+    },
+    {
+      "ordinal": 3,
+      "n_source_preferences": 8,
+      "state": "exact_admission",
+      "path": "retained_raw/n8__exact_admission",
+      "captured_at_utc": "2026-10-30T05:19:09Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "55e368ab8872d3c11db47a5cb06b40d148ee23b49f66a1a4261a6cb62b45970c",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "b173cef171bf7b8b14d3e0611ab0bb4ac9001675d34099895551e276eccf0e26"
+      }
+    },
+    {
+      "ordinal": 4,
+      "n_source_preferences": 12,
+      "state": "baseline",
+      "path": "retained_raw/n12__baseline",
+      "captured_at_utc": "2026-10-30T05:19:09Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "7fd56a5b142ab01f41980ebaa3f0c6a6a51fe9e1c739bf6eee66187daffc0aba",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "9249fbcd6597a7c9790fb2e00f96c3a6f7182ca77e9c567fc93c26311ab8875b"
+      }
+    },
+    {
+      "ordinal": 5,
+      "n_source_preferences": 12,
+      "state": "native_k10",
+      "path": "retained_raw/n12__native_k10",
+      "captured_at_utc": "2026-10-30T05:19:09Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "81498ed65b9cc670491850f744d3751d13a09d84d24983cf38b330030c53c0c6",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "c32e4ce2304d9a01193aaf5bd7fc4a3617489506e14e028d3bed9139312112de"
+      }
+    },
+    {
+      "ordinal": 6,
+      "n_source_preferences": 12,
+      "state": "widened_candidates",
+      "path": "retained_raw/n12__widened_candidates",
+      "captured_at_utc": "2026-10-30T05:19:10Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "87ab5d72be479ccbc348250e111b5e9b048391cb69914c97683e949fa3e1d812",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "9249fbcd6597a7c9790fb2e00f96c3a6f7182ca77e9c567fc93c26311ab8875b"
+      }
+    },
+    {
+      "ordinal": 7,
+      "n_source_preferences": 12,
+      "state": "exact_admission",
+      "path": "retained_raw/n12__exact_admission",
+      "captured_at_utc": "2026-10-30T05:19:10Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "0d68d23ec7ece485a5109f7d2bd26ee49d64423b6c91a3d6ad79758b843e648c",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "9249fbcd6597a7c9790fb2e00f96c3a6f7182ca77e9c567fc93c26311ab8875b"
+      }
+    },
+    {
+      "ordinal": 8,
+      "n_source_preferences": 24,
+      "state": "baseline",
+      "path": "retained_raw/n24__baseline",
+      "captured_at_utc": "2026-10-30T05:19:10Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "36a2c16941359f953b05723366d753442681569a076001bdcf6f63fe02335c8a",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "1cb961895f61f82377cd40b1460d0fea8e1860413dbcc6122804d503d5199931"
+      }
+    },
+    {
+      "ordinal": 9,
+      "n_source_preferences": 24,
+      "state": "native_k10",
+      "path": "retained_raw/n24__native_k10",
+      "captured_at_utc": "2026-10-30T05:19:10Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "5431fc0077bed1b20959de684b6b9a7a0fe1fef4e9c4ac94037e741b16b78ee3",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "386c0a18ed744093e7b6e973750b8b7653e81ca391ba55ff55a5909d420c80d4"
+      }
+    },
+    {
+      "ordinal": 10,
+      "n_source_preferences": 24,
+      "state": "widened_candidates",
+      "path": "retained_raw/n24__widened_candidates",
+      "captured_at_utc": "2026-10-30T05:19:11Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "36bd472989e41030780e81ac0b6bf2dd54a405314c59432fa22e48a11c413922",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "1cb961895f61f82377cd40b1460d0fea8e1860413dbcc6122804d503d5199931"
+      }
+    },
+    {
+      "ordinal": 11,
+      "n_source_preferences": 24,
+      "state": "exact_admission",
+      "path": "retained_raw/n24__exact_admission",
+      "captured_at_utc": "2026-10-30T05:19:11Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "8c0a325f198c1260852baf46d96619c7ba23e5dc8562e724b37d6e26af4e9fa5",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "1cb961895f61f82377cd40b1460d0fea8e1860413dbcc6122804d503d5199931"
+      }
+    },
+    {
+      "ordinal": 12,
+      "n_source_preferences": 40,
+      "state": "baseline",
+      "path": "retained_raw/n40__baseline",
+      "captured_at_utc": "2026-10-30T05:19:12Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "2352eaa43082e13647c766d3c608a30bb2841dd2dd995df48b948b7248927816",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "2a26dbc8d0e4a520db400511a72b3a7fa558cf1cd1f4d66e00bf07f4bc43c5d8"
+      }
+    },
+    {
+      "ordinal": 13,
+      "n_source_preferences": 40,
+      "state": "native_k10",
+      "path": "retained_raw/n40__native_k10",
+      "captured_at_utc": "2026-10-30T05:19:12Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "dc88b618a9258dc3dfbdbf0f9018210dc738a388c9d2e51491ca7bec8301015b",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "651982b9dba2f1e38bb79c30bd03830f9ba8ab1e735d75014b534b189273943d"
+      }
+    },
+    {
+      "ordinal": 14,
+      "n_source_preferences": 40,
+      "state": "widened_candidates",
+      "path": "retained_raw/n40__widened_candidates",
+      "captured_at_utc": "2026-10-30T05:19:13Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "543de6d8980baebeca3831d9676645d5fa6dbd6bbdc3b7322ef944608564cff0",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "2a26dbc8d0e4a520db400511a72b3a7fa558cf1cd1f4d66e00bf07f4bc43c5d8"
+      }
+    },
+    {
+      "ordinal": 15,
+      "n_source_preferences": 40,
+      "state": "exact_admission",
+      "path": "retained_raw/n40__exact_admission",
+      "captured_at_utc": "2026-10-30T05:19:13Z",
+      "runner_body_exception": null,
+      "capture_boundary": "TemporaryDirectory.__exit__, after runner closes native clients",
+      "files": {
+        "history.sqlite": "7b83d0330822e51338e0f2b82ee89134d3e1d0e39247bf002286979285559eab",
+        "qdrant/.lock": "67a987c432005e3afcc13a871b3ddabaeee0f4504058da65b0769016d3083b44",
+        "qdrant/meta.json": "331d86940347b03889b4ab615cd6e5f126d329c5a02afa8fe55494cd5a5f8ee0",
+        "qdrant/collection/study_memories/storage.sqlite": "2a26dbc8d0e4a520db400511a72b3a7fa558cf1cd1f4d66e00bf07f4bc43c5d8"
+      }
+    }
+  ]
+}

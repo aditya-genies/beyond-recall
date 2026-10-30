@@ -1,0 +1,35 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "additional_model_call": true,
+  "returncode": 0,
+  "wall_seconds": 5.874,
+  "public_usage_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 26044,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 86,
+        "reasoning_output_tokens": 41
+      }
+    }
+  ],
+  "item_types": [
+    "agent_message"
+  ],
+  "tool_event_types": [],
+  "prompt_sha256": "9537e770c450eeae32195b5bb55a8636e11c43c3867e0d7d85a392503cbfa2bb",
+  "started_at_utc": "2026-10-30T05:08:51Z",
+  "response_sha256": "e388aaa5b4791472250f80ec4c09c42867009fb21503e3ae809772ef2fa9fb95",
+  "native_messages_sha256": "aefef75c20fe48067a49936253c3f0fa41d0b96d54211b9f414c9e2fb98a98a3",
+  "used_response_sha256": "68107dee3cc5a27d4ee6756792fe6aa10588b7361f84f8a9df466afc291873c7",
+  "exact_admission_removed": [
+    {
+      "id": "0",
+      "text": "User prefers jasmine as a flower.",
+      "attributed_to": "user la?",
+      "linked_memory_ids": []
+    }
+  ]
+}

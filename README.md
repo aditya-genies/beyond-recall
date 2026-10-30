@@ -6,14 +6,44 @@ Aditya Mantri · Independent Researcher · Working research manuscript
 
 [Paper](manuscript/main.pdf) · [Editable source](manuscript/main.tex) ·
 [Review response](revisions/review1/response.txt) ·
-[Journal readiness assessment](revisions/review1/journal_readiness.txt)
+[Current research readiness](extensions/replanning_contracts/review/journal_readiness.txt)
 
 A standalone study using synthetic facts and public dependencies. No proprietary
 application code, internal PRs, nonpublic conversations, or company credentials
 are included. The author's supplied employment/education biography identifies
 background; it does not assert an employer or university research affiliation.
 
-## What the evidence supports
+## New public-implementation findings
+
+The [admission and recovery extension](extensions/replanning_contracts/README.md)
+adds a specific native-pipeline mechanism: Mem0's tested write path checks exact
+hashes only among ten retrieved candidates. Re-emitting a larger stored batch
+can create exact copies. At N40/K10, the native retry state returns every queried
+target but only **247 summed per-query distinct strings in 400 slots**, versus
+400 in baseline and both authored interventions.
+
+- **96 controlled executions / 288 native adds** isolate the candidate boundary;
+  the 40-fact physical sequence is 40 → 70 → 100.
+- **28 new actual Sol 6.1 requests**, four real worker exits after effects, and
+  **48 fresh-process retries** add live recovery evidence. Twenty-four retries
+  reuse responses and are not additional model calls. Native fresh retries add
+  91 exact copies plus one ungraded literal formulation; controls add none.
+- **1,008 post hoc native searches** retain all exact targets. An after-close
+  computational reproduction matches every ordered result and metric; it repeats
+  the same samples. Distinct strings are not semantic diversity or QA accuracy.
+- **24 MemTX traces** inspect two snapshot-description boundaries in pinned
+  public source; 94 unchanged non-tau2 tests pass. A missing optional dependency
+  prevents labelling the full original suite passing.
+- **96 executable SQLite/Redis cells**, plus eight declared N/A cells, compare
+  authored recovery contracts and documented provider error semantics.
+
+These findings refine known candidate-window and recovery issues. They do not
+establish a new deduplication primitive, industry certification, natural failure
+rate, journal acceptance or a first-discovery claim. See the
+[claim ledger](extensions/replanning_contracts/new_study_claim_ledger.json) and
+[closest prior art](extensions/replanning_contracts/literature/overlap_matrix.txt).
+
+## Frozen original evidence
 
 The frozen primary factorial independently switches stable insertion addresses
 (D), retained literal decisions/target bindings (P), and completion receipts (R).
@@ -77,10 +107,11 @@ account and may return different outputs. No model API-key fallback is used.
 [protocol audit](checks/audit_protocol.py), [figures](figures/), and
 [provenance](PROVENANCE.json) preserve source/result pins. GitHub Actions
 reproduces the primary campaign and runs extension checks; archived older CI
-evidence is tied to its commit. The [expanded verification run](https://github.com/aditya-genies/beyond-recall/actions/runs/41003933924) passed all four jobs on Python 3.12 and 3.14, including the complete primary campaign and every extension.
+evidence is tied to its commit. The [expanded verification run](https://github.com/aditya-genies/beyond-recall/actions/runs/41003933924) passed all four jobs on Python 3.12 and 3.14, including the complete primary campaign and the four earlier extensions. The new public-memory verification has its own workflow and explicit platform scope in [CI scope](extensions/replanning_contracts/ci/README.md).
 
 This public repository accompanies a working manuscript. It has not been
-accepted or published by a peer-reviewed journal. The study uses local SQLite,
-declared semantic fault barriers, authored inputs, and one small model pilot.
+accepted or published by a peer-reviewed journal. The study uses authored inputs, declared fault barriers and pinned public
+implementations. Model evidence uses one requested alias/harness; the new live
+requests and earlier pilot are separate campaigns.
 The public artifact makes the claims inspectable; external replication and a
 broader novel contribution remain necessary for a leading-journal case.

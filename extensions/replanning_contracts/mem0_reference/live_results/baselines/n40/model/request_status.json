@@ -1,0 +1,28 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "additional_model_call": true,
+  "returncode": 0,
+  "wall_seconds": 15.574,
+  "public_usage_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 26609,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1012,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "item_types": [
+    "agent_message"
+  ],
+  "tool_event_types": [],
+  "prompt_sha256": "7888afdea6ff11ae40b2d2701bddc80273eaaa89ac8cd0e091cd6ba74642eaeb",
+  "started_at_utc": "2026-10-30T05:07:48Z",
+  "response_sha256": "3692f687ef7b94959e9d99d484bf09bb4938a3228b5b3514f4b9f93f860269c7",
+  "native_messages_sha256": "28687dfc48001b5f0bac26fb26b9da207f916f7dd5ea81409443cfc11e5d5b45",
+  "used_response_sha256": "2f7b19c7a4e7bd40950d597299583d9be6296c1d6a61c0dce1ae879960fb0dfc",
+  "exact_admission_removed": []
+}

@@ -1,0 +1,38 @@
+{
+  "prepared_utc": "2026-10-30T05:09:59.644312+00:00",
+  "status": "PASS",
+  "errors": [],
+  "entry_count": 18,
+  "preprint_count": 10,
+  "essential_preprint_count": 8,
+  "optional_preprint_count": 2,
+  "other_source_count": 8,
+  "proposed_keys": [
+    "li2026memtx",
+    "wang2026toki",
+    "shen2026revoked",
+    "yao2026forgetting",
+    "zhu2026quiescence",
+    "khan2026concurrency",
+    "chen2026cordon",
+    "orogat2026memory",
+    "liu2026receipt",
+    "zhu2026succession",
+    "mem0contributors2026oss",
+    "memtx2026code",
+    "qdrant2026client",
+    "qdrant2026fastembed",
+    "baai2023bgesmall",
+    "oleson2026recency",
+    "nie2026mem0reading",
+    "corespeed2026mem0audit"
+  ],
+  "main_bibliography_modified": false,
+  "undefined_citation_keys": [],
+  "coverage_note": "All ten proposed papers appear in either the core amendment or explicitly conditional sentences. Conditional entries should be omitted if the associated discussion is removed; no citation-count padding is recommended.",
+  "output_hashes": {
+    "additions.bib": "7eaa190cab683fb9f4cc646acf6c221803ed458f7436de2dc6985e22c0cb918c",
+    "new_claim_map.json": "2b625ddf865346979a22a43e23db2ad659eca8c7abdc3e71460d8f1a0d287013",
+    "related_work_amendment.txt": "e23034d7076398de7e53d99b6be2274810ba068ce6155d4fd018de706ac10e72"
+  }
+}

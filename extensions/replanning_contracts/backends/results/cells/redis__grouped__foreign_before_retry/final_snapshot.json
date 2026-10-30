@@ -1,0 +1,44 @@
+{
+  "raw": {
+    "receipts_data": {
+      "A": "{\"outcome\":{\"value\":\"preferred\",\"epoch\":0,\"version\":1},\"body\":\"{\\\"expected_epoch\\\":0,\\\"expected_version\\\":0,\\\"target\\\":\\\"record\\\",\\\"value\\\":\\\"preferred\\\"}\"}"
+    },
+    "receipts_type": "hash",
+    "state_json": "{\"visible\":true,\"history\":[{\"version\":1,\"epoch\":0,\"value\":\"preferred\",\"kind\":\"participant\",\"opid\":\"A\",\"body\":\"{\\\"expected_epoch\\\":0,\\\"expected_version\\\":0,\\\"target\\\":\\\"record\\\",\\\"value\\\":\\\"preferred\\\"}\"},{\"value\":\"newer\",\"kind\":\"foreign\",\"version\":2,\"epoch\":0}],\"version\":2,\"origin\":\"external\",\"value\":\"newer\",\"epoch\":0,\"record_epoch\":0}"
+  },
+  "receipt_storage": "hash",
+  "receipts": {
+    "A": {
+      "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"preferred\"}",
+      "outcome": {
+        "epoch": 0,
+        "value": "preferred",
+        "version": 1
+      }
+    }
+  },
+  "state": {
+    "epoch": 0,
+    "history": [
+      {
+        "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"preferred\"}",
+        "epoch": 0,
+        "kind": "participant",
+        "opid": "A",
+        "value": "preferred",
+        "version": 1
+      },
+      {
+        "epoch": 0,
+        "kind": "foreign",
+        "value": "newer",
+        "version": 2
+      }
+    ],
+    "origin": "external",
+    "record_epoch": 0,
+    "value": "newer",
+    "version": 2,
+    "visible": true
+  }
+}

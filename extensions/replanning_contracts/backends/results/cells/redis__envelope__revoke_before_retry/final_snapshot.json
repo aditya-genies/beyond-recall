@@ -1,0 +1,39 @@
+{
+  "raw": {
+    "state_json": "{\"visible\":false,\"history\":[{\"version\":1,\"epoch\":0,\"value\":\"preferred\",\"kind\":\"participant\",\"opid\":\"A\",\"body\":\"{\\\"expected_epoch\\\":0,\\\"expected_version\\\":0,\\\"target\\\":\\\"record\\\",\\\"value\\\":\\\"preferred\\\"}\"},{\"kind\":\"revoke\",\"version\":1,\"epoch\":1}],\"version\":1,\"origin\":null,\"value\":null,\"epoch\":1,\"receipts\":{\"A\":{\"outcome\":{\"value\":\"preferred\",\"epoch\":0,\"version\":1},\"body\":\"{\\\"expected_epoch\\\":0,\\\"expected_version\\\":0,\\\"target\\\":\\\"record\\\",\\\"value\\\":\\\"preferred\\\"}\"}},\"record_epoch\":null}"
+  },
+  "receipt_storage": "envelope",
+  "receipts": {
+    "A": {
+      "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"preferred\"}",
+      "outcome": {
+        "epoch": 0,
+        "value": "preferred",
+        "version": 1
+      }
+    }
+  },
+  "state": {
+    "epoch": 1,
+    "history": [
+      {
+        "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"preferred\"}",
+        "epoch": 0,
+        "kind": "participant",
+        "opid": "A",
+        "value": "preferred",
+        "version": 1
+      },
+      {
+        "epoch": 1,
+        "kind": "revoke",
+        "version": 1
+      }
+    ],
+    "origin": null,
+    "record_epoch": null,
+    "value": null,
+    "version": 1,
+    "visible": false
+  }
+}

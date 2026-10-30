@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "checker": "check_retrieval.py",
+  "checker_sha256": "4cc7f7250b71a0908c87fd9c009710d5bfbbd087c411af550a3d981bc950ffd8",
+  "wrapper_sha256": "2e7aab065b321ea6468daab315ce1fb7960bc1891393025b8d68484862d2f520",
+  "tests_sha256": "b0597e9f01844ef9acc3f902b66ea4f5e8be7f1d1d9bf70e8a968bde8666bc95",
+  "test_log_sha256": "803adc950f5f96f62a913513ff134fca2b84ee5dbb72740387bdf6dfaa402f8c",
+  "verification_sha256": "54b941c2b0ef40d878becd77b1f74ca6b3673cb3c80f8e4dac2a01228733f9d0",
+  "negative_fixture_test_methods": 3,
+  "negative_fixture_methods_passed": 3,
+  "original_registered_cells": 1008,
+  "computational_reproduction_cells": 1008,
+  "independent_sample_count_claim": null,
+  "exact_target_presence": 1008,
+  "duplicate_bearing_cells": 213,
+  "lower_literal_diversity_cells": 201,
+  "raw_after_stores_retained": 16,
+  "ordered_id_cells_matching": 1008,
+  "protected_original_inputs_unchanged": true,
+  "design_review": [
+    "Post hoc causal exposure probe of complete authored literal query set, not independent workload generalization.",
+    "Same selected-state literal content, preserved baseline point blobs and matching new-copy vectors remove differing-content confounding.",
+    "All 84 baseline literals used; no favorable query selection within the frozen selected states.",
+    "Exact self-query target presence and literal diversity are separate outcomes.",
+    "Duplicate slots need not displace unique literals when the budget has spare capacity.",
+    "Current native/helper/runtime hashes match earlier frozen evidence; the retrieval protocol did not independently pin loaded model-file digests.",
+    "Original deleted temporary after-state is not recovered; reproduction after-state is directly checked."
+  ],
+  "source_checks": {
+    "status": "PASS",
+    "reader_helper_sha256": "0712bfb752838bda0fb6837ab5cac3f3f1ffd5e2f51b5cc444cf5efdf2978ee3",
+    "installed_mem0_source_sha256": "f329ca4a17af1fbefb32ac10d4cc7ae7ddbdb7435a87eb74c30915cff98b8b7c",
+    "qdrant_persistence_source_sha256": "75febeac43d74f4ca706290a85b6a15f4d5ac3ecb0dfe96153614796c5e9478f",
+    "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "sqlite": "3.51.2",
+    "packages": {
+      "mem0ai": "2.2.1",
+      "qdrant-client": "1.20.0",
+      "fastembed": "0.9.1",
+      "onnxruntime": "1.31.1",
+      "numpy": "2.5.4",
+      "pydantic": "2.14.2"
+    },
+    "provenance": "Current source/runtime matches earlier frozen controlled-study evidence. The retrieval protocol itself did not separately freeze transitive dependencies or record loaded model-file digests."
+  }
+}

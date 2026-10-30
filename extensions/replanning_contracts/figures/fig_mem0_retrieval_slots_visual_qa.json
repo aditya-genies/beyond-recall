@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "reviewed_at_utc": "2026-10-30T05:28:04.734095+00:00",
+  "figure": "fig_mem0_retrieval_slots",
+  "png_sha256": "d07fc6048646b24f3902d3ab7b8db1a9f18ed392868dccd2f6a3adb1eb72ee2b",
+  "pdf_sha256": "919652eb4463037287ad8036420501b418a25c06bfd4228fb240420e2055e823",
+  "svg_sha256": "c901011f32ca210480769e8772e6f14f53789e26d6066926843583e8ca380eba",
+  "source_data_sha256": "5b46d0f59d46ae2ea2e5ac8334b836fa0e3d249303ca428ce3edb1d5c984dd2f",
+  "png_pixels": [
+    1350,
+    1080
+  ],
+  "png_dpi": [
+    299.9994,
+    299.9994
+  ],
+  "pixel_inspection": {
+    "final_png": true,
+    "poppler_render_of_final_pdf": true,
+    "no_visible_clipping": true,
+    "no_visible_text_overlap": true,
+    "legend_outside_axes": true,
+    "all_four_N_values_present": true,
+    "both_controls_explicitly_combined_with_baseline": true,
+    "segment_values_legible": true,
+    "N8_effective_return_is_8": true,
+    "N8_two_unused_budget_slots_not_duplicates": true,
+    "target_presence_denominator_336": true,
+    "xlabel_clear_of_footer": true
+  },
+  "bbox_gate": {
+    "path": "fig_mem0_retrieval_slots_spacing.json",
+    "pair_checks": 69,
+    "all_pair_checks_pass": true,
+    "minimum_pair_gap_px": 15.548,
+    "bar_label_checks": 11,
+    "all_bar_labels_inside_segments": true,
+    "minimum_bar_label_margin_px": 6.171,
+    "outside_canvas": []
+  },
+  "critical_gaps_px": {
+    "legend/axes": 48.194,
+    "footer_0/xlabel": 24.746,
+    "unused_note/n8_baseline_bar": 15.548
+  },
+  "figure_lint": {
+    "errors": 0,
+    "warnings": 1,
+    "warning": "no-pipeline-figure",
+    "disposition": "The delegated set contains the two requested empirical plots; the complete manuscript figure set is not evaluated here.",
+    "report": "retrieval_figure_lint.txt"
+  },
+  "provenance": "fig_mem0_retrieval_slots_provenance.json",
+  "first_figure_assets_source_and_caption_unchanged": true,
+  "frozen_experiment_or_main_manuscript_modified": false,
+  "interpretation": "336 selected (N, exact query, state) cells at K10 from84 distinct (N, query) pairs. No semantic quality, QA, harm, population rate or independent-sample interpretation."
+}

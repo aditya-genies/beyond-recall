@@ -1,0 +1,10 @@
+{
+  "client_auto_retry": false,
+  "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+  "public_dependencies_only": true,
+  "python": "3.14.3",
+  "redis": "7.2.17",
+  "redis_py": "8.1.0",
+  "services": "Fresh study-only local Docker Redis; isolated SQLite files; no existing database/service queried.",
+  "sqlite": "3.51.2"
+}

@@ -1,0 +1,11 @@
+{
+  "before_error": true,
+  "journal": "extensions/replanning_contracts/backends/results/cells/redis__grouped__before_effect_error/prepared.json",
+  "operation": {
+    "expected_epoch": 0,
+    "expected_version": 0,
+    "opid": "A",
+    "target": "record",
+    "value": "preferred"
+  }
+}

@@ -1,0 +1,8 @@
+test_rejects_favorable_query_omission_even_with_rewritten_summary (test_check_retrieval.RetrievalEvidenceForgeryTests.test_rejects_favorable_query_omission_even_with_rewritten_summary) ... ok
+test_rejects_forged_returned_literal_and_diversity_metric (test_check_retrieval.RetrievalEvidenceForgeryTests.test_rejects_forged_returned_literal_and_diversity_metric) ... ok
+test_rejects_mutated_frozen_source_database (test_check_retrieval.RetrievalEvidenceForgeryTests.test_rejects_mutated_frozen_source_database) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.058s
+
+OK

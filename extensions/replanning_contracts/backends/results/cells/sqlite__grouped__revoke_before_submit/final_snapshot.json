@@ -1,0 +1,41 @@
+{
+  "raw": {
+    "receipts_table_columns": [
+      "opid",
+      "body",
+      "outcome"
+    ],
+    "record": {
+      "epoch": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "kind": "revoke",
+          "version": 0
+        }
+      ],
+      "origin": null,
+      "record_epoch": null,
+      "value": null,
+      "version": 0,
+      "visible": false
+    }
+  },
+  "receipt_storage": "table",
+  "receipts": {},
+  "state": {
+    "epoch": 1,
+    "history": [
+      {
+        "epoch": 1,
+        "kind": "revoke",
+        "version": 0
+      }
+    ],
+    "origin": null,
+    "record_epoch": null,
+    "value": null,
+    "version": 0,
+    "visible": false
+  }
+}

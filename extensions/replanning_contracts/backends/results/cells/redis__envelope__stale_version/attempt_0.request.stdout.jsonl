@@ -1,0 +1,5 @@
+{"event":"prepared_validation","journal_sha256":"bdcab4bbe365c96d6765061049e476f707a8c637672ec80d7321337ff1de1c72","operation":{"expected_epoch":0,"expected_version":0,"opid":"A","target":"record","value":"preferred"},"valid":true}
+{"event":"entry","receipt_hit":false,"snapshot":{"raw":{"state_json":"{\"visible\":true,\"history\":[{\"value\":\"newer\",\"kind\":\"foreign\",\"version\":1,\"epoch\":0}],\"version\":1,\"origin\":\"external\",\"value\":\"newer\",\"epoch\":0,\"receipts\":{},\"record_epoch\":0}"},"receipt_storage":"envelope","receipts":{},"state":{"epoch":0,"history":[{"epoch":0,"kind":"foreign","value":"newer","version":1}],"origin":"external","record_epoch":0,"value":"newer","version":1,"visible":true}}}
+{"event":"submitted"}
+{"event":"backend_return","result":{"acknowledged":false,"changed":false,"historical_ack":false,"status":"stale_version"}}
+{"event":"result","result":{"acknowledged":false,"changed":false,"historical_ack":false,"status":"stale_version"}}

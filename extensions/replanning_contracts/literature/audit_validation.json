@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-30T04:59:50.655074+00:00",
+  "scholarly_records": 10,
+  "scholarly_evidence_records": 40,
+  "all_scholarly_fetches_http_200": true,
+  "all_scholarly_evidence_hashes_present": true,
+  "pdf_identity_check": "pdf_identity_check.json: all ten extracted titles and author surnames match DataCite in the first two pages.",
+  "source_summaries_are_auditor_prose": true,
+  "third_party_text_redistributed": false,
+  "output_hashes": {
+    "expanded_scholarly_source_audits.json": "3ef8f627289b718b41caa4617a72196f0d2df706c8b686c2244c70c6c155fa15",
+    "falsifiable_hypotheses.json": "75f1309520370fc0193cd70b0d8063c9bc329822f6c7054c69681cc1c10a1685",
+    "falsifiable_hypotheses.txt": "7c367c791c0fc891b679652251d85be33e5caf3c8752321007a4e5ae19b07c07",
+    "mem0_antecedent_audit.json": "e985ffe891afb8fb42bde8b1a013a0e33a4d1ad7f4061fe351a9ca641eb4bf0a",
+    "overlap_matrix.json": "a1c9d44600e2bb3282c9adbe8507092ba478f5c45697c692d392597e39e2c137",
+    "overlap_matrix.txt": "be1bf9c1c1b26fcc5f8ad71eb69103409f905aa70d1437bef0060dfcb5808128",
+    "primary_source_index.json": "75f0821af284db28f37af981fb3d1497da2e6e0b870db4c6e1b68cfbc05a296c"
+  }
+}

@@ -1,0 +1,2 @@
+{"event":"prepared_validation","journal_sha256":"bdcab4bbe365c96d6765061049e476f707a8c637672ec80d7321337ff1de1c72","operation":{"expected_epoch":0,"expected_version":0,"opid":"A","target":"record","value":"changed"},"valid":false}
+{"event":"result","result":{"acknowledged":false,"changed":false,"historical_ack":false,"status":"caller_binding_conflict"}}

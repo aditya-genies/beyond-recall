@@ -1,0 +1,56 @@
+{
+  "records": [
+    {
+      "key": "minimem_mem0_audit",
+      "url": "https://raw.githubusercontent.com/jianglong-nie/MiniMem/main/references/paper-reading/Mem0.md",
+      "retrieved_utc": "2026-10-30T04:56:24.216858+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/jianglong-nie/MiniMem/main/references/paper-reading/Mem0.md",
+      "content_type": "text/plain; charset=utf-8",
+      "status": "saved_external_cache",
+      "cache_filename": "minimem_mem0_audit.md",
+      "sha256": "ad2cd4741829e9d81790cd5d86ccaa370c4d41f6323d3847a45ebcb7f595543d",
+      "bytes": 35112
+    },
+    {
+      "key": "minimem_history",
+      "url": "https://api.github.com/repos/jianglong-nie/MiniMem/commits?path=references/paper-reading/Mem0.md&per_page=10",
+      "retrieved_utc": "2026-10-30T04:56:24.217139+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/jianglong-nie/MiniMem/commits?path=references/paper-reading/Mem0.md&per_page=10",
+      "content_type": "application/json; charset=utf-8",
+      "status": "saved_external_cache",
+      "cache_filename": "minimem_history.json",
+      "sha256": "1736a34f72714b1c8300dfeed9c16157aca4ffd60083a404ff94bb96be1ef39a",
+      "bytes": 3147
+    },
+    {
+      "key": "mem0_architecture_pinned",
+      "url": "https://raw.githubusercontent.com/mem0ai/mem0/26cdefb46600c0fa5953c4b5ee5003c125539fc4/skills/mem0/references/architecture.md",
+      "retrieved_utc": "2026-10-30T04:56:24.217220+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/mem0ai/mem0/26cdefb46600c0fa5953c4b5ee5003c125539fc4/skills/mem0/references/architecture.md",
+      "content_type": "text/plain; charset=utf-8",
+      "status": "saved_external_cache",
+      "cache_filename": "mem0_architecture_pinned.md",
+      "sha256": "65d7404258c323b6310e33c5850f4d0323c8a84151ab46d73ca852b972514342",
+      "bytes": 12488
+    },
+    {
+      "key": "lore_mem0_audit",
+      "url": "https://raw.githubusercontent.com/corespeed-io/lore/main/docs/research/mem0-token-efficient-algorithm-audit.md",
+      "retrieved_utc": "2026-10-30T04:56:24.217273+00:00",
+      "full_text_included_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://raw.githubusercontent.com/corespeed-io/lore/main/docs/research/mem0-token-efficient-algorithm-audit.md",
+      "content_type": "text/plain; charset=utf-8",
+      "status": "saved_external_cache",
+      "cache_filename": "lore_mem0_audit.md",
+      "sha256": "55c21420a8bd1f085d095a87cae76ca4d61204bb555de8856363a571a971b00c",
+      "bytes": 25232
+    }
+  ]
+}

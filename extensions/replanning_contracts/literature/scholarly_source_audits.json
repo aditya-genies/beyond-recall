@@ -1,0 +1,440 @@
+{
+  "reviewed_utc": "2026-10-30T04:52:22.407683+00:00",
+  "full_text_redistributed": false,
+  "scope": "Four newly found close primary papers; conclusions do not presume novelty or acceptance readiness.",
+  "records": [
+    {
+      "arxiv_id": "2607.23929",
+      "doi": "10.48550/arxiv.2607.23929",
+      "title": "MemTX: Transactional Belief Commit for Stateful Agent Memory",
+      "authors": [
+        "Li, Xiaoyang",
+        "Wang, Yiqi",
+        "Lu, Haohui",
+        "Chen, Zhi",
+        "Li, Mo",
+        "Song, Pingan",
+        "Zheng, Mingkai",
+        "Cai, Taotao"
+      ],
+      "year": 2026,
+      "versions_and_dates": [
+        {
+          "date": "2026-07-27T01:57:39Z",
+          "dateType": "Submitted",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-07-28T01:08:38Z",
+          "dateType": "Updated",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-07-28T12:51:37Z",
+          "dateType": "Submitted",
+          "dateInformation": "v2"
+        },
+        {
+          "date": "2026-07-29T00:48:54Z",
+          "dateType": "Updated",
+          "dateInformation": "v2"
+        },
+        {
+          "date": "2026-07",
+          "dateType": "Available",
+          "dateInformation": "v1"
+        }
+      ],
+      "datacite_state": "findable",
+      "identity_verification": "Fresh landing/PDF/full body and DataCite match; no peer-reviewed venue inferred.",
+      "primary_sources": [
+        {
+          "key": "2607_23929_abs",
+          "url": "https://arxiv.org/abs/2607.23929",
+          "retrieved_utc": "2026-10-30T04:47:37.309819+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/abs/2607.23929",
+          "content_type": "text/html; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2607_23929_abs.html",
+          "sha256": "479f2eabcaf714aecb2e8d7ac7cd675540461d39341a882f233f22e64efc7a97",
+          "bytes": 42624
+        },
+        {
+          "key": "2607_23929_html",
+          "url": "https://arxiv.org/html/2607.23929",
+          "retrieved_utc": "2026-10-30T04:47:37.310281+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/html/2607.23929",
+          "content_type": "text/html; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2607_23929_html.html",
+          "sha256": "2a5e53179a9510c8ec95bf966d91f0a2f7907bf4bcbd3a9b2616930dfea52299",
+          "bytes": 266309
+        },
+        {
+          "key": "2607_23929_pdf",
+          "url": "https://arxiv.org/pdf/2607.23929",
+          "retrieved_utc": "2026-10-30T04:47:37.310356+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/pdf/2607.23929",
+          "content_type": "application/pdf",
+          "status": "saved_external_cache",
+          "cache_filename": "2607_23929_pdf.pdf",
+          "sha256": "70a55fada7121a5d47fae3185fd09dca18d69826020dcb165323c044c65b1944",
+          "bytes": 848643
+        },
+        {
+          "key": "2607_23929_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2607.23929",
+          "retrieved_utc": "2026-10-30T04:47:37.310407+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://api.datacite.org/dois/10.48550/arXiv.2607.23929",
+          "content_type": "application/json; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2607_23929_datacite.json",
+          "sha256": "f99fa012fec4683cdcb0e69588a8edb988c0fc623f132c0f98fe8a2bcab360d6",
+          "bytes": 10920
+        }
+      ],
+      "sections": [
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "Appendix H"
+      ],
+      "scope": "Staged belief lifecycle, same-slot conflict checks, maturity-scoped action gating and provenance-based repair. Partial commit and bookkeeping-only compensation are explicit. Not a durable external-effect recovery protocol.",
+      "operation_coverage": [
+        "begin",
+        "read",
+        "stage",
+        "commit/partial/abort",
+        "retract",
+        "typed repair",
+        "gate"
+      ],
+      "fault_oracle_boundary": "API-transition interleavings check gate/ancestry predicates; no crash-durable receipt or arbitrary cross-record constraint guarantee established.",
+      "code_key": "lxy1134/MEMTX_",
+      "code_status": "Public pinned source inspected; CPU scripted path available; no explicit repository license detected; source-only execution not performed by this audit.",
+      "version_note": "Latest v2 PDF/registry has Mingkai Zheng among eight authors; pinned code README retains seven-author earlier citation. Do not copy the stale README author list."
+    },
+    {
+      "arxiv_id": "2609.21284",
+      "doi": "10.48550/arxiv.2609.21284",
+      "title": "Authorization Revocation for Long-Running AI Agents: Root-Scoped Quiescence under Delegation and Asynchronous Execution",
+      "authors": [
+        "Zhu, Genliang",
+        "Wang, Chu"
+      ],
+      "year": 2026,
+      "versions_and_dates": [
+        {
+          "date": "2026-09-18T03:52:46Z",
+          "dateType": "Submitted",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-09-21T00:23:42Z",
+          "dateType": "Updated",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-09",
+          "dateType": "Available",
+          "dateInformation": "v1"
+        }
+      ],
+      "datacite_state": "findable",
+      "identity_verification": "Fresh landing/PDF/full body and DataCite match; no peer-reviewed venue inferred.",
+      "primary_sources": [
+        {
+          "key": "2609_21284_abs",
+          "url": "https://arxiv.org/abs/2609.21284",
+          "retrieved_utc": "2026-10-30T04:47:37.471780+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/abs/2609.21284",
+          "content_type": "text/html; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_21284_abs.html",
+          "sha256": "e67ae75dc3175e4d454880b75d66bb79474628ce69f59b06467cf758964c09d1",
+          "bytes": 44161
+        },
+        {
+          "key": "2609_21284_html",
+          "url": "https://arxiv.org/html/2609.21284",
+          "retrieved_utc": "2026-10-30T04:47:37.510622+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/html/2609.21284",
+          "content_type": "text/html; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_21284_html.html",
+          "sha256": "72a0c60a827177b8f510b849f2d954ca0742066701268d59fcf6879daa3c94da",
+          "bytes": 542604
+        },
+        {
+          "key": "2609_21284_pdf",
+          "url": "https://arxiv.org/pdf/2609.21284",
+          "retrieved_utc": "2026-10-30T04:47:37.527266+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/pdf/2609.21284",
+          "content_type": "application/pdf",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_21284_pdf.pdf",
+          "sha256": "9c00c4fc6f5a112b5551ba94f843df468d6056e522e0b3325180e824ac4c0b95",
+          "bytes": 672986
+        },
+        {
+          "key": "2609_21284_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2609.21284",
+          "retrieved_utc": "2026-10-30T04:47:37.531282+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://api.datacite.org/dois/10.48550/arXiv.2609.21284",
+          "content_type": "application/json; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_21284_datacite.json",
+          "sha256": "d365d907c05298bbdb4fbdf8bdc42516a6bd2a1082672227a2ab3aa4a6c1d142",
+          "bytes": 10073
+        }
+      ],
+      "sections": [
+        "4",
+        "5",
+        "6.1",
+        "7.2",
+        "7.3",
+        "8.3",
+        "10"
+      ],
+      "scope": "Root/epoch revocation, protected-sink fences, exact-operation rebinding, pre-fence effect accounting and durable replay are explicit prior art under complete mediation.",
+      "operation_coverage": [
+        "cut",
+        "fence",
+        "rebind",
+        "channel accounting",
+        "receipt",
+        "restart"
+      ],
+      "fault_oracle_boundary": "Reported provider-free ledger suite and independent checker; not measured remote providers or global rollback.",
+      "code_key": null,
+      "code_status": "No author implementation URL located in full primary body/landing or focused title search. A cited third-party closure engine is not their artifact."
+    },
+    {
+      "arxiv_id": "2609.08258",
+      "doi": "10.48550/arxiv.2609.08258",
+      "title": "Revoked but Still Authoritative: An Empirical Study of Revocation Enforcement in Agent-Memory Systems",
+      "authors": [
+        "Shen, Yi Ting",
+        "Toyoda, Kentaroh",
+        "Leung, Alex"
+      ],
+      "year": 2026,
+      "versions_and_dates": [
+        {
+          "date": "2026-09-08T05:03:09Z",
+          "dateType": "Submitted",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-09-09T02:18:42Z",
+          "dateType": "Updated",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-09",
+          "dateType": "Available",
+          "dateInformation": "v1"
+        }
+      ],
+      "datacite_state": "findable",
+      "identity_verification": "Fresh landing/PDF/full body and DataCite match; no peer-reviewed venue inferred.",
+      "primary_sources": [
+        {
+          "key": "2609_08258_abs",
+          "url": "https://arxiv.org/abs/2609.08258",
+          "retrieved_utc": "2026-10-30T04:47:37.699027+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/abs/2609.08258",
+          "content_type": "text/html; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_08258_abs.html",
+          "sha256": "ba04d1f2209a6f38eee7e3824c019ed7cc75b6c6ee85740f7def89e86d4d5bad",
+          "bytes": 41650
+        },
+        {
+          "key": "2609_08258_html",
+          "url": "https://arxiv.org/html/2609.08258",
+          "retrieved_utc": "2026-10-30T04:47:37.765507+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/html/2609.08258",
+          "content_type": "text/html; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_08258_html.html",
+          "sha256": "e080127ddbd61e563074b7475447611567b8539d45c64d370f38a498730f370d",
+          "bytes": 589702
+        },
+        {
+          "key": "2609_08258_pdf",
+          "url": "https://arxiv.org/pdf/2609.08258",
+          "retrieved_utc": "2026-10-30T04:47:37.811390+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/pdf/2609.08258",
+          "content_type": "application/pdf",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_08258_pdf.pdf",
+          "sha256": "3596c76611a32b4a5cfe803e26dff7ba4134504099f0fb9e8dafe747587e81c9",
+          "bytes": 460448
+        },
+        {
+          "key": "2609_08258_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2609.08258",
+          "retrieved_utc": "2026-10-30T04:47:37.876641+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://api.datacite.org/dois/10.48550/arXiv.2609.08258",
+          "content_type": "application/json; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_08258_datacite.json",
+          "sha256": "d87d78e45c0b9a4811f86c61dcf0f37b20920a8c327db60fa0bc15ce5087df5e",
+          "bytes": 8360
+        }
+      ],
+      "sections": [
+        "3",
+        "4",
+        "5",
+        "Appendix B.3",
+        "Appendix C.1-C.3"
+      ],
+      "scope": "Soft-revocation retrieval and decision behavior, with Graphiti-only write-back/propagation extensions. Mem0 default expiry filtering is protective; its exposed arm deliberately enables expired records.",
+      "operation_coverage": [
+        "ingest",
+        "soft-expire",
+        "retrieve",
+        "guard",
+        "journal/write-back",
+        "tool action"
+      ],
+      "fault_oracle_boundary": "Semantic exposure/action criteria; not an in-flight mutation, deduplication-lifetime or crash-recovery suite.",
+      "code_key": "VulcanLab/Memory-Rebirth-Attack",
+      "code_status": "Public Apache-2.0 source and real adapters; full run needs external model/embed services and Graphiti infrastructure; repository editable dependency path needs resolution."
+    },
+    {
+      "arxiv_id": "2609.04875",
+      "doi": "10.48550/arxiv.2609.04875",
+      "title": "Forgetting Without Restarting: Execution-State Unlearning for Stateful LLM Agents",
+      "authors": [
+        "Yao, Chao",
+        "Wei, Yangbo",
+        "Huang, Zhen",
+        "Qian, Junhong",
+        "Chen, Chenle",
+        "Lu, Shaoqiang",
+        "Wu, Chen",
+        "He, Lei"
+      ],
+      "year": 2026,
+      "versions_and_dates": [
+        {
+          "date": "2026-09-04T08:31:40Z",
+          "dateType": "Submitted",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-09-07T00:34:23Z",
+          "dateType": "Updated",
+          "dateInformation": "v1"
+        },
+        {
+          "date": "2026-09",
+          "dateType": "Available",
+          "dateInformation": "v1"
+        }
+      ],
+      "datacite_state": "findable",
+      "identity_verification": "Fresh landing/PDF/full body and DataCite match; no peer-reviewed venue inferred.",
+      "primary_sources": [
+        {
+          "key": "2609_04875_abs",
+          "url": "https://arxiv.org/abs/2609.04875",
+          "retrieved_utc": "2026-10-30T04:47:37.956138+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/abs/2609.04875",
+          "content_type": "text/html; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_04875_abs.html",
+          "sha256": "e66fa8987b51ccd1a49b4043b40625ae141c89149a9b0c576dd528843535c8df",
+          "bytes": 43554
+        },
+        {
+          "key": "2609_04875_html",
+          "url": "https://arxiv.org/html/2609.04875",
+          "retrieved_utc": "2026-10-30T04:47:38.065206+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/html/2609.04875",
+          "content_type": "text/html; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_04875_html.html",
+          "sha256": "eff5c28654b85b96d582647b007f33f85541884ec3c6a47a6489831038177863",
+          "bytes": 242340
+        },
+        {
+          "key": "2609_04875_pdf",
+          "url": "https://arxiv.org/pdf/2609.04875",
+          "retrieved_utc": "2026-10-30T04:47:38.089916+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://arxiv.org/pdf/2609.04875",
+          "content_type": "application/pdf",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_04875_pdf.pdf",
+          "sha256": "b419c1cc1a1bdc505cff0ec7889b435b529d5d5c7ad40b4e8311fa9d871cc79f",
+          "bytes": 1559385
+        },
+        {
+          "key": "2609_04875_datacite",
+          "url": "https://api.datacite.org/dois/10.48550/arXiv.2609.04875",
+          "retrieved_utc": "2026-10-30T04:47:38.150489+00:00",
+          "full_text_included_in_repository": false,
+          "http_status": 200,
+          "final_url": "https://api.datacite.org/dois/10.48550/arXiv.2609.04875",
+          "content_type": "application/json; charset=utf-8",
+          "status": "saved_external_cache",
+          "cache_filename": "2609_04875_datacite.json",
+          "sha256": "09f6a587b8ad33a7d8ea865810f69944a1b2b576b6b0652a0759e91ddf2d6838",
+          "bytes": 10866
+        }
+      ],
+      "sections": [
+        "Method definitions/assumptions",
+        "Splicing theorem",
+        "Experiments",
+        "Limitations"
+      ],
+      "scope": "Counterfactual execution-state forgetting across transcript, derived memory, plans and cache through sanitized replay; record deletion alone is not its forgetting contract.",
+      "operation_coverage": [
+        "provenance locate",
+        "restore prefix",
+        "sanitized suffix replay",
+        "behavioral audit"
+      ],
+      "fault_oracle_boundary": "Deterministic/reproducible transition and environment assumptions; not an arbitrary external-effect transaction or idempotency-reclamation guarantee.",
+      "code_key": null,
+      "code_status": "No author artifact URL located in primary PDF/HTML/landing or focused title search; no claim that code cannot exist elsewhere."
+    }
+  ]
+}

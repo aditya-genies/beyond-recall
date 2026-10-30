@@ -1,0 +1,18 @@
+Final citation and public-source consistency review
+Date: 2026-10-29
+
+PASS: 32 selected references (30 research papers, two implemented-runtime documentation sources). All 32 are cited; zero missing, duplicate or orphan keys. Root and manuscript bibliographies match. All archived primary-source hashes match the selected manifest.
+
+Memora is correctly integrated as complementary semantic consolidation/mutation and forgetting-aware response evaluation. The manuscript does not borrow its empirical scope or imply that its experiments were rerun.
+
+RIFL/Beldi/RPC/ARIES/Sagas are credited as foundations; atomicity/storage assumptions remain qualified. ACRFence is not represented as an implemented fence. LIMBO and Permission to Retry are methodological predecessors. MOLLY does not supply a completeness claim to this manual suite. AgentPoison/MINJA assumptions and security exclusions remain explicit. SQLite and os._exit support the implemented primitives without extending the test to mid-commit or power-loss failures.
+
+The four author publications and unused service/framework documentation are absent from the selected bibliography. Architecture citations are relevant background, not claimed defeated baselines. No source-accuracy correction is required.
+
+The selection is substantively connected to memory framing, execution/recovery foundations, conformance methodology, security exclusions and implemented runtime primitives. Some architecture citations provide context rather than experimental comparators. This is focused coverage, not a claim to exhaust all academic literature or prove publication impact.
+
+The manuscript credits existing mechanisms and much testing methodology. It presents the standalone factorial artifact and finite measured distinctions as its contribution, without promising a new recovery algorithm, broad semantic memory capability, universal exactly-once safety or academic impact.
+
+The private repository URL is explicitly described as private; it does not assert public access.
+
+Memora integration status, selected-source catalog/counts and the selected primary manifest are synchronized. The broader working library remains separate. No manuscript or bibliography was edited by this review.

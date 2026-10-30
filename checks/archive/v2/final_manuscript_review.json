@@ -1,0 +1,23 @@
+{
+  "status": "PASS_FOR_BOUNDED_WORKING_CLAIMS",
+  "review_type": "Skeptical source/evidence review of stated finite claims, not publication acceptance",
+  "manuscript": "manuscript/main.tex",
+  "manuscript_sha256": "0b5a97df2669cdc62a1dcb7475abd19deb630921d9adc10abd7b25f079012eab",
+  "plan_binding_sha256": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088",
+  "bibliography_sha256": "0c9af335cb78222b6782ba0a94cd3ba37b09784de3587c0afaee3bb5d58e286e",
+  "frozen_study_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+  "main_cases_sha256": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
+  "remaining_material_corrections": [],
+  "scientific_review": "revisions/review1/final_scientific_review.json",
+  "evidence_reconciliation": "revisions/review1/final_evidence_reconciliation.json",
+  "journal_research_gaps": [
+    "The primitives and broad fault/conformance method have strong direct antecedents. A synthetic factorial and an adapter counterexample do not automatically establish a generalizable leading-journal advance.",
+    "The24calls are a single-alias/single-harness pilot with no semantic adjudication or natural workload distribution. The36recorded-plan integrations reuse those outputs and are not more independent model samples.",
+    "The native implementation shares controlled fixtures/planner and application semantics. More independent memory implementations and contract/workload changes would be needed to demonstrate transfer beyond this authored setup.",
+    "Bounded sequential schedules and one race per process cell do not cover arbitrary interleavings, remote consistency, mid-commit failure, retention reclamation or transient-reader isolation.",
+    "Outside replication, stronger independently specified oracles and a clearly useful new conditional insight remain research opportunities. Listing these gaps is not evidence they have been solved, and no acceptance-readiness conclusion is made."
+  ],
+  "publication_status": "Working manuscript; peer review and journal acceptance have not occurred",
+  "figure_defect": "Original figure QA was overbroad; corrected figure and latest pixel QA supersede it",
+  "authorship": "Supplied sole author and background retained; research independently authored from synthetic inputs"
+}

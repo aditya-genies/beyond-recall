@@ -1,0 +1,12 @@
+{
+  "phase": "DEVELOPMENT_FEASIBILITY_ONLY",
+  "not_part_of_any_frozen_campaign": true,
+  "python": "3.14.3",
+  "sqlite": "3.51.2",
+  "redis_py": "8.1.0",
+  "existing_services_or_credentials_used": false,
+  "probes": {},
+  "status": "FAILED_DEVELOPMENT_PROBE",
+  "error_type": "IndexError",
+  "error": "list index out of range"
+}

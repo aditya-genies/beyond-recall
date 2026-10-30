@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-10-30T04:58:21.524597+00:00",
+  "status": "PASS",
+  "upstream_tracked_files_checked": 1255,
+  "all_upstream_files_unchanged": true,
+  "frozen_adapter_unchanged": true,
+  "main_probe_summary": {
+    "read_cases": 8,
+    "read_cases_returning_post_begin_ids": 8,
+    "fresh_read_controls": 8,
+    "old_A_cases": 8,
+    "old_A_rival_superseded": 2,
+    "old_A_temporal_rejections": 4,
+    "fresh_A_cases": 8
+  },
+  "final_original_unit_tests": {
+    "passed": 94,
+    "failure": 0,
+    "error": 0,
+    "skipped": 0
+  },
+  "full_suite_optional_tau2_collection_error_retained": true,
+  "source_or_manuscript_copied_or_modified": false,
+  "additional_model_calls": 0
+}

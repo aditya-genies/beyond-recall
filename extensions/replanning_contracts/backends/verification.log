@@ -1,0 +1,176 @@
+{
+  "abrupt_exit_87": 10,
+  "applicable_cells": 96,
+  "attempts": 154,
+  "by_backend_profile": {
+    "redis/envelope": {
+      "abrupt_exit_87": 1,
+      "acknowledged_results": 11,
+      "applicable_cells": 11,
+      "duplicate_effects": 0,
+      "effects_without_usable_receipt": 1,
+      "historical_ack_results": 4,
+      "participant_effects": 8,
+      "request_status_counts": {
+        "applied": 7,
+        "caller_binding_conflict": 1,
+        "error": 1,
+        "historical_ack": 4,
+        "stale_epoch": 1,
+        "stale_version": 3
+      },
+      "stale_epoch_effects": 0,
+      "usable_receipts": 7
+    },
+    "redis/grouped": {
+      "abrupt_exit_87": 1,
+      "acknowledged_results": 10,
+      "applicable_cells": 12,
+      "duplicate_effects": 0,
+      "effects_without_usable_receipt": 2,
+      "historical_ack_results": 3,
+      "participant_effects": 9,
+      "request_status_counts": {
+        "applied": 7,
+        "caller_binding_conflict": 1,
+        "error": 2,
+        "historical_ack": 3,
+        "stale_epoch": 1,
+        "stale_version": 4
+      },
+      "stale_epoch_effects": 0,
+      "usable_receipts": 7
+    },
+    "redis/preflight": {
+      "abrupt_exit_87": 1,
+      "acknowledged_results": 11,
+      "applicable_cells": 12,
+      "duplicate_effects": 0,
+      "effects_without_usable_receipt": 1,
+      "historical_ack_results": 4,
+      "participant_effects": 8,
+      "request_status_counts": {
+        "applied": 7,
+        "caller_binding_conflict": 1,
+        "error": 1,
+        "historical_ack": 4,
+        "receipt_storage_invalid": 1,
+        "stale_epoch": 1,
+        "stale_version": 3
+      },
+      "stale_epoch_effects": 0,
+      "usable_receipts": 7
+    },
+    "redis/split": {
+      "abrupt_exit_87": 2,
+      "acknowledged_results": 10,
+      "applicable_cells": 13,
+      "duplicate_effects": 0,
+      "effects_without_usable_receipt": 3,
+      "historical_ack_results": 3,
+      "participant_effects": 10,
+      "request_status_counts": {
+        "applied": 7,
+        "caller_binding_conflict": 1,
+        "error": 2,
+        "historical_ack": 3,
+        "stale_epoch": 1,
+        "stale_version": 5
+      },
+      "stale_epoch_effects": 0,
+      "usable_receipts": 7
+    },
+    "sqlite/envelope": {
+      "abrupt_exit_87": 1,
+      "acknowledged_results": 11,
+      "applicable_cells": 11,
+      "duplicate_effects": 0,
+      "effects_without_usable_receipt": 1,
+      "historical_ack_results": 4,
+      "participant_effects": 8,
+      "request_status_counts": {
+        "applied": 7,
+        "caller_binding_conflict": 1,
+        "error": 1,
+        "historical_ack": 4,
+        "stale_epoch": 1,
+        "stale_version": 3
+      },
+      "stale_epoch_effects": 0,
+      "usable_receipts": 7
+    },
+    "sqlite/grouped": {
+      "abrupt_exit_87": 1,
+      "acknowledged_results": 10,
+      "applicable_cells": 12,
+      "duplicate_effects": 0,
+      "effects_without_usable_receipt": 1,
+      "historical_ack_results": 3,
+      "participant_effects": 8,
+      "request_status_counts": {
+        "applied": 7,
+        "caller_binding_conflict": 1,
+        "error": 2,
+        "historical_ack": 3,
+        "stale_epoch": 1,
+        "stale_version": 4
+      },
+      "stale_epoch_effects": 0,
+      "usable_receipts": 7
+    },
+    "sqlite/preflight": {
+      "abrupt_exit_87": 1,
+      "acknowledged_results": 11,
+      "applicable_cells": 12,
+      "duplicate_effects": 0,
+      "effects_without_usable_receipt": 1,
+      "historical_ack_results": 4,
+      "participant_effects": 8,
+      "request_status_counts": {
+        "applied": 7,
+        "caller_binding_conflict": 1,
+        "error": 1,
+        "historical_ack": 4,
+        "receipt_storage_invalid": 1,
+        "stale_epoch": 1,
+        "stale_version": 3
+      },
+      "stale_epoch_effects": 0,
+      "usable_receipts": 7
+    },
+    "sqlite/split": {
+      "abrupt_exit_87": 2,
+      "acknowledged_results": 10,
+      "applicable_cells": 13,
+      "duplicate_effects": 0,
+      "effects_without_usable_receipt": 3,
+      "historical_ack_results": 3,
+      "participant_effects": 10,
+      "request_status_counts": {
+        "applied": 7,
+        "caller_binding_conflict": 1,
+        "error": 2,
+        "historical_ack": 3,
+        "stale_epoch": 1,
+        "stale_version": 5
+      },
+      "stale_epoch_effects": 0,
+      "usable_receipts": 7
+    }
+  },
+  "declared_cells": 104,
+  "native_aof_commands": {
+    "EXEC": 16,
+    "HDEL": 3,
+    "HSET": 24,
+    "MULTI": 16,
+    "SELECT": 1,
+    "SET": 103
+  },
+  "native_aof_grouped_transactions_checked": 16,
+  "native_aof_key_mutation_sequences_checked": true,
+  "not_applicable_cells": 8,
+  "scope": "Agreement for finite histories; not a formal proof, production benchmark, arbitrary error, cluster or power-loss guarantee.",
+  "status": "pass",
+  "verification": "Independent literal-history/status oracle + caller journal/stdout files + read-only native SQLite + native Redis AOF reduction."
+}

@@ -1,0 +1,33 @@
+{
+  "new_applicable_denominator": 96,
+  "new_declared_cells": 104,
+  "not_pooled": true,
+  "original_artifacts": {
+    "reproduction/cases.jsonl": {
+      "sha256": "e6ea7658cbdf772632e59641b1aa0baf012d9a7dc321d9f429e580c34f1de84b",
+      "unchanged": true
+    },
+    "results/boundary_probes.json": {
+      "sha256": "f3f02785a6ef5aa91f53bf87e2b604096605831013c06254e64b8f92d4d1d429",
+      "unchanged": true
+    },
+    "results/cases.jsonl": {
+      "sha256": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
+      "unchanged": true
+    },
+    "results/frozen_spec.json": {
+      "sha256": "f5dac100857d093a865b10ff525aaf48fa862f8eb6125cc6771517de6d5c6306",
+      "unchanged": true
+    },
+    "results/summary.json": {
+      "sha256": "4d56dceb0a677f6f1bb1d67d037004bf2364080aaf9e03784cbbf5f02cb8ed5f",
+      "unchanged": true
+    },
+    "study.py": {
+      "sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+      "unchanged": true
+    }
+  },
+  "original_denominator": 528,
+  "status": "pass"
+}

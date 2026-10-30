@@ -1,0 +1,17 @@
+[
+  {
+    "bytes": 89,
+    "path": "redis_native_data/appendonlydir/appendonly.aof.1.base.rdb",
+    "sha256": "8d5b75cfcf7d464d052bcfb57f68232d6e85e36c782e30fa0bc5286121dce0da"
+  },
+  {
+    "bytes": 33418,
+    "path": "redis_native_data/appendonlydir/appendonly.aof.1.incr.aof",
+    "sha256": "2ad11b146ff3bce38d6a1740f210668af490c416309ee5bdb7143f015383e066"
+  },
+  {
+    "bytes": 88,
+    "path": "redis_native_data/appendonlydir/appendonly.aof.manifest",
+    "sha256": "ca465c5845ad4d4c0a2b4cda8853efeb9423cb4242a4eaaa5ecbaa00a4e75492"
+  }
+]

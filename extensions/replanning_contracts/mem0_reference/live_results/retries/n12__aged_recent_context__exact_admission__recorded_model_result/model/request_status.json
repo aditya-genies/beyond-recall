@@ -1,0 +1,83 @@
+{
+  "requested_model": null,
+  "additional_model_call": false,
+  "strategy": "recorded_model_result",
+  "source": "Exact archived baseline model response reused as a retained nondeterministic result; not a fresh model observation.",
+  "response_sha256": "7d3c35950f3a5b4fe338f2c0a1233a8b1c785a6138e4b2f523592e8da28263b0",
+  "native_messages_sha256": "b1608d9009411993148fe210d7c9932d272cad79617cfee7ae8442c3424c7186",
+  "used_response_sha256": "68107dee3cc5a27d4ee6756792fe6aa10588b7361f84f8a9df466afc291873c7",
+  "exact_admission_removed": [
+    {
+      "id": "0",
+      "text": "User prefers mango as a fruit.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "1",
+      "text": "User prefers jasmine as a flower.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "2",
+      "text": "User prefers emerald as a color.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "3",
+      "text": "User prefers cycling as a sport.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "4",
+      "text": "User prefers chess as a board game.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "5",
+      "text": "User prefers violin as an instrument.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "6",
+      "text": "User prefers espresso as a coffee.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "7",
+      "text": "User prefers chamomile as a tea.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "8",
+      "text": "User prefers rye as a bread.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "9",
+      "text": "User prefers lentils as a soup.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "10",
+      "text": "User prefers pine as a tree.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "11",
+      "text": "User prefers quartz as a mineral.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    }
+  ]
+}

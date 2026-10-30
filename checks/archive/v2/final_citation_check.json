@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "Current revision source identity/coverage check, with fresh primary audits and historical reference-cache hashes explicitly distinguished.",
+  "manuscript_sources": {
+    "manuscript/main.tex": "0b5a97df2669cdc62a1dcb7475abd19deb630921d9adc10abd7b25f079012eab",
+    "manuscript/plan_binding.tex": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088"
+  },
+  "bibliography_sha256": "0c9af335cb78222b6782ba0a94cd3ba37b09784de3587c0afaee3bb5d58e286e",
+  "source_counts": {
+    "research_papers": 31,
+    "primary_documentation": 5,
+    "total": 36
+  },
+  "cited_sources": 36,
+  "missing_keys": [],
+  "uncited_keys": [],
+  "duplicate_keys": false,
+  "root_and_manuscript_bibliographies_identical": true,
+  "historical_source_cache_hashes_rechecked": 32,
+  "new_review_source_hashes_checked": 4,
+  "full_texts_redistributed": false,
+  "source_claim_review": "revisions/review1/final_scientific_review.json",
+  "flagged_reference_audit": "revisions/review1/references/citation_audit.json",
+  "new_sources_claim_map": "revisions/review1/references/additions_claim_map.json",
+  "self_publications_added_without_substantive_relation": false,
+  "claim": "Focused primary-source coverage, not exhaustive academic coverage or peer-review validation."
+}

@@ -1,0 +1,37 @@
+{
+  "raw": {
+    "envelope": {
+      "epoch": 1,
+      "history": [
+        {
+          "epoch": 1,
+          "kind": "revoke",
+          "version": 0
+        }
+      ],
+      "origin": null,
+      "receipts": {},
+      "record_epoch": null,
+      "value": null,
+      "version": 0,
+      "visible": false
+    }
+  },
+  "receipt_storage": "envelope",
+  "receipts": {},
+  "state": {
+    "epoch": 1,
+    "history": [
+      {
+        "epoch": 1,
+        "kind": "revoke",
+        "version": 0
+      }
+    ],
+    "origin": null,
+    "record_epoch": null,
+    "value": null,
+    "version": 0,
+    "visible": false
+  }
+}

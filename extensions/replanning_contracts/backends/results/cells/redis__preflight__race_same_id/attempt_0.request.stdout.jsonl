@@ -1,0 +1,5 @@
+{"event":"prepared_validation","journal_sha256":"bdcab4bbe365c96d6765061049e476f707a8c637672ec80d7321337ff1de1c72","operation":{"expected_epoch":0,"expected_version":0,"opid":"A","target":"record","value":"preferred"},"valid":true}
+{"event":"entry","receipt_hit":false,"snapshot":{"raw":{"receipts_data":null,"receipts_type":"none","state_json":"{\"epoch\":0,\"history\":[],\"origin\":null,\"record_epoch\":null,\"value\":null,\"version\":0,\"visible\":false}"},"receipt_storage":"none","receipts":{},"state":{"epoch":0,"history":[],"origin":null,"record_epoch":null,"value":null,"version":0,"visible":false}}}
+{"event":"submitted"}
+{"event":"backend_return","result":{"acknowledged":true,"changed":false,"historical_ack":true,"status":"historical_ack"}}
+{"event":"result","result":{"acknowledged":true,"changed":false,"historical_ack":true,"status":"historical_ack"}}

@@ -1,0 +1,43 @@
+{
+  "reviewed_utc": "2026-10-30T05:27:02.670768+00:00",
+  "status": "PASS",
+  "scope": "Primary authoring agent reran the separate raw-evidence checkers in the original local runtime, plus all nine new native-memory checker negative-fixture methods. No new model samples or campaign cells.",
+  "layers": [
+    {
+      "layer": "controlled",
+      "status": "PASS",
+      "root_check_report_sha256": "b56462a12b52b5d46459143e9fbeaae940bc8bf75bcecdf541540fd2997b2cbe",
+      "repository_checker_report": "extensions/replanning_contracts/mem0_reference/verification.json"
+    },
+    {
+      "layer": "live",
+      "status": "PASS",
+      "root_check_report_sha256": "0d2e18b5ba8b5373455686bbb46d1df2080ba49ad5c84c700bccdec751c0bb3c",
+      "repository_checker_report": "extensions/replanning_contracts/mem0_reference/live_verification.json"
+    },
+    {
+      "layer": "retrieval",
+      "status": "PASS",
+      "root_check_report_sha256": "54b941c2b0ef40d878becd77b1f74ca6b3673cb3c80f8e4dac2a01228733f9d0",
+      "repository_checker_report": "extensions/replanning_contracts/mem0_reference/retrieval_results/verification.json"
+    },
+    {
+      "layer": "backends",
+      "status": "PASS",
+      "root_check_report_sha256": "dc29dab65a209b0a80ff785cfa40d623f9b55304a2defb0934d6ed95db58f8e8",
+      "repository_checker_report": "extensions/replanning_contracts/backends/final_verification.json"
+    }
+  ],
+  "mem0_checker_tests": {
+    "methods": 9,
+    "passed": 9
+  },
+  "frozen_files": {
+    "study.py": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+    "results/cases.jsonl": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
+    "extensions/replanning_contracts/mem0_reference/experiment.py": "0712bfb752838bda0fb6837ab5cac3f3f1ffd5e2f51b5cc444cf5efdf2978ee3",
+    "extensions/replanning_contracts/mem0_reference/live.py": "0897da4fed013cad3103fd98b5b6f214bb400ce7a1bec8c7f872e26e86216ee3",
+    "extensions/replanning_contracts/mem0_reference/retrieval.py": "2dd576b82df5cb7d2e330f802c7a61fb541d7ffca7b7c763895eedaf550772d8"
+  },
+  "outside_replication": false
+}

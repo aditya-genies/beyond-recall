@@ -1,0 +1,113 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "additional_model_call": true,
+  "returncode": 0,
+  "wall_seconds": 9.265,
+  "public_usage_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 25899,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 448,
+        "reasoning_output_tokens": 45
+      }
+    }
+  ],
+  "item_types": [
+    "agent_message"
+  ],
+  "tool_event_types": [],
+  "prompt_sha256": "c257275ede34a4f3e7d84b0ff42bcd997c559e0828461a68338886dfbc12c33e",
+  "started_at_utc": "2026-10-30T05:08:32Z",
+  "response_sha256": "8d5d0810025adfa4ef98e7ae066243ca46dec46e7067b2b96a8ecaf773dd8536",
+  "native_messages_sha256": "bc4baaa6cd7bf8664994b747fc2a25212dc1cb09d8b8418c8152b79e092cb2d9",
+  "used_response_sha256": "68107dee3cc5a27d4ee6756792fe6aa10588b7361f84f8a9df466afc291873c7",
+  "exact_admission_removed": [
+    {
+      "id": "0",
+      "text": "User prefers jasmine as a flower.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "1",
+      "text": "User prefers cycling as a sport.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "2",
+      "text": "User prefers chess as a board game.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "3",
+      "text": "User prefers violin as an instrument.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "4",
+      "text": "User prefers espresso as a coffee.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "5",
+      "text": "User prefers lentils as a soup.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "6",
+      "text": "User prefers quartz as a mineral.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "7",
+      "text": "User prefers origami as a craft.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "8",
+      "text": "User prefers Lisbon as a travel destination.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "9",
+      "text": "User prefers linen as a fabric.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "10",
+      "text": "User prefers mystery as a book genre.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "11",
+      "text": "User prefers comedy as a film genre.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "12",
+      "text": "User prefers wolves as a wild animal.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "13",
+      "text": "User prefers finches as a bird.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    }
+  ]
+}

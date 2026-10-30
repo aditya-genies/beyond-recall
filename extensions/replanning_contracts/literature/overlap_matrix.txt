@@ -1,0 +1,101 @@
+Focused recovery/replanning prior-art audit
+Cutoff: 2026-10-29 inclusive. Public sources only. No exhaustive-coverage claim.
+
+Conclusion: an epoch + immutable binding + receipt protocol is not a defensible new mechanism here. RIFL/Beldi, current authority-quiescence work, TOKI, Cordon and formal agent-concurrency work cover the central principles. A new bounded model or a write-skew example alone would duplicate existing theory. The better research question is whether specific public memory implementations realize their narrowly stated history contracts, and which shared implementation preconditions account for discrepancies.
+
+Closest newly verified work:
+- MemTX: Transactional Belief Commit for Stateful Agent Memory (2607.23929, v2): Belief lifecycle, risk-tiered visibility, per-record validate-and-commit, action gating and typed cascade repair. Its public manager is a useful CPU baseline. The paper permits partial commit and identifies fresh-transaction retry and undeclared provenance as protection boundaries.
+  Primary: https://arxiv.org/abs/2607.23929
+  Artifact: Pinned public source verified; no license identified. Selected source was inspected; sibling subsequently fetched the full archive and executed independent probes. See separate probe artifact for results.
+- Authorization Revocation for Long-Running AI Agents: Root-Scoped Quiescence under Delegation and Asynchronous Execution (2609.21284, v1): Root epochs, protected-effect fences, effect-envelope identity, receipt obligations and exact rebind address revocation during asynchronous execution. Evaluated effects are provider-free local-ledger effects under complete mediation and monotone durable authority assumptions.
+  Primary: https://arxiv.org/abs/2609.21284
+  Artifact: No author implementation URL located in inspected primary PDF/HTML/landing page or focused title search. A cited third-party specification is not its artifact.
+- Revoked but Still Authoritative: An Empirical Study of Revocation Enforcement in Agent-Memory Systems (2609.08258, v1): Five-system empirical revocation study connects memory exposure to unsafe downstream actions. Mem0 default expiry filtering hides expired records; the exposed arm intentionally includes them. Natural write-back and propagation extensions are Graphiti-specific.
+  Primary: https://arxiv.org/abs/2609.08258
+  Artifact: Pinned public source, Apache-2.0. Full experiment requires Neo4j/model endpoints; pyproject includes a sibling editable Graphiti dependency. Standalone guard selfchecks are narrower.
+- Forgetting Without Restarting: Execution-State Unlearning for Stateful LLM Agents (2609.04875, v1): Forgetting changes transcript, derived memory, pending plans and caches through provenance-selected restoration and replay. The target is counterfactual execution state, assuming reproducible transitions, recorded tool observations and restorable environments.
+  Primary: https://arxiv.org/abs/2609.04875
+  Artifact: No author artifact URL located in inspected primary sources/focused title search; reference links to other agent projects are not this implementation.
+- TOKI: A Bitemporal Operator Algebra for Contradiction Resolution in LLM-Agent Persistent Memory (2606.06240, v1): Bitemporal memory operators specify winner/audit semantics and isolation preconditions. A keyed materialized judge decision stabilizes replay within its schedule model. PostgreSQL concurrency experiments distinguish real isolation from reference annotations.
+  Primary: https://arxiv.org/abs/2606.06240
+  Artifact: Advertised repository returned HTTP 404 through GitHub and API. This is an availability observation, not evidence of fabrication or nonexistence.
+- Verified Detection and Prevention of Concurrency Anomalies in Multi-Agent Large Language Model Systems (2606.17182, v1): Formal detectors and guarded runtimes cover stale generation, causal cascades, tool-registry changes and effect ordering. The paper explicitly treats the anomalies as classical. Higher-level executable verification and live-runtime deployments have different assurance scopes.
+  Primary: https://arxiv.org/abs/2606.17182
+  Artifact: Primary body describes an artifact bundle and runnable twins; no author hosting URL located among inspected links. Do not treat descriptions as a runnable baseline obtained by us.
+- Cordon: Semantic Transactions for Tool-Using LLM Agents (2606.17573, v1): Semantic transactions bind result lineage, shadow local state, delegated authority and an effect outbox. Composed validation precedes release. Opaque or unsupported external effects can require audit and compensation rather than full containment.
+  Primary: https://arxiv.org/abs/2606.17573
+  Artifact: Paper reports an implementation; no author code URL located in inspected primary links. Conference template text alone does not establish acceptance.
+- Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory (2605.26252, v1): GEM treats governed memory as an evolving state trajectory with version, dependency, provenance and active-state correctness. MemState demonstrates it on Kuzu. Several native-engine and trajectory-benchmark goals are research agenda rather than completed universal guarantees.
+  Primary: https://arxiv.org/abs/2605.26252
+  Artifact: Author URL found in primary paper. Not fetched or executed in this bounded audit; no pinned runnable-baseline claim.
+- Revocation Is Not Complete at Receipt: An Executable Outcome Contract for Distributed Agent-Tool Gateways (2610.15991, v1): A bounded C0–C5 monitor distinguishes revocation publication and receiver persistence from protected-effect prevention. The primary body includes real Keycloak/gateway and file/PostgreSQL effect surfaces, with frozen gateway/call/window contracts.
+  Primary: https://arxiv.org/abs/2610.15991
+  Artifact: This audit verifies the primary description, not a downloaded executable author baseline.
+- Authorization for Self-Modifying AI Agent Populations: Conserving Authority across Replacement, Forking, and Rollback (2610.00347, v1): Generation identity, atomic predecessor fencing/successor activation and root-lifetime authority conservation prevent rollback from reminting authority. Guarantees assume complete mediation, authenticated records, durable monotone state and complete lineage.
+  Primary: https://arxiv.org/abs/2610.00347
+  Artifact: Primary model and evaluation description reviewed; no obtained runnable-baseline claim.
+
+Overlap and residual scope:
+- stable_receipts: Stable logical identity, a retained completion/effect record and logged nondeterministic decisions are established recovery mechanisms.
+  Antecedents: RIFL; Beldi; Permission to Retry; LIMBO; Verified Tool Calls.
+  Boundary: An implementation comparison may expose violated preconditions; combining these mechanisms is not a new algorithm.
+- changed_plan_binding: Regenerating or compacting a plan while retaining positional identities can bind a different operation to an old identity. Replay keys and retained decisions directly precede this question.
+  Antecedents: Beldi; TOKI; Temporal deterministic replay; LangGraph durable execution order documentation; AWS idempotency guidance.
+  Boundary: A fresh-model witness can illustrate the known order/identity hazard, not establish its first discovery.
+- revocation_fence: Revocation or cancellation must reach protected-effect admission; an old worker or completed transport acknowledgement is insufficient.
+  Antecedents: Root-Scoped Quiescence (2609.21284); Revocation Is Not Complete at Receipt (2610.15991); Chubby; Hazelcast FencedLock; Temporal MCP cancellation docs.
+  Boundary: A memory API with no promised quiescence has a feature boundary, not automatically a contract defect.
+- immutable_binding_current_authority: Immutable accepted-operation binding and monotone current authority answer different questions; epochs, exact rebind and historical obligations already make this distinction.
+  Antecedents: Root-Scoped Quiescence (2609.21284); Authority Succession (2610.00347); ACRFence; RIFL.
+  Boundary: Dedup-before-fence can return historical success without new mutation; fence-before-dedup can deny. Typed status contracts are required before declaring either incorrect.
+- memory_history_lifecycle: Lifecycle changes, stale writes, dependency repair, memory exposure and trajectory correctness already extend evaluation beyond recall.
+  Antecedents: MemTX; TOKI; MemState/GEM; Revoked but Still Authoritative (2609.08258); Execution-State Unlearning (2609.04875); Memora; TimlMemBench.
+  Boundary: No first beyond-recall memory benchmark claim is supportable from this audit.
+- multi_record_constraints: Independently valid conditional writes can jointly violate a predicate; per-key linearizability and snapshot isolation do not supply arbitrary multi-record serializability.
+  Antecedents: Classical SQL write skew; Serializable snapshot isolation; Verified Concurrency Anomalies (2606.17182); TOKI; Cordon; Agentic Transaction.
+  Boundary: Write skew is classical. A MemTX partial-commit path should not be scored against an unclaimed whole-plan invariant.
+- identity_lifetime_reuse: Dedup state has an explicit validity/reclamation scope. Legitimate later occurrences and stale earlier retries must be distinguished.
+  Antecedents: RIFL safe reclamation; AWS DynamoDB TransactWriteItems token window; Stripe API v1 idempotency; Temporal Nexus retention; Authority Succession.
+  Boundary: Reexecution after an advertised retention window is not a violation. Permanent content-hash suppression is not equivalent to operation identity.
+- public_implementation_conformance: Independent histories and effect/cardinality oracles can test whether a pinned implementation realizes a narrowly stated contract.
+  Antecedents: MemTX primary/code pair; Mem0 public issues/discussions; Jepsen; Elle.
+  Boundary: A bounded discrepancy is useful evidence but does not by itself establish a new protocol, general prevalence or journal readiness.
+- bounded_retrieval_dedup: Write-time semantic duplicate recognition is publicly described as candidate bounded; concurrency and expiration separately affect exact-hash handling.
+  Antecedents: Mem0 discussion #6726; MiniMem public Mem0 code-reading note; Lore pinned-source audit; Mem0 issue #6515; Mem0 issue #7612.
+  Boundary: A conditional sequential literal N−k capacity witness is narrower than these reports, but broad retrieval-to-write dependence is already described.
+
+Runnable baseline:
+Use the actual MemTX manager pinned at 4e1124ccd5fd384857463020e3497aa73ec93be6 for stated snapshot/stale-writer contracts. Do not claim arbitrary read-set serializability or remote durability. Full-source acquisition and suite execution are in the independent sibling artifact; this literature audit executed no third-party experiment. No license was identified, so retain public URLs/hashes and original adapters only.
+Revoked-memory harness is Apache-2.0 but requires Graphiti/Neo4j/model services and includes a sibling editable path. Its default-filter controls are essential. TOKI is conceptually closer for retained judge/transaction contracts, but its advertised author repository returned 404. Availability observations must not be called fabrication.
+
+Mem0 specific novelty check:
+The bounded retrieval dependence is already discussed in #6726 and a July-30 public MiniMem note. The latter internally dates its inspection to June; only July-30 repository publication was verified. Both concentrate on semantic recurrence and assume literal MD5 protection. The narrower candidate is a conditional exact-text N−k capacity witness through the current real path. #6515 already reports concurrent hash TOCTOU duplicates; #7612 already reports expired records suppressing fresh writes. Separate these mechanisms, versions and evidence types.
+
+Falsifiable next questions:
+- H1_memtx_snapshot_read: Does an old transaction retrieve a new unrelated committed record absent from its captured snapshot?
+  Falsifier: Old transaction excludes the record while a fresh transaction includes it, or a primary latest-read exception is located.
+  Scope: A pinned description/implementation conformance discrepancy, not a new isolation principle.
+- H2_memtx_empty_snapshot: Does an empty snapshot bypass the pre-authority stale-rival rejection applied to a nonempty snapshot?
+  Falsifier: Both anchored and empty starts reject all post-begin conflicting candidates before authority comparison.
+  Scope: An empty-set sentinel boundary under the explicitly stated temporal rule; fresh-transaction authority correction is intended and the paper itself discusses that escape.
+- H3_mem0_literal_capacity: Can sequential exact-text replay of N unique already-stored facts evade exact-hash suppression when only k existing results feed the hash set?
+  Falsifier: Pinned production path supplies a complete exact-hash index or another global exact-text suppression step before commit, or controlled replay produces fewer accepted writes for a documented additional reason.
+  Scope: Known bounded candidate mechanism, potentially a narrower measured literal-repeat consequence. No first claim or exactly-once vendor promise.
+- H4_expiry_identity_scope: Does an exact-content index preserve legitimate later writes after old content expires or is revoked?
+  Falsifier: The declared contract intentionally treats all lifetime repeats as the same event, or active/expired and new-occurrence controls are all correctly distinguished.
+  Scope: Lifetime tradeoff is prior art in RIFL and API contracts; a new universal identity scheme is not presumed.
+- H5_revoke_inflight_write: Can a pending memory write admitted before delete/revoke recreate an authoritative record after the barrier?
+  Falsifier: Protected sink atomically checks the new epoch with effect acceptance; pending old writes are rejected in the declared boundary.
+  Scope: Revocation fencing, stale-worker prevention and acknowledgement/effect separation are directly prior art.
+- H6_composed_constraints: Do independently committed conditional mutations preserve a declared multi-record semantic invariant?
+  Falsifier: Serializable whole-plan baseline or atomic constraint validation rejects the conflicting schedule.
+  Scope: Do not relabel classical write skew or a permitted partial commit as a new defect.
+
+Research bar:
+A few correct reproductions or implementation discrepancies can justify an artifact/empirical contribution, but do not establish high-journal novelty. A stronger study needs an independent contract/oracle, negative controls, matched baselines, versions and seeds, causal interventions, and replication across more than one implementation. Report nonviolations and intentional boundaries as well as failures. No impact or acceptance guarantee follows.
+
+Terminology:
+Jepsen is testing practice/tooling; linearizability and serializability are mathematical correctness conditions. Vendor API documentation supplies product-specific contracts. This audit identifies no formal industry certification standard satisfied by the artifact.
+
+Evidence handling:
+Only public source URLs, metadata, SHA-256 values and bounded auditor summaries are distributed. Full papers and third-party code remain in a temporary non-distributed cache. arXiv title/author metadata was cross-checked with DataCite; no Semantic Scholar ID, DOI abstract or code-availability assertion was fabricated. Preprint availability is not peer-review verification.

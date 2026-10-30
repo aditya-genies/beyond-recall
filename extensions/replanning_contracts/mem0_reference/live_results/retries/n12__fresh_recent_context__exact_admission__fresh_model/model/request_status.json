@@ -1,0 +1,41 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "additional_model_call": true,
+  "returncode": 0,
+  "wall_seconds": 4.01,
+  "public_usage_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 25786,
+        "cached_input_tokens": 15872,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 64,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "item_types": [
+    "agent_message"
+  ],
+  "tool_event_types": [],
+  "prompt_sha256": "4a4dca2c93c7093b6794b30749fde03f5ef66f0e5b1bd36a279c55bed0caed58",
+  "started_at_utc": "2026-10-30T05:08:19Z",
+  "response_sha256": "a1783b2328f6c8da8d9c0a7db0d87101aed3ba1c8d98650062915b1b8ae1879a",
+  "native_messages_sha256": "4fe5adc1ec7af839423c160415b6a88a2fafe5627935040642335e6e19a9ba75",
+  "used_response_sha256": "68107dee3cc5a27d4ee6756792fe6aa10588b7361f84f8a9df466afc291873c7",
+  "exact_admission_removed": [
+    {
+      "id": "0",
+      "text": "User prefers cycling as a sport.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    },
+    {
+      "id": "1",
+      "text": "User prefers chess as a board game.",
+      "attributed_to": "user",
+      "linked_memory_ids": []
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "prepared_at_utc": "2026-10-30T05:07:39Z",
+  "driver_sha256": "0897da4fed013cad3103fd98b5b6f214bb400ce7a1bec8c7f872e26e86216ee3",
+  "native_main_sha256": "f329ca4a17af1fbefb32ac10d4cc7ae7ddbdb7435a87eb74c30915cff98b8b7c",
+  "protected_inputs": {
+    "study.py": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+    "results/cases.jsonl": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
+    "extensions/replanning_contracts/mem0_reference/experiment.py": "0712bfb752838bda0fb6837ab5cac3f3f1ffd5e2f51b5cc444cf5efdf2978ee3",
+    "extensions/replanning_contracts/mem0_reference/results/frozen_spec.json": "0aafac6c40e29027d8f0a8f0032df8fdb2c9b31a32e8868d253e97ff8c4a5f7d",
+    "extensions/replanning_contracts/mem0_reference/results/cases.json": "a2847f1bcb700f2e5302ce91577c98cf33e60c808518f4552d2d021099a4f7ff"
+  },
+  "sizes": [
+    8,
+    12,
+    24,
+    40
+  ],
+  "arms": [
+    "native_k10",
+    "widened_candidates",
+    "exact_admission"
+  ],
+  "histories": [
+    "fresh_recent_context",
+    "aged_recent_context"
+  ],
+  "strategies": [
+    "fresh_model",
+    "recorded_model_result"
+  ],
+  "schema": {
+    "type": "object",
+    "properties": {
+      "memory": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "text": {
+              "type": "string"
+            },
+            "attributed_to": {
+              "type": "string"
+            },
+            "linked_memory_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "id",
+            "text",
+            "attributed_to",
+            "linked_memory_ids"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "memory"
+    ],
+    "additionalProperties": false
+  },
+  "design": "4 initial live-model native calls, each abrupt exit87 after API effects return and before logical acknowledgement; 4x2recent-contexts x3arms x2retrystrategies =48 fresh-process retries. Fresh strategies make24 model calls; recorded strategies make none. Planned live calls total28.",
+  "input_messages": {
+    "8": [
+      {
+        "role": "user",
+        "content": "Please remember my preferences:\nI prefer mango as a fruit.\nI prefer jasmine as a flower.\nI prefer emerald as a color.\nI prefer cycling as a sport.\nI prefer chess as a board game.\nI prefer violin as an instrument.\nI prefer espresso as a coffee.\nI prefer chamomile as a tea."
+      }
+    ],
+    "12": [
+      {
+        "role": "user",
+        "content": "Please remember my preferences:\nI prefer mango as a fruit.\nI prefer jasmine as a flower.\nI prefer emerald as a color.\nI prefer cycling as a sport.\nI prefer chess as a board game.\nI prefer violin as an instrument.\nI prefer espresso as a coffee.\nI prefer chamomile as a tea.\nI prefer rye as a bread.\nI prefer lentils as a soup.\nI prefer pine as a tree.\nI prefer quartz as a mineral."
+      }
+    ],
+    "24": [
+      {
+        "role": "user",
+        "content": "Please remember my preferences:\nI prefer mango as a fruit.\nI prefer jasmine as a flower.\nI prefer emerald as a color.\nI prefer cycling as a sport.\nI prefer chess as a board game.\nI prefer violin as an instrument.\nI prefer espresso as a coffee.\nI prefer chamomile as a tea.\nI prefer rye as a bread.\nI prefer lentils as a soup.\nI prefer pine as a tree.\nI prefer quartz as a mineral.\nI prefer astronomy as a science.\nI prefer origami as a craft.\nI prefer Lisbon as a travel destination.\nI prefer autumn as a season.\nI prefer dawn as a time of day.\nI prefer linen as a fabric.\nI prefer jazz as a music genre.\nI prefer mystery as a book genre.\nI prefer comedy as a film genre.\nI prefer wolves as a wild animal.\nI prefer finches as a bird.\nI prefer tulsi as a garden herb."
+      }
+    ],
+    "40": [
+      {
+        "role": "user",
+        "content": "Please remember my preferences:\nI prefer mango as a fruit.\nI prefer jasmine as a flower.\nI prefer emerald as a color.\nI prefer cycling as a sport.\nI prefer chess as a board game.\nI prefer violin as an instrument.\nI prefer espresso as a coffee.\nI prefer chamomile as a tea.\nI prefer rye as a bread.\nI prefer lentils as a soup.\nI prefer pine as a tree.\nI prefer quartz as a mineral.\nI prefer astronomy as a science.\nI prefer origami as a craft.\nI prefer Lisbon as a travel destination.\nI prefer autumn as a season.\nI prefer dawn as a time of day.\nI prefer linen as a fabric.\nI prefer jazz as a music genre.\nI prefer mystery as a book genre.\nI prefer comedy as a film genre.\nI prefer wolves as a wild animal.\nI prefer finches as a bird.\nI prefer tulsi as a garden herb.\nI prefer oatmeal as a breakfast.\nI prefer peaches as a dessert flavor.\nI prefer pottery as a weekend activity.\nI prefer trains as a travel mode.\nI prefer mountains as a landscape.\nI prefer fountain pens as a writing tool.\nI prefer metric as a measurement system.\nI prefer concise as an answer style.\nI prefer walking as a commute exercise.\nI prefer algebra as a mathematics topic.\nI prefer cyan as a diagram accent.\nI prefer markdown as a note format.\nI prefer mornings as a study period.\nI prefer tofu as a lunch protein.\nI prefer libraries as a quiet venue.\nI prefer cedar as a wood scent."
+      }
+    ]
+  },
+  "clone_rule": "Close/no-running-client copy of each exited baseline native Qdrant+history store; IDs/content held identical across arms. All baseline IDs/strings captured before retry.",
+  "aged_fixture": "Before aged retries, native SQLiteManager.save_messages appends12 neutral synthetic user messages; get_last_messages(limit=10) sees no original preference source. This is an explicit cache precondition, not simulated model output or extra live calls.",
+  "extractor": "Native Mem0 role-designated prompts sent through fresh requested Sol6.1 Codex contexts. Not the default OpenAI API model or an uncontrolled deployment.",
+  "captured_response_strategy": "Exact baseline response including its literal strings is retained and reused despite changed prompt. This is an explicitly labelled recovery policy/control, not a fresh model call.",
+  "outcomes": [
+    "physical records",
+    "exact duplicate copies relative to baseline",
+    "new distinct literal strings",
+    "baseline record/value preservation",
+    "native candidates/hashes",
+    "raw versus used model responses",
+    "real process exit code",
+    "all errors/not-runnable cells"
+  ],
+  "semantic_quality": "No paraphrase is automatically called wrong, no natural model error/failure rate, and no independent semantic adjudication.",
+  "limitations": "One requested alias, one Codex harness,4authored batches; exact backend snapshot/system prompt/temperature/seed not controlled. Authored widened/exact-admission controls are not stock Mem0 flags or concurrent fixes. Not externally preregistered.",
+  "cli_version": "codex-cli 0.165.0-alpha.1.2",
+  "requested_model": "gpt-6.1-sol"
+}

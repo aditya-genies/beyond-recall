@@ -1,0 +1,102 @@
+{
+  "parameterized_executions": 96,
+  "groups": [
+    {
+      "embedder": "hash_control",
+      "extractor": "literal_reemit",
+      "arm": "native_k10",
+      "executions": 8,
+      "final_extra_copies": 110,
+      "final_fact_set_passes": 8
+    },
+    {
+      "embedder": "hash_control",
+      "extractor": "literal_reemit",
+      "arm": "widened_candidates",
+      "executions": 8,
+      "final_extra_copies": 0,
+      "final_fact_set_passes": 8
+    },
+    {
+      "embedder": "hash_control",
+      "extractor": "literal_reemit",
+      "arm": "exact_admission",
+      "executions": 8,
+      "final_extra_copies": 0,
+      "final_fact_set_passes": 8
+    },
+    {
+      "embedder": "hash_control",
+      "extractor": "visible_delta",
+      "arm": "native_k10",
+      "executions": 8,
+      "final_extra_copies": 110,
+      "final_fact_set_passes": 8
+    },
+    {
+      "embedder": "hash_control",
+      "extractor": "visible_delta",
+      "arm": "widened_candidates",
+      "executions": 8,
+      "final_extra_copies": 0,
+      "final_fact_set_passes": 8
+    },
+    {
+      "embedder": "hash_control",
+      "extractor": "visible_delta",
+      "arm": "exact_admission",
+      "executions": 8,
+      "final_extra_copies": 0,
+      "final_fact_set_passes": 8
+    },
+    {
+      "embedder": "bge_small",
+      "extractor": "literal_reemit",
+      "arm": "native_k10",
+      "executions": 8,
+      "final_extra_copies": 110,
+      "final_fact_set_passes": 8
+    },
+    {
+      "embedder": "bge_small",
+      "extractor": "literal_reemit",
+      "arm": "widened_candidates",
+      "executions": 8,
+      "final_extra_copies": 0,
+      "final_fact_set_passes": 8
+    },
+    {
+      "embedder": "bge_small",
+      "extractor": "literal_reemit",
+      "arm": "exact_admission",
+      "executions": 8,
+      "final_extra_copies": 0,
+      "final_fact_set_passes": 8
+    },
+    {
+      "embedder": "bge_small",
+      "extractor": "visible_delta",
+      "arm": "native_k10",
+      "executions": 8,
+      "final_extra_copies": 110,
+      "final_fact_set_passes": 8
+    },
+    {
+      "embedder": "bge_small",
+      "extractor": "visible_delta",
+      "arm": "widened_candidates",
+      "executions": 8,
+      "final_extra_copies": 0,
+      "final_fact_set_passes": 8
+    },
+    {
+      "embedder": "bge_small",
+      "extractor": "visible_delta",
+      "arm": "exact_admission",
+      "executions": 8,
+      "final_extra_copies": 0,
+      "final_fact_set_passes": 8
+    }
+  ],
+  "interpretation": "Finite source-audit parameter sweep, not independent model trials or population incidence. Inspect per-case rows and all raw native stores."
+}

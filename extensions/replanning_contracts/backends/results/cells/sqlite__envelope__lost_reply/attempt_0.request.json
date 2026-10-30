@@ -1,0 +1,11 @@
+{
+  "exit_after_finalize": true,
+  "journal": "extensions/replanning_contracts/backends/results/cells/sqlite__envelope__lost_reply/prepared.json",
+  "operation": {
+    "expected_epoch": 0,
+    "expected_version": 0,
+    "opid": "A",
+    "target": "record",
+    "value": "preferred"
+  }
+}

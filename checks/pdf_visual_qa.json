@@ -1,33 +1,41 @@
 {
   "status": "pass",
   "accepted_for_promotion": true,
-  "reviewed_at_utc": "2026-10-30T04:34:13.787337+00:00",
-  "review_scope": "Visual layout/readability acceptance of exactly this PDF/source snapshot. Scientific review, repository privacy review and publication readiness are separate decisions.",
+  "reviewed_at_utc": "2026-10-30T05:33:50.431735+00:00",
+  "review_scope": "Visual layout/readability acceptance of exactly this 19-page PDF/source snapshot. Scientific review, repository privacy review, peer review and publication decisions are separate. No manuscript or figure was modified during this PDF review.",
   "artifact": {
     "pdf": "manuscript/main.pdf",
-    "pdf_sha256": "6c8979aef737a914c16d7d4c8058ae309e1feb927b23f7440e9bad76a84fb658",
-    "pdf_bytes": 670825,
+    "pdf_sha256": "1b0ee9d72012fca1baca952e901e22aaf73ea048fa4eb4f76d9aa1f9089f4dc1",
+    "pdf_bytes": 760592,
     "source": "manuscript/main.tex",
-    "source_sha256": "0b5a97df2669cdc62a1dcb7475abd19deb630921d9adc10abd7b25f079012eab",
+    "source_sha256": "45e6f655177de8f40695e1b9d005f6b1799f9710db76bf1d4aab23cbd25d1fb8",
     "plan_binding_source": "manuscript/plan_binding.tex",
     "plan_binding_source_sha256": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088",
+    "public_memory_source_sha256": "1760543d8131d5f8de66bda6cd89e29bc441d9b381b3ecb38e43f19bb5e410eb",
+    "contract_portability_source_sha256": "e9db003699923e6c3ce9791265ba6809c43a0a4b0aee609fb711692b5a9018b5",
+    "included_sources": {
+      "manuscript/plan_binding.tex": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088",
+      "manuscript/public_memory.tex": "1760543d8131d5f8de66bda6cd89e29bc441d9b381b3ecb38e43f19bb5e410eb",
+      "manuscript/contract_portability.tex": "e9db003699923e6c3ce9791265ba6809c43a0a4b0aee609fb711692b5a9018b5"
+    },
     "bibliography": "manuscript/refs.bib",
-    "bibliography_sha256": "0c9af335cb78222b6782ba0a94cd3ba37b09784de3587c0afaee3bb5d58e286e",
-    "pages": 13,
-    "main_pages": 9,
-    "reference_pages": 3,
+    "bibliography_sha256": "a39d5ab800a2a419c85f497d8f37119f0d9060b1790de9048b935df424349bfe",
+    "pages": 19,
+    "main_pages": 14,
+    "reference_pages": 4,
     "appendix_pages": 1
   },
   "rendering": {
-    "snapshot": "revisions/review1/pdf_qa_final/reviewed.pdf",
+    "snapshot": "revisions/replanning_contracts/pdf_qa_19/reviewed.pdf",
+    "snapshot_manifest": "revisions/replanning_contracts/pdf_qa_19/snapshot_manifest.json",
+    "snapshot_manifest_sha256": "44e16c4c40b36f4fbcdef7e96786b14989cd9f3984ae4c2817040b80f4f59bf4",
     "tool": "pdftoppm",
-    "arguments": "-scale-to 1600 -png",
+    "arguments": "-scale-to 1800 -png",
     "all_pages_rendered": true,
     "poppler_returncode": 0,
     "poppler_stderr_empty": true,
-    "page_prefix": "revisions/review1/pdf_qa_final/page",
-    "previous_frozen_snapshot": "revisions/review1/pdf_qa_native_clarification/reviewed.pdf",
-    "pixel_identical_previously_inspected_pages": [
+    "page_prefix": "revisions/replanning_contracts/pdf_qa_19/page",
+    "all_pages_individually_viewed": [
       1,
       2,
       3,
@@ -35,20 +43,25 @@
       5,
       6,
       7,
+      8,
+      9,
       10,
       11,
       12,
-      13
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
     ],
-    "current_changed_pages_individually_viewed": [
-      8,
-      9
-    ]
+    "previous_acceptance_not_reused": true
   },
   "acceptance_checks": {
     "revised_title_and_supplied_author_identity": "pass",
     "author_background_footnote": "pass",
-    "all_three_figures_legible": "pass",
+    "all_five_figures_legible": "pass",
     "both_tables_legible": "pass",
     "equations_and_algorithm_legible": "pass",
     "references_and_urls_fit": "pass",
@@ -60,10 +73,66 @@
     "no_blocking_visual_defects": "pass",
     "manuscript_modified_by_visual_reviewer": false
   },
-  "figure_2": {
-    "page": 5,
-    "actual_final_page_pixels_reviewed": true,
-    "corrected_png_sha256": "9142594b7ea8ee64eb389e4863b74623a94a7c9e34b0ecd3e466f4ac763932f6",
+  "figures": [
+    {
+      "number": 1,
+      "page": 4,
+      "name": "fig_mem0_bulk_replay",
+      "actual_final_page_pixels_reviewed": true,
+      "standalone_visual_qa": "extensions/replanning_contracts/figures/fig_mem0_bulk_replay_visual_qa.json",
+      "standalone_visual_qa_sha256": "52f637025a71e2485733929c9a7692a9d5ab6c9c056f757f5d8f2ca031a19b92",
+      "copied_assets_identical_to_reviewed_originals": true,
+      "assets": {
+        "png": "59ac4e50075bba1e94704d25992c6cacc05ce9fe4ee31d02408e1022c58b75cc",
+        "pdf": "f0f0acd6c60f1e0fa5d5b92889363cbd7034b79bb56a3f88cb47785691f9fa4d",
+        "svg": "1bfb6bcc5e6abe608ec72ad6790912cb6650e89f4c6f7b8b985263cdc128307c"
+      }
+    },
+    {
+      "number": 2,
+      "page": 6,
+      "name": "fig_mem0_retrieval_slots",
+      "actual_final_page_pixels_reviewed": true,
+      "standalone_visual_qa": "extensions/replanning_contracts/figures/fig_mem0_retrieval_slots_visual_qa.json",
+      "standalone_visual_qa_sha256": "7e4ee34a12d119df487f5577965ffc95727cfb24decd741c094289f73eb16b16",
+      "copied_assets_identical_to_reviewed_originals": true,
+      "assets": {
+        "png": "d07fc6048646b24f3902d3ab7b8db1a9f18ed392868dccd2f6a3adb1eb72ee2b",
+        "pdf": "919652eb4463037287ad8036420501b418a25c06bfd4228fb240420e2055e823",
+        "svg": "c901011f32ca210480769e8772e6f14f53789e26d6066926843583e8ca380eba"
+      }
+    },
+    {
+      "number": 3,
+      "page": 7,
+      "name": "fig_experiment_architecture",
+      "actual_final_page_pixels_reviewed": true,
+      "asset": "manuscript/figures/fig_experiment_architecture.png",
+      "asset_sha256": "b01ae1bbac18227135a664f976ebe596bbd07b15189de47f547fd41294292aeb",
+      "status": "pass"
+    },
+    {
+      "number": 4,
+      "page": 9,
+      "name": "fig_factorial_oracles",
+      "actual_final_page_pixels_reviewed": true,
+      "asset": "manuscript/figures/fig_factorial_oracles.png",
+      "asset_sha256": "9142594b7ea8ee64eb389e4863b74623a94a7c9e34b0ecd3e466f4ac763932f6",
+      "status": "pass"
+    },
+    {
+      "number": 5,
+      "page": 10,
+      "name": "fig_history_matrix",
+      "actual_final_page_pixels_reviewed": true,
+      "asset": "manuscript/figures/fig_history_matrix.png",
+      "asset_sha256": "5e430d39c9a5d5131fdb61615e85313479d74f7e5186c8eb7b39bea856a190da",
+      "status": "pass"
+    }
+  ],
+  "factorial_figure_spacing": {
+    "figure_number": 4,
+    "page": 9,
     "legend_value_non_overlap": "pass",
     "legend_axes_non_overlap": "pass",
     "xlabel_footer_non_overlap": "pass",
@@ -73,242 +142,364 @@
       "panel_b_legend_to_axes": 35.053,
       "xlabel_to_first_footer": 61.294
     },
-    "prior_spacing_acceptance_superseded": true
+    "scope": "Measured standalone gaps supplement, and do not replace, actual final PDF pixel inspection."
   },
   "companion_links": [
     {
-      "page": 13,
+      "page": 19,
       "uri": "https://github.com/aditya-genies/beyond-recall"
     }
   ],
   "build_warning_review": {
-    "matching_warning_lines": [],
-    "ignored_package_metadata": "The infwarerr package description mentions warning/error messages; this is not a compilation warning."
+    "log": "manuscript/main.log",
+    "log_sha256": "424b33255d1b6f74e42d75a250e23200d10ee6436d3fc4ce13a69cb3f3cab93b",
+    "matching_warning_lines": [
+      "Underfull \\hbox (badness 1383) in paragraph at lines 192--198"
+    ],
+    "warning_count": 1,
+    "reviewed_warning": {
+      "type": "Underfull hbox",
+      "badness": 1383,
+      "bibliography_entry": 22,
+      "page": 16,
+      "disposition": "Benign reviewed spacing: the MemTX repository URL paragraph is visibly stretched but all characters remain legible and inside the text area; no clipping or overlap."
+    },
+    "ignored_package_metadata": "The infwarerr package description mentions warning/error messages; it is not a compilation warning."
   },
-  "readability_assessment": "The revised manuscript is shorter and more direct, with an opening concrete example, separate observations and explicit controls. The native and recorded-plan extensions fit with readable scientific qualifications. All measured figure labels, values, legends and footer bands are visibly separated in the actual PDF.",
+  "readability_assessment": "The added public-implementation section is concrete and readable. All five scientific figures have distinct legends, values, axes and footer bands in the actual PDF. Methods/extension pages are technically dense but maintain consistent type size, line spacing and subsection hierarchy. References have safe URL wrapping; all reproducibility commands and hash pins fit the single appendix page.",
   "nonblocking_observations": [
     {
       "pages": [
         4,
-        5,
-        6
+        6,
+        7,
+        9,
+        10
       ],
-      "issue": "A factor-contrast paragraph continues after a table/figure float page and the history-matrix float.",
-      "disposition": "No missing or overlapping text; acceptable float flow."
+      "issue": "Large top floats interrupt some prose and algorithm continuations.",
+      "disposition": "No missing or overlapping text; continuation remains readable. Accepted without content or layout changes."
     },
     {
       "pages": [
-        8,
-        9
+        16
       ],
-      "issue": "The prose explanation of the final conflict equation continues at the next page.",
-      "disposition": "Readable continuation with no clipping; no layout change required."
+      "issue": "One bibliography URL paragraph has extra horizontal spacing.",
+      "disposition": "Reviewed as benign underfull-hbox warning; all URL/commit characters fit."
+    },
+    {
+      "pages": [
+        18
+      ],
+      "issue": "The final reference page uses less than half of the text area.",
+      "disposition": "Complete bibliography followed by a separate one-page appendix; no short spill or missing content."
     }
   ],
   "pages": [
     {
       "page": 1,
       "section": "main",
-      "image": "revisions/review1/pdf_qa_final/page-01.png",
-      "image_sha256": "0be7ce3fc0a95f1e70b4abb76b511cd32dbda40d368e07a72866de1cf4fd5b67",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-01.png",
+      "image_sha256": "bd261f0390bce00f9aa446cc17e5525238544fb4faef0ae66d9a4fda95abd995",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
-      "notes": "Accurate revised title; supplied author/background footnote; abstract/introduction readable."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Title, author Aditya Mantri, Independent Researcher, date, and supplied background footnote are readable. Abstract and introduction fit without clipping."
     },
     {
       "page": 2,
       "section": "main",
-      "image": "revisions/review1/pdf_qa_final/page-02.png",
-      "image_sha256": "c73fd22ffd1ff7f46d845d3802e3712d771a5a8175f65e12751d5451df984702",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-02.png",
+      "image_sha256": "22075d37231b0785ee9bf2ec0ef49bd343e1e925503546d466bd7a9b4048d950",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
-      "notes": "Related work and initial definitions readable; no overflow."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Related-work paragraphs and citations are readable. Dense text remains regularly spaced with no overflow."
     },
     {
       "page": 3,
       "section": "main",
-      "image": "revisions/review1/pdf_qa_final/page-03.png",
-      "image_sha256": "d085f6dbb3abc98919f20416609bbc5f0c831aaa7ebf821fb99cac0f715c1827",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-03.png",
+      "image_sha256": "0c66da50dffe370c96917a40d62527d8af4f3b8519e7953eedff80a88bf1cb69",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
-      "notes": "Contract equations and six-step algorithm readable; no overlapping floats."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Admission-set definitions, both conditional-counting equations, controlled experiment and live-extraction heading fit. No clipped symbols or text."
     },
     {
       "page": 4,
       "section": "main",
-      "image": "revisions/review1/pdf_qa_final/page-04.png",
-      "image_sha256": "e82fff2e06313aa04650271f463d21be4521dd70d6bc0d899db3055f0015e5ea",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-04.png",
+      "image_sha256": "f0227e2ca9601f2e3200a6d91515f48c05acfece9ef5fb8abb7472852d413592",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
-      "notes": "Architecture and caption readable; primary results begin cleanly."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Figure 1 is sharp and readable; combined controls, all eight sample markers, endpoint labels, legend, axes and footer are visibly separated. Caption and live-method continuation fit."
     },
     {
       "page": 5,
       "section": "main",
-      "image": "revisions/review1/pdf_qa_final/page-05.png",
-      "image_sha256": "48ba9b6aa81eaf599c509aee8b5f850bc684cf929d70e2ec60ba6fd4a7a47568",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-05.png",
+      "image_sha256": "19b6be16a63a1e4b6fbea4a5977da33295caac3ef71d26f9b9ff6932e187f804",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
-      "notes": "Primary table and corrected Figure 2 are legible. Panel-b legend is visibly separated from 317 labels and plotting area; policy xlabel is visibly separated from both footer lines."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Live-evidence qualifications, retrieval method/denominators and contract definitions are readable; equation 3 fits. The source distinction between duplicate slots and displaced distinct strings is legible."
     },
     {
       "page": 6,
       "section": "main",
-      "image": "revisions/review1/pdf_qa_final/page-06.png",
-      "image_sha256": "e1f23467797fae2062898e536c3323a2fc4ce37a733be1689ca30e1396902da8",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-06.png",
+      "image_sha256": "707c21c6fdc112d1a63bb02d6b076959e0e2ff8f686746009ca929171c097411",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
-      "notes": "History matrix, labels, legend text and caption readable. A factor-contrast paragraph continues from page 4 after floats; nonblocking reading-flow observation."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Figure 2 is sharp and readable; all four N values, paired states, distinct/duplicate partitions, segment labels and 336/336 target-presence denominator are legible. N=8 explicitly shows eight returned and two unused; legend, axes, caption and footer do not overlap. D/P/R definitions and equation 4 fit below."
     },
     {
       "page": 7,
       "section": "main",
-      "image": "revisions/review1/pdf_qa_final/page-07.png",
-      "image_sha256": "617f7fa82fe39e92b12ec42e502c42f979e199d5ae4ba78278b7ae0aff844193",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-07.png",
+      "image_sha256": "77d8fe75fd4530d14ccee7091ee2063afe0a33bb93f49822c6579b5cd409600c",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
-      "notes": "Boundary table and checking/reproduction are legible. Native graph.get_state/empty-next/completed-outcome fastpath clarification and pilot setup fit."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Figure 3 architecture is legible, including controlled dashed boxes, process/store boundaries, arrows and legend. Caption, continuity equation and implementation/algorithm opening fit."
     },
     {
       "page": 8,
       "section": "main",
-      "image": "revisions/review1/pdf_qa_final/page-08.png",
-      "image_sha256": "68fb3eaf0b7ac28f3960772489837f72c52b427ffdc6922cf477be537423bd8a",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-08.png",
+      "image_sha256": "fdefcf51d4f6511a849b789e3d7cfd40d17874d7b429f8128a5cfc761c915e2e",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Individually viewed current final-build PNG",
-      "notes": "Plan-binding section and focused-control wording are readable. The receipt-enabled successful-operation qualification, failed-comparison identity boundary, modeled reply loss, and conflict equation fit without clipping."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Table 1 is legible, with eight policy rows and C/K/T/L/Q/W headings separated. Algorithm continuation, process-exit model and primary results fit without clipping."
     },
     {
       "page": 9,
       "section": "main",
-      "image": "revisions/review1/pdf_qa_final/page-09.png",
-      "image_sha256": "a353f41fc2c4819bc8179eabf5b9ad8f130ec23b88352faf399cfda71acf5c84",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-09.png",
+      "image_sha256": "25256bcf9d8c6d0bb1dd47eb423cfca3108aa2a0f388060451890978a2cc1552",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Individually viewed current final-build PNG",
-      "notes": "Continuation explaining the preceding conflict equation, retained-receipt invariant, discussion and conclusion are legible. No missing or overlapping text."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Figure 4 is legible. Panel-b legend is visibly above and clear of the 317/275 value labels and plotting axes; policy xlabel is separated from both footer lines. Table 2 is readable and its rows/headers are separated."
     },
     {
       "page": 10,
-      "section": "references",
-      "image": "revisions/review1/pdf_qa_final/page-10.png",
-      "image_sha256": "52cfaae4eca300b4ca94e6722da3efb1b9a8e379911b92a8fa3a25a53c50c2fc",
+      "section": "main",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-10.png",
+      "image_sha256": "8207ac0ea754fbed5da639654f151d01296c7858f54f3cc2a9a7a0d9c02d5b4f",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
-      "notes": "References 1\u201314 readable, including wrapped URLs."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Figure 5 matrix labels, all cell fractions, policy labels, footer and caption are readable. Boundary probes and checking/reproduction fit."
     },
     {
       "page": 11,
-      "section": "references",
-      "image": "revisions/review1/pdf_qa_final/page-11.png",
-      "image_sha256": "2b082d9c3cedcc7b89faea6a890dbebe20dcb88268d684a9dd977c14b7333cc2",
+      "section": "main",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-11.png",
+      "image_sha256": "dc62b83de064f9231af4525abf7c348650cb5e9233ef875999d5b1827951bda0",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
-      "notes": "References 15\u201330 readable; documentation/source references fit."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Native checkpoint, recorded-model pilot and plan-binding sections are readable. Monospaced API/field names wrap safely. The trailing sentence continues on page 12 without missing text."
     },
     {
       "page": 12,
-      "section": "references",
-      "image": "revisions/review1/pdf_qa_final/page-12.png",
-      "image_sha256": "233d0e9ac51b3cd3d4921d49e82c911d185b75e2500fe7b5577ab16134da632b",
+      "section": "main",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-12.png",
+      "image_sha256": "86645630cf745d3a3ccdc313e74464b0ced246ded978364493c6744eacf5f003",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
-      "notes": "References 31\u201336 readable; no overflow."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Plan-binding continuation, receipt-qualified conflict contract, equation 6 and MemTX setup fit. No clipped formulas or overlapping paragraphs."
     },
     {
       "page": 13,
-      "section": "appendix",
-      "image": "revisions/review1/pdf_qa_final/page-13.png",
-      "image_sha256": "45137a6ee81b93ddfc35af18254f166cfe2f0c99436aff5da23a1d4f17be473d",
+      "section": "main",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-13.png",
+      "image_sha256": "817b512f9ab5222ece38b0bba4e09ae2e4efd17a173436dab5cfdf947bbb8855",
       "dimensions_px": [
-        1237,
-        1600
+        1391,
+        1800
       ],
       "status": "pass",
       "visually_inspected": true,
-      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
-      "notes": "Public-companion link, stdlib commands, primary hash pins and AI-assistance disclosure readable; complete appendix on one page."
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "MemTX and SQLite/Redis extension prose is dense but legible with clear subsection hierarchy and regular line spacing. No overflow or missing text."
+    },
+    {
+      "page": 14,
+      "section": "main",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-14.png",
+      "image_sha256": "8e3438a602047c643f47753da56f437ce72c5bafefdf31ea8c42aa0cd513140d",
+      "dimensions_px": [
+        1391,
+        1800
+      ],
+      "status": "pass",
+      "visually_inspected": true,
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "Discussion and conclusion are readable with clear section separation. Bottom whitespace follows the completed main text and is not an omitted paragraph."
+    },
+    {
+      "page": 15,
+      "section": "references",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-15.png",
+      "image_sha256": "83d20914723086d636747a9112a02d41ebfea2ab08a2556b8d3e1e2e4516ba78",
+      "dimensions_px": [
+        1391,
+        1800
+      ],
+      "status": "pass",
+      "visually_inspected": true,
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "References 1–14 are readable. Long URLs wrap within the text area; no clipping or overlapping entries."
+    },
+    {
+      "page": 16,
+      "section": "references",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-16.png",
+      "image_sha256": "cb561184a5dff1b02d688d1b98f076dc317dd70c655be467b49071bbec7da839",
+      "dimensions_px": [
+        1391,
+        1800
+      ],
+      "status": "pass",
+      "visually_inspected": true,
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "References 15–29 are readable. Entry 22 has visible extra spacing associated with the underfull hbox, but its repository URL and commit are intact and fit the page. No clipping or overlap."
+    },
+    {
+      "page": 17,
+      "section": "references",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-17.png",
+      "image_sha256": "5d2311888536668d89ac06b7a8dd01dbe3ade6163015aaa89a01931d2f6a70cc",
+      "dimensions_px": [
+        1391,
+        1800
+      ],
+      "status": "pass",
+      "visually_inspected": true,
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "References 30–47, documentation URLs and bibliography continuation are readable with no overflow."
+    },
+    {
+      "page": 18,
+      "section": "references",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-18.png",
+      "image_sha256": "5b24648dd4a185ff7d6f93b58e3678eaec2b285f927cd2c496f5eba463f93b07",
+      "dimensions_px": [
+        1391,
+        1800
+      ],
+      "status": "pass",
+      "visually_inspected": true,
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "References 48–54 are readable. The short final reference page is complete; whitespace below it is intentional."
+    },
+    {
+      "page": 19,
+      "section": "appendix",
+      "image": "revisions/replanning_contracts/pdf_qa_19/page-19.png",
+      "image_sha256": "b59c46728a7f3f40536bb9bfe0dff6047a3bfa51b901204163ee782b9ec94219",
+      "dimensions_px": [
+        1391,
+        1800
+      ],
+      "status": "pass",
+      "visually_inspected": true,
+      "inspection_evidence": "Individually viewed current immutable-snapshot page PNG at readable resolution; no acceptance inferred from text extraction.",
+      "notes": "One-page appendix is complete. Public repository URL, command block, full primary hashes and AI-assistance statement are readable. No command-line clipping, text collision or short appendix spill."
     }
   ],
   "montages": [
     {
-      "path": "revisions/review1/pdf_qa_final/montage-01-04.png",
-      "sha256": "94ce137c1c650ed20609b0d6a27f9a34aea7de0930e16ca827ec2c770d446158"
+      "path": "revisions/replanning_contracts/pdf_qa_19/montage-01-04.png",
+      "sha256": "c3762a13801fee9717e192c45560e6b2806ef82bc11599c9b3d00261ff4e4a32",
+      "purpose": "Navigation overview; individual page images, not montage thumbnails, support acceptance."
     },
     {
-      "path": "revisions/review1/pdf_qa_final/montage-05-08.png",
-      "sha256": "e3fe789709e4f438eab58bf120f437f3697cb892c88557fdad22d1f83a51b22e"
+      "path": "revisions/replanning_contracts/pdf_qa_19/montage-05-08.png",
+      "sha256": "9e3e19deb79a71db2fc00c603b9ef3a0f5139d5d107c064aa74460fe0be0f85d",
+      "purpose": "Navigation overview; individual page images, not montage thumbnails, support acceptance."
     },
     {
-      "path": "revisions/review1/pdf_qa_final/montage-09-12.png",
-      "sha256": "82f618f6f4bfe32d5aed04e990ce7199ef2bcb6af5e0c45991c112e1620aedae"
+      "path": "revisions/replanning_contracts/pdf_qa_19/montage-09-12.png",
+      "sha256": "447f94cbd6eb834a4d6b674bd6d4d3b7271226f75c7b6212d351abb0723904d4",
+      "purpose": "Navigation overview; individual page images, not montage thumbnails, support acceptance."
     },
     {
-      "path": "revisions/review1/pdf_qa_final/montage-13-13.png",
-      "sha256": "3653d9db2c11bd929db77b98cb7b6a8da03986a36864f9ad8a97877315bb3539"
+      "path": "revisions/replanning_contracts/pdf_qa_19/montage-13-16.png",
+      "sha256": "51614a1a96d26c7ea18ac422dacbee71eba3dd67df1e99746926107520f91d3b",
+      "purpose": "Navigation overview; individual page images, not montage thumbnails, support acceptance."
+    },
+    {
+      "path": "revisions/replanning_contracts/pdf_qa_19/montage-17-19.png",
+      "sha256": "e5674215ed2c62fb920a0470781ff98b246e5047b9f4c66093a97bf14dee0fdf",
+      "purpose": "Navigation overview; individual page images, not montage thumbnails, support acceptance."
     }
   ],
   "final_hash_guard": {
     "pdf_unchanged_during_review": true,
-    "all_sources_unchanged_during_review": true
+    "all_sources_unchanged_during_review": true,
+    "all_six_new_figure_copies_match_reviewed_originals": true,
+    "source_paths_checked": [
+      "manuscript/main.tex",
+      "manuscript/plan_binding.tex",
+      "manuscript/public_memory.tex",
+      "manuscript/contract_portability.tex",
+      "manuscript/refs.bib"
+    ],
+    "checked_at_utc": "2026-10-30T05:33:50.432023+00:00"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "requested_model": null,
+  "additional_model_call": false,
+  "strategy": "recorded_model_result",
+  "source": "Exact archived baseline model response reused as a retained nondeterministic result; not a fresh model observation.",
+  "response_sha256": "7ebb0c0137681b07505aeb0829dadb5fa2c5395ffcf6a092fe1cf7edc289caaa",
+  "native_messages_sha256": "6e642f64bfc9237f9e23b02cae67e64fa9258b50fded2248101336ff26aa47e3",
+  "used_response_sha256": "1417c5708713766a9b67c37e7e3e29c98ca616e69093938ef807b3287fe0a253",
+  "exact_admission_removed": []
+}

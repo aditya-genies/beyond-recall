@@ -1,0 +1,541 @@
+{
+  "returncode": 0,
+  "timed_out": false,
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "tests",
+    "-q",
+    "--ignore=tests/test_tau2_adapter.py",
+    "-rA",
+    "--junitxml=<external-log>"
+  ],
+  "counts": {
+    "passed": 94,
+    "failure": 0,
+    "error": 0,
+    "skipped": 0
+  },
+  "test_cases": [
+    {
+      "name": "test_blocked_attempt_does_not_fire_forbidden_action",
+      "class_name": "tests.test_action_scoring",
+      "status": "passed"
+    },
+    {
+      "name": "test_executed_action_still_fires_forbidden_action",
+      "class_name": "tests.test_action_scoring",
+      "status": "passed"
+    },
+    {
+      "name": "test_blocked_attempt_does_not_satisfy_required_action",
+      "class_name": "tests.test_action_scoring",
+      "status": "passed"
+    },
+    {
+      "name": "test_contradictory_records_in_one_tx_cannot_both_commit",
+      "class_name": "tests.test_action_scoring",
+      "status": "passed"
+    },
+    {
+      "name": "test_no_semantic_conflict_variant_still_quarantines_low_evidence",
+      "class_name": "tests.test_action_scoring",
+      "status": "passed"
+    },
+    {
+      "name": "test_no_semantic_conflict_variant_lets_contradiction_through",
+      "class_name": "tests.test_action_scoring",
+      "status": "passed"
+    },
+    {
+      "name": "test_no_source_trust_variant_only_ignores_permission_conflicts",
+      "class_name": "tests.test_action_scoring",
+      "status": "passed"
+    },
+    {
+      "name": "test_low_authority_low_confidence_quarantined",
+      "class_name": "tests.test_commit_validator",
+      "status": "passed"
+    },
+    {
+      "name": "test_high_authority_bypasses_evidence",
+      "class_name": "tests.test_commit_validator",
+      "status": "passed"
+    },
+    {
+      "name": "test_confidence_above_threshold_commits",
+      "class_name": "tests.test_commit_validator",
+      "status": "passed"
+    },
+    {
+      "name": "test_lower_authority_conflict_quarantined",
+      "class_name": "tests.test_commit_validator",
+      "status": "passed"
+    },
+    {
+      "name": "test_reversible_tool_allowed",
+      "class_name": "tests.test_commit_validator",
+      "status": "passed"
+    },
+    {
+      "name": "test_irreversible_blocked_by_unresolved_tentative",
+      "class_name": "tests.test_commit_validator",
+      "status": "passed"
+    },
+    {
+      "name": "test_external_action_requires_action_safe_support",
+      "class_name": "tests.test_commit_validator",
+      "status": "passed"
+    },
+    {
+      "name": "test_permission_conditional_ignores_undefined_cases",
+      "class_name": "tests.test_conditional_metrics",
+      "status": "passed"
+    },
+    {
+      "name": "test_abort_conditional_excludes_default_pass",
+      "class_name": "tests.test_conditional_metrics",
+      "status": "passed"
+    },
+    {
+      "name": "test_empty_subset_is_none",
+      "class_name": "tests.test_conditional_metrics",
+      "status": "passed"
+    },
+    {
+      "name": "test_commit_recall_conditional_on_expected_committed",
+      "class_name": "tests.test_conditional_metrics",
+      "status": "passed"
+    },
+    {
+      "name": "test_derived_from_revoked_aborts",
+      "class_name": "tests.test_conflict_detector",
+      "status": "passed"
+    },
+    {
+      "name": "test_permission_laundering_aborts",
+      "class_name": "tests.test_conflict_detector",
+      "status": "passed"
+    },
+    {
+      "name": "test_scope_coexistence_commits",
+      "class_name": "tests.test_conflict_detector",
+      "status": "passed"
+    },
+    {
+      "name": "test_idempotent_same_value_commits",
+      "class_name": "tests.test_conflict_detector",
+      "status": "passed"
+    },
+    {
+      "name": "test_stale_late_write_aborts",
+      "class_name": "tests.test_conflict_detector",
+      "status": "passed"
+    },
+    {
+      "name": "test_higher_authority_supersedes",
+      "class_name": "tests.test_conflict_detector",
+      "status": "passed"
+    },
+    {
+      "name": "test_lower_authority_aborts",
+      "class_name": "tests.test_conflict_detector",
+      "status": "passed"
+    },
+    {
+      "name": "test_equal_authority_same_source_supersedes",
+      "class_name": "tests.test_conflict_detector",
+      "status": "passed"
+    },
+    {
+      "name": "test_equal_authority_different_source_asks_user",
+      "class_name": "tests.test_conflict_detector",
+      "status": "passed"
+    },
+    {
+      "name": "test_no_same_slot_commits",
+      "class_name": "tests.test_conflict_detector",
+      "status": "passed"
+    },
+    {
+      "name": "test_disjoint_validity_coexists",
+      "class_name": "tests.test_conflict_detector",
+      "status": "passed"
+    },
+    {
+      "name": "test_descendants_transitive_and_branching",
+      "class_name": "tests.test_dependency_graph",
+      "status": "passed"
+    },
+    {
+      "name": "test_parents",
+      "class_name": "tests.test_dependency_graph",
+      "status": "passed"
+    },
+    {
+      "name": "test_has_pending_invalidation",
+      "class_name": "tests.test_dependency_graph",
+      "status": "passed"
+    },
+    {
+      "name": "test_remove_node_detaches_edges",
+      "class_name": "tests.test_dependency_graph",
+      "status": "passed"
+    },
+    {
+      "name": "test_reset",
+      "class_name": "tests.test_dependency_graph",
+      "status": "passed"
+    },
+    {
+      "name": "test_score_should_fire_correct",
+      "class_name": "tests.test_downstream",
+      "status": "passed"
+    },
+    {
+      "name": "test_score_should_fire_wrong_value_is_harm",
+      "class_name": "tests.test_downstream",
+      "status": "passed"
+    },
+    {
+      "name": "test_score_should_abstain_but_fired_is_harm",
+      "class_name": "tests.test_downstream",
+      "status": "passed"
+    },
+    {
+      "name": "test_score_should_fire_but_abstained_is_over_abstain",
+      "class_name": "tests.test_downstream",
+      "status": "passed"
+    },
+    {
+      "name": "test_memtx_clears_all_four_episodes",
+      "class_name": "tests.test_downstream",
+      "status": "passed"
+    },
+    {
+      "name": "test_cordon_is_harmed_by_pollution",
+      "class_name": "tests.test_downstream",
+      "status": "passed"
+    },
+    {
+      "name": "test_memtx_refunds_correct_value_on_pollution",
+      "class_name": "tests.test_downstream",
+      "status": "passed"
+    },
+    {
+      "name": "test_preload_round_trip",
+      "class_name": "tests.test_gem_official_adapter",
+      "status": "passed"
+    },
+    {
+      "name": "test_write_applies_before_commit",
+      "class_name": "tests.test_gem_official_adapter",
+      "status": "passed"
+    },
+    {
+      "name": "test_no_validation_gate_commits_low_confidence",
+      "class_name": "tests.test_gem_official_adapter",
+      "status": "passed"
+    },
+    {
+      "name": "test_revision_supersedes_via_official_versioning",
+      "class_name": "tests.test_gem_official_adapter",
+      "status": "passed"
+    },
+    {
+      "name": "test_abort_memory_forgets_without_cascade",
+      "class_name": "tests.test_gem_official_adapter",
+      "status": "passed"
+    },
+    {
+      "name": "test_tx_abort_tombstones_without_restore",
+      "class_name": "tests.test_gem_official_adapter",
+      "status": "passed"
+    },
+    {
+      "name": "test_forget_hint_routes_to_forgetting",
+      "class_name": "tests.test_gem_official_adapter",
+      "status": "passed"
+    },
+    {
+      "name": "test_no_permission_filtering",
+      "class_name": "tests.test_gem_official_adapter",
+      "status": "passed"
+    },
+    {
+      "name": "test_reset_isolates_cases",
+      "class_name": "tests.test_gem_official_adapter",
+      "status": "passed"
+    },
+    {
+      "name": "runTest",
+      "class_name": "tests.test_invariants_property.TestMemTXInvariants",
+      "status": "passed"
+    },
+    {
+      "name": "test_tx_abort_cascades_to_committed_descendants",
+      "class_name": "tests.test_invariants_property",
+      "status": "passed"
+    },
+    {
+      "name": "test_committed_read_hides_dirty_states",
+      "class_name": "tests.test_isolation",
+      "status": "passed"
+    },
+    {
+      "name": "test_action_safe_read_only_action_safe",
+      "class_name": "tests.test_isolation",
+      "status": "passed"
+    },
+    {
+      "name": "test_raw_read_sees_uncommitted_but_not_terminal",
+      "class_name": "tests.test_isolation",
+      "status": "passed"
+    },
+    {
+      "name": "test_verified_read_requires_validated_or_better",
+      "class_name": "tests.test_isolation",
+      "status": "passed"
+    },
+    {
+      "name": "test_retrieve_excludes_revoked_and_respects_read_roles",
+      "class_name": "tests.test_isolation",
+      "status": "passed"
+    },
+    {
+      "name": "test_isolation_override_pins_every_tx",
+      "class_name": "tests.test_isolation",
+      "status": "passed"
+    },
+    {
+      "name": "test_isolation_override_changes_snapshot_visibility",
+      "class_name": "tests.test_isolation",
+      "status": "passed"
+    },
+    {
+      "name": "test_nominal_private_read_does_not_taint",
+      "class_name": "tests.test_scope_guard",
+      "status": "passed"
+    },
+    {
+      "name": "test_restricted_cross_owner_read_taints_and_blocks",
+      "class_name": "tests.test_scope_guard",
+      "status": "passed"
+    },
+    {
+      "name": "test_own_private_read_does_not_taint",
+      "class_name": "tests.test_scope_guard",
+      "status": "passed"
+    },
+    {
+      "name": "test_stale_rewrite_aborts_across_transactions",
+      "class_name": "tests.test_scope_guard",
+      "status": "passed"
+    },
+    {
+      "name": "test_never_read_corrector_is_not_blocked",
+      "class_name": "tests.test_scope_guard",
+      "status": "passed"
+    },
+    {
+      "name": "test_displaced_value_cannot_resurrect_via_idempotent_twin",
+      "class_name": "tests.test_scope_guard",
+      "status": "passed"
+    },
+    {
+      "name": "test_all_declared_transitions_are_allowed",
+      "class_name": "tests.test_state_machine",
+      "status": "passed"
+    },
+    {
+      "name": "test_illegal_transitions_raise",
+      "class_name": "tests.test_state_machine",
+      "status": "passed"
+    },
+    {
+      "name": "test_revoked_is_terminal",
+      "class_name": "tests.test_state_machine",
+      "status": "passed"
+    },
+    {
+      "name": "test_main_happy_path_chain",
+      "class_name": "tests.test_state_machine",
+      "status": "passed"
+    },
+    {
+      "name": "test_write_time_effect_before_commit",
+      "class_name": "tests.test_toki_baseline",
+      "status": "passed"
+    },
+    {
+      "name": "test_evidence_weighted_late_low_confidence_write_loses",
+      "class_name": "tests.test_toki_baseline",
+      "status": "passed"
+    },
+    {
+      "name": "test_lww_on_confidence_tie",
+      "class_name": "tests.test_toki_baseline",
+      "status": "passed"
+    },
+    {
+      "name": "test_disjoint_validity_coexists",
+      "class_name": "tests.test_toki_baseline",
+      "status": "passed"
+    },
+    {
+      "name": "test_snapshot_isolation_reads",
+      "class_name": "tests.test_toki_baseline",
+      "status": "passed"
+    },
+    {
+      "name": "test_await_parks_until_decisive_write",
+      "class_name": "tests.test_toki_baseline",
+      "status": "passed"
+    },
+    {
+      "name": "test_no_rollback_no_gate_by_design",
+      "class_name": "tests.test_toki_baseline",
+      "status": "passed"
+    },
+    {
+      "name": "test_sim_now_bitemporal_read",
+      "class_name": "tests.test_toki_baseline",
+      "status": "passed"
+    },
+    {
+      "name": "test_node_type_roundtrip",
+      "class_name": "tests.test_typed_rollback",
+      "status": "passed"
+    },
+    {
+      "name": "test_node_type_defaults_to_belief",
+      "class_name": "tests.test_typed_rollback",
+      "status": "passed"
+    },
+    {
+      "name": "test_cascade_rolls_back_all_descendants",
+      "class_name": "tests.test_typed_rollback",
+      "status": "passed"
+    },
+    {
+      "name": "test_rollback_log_actions_are_typed",
+      "class_name": "tests.test_typed_rollback",
+      "status": "passed"
+    },
+    {
+      "name": "test_belief_descendant_is_revoked_not_invalidated",
+      "class_name": "tests.test_typed_rollback",
+      "status": "passed"
+    },
+    {
+      "name": "test_no_cascade_ablation_only_revokes_direct_target",
+      "class_name": "tests.test_typed_rollback",
+      "status": "passed"
+    },
+    {
+      "name": "test_from_dict_reads_validity_key",
+      "class_name": "tests.test_validity_interval",
+      "status": "passed"
+    },
+    {
+      "name": "test_to_dict_serializes_validity_when_present",
+      "class_name": "tests.test_validity_interval",
+      "status": "passed"
+    },
+    {
+      "name": "test_to_dict_omits_validity_when_empty",
+      "class_name": "tests.test_validity_interval",
+      "status": "passed"
+    },
+    {
+      "name": "test_expired_record_quarantined",
+      "class_name": "tests.test_validity_interval",
+      "status": "passed"
+    },
+    {
+      "name": "test_not_yet_valid_record_quarantined",
+      "class_name": "tests.test_validity_interval",
+      "status": "passed"
+    },
+    {
+      "name": "test_current_record_commits",
+      "class_name": "tests.test_validity_interval",
+      "status": "passed"
+    },
+    {
+      "name": "test_no_sim_now_disables_validity_check",
+      "class_name": "tests.test_validity_interval",
+      "status": "passed"
+    },
+    {
+      "name": "test_disjoint_windows_are_disjoint",
+      "class_name": "tests.test_validity_interval",
+      "status": "passed"
+    },
+    {
+      "name": "test_overlapping_windows_not_disjoint",
+      "class_name": "tests.test_validity_interval",
+      "status": "passed"
+    },
+    {
+      "name": "test_missing_bounds_not_disjoint",
+      "class_name": "tests.test_validity_interval",
+      "status": "passed"
+    },
+    {
+      "name": "test_disjoint_records_coexist_on_commit",
+      "class_name": "tests.test_validity_interval",
+      "status": "passed"
+    }
+  ],
+  "external_raw_log_sha256": "f4d44281ca21ccc40894c1db6424754cc0e595df88f4a39072f1587427b5e460",
+  "external_junit_sha256": "c557d1aee81ee09851578ae395ecdccda7722dd5bb5773f98103fe3a4b70b44c",
+  "package_versions": {
+    "pydantic": "2.14.2",
+    "kiwisolver": "1.5.1",
+    "packaging": "26.3",
+    "Pygments": "2.21.0",
+    "certifi": "2026.10.23",
+    "pandas": "3.1.0",
+    "pydantic_core": "2.50.2",
+    "docstring_parser": "0.18.0",
+    "iniconfig": "2.3.1",
+    "jiter": "0.18.0",
+    "httpcore": "1.0.9",
+    "numpy": "2.5.4",
+    "pillow": "13.0.0",
+    "openai": "3.41.0",
+    "contourpy": "1.4.0",
+    "pydantic-settings": "2.16.2",
+    "pluggy": "1.7.0",
+    "opentelemetry-api": "1.45.2",
+    "pip": "25.0.1",
+    "h11": "0.16.0",
+    "sniffio": "1.3.1",
+    "httpcore2": "2.16.0",
+    "sortedcontainers": "2.4.0",
+    "anthropic": "2.3.0",
+    "matplotlib": "3.11.2",
+    "truststore": "0.10.5",
+    "python-dotenv": "1.2.4",
+    "httpx2": "2.16.0",
+    "pytest": "9.2.0",
+    "cycler": "0.12.1",
+    "annotated-types": "0.8.0",
+    "fonttools": "4.68.0",
+    "tzdata": "2026.6",
+    "typing-inspection": "0.4.4",
+    "attrs": "26.1.0",
+    "hypothesis": "6.98.9",
+    "httpx": "0.28.1",
+    "typing_extensions": "4.16.0",
+    "python-dateutil": "3.0.0",
+    "anyio": "4.15.1",
+    "pyparsing": "3.3.3",
+    "six": "1.17.0",
+    "scipy": "1.18.1",
+    "idna": "3.20",
+    "kuzu": "0.11.3"
+  }
+}

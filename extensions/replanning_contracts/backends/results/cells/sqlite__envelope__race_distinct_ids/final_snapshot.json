@@ -1,0 +1,61 @@
+{
+  "raw": {
+    "envelope": {
+      "epoch": 0,
+      "history": [
+        {
+          "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"contender\"}",
+          "epoch": 0,
+          "kind": "participant",
+          "opid": "B",
+          "value": "contender",
+          "version": 1
+        }
+      ],
+      "origin": "B",
+      "receipts": {
+        "B": {
+          "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"contender\"}",
+          "outcome": {
+            "epoch": 0,
+            "value": "contender",
+            "version": 1
+          }
+        }
+      },
+      "record_epoch": 0,
+      "value": "contender",
+      "version": 1,
+      "visible": true
+    }
+  },
+  "receipt_storage": "envelope",
+  "receipts": {
+    "B": {
+      "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"contender\"}",
+      "outcome": {
+        "epoch": 0,
+        "value": "contender",
+        "version": 1
+      }
+    }
+  },
+  "state": {
+    "epoch": 0,
+    "history": [
+      {
+        "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"contender\"}",
+        "epoch": 0,
+        "kind": "participant",
+        "opid": "B",
+        "value": "contender",
+        "version": 1
+      }
+    ],
+    "origin": "B",
+    "record_epoch": 0,
+    "value": "contender",
+    "version": 1,
+    "visible": true
+  }
+}

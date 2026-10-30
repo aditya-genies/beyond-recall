@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "reviewed_at_utc": "2026-10-30T05:11:32.611244+00:00",
+  "figure": "fig_mem0_bulk_replay",
+  "png_sha256": "59ac4e50075bba1e94704d25992c6cacc05ce9fe4ee31d02408e1022c58b75cc",
+  "pdf_sha256": "f0f0acd6c60f1e0fa5d5b92889363cbd7034b79bb56a3f88cb47785691f9fa4d",
+  "svg_sha256": "1bfb6bcc5e6abe608ec72ad6790912cb6650e89f4c6f7b8b985263cdc128307c",
+  "png_pixels": [
+    1350,
+    1080
+  ],
+  "png_dpi": [
+    299.9994,
+    299.9994
+  ],
+  "pixel_inspection": {
+    "final_png": true,
+    "poppler_render_of_final_pdf": true,
+    "no_visible_clipping": true,
+    "no_visible_text_overlap": true,
+    "legends_outside_axes": true,
+    "shared_control_curve_explicitly_named": true,
+    "all_eight_N_markers_present": true,
+    "endpoint_values_legible": true,
+    "xlabel_clear_of_footer": true
+  },
+  "bbox_gate": {
+    "path": "fig_mem0_bulk_replay_spacing.json",
+    "pair_checks": 67,
+    "minimum_tested_gap_px": 19.892,
+    "all_passed": true,
+    "outside_canvas": []
+  },
+  "measured_critical_gaps_px": {
+    "legend / axes": 21.637,
+    "footer_0 / xlabel": 25.262,
+    "footer_0 / footer_1": 21.51
+  },
+  "figure_lint": {
+    "errors": 0,
+    "warnings": 1,
+    "warning": "no-pipeline-figure",
+    "disposition": "This delegated figure set contains only the requested empirical line plot. The complete manuscript figure set is not assessed here.",
+    "report": "figure_lint.txt"
+  },
+  "provenance": "fig_mem0_bulk_replay_provenance.json",
+  "immutable_data": "Uses only verified frozen 96-case Mem0 campaign; no live-pilot or pending-backend outcomes consumed.",
+  "manuscript_or_old_figures_modified": false
+}

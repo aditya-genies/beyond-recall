@@ -1,0 +1,94 @@
+{
+  "reviewed_utc": "2026-10-30T04:59:50.655074+00:00",
+  "experiments_executed_by_this_audit": false,
+  "coverage": "Questions and falsifiers, not success guarantees or population estimates.",
+  "records": [
+    {
+      "id": "H1_memtx_snapshot_read",
+      "status": "Independently probed by sibling; consult its frozen raw artifact, not this literature file for counts.",
+      "question": "Does an old transaction retrieve a new unrelated committed record absent from its captured snapshot?",
+      "prediction": "The pinned retrieve path scans current lifecycle-visible records, so the post-begin record may be returned despite the paper snapshot-read wording.",
+      "falsifier": "Old transaction excludes the record while a fresh transaction includes it, or a primary latest-read exception is located.",
+      "controls": [
+        "Four risk tiers",
+        "Empty and nonempty start snapshots",
+        "Unrelated new slot, no revocation ambiguity",
+        "Fresh transaction"
+      ],
+      "contribution_bound": "A pinned description/implementation conformance discrepancy, not a new isolation principle."
+    },
+    {
+      "id": "H2_memtx_empty_snapshot",
+      "status": "Independently probed by sibling; consult its frozen raw artifact.",
+      "question": "Does an empty snapshot bypass the pre-authority stale-rival rejection applied to a nonempty snapshot?",
+      "prediction": "A same-source or higher-authority old writer can supersede a post-begin rival when the start set is empty, while the anchored version aborts.",
+      "falsifier": "Both anchored and empty starts reject all post-begin conflicting candidates before authority comparison.",
+      "controls": [
+        "Equal same-source, higher, lower and equal different-source authorities",
+        "Unequal values in same entity/attribute/scope",
+        "Overlapping validity and sufficient evidence",
+        "Fresh-after-rival correction controls"
+      ],
+      "contribution_bound": "An empty-set sentinel boundary under the explicitly stated temporal rule; fresh-transaction authority correction is intended and the paper itself discusses that escape."
+    },
+    {
+      "id": "H3_mem0_literal_capacity",
+      "status": "Parent-owned experiment in progress; no result inferred here.",
+      "question": "Can sequential exact-text replay of N unique already-stored facts evade exact-hash suppression when only k existing results feed the hash set?",
+      "prediction": "Conditional on N valid facts with distinct exact-text hashes being re-emitted and no additional suppression, at most k can match that set; at least max(0,N−k) writes survive. This is a conditional capacity bound, not a model-quality claim.",
+      "falsifier": "Pinned production path supplies a complete exact-hash index or another global exact-text suppression step before commit, or controlled replay produces fewer accepted writes for a documented additional reason.",
+      "controls": [
+        "N=9,10,11,20,40 with fixed k=10",
+        "Literal hashes and physical cardinality independently counted",
+        "Single writer excludes known TOCTOU race",
+        "Top-k trace captured, not inferred from a final search",
+        "Age recent conversation context out before fresh-model confirmation",
+        "Change only candidate bound or exact lookup in causal controls",
+        "Keep inferred/raw paths separate; do not mix stores"
+      ],
+      "contribution_bound": "Known bounded candidate mechanism, potentially a narrower measured literal-repeat consequence. No first claim or exactly-once vendor promise."
+    },
+    {
+      "id": "H4_expiry_identity_scope",
+      "status": "Proposed discriminator; related Mem0 #7612 is already reported.",
+      "question": "Does an exact-content index preserve legitimate later writes after old content expires or is revoked?",
+      "prediction": "A global forever-hash index can improve replay suppression while suppressing a legitimate new occurrence; a declared occurrence/epoch/window contract distinguishes the cases.",
+      "falsifier": "The declared contract intentionally treats all lifetime repeats as the same event, or active/expired and new-occurrence controls are all correctly distinguished.",
+      "controls": [
+        "Historical replay versus fresh occurrence",
+        "Active versus expired versus deleted record",
+        "Same versus new authority epoch",
+        "Explicit retention boundary"
+      ],
+      "contribution_bound": "Lifetime tradeoff is prior art in RIFL and API contracts; a new universal identity scheme is not presumed."
+    },
+    {
+      "id": "H5_revoke_inflight_write",
+      "status": "Proposed contract probe, not a new protocol.",
+      "question": "Can a pending memory write admitted before delete/revoke recreate an authoritative record after the barrier?",
+      "prediction": "An API without sink-enforced epoch admission may allow the write, but this is a defect only if quiescence or terminal deletion was promised.",
+      "falsifier": "Protected sink atomically checks the new epoch with effect acceptance; pending old writes are rejected in the declared boundary.",
+      "controls": [
+        "Admission before and after barrier",
+        "Receipt lookup before/after fence",
+        "Historical-success acknowledgement versus new effect",
+        "Fresh authorized post-barrier occurrence"
+      ],
+      "contribution_bound": "Revocation fencing, stale-worker prevention and acknowledgement/effect separation are directly prior art."
+    },
+    {
+      "id": "H6_composed_constraints",
+      "status": "Known negative control; low novelty.",
+      "question": "Do independently committed conditional mutations preserve a declared multi-record semantic invariant?",
+      "prediction": "Per-record CAS or snapshot reads can allow classical write skew unless the read/predicate set is validated or the whole plan is serialized.",
+      "falsifier": "Serializable whole-plan baseline or atomic constraint validation rejects the conflicting schedule.",
+      "controls": [
+        "Declared whole-plan versus per-operation oracle",
+        "Disjoint write sets sharing a predicate",
+        "Serializable reference",
+        "Aborts and legitimate action availability"
+      ],
+      "contribution_bound": "Do not relabel classical write skew or a permitted partial commit as a new defect."
+    }
+  ]
+}

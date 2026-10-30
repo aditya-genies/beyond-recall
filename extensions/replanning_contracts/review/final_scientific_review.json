@@ -1,0 +1,309 @@
+{
+  "status": "PASS_FOR_BOUNDED_WORKING_CLAIMS",
+  "reviewed_at_utc": "2026-10-30T05:29:49.512056+00:00",
+  "source_hashes": {
+    "manuscript/main.tex": "45e6f655177de8f40695e1b9d005f6b1799f9710db76bf1d4aab23cbd25d1fb8",
+    "manuscript/public_memory.tex": "1760543d8131d5f8de66bda6cd89e29bc441d9b381b3ecb38e43f19bb5e410eb",
+    "manuscript/contract_portability.tex": "e9db003699923e6c3ce9791265ba6809c43a0a4b0aee609fb711692b5a9018b5",
+    "manuscript/plan_binding.tex": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088",
+    "manuscript/refs.bib": "a39d5ab800a2a419c85f497d8f37119f0d9060b1790de9048b935df424349bfe"
+  },
+  "material_corrections": [],
+  "resolved_clarifications": [
+    {
+      "path": "manuscript/public_memory.tex",
+      "line": 37,
+      "issue": "Default-empty native Summary and Recently Extracted Memories are now stated.",
+      "status": "RESOLVED"
+    }
+  ],
+  "author_identity_handling": "User explicitly requested named author/background; this overrides the anonymity template. Public references and independent synthetic study materials only.",
+  "anti_leakage": "PaperOrchestra anti-leakage constraint applied to claim review; no company implementation, private conversations or old campaign numbers used.",
+  "checks": [
+    {
+      "topic": "Conditional admission formulas",
+      "lines": [
+        "manuscript/public_memory.tex:6",
+        "manuscript/public_memory.tex:11",
+        "manuscript/public_memory.tex:16"
+      ],
+      "outcome": "PASS",
+      "finding": "B=(X∩S)\\H(V) and the conditional lower bound max(0,N-k) are valid with the stated distinct-hash/re-emission assumptions. No unconditional equality or new theorem is claimed."
+    },
+    {
+      "topic": "Native prompt and cache distinctions",
+      "lines": [
+        "manuscript/public_memory.tex:33",
+        "manuscript/public_memory.tex:35",
+        "manuscript/public_memory.tex:37",
+        "manuscript/public_memory.tex:41"
+      ],
+      "outcome": "PASS",
+      "finding": "Fresh versus aged last-ten-message history, native per-message truncation, empty native Summary/Recently Extracted Memories, complete repeated source, retained baseline-response replay, requested alias and hidden harness settings are distinguished. The recommended default-empty clarification is now present."
+    },
+    {
+      "topic": "Controlled and live denominators",
+      "lines": [
+        "manuscript/main.tex:24",
+        "manuscript/public_memory.tex:19",
+        "manuscript/public_memory.tex:23",
+        "manuscript/public_memory.tex:39"
+      ],
+      "outcome": "PASS",
+      "finding": "96 cells/288 calls, 20 of 32 native cells, 28 requests/48 retries, 91 exact fresh copies plus one ungraded literal, 92 recorded-result copies and zero intervention additions reconcile."
+    },
+    {
+      "topic": "Retrieval metrics and selected states",
+      "lines": [
+        "manuscript/public_memory.tex:44",
+        "manuscript/public_memory.tex:46",
+        "manuscript/public_memory.tex:55",
+        "manuscript/public_memory.tex:57"
+      ],
+      "outcome": "PASS",
+      "finding": "All 84 literals × four states × three budgets appear exactly once. All 1008 exact targets pass. The 213/201 distinction, 400/247/153 totals, mean 6.175 and minimum 5 reconcile. The post hoc/fresh-state selection and original-versus-retained-reproduction limits are explicit."
+    },
+    {
+      "topic": "MemTX source fairness",
+      "lines": [
+        "manuscript/contract_portability.tex:6",
+        "manuscript/contract_portability.tex:8",
+        "manuscript/contract_portability.tex:10",
+        "manuscript/contract_portability.tex:12"
+      ],
+      "outcome": "PASS",
+      "finding": "24 trace units, eight read boundaries, two empty-snapshot overwrites, nonempty/fresh controls and 94 original non-tau2 tests reconcile. Distinct action/repair invariants, optional dependency failures, interpretation by authors and nonredistribution are preserved."
+    },
+    {
+      "topic": "Backend counts and semantics",
+      "lines": [
+        "manuscript/contract_portability.tex:15",
+        "manuscript/contract_portability.tex:17",
+        "manuscript/contract_portability.tex:19",
+        "manuscript/contract_portability.tex:21"
+      ],
+      "outcome": "PASS",
+      "finding": "104 declared/96 executed/eight inapplicable cells, 154 processes/ten exits, eight revoked historical acknowledgements, 48 SQLite files/72 Redis keys/16 AOF groups and 21 tests reconcile with supplied evidence. Redis isolation is separated from explicit SQLite rollback; profiles are authored bundles and graceful restart is not power loss."
+    },
+    {
+      "topic": "Prior art and bibliography",
+      "lines": [
+        "manuscript/main.tex:44",
+        "manuscript/main.tex:46",
+        "manuscript/main.tex:48",
+        "manuscript/main.tex:51",
+        "manuscript/main.tex:55"
+      ],
+      "outcome": "PASS",
+      "finding": "Eight new research-paper entries match primary PDF/HTML/DataCite audits and are labelled preprints. All 54 bibliography entries are cited with no missing/duplicate keys. Broad mechanisms and bounded-candidate antecedents are credited; no exhaustive-search or first-discovery claim appears. Earlier reference verification is inherited, not represented as freshly redone in this pass."
+    },
+    {
+      "topic": "Native reference and retained-receipt argument",
+      "lines": [
+        "manuscript/main.tex:203",
+        "manuscript/main.tex:207",
+        "manuscript/main.tex:220",
+        "manuscript/main.tex:232",
+        "manuscript/plan_binding.tex:9"
+      ],
+      "outcome": "PASS",
+      "finding": "Native application fast path, one effects-node design and unexplored per-operation tasks are explicit. The CAS/receipt argument requires successful retained binding, monotonic versions and atomic effect/receipt storage, and is not transferred to the primary split stores. The positional witness is attributed to a known adapter order/identity hazard."
+    }
+  ],
+  "citation_gate": {
+    "entries": 54,
+    "cited": 54,
+    "undefined": [],
+    "uncited": [],
+    "new_primary_metadata_matches": [
+      {
+        "key": "li2026memtx",
+        "primary_identity_match": true,
+        "preprint_status_explicit": true
+      },
+      {
+        "key": "wang2026toki",
+        "primary_identity_match": true,
+        "preprint_status_explicit": true
+      },
+      {
+        "key": "shen2026revoked",
+        "primary_identity_match": true,
+        "preprint_status_explicit": true
+      },
+      {
+        "key": "yao2026forgetting",
+        "primary_identity_match": true,
+        "preprint_status_explicit": true
+      },
+      {
+        "key": "zhu2026quiescence",
+        "primary_identity_match": true,
+        "preprint_status_explicit": true
+      },
+      {
+        "key": "khan2026concurrency",
+        "primary_identity_match": true,
+        "preprint_status_explicit": true
+      },
+      {
+        "key": "chen2026cordon",
+        "primary_identity_match": true,
+        "preprint_status_explicit": true
+      },
+      {
+        "key": "orogat2026memory",
+        "primary_identity_match": true,
+        "preprint_status_explicit": true
+      }
+    ]
+  },
+  "official_docs_fresh_check": [
+    {
+      "key": "redis2026eval",
+      "url": "https://redis.io/docs/latest/develop/programmability/eval-intro/",
+      "final_url": "https://redis.io/docs/latest/develop/programmability/eval-intro/",
+      "http_status": 200,
+      "sha256": "0d4da985a86596765824b33ae11d6b379e02efabef85fb9d4d591cd082b36796",
+      "bytes": 150767,
+      "full_text_redistributed": false
+    },
+    {
+      "key": "redis2026transactions",
+      "url": "https://redis.io/docs/latest/develop/using-commands/transactions/",
+      "final_url": "https://redis.io/docs/latest/develop/using-commands/transactions/",
+      "http_status": 200,
+      "sha256": "2448b79c01ba22d1212c6038a1b97c8019f5a8d623ce5e3e502111a6aaba7aee",
+      "bytes": 127910,
+      "full_text_redistributed": false
+    },
+    {
+      "key": "sqlite2026transactions",
+      "url": "https://www.sqlite.org/lang_transaction.html",
+      "final_url": "https://www.sqlite.org/lang_transaction.html",
+      "http_status": 200,
+      "sha256": "b65dc308fd9e0ce471844c97366a4f5ad3a1f42833a3b19486ad7d6555a8e24e",
+      "bytes": 27068,
+      "full_text_redistributed": false
+    }
+  ],
+  "remaining_limits": [
+    "Post hoc retrieval self-queries and selected fresh-history stores do not establish held-out natural-workload generalization or semantic/QA harm.",
+    "The counting bound is elementary; broader bounded-candidate dependence, stable identity, receipts, decision logs, fences and lifecycle correctness have close prior art.",
+    "One requested model/harness and finite authored batches provide witnesses, not model error rates or independently attested backend model weights.",
+    "Native baselines and backend profiles are scoped authored integrations, not framework optimality or vendor ranking.",
+    "Same-author checkers and computational reproductions do not replace outside replication; server power loss, remote late commits, cluster consistency and scalable concurrent uniqueness remain untested.",
+    "A leading-journal contribution is not established by this review or by counts. No acceptance score or publication guarantee is provided."
+  ],
+  "review_scope": "Scientific/source evidence review, not a rerun of experiments or a PDF layout review. Only review-owned files written.",
+  "evidence_manifest": [
+    {
+      "path": "results/summary.json",
+      "sha256": "4d56dceb0a677f6f1bb1d67d037004bf2364080aaf9e03784cbbf5f02cb8ed5f"
+    },
+    {
+      "path": "results/cases.jsonl",
+      "sha256": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01"
+    },
+    {
+      "path": "results/frozen_spec.json",
+      "sha256": "f5dac100857d093a865b10ff525aaf48fa862f8eb6125cc6771517de6d5c6306"
+    },
+    {
+      "path": "study.py",
+      "sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9"
+    },
+    {
+      "path": "extensions/replanning_contracts/mem0_reference/results/frozen_spec.json",
+      "sha256": "0aafac6c40e29027d8f0a8f0032df8fdb2c9b31a32e8868d253e97ff8c4a5f7d"
+    },
+    {
+      "path": "extensions/replanning_contracts/mem0_reference/results/cases.json",
+      "sha256": "a2847f1bcb700f2e5302ce91577c98cf33e60c808518f4552d2d021099a4f7ff"
+    },
+    {
+      "path": "extensions/replanning_contracts/mem0_reference/verification.json",
+      "sha256": "b56462a12b52b5d46459143e9fbeaae940bc8bf75bcecdf541540fd2997b2cbe"
+    },
+    {
+      "path": "extensions/replanning_contracts/mem0_reference/live_results/protocol.json",
+      "sha256": "ef43341976042926fd10034a25cc1dbd47bb917e5298faa746b145a80aebecf0"
+    },
+    {
+      "path": "extensions/replanning_contracts/mem0_reference/live_results/results.json",
+      "sha256": "5c8287103468010663704c739efda95ac12c5e7cc20196dd678fcf805f484fbc"
+    },
+    {
+      "path": "extensions/replanning_contracts/mem0_reference/live_verification.json",
+      "sha256": "0d2e18b5ba8b5373455686bbb46d1df2080ba49ad5c84c700bccdec751c0bb3c"
+    },
+    {
+      "path": "extensions/replanning_contracts/mem0_reference/retrieval_results/protocol.json",
+      "sha256": "929aa43feac55675a6881cf46c34ca76bc559a119686a63e828a2d6fbcddb978"
+    },
+    {
+      "path": "extensions/replanning_contracts/mem0_reference/retrieval_results/cases.json",
+      "sha256": "a80ec035400f7abe8d58b23c77d6f38932556f2ad91bb3cbfcf751499dd7cc8a"
+    },
+    {
+      "path": "extensions/replanning_contracts/mem0_reference/retrieval_results/verification.json",
+      "sha256": "54b941c2b0ef40d878becd77b1f74ca6b3673cb3c80f8e4dac2a01228733f9d0"
+    },
+    {
+      "path": "extensions/replanning_contracts/mem0_reference/retrieval_reproduction/retention_protocol.json",
+      "sha256": "79966fc01f1560cb0f242b82c788f12139363b0b8f033a635d07f2b575788b75"
+    },
+    {
+      "path": "extensions/replanning_contracts/mem0_reference/retrieval_reproduction/retained_manifest.json",
+      "sha256": "bf8606ae473775e3c0b436288fdd99393f0ea69d7e238666c3f7a5dfa27d5799"
+    },
+    {
+      "path": "extensions/replanning_contracts/memtx_reference/freeze.json",
+      "sha256": "9e7e2e1e8e3b6f9be28f173e4046e0eb9e0d14733a639149274b6145202eedea"
+    },
+    {
+      "path": "extensions/replanning_contracts/memtx_reference/results/traces.json",
+      "sha256": "cb628bf8e530dae31978d4d90bfe69be366f183416e0ed50b0fff053a5f2c059"
+    },
+    {
+      "path": "extensions/replanning_contracts/memtx_reference/audit_summary.json",
+      "sha256": "b9df456dc166c2882b946663c31e591f8e60a9f828fe2084875636a5ba89ffd2"
+    },
+    {
+      "path": "extensions/replanning_contracts/backends/frozen_spec.json",
+      "sha256": "1529e3a052c2c89518f26ff5d59a31ec9b5dd32cca1969796b60cce89c093ed6"
+    },
+    {
+      "path": "extensions/replanning_contracts/backends/final_verification.json",
+      "sha256": "dc29dab65a209b0a80ff785cfa40d623f9b55304a2defb0934d6ed95db58f8e8"
+    },
+    {
+      "path": "extensions/replanning_contracts/backends/results/cases.jsonl",
+      "sha256": "d3ed1e5a2da76376e2167b79226d35676b7f0b07620b9852662b5de798ae6b15"
+    },
+    {
+      "path": "extensions/replanning_contracts/backends/results/restart_control.json",
+      "sha256": "e5b83bf0ee3140c629d7a86b72a7d4d7432c19f8fcd7e5b024ff0cb28cfd1969"
+    },
+    {
+      "path": "extensions/plan_binding/results/summary.json",
+      "sha256": "9a7d545b501ba6ae3c94278a4e4d84e7279b7bf8a46294a82e32c07eb4f333d0"
+    },
+    {
+      "path": "extensions/langgraph_reference/results/summary.json",
+      "sha256": "26ca4e7328f89100edbb736236bf49d1542abea9a192689bcfbbad9b7a0c0c1c"
+    },
+    {
+      "path": "extensions/replanning_contracts/literature/expanded_scholarly_source_audits.json",
+      "sha256": "3ef8f627289b718b41caa4617a72196f0d2df706c8b686c2244c70c6c155fa15"
+    },
+    {
+      "path": "extensions/replanning_contracts/literature/pdf_identity_check.json",
+      "sha256": "b23b5a69c0a3b58ab9cd766170f9a3127cbca807968d7ee0da73cd6df2cc3fb4"
+    },
+    {
+      "path": "extensions/replanning_contracts/literature/mem0_antecedent_audit.json",
+      "sha256": "e985ffe891afb8fb42bde8b1a013a0e33a4d1ad7f4061fe351a9ca641eb4bf0a"
+    }
+  ]
+}

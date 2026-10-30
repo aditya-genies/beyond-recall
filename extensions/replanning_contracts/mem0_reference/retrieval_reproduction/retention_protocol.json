@@ -1,0 +1,12 @@
+{
+  "prepared_at_utc": "2026-10-30T05:19:08Z",
+  "wrapper_source_sha256": "2e7aab065b321ea6468daab315ce1fb7960bc1891393025b8d68484862d2f520",
+  "retrieval_source_sha256": "2dd576b82df5cb7d2e330f802c7a61fb541d7ffca7b7c763895eedaf550772d8",
+  "original_protocol_sha256": "929aa43feac55675a6881cf46c34ca76bc559a119686a63e828a2d6fbcddb978",
+  "original_cases_sha256": "a80ec035400f7abe8d58b23c77d6f38932556f2ad91bb3cbfcf751499dd7cc8a",
+  "original_summary_sha256": "83100a156cc8263eb359d10b310ee6ff51e2af4b624862db5335615c4fafdf1e",
+  "capture_prefix": "memory-retrieval-copy-",
+  "expected_captures": 16,
+  "interpretation": "Computational reproduction of the same frozen query set, not independent experimental observations.",
+  "additional_model_requests": 0
+}

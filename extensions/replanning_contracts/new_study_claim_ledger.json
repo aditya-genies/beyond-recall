@@ -1,0 +1,252 @@
+{
+  "prepared_at_utc": "2026-10-30T05:23:42.893529+00:00",
+  "scope": "Independent evidence review of new public-source extensions, not a manuscript review or venue acceptance score.",
+  "main_manuscript_edited": false,
+  "additional_model_requests_by_reviewer": 0,
+  "current_status": "PASS within declared implementation and literal-exposure scope; no numerical correction currently required.",
+  "material_corrections_required": [],
+  "critical_interpretation_corrections": [
+    "Distinguish 213 duplicate-bearing cells from 201 cells with lower literal diversity.",
+    "State N-|U| and conditional lower bound N-k, not unconditional equality on every replay.",
+    "Retained after-state proof is from computational reproduction; preserve the original deletion limitation.",
+    "State requested Codex model configuration, single harness and lost-ack cut after API completion."
+  ],
+  "remaining_research_gap": "A leading-journal contribution remains unestablished. The counting argument is elementary and the snapshot boundaries are implementation discrepancies. A stronger generalizable result needs cross-implementation evidence or a deeper characterization with meaningful end-task consequences and repair tradeoffs. No further experiment is required to validate the present narrow claims.",
+  "claim_ledger": [
+    {
+      "id": "C1_conditional_admission",
+      "status": "Supported conditional counting argument and pinned-source counterexample",
+      "safe_wording": "Exact-text duplicate suppression can inherit a bounded retrieval window when only retrieved records supply its existing-hash set.",
+      "exact_statement": "Let N distinct already-stored fact hashes be eligible for redelivery, and let U be the distinct existing hashes presented to admission. Under the tested same-scope sequential ADD path, if every fact outside U is re-emitted once and no other filter rejects it, N-|U| repeated records survive. Since |U|<=k, this is at least max(0,N-k).",
+      "conditions": [
+        "Distinct exact-text hashes, fixed scope, already stored facts and sequential delivery",
+        "Re-emission assumption must be explicit; arbitrary natural model outputs need not satisfy it",
+        "The exact N-|U| statement is about the specified admission path, not all memory APIs"
+      ],
+      "false_or_overgeneralizing": [
+        "Mem0 necessarily inserts N-k duplicates on every retry.",
+        "Every store larger than k must duplicate facts.",
+        "MD5 is globally broken.",
+        "The elementary counting bound is a new recovery theorem.",
+        "The vendor promised request exactly-once semantics."
+      ],
+      "evidence": [
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/results/frozen_spec.json",
+          "sha256": "0aafac6c40e29027d8f0a8f0032df8fdb2c9b31a32e8868d253e97ff8c4a5f7d"
+        },
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/verification.json",
+          "sha256": "b56462a12b52b5d46459143e9fbeaae940bc8bf75bcecdf541540fd2997b2cbe"
+        },
+        {
+          "path": "extensions/replanning_contracts/literature/mem0_pinned_source_manifest.json",
+          "sha256": "bc5f4b706706436e948f88c835697ea66708ab5da1426d6704946c9fa1c1c0c9"
+        }
+      ]
+    },
+    {
+      "id": "C2_controlled_source_sweep",
+      "status": "Supported finite parameter sweep",
+      "safe_wording": "A 96-cell controlled-extraction sweep through the pinned Mem0 OSS path separates exact fact content from physical multiplicity, with hash and real BGE embedding factors and two authored interventions.",
+      "conditions": [
+        "96 parameterized executions, not 96 independent model trials",
+        "Widened candidate and exact-admission arms are authored sequential controls",
+        "The fact-set check is exact literal equality in authored fixtures"
+      ],
+      "false_or_overgeneralizing": [
+        "Controls are production-ready concurrent deduplication fixes.",
+        "Passing fact-set checks proves semantic memory correctness.",
+        "The sweep estimates production incidence."
+      ],
+      "evidence": [
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/results/summary.json",
+          "sha256": "d3e96edb9a562c38a5e344f76df59de73d5cd8c3383e172f12ed996fcb88e2be"
+        },
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/verification.json",
+          "sha256": "b56462a12b52b5d46459143e9fbeaae940bc8bf75bcecdf541540fd2997b2cbe"
+        }
+      ]
+    },
+    {
+      "id": "C3_fresh_model_witness",
+      "status": "Supported bounded integration witness; source review relies on the separate live checker",
+      "safe_wording": "The live adapter records 28 successful Codex CLI requests configured as gpt-6.1-sol, comprising four baseline requests and 24 fresh-model retry requests; another 24 retries reuse recorded results without a new request.",
+      "conditions": [
+        "Native Mem0 prompt content is delivered through the documented Codex CLI adapter, not a stock hosted Mem0 LLM provider",
+        "Requested model configuration is recorded; no independent attestation of a hidden backend weight revision",
+        "Four workers exit after the add API has committed; this models lost acknowledgement, not a crash inside arbitrary database commit steps",
+        "One requested model/harness and finite authored source batches; no population model-error rate",
+        "The aged-context fresh native arm has one nonidentical literal among its additions; semantic equivalence is not graded"
+      ],
+      "false_or_overgeneralizing": [
+        "Twenty-eight independent production incidents.",
+        "All 48 retries are fresh model calls.",
+        "The model weights were independently verified.",
+        "The experiment validates arbitrary crash consistency inside Mem0."
+      ],
+      "evidence": [
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/live_verification.json",
+          "sha256": "0d2e18b5ba8b5373455686bbb46d1df2080ba49ad5c84c700bccdec751c0bb3c"
+        },
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/live_results/summary.json",
+          "sha256": "9fd0b7d6c847cf5b0cf12ff24949d34e247087bc0620b5e8abe04f38c288323a"
+        }
+      ]
+    },
+    {
+      "id": "C4_posthoc_retrieval_exposure",
+      "status": "Independently recomputed; complete finite coverage",
+      "safe_wording": "The post hoc retrieval probe queries all 84 baseline literal facts in four frozen states at budgets 5, 10 and 20, producing 1008 registered search cells. All exact queried strings remain present. Native retry stores can return fewer distinct literal strings despite this preserved target presence.",
+      "observed": {
+        "registered_cells": 1008,
+        "unique_baseline_literal_queries": 84,
+        "exact_target_present_cells": 1008,
+        "cells_with_duplicate_slots": 213,
+        "cells_with_fewer_distinct_literals_than_baseline": 201
+      },
+      "conditions": [
+        "Protocol frozen before searches, but designed after duplicate writes were observed",
+        "Only selected fresh-context stores, all baseline facts, identical native BGE+BM25 reader, threshold zero and native optional-spaCy fallback",
+        "Exact stored text is the query: this is a literal exposure probe, not a semantic QA benchmark",
+        "Additional record identities/timestamps are part of the observed duplicate-bearing state; multiplicity alone is not separately manipulated while all metadata is held fixed",
+        "Queries and budgets are dependent; no confidence interval or natural-workload rate follows"
+      ],
+      "false_or_overgeneralizing": [
+        "Recall or answer quality fell in 213 queries.",
+        "Duplicate slots always displace distinct context.",
+        "All 213 duplicate-bearing cells have lower literal diversity.",
+        "The probe demonstrates agent harm, semantic diversity loss or measured token waste."
+      ],
+      "evidence": [
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/retrieval_results/protocol.json",
+          "sha256": "929aa43feac55675a6881cf46c34ca76bc559a119686a63e828a2d6fbcddb978"
+        },
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/retrieval_results/verification.json",
+          "sha256": "54b941c2b0ef40d878becd77b1f74ca6b3673cb3c80f8e4dac2a01228733f9d0"
+        }
+      ]
+    },
+    {
+      "id": "C5_specific_budget_result",
+      "status": "Supported exact arithmetic",
+      "safe_wording": "For the 40-fact state at budget 10, the native retry store returns 400 slots across 40 queries but only 247 summed per-query distinct literal strings, versus 400 in baseline and both controls. Mean per-query distinct strings are 6.175 versus 10; all 40 targets remain present.",
+      "conditions": [
+        "The sum is over per-query distinct counts, not 247 globally different facts",
+        "At 12 facts/budget 20, duplicates fill spare slots without reducing the 12 distinct literals; this negative boundary should be reported"
+      ],
+      "false_or_overgeneralizing": [
+        "38.25 percent QA harm or target-recall loss.",
+        "153 globally unique facts were lost.",
+        "All budgets show diversity deterioration."
+      ],
+      "evidence": [
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/retrieval_results/verification.json",
+          "sha256": "54b941c2b0ef40d878becd77b1f74ca6b3673cb3c80f8e4dac2a01228733f9d0"
+        }
+      ]
+    },
+    {
+      "id": "C6_computational_reproduction",
+      "status": "Supported retained raw-after evidence",
+      "safe_wording": "A frozen retention wrapper reproduces the same 1008-cell computation, retaining all 16 copies after clients close. All per-query metrics and ordered IDs match, and persisted point blobs/history remain unchanged.",
+      "conditions": [
+        "2016 native search invocations across original and reproduction, but only 1008 unique registered cells",
+        "Computational reproduction of the same data/code, not independent experimental samples",
+        "Original temporary after-stores were deleted; only the reproduction has retained raw after-stores",
+        "Checker verifies raw membership, literal metrics, coverage and integrity; it does not independently recompute native rankings, BGE inference or BM25 scores"
+      ],
+      "false_or_overgeneralizing": [
+        "2016 independent observations.",
+        "The original deleted copies are now directly audited.",
+        "The checker proves the semantic correctness of native search."
+      ],
+      "evidence": [
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/retrieval_reproduction/retention_protocol.json",
+          "sha256": "79966fc01f1560cb0f242b82c788f12139363b0b8f033a635d07f2b575788b75"
+        },
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/retrieval_reproduction/retained_manifest.json",
+          "sha256": "bf8606ae473775e3c0b436288fdd99393f0ea69d7e238666c3f7a5dfa27d5799"
+        },
+        {
+          "path": "extensions/replanning_contracts/mem0_reference/retrieval_results/verification.json",
+          "sha256": "54b941c2b0ef40d878becd77b1f74ca6b3673cb3c80f8e4dac2a01228733f9d0"
+        }
+      ]
+    },
+    {
+      "id": "C7_memtx_boundaries",
+      "status": "Supported bounded primary-description/code discrepancy",
+      "safe_wording": "At the pinned MemTX commit, the tested old transactions retrieve a post-begin record absent from their captured snapshots; two empty-snapshot authority variants supersede a post-begin rival where nonempty-snapshot controls reject it temporally. These disagree with the paper snapshot-read and pre-authority rejection descriptions in the tested boundaries.",
+      "conditions": [
+        "Eight read cases, eight old-writer cases and eight fresh-writer controls; no arbitrary state-space theorem",
+        "Fresh-transaction correction is intended and the paper itself discusses retry escaping transaction-local temporal protection",
+        "The paper explicitly permits partial commit; arbitrary multi-record predicate serializability is not the tested contract",
+        "94 original core unit tests pass; optional full-suite tau2 collection failure remains disclosed"
+      ],
+      "false_or_overgeneralizing": [
+        "All snapshot isolation or all MemTX lifecycle invariants fail.",
+        "Passing the source tests establishes complete conformance.",
+        "Classical write skew is a new MemTX defect.",
+        "The probes refute every formal or bounded invariant claimed in the paper."
+      ],
+      "evidence": [
+        {
+          "path": "extensions/replanning_contracts/memtx_reference/audit_summary.json",
+          "sha256": "b9df456dc166c2882b946663c31e591f8e60a9f828fe2084875636a5ba89ffd2"
+        },
+        {
+          "path": "extensions/replanning_contracts/memtx_reference/results/provenance.json",
+          "sha256": "fa235a3b605d0ae01b92dc796657fbab76ef726413d558969d85279c4294798f"
+        },
+        {
+          "path": "extensions/replanning_contracts/literature/memtx_contract_audit.json",
+          "sha256": "224feaf27a930c06b4ffb74496efd39ac7e401f39a09658be220f3a98bd2641c"
+        }
+      ]
+    },
+    {
+      "id": "C8_prior_art_and_remaining_novelty",
+      "status": "Broad principles established; narrow implementation evidence remains",
+      "safe_wording": "The contribution is a conditional exact-hash admission counterexample, independent raw-evidence checks and a bounded public implementation conformance study. Stable receipts, retained decisions, fencing, memory lifecycles and classical isolation principles are prior art.",
+      "closest_sources": [
+        "Mem0 discussion 6726 and MiniMem public code-reading note: bounded semantic candidate visibility, while assuming literal MD5 suppression",
+        "Mem0 issues 6515 and 7612: concurrent hash TOCTOU and expiry/reinsertion are separate reported mechanisms",
+        "TOKI: memory operator histories, isolation preconditions and retained judge decisions",
+        "MemTX: memory lifecycle, validation/action gating and explicit snapshot/temporal descriptions",
+        "Cordon and verified concurrency work: composed tool effects and read-generate-write isolation",
+        "GEM/MemState, revoked-memory evaluation and execution-state unlearning: history, derived state and forgetting",
+        "RIFL, Beldi, quiescence/receipt-enforcement work and official durable-execution contracts: identity, decision logging, safe reclamation and protected-effect admission"
+      ],
+      "false_or_overgeneralizing": [
+        "First benchmark beyond memory recall.",
+        "New epoch-plus-receipt recovery protocol.",
+        "Exhaustive academic coverage.",
+        "Leading-journal readiness follows from the number of tests, model calls or citations."
+      ],
+      "evidence": [
+        {
+          "path": "extensions/replanning_contracts/literature/overlap_matrix.json",
+          "sha256": "a1c9d44600e2bb3282c9adbe8507092ba478f5c45697c692d392597e39e2c137"
+        },
+        {
+          "path": "extensions/replanning_contracts/literature/primary_source_index.json",
+          "sha256": "75f0821af284db28f37af981fb3d1497da2e6e0b870db4c6e1b68cfbc05a296c"
+        },
+        {
+          "path": "extensions/replanning_contracts/literature/new_claim_map.json",
+          "sha256": "2b625ddf865346979a22a43e23db2ad659eca8c7abdc3e71460d8f1a0d287013"
+        }
+      ]
+    }
+  ]
+}

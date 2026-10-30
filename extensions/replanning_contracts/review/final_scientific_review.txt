@@ -1,0 +1,31 @@
+PASS_FOR_BOUNDED_WORKING_CLAIMS
+
+No material correction is required in the reviewed final source snapshot. The default-empty native prompt-field clarification has been incorporated. This conclusion concerns bounded working claims, not journal readiness.
+
+Reviewed source SHA-256:
+- manuscript/main.tex: 45e6f655177de8f40695e1b9d005f6b1799f9710db76bf1d4aab23cbd25d1fb8
+- manuscript/public_memory.tex: 1760543d8131d5f8de66bda6cd89e29bc441d9b381b3ecb38e43f19bb5e410eb
+- manuscript/contract_portability.tex: e9db003699923e6c3ce9791265ba6809c43a0a4b0aee609fb711692b5a9018b5
+- manuscript/plan_binding.tex: 33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088
+- manuscript/refs.bib: a39d5ab800a2a419c85f497d8f37119f0d9060b1790de9048b935df424349bfe
+
+Findings:
+- Conditional admission formulas (manuscript/public_memory.tex:6; manuscript/public_memory.tex:11; manuscript/public_memory.tex:16): B=(X∩S)\H(V) and the conditional lower bound max(0,N-k) are valid with the stated distinct-hash/re-emission assumptions. No unconditional equality or new theorem is claimed.
+- Native prompt and cache distinctions (manuscript/public_memory.tex:33; manuscript/public_memory.tex:35; manuscript/public_memory.tex:37; manuscript/public_memory.tex:41): Fresh versus aged last-ten-message history, native per-message truncation, empty native Summary/Recently Extracted Memories, complete repeated source, retained baseline-response replay, requested alias and hidden harness settings are distinguished. The recommended default-empty clarification is now present.
+- Controlled and live denominators (manuscript/main.tex:24; manuscript/public_memory.tex:19; manuscript/public_memory.tex:23; manuscript/public_memory.tex:39): 96 cells/288 calls, 20 of 32 native cells, 28 requests/48 retries, 91 exact fresh copies plus one ungraded literal, 92 recorded-result copies and zero intervention additions reconcile.
+- Retrieval metrics and selected states (manuscript/public_memory.tex:44; manuscript/public_memory.tex:46; manuscript/public_memory.tex:55; manuscript/public_memory.tex:57): All 84 literals × four states × three budgets appear exactly once. All 1008 exact targets pass. The 213/201 distinction, 400/247/153 totals, mean 6.175 and minimum 5 reconcile. The post hoc/fresh-state selection and original-versus-retained-reproduction limits are explicit.
+- MemTX source fairness (manuscript/contract_portability.tex:6; manuscript/contract_portability.tex:8; manuscript/contract_portability.tex:10; manuscript/contract_portability.tex:12): 24 trace units, eight read boundaries, two empty-snapshot overwrites, nonempty/fresh controls and 94 original non-tau2 tests reconcile. Distinct action/repair invariants, optional dependency failures, interpretation by authors and nonredistribution are preserved.
+- Backend counts and semantics (manuscript/contract_portability.tex:15; manuscript/contract_portability.tex:17; manuscript/contract_portability.tex:19; manuscript/contract_portability.tex:21): 104 declared/96 executed/eight inapplicable cells, 154 processes/ten exits, eight revoked historical acknowledgements, 48 SQLite files/72 Redis keys/16 AOF groups and 21 tests reconcile with supplied evidence. Redis isolation is separated from explicit SQLite rollback; profiles are authored bundles and graceful restart is not power loss.
+- Prior art and bibliography (manuscript/main.tex:44; manuscript/main.tex:46; manuscript/main.tex:48; manuscript/main.tex:51; manuscript/main.tex:55): Eight new research-paper entries match primary PDF/HTML/DataCite audits and are labelled preprints. All 54 bibliography entries are cited with no missing/duplicate keys. Broad mechanisms and bounded-candidate antecedents are credited; no exhaustive-search or first-discovery claim appears. Earlier reference verification is inherited, not represented as freshly redone in this pass.
+- Native reference and retained-receipt argument (manuscript/main.tex:203; manuscript/main.tex:207; manuscript/main.tex:220; manuscript/main.tex:232; manuscript/plan_binding.tex:9): Native application fast path, one effects-node design and unexplored per-operation tasks are explicit. The CAS/receipt argument requires successful retained binding, monotonic versions and atomic effect/receipt storage, and is not transferred to the primary split stores. The positional witness is attributed to a known adapter order/identity hazard.
+
+Remaining novelty and external-validity limits:
+- Post hoc retrieval self-queries and selected fresh-history stores do not establish held-out natural-workload generalization or semantic/QA harm.
+- The counting bound is elementary; broader bounded-candidate dependence, stable identity, receipts, decision logs, fences and lifecycle correctness have close prior art.
+- One requested model/harness and finite authored batches provide witnesses, not model error rates or independently attested backend model weights.
+- Native baselines and backend profiles are scoped authored integrations, not framework optimality or vendor ranking.
+- Same-author checkers and computational reproductions do not replace outside replication; server power loss, remote late commits, cluster consistency and scalable concurrent uniqueness remain untested.
+- A leading-journal contribution is not established by this review or by counts. No acceptance score or publication guarantee is provided.
+
+Verification scope:
+The reviewer independently recomputed new arithmetic/coverage from archived rows and checked the supplied raw-store/provenance audit records. The three backend documentation pages were freshly opened/read and hashed; they support non-interleaving, runtime-error/rollback distinctions and explicit application rollback. Existing scholarly audits provide primary PDF/HTML/DataCite identities; old citations were not all freshly researched. No new experiment, model request, manuscript edit, acceptance score or expanded search was performed.

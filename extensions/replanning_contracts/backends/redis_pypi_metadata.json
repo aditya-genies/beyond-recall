@@ -1,0 +1,25 @@
+{
+  "source": "https://pypi.org/pypi/redis/json",
+  "name": "redis",
+  "version": "8.1.0",
+  "requires_python": ">=3.10",
+  "project_urls": {
+    "Changes": "https://github.com/redis/redis-py/releases",
+    "Code": "https://github.com/redis/redis-py",
+    "Documentation": "https://redis.readthedocs.io/en/latest/",
+    "Homepage": "https://github.com/redis/redis-py",
+    "Issue tracker": "https://github.com/redis/redis-py/issues"
+  },
+  "release_files": [
+    {
+      "filename": "redis-8.1.0-py3-none-any.whl",
+      "sha256": "a4fe1aac3d3b3cc791d4b3d5931c5a956045dc951ee74d1c913ee3ac4d2ee9fb",
+      "url": "https://files.pythonhosted.org/packages/66/9d/c5731f6e3608663d4d3656fd8d3aecee8b509c3082818f5a13eae925baea/redis-8.1.0-py3-none-any.whl"
+    },
+    {
+      "filename": "redis-8.1.0.tar.gz",
+      "sha256": "6e1a19beef9225c83efd689c7e6b7da2d5215b1f42cd13b7fc3714d0a09c7b25",
+      "url": "https://files.pythonhosted.org/packages/a8/99/604f0b666d4c616d891cf77ebb9db6bb21601344c051aebf1b72b9ff915f/redis-8.1.0.tar.gz"
+    }
+  ]
+}

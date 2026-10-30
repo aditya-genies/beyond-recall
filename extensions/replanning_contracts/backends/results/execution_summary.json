@@ -1,0 +1,21 @@
+{
+  "abrupt_exit_87": 10,
+  "actual_runtime": {
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.3",
+    "sqlite": "3.51.2"
+  },
+  "applicable_rows": 96,
+  "attempts": 154,
+  "cases_sha256": "d3ed1e5a2da76376e2167b79226d35676b7f0b07620b9852662b5de798ae6b15",
+  "declared_rows": 104,
+  "development_subset": null,
+  "engine_sha256": {
+    "actor.py": "5aec6afba019b742d42b985d0b2b7d32270d892839f58015708de029fe02eb85",
+    "campaign.py": "3edc5f239926cb43f7e3488ab29c55911f200b4e57b4178a87023246b11f6c87",
+    "contract.py": "bde854059771d2182cd58716b8513105a08b9812bf78a256529897794115181a",
+    "redis_store.py": "61f7f41552c73a56f1603e5e48bc1e3df66c3f781bf93c101f17c69f11b160e4",
+    "services.py": "a992820e290f9af4eea6d331af8efcebd6b66b5918590e4b1646ca68ad66b380",
+    "sqlite_store.py": "5c6ccb3536219bfb5e27c21ca503849de20fb4e568e632a38ee55e7d6e7afdb5"
+  }
+}

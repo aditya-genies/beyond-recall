@@ -1,0 +1,60 @@
+{
+  "phase": "Development feasibility inventory, no campaign or existing database contacted",
+  "platform": "Darwin arm64",
+  "python": "3.14.3",
+  "sqlite": "3.51.2",
+  "public_runtime_binaries": {
+    "docker": {
+      "available": true,
+      "binary_name": "docker",
+      "version": "Docker version 29.9.1, build dfc520d",
+      "exit_code": 0
+    },
+    "podman": {
+      "available": false
+    },
+    "redis-server": {
+      "available": false
+    },
+    "redis-cli": {
+      "available": false
+    },
+    "valkey-server": {
+      "available": false
+    },
+    "postgres": {
+      "available": false
+    },
+    "initdb": {
+      "available": false
+    },
+    "pg_ctl": {
+      "available": false
+    },
+    "psql": {
+      "available": false
+    }
+  },
+  "python_packages": {
+    "redis": null,
+    "psycopg": null,
+    "psycopg2-binary": null,
+    "duckdb": null,
+    "sqlalchemy": null
+  },
+  "existing_service_connections": false,
+  "local_docker_server_probes": [
+    {
+      "socket": "local_system_socket",
+      "exists": true,
+      "server_available": true,
+      "server_version": "29.9.1"
+    },
+    {
+      "socket": "local_user_socket",
+      "exists": true,
+      "server_available": true,
+      "server_version": "29.9.1"
+    }
+  ]
+}

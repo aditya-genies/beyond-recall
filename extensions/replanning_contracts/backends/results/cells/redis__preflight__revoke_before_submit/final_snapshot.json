@@ -1,0 +1,24 @@
+{
+  "raw": {
+    "receipts_data": null,
+    "receipts_type": "none",
+    "state_json": "{\"visible\":false,\"history\":[{\"kind\":\"revoke\",\"version\":0,\"epoch\":1}],\"version\":0,\"origin\":null,\"value\":null,\"epoch\":1,\"record_epoch\":null}"
+  },
+  "receipt_storage": "none",
+  "receipts": {},
+  "state": {
+    "epoch": 1,
+    "history": [
+      {
+        "epoch": 1,
+        "kind": "revoke",
+        "version": 0
+      }
+    ],
+    "origin": null,
+    "record_epoch": null,
+    "value": null,
+    "version": 0,
+    "visible": false
+  }
+}

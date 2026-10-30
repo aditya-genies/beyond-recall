@@ -1,0 +1,99 @@
+{
+  "prepared_utc": "2026-10-30T05:01:45Z",
+  "design": "8 batch sizes x2 extraction controls x2 embedders x3 admission/retrieval arms =96 parameterized executions; each has initial add and two exact-source redeliveries",
+  "source_commit": "26cdefb46600c0fa5953c4b5ee5003c125539fc4",
+  "installed_main_sha256": "f329ca4a17af1fbefb32ac10d4cc7ae7ddbdb7435a87eb74c30915cff98b8b7c",
+  "runner_sha256": "0712bfb752838bda0fb6837ab5cac3f3f1ffd5e2f51b5cc444cf5efdf2978ee3",
+  "sizes": [
+    1,
+    5,
+    10,
+    11,
+    13,
+    20,
+    21,
+    40
+  ],
+  "arms": [
+    "native_k10",
+    "widened_candidates",
+    "exact_admission"
+  ],
+  "extractors": [
+    "literal_reemit",
+    "visible_delta"
+  ],
+  "embedders": [
+    "hash_control",
+    "bge_small"
+  ],
+  "facts": [
+    "The synthetic user prefers mango as a fruit.",
+    "The synthetic user prefers jasmine as a flower.",
+    "The synthetic user prefers emerald as a color.",
+    "The synthetic user prefers cycling as a sport.",
+    "The synthetic user prefers chess as a board game.",
+    "The synthetic user prefers violin as an instrument.",
+    "The synthetic user prefers espresso as a coffee.",
+    "The synthetic user prefers chamomile as a tea.",
+    "The synthetic user prefers rye as a bread.",
+    "The synthetic user prefers lentils as a soup.",
+    "The synthetic user prefers pine as a tree.",
+    "The synthetic user prefers quartz as a mineral.",
+    "The synthetic user prefers astronomy as a science.",
+    "The synthetic user prefers origami as a craft.",
+    "The synthetic user prefers Lisbon as a travel destination.",
+    "The synthetic user prefers autumn as a season.",
+    "The synthetic user prefers dawn as a time of day.",
+    "The synthetic user prefers linen as a fabric.",
+    "The synthetic user prefers jazz as a music genre.",
+    "The synthetic user prefers mystery as a book genre.",
+    "The synthetic user prefers comedy as a film genre.",
+    "The synthetic user prefers wolves as a wild animal.",
+    "The synthetic user prefers finches as a bird.",
+    "The synthetic user prefers tulsi as a garden herb.",
+    "The synthetic user prefers oatmeal as a breakfast.",
+    "The synthetic user prefers peaches as a dessert flavor.",
+    "The synthetic user prefers pottery as a weekend activity.",
+    "The synthetic user prefers trains as a travel mode.",
+    "The synthetic user prefers mountains as a landscape.",
+    "The synthetic user prefers fountain pens as a writing tool.",
+    "The synthetic user prefers metric as a measurement system.",
+    "The synthetic user prefers concise as an answer style.",
+    "The synthetic user prefers walking as a commute exercise.",
+    "The synthetic user prefers algebra as a mathematics topic.",
+    "The synthetic user prefers cyan as a diagram accent.",
+    "The synthetic user prefers markdown as a note format.",
+    "The synthetic user prefers mornings as a study period.",
+    "The synthetic user prefers tofu as a lunch protein.",
+    "The synthetic user prefers libraries as a quiet venue.",
+    "The synthetic user prefers cedar as a wood scent."
+  ],
+  "source_url": "https://github.com/mem0ai/mem0/tree/26cdefb46600c0fa5953c4b5ee5003c125539fc4",
+  "hypothesis": "For an already stored N-fact exact-literal set, a top-k candidate set contains at most k distinct hashes. If the extractor reemits every fact omitted from that candidate set and admission hashes only candidates, at least max(0,N-k) repeated physical facts can be inserted per replay. This is conditional on the controlled extraction and current pinned implementation.",
+  "outcomes": [
+    "native physical record count",
+    "distinct exact fact strings",
+    "extra physical copies",
+    "ADD result count",
+    "ADD history count",
+    "write-time candidate count and distinct hashes",
+    "literal returned extraction"
+  ],
+  "positive_controls": "A widened candidate set and a sequential exact-admission filter should suppress the specified duplicates without changing the initial exact fact set.",
+  "recently_extracted_context": "Native recently_extracted_memories argument remains its default empty value. Last-message history is allowed as actually used by the native pipeline; controlled extractors deliberately use either all exact facts or visible candidate texts only.",
+  "scope": "Controlled extraction is not live-model behavior. Hash embeddings are not semantic embeddings. BGE embeddings are real local ONNX inference. Widened and exact-admission arms are authored interventions, not stock API flags or a concurrent deduplication solution. No natural incidence or exactly-once vendor promise is asserted.",
+  "preregistration": "Source-audit-motivated design frozen before measured executions; not externally preregistered. Development feasibility is separate.",
+  "environment": {
+    "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "sqlite": "3.51.2",
+    "packages": {
+      "mem0ai": "2.2.1",
+      "qdrant-client": "1.20.0",
+      "fastembed": "0.9.1",
+      "onnxruntime": "1.31.1",
+      "numpy": "2.5.4",
+      "pydantic": "2.14.2"
+    }
+  }
+}

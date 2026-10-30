@@ -1,0 +1,10 @@
+{
+  "created_at_utc": "2026-10-30T04:56:24.679688+00:00",
+  "reason": "Initial requirements-only setup executed 85 tests but nine optional official-MemState adapter setup errors traced to missing httpx; vendored graph store also imports pydantic_settings. Resolve these two dependencies and rerun the unchanged original tests without optional absent tau2. No protocol, candidate, manager, or source changes.",
+  "additional_packages": [
+    "httpx",
+    "pydantic-settings"
+  ],
+  "main_probe_results_not_rewritten": true,
+  "next_command": "python -m pytest tests -q --ignore=tests/test_tau2_adapter.py -rA --junitxml=<external-log>"
+}

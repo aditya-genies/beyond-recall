@@ -1,0 +1,511 @@
+{
+  "status": "PASS",
+  "meaning": "Trace consistency, not baseline contract conformance or external replication.",
+  "case_count": 24,
+  "read_observations": [
+    {
+      "case_id": "read-low-anchor0",
+      "snapshot_ids": [],
+      "retrieved_after": [
+        "newer-B"
+      ],
+      "post_begin_ids_returned": [
+        "newer-B"
+      ],
+      "fresh_control_pass": true
+    },
+    {
+      "case_id": "read-low-anchor1",
+      "snapshot_ids": [
+        "unrelated-anchor"
+      ],
+      "retrieved_after": [
+        "newer-B",
+        "unrelated-anchor"
+      ],
+      "post_begin_ids_returned": [
+        "newer-B"
+      ],
+      "fresh_control_pass": true
+    },
+    {
+      "case_id": "read-medium-anchor0",
+      "snapshot_ids": [],
+      "retrieved_after": [
+        "newer-B"
+      ],
+      "post_begin_ids_returned": [
+        "newer-B"
+      ],
+      "fresh_control_pass": true
+    },
+    {
+      "case_id": "read-medium-anchor1",
+      "snapshot_ids": [
+        "unrelated-anchor"
+      ],
+      "retrieved_after": [
+        "newer-B",
+        "unrelated-anchor"
+      ],
+      "post_begin_ids_returned": [
+        "newer-B"
+      ],
+      "fresh_control_pass": true
+    },
+    {
+      "case_id": "read-high-anchor0",
+      "snapshot_ids": [],
+      "retrieved_after": [
+        "newer-B"
+      ],
+      "post_begin_ids_returned": [
+        "newer-B"
+      ],
+      "fresh_control_pass": true
+    },
+    {
+      "case_id": "read-high-anchor1",
+      "snapshot_ids": [
+        "unrelated-anchor"
+      ],
+      "retrieved_after": [
+        "newer-B",
+        "unrelated-anchor"
+      ],
+      "post_begin_ids_returned": [
+        "newer-B"
+      ],
+      "fresh_control_pass": true
+    },
+    {
+      "case_id": "read-external_action-anchor0",
+      "snapshot_ids": [],
+      "retrieved_after": [
+        "newer-B"
+      ],
+      "post_begin_ids_returned": [
+        "newer-B"
+      ],
+      "fresh_control_pass": true
+    },
+    {
+      "case_id": "read-external_action-anchor1",
+      "snapshot_ids": [
+        "unrelated-anchor"
+      ],
+      "retrieved_after": [
+        "newer-B",
+        "unrelated-anchor"
+      ],
+      "post_begin_ids_returned": [
+        "newer-B"
+      ],
+      "fresh_control_pass": true
+    }
+  ],
+  "write_observations": [
+    {
+      "case_id": "write-old_A-anchor0-equal_same_source",
+      "order": "old_A",
+      "anchor": false,
+      "authority_case": "equal_same_source",
+      "snapshot_ids": [],
+      "a_commit": {
+        "status": "committed",
+        "committed_ids": [
+          "older-A"
+        ],
+        "aborted_ids": [],
+        "violations": []
+      },
+      "final_states": {
+        "newer-B": "superseded",
+        "older-A": "committed"
+      },
+      "post_snapshot_rival_superseded": true,
+      "temporal_rejection": false
+    },
+    {
+      "case_id": "write-old_A-anchor0-higher_A",
+      "order": "old_A",
+      "anchor": false,
+      "authority_case": "higher_A",
+      "snapshot_ids": [],
+      "a_commit": {
+        "status": "committed",
+        "committed_ids": [
+          "older-A"
+        ],
+        "aborted_ids": [],
+        "violations": []
+      },
+      "final_states": {
+        "newer-B": "superseded",
+        "older-A": "committed"
+      },
+      "post_snapshot_rival_superseded": true,
+      "temporal_rejection": false
+    },
+    {
+      "case_id": "write-old_A-anchor0-lower_A",
+      "order": "old_A",
+      "anchor": false,
+      "authority_case": "lower_A",
+      "snapshot_ids": [],
+      "a_commit": {
+        "status": "aborted",
+        "committed_ids": [],
+        "aborted_ids": [
+          "older-A"
+        ],
+        "violations": [
+          "source_authority:older-A"
+        ]
+      },
+      "final_states": {
+        "newer-B": "committed",
+        "older-A": "quarantined"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": false
+    },
+    {
+      "case_id": "write-old_A-anchor0-equal_different_sources",
+      "order": "old_A",
+      "anchor": false,
+      "authority_case": "equal_different_sources",
+      "snapshot_ids": [],
+      "a_commit": {
+        "status": "aborted",
+        "committed_ids": [],
+        "aborted_ids": [
+          "older-A"
+        ],
+        "violations": [
+          "conflict_needs_user_review:older-A"
+        ]
+      },
+      "final_states": {
+        "newer-B": "committed",
+        "older-A": "quarantined"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": false
+    },
+    {
+      "case_id": "write-fresh_A-anchor0-equal_same_source",
+      "order": "fresh_A",
+      "anchor": false,
+      "authority_case": "equal_same_source",
+      "snapshot_ids": [
+        "newer-B"
+      ],
+      "a_commit": {
+        "status": "committed",
+        "committed_ids": [
+          "older-A"
+        ],
+        "aborted_ids": [],
+        "violations": []
+      },
+      "final_states": {
+        "newer-B": "superseded",
+        "older-A": "committed"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": false
+    },
+    {
+      "case_id": "write-fresh_A-anchor0-higher_A",
+      "order": "fresh_A",
+      "anchor": false,
+      "authority_case": "higher_A",
+      "snapshot_ids": [
+        "newer-B"
+      ],
+      "a_commit": {
+        "status": "committed",
+        "committed_ids": [
+          "older-A"
+        ],
+        "aborted_ids": [],
+        "violations": []
+      },
+      "final_states": {
+        "newer-B": "superseded",
+        "older-A": "committed"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": false
+    },
+    {
+      "case_id": "write-fresh_A-anchor0-lower_A",
+      "order": "fresh_A",
+      "anchor": false,
+      "authority_case": "lower_A",
+      "snapshot_ids": [
+        "newer-B"
+      ],
+      "a_commit": {
+        "status": "aborted",
+        "committed_ids": [],
+        "aborted_ids": [
+          "older-A"
+        ],
+        "violations": [
+          "source_authority:older-A"
+        ]
+      },
+      "final_states": {
+        "newer-B": "committed",
+        "older-A": "quarantined"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": false
+    },
+    {
+      "case_id": "write-fresh_A-anchor0-equal_different_sources",
+      "order": "fresh_A",
+      "anchor": false,
+      "authority_case": "equal_different_sources",
+      "snapshot_ids": [
+        "newer-B"
+      ],
+      "a_commit": {
+        "status": "aborted",
+        "committed_ids": [],
+        "aborted_ids": [
+          "older-A"
+        ],
+        "violations": [
+          "conflict_needs_user_review:older-A"
+        ]
+      },
+      "final_states": {
+        "newer-B": "committed",
+        "older-A": "quarantined"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": false
+    },
+    {
+      "case_id": "write-old_A-anchor1-equal_same_source",
+      "order": "old_A",
+      "anchor": true,
+      "authority_case": "equal_same_source",
+      "snapshot_ids": [
+        "unrelated-anchor"
+      ],
+      "a_commit": {
+        "status": "aborted",
+        "committed_ids": [],
+        "aborted_ids": [
+          "older-A"
+        ],
+        "violations": [
+          "temporal_override:older-A"
+        ]
+      },
+      "final_states": {
+        "newer-B": "committed",
+        "older-A": "quarantined",
+        "unrelated-anchor": "action_safe"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": true
+    },
+    {
+      "case_id": "write-old_A-anchor1-higher_A",
+      "order": "old_A",
+      "anchor": true,
+      "authority_case": "higher_A",
+      "snapshot_ids": [
+        "unrelated-anchor"
+      ],
+      "a_commit": {
+        "status": "aborted",
+        "committed_ids": [],
+        "aborted_ids": [
+          "older-A"
+        ],
+        "violations": [
+          "temporal_override:older-A"
+        ]
+      },
+      "final_states": {
+        "newer-B": "committed",
+        "older-A": "quarantined",
+        "unrelated-anchor": "action_safe"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": true
+    },
+    {
+      "case_id": "write-old_A-anchor1-lower_A",
+      "order": "old_A",
+      "anchor": true,
+      "authority_case": "lower_A",
+      "snapshot_ids": [
+        "unrelated-anchor"
+      ],
+      "a_commit": {
+        "status": "aborted",
+        "committed_ids": [],
+        "aborted_ids": [
+          "older-A"
+        ],
+        "violations": [
+          "temporal_override:older-A"
+        ]
+      },
+      "final_states": {
+        "newer-B": "committed",
+        "older-A": "quarantined",
+        "unrelated-anchor": "action_safe"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": true
+    },
+    {
+      "case_id": "write-old_A-anchor1-equal_different_sources",
+      "order": "old_A",
+      "anchor": true,
+      "authority_case": "equal_different_sources",
+      "snapshot_ids": [
+        "unrelated-anchor"
+      ],
+      "a_commit": {
+        "status": "aborted",
+        "committed_ids": [],
+        "aborted_ids": [
+          "older-A"
+        ],
+        "violations": [
+          "temporal_override:older-A"
+        ]
+      },
+      "final_states": {
+        "newer-B": "committed",
+        "older-A": "quarantined",
+        "unrelated-anchor": "action_safe"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": true
+    },
+    {
+      "case_id": "write-fresh_A-anchor1-equal_same_source",
+      "order": "fresh_A",
+      "anchor": true,
+      "authority_case": "equal_same_source",
+      "snapshot_ids": [
+        "newer-B",
+        "unrelated-anchor"
+      ],
+      "a_commit": {
+        "status": "committed",
+        "committed_ids": [
+          "older-A"
+        ],
+        "aborted_ids": [],
+        "violations": []
+      },
+      "final_states": {
+        "newer-B": "superseded",
+        "older-A": "committed",
+        "unrelated-anchor": "action_safe"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": false
+    },
+    {
+      "case_id": "write-fresh_A-anchor1-higher_A",
+      "order": "fresh_A",
+      "anchor": true,
+      "authority_case": "higher_A",
+      "snapshot_ids": [
+        "newer-B",
+        "unrelated-anchor"
+      ],
+      "a_commit": {
+        "status": "committed",
+        "committed_ids": [
+          "older-A"
+        ],
+        "aborted_ids": [],
+        "violations": []
+      },
+      "final_states": {
+        "newer-B": "superseded",
+        "older-A": "committed",
+        "unrelated-anchor": "action_safe"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": false
+    },
+    {
+      "case_id": "write-fresh_A-anchor1-lower_A",
+      "order": "fresh_A",
+      "anchor": true,
+      "authority_case": "lower_A",
+      "snapshot_ids": [
+        "newer-B",
+        "unrelated-anchor"
+      ],
+      "a_commit": {
+        "status": "aborted",
+        "committed_ids": [],
+        "aborted_ids": [
+          "older-A"
+        ],
+        "violations": [
+          "source_authority:older-A"
+        ]
+      },
+      "final_states": {
+        "newer-B": "committed",
+        "older-A": "quarantined",
+        "unrelated-anchor": "action_safe"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": false
+    },
+    {
+      "case_id": "write-fresh_A-anchor1-equal_different_sources",
+      "order": "fresh_A",
+      "anchor": true,
+      "authority_case": "equal_different_sources",
+      "snapshot_ids": [
+        "newer-B",
+        "unrelated-anchor"
+      ],
+      "a_commit": {
+        "status": "aborted",
+        "committed_ids": [],
+        "aborted_ids": [
+          "older-A"
+        ],
+        "violations": [
+          "conflict_needs_user_review:older-A"
+        ]
+      },
+      "final_states": {
+        "newer-B": "committed",
+        "older-A": "quarantined",
+        "unrelated-anchor": "action_safe"
+      },
+      "post_snapshot_rival_superseded": false,
+      "temporal_rejection": false
+    }
+  ],
+  "summary": {
+    "read_cases": 8,
+    "read_cases_returning_post_begin_ids": 8,
+    "fresh_read_controls": 8,
+    "old_A_cases": 8,
+    "old_A_rival_superseded": 2,
+    "old_A_temporal_rejections": 4,
+    "fresh_A_cases": 8
+  },
+  "freeze_sha256": "9e7e2e1e8e3b6f9be28f173e4046e0eb9e0d14733a639149274b6145202eedea"
+}

@@ -1,0 +1,43 @@
+{
+  "raw": {
+    "envelope": {
+      "epoch": 0,
+      "history": [
+        {
+          "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"preferred\"}",
+          "epoch": 0,
+          "kind": "participant",
+          "opid": "A",
+          "value": "preferred",
+          "version": 1
+        }
+      ],
+      "origin": "A",
+      "receipts": {},
+      "record_epoch": 0,
+      "value": "preferred",
+      "version": 1,
+      "visible": true
+    }
+  },
+  "receipt_storage": "envelope",
+  "receipts": {},
+  "state": {
+    "epoch": 0,
+    "history": [
+      {
+        "body": "{\"expected_epoch\":0,\"expected_version\":0,\"target\":\"record\",\"value\":\"preferred\"}",
+        "epoch": 0,
+        "kind": "participant",
+        "opid": "A",
+        "value": "preferred",
+        "version": 1
+      }
+    ],
+    "origin": "A",
+    "record_epoch": 0,
+    "value": "preferred",
+    "version": 1,
+    "visible": true
+  }
+}

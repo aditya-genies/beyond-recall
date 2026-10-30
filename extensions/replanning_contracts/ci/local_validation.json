@@ -1,0 +1,266 @@
+{
+  "archive_steps": [
+    {
+      "returncode": 0,
+      "seconds": 2.087,
+      "stdout_tail": "test_rejects_forged_candidate_hash (test_check.RawEvidenceForgeryTests.test_rejects_forged_candidate_hash) ... ok\ntest_rejects_forged_duplicate_metric (test_check.RawEvidenceForgeryTests.test_rejects_forged_duplicate_metric) ... ok\ntest_rejects_hidden_physical_point_without_history (test_check.RawEvidenceForgeryTests.test_rejects_hidden_physical_point_without_history) ... ok\ntest_rejects_copied_baseline_value_change (test_check_live.LiveEvidenceForgeries.test_rejects_copied_baseline_value_change) ... ok\ntest_rejects_false_success_instead_of_actual_baseline_exit (test_check_live.LiveEvidenceForgeries.test_rejects_false_success_instead_of_actual_baseline_exit) ... ok\ntest_rejects_used_response_bypassing_exact_filter (test_check_live.LiveEvidenceForgeries.test_rejects_used_response_bypassing_exact_filter) ... ok\ntest_rejects_favorable_query_omission_even_with_rewritten_summary (test_check_retrieval.RetrievalEvidenceForgeryTests.test_rejects_favorable_query_omission_even_with_rewritten_summary) ... ok\ntest_rejects_forged_returned_literal_and_diversity_metric (test_check_retrieval.RetrievalEvidenceForgeryTests.test_rejects_forged_returned_literal_and_diversity_metric) ... ok\ntest_rejects_mutated_frozen_source_database (test_check_retrieval.RetrievalEvidenceForgeryTests.test_rejects_mutated_frozen_source_database) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.079s\n\nOK\n",
+      "step": "Exercise controlled, live and retrieval forgery fixtures"
+    },
+    {
+      "returncode": 0,
+      "seconds": 0.709,
+      "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"case_count\": 96,\n  \"api_calls\": 288,\n  \"final_fact_set_passes\": 96,\n  \"native_cells_with_extra_copies\": 20\n}\n",
+      "step": "Verify archived controlled Mem0 stores and calls"
+    },
+    {
+      "returncode": 0,
+      "seconds": 0.723,
+      "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"baseline_cases\": 4,\n  \"retry_cases\": 48,\n  \"actual_exit87\": 4,\n  \"actual_request_statuses\": 28\n}\n",
+      "step": "Verify archived live Mem0 evidence without a live request"
+    },
+    {
+      "returncode": 0,
+      "seconds": 0.796,
+      "stdout_tail": "{\n  \"status\": \"PASS\",\n  \"native_search_calls\": 1008,\n  \"unique_baseline_queries\": 84,\n  \"runtime_integrity\": {\n    \"status\": \"NOT_RUN\",\n    \"reason\": \"Exact original macOS Python build string/SQLite equality is not asserted on Ubuntu; unchanged audit and retained-store reconciliation ran separately.\",\n    \"frozen_package_versions_match\": true,\n    \"frozen_python\": \"3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]\",\n    \"frozen_sqlite\": \"3.51.2\",\n    \"current_python\": \"3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]\",\n    \"current_sqlite\": \"3.51.2\",\n    \"model_calls_made_by_this_job\": 0\n  }\n}\n",
+      "step": "Audit retrieval stores and retained reproduction with a declared runtime limit"
+    },
+    {
+      "returncode": 0,
+      "seconds": 0.151,
+      "stdout_tail": "{\n  \"read_cases\": 8,\n  \"read_cases_returning_post_begin_ids\": 8,\n  \"fresh_read_controls\": 8,\n  \"old_A_cases\": 8,\n  \"old_A_rival_superseded\": 2,\n  \"old_A_temporal_rejections\": 4,\n  \"fresh_A_cases\": 8\n}\n",
+      "step": "Verify archived MemTX traces in a temporary copy"
+    },
+    {
+      "returncode": 0,
+      "seconds": 0.049,
+      "stdout_tail": "",
+      "step": "Confirm tracked frozen evidence was not rewritten"
+    }
+  ],
+  "backend_aggregate_comparison": {
+    "compared_fields": [
+      "declared_cells",
+      "applicable_cells",
+      "not_applicable_cells",
+      "attempts",
+      "abrupt_exit_87",
+      "by_backend_profile"
+    ],
+    "declared_cells": 104,
+    "executed_cells": 96,
+    "meaning": "Same bounded aggregate outcomes, not byte-identical race winners or independent statistical samples.",
+    "not_applicable_cells": 8,
+    "status": "PASS"
+  },
+  "backend_steps": [
+    {
+      "returncode": 0,
+      "seconds": 0.561,
+      "stdout_tail": "Requirement already satisfied: redis==8.1.0 in ./.venv-backends/lib/python3.14/site-packages (from -r extensions/replanning_contracts/backends/requirements.lock.txt (line 1)) (8.1.0)\nNo broken requirements found.\n",
+      "step": "Install the pinned public Redis client"
+    },
+    {
+      "returncode": 0,
+      "seconds": 2.136,
+      "stdout_tail": "ions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_altered_physical_sqlite) ... ok\ntest_checker_rejects_changed_prepared_body (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_changed_prepared_body) ... ok\ntest_checker_rejects_fake_crash_barrier (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_fake_crash_barrier) ... ok\ntest_checker_rejects_forged_acknowledgement (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_forged_acknowledgement) ... ok\ntest_checker_rejects_forged_aof_grouping_with_identical_key_writes (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_forged_aof_grouping_with_identical_key_writes) ... ok\ntest_checker_rejects_forged_native_return (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_forged_native_return) ... ok\ntest_checker_rejects_hidden_native_aof_write_even_if_final_state_same (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_hidden_native_aof_write_even_if_final_state_same) ... ok\ntest_checker_rejects_hidden_state_change (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_hidden_state_change) ... ok\ntest_checker_rejects_impossible_two_process_outcome (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_impossible_two_process_outcome) ... ok\ntest_checker_rejects_misclassified_na (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_misclassified_na) ... ok\ntest_checker_rejects_missing_success_receipt (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_checker_rejects_missing_success_receipt) ... ok\ntest_effect_time_epoch_guard_uses_unchanged_version (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_effect_time_epoch_guard_uses_unchanged_version) ... ok\ntest_preflight_cannot_predict_valid_schema_trigger_error (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_preflight_cannot_predict_valid_schema_trigger_error) ... ok\ntest_prepared_journal_is_immutable_before_success (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_prepared_journal_is_immutable_before_success) ... ok\ntest_receipt_retry_historic_ack_does_not_restore_revoked_value (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_receipt_retry_historic_ack_does_not_restore_revoked_value) ... ok\ntest_redis_grouped_real_wrongtype_keeps_effect_preflight_prevents (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_redis_grouped_real_wrongtype_keeps_effect_preflight_prevents) ... ok\ntest_same_matrix_has_104_declared_96_applicable_8_na (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_same_matrix_has_104_declared_96_applicable_8_na) ... ok\ntest_sqlite_grouped_error_rolls_back_but_split_keeps_effect (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_sqlite_grouped_error_rolls_back_but_split_keeps_effect) ... ok\ntest_two_fresh_processes_native_receipt_recheck (extensions.replanning_contracts.backends.test_backends.ContractChecks.test_two_fresh_processes_native_receipt_recheck) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 1.999s\n\nOK\n",
+      "step": "Run native backend and negative-checker tests"
+    },
+    {
+      "returncode": 0,
+      "seconds": 0.132,
+      "stdout_tail": "ler_binding_conflict\": 1,\n        \"error\": 1,\n        \"historical_ack\": 4,\n        \"receipt_storage_invalid\": 1,\n        \"stale_epoch\": 1,\n        \"stale_version\": 3\n      },\n      \"stale_epoch_effects\": 0,\n      \"usable_receipts\": 7\n    },\n    \"redis/split\": {\n      \"abrupt_exit_87\": 2,\n      \"acknowledged_results\": 10,\n      \"applicable_cells\": 13,\n      \"duplicate_effects\": 0,\n      \"effects_without_usable_receipt\": 3,\n      \"historical_ack_results\": 3,\n      \"participant_effects\": 10,\n      \"request_status_counts\": {\n        \"applied\": 7,\n        \"caller_binding_conflict\": 1,\n        \"error\": 2,\n        \"historical_ack\": 3,\n        \"stale_epoch\": 1,\n        \"stale_version\": 5\n      },\n      \"stale_epoch_effects\": 0,\n      \"usable_receipts\": 7\n    },\n    \"sqlite/envelope\": {\n      \"abrupt_exit_87\": 1,\n      \"acknowledged_results\": 11,\n      \"applicable_cells\": 11,\n      \"duplicate_effects\": 0,\n      \"effects_without_usable_receipt\": 1,\n      \"historical_ack_results\": 4,\n      \"participant_effects\": 8,\n      \"request_status_counts\": {\n        \"applied\": 7,\n        \"caller_binding_conflict\": 1,\n        \"error\": 1,\n        \"historical_ack\": 4,\n        \"stale_epoch\": 1,\n        \"stale_version\": 3\n      },\n      \"stale_epoch_effects\": 0,\n      \"usable_receipts\": 7\n    },\n    \"sqlite/grouped\": {\n      \"abrupt_exit_87\": 1,\n      \"acknowledged_results\": 10,\n      \"applicable_cells\": 12,\n      \"duplicate_effects\": 0,\n      \"effects_without_usable_receipt\": 1,\n      \"historical_ack_results\": 3,\n      \"participant_effects\": 8,\n      \"request_status_counts\": {\n        \"applied\": 7,\n        \"caller_binding_conflict\": 1,\n        \"error\": 2,\n        \"historical_ack\": 3,\n        \"stale_epoch\": 1,\n        \"stale_version\": 4\n      },\n      \"stale_epoch_effects\": 0,\n      \"usable_receipts\": 7\n    },\n    \"sqlite/preflight\": {\n      \"abrupt_exit_87\": 1,\n      \"acknowledged_results\": 11,\n      \"applicable_cells\": 12,\n      \"duplicate_effects\": 0,\n      \"effects_without_usable_receipt\": 1,\n      \"historical_ack_results\": 4,\n      \"participant_effects\": 8,\n      \"request_status_counts\": {\n        \"applied\": 7,\n        \"caller_binding_conflict\": 1,\n        \"error\": 1,\n        \"historical_ack\": 4,\n        \"receipt_storage_invalid\": 1,\n        \"stale_epoch\": 1,\n        \"stale_version\": 3\n      },\n      \"stale_epoch_effects\": 0,\n      \"usable_receipts\": 7\n    },\n    \"sqlite/split\": {\n      \"abrupt_exit_87\": 2,\n      \"acknowledged_results\": 10,\n      \"applicable_cells\": 13,\n      \"duplicate_effects\": 0,\n      \"effects_without_usable_receipt\": 3,\n      \"historical_ack_results\": 3,\n      \"participant_effects\": 10,\n      \"request_status_counts\": {\n        \"applied\": 7,\n        \"caller_binding_conflict\": 1,\n        \"error\": 2,\n        \"historical_ack\": 3,\n        \"stale_epoch\": 1,\n        \"stale_version\": 5\n      },\n      \"stale_epoch_effects\": 0,\n      \"usable_receipts\": 7\n    }\n  },\n  \"declared_cells\": 104,\n  \"native_aof_commands\": {\n    \"EXEC\": 16,\n    \"HDEL\": 3,\n    \"HSET\": 24,\n    \"MULTI\": 16,\n    \"SELECT\": 1,\n    \"SET\": 103\n  },\n  \"native_aof_grouped_transactions_checked\": 16,\n  \"native_aof_key_mutation_sequences_checked\": true,\n  \"not_applicable_cells\": 8,\n  \"scope\": \"Agreement for finite histories; not a formal proof, production benchmark, arbitrary error, cluster or power-loss guarantee.\",\n  \"status\": \"pass\",\n  \"verification\": \"Independent literal-history/status oracle + caller journal/stdout files + read-only native SQLite + native Redis AOF reduction.\"\n}\n",
+      "step": "Verify archived raw SQLite databases and native Redis AOF"
+    },
+    {
+      "returncode": 0,
+      "seconds": 13.59,
+      "stdout_tail": "",
+      "step": "Reproduce the frozen 104-cell matrix with fresh owned resources"
+    },
+    {
+      "returncode": 0,
+      "seconds": 0.141,
+      "stdout_tail": "      \"effects_without_usable_receipt\": 3,\n      \"historical_ack_results\": 3,\n      \"participant_effects\": 10,\n      \"request_status_counts\": {\n        \"applied\": 7,\n        \"caller_binding_conflict\": 1,\n        \"error\": 2,\n        \"historical_ack\": 3,\n        \"stale_epoch\": 1,\n        \"stale_version\": 5\n      },\n      \"stale_epoch_effects\": 0,\n      \"usable_receipts\": 7\n    },\n    \"sqlite/envelope\": {\n      \"abrupt_exit_87\": 1,\n      \"acknowledged_results\": 11,\n      \"applicable_cells\": 11,\n      \"duplicate_effects\": 0,\n      \"effects_without_usable_receipt\": 1,\n      \"historical_ack_results\": 4,\n      \"participant_effects\": 8,\n      \"request_status_counts\": {\n        \"applied\": 7,\n        \"caller_binding_conflict\": 1,\n        \"error\": 1,\n        \"historical_ack\": 4,\n        \"stale_epoch\": 1,\n        \"stale_version\": 3\n      },\n      \"stale_epoch_effects\": 0,\n      \"usable_receipts\": 7\n    },\n    \"sqlite/grouped\": {\n      \"abrupt_exit_87\": 1,\n      \"acknowledged_results\": 10,\n      \"applicable_cells\": 12,\n      \"duplicate_effects\": 0,\n      \"effects_without_usable_receipt\": 1,\n      \"historical_ack_results\": 3,\n      \"participant_effects\": 8,\n      \"request_status_counts\": {\n        \"applied\": 7,\n        \"caller_binding_conflict\": 1,\n        \"error\": 2,\n        \"historical_ack\": 3,\n        \"stale_epoch\": 1,\n        \"stale_version\": 4\n      },\n      \"stale_epoch_effects\": 0,\n      \"usable_receipts\": 7\n    },\n    \"sqlite/preflight\": {\n      \"abrupt_exit_87\": 1,\n      \"acknowledged_results\": 11,\n      \"applicable_cells\": 12,\n      \"duplicate_effects\": 0,\n      \"effects_without_usable_receipt\": 1,\n      \"historical_ack_results\": 4,\n      \"participant_effects\": 8,\n      \"request_status_counts\": {\n        \"applied\": 7,\n        \"caller_binding_conflict\": 1,\n        \"error\": 1,\n        \"historical_ack\": 4,\n        \"receipt_storage_invalid\": 1,\n        \"stale_epoch\": 1,\n        \"stale_version\": 3\n      },\n      \"stale_epoch_effects\": 0,\n      \"usable_receipts\": 7\n    },\n    \"sqlite/split\": {\n      \"abrupt_exit_87\": 2,\n      \"acknowledged_results\": 10,\n      \"applicable_cells\": 13,\n      \"duplicate_effects\": 0,\n      \"effects_without_usable_receipt\": 3,\n      \"historical_ack_results\": 3,\n      \"participant_effects\": 10,\n      \"request_status_counts\": {\n        \"applied\": 7,\n        \"caller_binding_conflict\": 1,\n        \"error\": 2,\n        \"historical_ack\": 3,\n        \"stale_epoch\": 1,\n        \"stale_version\": 5\n      },\n      \"stale_epoch_effects\": 0,\n      \"usable_receipts\": 7\n    }\n  },\n  \"declared_cells\": 104,\n  \"native_aof_commands\": {\n    \"EXEC\": 16,\n    \"HDEL\": 3,\n    \"HSET\": 24,\n    \"MULTI\": 16,\n    \"SELECT\": 1,\n    \"SET\": 103\n  },\n  \"native_aof_grouped_transactions_checked\": 16,\n  \"native_aof_key_mutation_sequences_checked\": true,\n  \"not_applicable_cells\": 8,\n  \"scope\": \"Agreement for finite histories; not a formal proof, production benchmark, arbitrary error, cluster or power-loss guarantee.\",\n  \"status\": \"pass\",\n  \"verification\": \"Independent literal-history/status oracle + caller journal/stdout files + read-only native SQLite + native Redis AOF reduction.\"\n}\n{\n  \"status\": \"PASS\",\n  \"compared_fields\": [\n    \"declared_cells\",\n    \"applicable_cells\",\n    \"not_applicable_cells\",\n    \"attempts\",\n    \"abrupt_exit_87\",\n    \"by_backend_profile\"\n  ],\n  \"meaning\": \"Same bounded aggregate outcomes, not byte-identical race winners or independent statistical samples.\",\n  \"declared_cells\": 104,\n  \"executed_cells\": 96,\n  \"not_applicable_cells\": 8\n}\n",
+      "step": "Independently verify reproduced physical state and compare bounded outcomes"
+    },
+    {
+      "returncode": 0,
+      "seconds": 0.049,
+      "stdout_tail": "",
+      "step": "Confirm tracked frozen backend evidence was not rewritten"
+    }
+  ],
+  "counts": {
+    "archived_fresh_model_request_statuses": 28,
+    "backend_actual_abrupt_exits": 10,
+    "backend_attempts": 154,
+    "backend_declared_cells": 104,
+    "backend_executed_cells": 96,
+    "backend_focused_test_methods": 21,
+    "backend_negative_evidence_test_methods": 12,
+    "backend_not_applicable_cells": 8,
+    "controlled_mem0_cases": 96,
+    "controlled_recorded_native_add_calls": 288,
+    "fresh_model_calls_in_local_checks": 0,
+    "live_baseline_cases": 4,
+    "live_retry_cases": 48,
+    "mem0_negative_fixture_test_methods": 9,
+    "memtx_archived_traces": 24,
+    "retained_reproduction": {
+      "identical_ordered_returned_identity_cells": 1008,
+      "identical_per_query_metric_cells": 1008,
+      "interpretation": "Same frozen computation and stores, retained after-close; computational reproduction, not independent experimental samples.",
+      "native_search_calls_reproduced": 1008,
+      "reproduction_cases_sha256": "a80ec035400f7abe8d58b23c77d6f38932556f2ad91bb3cbfcf751499dd7cc8a",
+      "retained_states_checked": 16,
+      "retention_manifest_sha256": "bf8606ae473775e3c0b436288fdd99393f0ea69d7e238666c3f7a5dfa27d5799",
+      "retention_protocol_sha256": "79966fc01f1560cb0f242b82c788f12139363b0b8f033a635d07f2b575788b75",
+      "states": [
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 8,
+          "point_blobs_unchanged": true,
+          "state": "baseline"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 8,
+          "point_blobs_unchanged": true,
+          "state": "native_k10"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 8,
+          "point_blobs_unchanged": true,
+          "state": "widened_candidates"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 8,
+          "point_blobs_unchanged": true,
+          "state": "exact_admission"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 12,
+          "point_blobs_unchanged": true,
+          "state": "baseline"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 12,
+          "point_blobs_unchanged": true,
+          "state": "native_k10"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 12,
+          "point_blobs_unchanged": true,
+          "state": "widened_candidates"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 12,
+          "point_blobs_unchanged": true,
+          "state": "exact_admission"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 24,
+          "point_blobs_unchanged": true,
+          "state": "baseline"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 24,
+          "point_blobs_unchanged": true,
+          "state": "native_k10"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 24,
+          "point_blobs_unchanged": true,
+          "state": "widened_candidates"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 24,
+          "point_blobs_unchanged": true,
+          "state": "exact_admission"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 40,
+          "point_blobs_unchanged": true,
+          "state": "baseline"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 40,
+          "point_blobs_unchanged": true,
+          "state": "native_k10"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 40,
+          "point_blobs_unchanged": true,
+          "state": "widened_candidates"
+        },
+        {
+          "history_unchanged": true,
+          "n_source_preferences": 40,
+          "point_blobs_unchanged": true,
+          "state": "exact_admission"
+        }
+      ],
+      "status": "PASS"
+    },
+    "retrieval_recorded_searches": 1008,
+    "retrieval_unique_baseline_queries": 84
+  },
+  "docs_consulted": [
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
+  ],
+  "existing_reproduce_workflow_modified": false,
+  "existing_reproduce_workflow_sha256": "d9334e536e007120367fdfad3659f6f98b04f68c36c785b1d2e213b6f3d64ca3",
+  "hosted_github_actions_executed_by_this_agent": false,
+  "local_platform": {
+    "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
+    "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "sqlite": "3.51.2"
+  },
+  "lock": {
+    "derivation": "Post-campaign actual .venv-memory pip freeze; only Mem0 local source URI replaced by its verified public Git commit. Not a prospective freeze or hash-locked wheels.",
+    "fresh_install_pip_check_returncode": 0,
+    "fresh_public_install_returncode": 0,
+    "historical_bootstrap_lock_preserved": true,
+    "historical_lock_sha256": "808bab2f88906d0678d59cc58d147d7e8b959d12fa424c9446b9e0aae416bc95",
+    "original_environment_pip_check_returncode": 0,
+    "path": "mem0_reference/requirements-runtime.lock.txt",
+    "sha256": "f43450a6f9bb12c188d4938c7e935b07f8af512ac170a6d37118877549cb781b"
+  },
+  "new_public_dependency_sources": [
+    "https://pypi.org/simple",
+    "https://github.com/mem0ai/mem0.git@26cdefb46600c0fa5953c4b5ee5003c125539fc4",
+    "redis@sha256:2c933526722b4126a61d5c170f766dc159adf97682f0b1cbbc27b1666ba96d84"
+  ],
+  "platform_constraints": [
+    "Local validation ran on macOS arm64. Hosted Ubuntu package installation, GitHub actions, and artifact upload have not run in this agent task.",
+    "Retrieval exact macOS Python-build/SQLite equality intentionally recorded NOT_RUN in workflow path; unchanged raw audit and retained-reproduction layers executed, without weakening verify_runtime().",
+    "Full controlled checker verified exact Mem0 main and Qdrant persistence source hashes after fresh install from the public Git commit/runtime lock.",
+    "Redis digest is a multiarchitecture OCI index with linux/amd64 and linux/arm64-v8 descriptors; local service used arm64. Hosted amd64 runtime outcomes remain to be observed.",
+    "MemTX only archived trace consistency is checked; public upstream API execution and original upstream tests are not rerun.",
+    "CI does not rerun BGE inference, native Mem0 search/extraction, fresh LLM requests, cluster or power-loss faults.",
+    "Reproductions compare bounded aggregate outcomes; race winners/raw bytes may differ. Counts are not pooled with original observations."
+  ],
+  "static_validation": {
+    "actionlint": "NOT_RUN: not installed",
+    "bash_syntax": "PASS",
+    "bash_syntax_blocks": 13,
+    "embedded_python_ast": "PASS",
+    "yaml_parse": "PASS using PyYAML BaseLoader"
+  },
+  "status": "LOCAL_COMMANDS_PASS_HOSTED_CI_NOT_RUN",
+  "workflow": "../../../.github/workflows/replanning-contracts.yml",
+  "workflow_sha256": "f51b60234eb54eaa01dbfb008413d3149671f0a95b0627a203fb422f020fa334"
+}
