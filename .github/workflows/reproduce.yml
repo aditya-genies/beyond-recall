@@ -1,9 +1,9 @@
 name: Verify independent study
 on:
   push:
-    paths: ['study.py', 'test_study.py', 'run_one.py', 'compare_results.py', 'checks/*.py', '.github/workflows/**']
+    paths: ['study.py', 'test_study.py', 'run_one.py', 'compare_results.py', 'checks/*.py', 'extensions/**', '.github/workflows/**']
   pull_request:
-    paths: ['study.py', 'test_study.py', 'run_one.py', 'compare_results.py', 'checks/*.py', '.github/workflows/**']
+    paths: ['study.py', 'test_study.py', 'run_one.py', 'compare_results.py', 'checks/*.py', 'extensions/**', '.github/workflows/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -41,4 +41,54 @@ jobs:
             ci-results/cases.jsonl
             ci-results/boundary_probes.json
             ci-verification.json
+          retention-days: 7
+  extensions:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.12', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install pinned public framework dependencies
+        run: python -m pip install --index-url https://pypi.org/simple -r extensions/langgraph_reference/requirements.lock.txt
+      - name: Run native checkpoint tests
+        run: python -W error::ResourceWarning -m unittest -v extensions.langgraph_reference.test_native
+      - name: Run address-binding controls
+        run: python -W error::ResourceWarning -m unittest discover -v -s extensions/plan_binding -p 'test_*.py'
+      - name: Run conflict-contract and verifier negative tests
+        run: python -W error::ResourceWarning -m unittest discover -v -s extensions/conflict_contracts -p 'test_*.py'
+      - name: Verify archived model outputs without credentials
+        run: python extensions/sol_pilot/check.py --out extensions/sol_pilot/registered
+      - name: Reproduce native framework reference
+        run: python extensions/langgraph_reference/runner.py campaign --out extensions/langgraph_reference/my-ci-results --workers 2
+      - name: Verify native checkpoints and matched metrics
+        run: python extensions/langgraph_reference/verify_results.py --results extensions/langgraph_reference/my-ci-results --out native-ci-verification.json
+      - name: Reproduce recorded-plan integration
+        run: python extensions/plan_binding/replay.py run --out extensions/plan_binding/my-ci-results
+      - name: Verify integration records and controls
+        run: python extensions/plan_binding/check.py --out extensions/plan_binding/my-ci-results
+      - name: Freeze and reproduce bounded conflict schedules
+        run: python extensions/conflict_contracts/experiment.py prepare --out extensions/conflict_contracts/my-ci-results
+      - name: Execute bounded schedules and process races
+        run: python extensions/conflict_contracts/experiment.py run --out extensions/conflict_contracts/my-ci-results
+      - name: Verify raw conflict journals
+        run: python extensions/conflict_contracts/check.py --out extensions/conflict_contracts/my-ci-results --report extensions/conflict_contracts/my-ci-results/verification.json
+      - name: Retain extension verification evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: extension-verification-python-${{ matrix.python }}
+          path: |
+            native-ci-verification.json
+            extensions/langgraph_reference/my-ci-results/frozen_spec.json
+            extensions/langgraph_reference/my-ci-results/summary.json
+            extensions/plan_binding/my-ci-results/verification.json
+            extensions/plan_binding/my-ci-results/summary.json
+            extensions/conflict_contracts/my-ci-results/verification.json
+            extensions/conflict_contracts/my-ci-results/environment.json
           retention-days: 7

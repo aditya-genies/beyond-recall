@@ -1,0 +1,48 @@
+{
+  "trial": "preferences-partial-1",
+  "scenario": "preferences",
+  "condition": "partial",
+  "repeat": 1,
+  "requested_model": "gpt-6.1-sol",
+  "prompt_sha256": "0352671fd33c232358e7983301a7ce9ac52fe8dc6a4f1788f368a7bfc9226acd",
+  "records": [
+    {
+      "id": "preferences-first-effect",
+      "key": "reply_style",
+      "value": "Prefers concise replies."
+    }
+  ],
+  "started_at_utc": "2026-10-30T04:19:49Z",
+  "returncode": 0,
+  "wall_seconds": 5.32,
+  "public_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 17846,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 60,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "tool_events": [],
+  "response_sha256": "eec43342df348b4be70e13f95da4a3b9f87b97d8390f53cc1406f3721b2ac5ff",
+  "schema_valid": true,
+  "operations": [
+    {
+      "kind": "put",
+      "target": null,
+      "key": "preferred_units",
+      "value": "Prefers metric units."
+    },
+    {
+      "kind": "put",
+      "target": null,
+      "key": "favorite_hobby",
+      "value": "Cycling is their favorite hobby."
+    }
+  ],
+  "normalized_operations_sha256": "77c13192943df6036fe286a9e4b3916f7223eaff44bb911bcc45226193d5c2b5"
+}

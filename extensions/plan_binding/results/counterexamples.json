@@ -1,0 +1,142 @@
+[
+  {
+    "case_id": "preferences-partial-0",
+    "scenario": "preferences",
+    "partial_repeat": 0,
+    "arm": "replan_positional",
+    "database": "preferences-partial-0__replan_positional.sqlite",
+    "prefix_address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+    "baseline_trial": "preferences-original-0",
+    "recovery_trial": "preferences-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Favorite hobby is cycling."
+      }
+    ],
+    "structural_alias": true,
+    "alias_events": [
+      {
+        "serial": 2,
+        "slot": 0,
+        "operation": {
+          "key": "preferred_units",
+          "kind": "put",
+          "target": null,
+          "value": "Prefers metric units."
+        },
+        "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+        "before_record": {
+          "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+          "id": "preferences-first-effect",
+          "key": "reply_style",
+          "value": "Prefers concise replies."
+        },
+        "after_record": {
+          "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+          "id": "preferences-first-effect",
+          "key": "preferred_units",
+          "value": "Prefers metric units."
+        }
+      }
+    ],
+    "prefix_binding_preserved": false,
+    "literal_prefix_record_preserved": false,
+    "final_prefix_record": {
+      "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+      "id": "preferences-first-effect",
+      "key": "preferred_units",
+      "value": "Prefers metric units."
+    },
+    "final_records": [
+      {
+        "id": "pos:e05bfb892d95a52d139429e4cd96d477748fc00c8cf4b0870fda156eaa692897",
+        "key": "favorite_hobby",
+        "value": "Favorite hobby is cycling."
+      },
+      {
+        "id": "preferences-first-effect",
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      }
+    ]
+  },
+  {
+    "case_id": "preferences-partial-1",
+    "scenario": "preferences",
+    "partial_repeat": 1,
+    "arm": "replan_positional",
+    "database": "preferences-partial-1__replan_positional.sqlite",
+    "prefix_address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+    "baseline_trial": "preferences-original-0",
+    "recovery_trial": "preferences-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      }
+    ],
+    "structural_alias": true,
+    "alias_events": [
+      {
+        "serial": 2,
+        "slot": 0,
+        "operation": {
+          "key": "preferred_units",
+          "kind": "put",
+          "target": null,
+          "value": "Prefers metric units."
+        },
+        "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+        "before_record": {
+          "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+          "id": "preferences-first-effect",
+          "key": "reply_style",
+          "value": "Prefers concise replies."
+        },
+        "after_record": {
+          "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+          "id": "preferences-first-effect",
+          "key": "preferred_units",
+          "value": "Prefers metric units."
+        }
+      }
+    ],
+    "prefix_binding_preserved": false,
+    "literal_prefix_record_preserved": false,
+    "final_prefix_record": {
+      "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+      "id": "preferences-first-effect",
+      "key": "preferred_units",
+      "value": "Prefers metric units."
+    },
+    "final_records": [
+      {
+        "id": "pos:e05bfb892d95a52d139429e4cd96d477748fc00c8cf4b0870fda156eaa692897",
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      },
+      {
+        "id": "preferences-first-effect",
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      }
+    ]
+  }
+]

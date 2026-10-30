@@ -1,0 +1,42 @@
+{
+  "trial": "conditional_preference-partial-0",
+  "scenario": "conditional_preference",
+  "condition": "partial",
+  "repeat": 0,
+  "requested_model": "gpt-6.1-sol",
+  "prompt_sha256": "c31606f0529e666587523e22319df46b4f3f03da4b3abe2f3669a4ce87add5a2",
+  "records": [
+    {
+      "id": "style-record",
+      "key": "reply_style",
+      "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+    }
+  ],
+  "started_at_utc": "2026-10-30T04:20:05Z",
+  "returncode": 0,
+  "wall_seconds": 4.286,
+  "public_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 17862,
+        "cached_input_tokens": 16768,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 37,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "tool_events": [],
+  "response_sha256": "b911e479333a41589c9c587447b235ac20c8e05e54082e393ab176a3760c3df4",
+  "schema_valid": true,
+  "operations": [
+    {
+      "kind": "put",
+      "target": null,
+      "key": "unit_preference",
+      "value": "Prefers metric units."
+    }
+  ],
+  "normalized_operations_sha256": "5aa151c132580b618eff7979b2b7defa3f43dcdbc65c9cd8805f2de8ddaaa105"
+}

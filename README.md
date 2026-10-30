@@ -1,82 +1,86 @@
 # Beyond Recall
 
-**Failure Semantics of Long-Term Memory in LLM Agents**  
-Aditya Mantri · Independent Researcher · Working research artifact
+**Recovery Contracts for Agent Memory Mutations**
 
-A standalone, synthetic mechanism study of memory-update recovery. The experiment
-uses Python's standard library and two separate local SQLite files. All inputs
-are synthetic; no proprietary application code or nonpublic dataset is included.
+Aditya Mantri · Independent Researcher · Working research manuscript
 
-## What the study tests
+[Paper](manuscript/main.pdf) · [Editable source](manuscript/main.tex) ·
+[Review response](revisions/review1/response.txt) ·
+[Journal readiness assessment](revisions/review1/journal_readiness.txt)
 
-Eight factorial policies independently switch:
+A standalone study using synthetic facts and public dependencies. No proprietary
+application code, internal PRs, nonpublic conversations, or company credentials
+are included. The author's supplied employment/education biography identifies
+background; it does not assert an employer or university research affiliation.
 
-- **D** — stable addresses for inserted records;
-- **P** — durably retained decisions and target bindings;
-- **R** — a terminal receipt fast path.
+## What the evidence supports
 
-Plan retention stays identical across receipt settings. The main suite contains
-**528 unique structural cases**, with 66 cases per policy, **928 process attempts**
-and **256 abrupt subprocess terminations**. Five additional probes examine
-metadata erasure, an uncommitted decision and an intervening external write.
+The frozen primary factorial independently switches stable insertion addresses
+(D), retained literal decisions/target bindings (P), and completion receipts (R).
+Plan retention stays the same under both receipt settings.
 
-The retained-plan/stable-address pair passes all 66 selected terminal checks
-with either receipt setting. Receipts reduce committed put/delete operations
-from **317 to 275**. This separates final-state correctness from repeated work.
-The selected terminal conjunction does not certify linearizability, semantic
-memory truth, transient-read isolation or production reliability.
+- **528 structural cases**, 66 per policy; **928 process attempts**, including
+  **256 abrupt subprocess exits**. Attempts are components of cases.
+- Five separate boundary probes expose metadata, preparation, and newer-writer
+  assumptions.
+- D1P1 passes all 66 selected terminal checks under either R setting; receipts
+  reduce committed put/delete calls from **317 to 275**.
+- A **66-case native LangGraph reference** matches all seven case-level metrics.
+  It uses real checkpoints, with no primary coordinator decision/receipt rows.
+- A **24-request Sol 6.1/Codex pilot** records literal operation lists. Seven of
+  twelve same-prompt pairs differ; most differences concern synonymous labels or
+  wording. This does not establish harmful semantic drift.
+- **36 SQLite integrations** replay twelve recorded plan pairs through three
+  address/plan controls. Two responses from one at-risk scenario demonstrate
+  positional aliasing after a completed fact is omitted from a new plan.
+- **84 conflict-contract cases**, including sixteen two-process races, separate
+  historical success, version conflict, stale overwrite and value ABA.
 
-## Reproduce everything
+These are separate experiments with distinct denominators. They are not pooled
+into a benchmark score or population failure rate. No new recovery algorithm,
+semantic-memory improvement, framework superiority, or acceptance is claimed.
+Close prior art and remaining research gaps are documented openly.
 
-No packages need installing for the experiment or its checks. Use Python 3.12 or
-3.14 with SQLite available in the standard library:
+## Reproduce the primary experiment
 
-```sh
-python -W error::ResourceWarning -m unittest -v test_study
-python study.py campaign --out my-results --workers 4
-python checks/check_results.py --campaign my-results --out my-verification.json
-python compare_results.py --candidate my-results
-```
+The original engine and checkers require Python 3.12 or 3.14 and standard
+library SQLite:
 
-Use a new output directory. Compare aggregate outcomes, not random fresh record
-addresses or database bytes. Repeated computational runs do not enlarge the
-main statistical denominator.
+    python3 -W error::ResourceWarning -m unittest -v test_study
+    python3 study.py campaign --out my-results --workers 4
+    python3 checks/check_results.py --campaign my-results --out my-verification.json
+    python3 compare_results.py --candidate my-results
 
-Run a single checked case:
+Use a fresh output directory. Compare scalar outcomes rather than random record
+addresses or database bytes. Same-author environment/CI reproductions do not
+enlarge the main denominator or constitute outside replication.
 
-```sh
-python run_one.py --policy D1P1R0 --profile mixed \
-  --history redelivery_drift --out my-single-case
-```
+## Inspect or reproduce the extensions
 
-## Inspect the evidence
+- [Native LangGraph](extensions/langgraph_reference/README.md): dependency pins,
+  native checkpoint provenance, tests, all 66 matched cases and verifier.
+- [Live model pilot](extensions/sol_pilot/README.md): protocol, all prompts,
+  raw final responses, usage, limitations and personal-Codex runner.
+- [Plan identity integration](extensions/plan_binding/README.md): recorded plan
+  pairs, controls, SQLite records/audits and counterexamples.
+- [Conflict contracts](extensions/conflict_contracts/README.md): bounded schedule
+  design, separate checker, version/tombstone assumptions and race witnesses.
 
-- [Frozen implementation](study.py) and [10 focused tests](test_study.py).
-- [Primary summary](results/summary.json), [raw cases](results/cases.jsonl),
-  [frozen specification](results/frozen_spec.json) and [five boundary probes](results/boundary_probes.json).
-- `results/state/`: both SQLite files for every primary case.
-- [Independent verifier](checks/check_results.py), [protocol audit](checks/audit_protocol.py)
-  and [paired-factor contrasts](checks/factorial_contrasts.json).
-- `reproduction/`: a separate complete software-environment reproduction.
-- [Editable paper](manuscript/main.tex), [paper PDF](manuscript/main.pdf),
-  [bibliography](refs.bib) and [figure sources](figures/).
+Archived Sol outputs and downstream tests can be checked without model access.
+Fresh model calls require the requested model on an authenticated personal Codex
+account and may return different outputs. No model API-key fallback is used.
 
-The source hash and all final outcomes are checked independently of the
-participant's metric functions. GitHub Actions reruns the tests and complete
-campaign on Python 3.12 and 3.14. Both complete Ubuntu matrix jobs have passed, including raw-state verification
-and equality against the frozen aggregate outcomes. Their evidence is archived
-in `checks/github_actions/`; these repetitions are not pooled with the primary
-case count.
+## Evidence and status
 
-## Scope and status
+[Primary data](results/), [same-host reproduction](reproduction/),
+[separate metric checker](checks/check_results.py),
+[protocol audit](checks/audit_protocol.py), [figures](figures/), and
+[provenance](PROVENANCE.json) preserve source/result pins. GitHub Actions
+reproduces the primary campaign and runs extension checks; archived older CI
+evidence is tied to its commit.
 
-This is an independent controlled mechanism study and working paper. Decisions
-are scripted, faults occur at named semantic barriers, and the external ledger
-has explicit upsert/delete behavior. Abrupt process exit is exercised after
-committed phases; power loss and interruption inside SQLite commit are not.
-There is no live-model quality, natural drift-frequency, human-response,
-clinical, deployed memory-system or poisoning-defense evaluation.
-
-The repository is private. Its existence does not assert public artifact access,
-peer-review acceptance or publication. Public academic sources are cited for
-prior art; authorship alone is not grounds for adding unrelated citations.
+This public repository accompanies a working manuscript. It has not been
+accepted or published by a peer-reviewed journal. The study uses local SQLite,
+declared semantic fault barriers, authored inputs, and one small model pilot.
+The public artifact makes the claims inspectable; external replication and a
+broader novel contribution remain necessary for a leading-journal case.

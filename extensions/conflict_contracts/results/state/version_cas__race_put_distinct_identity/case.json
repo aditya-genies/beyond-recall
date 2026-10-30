@@ -1,0 +1,56 @@
+{
+  "case": "race_put_distinct_identity",
+  "mode": "version_cas",
+  "kind": "process_race",
+  "observations": [
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": "metric",
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "changed": false,
+        "status": "version_conflict"
+      },
+      "returncode": 0
+    },
+    {
+      "operation": {
+        "opid": "B",
+        "id": "unit",
+        "value": "foreign",
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "changed": true,
+        "status": "applied"
+      },
+      "returncode": 0
+    }
+  ],
+  "snapshot": {
+    "value": "foreign",
+    "version": 1,
+    "effects": [
+      {
+        "serial": 1,
+        "opid": "B",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+        "before_value": "imperial",
+        "before_version": 0,
+        "after_value": "foreign",
+        "after_version": 1
+      }
+    ],
+    "receipts": 0
+  },
+  "metadata": {
+    "same_identity": false,
+    "verb": "put",
+    "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+  }
+}

@@ -27,7 +27,8 @@
       ],
       "visually_inspected": true,
       "clipping_or_overlap": false,
-      "png_sha256": "8ab01a4cc6d0841e38074a865054d8af11be05efd4cf0b4e8de556e75a9a56b1"
+      "png_sha256": "9142594b7ea8ee64eb389e4863b74623a94a7c9e34b0ecd3e466f4ac763932f6",
+      "review_revision_pixel_inspected": true
     },
     {
       "figure": "fig_history_matrix",
@@ -41,7 +42,8 @@
       ],
       "visually_inspected": true,
       "clipping_or_overlap": false,
-      "png_sha256": "5e430d39c9a5d5131fdb61615e85313479d74f7e5186c8eb7b39bea856a190da"
+      "png_sha256": "5e430d39c9a5d5131fdb61615e85313479d74f7e5186c8eb7b39bea856a190da",
+      "review_revision_pixel_inspected": true
     }
   ],
   "numerical_verification": "All 528 raw case metrics independently recomputed from read-only SQLite records/audit tables and process events; exact agreement with serialized cases and summary. Five boundary probes checked separately.",
@@ -51,7 +53,13 @@
   "no_historical_code_or_results_consumed": true,
   "figure_notes": {
     "fig_experiment_architecture": "Source-validated actual/control boundaries, common conditional source query, retained plans after completion and optional receipt fast path are explicit.",
-    "fig_factorial_oracles": "Separate oracle and workload axes, integer labels, all eight policies, highlighted equal-terminal D1P1 pair with 317 versus 275 committed calls; legends clear of bar labels.",
+    "fig_factorial_oracles": "Both legends occupy separate bands outside the axes. Actual renderer bounding boxes and PNG/Poppler-PDF pixel inspection confirm separation from value labels, panel titles, policy-axis label, and footer. All original measured values are unchanged.",
     "fig_history_matrix": "All 17 histories and eight policies shown; each cell labeled by passing/applicable structural runs (four profiles except two in lost-delete-reply)."
+  },
+  "review_revision": {
+    "report": "figures/review_revision_visual_qa.json",
+    "previous_factorial_spacing_acceptance_superseded": true,
+    "new_factorial_spacing_gate": "figures/factorial_spacing_check.json",
+    "full_manuscript_qa_pending_recompile": true
   }
 }

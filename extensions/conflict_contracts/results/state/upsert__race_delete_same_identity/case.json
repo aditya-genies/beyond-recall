@@ -1,0 +1,65 @@
+{
+  "case": "race_delete_same_identity",
+  "mode": "upsert",
+  "kind": "process_race",
+  "observations": [
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "changed": true,
+        "status": "applied"
+      },
+      "returncode": 0
+    },
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "changed": true,
+        "status": "applied"
+      },
+      "returncode": 0
+    }
+  ],
+  "snapshot": {
+    "value": null,
+    "version": 2,
+    "effects": [
+      {
+        "serial": 1,
+        "opid": "A",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+        "before_value": "imperial",
+        "before_version": 0,
+        "after_value": null,
+        "after_version": 1
+      },
+      {
+        "serial": 2,
+        "opid": "A",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+        "before_value": null,
+        "before_version": 1,
+        "after_value": null,
+        "after_version": 2
+      }
+    ],
+    "receipts": 0
+  },
+  "metadata": {
+    "same_identity": true,
+    "verb": "delete",
+    "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+  }
+}

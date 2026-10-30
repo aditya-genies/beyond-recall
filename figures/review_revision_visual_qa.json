@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "reviewed_at_utc": "2026-10-30T04:15:21.569035+00:00",
+  "scope": "Targeted Figure 2 spacing correction in response to external review; both measured figures regenerated with original values. Full-manuscript PDF QA remains pending recompilation.",
+  "previous_review_correction": "The previous visual review missed insufficient separation between the panel (b) legend and 317 value labels, and between the policy-axis label and footer. This report supersedes that figure-spacing acceptance.",
+  "changes": [
+    "Placed both legends outside the axes in reserved figure-coordinate bands.",
+    "Reserved a distinct footer band below the policy-axis label.",
+    "Added a renderer-derived bounding-box gate that fails if critical text bands touch or leave the figure canvas."
+  ],
+  "pixel_inspection": {
+    "factorial_png": true,
+    "factorial_pdf_rendered_with_poppler": true,
+    "regenerated_history_png": true,
+    "architecture_unchanged_no_new_acceptance_claim": true,
+    "visible_overlap": false,
+    "clipping": false,
+    "all_values_and_legends_readable": true
+  },
+  "spacing_check": {
+    "path": "figures/factorial_spacing_check.json",
+    "pair_checks": 150,
+    "all_pair_checks_pass": true,
+    "minimum_checked_gap_px": 16.373,
+    "minimum_required_gap_px": 6,
+    "outside_canvas": []
+  },
+  "critical_gaps_px": {
+    "panel_a_legend_to_axes": 24.254,
+    "panel_b_legend_to_axes": 35.053,
+    "first_footer_to_policy_axis_label": 61.294,
+    "panel_b_legend_to_nearest_value": 54.715
+  },
+  "data_preservation": "figures/data_preservation_check.json",
+  "measurement_verification": "All original 528 archived cases and five boundary probes were recomputed from the same read-only SQLite ledgers and process witnesses; original summary agreement remains exact. No experiment source or result file changed.",
+  "figure_lint": "3 captions; 0 errors; 0 warnings; all manuscript figure paths resolve.",
+  "canonical_manuscript_assets_match": true,
+  "renderer_sha256": "0766f9899017bf69405a52cf92bb8ab7322ad15a472d077a40197b1e40d19f43",
+  "before_factorial_png_sha256": "8ab01a4cc6d0841e38074a865054d8af11be05efd4cf0b4e8de556e75a9a56b1",
+  "after_hashes": {
+    "fig_factorial_oracles.png": "9142594b7ea8ee64eb389e4863b74623a94a7c9e34b0ecd3e466f4ac763932f6",
+    "fig_factorial_oracles.pdf": "b805e9247ef32af092603a918146ba1926f97df2d31872b5ceed73816a47a1d5",
+    "fig_factorial_oracles.svg": "f6b86eb6d757d0d263de8817ee6a073a22732bbfb2dc36a9e6f21c41077e7ef4",
+    "fig_history_matrix.png": "5e430d39c9a5d5131fdb61615e85313479d74f7e5186c8eb7b39bea856a190da",
+    "fig_history_matrix.pdf": "f3936d605068009ef0e9582ff37a5100abfbb0cdb3895235d85b609a9fedd259",
+    "fig_history_matrix.svg": "3ed06cde64a8b40719465a5aeca0821453da5e543c5430449f80d58576c4994c"
+  },
+  "qa_pdf_render": "checks/figure_revision/fig_factorial_oracles_pdf_render.png"
+}

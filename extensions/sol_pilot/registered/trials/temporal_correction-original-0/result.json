@@ -1,0 +1,48 @@
+{
+  "trial": "temporal_correction-original-0",
+  "scenario": "temporal_correction",
+  "condition": "original",
+  "repeat": 0,
+  "requested_model": "gpt-6.1-sol",
+  "prompt_sha256": "c763841660f313c018003301b0503ea0c5981f0d27e629c6c477c5691cad629a",
+  "records": [
+    {
+      "id": "city-record",
+      "key": "city",
+      "value": "Oslo"
+    }
+  ],
+  "started_at_utc": "2026-10-30T04:19:38Z",
+  "returncode": 0,
+  "wall_seconds": 5.022,
+  "public_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 17844,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "tool_events": [],
+  "response_sha256": "36a2aae1cb6c6011b25a629f316c41a3ffc751ed27dd01e33190e25d129797f7",
+  "schema_valid": true,
+  "operations": [
+    {
+      "kind": "put",
+      "target": "city-record",
+      "key": "city",
+      "value": "Lisbon"
+    },
+    {
+      "kind": "put",
+      "target": null,
+      "key": "likes_walking",
+      "value": "Likes walking."
+    }
+  ],
+  "normalized_operations_sha256": "059ae3a84d9187a6a84d655992f28d31e1bdaafc2e0b1c0c73c192acdbb919d1"
+}

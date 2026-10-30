@@ -1,0 +1,63 @@
+{
+  "scope": "Proposed exact additions; main bibliography untouched. All paths relative to repository. Docs without dates are not assigned a fabricated publication year.",
+  "records": [
+    {
+      "key": "mansoor2026verified",
+      "identity_status": "verified primary PDF/HTML, arXiv metadata and DataCite agree",
+      "kind": "arXiv preprint; no peer-reviewed venue asserted",
+      "title": "Verified Tool Calls Improve LLM Agent Reliability Under Non-Atomic Failures",
+      "authors": [
+        "Isham Kalappurackal Mansoor",
+        "Abhishek Phadke",
+        "Pratip Rana"
+      ],
+      "year": 2026,
+      "doi": "10.48550/arXiv.2608.02645",
+      "submission_utc": "2026-07-31T16:16:14Z",
+      "pdf_dateline": "2026-08-05",
+      "datacite_available": "2026-08",
+      "date_note": "Initial submission and PDF dateline differ, not an identity mismatch.",
+      "primary_paths": [
+        "revisions/review1/references/positional_identity/verified_tool_calls_abs.html",
+        "revisions/review1/references/positional_identity/verified_tool_calls_pdf.pdf",
+        "revisions/review1/references/positional_identity/verified_tool_calls_pdf.txt",
+        "revisions/review1/references/positional_identity/verified_tool_calls_body.html",
+        "revisions/review1/references/positional_identity/verified_tool_calls_datacite.json"
+      ],
+      "sections": [
+        "4.2",
+        "4.5",
+        "4.6",
+        "5.1"
+      ],
+      "safe_scope_wording": "Mansoor et al. combine postcondition verification, verify-before-retry and action/payload-derived keys in a LangGraph agent evaluated on simulated non-atomic failures \\cite{mansoor2026verified}.",
+      "not_established": "No direct dynamic-plan-compaction/slot-address experiment identified in the paper. No general exactly-once guarantee, framework defect, or comparative superiority of our study inferred."
+    },
+    {
+      "key": "langchainGraphAPI",
+      "identity_status": "verified current official HTML",
+      "publication_date_status": "not asserted",
+      "primary_paths": [
+        "revisions/review1/references/positional_identity/langgraph_graph.html",
+        "revisions/review1/references/positional_identity/langgraph_graph.txt"
+      ],
+      "section": "Re-execution and idempotency",
+      "safe_scope_wording": "LangGraph documents that changing task or interrupt order before a resume point can mismatch cached values \\cite{langchainGraphAPI}.",
+      "not_established": "This is a direct ordering antecedent, not evidence that our external positional-upsert adapter is LangGraph behavior or a LangGraph bug."
+    },
+    {
+      "key": "featonbyIdempotentAPIs",
+      "identity_status": "verified official primary HTML title, byline and body",
+      "publication_date_status": "not visible on retrieved primary page; omitted. LIMBO cites 2020 but this is not substituted for primary date evidence.",
+      "primary_paths": [
+        "revisions/review1/references/positional_identity/aws_idempotency.html",
+        "revisions/review1/references/positional_identity/aws_idempotency.txt"
+      ],
+      "section": "Same client request ID, different intent",
+      "safe_scope_wording": "Featonby describes retaining original request parameters and rejecting a reused request identifier when its parameters change \\cite{featonbyIdempotentAPIs}.",
+      "not_established": "An upsert address is not automatically a server-side deduplication key with mismatch rejection."
+    }
+  ],
+  "recommended_experiment_framing": "A live-planner witness of a known identity/order hazard: omitting a completed operation can change the logical mutation associated with an unchanged ordinal address. Record-and-replay full decisions and stable logical-operation identities are established remedies, not newly invented algorithms.",
+  "source_manifest": "revisions/review1/references/positional_identity/manifest.json"
+}

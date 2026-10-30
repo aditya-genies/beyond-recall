@@ -1,0 +1,24 @@
+test_old_content_oracle_rewards_stale_overwrite (extensions.conflict_contracts.test_contracts.ContractTests.test_old_content_oracle_rewards_stale_overwrite) ... ok
+test_own_commit_is_acknowledged_without_overwriting_newer_write (extensions.conflict_contracts.test_contracts.ContractTests.test_own_commit_is_acknowledged_without_overwriting_newer_write) ... ok
+test_receipt_is_atomic_with_effect (extensions.conflict_contracts.test_contracts.ContractTests.test_receipt_is_atomic_with_effect) ... ok
+test_same_identity_with_changed_arguments_is_rejected (extensions.conflict_contracts.test_contracts.ContractTests.test_same_identity_with_changed_arguments_is_rejected) ... ok
+test_schedule_space_is_exactly_six_linearizations (extensions.conflict_contracts.test_contracts.ContractTests.test_schedule_space_is_exactly_six_linearizations) ... ok
+test_tombstone_retains_version (extensions.conflict_contracts.test_contracts.ContractTests.test_tombstone_retains_version) ... ok
+test_value_aba_is_visible_to_version_check (extensions.conflict_contracts.test_contracts.ContractTests.test_value_aba_is_visible_to_version_check) ... ok
+test_version_check_without_receipt_cannot_acknowledge_own_replay (extensions.conflict_contracts.test_contracts.ContractTests.test_version_check_without_receipt_cannot_acknowledge_own_replay) ... ok
+test_forged_receipt_body_is_rejected (extensions.conflict_contracts.test_audit.ConflictCheckerAuditTests.test_forged_receipt_body_is_rejected) ... ok
+test_forged_receipt_result_is_rejected (extensions.conflict_contracts.test_audit.ConflictCheckerAuditTests.test_forged_receipt_result_is_rejected) ... ok
+test_forged_replay_status_is_rejected_even_with_correct_ledger (extensions.conflict_contracts.test_audit.ConflictCheckerAuditTests.test_forged_replay_status_is_rejected_even_with_correct_ledger) ... ok
+test_forged_snapshot_effect_body_is_rejected (extensions.conflict_contracts.test_audit.ConflictCheckerAuditTests.test_forged_snapshot_effect_body_is_rejected) ... ok
+test_identity_binding_starts_with_success_not_rejected_attempt (extensions.conflict_contracts.test_audit.ConflictCheckerAuditTests.test_identity_binding_starts_with_success_not_rejected_attempt) ... ok
+test_race_status_must_match_a_legal_transaction_order (extensions.conflict_contracts.test_audit.ConflictCheckerAuditTests.test_race_status_must_match_a_legal_transaction_order) ... ok
+test_receipt_insert_failure_rolls_back_mutation_and_audit (extensions.conflict_contracts.test_audit.ConflictCheckerAuditTests.test_receipt_insert_failure_rolls_back_mutation_and_audit) ... ok
+test_source_hash_mismatch_is_rejected (extensions.conflict_contracts.test_audit.ConflictCheckerAuditTests.test_source_hash_mismatch_is_rejected) ... ok
+test_substituted_case_is_rejected_despite_same_denominator (extensions.conflict_contracts.test_audit.ConflictCheckerAuditTests.test_substituted_case_is_rejected_despite_same_denominator) ... ok
+test_successful_verification_does_not_write_into_frozen_evidence (extensions.conflict_contracts.test_audit.ConflictCheckerAuditTests.test_successful_verification_does_not_write_into_frozen_evidence) ... ok
+test_wrong_operation_identity_cannot_be_hidden_by_mutation_count (extensions.conflict_contracts.test_audit.ConflictCheckerAuditTests.test_wrong_operation_identity_cannot_be_hidden_by_mutation_count) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.065s
+
+OK

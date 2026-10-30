@@ -1,0 +1,6 @@
+You maintain a small personal memory store. From the conversation and current records below, choose the memory mutations that you judge appropriate now. Do not use tools, read files, or discuss this task. Return only a JSON object with an operations array. Each operation has exactly four fields: kind (put or delete), target (an existing record id or null for a new record), key (a short fact name, or null for delete), and value (a string, or null for delete). Prefer updating an existing record when it represents the same fact. You may omit facts that are already represented adequately. Do not invent personal facts. The records are synthetic.
+
+Current records:
+[{"id": "diet-record", "key": "diet", "value": "vegetarian"}]
+Conversation:
+Please forget the stored claim that I am vegetarian. Remember that I enjoy cycling.

@@ -1220,15 +1220,76 @@
       "integration_status": "Integrated in manuscript/main.tex and the root/manuscript bibliography.",
       "source_summary": "Memora evaluates semantic memory consolidation and mutation with forgetting-aware response criteria; it is prior work complementary to execution conformance.",
       "manuscript_status": "integrated"
+    },
+    {
+      "key": "mansoor2026verified",
+      "bibtex_key": "mansoor2026verified",
+      "title": "Verified Tool Calls Improve LLM Agent Reliability Under Non-Atomic Failures",
+      "record_kind": "research_paper",
+      "year": 2026,
+      "url": "https://arxiv.org/pdf/2608.02645",
+      "primary_source_url": "https://arxiv.org/pdf/2608.02645",
+      "primary_source_path": "revisions/review1/references/positional_identity/verified_tool_calls_pdf.pdf",
+      "primary_source_sha256": "dee29b0250eb6d40677b1477184662073d995053f28ae111a98dc83b759b74ac",
+      "verification": "verified primary PDF/HTML, arXiv metadata and DataCite agree",
+      "source_summary": "Mansoor et al. combine postcondition verification, verify-before-retry and action/payload-derived keys in a LangGraph agent evaluated on simulated non-atomic failures \\cite{mansoor2026verified}.",
+      "manuscript_status": "integrated",
+      "full_text_in_repository": false
+    },
+    {
+      "key": "langchainGraphAPI",
+      "bibtex_key": "langchainGraphAPI",
+      "title": "Graph API Overview",
+      "record_kind": "official_documentation",
+      "year": null,
+      "url": "https://docs.langchain.com/oss/python/langgraph/graph-api",
+      "primary_source_url": "https://docs.langchain.com/oss/python/langgraph/graph-api",
+      "primary_source_path": "revisions/review1/references/positional_identity/langgraph_graph.html",
+      "primary_source_sha256": "9d6acc04f87885ff2245525970c112a3aef3fc01f28e5fcfd78ded594bd4a9e9",
+      "verification": "verified current official HTML",
+      "source_summary": "LangGraph documents that changing task or interrupt order before a resume point can mismatch cached values \\cite{langchainGraphAPI}.",
+      "manuscript_status": "integrated",
+      "full_text_in_repository": false
+    },
+    {
+      "key": "featonbyIdempotentAPIs",
+      "bibtex_key": "featonbyIdempotentAPIs",
+      "title": "Making Retries Safe with Idempotent APIs",
+      "record_kind": "official_documentation",
+      "year": null,
+      "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "primary_source_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "primary_source_path": "revisions/review1/references/positional_identity/aws_idempotency.html",
+      "primary_source_sha256": "91c5e61042e27df7cecd9440949033323cb2c7fba12eaa176f74e3c024116fdd",
+      "verification": "verified official primary HTML title, byline and body",
+      "source_summary": "Featonby describes retaining original request parameters and rejecting a reused request identifier when its parameters change \\cite{featonbyIdempotentAPIs}.",
+      "manuscript_status": "integrated",
+      "full_text_in_repository": false
+    },
+    {
+      "key": "openai2026codexexec",
+      "bibtex_key": "openai2026codexexec",
+      "title": "Non-interactive Mode",
+      "record_kind": "official_documentation",
+      "year": null,
+      "url": "https://learn.chatgpt.com/docs/non-interactive-mode",
+      "primary_source_url": "https://learn.chatgpt.com/docs/non-interactive-mode.md",
+      "primary_source_path": "revisions/review1/references/codex_noninteractive.md",
+      "primary_source_sha256": "b4bc8dbe1c39f6e5454db89d764813d82c0c1003f7caca6c8adf0532e1e76684",
+      "verification": "Official documentation searched/opened, then raw documentation retrieved; exact CLI flags separately checked with local help.",
+      "source_summary": "Codex exec supports noninteractive ephemeral structured runs and saved Codex authentication. Availability of the requested alias was tested on the user account.",
+      "manuscript_status": "integrated",
+      "full_text_in_repository": false
     }
   ],
   "counts": {
-    "research_papers": 30,
-    "implemented_runtime_docs": 2,
-    "total": 32
+    "research_papers": 31,
+    "primary_documentation": 5,
+    "total": 36
   },
-  "excluded_from_manuscript": "Seven working-library documentation entries for services/frameworks not used in the independent implementation.",
+  "excluded_from_manuscript": "Unused vendor documentation and unrelated author publications. Current native and Codex documentation added only for implemented components.",
   "source_summary_policy": "Auditor-written prose remains distinct from published abstracts.",
   "citation_policy": "Cite for substantive relevance; research selection and source verification do not establish exhaustive literature coverage.",
-  "selection_status": "Integrated in manuscript/main.tex; working library remains a separate broader collection."
+  "selection_status": "Integrated in manuscript/main.tex; working library remains a separate broader collection.",
+  "archive_policy": "Historical primary text paths identify author-side caches. Full texts are not part of this repository; public primary URLs and recorded hashes are supplied."
 }

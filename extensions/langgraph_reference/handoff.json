@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "reference_cases": 66,
+  "original_cases_unchanged": 528,
+  "native_checkpoint_rows": 260,
+  "all_metrics_and_attempt_schedules_match": true,
+  "test_methods": 9,
+  "source_sha256": "3ae5ccf8103478a457aab805c0522b23f27fc4772e8e24675a30fe619997a47b",
+  "artifact_files": {
+    "runner.py": "3ae5ccf8103478a457aab805c0522b23f27fc4772e8e24675a30fe619997a47b",
+    "verify_results.py": "f839dccf6d83ba4617a9bd5f2899f43da7e5a69dc7eb7ef02c687b6c3412f1a7",
+    "test_native.py": "eeb51cae7c736d1920112eddfd294ee2a553a89fc0971b8402d81aa1ce04a0a9",
+    "results/frozen_spec.json": "fadcabc0f51c7e80f32188f37c6e5f3061fa699ec50170433f1e210901c76182",
+    "results/cases.jsonl": "d8833155d4e2433d768ba3ccc063ad5727fd9537b43288a23572c36b1902ce96",
+    "results/summary.json": "26ca4e7328f89100edbb736236bf49d1542abea9a192689bcfbbad9b7a0c0c1c",
+    "verification.json": "4fda0b3f0c0edc6be1be07e394017b896e374cc7cab618220bcd3469693ca7b4",
+    "tests.json": "6d8914c403258efe14ead6f5da73fbb1639c7733ba28d290b557ba526b9d3adc",
+    "preservation.json": "17407bc4a009abdc0a29383e33b59dcc9818dbbc84b5230b4bf9601e3d218877"
+  },
+  "scope": "Matched native execution integration, not a memory-agent baseline or framework optimality result."
+}

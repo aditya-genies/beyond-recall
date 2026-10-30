@@ -1,0 +1,276 @@
+{
+  "status": "PASS",
+  "checked_cases": 84,
+  "checked_process_races": 16,
+  "contracts": {
+    "upsert": {
+      "cases": 21,
+      "mutations": 69,
+      "replays": 0,
+      "conflicts": 0
+    },
+    "value_cas": {
+      "cases": 21,
+      "mutations": 26,
+      "replays": 0,
+      "conflicts": 43
+    },
+    "version_cas": {
+      "cases": 21,
+      "mutations": 24,
+      "replays": 0,
+      "conflicts": 45
+    },
+    "version_cas_dedup": {
+      "cases": 21,
+      "mutations": 24,
+      "replays": 16,
+      "conflicts": 29
+    }
+  },
+  "witnesses": {
+    "own_committed_reply_lost": {
+      "upsert": {
+        "value": "metric",
+        "version": 2,
+        "statuses": [
+          "applied",
+          "applied"
+        ],
+        "mutations": 2,
+        "original_intent_content_check": true,
+        "newer_write_preserved": null
+      },
+      "value_cas": {
+        "value": "metric",
+        "version": 1,
+        "statuses": [
+          "applied",
+          "value_conflict"
+        ],
+        "mutations": 1,
+        "original_intent_content_check": true,
+        "newer_write_preserved": null
+      },
+      "version_cas": {
+        "value": "metric",
+        "version": 1,
+        "statuses": [
+          "applied",
+          "version_conflict"
+        ],
+        "mutations": 1,
+        "original_intent_content_check": true,
+        "newer_write_preserved": null
+      },
+      "version_cas_dedup": {
+        "value": "metric",
+        "version": 1,
+        "statuses": [
+          "applied",
+          "replay"
+        ],
+        "mutations": 1,
+        "original_intent_content_check": true,
+        "newer_write_preserved": null
+      }
+    },
+    "newer_write_between_commit_and_retry": {
+      "upsert": {
+        "value": "metric",
+        "version": 3,
+        "statuses": [
+          "applied",
+          "applied",
+          "applied"
+        ],
+        "mutations": 3,
+        "original_intent_content_check": true,
+        "newer_write_preserved": false
+      },
+      "value_cas": {
+        "value": "foreign",
+        "version": 2,
+        "statuses": [
+          "applied",
+          "applied",
+          "value_conflict"
+        ],
+        "mutations": 2,
+        "original_intent_content_check": false,
+        "newer_write_preserved": true
+      },
+      "version_cas": {
+        "value": "foreign",
+        "version": 2,
+        "statuses": [
+          "applied",
+          "applied",
+          "version_conflict"
+        ],
+        "mutations": 2,
+        "original_intent_content_check": false,
+        "newer_write_preserved": true
+      },
+      "version_cas_dedup": {
+        "value": "foreign",
+        "version": 2,
+        "statuses": [
+          "applied",
+          "applied",
+          "replay"
+        ],
+        "mutations": 2,
+        "original_intent_content_check": false,
+        "newer_write_preserved": true
+      }
+    },
+    "foreign_write_before_first_effect": {
+      "upsert": {
+        "value": "metric",
+        "version": 2,
+        "statuses": [
+          "applied",
+          "applied"
+        ],
+        "mutations": 2,
+        "original_intent_content_check": true,
+        "newer_write_preserved": null
+      },
+      "value_cas": {
+        "value": "foreign",
+        "version": 1,
+        "statuses": [
+          "applied",
+          "value_conflict"
+        ],
+        "mutations": 1,
+        "original_intent_content_check": false,
+        "newer_write_preserved": null
+      },
+      "version_cas": {
+        "value": "foreign",
+        "version": 1,
+        "statuses": [
+          "applied",
+          "version_conflict"
+        ],
+        "mutations": 1,
+        "original_intent_content_check": false,
+        "newer_write_preserved": null
+      },
+      "version_cas_dedup": {
+        "value": "foreign",
+        "version": 1,
+        "statuses": [
+          "applied",
+          "version_conflict"
+        ],
+        "mutations": 1,
+        "original_intent_content_check": false,
+        "newer_write_preserved": null
+      }
+    },
+    "value_ABA": {
+      "upsert": {
+        "value": "metric",
+        "version": 3,
+        "statuses": [
+          "applied",
+          "applied",
+          "applied"
+        ],
+        "mutations": 3,
+        "original_intent_content_check": true,
+        "newer_write_preserved": null
+      },
+      "value_cas": {
+        "value": "metric",
+        "version": 3,
+        "statuses": [
+          "applied",
+          "applied",
+          "applied"
+        ],
+        "mutations": 3,
+        "original_intent_content_check": true,
+        "newer_write_preserved": null
+      },
+      "version_cas": {
+        "value": "imperial",
+        "version": 2,
+        "statuses": [
+          "applied",
+          "applied",
+          "version_conflict"
+        ],
+        "mutations": 2,
+        "original_intent_content_check": false,
+        "newer_write_preserved": null
+      },
+      "version_cas_dedup": {
+        "value": "imperial",
+        "version": 2,
+        "statuses": [
+          "applied",
+          "applied",
+          "version_conflict"
+        ],
+        "mutations": 2,
+        "original_intent_content_check": false,
+        "newer_write_preserved": null
+      }
+    },
+    "delete_recreate_ABA": {
+      "upsert": {
+        "value": "metric",
+        "version": 3,
+        "statuses": [
+          "applied",
+          "applied",
+          "applied"
+        ],
+        "mutations": 3,
+        "original_intent_content_check": true,
+        "newer_write_preserved": null
+      },
+      "value_cas": {
+        "value": "metric",
+        "version": 3,
+        "statuses": [
+          "applied",
+          "applied",
+          "applied"
+        ],
+        "mutations": 3,
+        "original_intent_content_check": true,
+        "newer_write_preserved": null
+      },
+      "version_cas": {
+        "value": "imperial",
+        "version": 2,
+        "statuses": [
+          "applied",
+          "applied",
+          "version_conflict"
+        ],
+        "mutations": 2,
+        "original_intent_content_check": false,
+        "newer_write_preserved": null
+      },
+      "version_cas_dedup": {
+        "value": "imperial",
+        "version": 2,
+        "statuses": [
+          "applied",
+          "applied",
+          "version_conflict"
+        ],
+        "mutations": 2,
+        "original_intent_content_check": false,
+        "newer_write_preserved": null
+      }
+    }
+  },
+  "scope": "Bounded histories over actual SQLite transactions. Replaying the effect journal independently verifies all committed state transitions. No exhaustive concurrent-program verification or distributed guarantee."
+}

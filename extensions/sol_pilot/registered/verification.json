@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "raw_responses_checked": 24,
+  "prompt_pairs_checked": 12,
+  "same_prompt_literal_variation_pairs": 7,
+  "changed_snapshot_literal_changes": 12,
+  "semantic_review": "Observed same-input differences include synonymous fact names/wording (e.g., reply_style versus reply_length); no harmful semantic drift is established.",
+  "limits": "Protocol frozen before model requests, not externally preregistered. One requested Sol6.1 alias through one Codex harness, medium reasoning requested; exact backend snapshot/system prompt/temperature/seed not controlled. No recorded command_execution/mcp_tool_call/web_search/file_change event. No model-quality, harmfulness, incidence, or broad generalization claim."
+}

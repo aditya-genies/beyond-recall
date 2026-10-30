@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "reference": "Native LangGraph execution-framework integration, not a live memory-agent baseline",
+  "matched_structural_cases": 66,
+  "original_main_denominator_unchanged": 528,
+  "checkpoint_rows_observed": 260,
+  "application_decision_receipt_rows_used": false,
+  "comparison_differences": [],
+  "all_seven_metric_values_match": true,
+  "native_versions": {
+    "langgraph": "1.2.18",
+    "langgraph-checkpoint": "4.3.1",
+    "langgraph-checkpoint-sqlite": "3.1.2",
+    "langchain-core": "1.7.3"
+  },
+  "scope": "Declared sequential semantic barriers, scripted planner and SQLite effect store; no latency, throughput, production or arbitrary-crash claim"
+}

@@ -1,0 +1,1594 @@
+[
+  {
+    "case_id": "preferences-partial-0",
+    "scenario": "preferences",
+    "partial_repeat": 0,
+    "arm": "replan_positional",
+    "database": "preferences-partial-0__replan_positional.sqlite",
+    "prefix_address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+    "baseline_trial": "preferences-original-0",
+    "recovery_trial": "preferences-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Favorite hobby is cycling."
+      }
+    ],
+    "structural_alias": true,
+    "alias_events": [
+      {
+        "serial": 2,
+        "slot": 0,
+        "operation": {
+          "key": "preferred_units",
+          "kind": "put",
+          "target": null,
+          "value": "Prefers metric units."
+        },
+        "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+        "before_record": {
+          "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+          "id": "preferences-first-effect",
+          "key": "reply_style",
+          "value": "Prefers concise replies."
+        },
+        "after_record": {
+          "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+          "id": "preferences-first-effect",
+          "key": "preferred_units",
+          "value": "Prefers metric units."
+        }
+      }
+    ],
+    "prefix_binding_preserved": false,
+    "literal_prefix_record_preserved": false,
+    "final_prefix_record": {
+      "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+      "id": "preferences-first-effect",
+      "key": "preferred_units",
+      "value": "Prefers metric units."
+    },
+    "final_records": [
+      {
+        "id": "pos:e05bfb892d95a52d139429e4cd96d477748fc00c8cf4b0870fda156eaa692897",
+        "key": "favorite_hobby",
+        "value": "Favorite hobby is cycling."
+      },
+      {
+        "id": "preferences-first-effect",
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      }
+    ]
+  },
+  {
+    "case_id": "preferences-partial-0",
+    "scenario": "preferences",
+    "partial_repeat": 0,
+    "arm": "replan_fresh",
+    "database": "preferences-partial-0__replan_fresh.sqlite",
+    "prefix_address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+    "baseline_trial": "preferences-original-0",
+    "recovery_trial": "preferences-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Favorite hobby is cycling."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+      "id": "preferences-first-effect",
+      "key": "reply_style",
+      "value": "Prefers concise replies."
+    },
+    "final_records": [
+      {
+        "id": "fresh:9dd94557dd5c50f00e05a2b97d18cdd13c029c0a40007e061a2a626225ad6e7f",
+        "key": "favorite_hobby",
+        "value": "Favorite hobby is cycling."
+      },
+      {
+        "id": "fresh:b17dd97f2b3ae236ca75429bc1b8bd27bda995342a2773c5a435672edaade42a",
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "id": "preferences-first-effect",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ]
+  },
+  {
+    "case_id": "preferences-partial-0",
+    "scenario": "preferences",
+    "partial_repeat": 0,
+    "arm": "retained_positional",
+    "database": "preferences-partial-0__retained_positional.sqlite",
+    "prefix_address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+    "baseline_trial": "preferences-original-0",
+    "recovery_trial": "preferences-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+      "id": "preferences-first-effect",
+      "key": "reply_style",
+      "value": "Prefers concise replies."
+    },
+    "final_records": [
+      {
+        "id": "pos:23132f6e85f75324072899d69904da4a74e55a6fb23b32eca8dcf6fc080c8719",
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      },
+      {
+        "id": "pos:e05bfb892d95a52d139429e4cd96d477748fc00c8cf4b0870fda156eaa692897",
+        "key": "units",
+        "value": "Prefers metric units."
+      },
+      {
+        "id": "preferences-first-effect",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ]
+  },
+  {
+    "case_id": "preferences-partial-1",
+    "scenario": "preferences",
+    "partial_repeat": 1,
+    "arm": "replan_positional",
+    "database": "preferences-partial-1__replan_positional.sqlite",
+    "prefix_address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+    "baseline_trial": "preferences-original-0",
+    "recovery_trial": "preferences-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      }
+    ],
+    "structural_alias": true,
+    "alias_events": [
+      {
+        "serial": 2,
+        "slot": 0,
+        "operation": {
+          "key": "preferred_units",
+          "kind": "put",
+          "target": null,
+          "value": "Prefers metric units."
+        },
+        "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+        "before_record": {
+          "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+          "id": "preferences-first-effect",
+          "key": "reply_style",
+          "value": "Prefers concise replies."
+        },
+        "after_record": {
+          "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+          "id": "preferences-first-effect",
+          "key": "preferred_units",
+          "value": "Prefers metric units."
+        }
+      }
+    ],
+    "prefix_binding_preserved": false,
+    "literal_prefix_record_preserved": false,
+    "final_prefix_record": {
+      "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+      "id": "preferences-first-effect",
+      "key": "preferred_units",
+      "value": "Prefers metric units."
+    },
+    "final_records": [
+      {
+        "id": "pos:e05bfb892d95a52d139429e4cd96d477748fc00c8cf4b0870fda156eaa692897",
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      },
+      {
+        "id": "preferences-first-effect",
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      }
+    ]
+  },
+  {
+    "case_id": "preferences-partial-1",
+    "scenario": "preferences",
+    "partial_repeat": 1,
+    "arm": "replan_fresh",
+    "database": "preferences-partial-1__replan_fresh.sqlite",
+    "prefix_address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+    "baseline_trial": "preferences-original-0",
+    "recovery_trial": "preferences-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+      "id": "preferences-first-effect",
+      "key": "reply_style",
+      "value": "Prefers concise replies."
+    },
+    "final_records": [
+      {
+        "id": "fresh:7e0b0c9c579e8448c129f6816d35fcda5fa8f3c166800aa63803359dcb245852",
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      },
+      {
+        "id": "fresh:b4370647730eb985664b7d78b7fa6ca26648e1a35871da28b1aad3c223eef584",
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "id": "preferences-first-effect",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ]
+  },
+  {
+    "case_id": "preferences-partial-1",
+    "scenario": "preferences",
+    "partial_repeat": 1,
+    "arm": "retained_positional",
+    "database": "preferences-partial-1__retained_positional.sqlite",
+    "prefix_address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+    "baseline_trial": "preferences-original-0",
+    "recovery_trial": "preferences-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "pos:5e63457a9c29cdfc7a930e5cf22169afd208af9f30ffafe46611b139203aa662",
+      "id": "preferences-first-effect",
+      "key": "reply_style",
+      "value": "Prefers concise replies."
+    },
+    "final_records": [
+      {
+        "id": "pos:23132f6e85f75324072899d69904da4a74e55a6fb23b32eca8dcf6fc080c8719",
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      },
+      {
+        "id": "pos:e05bfb892d95a52d139429e4cd96d477748fc00c8cf4b0870fda156eaa692897",
+        "key": "units",
+        "value": "Prefers metric units."
+      },
+      {
+        "id": "preferences-first-effect",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ]
+  },
+  {
+    "case_id": "correction-partial-0",
+    "scenario": "correction",
+    "partial_repeat": 0,
+    "arm": "replan_positional",
+    "database": "correction-partial-0__replan_positional.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "correction-original-0",
+    "recovery_trial": "correction-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "pos:9a3a12820f6dce976df0bfd2a46478d73f9849e3885e8fa3102ad66ed1c022d9",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "correction-partial-0",
+    "scenario": "correction",
+    "partial_repeat": 0,
+    "arm": "replan_fresh",
+    "database": "correction-partial-0__replan_fresh.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "correction-original-0",
+    "recovery_trial": "correction-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "fresh:b6f514bd7abcb85befe3a79b726ba4d414714bfe334e6bbb4b8775eb62eb95d6",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "correction-partial-0",
+    "scenario": "correction",
+    "partial_repeat": 0,
+    "arm": "retained_positional",
+    "database": "correction-partial-0__retained_positional.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "correction-original-0",
+    "recovery_trial": "correction-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": "unit-record",
+        "key": "units",
+        "value": "metric"
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "pos:e583d9d4018bf8c02bcd2607b826f9f50f4f62d2c6b2dd1870659c2b3657a7ed",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "correction-partial-1",
+    "scenario": "correction",
+    "partial_repeat": 1,
+    "arm": "replan_positional",
+    "database": "correction-partial-1__replan_positional.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "correction-original-0",
+    "recovery_trial": "correction-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_length",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "pos:9a3a12820f6dce976df0bfd2a46478d73f9849e3885e8fa3102ad66ed1c022d9",
+        "key": "reply_length",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "correction-partial-1",
+    "scenario": "correction",
+    "partial_repeat": 1,
+    "arm": "replan_fresh",
+    "database": "correction-partial-1__replan_fresh.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "correction-original-0",
+    "recovery_trial": "correction-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_length",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "fresh:9c7d2cf72206b02835e9593073b15ba60f8301229c1ced7ec51463139bac59e9",
+        "key": "reply_length",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "correction-partial-1",
+    "scenario": "correction",
+    "partial_repeat": 1,
+    "arm": "retained_positional",
+    "database": "correction-partial-1__retained_positional.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "correction-original-0",
+    "recovery_trial": "correction-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": "unit-record",
+        "key": "units",
+        "value": "metric"
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "pos:e583d9d4018bf8c02bcd2607b826f9f50f4f62d2c6b2dd1870659c2b3657a7ed",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "retirement-partial-0",
+    "scenario": "retirement",
+    "partial_repeat": 0,
+    "arm": "replan_positional",
+    "database": "retirement-partial-0__replan_positional.sqlite",
+    "prefix_address": "named:56f971ff124abe0a8d049032751cba951d7aae39bea67312edfe7abf4ba78458",
+    "baseline_trial": "retirement-original-0",
+    "recovery_trial": "retirement-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "enjoys_cycling",
+        "value": "The user enjoys cycling."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": null,
+    "final_records": [
+      {
+        "id": "pos:93e8aa0d3b4358fd2c12bb41aa480008868a5c4f4f99cf46b53254bb68d3d534",
+        "key": "enjoys_cycling",
+        "value": "The user enjoys cycling."
+      }
+    ]
+  },
+  {
+    "case_id": "retirement-partial-0",
+    "scenario": "retirement",
+    "partial_repeat": 0,
+    "arm": "replan_fresh",
+    "database": "retirement-partial-0__replan_fresh.sqlite",
+    "prefix_address": "named:56f971ff124abe0a8d049032751cba951d7aae39bea67312edfe7abf4ba78458",
+    "baseline_trial": "retirement-original-0",
+    "recovery_trial": "retirement-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "enjoys_cycling",
+        "value": "The user enjoys cycling."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": null,
+    "final_records": [
+      {
+        "id": "fresh:1c24f2480a9c8387a4eb3cf188a76c317ca9e758cf90219be83dcfbff02812eb",
+        "key": "enjoys_cycling",
+        "value": "The user enjoys cycling."
+      }
+    ]
+  },
+  {
+    "case_id": "retirement-partial-0",
+    "scenario": "retirement",
+    "partial_repeat": 0,
+    "arm": "retained_positional",
+    "database": "retirement-partial-0__retained_positional.sqlite",
+    "prefix_address": "named:56f971ff124abe0a8d049032751cba951d7aae39bea67312edfe7abf4ba78458",
+    "baseline_trial": "retirement-original-0",
+    "recovery_trial": "retirement-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "enjoys_cycling",
+        "value": "Enjoys cycling."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": null,
+    "final_records": [
+      {
+        "id": "pos:527a4f8f5689940f4d61277b5e25dd84d413a1e448b4f854823e4f408b6759c9",
+        "key": "enjoys_cycling",
+        "value": "Enjoys cycling."
+      }
+    ]
+  },
+  {
+    "case_id": "retirement-partial-1",
+    "scenario": "retirement",
+    "partial_repeat": 1,
+    "arm": "replan_positional",
+    "database": "retirement-partial-1__replan_positional.sqlite",
+    "prefix_address": "named:56f971ff124abe0a8d049032751cba951d7aae39bea67312edfe7abf4ba78458",
+    "baseline_trial": "retirement-original-0",
+    "recovery_trial": "retirement-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "enjoys_cycling",
+        "value": "The user enjoys cycling."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": null,
+    "final_records": [
+      {
+        "id": "pos:93e8aa0d3b4358fd2c12bb41aa480008868a5c4f4f99cf46b53254bb68d3d534",
+        "key": "enjoys_cycling",
+        "value": "The user enjoys cycling."
+      }
+    ]
+  },
+  {
+    "case_id": "retirement-partial-1",
+    "scenario": "retirement",
+    "partial_repeat": 1,
+    "arm": "replan_fresh",
+    "database": "retirement-partial-1__replan_fresh.sqlite",
+    "prefix_address": "named:56f971ff124abe0a8d049032751cba951d7aae39bea67312edfe7abf4ba78458",
+    "baseline_trial": "retirement-original-0",
+    "recovery_trial": "retirement-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "enjoys_cycling",
+        "value": "The user enjoys cycling."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": null,
+    "final_records": [
+      {
+        "id": "fresh:8c371b7b4dd908cdb6e09c3d4e6aacc33462524df8bee15f7991a7dbf9d23291",
+        "key": "enjoys_cycling",
+        "value": "The user enjoys cycling."
+      }
+    ]
+  },
+  {
+    "case_id": "retirement-partial-1",
+    "scenario": "retirement",
+    "partial_repeat": 1,
+    "arm": "retained_positional",
+    "database": "retirement-partial-1__retained_positional.sqlite",
+    "prefix_address": "named:56f971ff124abe0a8d049032751cba951d7aae39bea67312edfe7abf4ba78458",
+    "baseline_trial": "retirement-original-0",
+    "recovery_trial": "retirement-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "enjoys_cycling",
+        "value": "Enjoys cycling."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": null,
+    "final_records": [
+      {
+        "id": "pos:527a4f8f5689940f4d61277b5e25dd84d413a1e448b4f854823e4f408b6759c9",
+        "key": "enjoys_cycling",
+        "value": "Enjoys cycling."
+      }
+    ]
+  },
+  {
+    "case_id": "mixed-partial-0",
+    "scenario": "mixed",
+    "partial_repeat": 0,
+    "arm": "replan_positional",
+    "database": "mixed-partial-0__replan_positional.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "mixed-original-0",
+    "recovery_trial": "mixed-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_preference",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "pos:4dd66ab4ac2dd83c7788821b95bcf264e3632ac76acd52c4140c9f314fcb093a",
+        "key": "reply_preference",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "mixed-partial-0",
+    "scenario": "mixed",
+    "partial_repeat": 0,
+    "arm": "replan_fresh",
+    "database": "mixed-partial-0__replan_fresh.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "mixed-original-0",
+    "recovery_trial": "mixed-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_preference",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "fresh:7a19596695b9be29b1d61286744fc1fb38bdd82b99299e9ea1691a6eece6a61f",
+        "key": "reply_preference",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "mixed-partial-0",
+    "scenario": "mixed",
+    "partial_repeat": 0,
+    "arm": "retained_positional",
+    "database": "mixed-partial-0__retained_positional.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "mixed-original-0",
+    "recovery_trial": "mixed-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": "unit-record",
+        "key": "units",
+        "value": "metric"
+      },
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_preference",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "pos:be408a72b72ff3b1c14ad9a57e0ad78fd3bf3f95e7113872c11556f9d71d842b",
+        "key": "reply_preference",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "mixed-partial-1",
+    "scenario": "mixed",
+    "partial_repeat": 1,
+    "arm": "replan_positional",
+    "database": "mixed-partial-1__replan_positional.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "mixed-original-0",
+    "recovery_trial": "mixed-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "pos:4dd66ab4ac2dd83c7788821b95bcf264e3632ac76acd52c4140c9f314fcb093a",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "mixed-partial-1",
+    "scenario": "mixed",
+    "partial_repeat": 1,
+    "arm": "replan_fresh",
+    "database": "mixed-partial-1__replan_fresh.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "mixed-original-0",
+    "recovery_trial": "mixed-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "fresh:a34729f931c57f0913c9f30744c21e389d09ac86c4cdf1aa13a3c2b5f3521839",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "mixed-partial-1",
+    "scenario": "mixed",
+    "partial_repeat": 1,
+    "arm": "retained_positional",
+    "database": "mixed-partial-1__retained_positional.sqlite",
+    "prefix_address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+    "baseline_trial": "mixed-original-0",
+    "recovery_trial": "mixed-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": "unit-record",
+        "key": "units",
+        "value": "metric"
+      },
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_preference",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:9680b6c012003fd4fd8ec14425630377f6dbdd2af993421fe3aeb56e89647d6a",
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    },
+    "final_records": [
+      {
+        "id": "pos:be408a72b72ff3b1c14ad9a57e0ad78fd3bf3f95e7113872c11556f9d71d842b",
+        "key": "reply_preference",
+        "value": "Prefers concise replies."
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_correction-partial-0",
+    "scenario": "temporal_correction",
+    "partial_repeat": 0,
+    "arm": "replan_positional",
+    "database": "temporal_correction-partial-0__replan_positional.sqlite",
+    "prefix_address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+    "baseline_trial": "temporal_correction-original-0",
+    "recovery_trial": "temporal_correction-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+      "id": "city-record",
+      "key": "city",
+      "value": "Lisbon"
+    },
+    "final_records": [
+      {
+        "id": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      },
+      {
+        "id": "pos:0d81ea381dc48682a7e9d68b8ef55ce3eed99a9a78fe00b1290e4dd96e6fa620",
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_correction-partial-0",
+    "scenario": "temporal_correction",
+    "partial_repeat": 0,
+    "arm": "replan_fresh",
+    "database": "temporal_correction-partial-0__replan_fresh.sqlite",
+    "prefix_address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+    "baseline_trial": "temporal_correction-original-0",
+    "recovery_trial": "temporal_correction-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+      "id": "city-record",
+      "key": "city",
+      "value": "Lisbon"
+    },
+    "final_records": [
+      {
+        "id": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      },
+      {
+        "id": "fresh:0af03a2f892a23fd7b940747844cfc184543e62c6aa35a22f3767939c97ded3c",
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_correction-partial-0",
+    "scenario": "temporal_correction",
+    "partial_repeat": 0,
+    "arm": "retained_positional",
+    "database": "temporal_correction-partial-0__retained_positional.sqlite",
+    "prefix_address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+    "baseline_trial": "temporal_correction-original-0",
+    "recovery_trial": "temporal_correction-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+      "id": "city-record",
+      "key": "city",
+      "value": "Lisbon"
+    },
+    "final_records": [
+      {
+        "id": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      },
+      {
+        "id": "pos:39d7a1a031dfb54db6fca101c943de87264bccf770a2d88ede0dbb8fd93c004a",
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_correction-partial-1",
+    "scenario": "temporal_correction",
+    "partial_repeat": 1,
+    "arm": "replan_positional",
+    "database": "temporal_correction-partial-1__replan_positional.sqlite",
+    "prefix_address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+    "baseline_trial": "temporal_correction-original-0",
+    "recovery_trial": "temporal_correction-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+      "id": "city-record",
+      "key": "city",
+      "value": "Lisbon"
+    },
+    "final_records": [
+      {
+        "id": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      },
+      {
+        "id": "pos:0d81ea381dc48682a7e9d68b8ef55ce3eed99a9a78fe00b1290e4dd96e6fa620",
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_correction-partial-1",
+    "scenario": "temporal_correction",
+    "partial_repeat": 1,
+    "arm": "replan_fresh",
+    "database": "temporal_correction-partial-1__replan_fresh.sqlite",
+    "prefix_address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+    "baseline_trial": "temporal_correction-original-0",
+    "recovery_trial": "temporal_correction-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+      "id": "city-record",
+      "key": "city",
+      "value": "Lisbon"
+    },
+    "final_records": [
+      {
+        "id": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      },
+      {
+        "id": "fresh:9de3cf5de54d6d0dbdf804993daa8afc14cfba68359452e47635318fe0c8bd3a",
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ]
+  },
+  {
+    "case_id": "temporal_correction-partial-1",
+    "scenario": "temporal_correction",
+    "partial_repeat": 1,
+    "arm": "retained_positional",
+    "database": "temporal_correction-partial-1__retained_positional.sqlite",
+    "prefix_address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+    "baseline_trial": "temporal_correction-original-0",
+    "recovery_trial": "temporal_correction-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:1d683aaac3855e02d33fccd215ae7fc9fd798a2db17828447a6ca75625e8cd53",
+      "id": "city-record",
+      "key": "city",
+      "value": "Lisbon"
+    },
+    "final_records": [
+      {
+        "id": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      },
+      {
+        "id": "pos:39d7a1a031dfb54db6fca101c943de87264bccf770a2d88ede0dbb8fd93c004a",
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ]
+  },
+  {
+    "case_id": "conditional_preference-partial-0",
+    "scenario": "conditional_preference",
+    "partial_repeat": 0,
+    "arm": "replan_positional",
+    "database": "conditional_preference-partial-0__replan_positional.sqlite",
+    "prefix_address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+    "baseline_trial": "conditional_preference-original-0",
+    "recovery_trial": "conditional_preference-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "unit_preference",
+        "value": "Prefers metric units."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+      "id": "style-record",
+      "key": "reply_style",
+      "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+    },
+    "final_records": [
+      {
+        "id": "pos:e4ec5527730825bf15fdd6c6a5dcc8979d529d05492a3407c9278c007668fc50",
+        "key": "unit_preference",
+        "value": "Prefers metric units."
+      },
+      {
+        "id": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      }
+    ]
+  },
+  {
+    "case_id": "conditional_preference-partial-0",
+    "scenario": "conditional_preference",
+    "partial_repeat": 0,
+    "arm": "replan_fresh",
+    "database": "conditional_preference-partial-0__replan_fresh.sqlite",
+    "prefix_address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+    "baseline_trial": "conditional_preference-original-0",
+    "recovery_trial": "conditional_preference-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "unit_preference",
+        "value": "Prefers metric units."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+      "id": "style-record",
+      "key": "reply_style",
+      "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+    },
+    "final_records": [
+      {
+        "id": "fresh:0e3c3c6826ec7319bb535cb9f34a10d6f393f77d706ecba832d93ae22e16959a",
+        "key": "unit_preference",
+        "value": "Prefers metric units."
+      },
+      {
+        "id": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      }
+    ]
+  },
+  {
+    "case_id": "conditional_preference-partial-0",
+    "scenario": "conditional_preference",
+    "partial_repeat": 0,
+    "arm": "retained_positional",
+    "database": "conditional_preference-partial-0__retained_positional.sqlite",
+    "prefix_address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+    "baseline_trial": "conditional_preference-original-0",
+    "recovery_trial": "conditional_preference-partial-0",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "unit_preference",
+        "value": "Prefers metric units."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+      "id": "style-record",
+      "key": "reply_style",
+      "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+    },
+    "final_records": [
+      {
+        "id": "pos:ed0074db98a289869e045ef35d784bf7a4b8b96103f32cc12bde49c97d9d23aa",
+        "key": "unit_preference",
+        "value": "Prefers metric units."
+      },
+      {
+        "id": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      }
+    ]
+  },
+  {
+    "case_id": "conditional_preference-partial-1",
+    "scenario": "conditional_preference",
+    "partial_repeat": 1,
+    "arm": "replan_positional",
+    "database": "conditional_preference-partial-1__replan_positional.sqlite",
+    "prefix_address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+    "baseline_trial": "conditional_preference-original-0",
+    "recovery_trial": "conditional_preference-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+      "id": "style-record",
+      "key": "reply_style",
+      "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+    },
+    "final_records": [
+      {
+        "id": "pos:e4ec5527730825bf15fdd6c6a5dcc8979d529d05492a3407c9278c007668fc50",
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "id": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      }
+    ]
+  },
+  {
+    "case_id": "conditional_preference-partial-1",
+    "scenario": "conditional_preference",
+    "partial_repeat": 1,
+    "arm": "replan_fresh",
+    "database": "conditional_preference-partial-1__replan_fresh.sqlite",
+    "prefix_address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+    "baseline_trial": "conditional_preference-original-0",
+    "recovery_trial": "conditional_preference-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+      "id": "style-record",
+      "key": "reply_style",
+      "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+    },
+    "final_records": [
+      {
+        "id": "fresh:9c10ae750d1c792efabf3d918a0019283cd396e63506201f4a3af8696c02d8d3",
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "id": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      }
+    ]
+  },
+  {
+    "case_id": "conditional_preference-partial-1",
+    "scenario": "conditional_preference",
+    "partial_repeat": 1,
+    "arm": "retained_positional",
+    "database": "conditional_preference-partial-1__retained_positional.sqlite",
+    "prefix_address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+    "baseline_trial": "conditional_preference-original-0",
+    "recovery_trial": "conditional_preference-partial-1",
+    "recovery_operations": [
+      {
+        "kind": "put",
+        "target": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "unit_preference",
+        "value": "Prefers metric units."
+      }
+    ],
+    "structural_alias": false,
+    "alias_events": [],
+    "prefix_binding_preserved": true,
+    "literal_prefix_record_preserved": true,
+    "final_prefix_record": {
+      "address": "named:4569c1343a4209aa519ec89cc4a5e6958ccd45acf621e4f33bea93c4803eb58c",
+      "id": "style-record",
+      "key": "reply_style",
+      "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+    },
+    "final_records": [
+      {
+        "id": "pos:ed0074db98a289869e045ef35d784bf7a4b8b96103f32cc12bde49c97d9d23aa",
+        "key": "unit_preference",
+        "value": "Prefers metric units."
+      },
+      {
+        "id": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      }
+    ]
+  }
+]

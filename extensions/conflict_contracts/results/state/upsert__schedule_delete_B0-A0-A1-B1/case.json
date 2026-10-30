@@ -1,0 +1,111 @@
+{
+  "case": "schedule_delete_B0-A0-A1-B1",
+  "mode": "upsert",
+  "kind": "schedule",
+  "observations": [
+    {
+      "operation": {
+        "opid": "B",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "applied",
+        "changed": true
+      }
+    },
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "applied",
+        "changed": true
+      }
+    },
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "applied",
+        "changed": true
+      }
+    },
+    {
+      "operation": {
+        "opid": "B",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "applied",
+        "changed": true
+      }
+    }
+  ],
+  "snapshot": {
+    "value": null,
+    "version": 4,
+    "effects": [
+      {
+        "serial": 1,
+        "opid": "B",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+        "before_value": "imperial",
+        "before_version": 0,
+        "after_value": null,
+        "after_version": 1
+      },
+      {
+        "serial": 2,
+        "opid": "A",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+        "before_value": null,
+        "before_version": 1,
+        "after_value": null,
+        "after_version": 2
+      },
+      {
+        "serial": 3,
+        "opid": "A",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+        "before_value": null,
+        "before_version": 2,
+        "after_value": null,
+        "after_version": 3
+      },
+      {
+        "serial": 4,
+        "opid": "B",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+        "before_value": null,
+        "before_version": 3,
+        "after_value": null,
+        "after_version": 4
+      }
+    ],
+    "receipts": 0
+  },
+  "metadata": {
+    "order": [
+      "B0",
+      "A0",
+      "A1",
+      "B1"
+    ],
+    "verb": "delete"
+  }
+}

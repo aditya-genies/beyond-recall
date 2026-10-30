@@ -1,0 +1,72 @@
+{
+  "case": "newer_write_between_commit_and_retry",
+  "mode": "version_cas_dedup",
+  "kind": "witness",
+  "observations": [
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": "metric",
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "applied",
+        "changed": true
+      }
+    },
+    {
+      "operation": {
+        "opid": "B",
+        "id": "unit",
+        "value": "foreign",
+        "expected_version": 1,
+        "expected_value": "metric"
+      },
+      "result": {
+        "status": "applied",
+        "changed": true
+      }
+    },
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": "metric",
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "replay",
+        "changed": false
+      }
+    }
+  ],
+  "snapshot": {
+    "value": "foreign",
+    "version": 2,
+    "effects": [
+      {
+        "serial": 1,
+        "opid": "A",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+        "before_value": "imperial",
+        "before_version": 0,
+        "after_value": "metric",
+        "after_version": 1
+      },
+      {
+        "serial": 2,
+        "opid": "B",
+        "body": "{\"expected_value\":\"metric\",\"expected_version\":1,\"id\":\"unit\",\"value\":\"foreign\"}",
+        "before_value": "metric",
+        "before_version": 1,
+        "after_value": "foreign",
+        "after_version": 2
+      }
+    ],
+    "receipts": 2
+  },
+  "metadata": {}
+}

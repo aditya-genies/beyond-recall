@@ -16,3 +16,12 @@ my-*/
 !checks/*.log
 !campaign.log
 !reproduction.log
+release/
+revisions/review1/reviewer.txt
+revisions/review1/prior_manuscript/
+revisions/review1/pdf_qa*/
+revisions/review1/journal_sources/*.html
+revisions/review1/references/*.md
+revisions/review1/references/**/*.html
+revisions/review1/references/**/*.pdf
+revisions/review1/references/**/*.txt

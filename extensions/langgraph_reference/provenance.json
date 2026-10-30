@@ -1,0 +1,38 @@
+{
+  "versions": {
+    "langgraph": "1.2.18",
+    "langgraph-checkpoint": "4.3.1",
+    "langgraph-checkpoint-sqlite": "3.1.2",
+    "langchain-core": "1.7.3"
+  },
+  "installed_public_sources": {
+    "StateGraph": {
+      "installed_source": "lib/python3.14/site-packages/langgraph/graph/state.py",
+      "sha256": "d8c8021a93a8fc895d62335a9482e50d51353343bf885901e6487611dcd0d212"
+    },
+    "SqliteSaver": {
+      "installed_source": "lib/python3.14/site-packages/langgraph/checkpoint/sqlite/__init__.py",
+      "sha256": "13829d2b3961129e13ee3113a6674bff790181d26e5cae83c3bfabd6cca9074c"
+    }
+  },
+  "python": "3.14.3",
+  "sqlite": "3.51.2",
+  "public_dependency_index": "https://pypi.org/simple",
+  "official_primary_documentation": [
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/checkpointers",
+      "supports": "Super-step persistence, sync durability and native completion state"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+      "supports": "Thread checkpoints and application stores have distinct scopes"
+    },
+    {
+      "url": "https://reference.langchain.com/python/langgraph.checkpoint.sqlite/SqliteSaver",
+      "supports": "Public native SQLite saver API and local synchronous scope"
+    }
+  ],
+  "accessed_study_local_date": "2026-10-29",
+  "native_reference_source_sha256": "3ae5ccf8103478a457aab805c0522b23f27fc4772e8e24675a30fe619997a47b",
+  "original_participant_not_modified": true
+}

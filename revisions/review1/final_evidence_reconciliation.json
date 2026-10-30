@@ -1,0 +1,213 @@
+{
+  "status": "PASS",
+  "review_action": "Read-only evidence reconciliation; no new model requests, experiments or test campaigns",
+  "primary": {
+    "cases": 528,
+    "groups": {
+      "D0P0R0": {
+        "content_correct": 42,
+        "cardinality_correct": 37,
+        "acknowledged": 66,
+        "decision_continuity": 42,
+        "planning_invocations": 112,
+        "committed_effect_calls": 317,
+        "selected_terminal": 29,
+        "cases": 66,
+        "attempts": 116
+      },
+      "D0P0R1": {
+        "content_correct": 50,
+        "cardinality_correct": 49,
+        "acknowledged": 66,
+        "decision_continuity": 50,
+        "planning_invocations": 100,
+        "committed_effect_calls": 275,
+        "selected_terminal": 41,
+        "cases": 66,
+        "attempts": 116
+      },
+      "D0P1R0": {
+        "content_correct": 66,
+        "cardinality_correct": 37,
+        "acknowledged": 66,
+        "decision_continuity": 66,
+        "planning_invocations": 66,
+        "committed_effect_calls": 317,
+        "selected_terminal": 37,
+        "cases": 66,
+        "attempts": 116
+      },
+      "D0P1R1": {
+        "content_correct": 66,
+        "cardinality_correct": 49,
+        "acknowledged": 66,
+        "decision_continuity": 66,
+        "planning_invocations": 66,
+        "committed_effect_calls": 275,
+        "selected_terminal": 49,
+        "cases": 66,
+        "attempts": 116
+      },
+      "D1P0R0": {
+        "content_correct": 42,
+        "cardinality_correct": 66,
+        "acknowledged": 66,
+        "decision_continuity": 42,
+        "planning_invocations": 112,
+        "committed_effect_calls": 317,
+        "selected_terminal": 42,
+        "cases": 66,
+        "attempts": 116
+      },
+      "D1P0R1": {
+        "content_correct": 50,
+        "cardinality_correct": 66,
+        "acknowledged": 66,
+        "decision_continuity": 50,
+        "planning_invocations": 100,
+        "committed_effect_calls": 275,
+        "selected_terminal": 50,
+        "cases": 66,
+        "attempts": 116
+      },
+      "D1P1R0": {
+        "content_correct": 66,
+        "cardinality_correct": 66,
+        "acknowledged": 66,
+        "decision_continuity": 66,
+        "planning_invocations": 66,
+        "committed_effect_calls": 317,
+        "selected_terminal": 66,
+        "cases": 66,
+        "attempts": 116
+      },
+      "D1P1R1": {
+        "content_correct": 66,
+        "cardinality_correct": 66,
+        "acknowledged": 66,
+        "decision_continuity": 66,
+        "planning_invocations": 66,
+        "committed_effect_calls": 275,
+        "selected_terminal": 66,
+        "cases": 66,
+        "attempts": 116
+      }
+    },
+    "source_selection_events": 688,
+    "returncodes": {
+      "0": 592,
+      "87": 256,
+      "74": 80
+    },
+    "barriers": {
+      "after_effects": 64,
+      "after_finalize": 32,
+      "after_first_put": 96,
+      "after_prepare": 64
+    },
+    "native_checkpoint_rows": 0
+  },
+  "native": {
+    "cases": 66,
+    "groups": {
+      "langgraph_native": {
+        "content_correct": 66,
+        "cardinality_correct": 66,
+        "acknowledged": 66,
+        "decision_continuity": 66,
+        "planning_invocations": 66,
+        "committed_effect_calls": 275,
+        "selected_terminal": 66,
+        "cases": 66,
+        "attempts": 116
+      }
+    },
+    "source_selection_events": 66,
+    "returncodes": {
+      "0": 74,
+      "87": 32,
+      "74": 10
+    },
+    "barriers": {
+      "after_effects": 8,
+      "after_finalize": 4,
+      "after_first_put": 12,
+      "after_prepare": 8
+    },
+    "native_checkpoint_rows": 260
+  },
+  "pilot": {
+    "raw_responses": 24,
+    "same_prompt_unordered_changed_pairs": 7,
+    "changed_snapshot_differences": 12,
+    "targetless_first_operation_scenarios": [
+      "preferences"
+    ]
+  },
+  "plan_binding": {
+    "cases": 36,
+    "arms": {
+      "replan_positional": {
+        "cases": 12,
+        "aliases": 2,
+        "prefix_preserved": 10
+      },
+      "replan_fresh": {
+        "cases": 12,
+        "aliases": 0,
+        "prefix_preserved": 12
+      },
+      "retained_positional": {
+        "cases": 12,
+        "aliases": 0,
+        "prefix_preserved": 12
+      }
+    }
+  },
+  "conflicts": {
+    "cases": 84,
+    "process_races": 16
+  },
+  "citations": {
+    "bibliography_entries": 36,
+    "cited_keys": 36,
+    "missing": [],
+    "uncited": [],
+    "duplicates": []
+  },
+  "source_sha256": {
+    "manuscript/main.tex": "0b5a97df2669cdc62a1dcb7475abd19deb630921d9adc10abd7b25f079012eab",
+    "manuscript/plan_binding.tex": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088",
+    "manuscript/refs.bib": "0c9af335cb78222b6782ba0a94cd3ba37b09784de3587c0afaee3bb5d58e286e",
+    "refs.bib": "0c9af335cb78222b6782ba0a94cd3ba37b09784de3587c0afaee3bb5d58e286e",
+    "study.py": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+    "results/cases.jsonl": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
+    "results/summary.json": "4d56dceb0a677f6f1bb1d67d037004bf2364080aaf9e03784cbbf5f02cb8ed5f",
+    "results/boundary_probes.json": "f3f02785a6ef5aa91f53bf87e2b604096605831013c06254e64b8f92d4d1d429",
+    "results/frozen_spec.json": "f5dac100857d093a865b10ff525aaf48fa862f8eb6125cc6771517de6d5c6306",
+    "extensions/langgraph_reference/runner.py": "3ae5ccf8103478a457aab805c0522b23f27fc4772e8e24675a30fe619997a47b",
+    "extensions/langgraph_reference/results/cases.jsonl": "d8833155d4e2433d768ba3ccc063ad5727fd9537b43288a23572c36b1902ce96",
+    "extensions/langgraph_reference/results/summary.json": "26ca4e7328f89100edbb736236bf49d1542abea9a192689bcfbbad9b7a0c0c1c",
+    "extensions/langgraph_reference/results/frozen_spec.json": "fadcabc0f51c7e80f32188f37c6e5f3061fa699ec50170433f1e210901c76182",
+    "extensions/sol_pilot/pilot.py": "c34fa3b618c23648bbdd4ed4e2a31789f4e4b49ceaf90d248263d30fccef611b",
+    "extensions/sol_pilot/registered/protocol.json": "74880b11a22860ee07deecc74aefa2f56ae4b9621a6a76bf49c76813a69dedc7",
+    "extensions/sol_pilot/registered/results.json": "c9dddb10ca5b46e9f03707b6f2a59b68feb3a8e68f49749e0b8e45a6fdce1d08",
+    "extensions/sol_pilot/registered/summary.json": "724ea18ba90b78ed2cb0f8db4b89e6e93facc90e2066c965f5a3f2902fc4de45",
+    "extensions/plan_binding/replay.py": "cc556307c186545ce4f58c3e9871b74840db9305a6646db44dd47f2c8a67e7a8",
+    "extensions/plan_binding/design_freeze.json": "e4ed851befcd1ddf183bf0a8315588df91b8faed706648fbdacb53eb0a26df22",
+    "extensions/plan_binding/results/cases.json": "5e54ceed35873b6278ada1f7c8fbbe84f80c1c0c71ac39912f6efd2fe083f237",
+    "extensions/plan_binding/results/summary.json": "9a7d545b501ba6ae3c94278a4e4d84e7279b7bf8a46294a82e32c07eb4f333d0",
+    "extensions/conflict_contracts/experiment.py": "4555c55a83b5a2c734a50592f584e54bc24955be707467755088d91b93f9660d",
+    "extensions/conflict_contracts/check.py": "f6a72ac58289024f3b60bedd865825654eba6cd7057bcae1b6c7c6d34a644eaa",
+    "extensions/conflict_contracts/results/cases.json": "4c13a6fdaa6e4fd0fd05ebf2613465e0029ba04a5d2ad990416423ee536c2b08",
+    "extensions/conflict_contracts/audit_verification.json": "b895314b6e1fd9d83b326a1b1a1b4dda619c50e7eab9900788a07787a9d04f24"
+  },
+  "late_manuscript_hash_refresh": {
+    "reviewed_utc": "2026-10-30T04:34:15.918015+00:00",
+    "scope": "Only manuscript wording changed among the previously reconciled source/data files; all previously reconciled engines and raw data hashes remain unchanged.",
+    "manuscript_sha256": {
+      "manuscript/main.tex": "0b5a97df2669cdc62a1dcb7475abd19deb630921d9adc10abd7b25f079012eab",
+      "manuscript/plan_binding.tex": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088"
+    }
+  }
+}

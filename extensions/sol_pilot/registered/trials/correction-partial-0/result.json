@@ -1,0 +1,42 @@
+{
+  "trial": "correction-partial-0",
+  "scenario": "correction",
+  "condition": "partial",
+  "repeat": 0,
+  "requested_model": "gpt-6.1-sol",
+  "prompt_sha256": "aceeb84d37b17b3ae528c171687df3589056e6fc25cc7ea1c7d3adccfe2de482",
+  "records": [
+    {
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    }
+  ],
+  "started_at_utc": "2026-10-30T04:19:49Z",
+  "returncode": 0,
+  "wall_seconds": 5.796,
+  "public_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 17836,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 36,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "tool_events": [],
+  "response_sha256": "169c7061913cf3916b67756d44583dda7b9e7a19bf2d790cf2b2ddf94fcc511d",
+  "schema_valid": true,
+  "operations": [
+    {
+      "kind": "put",
+      "target": null,
+      "key": "reply_style",
+      "value": "Prefers concise replies."
+    }
+  ],
+  "normalized_operations_sha256": "57b721987a7940096b9674d2b3c93002e4faf22d214d725317bfdf978557218b"
+}

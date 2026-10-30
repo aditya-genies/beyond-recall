@@ -1,0 +1,269 @@
+{
+  "review_date": "2026-10-29",
+  "scope": "Final citation-claim review against the archived public primary texts, verified bibliographic records and prior claim maps. No expanded search and no manuscript edits.",
+  "manuscript": {
+    "path": "manuscript/main.tex",
+    "sha256": "6f0cd51706f7178497ec16293804b04ee9a26459c431206d952c647b8d43f390"
+  },
+  "bibliography_sha256": "b06d7c750b24c3318ed5ea965c3f645307cdfa052268f54e5031aa0c5e7cc393",
+  "source_counts": {
+    "research_papers": 30,
+    "implemented_runtime_docs": 2,
+    "total": 32
+  },
+  "cited_sources": 32,
+  "orphan_keys": [],
+  "duplicate_bibtex_keys": [],
+  "uncited_selected_sources": [],
+  "root_and_manuscript_bibliographies_identical": true,
+  "all_32_primary_source_hashes_match": true,
+  "catalog_and_manifest_agree_with_bibliography": true,
+  "memora_status": "integrated",
+  "self_publications_added_without_substantive_relation": false,
+  "unused_vendor_documentation_in_manuscript": false,
+  "required_source_accuracy_corrections": [],
+  "group_reviews": [
+    {
+      "group": "Memory architecture and semantic evaluation",
+      "keys": [
+        "packer2023memgpt",
+        "zhong2023memorybank",
+        "chhikara2025mem",
+        "xu2025amem",
+        "rasmussen2025zep",
+        "latimer2025hindsight",
+        "li2025memos",
+        "maharana2024evaluating",
+        "wu2024longmemeval",
+        "hu2025evaluating",
+        "chen2025halumem",
+        "qing2026utilmem"
+      ],
+      "verdict": "supported",
+      "reason": "Descriptions remain conceptual context; no improvement, implementation or direct-baseline claim is attributed to these papers."
+    },
+    {
+      "group": "Lifecycle evaluation including Memora",
+      "keys": [
+        "zhou2026timlmembench",
+        "bilgin2026capture",
+        "uddin2026memora"
+      ],
+      "verdict": "supported",
+      "reason": "The memory-use/mutation descriptions and positive complementarity are supported. Memora\u2019s FAMA is described at the response-validity level; its model/agent scope and results are not attributed to this study."
+    },
+    {
+      "group": "RPC, logged recovery and receipt reclamation",
+      "keys": [
+        "birrell1984implementing",
+        "lee2015implementing",
+        "zhang2020fault",
+        "mohan1992aries"
+      ],
+      "verdict": "supported",
+      "reason": "Uncertain RPC outcomes, atomic RIFL completion/mutation premises, acknowledged/client-valid reclamation, Beldi API/storage assumptions and database-level ARIES recovery remain distinct from this application\u2019s separate commits."
+    },
+    {
+      "group": "Compensation and agent transactions",
+      "keys": [
+        "garciamolina1987sagas",
+        "chang2025sagallm",
+        "mohammadi2026atomix",
+        "sun2026agentic"
+      ],
+      "verdict": "supported",
+      "reason": "The text credits established transaction/compensation principles, avoids false equivalence with exact rollback and makes no empirical superiority or universal ACID claim."
+    },
+    {
+      "group": "Recovery faults and bounded conformance",
+      "keys": [
+        "zheng2026acrfence",
+        "li2026where",
+        "marla2026permission",
+        "alvaro2015lineage"
+      ],
+      "verdict": "supported",
+      "reason": "ACRFence\u2019s mitigation remains explicitly proposed/unimplemented; LIMBO overlap is explicit; matched conformance and unresolved outcomes are prior art; no MOLLY completeness claim is imported."
+    },
+    {
+      "group": "Adversarial contents",
+      "keys": [
+        "chen2024agentpoison",
+        "dong2025memory"
+      ],
+      "verdict": "supported",
+      "reason": "Insertion/embedder and shared-memory/retrieval qualifications are visible, with no poisoning-defense or universal security claim."
+    },
+    {
+      "group": "Implemented runtime and assistance references",
+      "keys": [
+        "sqlite2026atomiccommit",
+        "python2026osexit",
+        "song2026paperorchestra"
+      ],
+      "verdict": "supported",
+      "reason": "SQLite local transaction premises are distinguished from cross-file application atomicity; os._exit documentation supports process termination without normal cleanup; no power-loss test or compiler-certification claim is inferred. Workflow citation is in the assistance disclosure."
+    }
+  ],
+  "citation_placements": [
+    {
+      "line": 29,
+      "keys": [
+        "packer2023memgpt",
+        "zhong2023memorybank",
+        "chhikara2025mem"
+      ],
+      "paragraph": "Long-term memory lets an agent carry information from one interaction into another. Systems that retain conversational facts, revise stored knowledge, or organize experiences make memory an evolving state rather than a fixed retrieval corpus \\cite{packer2023memgpt,zhong2023memorybank,chhikara2025mem}. An update to that state also has an execution history: a decision is chosen, records are written or deleted, and completion is reported. An interruption can separate those events, while a repeated delivery can execute part of the history again."
+    },
+    {
+      "line": 33,
+      "keys": [
+        "lee2015implementing",
+        "zhang2020fault",
+        "li2026where",
+        "marla2026permission",
+        "zhou2026timlmembench",
+        "bilgin2026capture"
+      ],
+      "paragraph": "Neither the recovery mechanisms nor the need to evaluate more than recall is new. RIFL separates request identity, completion records, retry routing, and safe reclamation; Beldi uses logged replay for stateful serverless workflows \\cite{lee2015implementing,zhang2020fault}. LIMBO grades ambiguous writes against committed effects, and Permission to Retry separates recovery evidence from authority and unresolved outcomes \\cite{li2026where,marla2026permission}. TimlMemBench and prospective-memory evaluation already examine lifecycle and governed-use failures that factual answering can conceal \\cite{zhou2026timlmembench,bilgin2026capture}. These predecessors motivate a narrower empirical question: what distinctions become visible when stable effect addresses, retained decisions, and terminal receipts are varied independently under the same memory-mutation contract?"
+    },
+    {
+      "line": 43,
+      "keys": [
+        "packer2023memgpt",
+        "zhong2023memorybank",
+        "chhikara2025mem",
+        "xu2025amem",
+        "rasmussen2025zep",
+        "latimer2025hindsight",
+        "li2025memos"
+      ],
+      "paragraph": "Memory architectures establish several ways to retain and revise information across interactions. MemGPT manages memory tiers, MemoryBank combines persistent memory with updating and forgetting, and Mem0 provides conversational extraction and consolidation \\cite{packer2023memgpt,zhong2023memorybank,chhikara2025mem}. A-MEM, Zep, Hindsight, and MemOS explore linked, temporal, retention-oriented, or operating-system abstractions for agent memory \\cite{xu2025amem,rasmussen2025zep,latimer2025hindsight,li2025memos}. These works make memory management and mutation existing research subjects. Our operation tape controls the selected mutations so that recovery behavior can be examined independently of the quality of the representation or selection policy."
+    },
+    {
+      "line": 45,
+      "keys": [
+        "maharana2024evaluating",
+        "wu2024longmemeval",
+        "hu2025evaluating",
+        "chen2025halumem",
+        "qing2026utilmem"
+      ],
+      "paragraph": "Content and use benchmarks address capabilities that this control deliberately removes. LoCoMo and LongMemEval evaluate long-term conversational memory, including reasoning over prior interactions and changing information \\cite{maharana2024evaluating,wu2024longmemeval}. MemoryAgentBench examines memory through incremental interactions; HaluMem studies hallucinations across memory operations; UTILMEM evaluates utilization of distributed and noisy evidence \\cite{hu2025evaluating,chen2025halumem,qing2026utilmem}. Exact synthetic facts do not substitute for those semantic evaluations. In particular, a correct terminal fact set in the present artifact is not a measurement of question-answering accuracy or retrieval recall."
+    },
+    {
+      "line": 47,
+      "keys": [
+        "zhou2026timlmembench",
+        "bilgin2026capture",
+        "uddin2026memora"
+      ],
+      "paragraph": "Lifecycle and governed-use evaluations are closer to the motivation. TimlMemBench separates a canonical-pool question-answering control from raw-session ingestion and cases involving revocation, supersession, scope, provenance, boundaries, activation, and restraint \\cite{zhou2026timlmembench}. \\emph{Capture Is Easy, Forgetting Is Hard} evaluates standing constraints with distinct release authorities and an explicit-operation alternative to replacing the whole pin board \\cite{bilgin2026capture}. Memora evaluates conversational memory consolidation and mutation, using FAMA to penalize obsolete information in responses \\cite{uddin2026memora}. Our standalone factorial study measures execution mechanisms and physical effects under controlled faults, complementing that semantic-validity question. Thus, evaluation beyond recall and the importance of correct forgetting are prior work. The present specification instead varies execution mechanisms underneath a controlled mutation policy; it does not introduce a population-level conversational benchmark or demonstrate better semantic memory management."
+    },
+    {
+      "line": 50,
+      "keys": [
+        "birrell1984implementing",
+        "lee2015implementing"
+      ],
+      "paragraph": "Distributed execution already distinguishes successful return from uncertain failure. Birrell and Nelson's RPC semantics leave the caller uncertain after a failure even though a successful return establishes execution \\cite{birrell1984implementing}. RIFL combines unique request identifiers, durable completion results, retry rendezvous, and reclamation that respects acknowledgements and client validity \\cite{lee2015implementing}. Crucially, its completion metadata must be atomic with the mutations it describes. Separate commits to an effect ledger and a receipt store do not inherit that guarantee. These foundations make identity, retained results, and recognition lifetime necessary parts of the experimental contract rather than new primitives introduced here."
+    },
+    {
+      "line": 52,
+      "keys": [
+        "zhang2020fault",
+        "mohan1992aries"
+      ],
+      "paragraph": "Beldi provides a close predecessor for retaining nondeterministic results and replaying completed work under its API and storage assumptions \\cite{zhang2020fault}. ARIES supplies database-level write-ahead recovery and recorded redo/undo \\cite{mohan1992aries}. Persisting chosen operation arguments follows this established distinction between replaying recorded work and recomputing a choice. The independent artifact does not implement ARIES recovery, Beldi transactions, or a guarantee for arbitrary external services; its separate stores and declared operation semantics remain explicit boundaries."
+    },
+    {
+      "line": 54,
+      "keys": [
+        "garciamolina1987sagas",
+        "chang2025sagallm",
+        "mohammadi2026atomix",
+        "sun2026agentic"
+      ],
+      "paragraph": "Compensation and effect settlement also have established semantics. Classical sagas repair partially completed long activities through compensating transactions, with application-level compensation distinct from restoring an exact earlier state \\cite{garciamolina1987sagas}. SagaLLM applies persistent context, validation, and compensation to agent planning; Atomix separates tool execution from settlement using effect classes and resource progress; Agentic Transaction considers semantic transaction properties, including memory \\cite{chang2025sagallm,mohammadi2026atomix,sun2026agentic}. These approaches are conceptual predecessors, not experimentally defeated baselines. A terminal state check in the present study establishes neither transactional isolation nor atomic visibility across stores, and a compensated or repeated operation remains part of its execution history."
+    },
+    {
+      "line": 57,
+      "keys": [
+        "zheng2026acrfence",
+        "li2026where",
+        "marla2026permission"
+      ],
+      "paragraph": "Agent-specific recovery work already studies divergence and uncertain effects. ACRFence validates post-restoration action replay and authority resurrection, while proposing an effect-log analyzer with replay-or-fork semantics that was not implemented in that evaluation \\cite{zheng2026acrfence}. LIMBO supplies deterministic service contracts and effect-ledger grading across models and harnesses, explicitly including ambiguous writes, late commits, redelivery, and partial batches \\cite{li2026where}. Permission to Retry evaluates authored policies on native persistence hosts and distinguishes retained observations, authority, completed work, and unresolved obligations \\cite{marla2026permission}. These works precede the general fault families and much of the conformance methodology used to motivate the independent artifact."
+    },
+    {
+      "line": 59,
+      "keys": [
+        "alvaro2015lineage"
+      ],
+      "paragraph": "Systematic fault selection also has a substantial foundation. Lineage-driven fault injection reasons from successful outcomes to candidate failures under an explicit bounded system model \\cite{alvaro2015lineage}. The manually authored histories here do not implement that search or establish exhaustive coverage, even within a bounded state space. Their purpose is to expose selected interactions among address stability, decision retention, and receipts while holding the surrounding frontend fixed. Receipt removal and an intervening write are boundary questions, not grounds for a universal exactly-once claim. Likewise, committed put/delete counts are separate observations from final state and should not be interpreted as automatically invalid whenever they exceed the count of distinct desired facts."
+    },
+    {
+      "line": 62,
+      "keys": [
+        "chen2024agentpoison",
+        "dong2025memory"
+      ],
+      "paragraph": "Execution correctness is complementary to the trustworthiness of stored information. AgentPoison studies poisoned memory or knowledge demonstrations under insertion and embedder assumptions; MINJA induces malicious records through query-only interaction under its retrieval and shared-memory setting \\cite{chen2024agentpoison,dong2025memory}. Neither threat is resolved merely by replaying a chosen decision faithfully. The present synthetic frontend defines operational eligibility and controlled decision variation. It does not establish that accepted contents are benign, isolate users against an attacker, evaluate either poisoning attack, or provide a defense against them."
+    },
+    {
+      "line": 110,
+      "keys": [
+        "sqlite2026atomiccommit"
+      ],
+      "paragraph": "A put and its audit insertion commit together inside the effect-store connection; a delete and its audit insertion do likewise. Preparation commits a retained decision in the coordinator, and receipt finalization commits there separately. A reset first commits the new coordinator generation and then performs its effect-store deletion; cleanup is another effect-store transaction. No transaction spans both files, and no store is attached to the other to create a shared commit. The implementation sets \\texttt{synchronous=FULL} and \\texttt{journal\\_mode=DELETE}. These settings and SQLite's documented atomic-commit machinery define local storage behavior; they do not make separately committed application actions atomic across files \\cite{sqlite2026atomiccommit}."
+    },
+    {
+      "line": 131,
+      "keys": [
+        "zhang2020fault"
+      ],
+      "paragraph": "Receipt and retained-decision hits bypass the source query, while the query implementation itself is shared by all variants. A process exit before P1's decision commit leaves no durably chosen plan to reuse. The main preparation histories place their barrier after the optional save; an additional before-store probe tests the earlier boundary. Retaining a selected decision follows established logged-replay ideas \\cite{zhang2020fault}; the study varies that mechanism without attributing database-level recovery or an external atomic-settlement guarantee to it."
+    },
+    {
+      "line": 134,
+      "keys": [
+        "python2026osexit"
+      ],
+      "paragraph": "The harness controls fault timing but executes actual process termination. The child emits a flushed barrier witness and calls \\texttt{os.\\_exit(87)} after preparation, the first put, all effects, or finalization. Python documents this primitive as exiting without normal cleanup handlers or standard-I/O flushing \\cite{python2026osexit}. A fresh process then retries against retained files. The barrier is deliberately after the relevant commit has returned: the campaign does not interrupt a SQLite commit, simulate machine power loss, or test a distributed storage failure."
+    },
+    {
+      "line": 241,
+      "keys": [
+        "lee2015implementing",
+        "zhang2020fault",
+        "mohan1992aries",
+        "zhou2026timlmembench",
+        "li2026where"
+      ],
+      "paragraph": "The contribution is an explicit artifact and finite mechanism analysis built on existing recovery ideas. Unique identities, logged choices, completion evidence, and reclamation already have substantial foundations in RIFL, Beldi, and transaction research \\cite{lee2015implementing,zhang2020fault,mohan1992aries}. Governed memory evaluation and effect-side fault grading are also established \\cite{zhou2026timlmembench,li2026where}. The present experiment contributes a controlled three-factor decomposition, separate state/decision/work observations, source-visible negative probes, and checked computational evidence. It does not compare empirical performance against those systems or present a new recovery primitive."
+    },
+    {
+      "line": 291,
+      "keys": [
+        "sqlite2026atomiccommit"
+      ],
+      "paragraph": "Coverage comprises the declared policy/profile/history product after the two delete exclusions. All final rows, including failures, are retained; probes and reproductions remain separate. Named barriers test recovery between commits under the documented SQLite assumptions \\cite{sqlite2026atomiccommit}."
+    },
+    {
+      "line": 294,
+      "keys": [
+        "song2026paperorchestra"
+      ],
+      "paragraph": "PaperOrchestra organized the outline, literature review, figures, manuscript drafting, and structural checks \\cite{song2026paperorchestra}. AI assistance also supported the standalone experiment, targeted tests, evidence audits, and prose synthesis. Numerical figures derive from frozen raw data checked against the databases and process witnesses. Public-source verification and authoring records accompany the artifact. The author is responsible for the interpretation and release decisions."
+    }
+  ],
+  "coverage_conclusion": "The selection is substantively connected to memory framing, execution/recovery foundations, conformance methodology, security exclusions and implemented runtime primitives. Some architecture citations provide context rather than experimental comparators. This is focused coverage, not a claim to exhaust all academic literature or prove publication impact.",
+  "novelty_conclusion": "The manuscript credits existing mechanisms and much testing methodology. It presents the standalone factorial artifact and finite measured distinctions as its contribution, without promising a new recovery algorithm, broad semantic memory capability, universal exactly-once safety or academic impact.",
+  "availability_note": "The private repository URL is explicitly described as private; it does not assert public access.",
+  "metadata_updates": [
+    "literature/selected_primary_manifest.json",
+    "literature/selected_manuscript_sources.json",
+    "literature/selected/memora_metadata.json",
+    "literature/academic_claim_map.json"
+  ]
+}

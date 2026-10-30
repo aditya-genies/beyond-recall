@@ -1,0 +1,84 @@
+{
+  "case": "schedule_delete_A0-B0-B1-A1",
+  "mode": "value_cas",
+  "kind": "schedule",
+  "observations": [
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "applied",
+        "changed": true
+      }
+    },
+    {
+      "operation": {
+        "opid": "B",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "value_conflict",
+        "changed": false
+      }
+    },
+    {
+      "operation": {
+        "opid": "B",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "value_conflict",
+        "changed": false
+      }
+    },
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "value_conflict",
+        "changed": false
+      }
+    }
+  ],
+  "snapshot": {
+    "value": null,
+    "version": 1,
+    "effects": [
+      {
+        "serial": 1,
+        "opid": "A",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+        "before_value": "imperial",
+        "before_version": 0,
+        "after_value": null,
+        "after_version": 1
+      }
+    ],
+    "receipts": 0
+  },
+  "metadata": {
+    "order": [
+      "A0",
+      "B0",
+      "B1",
+      "A1"
+    ],
+    "verb": "delete"
+  }
+}

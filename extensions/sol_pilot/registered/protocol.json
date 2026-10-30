@@ -1,0 +1,145 @@
+{
+  "protocol_version": 1,
+  "requested_model": "gpt-6.1-sol",
+  "prepared_at_utc": "2026-10-30T04:19:21Z",
+  "design": "6 synthetic scenarios x 2 snapshot conditions x 2 fresh-context repeats = 24 planned requests",
+  "conditions": [
+    "original snapshot",
+    "snapshot after first operation from original repeat 0"
+  ],
+  "partial_rule": "Apply first valid operation of original repeat 0; new records get deterministic pilot-only id. Use identical altered snapshot for both repeats. If baseline repeat 0 fails, record both partial trials as not runnable; do not replace the baseline.",
+  "primary_observations": [
+    "exact normalized operation-list variation between identical-prompt repeats",
+    "exact normalized operation-list variation between original repeat 0 and each altered-snapshot repeat",
+    "schema validity",
+    "attempted tool events"
+  ],
+  "normalization": "JSON key order/formatting ignored; ordered operations and literal string/target arguments retained. Unordered lists also compared as secondary observation. No semantic equivalence or accuracy inference.",
+  "exclusions": "No failed request is discarded. No temperature, seed, exact backend snapshot or hidden system prompt control. No population drift-rate or model-quality estimate. All calls run through the Codex harness.",
+  "reasoning_effort": "medium (requested)",
+  "timeout_seconds": 180,
+  "max_concurrent_requests": 3,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "operations": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "type": "string",
+              "enum": [
+                "put",
+                "delete"
+              ]
+            },
+            "target": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "key": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "value": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "kind",
+            "target",
+            "key",
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "operations"
+    ],
+    "additionalProperties": false
+  },
+  "instruction": "You maintain a small personal memory store. From the conversation and current records below, choose the memory mutations that you judge appropriate now. Do not use tools, read files, or discuss this task. Return only a JSON object with an operations array. Each operation has exactly four fields: kind (put or delete), target (an existing record id or null for a new record), key (a short fact name, or null for delete), and value (a string, or null for delete). Prefer updating an existing record when it represents the same fact. You may omit facts that are already represented adequately. Do not invent personal facts. The records are synthetic.\n",
+  "scenarios": [
+    {
+      "id": "preferences",
+      "records": [],
+      "conversation": "Please remember that I prefer concise replies, metric units, and cycling as my favorite hobby.",
+      "original_prompt_sha256": "958e8ac70380e8e8daf53759306a2a310ccd91694f13e92333f612b8d37cbd73"
+    },
+    {
+      "id": "correction",
+      "records": [
+        {
+          "id": "unit-record",
+          "key": "units",
+          "value": "imperial"
+        }
+      ],
+      "conversation": "I now prefer metric units instead of imperial. I also prefer concise replies.",
+      "original_prompt_sha256": "ba75c172f486e4a376d178695ba25e02d4151bba3a4781471f5a4509829f7153"
+    },
+    {
+      "id": "retirement",
+      "records": [
+        {
+          "id": "diet-record",
+          "key": "diet",
+          "value": "vegetarian"
+        }
+      ],
+      "conversation": "Please forget the stored claim that I am vegetarian. Remember that I enjoy cycling.",
+      "original_prompt_sha256": "85236b7f1f405b14b08ef9345af8ce05738cba7eceb6e7a880c73a16c504cf70"
+    },
+    {
+      "id": "mixed",
+      "records": [
+        {
+          "id": "unit-record",
+          "key": "units",
+          "value": "imperial"
+        },
+        {
+          "id": "diet-record",
+          "key": "diet",
+          "value": "vegetarian"
+        }
+      ],
+      "conversation": "I now use metric units. Forget the vegetarian claim. Please remember that I prefer concise replies.",
+      "original_prompt_sha256": "8374b0716ac78009ddc3b4befa8c293d0703cb3f78095d1901af68f3f4169bc4"
+    },
+    {
+      "id": "temporal_correction",
+      "records": [
+        {
+          "id": "city-record",
+          "key": "city",
+          "value": "Oslo"
+        }
+      ],
+      "conversation": "I moved from Oslo to Lisbon last month. Lisbon is my current home. Please remember that I like walking.",
+      "original_prompt_sha256": "c763841660f313c018003301b0503ea0c5981f0d27e629c6c477c5691cad629a"
+    },
+    {
+      "id": "conditional_preference",
+      "records": [
+        {
+          "id": "style-record",
+          "key": "reply_style",
+          "value": "detailed"
+        }
+      ],
+      "conversation": "For routine questions I prefer concise answers; for mathematical proofs I still want details. Please remember this distinction and that I prefer metric units.",
+      "original_prompt_sha256": "776b95caa24f39dd6cb2aeddd9b3e657aea4436f2b547d6b20d6a486715de915"
+    }
+  ]
+}

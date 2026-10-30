@@ -1,0 +1,59 @@
+{
+  "case": "own_committed_reply_lost",
+  "mode": "upsert",
+  "kind": "witness",
+  "observations": [
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": "metric",
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "applied",
+        "changed": true
+      }
+    },
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": "metric",
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "applied",
+        "changed": true
+      }
+    }
+  ],
+  "snapshot": {
+    "value": "metric",
+    "version": 2,
+    "effects": [
+      {
+        "serial": 1,
+        "opid": "A",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+        "before_value": "imperial",
+        "before_version": 0,
+        "after_value": "metric",
+        "after_version": 1
+      },
+      {
+        "serial": 2,
+        "opid": "A",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+        "before_value": "metric",
+        "before_version": 1,
+        "after_value": "metric",
+        "after_version": 2
+      }
+    ],
+    "receipts": 0
+  },
+  "metadata": {}
+}

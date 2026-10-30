@@ -1,0 +1,1 @@
+Historical v1 checks for the original 16-page manuscript and private repository. They do not audit the revised manuscript. In particular the original visual QA missed the Figure 2 overlap; that acceptance is superseded by the review-revision figure and PDF checks. Original experimental results remain frozen. Do not read historical checks as current publication readiness.

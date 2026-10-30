@@ -1,0 +1,56 @@
+{
+  "case": "race_delete_same_identity",
+  "mode": "version_cas",
+  "kind": "process_race",
+  "observations": [
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "changed": false,
+        "status": "version_conflict"
+      },
+      "returncode": 0
+    },
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": null,
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "changed": true,
+        "status": "applied"
+      },
+      "returncode": 0
+    }
+  ],
+  "snapshot": {
+    "value": null,
+    "version": 1,
+    "effects": [
+      {
+        "serial": 1,
+        "opid": "A",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+        "before_value": "imperial",
+        "before_version": 0,
+        "after_value": null,
+        "after_version": 1
+      }
+    ],
+    "receipts": 0
+  },
+  "metadata": {
+    "same_identity": true,
+    "verb": "delete",
+    "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "reason": "All original study source and primary result files are byte-identical before and after figure regeneration.",
+  "sha256": {
+    "study.py": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+    "results/cases.jsonl": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
+    "results/summary.json": "4d56dceb0a677f6f1bb1d67d037004bf2364080aaf9e03784cbbf5f02cb8ed5f",
+    "results/frozen_spec.json": "f5dac100857d093a865b10ff525aaf48fa862f8eb6125cc6771517de6d5c6306",
+    "results/boundary_probes.json": "f3f02785a6ef5aa91f53bf87e2b604096605831013c06254e64b8f92d4d1d429"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "reference": "langgraph_native",
+  "comparator": "D1P1R1",
+  "structural_cases": 66,
+  "profiles": [
+    "insert",
+    "revise",
+    "retire",
+    "mixed"
+  ],
+  "histories": [
+    "normal",
+    "redelivery_fixed",
+    "redelivery_drift",
+    "exit_after_prepare_fixed",
+    "exit_after_prepare_drift",
+    "exit_after_first_put_fixed",
+    "exit_after_first_put_drift",
+    "lost_put_reply_fixed",
+    "lost_put_reply_drift",
+    "exit_after_effects_fixed",
+    "exit_after_effects_drift",
+    "exit_after_finalize_drift",
+    "bounded_input",
+    "superseded_input",
+    "reset_before_retry",
+    "reset_during_effects",
+    "lost_delete_reply"
+  ],
+  "matched_cases": "All declared cells use the same semantic barriers; actual checkpoint-write/mid-commit faults are not tested.",
+  "source_sha256": "3ae5ccf8103478a457aab805c0522b23f27fc4772e8e24675a30fe619997a47b",
+  "original_study_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+  "graph": "START -> choose_decision -> apply_effects -> END",
+  "durability": "sync",
+  "persistence": "Native SqliteSaver; no application decision or receipt row is used",
+  "explicit_application_logic": [
+    "generation guard",
+    "source query",
+    "literal target bindings",
+    "stable effect addresses",
+    "cleanup",
+    "completed-checkpoint fast path"
+  ],
+  "versions": {
+    "langgraph": "1.2.18",
+    "langgraph-checkpoint": "4.3.1",
+    "langgraph-checkpoint-sqlite": "3.1.2",
+    "langchain-core": "1.7.3"
+  },
+  "installed_public_sources": {
+    "StateGraph": {
+      "installed_source": "lib/python3.14/site-packages/langgraph/graph/state.py",
+      "sha256": "d8c8021a93a8fc895d62335a9482e50d51353343bf885901e6487611dcd0d212"
+    },
+    "SqliteSaver": {
+      "installed_source": "lib/python3.14/site-packages/langgraph/checkpoint/sqlite/__init__.py",
+      "sha256": "13829d2b3961129e13ee3113a6674bff790181d26e5cae83c3bfabd6cca9074c"
+    }
+  },
+  "python": "3.14.3",
+  "sqlite": "3.51.2"
+}

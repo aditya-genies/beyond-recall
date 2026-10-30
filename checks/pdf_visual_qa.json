@@ -1,301 +1,314 @@
 {
   "status": "pass",
   "accepted_for_promotion": true,
-  "reviewed_at_utc": "2026-10-30T00:55:16.182302+00:00",
-  "review_scope": "Visual layout and readability review of every page of the frozen final PDF; this is not a new scientific-result verification.",
+  "reviewed_at_utc": "2026-10-30T04:34:13.787337+00:00",
+  "review_scope": "Visual layout/readability acceptance of exactly this PDF/source snapshot. Scientific review, repository privacy review and publication readiness are separate decisions.",
   "artifact": {
     "pdf": "manuscript/main.pdf",
-    "pdf_sha256": "008c115414054b12bdc1df6c6248ae5d8cbfd48a4e2857dd50cecda05303bb49",
-    "pdf_bytes": 681639,
+    "pdf_sha256": "6c8979aef737a914c16d7d4c8058ae309e1feb927b23f7440e9bad76a84fb658",
+    "pdf_bytes": 670825,
     "source": "manuscript/main.tex",
-    "source_sha256": "6f0cd51706f7178497ec16293804b04ee9a26459c431206d952c647b8d43f390",
-    "pages": 16,
-    "main_pages": 12,
+    "source_sha256": "0b5a97df2669cdc62a1dcb7475abd19deb630921d9adc10abd7b25f079012eab",
+    "plan_binding_source": "manuscript/plan_binding.tex",
+    "plan_binding_source_sha256": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088",
+    "bibliography": "manuscript/refs.bib",
+    "bibliography_sha256": "0c9af335cb78222b6782ba0a94cd3ba37b09784de3587c0afaee3bb5d58e286e",
+    "pages": 13,
+    "main_pages": 9,
     "reference_pages": 3,
     "appendix_pages": 1
   },
   "rendering": {
+    "snapshot": "revisions/review1/pdf_qa_final/reviewed.pdf",
     "tool": "pdftoppm",
     "arguments": "-scale-to 1600 -png",
-    "page_prefix": "worklog/pdf_qa/page",
     "all_pages_rendered": true,
-    "all_pages_visually_inspected": true,
-    "final_build_manifest_authoritative": true,
-    "obsolete_preliminary_files_are_not_evidence_for_this_review": true
+    "poppler_returncode": 0,
+    "poppler_stderr_empty": true,
+    "page_prefix": "revisions/review1/pdf_qa_final/page",
+    "previous_frozen_snapshot": "revisions/review1/pdf_qa_native_clarification/reviewed.pdf",
+    "pixel_identical_previously_inspected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      12,
+      13
+    ],
+    "current_changed_pages_individually_viewed": [
+      8,
+      9
+    ]
   },
   "acceptance_checks": {
-    "title_and_supplied_author_identity": "pass",
+    "revised_title_and_supplied_author_identity": "pass",
     "author_background_footnote": "pass",
     "all_three_figures_legible": "pass",
     "both_tables_legible": "pass",
     "equations_and_algorithm_legible": "pass",
     "references_and_urls_fit": "pass",
     "appendix_complete_on_one_page": "pass",
-    "private_availability_qualification_present": "pass",
-    "companion_hyperlink_destination": "pass",
+    "public_companion_link_correct": "pass",
     "no_visible_clipping": "pass",
     "no_visible_overlap": "pass",
     "no_visible_missing_glyphs_or_unresolved_citations": "pass",
-    "no_blocking_defects": "pass",
+    "no_blocking_visual_defects": "pass",
     "manuscript_modified_by_visual_reviewer": false
+  },
+  "figure_2": {
+    "page": 5,
+    "actual_final_page_pixels_reviewed": true,
+    "corrected_png_sha256": "9142594b7ea8ee64eb389e4863b74623a94a7c9e34b0ecd3e466f4ac763932f6",
+    "legend_value_non_overlap": "pass",
+    "legend_axes_non_overlap": "pass",
+    "xlabel_footer_non_overlap": "pass",
+    "standalone_renderer_bbox_report": "figures/factorial_spacing_check.json",
+    "critical_standalone_300dpi_gaps_px": {
+      "panel_b_legend_to_nearest_value": 54.715,
+      "panel_b_legend_to_axes": 35.053,
+      "xlabel_to_first_footer": 61.294
+    },
+    "prior_spacing_acceptance_superseded": true
   },
   "companion_links": [
     {
-      "page": 16,
-      "uri": "https://github.com/aditya-genies/beyond-recall"
-    },
-    {
-      "page": 16,
+      "page": 13,
       "uri": "https://github.com/aditya-genies/beyond-recall"
     }
   ],
   "build_warning_review": {
     "matching_warning_lines": [],
-    "no_overfull_underfull_or_undefined_warnings": true
+    "ignored_package_metadata": "The infwarerr package description mentions warning/error messages; this is not a compilation warning."
   },
-  "readability_assessment": "The manuscript is technically dense but its explicit contracts, research questions, algorithm steps, concrete failure walkthroughs, paired factor contrasts, and limits make the argument assessable. The writing is consistent and professional; the review does not assert similarity of findings or impact to any reference paper.",
+  "readability_assessment": "The revised manuscript is shorter and more direct, with an opening concrete example, separate observations and explicit controls. The native and recorded-plan extensions fit with readable scientific qualifications. All measured figure labels, values, legends and footer bands are visibly separated in the actual PDF.",
   "nonblocking_observations": [
     {
-      "page": 6,
-      "issue": "Architecture float splits the numbered recovery procedure between steps 4 and 5.",
-      "disposition": "Readable continuation; no manuscript change required."
+      "pages": [
+        4,
+        5,
+        6
+      ],
+      "issue": "A factor-contrast paragraph continues after a table/figure float page and the history-matrix float.",
+      "disposition": "No missing or overlapping text; acceptable float flow."
     },
     {
-      "page": 15,
-      "issue": "Two bibliography entries occupy the final reference page.",
-      "disposition": "Accepted 16-page extent; no font reduction or content cut required."
+      "pages": [
+        8,
+        9
+      ],
+      "issue": "The prose explanation of the final conflict equation continues at the next page.",
+      "disposition": "Readable continuation with no clipping; no layout change required."
     }
   ],
   "pages": [
     {
       "page": 1,
       "section": "main",
-      "image": "worklog/pdf_qa/page-01.png",
-      "image_sha256": "da9b04bbcd3e75821db5be3718de3f82512be00348a98408c475fbdf8c0344a0",
+      "image": "revisions/review1/pdf_qa_final/page-01.png",
+      "image_sha256": "0be7ce3fc0a95f1e70b4abb76b511cd32dbda40d368e07a72866de1cf4fd5b67",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Title, sole author Aditya Mantri, Independent Researcher line, supplied background footnote, abstract and introduction are readable and correctly placed."
+      "visually_inspected": true,
+      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
+      "notes": "Accurate revised title; supplied author/background footnote; abstract/introduction readable."
     },
     {
       "page": 2,
       "section": "main",
-      "image": "worklog/pdf_qa/page-02.png",
-      "image_sha256": "e168b1a61dc16b4ea2d06d964e573f7e53b0351b901223de6c6fd5255ea949f5",
+      "image": "revisions/review1/pdf_qa_final/page-02.png",
+      "image_sha256": "c73fd22ffd1ff7f46d845d3802e3712d771a5a8175f65e12751d5451df984702",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Introduction continuation and related work are readable; citations and paragraph spacing are clean."
+      "visually_inspected": true,
+      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
+      "notes": "Related work and initial definitions readable; no overflow."
     },
     {
       "page": 3,
       "section": "main",
-      "image": "worklog/pdf_qa/page-03.png",
-      "image_sha256": "2cd7b206d9e615447acbe47f88dda91d55a8c8fb32cb6f21f40b1b37d976715e",
+      "image": "revisions/review1/pdf_qa_final/page-03.png",
+      "image_sha256": "d085f6dbb3abc98919f20416609bbc5f0c831aaa7ebf821fb99cac0f715c1827",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Recovery and fault-history related work and contract opening are readable; no clipped text or equation."
+      "visually_inspected": true,
+      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
+      "notes": "Contract equations and six-step algorithm readable; no overlapping floats."
     },
     {
       "page": 4,
       "section": "main",
-      "image": "worklog/pdf_qa/page-04.png",
-      "image_sha256": "13ce866817f2e0b14665538116dcb652444fb7af5b56b8beeee2288e5a9bcfa7",
+      "image": "revisions/review1/pdf_qa_final/page-04.png",
+      "image_sha256": "e82fff2e06313aa04650271f463d21be4521dd70d6bc0d899db3055f0015e5ea",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Decision notation, displayed contracts, and D/P/R definitions fit within margins."
+      "visually_inspected": true,
+      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
+      "notes": "Architecture and caption readable; primary results begin cleanly."
     },
     {
       "page": 5,
       "section": "main",
-      "image": "worklog/pdf_qa/page-05.png",
-      "image_sha256": "7b20a01312a32d55753d65ec5679fd446de4bffe7b207b30be009c344feafa3a",
+      "image": "revisions/review1/pdf_qa_final/page-05.png",
+      "image_sha256": "48ba9b6aa81eaf599c509aee8b5f850bc684cf929d70e2ec60ba6fd4a7a47568",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Continuity definition and implementation/commit-boundary discussion are readable. Algorithm steps 1–4 continue on page 6."
+      "visually_inspected": true,
+      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
+      "notes": "Primary table and corrected Figure 2 are legible. Panel-b legend is visibly separated from 317 labels and plotting area; policy xlabel is visibly separated from both footer lines."
     },
     {
       "page": 6,
       "section": "main",
-      "image": "worklog/pdf_qa/page-06.png",
-      "image_sha256": "278d68efdebfe3e110543368fe471868a1ce688fffd65dcca9b972da61836aec",
+      "image": "revisions/review1/pdf_qa_final/page-06.png",
+      "image_sha256": "e1f23467797fae2062898e536c3323a2fc4ce37a733be1689ca30e1396902da8",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Architecture diagram and all controlled/observed labels are readable. Caption and algorithm steps 5–6 fit. Float interrupts the procedure between steps 4 and 5; this is a minor nonblocking flow issue."
+      "visually_inspected": true,
+      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
+      "notes": "History matrix, labels, legend text and caption readable. A factor-contrast paragraph continues from page 4 after floats; nonblocking reading-flow observation."
     },
     {
       "page": 7,
       "section": "main",
-      "image": "worklog/pdf_qa/page-07.png",
-      "image_sha256": "55e17755e4a50db605d02658cd846c6fc6daa828959da064d9c8051ce633b948",
+      "image": "revisions/review1/pdf_qa_final/page-07.png",
+      "image_sha256": "617f7fa82fe39e92b12ec42e502c42f979e199d5ae4ba78278b7ae0aff844193",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Three research questions, campaign specification, and concrete case walkthrough are readable. The previously observed one-line continuation orphan is corrected in this frozen build."
+      "visually_inspected": true,
+      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
+      "notes": "Boundary table and checking/reproduction are legible. Native graph.get_state/empty-next/completed-outcome fastpath clarification and pilot setup fit."
     },
     {
       "page": 8,
       "section": "main",
-      "image": "worklog/pdf_qa/page-08.png",
-      "image_sha256": "dd4d7d1a7704df326139c3422e3cedc5269e0983817d14a4dfba6d4e879d2f2d",
+      "image": "revisions/review1/pdf_qa_final/page-08.png",
+      "image_sha256": "68fb3eaf0b7ac28f3960772489837f72c52b427ffdc6922cf477be537423bd8a",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Eight-row results table and factorial-oracle figure are sharp, well separated, and legible. Counts, policy names, axes, legend, and caption fit."
+      "visually_inspected": true,
+      "inspection_evidence": "Individually viewed current final-build PNG",
+      "notes": "Plan-binding section and focused-control wording are readable. The receipt-enabled successful-operation qualification, failed-comparison identity boundary, modeled reply loss, and conflict equation fit without clipping."
     },
     {
       "page": 9,
       "section": "main",
-      "image": "worklog/pdf_qa/page-09.png",
-      "image_sha256": "143b4b94266a0100161bc10b37051cd0b1e6ddf0216412e43eb83feec1cd6464",
+      "image": "revisions/review1/pdf_qa_final/page-09.png",
+      "image_sha256": "a353f41fc2c4819bc8179eabf5b9ad8f130ec23b88352faf399cfda71acf5c84",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Boundary-probe table and finite paired-factor contrasts are legible. Table placement is acceptable and numbers are not clipped."
+      "visually_inspected": true,
+      "inspection_evidence": "Individually viewed current final-build PNG",
+      "notes": "Continuation explaining the preceding conflict equation, retained-receipt invariant, discussion and conclusion are legible. No missing or overlapping text."
     },
     {
       "page": 10,
-      "section": "main",
-      "image": "worklog/pdf_qa/page-10.png",
-      "image_sha256": "45f7af6c6148292c587d255169474093eca680fec8ae91b61070534777a443f1",
+      "section": "references",
+      "image": "revisions/review1/pdf_qa_final/page-10.png",
+      "image_sha256": "52cfaae4eca300b4ca94e6722da3efb1b9a8e379911b92a8fa3a25a53c50c2fc",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "All 17 history labels and eight policy columns in the history matrix are legible. Boundary interpretation and negative external-write observation fit."
+      "visually_inspected": true,
+      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
+      "notes": "References 1\u201314 readable, including wrapped URLs."
     },
     {
       "page": 11,
-      "section": "main",
-      "image": "worklog/pdf_qa/page-11.png",
-      "image_sha256": "86efb0aaab47ab3bf4ffb89525f74aaf483a70e4c603edb7ebecde65b895e303",
+      "section": "references",
+      "image": "revisions/review1/pdf_qa_final/page-11.png",
+      "image_sha256": "2b082d9c3cedcc7b89faea6a890dbebe20dcb88268d684a9dd977c14b7333cc2",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Independent checking, reproduction including the Ubuntu note, and discussion are readable. Technical density is high but definitions and distinctions are explicit."
+      "visually_inspected": true,
+      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
+      "notes": "References 15\u201330 readable; documentation/source references fit."
     },
     {
       "page": 12,
-      "section": "main",
-      "image": "worklog/pdf_qa/page-12.png",
-      "image_sha256": "d5627990bc799b264c66613eb66fa503112a09de468fc19a3fa63bc922bf7fe0",
+      "section": "references",
+      "image": "revisions/review1/pdf_qa_final/page-12.png",
+      "image_sha256": "233d0e9ac51b3cd3d4921d49e82c911d185b75e2500fe7b5577ab16134da632b",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Limitations and conclusion are readable and finish without spill. White space below the conclusion is acceptable."
+      "visually_inspected": true,
+      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
+      "notes": "References 31\u201336 readable; no overflow."
     },
     {
       "page": 13,
-      "section": "references",
-      "image": "worklog/pdf_qa/page-13.png",
-      "image_sha256": "295183ec5f16ad6cc7ca5c1148adb481539f962b957d3f0f93ae0ca32e2f3565",
-      "dimensions_px": [
-        1237,
-        1600
-      ],
-      "visually_inspected": true,
-      "status": "pass",
-      "notes": "References 1–14 are readable, including wrapped URLs; no visible overflow."
-    },
-    {
-      "page": 14,
-      "section": "references",
-      "image": "worklog/pdf_qa/page-14.png",
-      "image_sha256": "d0d377f06e34ef68aff751857dccf43f6776175d1591968439db82c07466db0d",
-      "dimensions_px": [
-        1237,
-        1600
-      ],
-      "visually_inspected": true,
-      "status": "pass",
-      "notes": "References 15–30 are readable, including documentation and Memora entries; URLs remain inside margins."
-    },
-    {
-      "page": 15,
-      "section": "references",
-      "image": "worklog/pdf_qa/page-15.png",
-      "image_sha256": "062e538b2c91425832002fc10e7ee6c3c80b485ebb562e20fbc0c8fcd86b82e2",
-      "dimensions_px": [
-        1237,
-        1600
-      ],
-      "visually_inspected": true,
-      "status": "pass",
-      "notes": "References 31–32 are readable. This short final reference page is a nonblocking pagination choice accepted for this version."
-    },
-    {
-      "page": 16,
       "section": "appendix",
-      "image": "worklog/pdf_qa/page-16.png",
-      "image_sha256": "a709c3ad11b55f43f6407e278f8872af9a81ccf3e97fa09b6f361524c3a7f610",
+      "image": "revisions/review1/pdf_qa_final/page-13.png",
+      "image_sha256": "45137a6ee81b93ddfc35af18254f166cfe2f0c99436aff5da23a1d4f17be473d",
       "dimensions_px": [
         1237,
         1600
       ],
-      "visually_inspected": true,
       "status": "pass",
-      "notes": "Complete appendix fits on one page. Private companion URL, standard-library reproduction commands, source/data hashes, coverage caveats, and AI-assistance disclosure are readable."
+      "visually_inspected": true,
+      "inspection_evidence": "Exact PNG byte match to an individually pixel-inspected prior snapshot page",
+      "notes": "Public-companion link, stdlib commands, primary hash pins and AI-assistance disclosure readable; complete appendix on one page."
     }
   ],
   "montages": [
     {
-      "path": "worklog/pdf_qa/montage-01-04.png",
-      "sha256": "fd15005d408fbed1a093a405aee9f8434d0d1ac1dc99f91858da3523e8365c8c"
+      "path": "revisions/review1/pdf_qa_final/montage-01-04.png",
+      "sha256": "94ce137c1c650ed20609b0d6a27f9a34aea7de0930e16ca827ec2c770d446158"
     },
     {
-      "path": "worklog/pdf_qa/montage-05-08.png",
-      "sha256": "e154abf6c3f420ace5c989f139c949b08178b62af92d4262a595ea69766c8f18"
+      "path": "revisions/review1/pdf_qa_final/montage-05-08.png",
+      "sha256": "e3fe789709e4f438eab58bf120f437f3697cb892c88557fdad22d1f83a51b22e"
     },
     {
-      "path": "worklog/pdf_qa/montage-09-12.png",
-      "sha256": "083a6038145bfda2cb8987255f1cb05777078a9b3ecc5a4570a1d5f193af58a8"
+      "path": "revisions/review1/pdf_qa_final/montage-09-12.png",
+      "sha256": "82f618f6f4bfe32d5aed04e990ce7199ef2bcb6af5e0c45991c112e1620aedae"
     },
     {
-      "path": "worklog/pdf_qa/montage-13-16.png",
-      "sha256": "4e52350bda63bb5f5da55659c0c7a52cc889e0d8e06baf29e4920209e603a906"
+      "path": "revisions/review1/pdf_qa_final/montage-13-13.png",
+      "sha256": "3653d9db2c11bd929db77b98cb7b6a8da03986a36864f9ad8a97877315bb3539"
     }
   ],
   "final_hash_guard": {
     "pdf_unchanged_during_review": true,
-    "source_unchanged_during_review": true
+    "all_sources_unchanged_during_review": true
   }
 }

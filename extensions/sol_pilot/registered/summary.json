@@ -1,0 +1,159 @@
+{
+  "planned_requests": 24,
+  "recorded_trials": 24,
+  "valid_tool_free_successes": 24,
+  "same_prompt_pairs": 12,
+  "same_prompt_literal_variation_pairs": 7,
+  "same_prompt_unordered_variation_pairs": 7,
+  "changed_snapshot_comparisons": 12,
+  "changed_snapshot_literal_changes": 12,
+  "same_prompt_details": [
+    {
+      "scenario": "preferences",
+      "condition": "original",
+      "literal_different": false,
+      "unordered_different": false
+    },
+    {
+      "scenario": "preferences",
+      "condition": "partial",
+      "literal_different": true,
+      "unordered_different": true
+    },
+    {
+      "scenario": "correction",
+      "condition": "original",
+      "literal_different": true,
+      "unordered_different": true
+    },
+    {
+      "scenario": "correction",
+      "condition": "partial",
+      "literal_different": true,
+      "unordered_different": true
+    },
+    {
+      "scenario": "retirement",
+      "condition": "original",
+      "literal_different": false,
+      "unordered_different": false
+    },
+    {
+      "scenario": "retirement",
+      "condition": "partial",
+      "literal_different": false,
+      "unordered_different": false
+    },
+    {
+      "scenario": "mixed",
+      "condition": "original",
+      "literal_different": true,
+      "unordered_different": true
+    },
+    {
+      "scenario": "mixed",
+      "condition": "partial",
+      "literal_different": true,
+      "unordered_different": true
+    },
+    {
+      "scenario": "temporal_correction",
+      "condition": "original",
+      "literal_different": false,
+      "unordered_different": false
+    },
+    {
+      "scenario": "temporal_correction",
+      "condition": "partial",
+      "literal_different": false,
+      "unordered_different": false
+    },
+    {
+      "scenario": "conditional_preference",
+      "condition": "original",
+      "literal_different": true,
+      "unordered_different": true
+    },
+    {
+      "scenario": "conditional_preference",
+      "condition": "partial",
+      "literal_different": true,
+      "unordered_different": true
+    }
+  ],
+  "changed_snapshot_details": [
+    {
+      "scenario": "preferences",
+      "partial_repeat": 0,
+      "prompt_changed": true,
+      "literal_different": true
+    },
+    {
+      "scenario": "preferences",
+      "partial_repeat": 1,
+      "prompt_changed": true,
+      "literal_different": true
+    },
+    {
+      "scenario": "correction",
+      "partial_repeat": 0,
+      "prompt_changed": true,
+      "literal_different": true
+    },
+    {
+      "scenario": "correction",
+      "partial_repeat": 1,
+      "prompt_changed": true,
+      "literal_different": true
+    },
+    {
+      "scenario": "retirement",
+      "partial_repeat": 0,
+      "prompt_changed": true,
+      "literal_different": true
+    },
+    {
+      "scenario": "retirement",
+      "partial_repeat": 1,
+      "prompt_changed": true,
+      "literal_different": true
+    },
+    {
+      "scenario": "mixed",
+      "partial_repeat": 0,
+      "prompt_changed": true,
+      "literal_different": true
+    },
+    {
+      "scenario": "mixed",
+      "partial_repeat": 1,
+      "prompt_changed": true,
+      "literal_different": true
+    },
+    {
+      "scenario": "temporal_correction",
+      "partial_repeat": 0,
+      "prompt_changed": true,
+      "literal_different": true
+    },
+    {
+      "scenario": "temporal_correction",
+      "partial_repeat": 1,
+      "prompt_changed": true,
+      "literal_different": true
+    },
+    {
+      "scenario": "conditional_preference",
+      "partial_repeat": 0,
+      "prompt_changed": true,
+      "literal_different": true
+    },
+    {
+      "scenario": "conditional_preference",
+      "partial_repeat": 1,
+      "prompt_changed": true,
+      "literal_different": true
+    }
+  ],
+  "interpretation": "Descriptive Codex-harness observations. Literal differences do not establish semantic disagreement, error, harmful drift, or population incidence. Altered snapshots are different inputs. No inferential test is warranted."
+}

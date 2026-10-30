@@ -1,0 +1,36 @@
+{
+  "trial": "retirement-partial-1",
+  "scenario": "retirement",
+  "condition": "partial",
+  "repeat": 1,
+  "requested_model": "gpt-6.1-sol",
+  "prompt_sha256": "9703fb017c3a1360dc0573ab1787b3daa224dedd3fbaf7c621464ed7e4d17ac2",
+  "records": [],
+  "started_at_utc": "2026-10-30T04:19:55Z",
+  "returncode": 0,
+  "wall_seconds": 4.879,
+  "public_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 17817,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 40,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "tool_events": [],
+  "response_sha256": "827d6e12a3606fcd3756c7386d7491d5e68ac6c7eb7c8635ce8b203b77c5baa7",
+  "schema_valid": true,
+  "operations": [
+    {
+      "kind": "put",
+      "target": null,
+      "key": "enjoys_cycling",
+      "value": "The user enjoys cycling."
+    }
+  ],
+  "normalized_operations_sha256": "7bad9aeb9d091114876a874aa7f3ecfa584345da773690721eade241dfbfba4e"
+}

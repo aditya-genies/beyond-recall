@@ -1,0 +1,51 @@
+{
+  "role": "PaperOrchestra content-refinement robustness review with a separately authorized exploratory integration extension",
+  "anti_leakage": "Applied the supplied Universal Anti-Leakage Prompt: claims derive only from current provided source, archived responses, database observations, and logical reasoning. No outside facts or invented data were added. No manuscript content was modified.",
+  "design_status": "Posthoc after observing recorded pilot outputs; source and design frozen before SQLite execution. Not preregistered and no additional model calls.",
+  "address_control": "A shared bijective mapping binds the pilot-visible first-effect ID to the stable physical slot-0 address. Exact archived partial snapshots are required in every arm.",
+  "freeze_sha256": "e4ed851befcd1ddf183bf0a8315588df91b8faed706648fbdacb53eb0a26df22",
+  "actions_taken": [
+    "Reviewed all six original repeat-0 plans and all 12 partial responses.",
+    "Created and froze DESIGN.md, replay.py, check.py, test_replay.py and hashes of protected source/results/pilot files.",
+    "Ran three targeted negative tests with ResourceWarning treated as an error; all passed.",
+    "Executed 36 bounded SQLite integrations across three arms and all 12 archived pairs.",
+    "Reconstructed every execution with a separate checker implementation; all physical rows, bindings, audit entries, outcomes, and summary values matched.",
+    "Retained counterexample records and a robustness review that limits the claim to the declared positional-address integration."
+  ],
+  "tests": {
+    "status": "PASS",
+    "unique_tests": 3,
+    "names": [
+      "test_fresh_address_cross_key_put_preserves_completed_prefix",
+      "test_mismatched_partial_public_id_is_rejected",
+      "test_same_key_literal_value_change_is_not_structural_alias"
+    ],
+    "command": "python3 -W error::ResourceWarning -m unittest -v test_replay.py",
+    "working_directory": "extensions/plan_binding"
+  },
+  "outcome": {
+    "plan_pairs": 12,
+    "sqlite_integrations": 36,
+    "replan_positional_alias_cases": 2,
+    "replan_fresh_alias_cases": 0,
+    "retained_positional_alias_cases": 0,
+    "distinct_positive_scenarios": 1,
+    "positive_scenario": "preferences",
+    "interpretation": "Two recorded responses of the single targetless-prefix scenario produce an address alias. These are finite constructed controls, not an estimated model error rate."
+  },
+  "preservation": {
+    "primary_source_and_results_unchanged": true,
+    "registered_pilot_files_unchanged": true,
+    "manuscript_unchanged": true,
+    "visibility_or_remote_state_changed": false
+  },
+  "artifacts": [
+    "extensions/plan_binding/design_freeze.json",
+    "extensions/plan_binding/results/cases.json",
+    "extensions/plan_binding/results/summary.json",
+    "extensions/plan_binding/results/counterexamples.json",
+    "extensions/plan_binding/results/provenance.json",
+    "extensions/plan_binding/results/verification.json",
+    "extensions/plan_binding/robustness_review.md"
+  ]
+}

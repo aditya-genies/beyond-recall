@@ -1,0 +1,50 @@
+{
+  "case": "own_committed_reply_lost",
+  "mode": "value_cas",
+  "kind": "witness",
+  "observations": [
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": "metric",
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "applied",
+        "changed": true
+      }
+    },
+    {
+      "operation": {
+        "opid": "A",
+        "id": "unit",
+        "value": "metric",
+        "expected_version": 0,
+        "expected_value": "imperial"
+      },
+      "result": {
+        "status": "value_conflict",
+        "changed": false
+      }
+    }
+  ],
+  "snapshot": {
+    "value": "metric",
+    "version": 1,
+    "effects": [
+      {
+        "serial": 1,
+        "opid": "A",
+        "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+        "before_value": "imperial",
+        "before_version": 0,
+        "after_value": "metric",
+        "after_version": 1
+      }
+    ],
+    "receipts": 0
+  },
+  "metadata": {}
+}

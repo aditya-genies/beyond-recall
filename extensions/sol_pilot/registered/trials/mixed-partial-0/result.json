@@ -1,0 +1,53 @@
+{
+  "trial": "mixed-partial-0",
+  "scenario": "mixed",
+  "condition": "partial",
+  "repeat": 0,
+  "requested_model": "gpt-6.1-sol",
+  "prompt_sha256": "d930b251791a80ccb08aef81af3639c6acd9558ad6559da71db4c1f849e48479",
+  "records": [
+    {
+      "id": "diet-record",
+      "key": "diet",
+      "value": "vegetarian"
+    },
+    {
+      "id": "unit-record",
+      "key": "units",
+      "value": "metric"
+    }
+  ],
+  "started_at_utc": "2026-10-30T04:19:58Z",
+  "returncode": 0,
+  "wall_seconds": 6.494,
+  "public_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 17862,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 54,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "tool_events": [],
+  "response_sha256": "a44ed059bf1150df2e9a33467c871d322a6d5777c5b865faf778c53fb91d7398",
+  "schema_valid": true,
+  "operations": [
+    {
+      "kind": "delete",
+      "target": "diet-record",
+      "key": null,
+      "value": null
+    },
+    {
+      "kind": "put",
+      "target": null,
+      "key": "reply_preference",
+      "value": "Prefers concise replies."
+    }
+  ],
+  "normalized_operations_sha256": "21f28dfe405aeeef5eff6948c0779ed52f53ae95045118413b556a20408f1998"
+}

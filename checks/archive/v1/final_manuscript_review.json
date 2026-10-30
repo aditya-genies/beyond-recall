@@ -1,0 +1,54 @@
+{
+  "review_type": "Final independent scientific/source/evidence review; no opaque quality score",
+  "status": "PASS_NO_MATERIAL_CORRECTION_REMAINING",
+  "manuscript": "manuscript/main.tex",
+  "manuscript_sha256": "6f0cd51706f7178497ec16293804b04ee9a26459c431206d952c647b8d43f390",
+  "frozen_study_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+  "main_cases_sha256": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
+  "criteria": {
+    "formal_definitions": "PASS: C/K/T match exact fact-set, physical cardinality and final acknowledged process outcome; L is separate per-intent observed decision continuity.",
+    "factor_implementation": "PASS: D changes only targetless addresses; P retains literal ordered decisions/targets; R adds receipt fast path without changing P retention.",
+    "worker_order": "PASS: generation check precedes receipt, receipt/decision hits bypass shared source query, operations commit sequentially, post-loop reset cleanup precedes receipt finalization.",
+    "finite_denominators": "PASS: 17 histories x4 profiles minus2 delete exclusions =66/policy and528 total;928 attempts are not additional cases.",
+    "process_barriers": "PASS:256 abrupt exits and80 controlled exceptions are accurately distinguished; semantic barriers and post-commit scope are explicit.",
+    "numeric_results": "PASS: all main table values,12 conditional factor contrasts and42-operation receipt reduction match independently verified raw cases.",
+    "case_walkthrough": "PASS: all three insertion examples match actual records, chosen facts, four committed puts and reported C/K/T/L outcomes.",
+    "boundary_probes": "PASS: all five probe rows/counts match stored records and events; pre-store loss and newer-writer loss are correctly interpreted.",
+    "retention": "PASS: plans remain under both R settings; metadata removal is explicit deletion, not an unmeasured timer or reclamation guarantee.",
+    "environment_reproduction": "PASS: primary and same-host reproduction versions/counts are accurate and datasets are not pooled.",
+    "source_observation_count": "PASS:688 belongs only to main campaign; boundary observations are separately checked.",
+    "evidence_pins": "PASS: all five displayed source/raw/summary/spec/boundary SHA256 values match the archived artifacts.",
+    "publication_scope": "PASS for a candid working manuscript: concrete source-visible mechanism study with public prior art; no invented new algorithm, live-model quality, isolation, production reliability or acceptance claim.",
+    "data_availability": "PASS: authorized companion repository URL is disclosed as private, without asserting public access.",
+    "authorship_background": "PASS: supplied author is sole listed author; approved employment and prior degree appear in biography, with independent-research role and no current university affiliation asserted.",
+    "release_scope": "PASS: approved author biography and companion URL; affiliation/contact text in hash-verified public cited literature is third-party public-source content, not internal material.",
+    "ubuntu_ci_evidence": "PASS: two completed successful jobs, matching frozen participant hash, 528 rows and five probes each, all uploaded raw-row scalar metrics independently recomputed and identical to primary. Workflows use Ubuntu; precise runtime versions recorded in ci_evidence_review.json.",
+    "final_layout_only_changes": "PASS: figure paths are portable within project, content-gap shortening preserves13/9/29/17, CI supplement is evidence-backed and primary denominator remains528; formulas/mechanisms/probes unchanged."
+  },
+  "resolved_minor_wording": [
+    "Preparation is called a semantic barrier; it is not described as a persisted decision commit under P0.",
+    "Only D/R comparisons are said to hold the P retention rule fixed; P itself deliberately varies retention."
+  ],
+  "remaining_material_corrections": [],
+  "additional_experiments_required_for_current_claim": [],
+  "scientific_judgment": "The manuscript is technically concrete and internally consistent as a finite synthetic mechanism/contract study. It is suitable to circulate as a working preprint or discuss as an experience/artifact contribution. Close prior art and narrow constructed evidence still constrain novelty; this review does not predict external acceptance.",
+  "approved_companion_repository": "https://github.com/aditya-genies/beyond-recall",
+  "companion_access_status": "Private, as explicitly disclosed in the manuscript",
+  "allowed_release_exceptions": [
+    "Human-approved employment/degree biography only",
+    "Human-authorized new companion repository URL in data availability and supporting release/audit metadata"
+  ],
+  "experiments_or_source_changed_by_reviewer": false,
+  "pdf_scope": "Compilation and visual PDF QA remain separately root-owned; this pass checks scientific text, figure-data provenance and evidence.",
+  "supporting_checks": [
+    "checks/final_verification.json",
+    "checks/protocol_audit.json",
+    "checks/factorial_contrasts.json",
+    "checks/reproduction_independent_verification.json",
+    "checks/reproduction_equivalence.json",
+    "checks/scientific_audit.txt",
+    "checks/ci_evidence_review.json"
+  ],
+  "ci_evidence_review": "checks/ci_evidence_review.json",
+  "source_review_finalized": true
+}

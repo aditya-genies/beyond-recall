@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "test_methods": 9,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "command": ".venv-framework/bin/python -W error::ResourceWarning -m unittest -v extensions.langgraph_reference.test_native",
+  "python": "3.14.3",
+  "sqlite": "3.51.2",
+  "versions": {
+    "langgraph": "1.2.18",
+    "langgraph-checkpoint": "4.3.1",
+    "langgraph-checkpoint-sqlite": "3.1.2",
+    "langchain-core": "1.7.3"
+  },
+  "source_sha256": "3ae5ccf8103478a457aab805c0522b23f27fc4772e8e24675a30fe619997a47b",
+  "test_source_sha256": "eeb51cae7c736d1920112eddfd294ee2a553a89fc0971b8402d81aa1ce04a0a9",
+  "log": "extensions/langgraph_reference/tests.log"
+}

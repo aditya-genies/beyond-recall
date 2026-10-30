@@ -1,0 +1,142 @@
+{
+  "review_date_local": "2026-10-29 America/Los_Angeles",
+  "reviewed_utc": "2026-10-30T04:32:32.954171+00:00",
+  "role": "PaperOrchestra content refinement: skeptical scientific/citation review, not journal acceptance prediction",
+  "status": "No unaddressed material result/citation contradiction or precision correction found in the final reviewed version.",
+  "instruction_scope": {
+    "anti_leakage_prompt_read": "PaperOrchestra skills/paper-orchestra/references/anti-leakage-prompt.md",
+    "application": "Only the current independent artifact, its supplied evidence and already verified public primary references were used. No original company source, PR, private conversations or historical company campaign results were consulted.",
+    "author_identity_exception": "The explicit user-authorized identity/biography overrides the skill anonymity template. No identity was inferred or added.",
+    "no_scoring_or_promotion": "No opaque acceptance score, submission recommendation, manuscript promotion or repository visibility action.",
+    "no_new_experiments": "No model requests, fault campaigns or unit test executions. Only retained evidence and read-only database queries were reconciled."
+  },
+  "source_sha256": {
+    "manuscript/main.tex": "0b5a97df2669cdc62a1dcb7475abd19deb630921d9adc10abd7b25f079012eab",
+    "manuscript/plan_binding.tex": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088",
+    "manuscript/refs.bib": "0c9af335cb78222b6782ba0a94cd3ba37b09784de3587c0afaee3bb5d58e286e",
+    "refs.bib": "0c9af335cb78222b6782ba0a94cd3ba37b09784de3587c0afaee3bb5d58e286e",
+    "study.py": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+    "results/cases.jsonl": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
+    "results/summary.json": "4d56dceb0a677f6f1bb1d67d037004bf2364080aaf9e03784cbbf5f02cb8ed5f",
+    "results/boundary_probes.json": "f3f02785a6ef5aa91f53bf87e2b604096605831013c06254e64b8f92d4d1d429",
+    "results/frozen_spec.json": "f5dac100857d093a865b10ff525aaf48fa862f8eb6125cc6771517de6d5c6306",
+    "extensions/langgraph_reference/runner.py": "3ae5ccf8103478a457aab805c0522b23f27fc4772e8e24675a30fe619997a47b",
+    "extensions/langgraph_reference/results/cases.jsonl": "d8833155d4e2433d768ba3ccc063ad5727fd9537b43288a23572c36b1902ce96",
+    "extensions/langgraph_reference/results/summary.json": "26ca4e7328f89100edbb736236bf49d1542abea9a192689bcfbbad9b7a0c0c1c",
+    "extensions/langgraph_reference/results/frozen_spec.json": "fadcabc0f51c7e80f32188f37c6e5f3061fa699ec50170433f1e210901c76182",
+    "extensions/sol_pilot/pilot.py": "c34fa3b618c23648bbdd4ed4e2a31789f4e4b49ceaf90d248263d30fccef611b",
+    "extensions/sol_pilot/registered/protocol.json": "74880b11a22860ee07deecc74aefa2f56ae4b9621a6a76bf49c76813a69dedc7",
+    "extensions/sol_pilot/registered/results.json": "c9dddb10ca5b46e9f03707b6f2a59b68feb3a8e68f49749e0b8e45a6fdce1d08",
+    "extensions/sol_pilot/registered/summary.json": "724ea18ba90b78ed2cb0f8db4b89e6e93facc90e2066c965f5a3f2902fc4de45",
+    "extensions/plan_binding/replay.py": "cc556307c186545ce4f58c3e9871b74840db9305a6646db44dd47f2c8a67e7a8",
+    "extensions/plan_binding/design_freeze.json": "e4ed851befcd1ddf183bf0a8315588df91b8faed706648fbdacb53eb0a26df22",
+    "extensions/plan_binding/results/cases.json": "5e54ceed35873b6278ada1f7c8fbbe84f80c1c0c71ac39912f6efd2fe083f237",
+    "extensions/plan_binding/results/summary.json": "9a7d545b501ba6ae3c94278a4e4d84e7279b7bf8a46294a82e32c07eb4f333d0",
+    "extensions/conflict_contracts/experiment.py": "4555c55a83b5a2c734a50592f584e54bc24955be707467755088d91b93f9660d",
+    "extensions/conflict_contracts/check.py": "f6a72ac58289024f3b60bedd865825654eba6cd7057bcae1b6c7c6d34a644eaa",
+    "extensions/conflict_contracts/results/cases.json": "4c13a6fdaa6e4fd0fd05ebf2613465e0029ba04a5d2ad990416423ee536c2b08",
+    "extensions/conflict_contracts/audit_verification.json": "b895314b6e1fd9d83b326a1b1a1b4dda619c50e7eab9900788a07787a9d04f24",
+    "extensions/conflict_contracts/test_audit.py": "28eb494bbc525e777bde359277aea9707902b427268af1f2153693225d20ae0d",
+    "literature/selected_primary_manifest.json": "1923da5352f31108f333cc9a6842acb545255a01ed70b991f9701042db5c2266"
+  },
+  "read_only_evidence_audit": "revisions/review1/final_evidence_reconciliation.json",
+  "audit_script": "revisions/review1/audit_current_evidence.py",
+  "material_corrections_still_required": [],
+  "minor_precision_suggestions": [
+    {
+      "id": "P3",
+      "category": "wording_precision",
+      "priority": "optional",
+      "file": "manuscript/main.tex",
+      "finding": "The changed-arguments rejection sentence follows the receipt-enabled contract, but the other three store modes do not validate operation identity.",
+      "recommended_change": "For unambiguous scope, begin it \"In the receipt-enabled contract, reusing...\".",
+      "scientific_impact": "The following invariant already states fixed identity/arguments and atomic receipts; no result correction is needed.",
+      "status": "resolved_in_final_manuscript",
+      "resolution": "Receipt-enabled rejection is explicitly conditioned on a retained successful receipt; failed comparisons do not bind identity."
+    }
+  ],
+  "resolved_during_review": [
+    {
+      "issue": "Missing BibTeX field separators in the three new documentation records",
+      "status": "Parent fixed both bibliography copies; all 36 keys resolve."
+    },
+    {
+      "issue": "Native completed-redelivery behavior could be mistaken for automatic framework deduplication",
+      "status": "Current native subsection explicitly describes the application graph.get_state/empty-next/outcome return path; it matches runner.py."
+    },
+    {
+      "issue": "Old 32-source catalogs and historical private-availability QA looked current",
+      "status": "Parent refreshed current catalog/check to 36 sources, labels excluded local caches explicitly, and archived superseded checks. Primary URLs remain the portable access route."
+    }
+  ],
+  "count_and_version_review": {
+    "primary": "528 physical states; 928 attempts =592 normal+256 abrupt+80 controlled exception. Source-selection event count 688. The eight table rows and matched contrasts agree with raw records and events.",
+    "primary_integrity": "Current study.py and main cases.jsonl hashes match the manuscript appendix values.",
+    "native": "66 cases; C/K/T/L/A all66, Q66, W275; 116 attempts,32 abrupt exits and260 physical native checkpoint rows agree with raw evidence. Pinned versions agree across lock, provenance and report: LangGraph1.2.18/checkpoint4.3.1/SQLite saver3.1.2.",
+    "pilot": "24 archived schema-valid tool-free successful outputs. Seven of12 identical-prompt pairs remain literally different after order normalization;12 changed-snapshot comparisons differ. Raw prompt/response hashes and partial-snapshot construction agree. These counts do not establish semantic disagreement or incidence.",
+    "plan_binding": "36 SQLite integrations from12 archived pairs\u00d73arms. Positional:2aliases/10prefix-preserving; fresh and retained:0aliases/12prefix-preserving each. Both aliases arise from preferences, the only original targetless first operation. Not two independent failure types.",
+    "conflicts": "84 retained SQLite cases =48sequential+20witness+16two-process. Physical states, effect journals and receipt identities/bodies reconcile with serialized rows; existing independent finite-contract audit verifies statuses and legal serializations.",
+    "tests": "10primary,9native,3plan-binding and8contract test definitions/results are described separately; review did not rerun them or add them to any experimental denominator.",
+    "reproduction": "The claimed Ubuntu3.12/3.14 comparisons are supported by retained completed CI metadata/raw-verification review. They are correctly described as same-study software-environment reproduction, not outside replication."
+  },
+  "conditional_argument_review": {
+    "status": "Valid as a narrow per-effect argument under the stated store contract.",
+    "reason": "BEGIN IMMEDIATE serializes receipt lookup, exact-body validation, current-version check, mutation, version increment, effect journal and successful receipt insert. An exact successful replay returns without mutation; an unseen operation with an older expected version is rejected. Monotonic tombstones prevent value ABA from erasing version history.",
+    "required_assumptions": "Receipts and effect share one transaction; identity and full arguments remain fixed for replay; all accepted writes advance one durable monotonic version; receipt/version history is retained; reads/writes use this store interface.",
+    "boundaries_preserved": "This is neither a new theorem/protocol nor proof of whole-plan atomicity, safe reclamation, arbitrary concurrency or correctness of the primary two-store receipt scheme. Historical acknowledgement is correctly distinguished from keeping an old desired value current.",
+    "formula": "For the declared single-valued target, x!=y prevents simultaneous old-intent content equality and preservation of a later accepted y absent a newer accepted update. This is a scoped logical incompatibility, not a distributed impossibility result.",
+    "identity_binding_boundary": "Only a successful retained receipt binds identity to arguments; rejected comparison attempts do not bind it. The final wording and inspected boundary test now state this explicitly."
+  },
+  "native_fairness_review": {
+    "status": "Fair for the declared matched plan/apply contract, with explicit application responsibilities.",
+    "strength": "Real StateGraph/SqliteSaver, native decisions/completed outcomes, empty application decision/receipt tables, fresh processes, matched semantic barriers and raw checkpoint checking.",
+    "limitation": "One effects node matches the primary decomposition by construction; per-operation native tasks could alter work counts. Application source/generation guards, external address rules and completed-state return logic are not automatically provided by arbitrary framework use.",
+    "interpretation": "Equality supports bounded portability and is not framed as superiority or optimal framework usage."
+  },
+  "citation_claim_review": {
+    "research_papers": 31,
+    "primary_documentation": 5,
+    "total_cited": 36,
+    "missing_keys": [],
+    "uncited_keys": [],
+    "duplicate_keys": [],
+    "verification_scope": "Focused claim comparison against supplied primary-source claim maps and earlier full-text audits; fresh flagged-three-paper audit plus the new Mansoor/official docs archives. This review did not refetch all historical32 sources or claim exhaustive literature discovery.",
+    "closest_prior_art": "RIFL identity/completion/reclamation and intervening-writer hazard; Beldi nondeterministic-result logging; LIMBO service/effect-ledger fault evaluation; Permission to Retry native-host conformance; Agentic Transaction memory/semantic transactions; Mansoor verify-before-retry; LangGraph task-order warning and AWS same-key/changed-parameter rejection are credited with appropriately narrow claims.",
+    "lifecycle_and_security": "Memora/TimlMemBench/prospective-memory work receive prior-art credit for beyond-recall/lifecycle evaluation. No semantic benchmark improvement or poisoning defense is inferred. No author self-citation was added.",
+    "source_identity_caution": "arXiv/DOI identity verification is not certification of peer review or every source result. The manuscript does not turn those preprints into journal publications.",
+    "codex_documentation": "Current official non-interactive-mode page independently inspected; it supports exec, ephemeral sessions, read-only permissions, ignore-user-config, JSON events and output schemas. Exact experimental flags are also present in retained pilot.py; no backend snapshot/temperature/system prompt control is claimed."
+  },
+  "journal_research_gap_separate_from_corrections": [
+    "The primitives and broad fault/conformance method have strong direct antecedents. A synthetic factorial and an adapter counterexample do not automatically establish a generalizable leading-journal advance.",
+    "The24calls are a single-alias/single-harness pilot with no semantic adjudication or natural workload distribution. The36recorded-plan integrations reuse those outputs and are not more independent model samples.",
+    "The native implementation shares controlled fixtures/planner and application semantics. More independent memory implementations and contract/workload changes would be needed to demonstrate transfer beyond this authored setup.",
+    "Bounded sequential schedules and one race per process cell do not cover arbitrary interleavings, remote consistency, mid-commit failure, retention reclamation or transient-reader isolation.",
+    "Outside replication, stronger independently specified oracles and a clearly useful new conditional insight remain research opportunities. Listing these gaps is not evidence they have been solved, and no acceptance-readiness conclusion is made."
+  ],
+  "overall_conclusion": "The rewritten manuscript is materially more precise and its central finite claims match retained evidence. It honestly attributes established mechanisms and limits exploratory extensions. No numerical or core citation-scope correction remains mandatory in this reviewed version; journal novelty and external validity remain open research questions.",
+  "late_finalization_addendum": {
+    "reviewed_utc": "2026-10-30T04:34:15.918015+00:00",
+    "status": "PASS: final late wording matches implementation and inspected boundary test; no outstanding material correction.",
+    "scope": "Hash refresh and inspection of the specified late paragraph/test/catalog only; no new search, experiments or test execution.",
+    "manuscript_sha256": {
+      "manuscript/main.tex": "0b5a97df2669cdc62a1dcb7475abd19deb630921d9adc10abd7b25f079012eab",
+      "manuscript/plan_binding.tex": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088"
+    },
+    "changed_previously_reviewed_source_files": {
+      "manuscript/main.tex": {
+        "previous": "d6343d757b8bd4238e976663d7cbd3c8b6fa1474f78eebf41c29eb68ca6f7514",
+        "current": "0b5a97df2669cdc62a1dcb7475abd19deb630921d9adc10abd7b25f079012eab"
+      }
+    },
+    "late_paragraph_accuracy": "Identity/argument mismatch rejection occurs only in version_cas_dedup after an existing successful receipt binds the identity. A failed version comparison inserts no receipt, so a later operation under that identity with updated arguments/version may succeed. Once it succeeds, replaying the originally rejected argument body conflicts with that retained successful body.",
+    "implementation_evidence": "extensions/conflict_contracts/experiment.py: apply(): receipt lookup and body validation precede version check; only the successful mutation branch inserts receipts; exceptions roll back the transaction.",
+    "boundary_test_evidence": "extensions/conflict_contracts/test_audit.py: test_identity_binding_starts_with_success_not_rejected_attempt; checks rejected A at old version, successful revised A at current version, then identity_conflict for the old body.",
+    "new_boundary_test_execution": "Source inspected only in this review; not independently executed here.",
+    "catalog_representation_check": "Mansoor cached PDF path/hash now matches the /pdf/ URL; OpenAI cached Markdown path/hash now matches its .md URL. Both local hashes match catalog, and caches remain marked non-distributed.",
+    "source_sha256": {
+      "extensions/conflict_contracts/test_audit.py": "28eb494bbc525e777bde359277aea9707902b427268af1f2153693225d20ae0d",
+      "literature/selected_primary_manifest.json": "1923da5352f31108f333cc9a6842acb545255a01ed70b991f9701042db5c2266"
+    },
+    "journal_readiness": "Unchanged: novelty and external-validity gaps remain open; no acceptance score or publication readiness claim."
+  }
+}

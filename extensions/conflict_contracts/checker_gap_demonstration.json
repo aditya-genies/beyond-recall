@@ -1,0 +1,7 @@
+{
+  "pre_audit_checker_accepted_forged_status": true,
+  "case": "version_cas / foreign_write_before_first_effect",
+  "actual_status": "version_conflict",
+  "forged_status": "replay",
+  "database_and_frozen_evidence_unchanged": true
+}

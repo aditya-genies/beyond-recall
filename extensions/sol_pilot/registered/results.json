@@ -1,0 +1,1126 @@
+[
+  {
+    "trial": "conditional_preference-original-0",
+    "scenario": "conditional_preference",
+    "condition": "original",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "776b95caa24f39dd6cb2aeddd9b3e657aea4436f2b547d6b20d6a486715de915",
+    "records": [
+      {
+        "id": "style-record",
+        "key": "reply_style",
+        "value": "detailed"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:43Z",
+    "returncode": 0,
+    "wall_seconds": 4.567,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17850,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 67,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "e855baea7be46fc9cf6850ecc2020ba6ebd2492f82c126f99a8f792eaa8dc4b9",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "unit_preference",
+        "value": "Prefers metric units."
+      }
+    ],
+    "normalized_operations_sha256": "d42796ed896541b1ce45ef7accd1e83968c64edc5f889e0567c0a325744aac63"
+  },
+  {
+    "trial": "conditional_preference-original-1",
+    "scenario": "conditional_preference",
+    "condition": "original",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "776b95caa24f39dd6cb2aeddd9b3e657aea4436f2b547d6b20d6a486715de915",
+    "records": [
+      {
+        "id": "style-record",
+        "key": "reply_style",
+        "value": "detailed"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:45Z",
+    "returncode": 0,
+    "wall_seconds": 4.083,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 16996,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 64,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "cfcb5b5e2f1a55aba44db3a91d553e5de68175baea91e2ffcd869410a3ecad59",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Metric units."
+      }
+    ],
+    "normalized_operations_sha256": "7be31847e618a176bb5982ef17b8812957259acd7f9d5cb712a8f11162829de4"
+  },
+  {
+    "trial": "conditional_preference-partial-0",
+    "scenario": "conditional_preference",
+    "condition": "partial",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "c31606f0529e666587523e22319df46b4f3f03da4b3abe2f3669a4ce87add5a2",
+    "records": [
+      {
+        "id": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:20:05Z",
+    "returncode": 0,
+    "wall_seconds": 4.286,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17862,
+          "cached_input_tokens": 16768,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 37,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "b911e479333a41589c9c587447b235ac20c8e05e54082e393ab176a3760c3df4",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "unit_preference",
+        "value": "Prefers metric units."
+      }
+    ],
+    "normalized_operations_sha256": "5aa151c132580b618eff7979b2b7defa3f43dcdbc65c9cd8805f2de8ddaaa105"
+  },
+  {
+    "trial": "conditional_preference-partial-1",
+    "scenario": "conditional_preference",
+    "condition": "partial",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "c31606f0529e666587523e22319df46b4f3f03da4b3abe2f3669a4ce87add5a2",
+    "records": [
+      {
+        "id": "style-record",
+        "key": "reply_style",
+        "value": "Concise answers for routine questions; detailed answers for mathematical proofs."
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:20:07Z",
+    "returncode": 0,
+    "wall_seconds": 4.217,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17860,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 36,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "6b485a3e5c6b4c89d4a0ee292b1306bb77753f1519d28f8d426f19486a6c3850",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      }
+    ],
+    "normalized_operations_sha256": "31f16069149c1e7fa49645a8367057825b6c383e6d9969be149ad50af3d81b49"
+  },
+  {
+    "trial": "correction-original-0",
+    "scenario": "correction",
+    "condition": "original",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "ba75c172f486e4a376d178695ba25e02d4151bba3a4781471f5a4509829f7153",
+    "records": [
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "imperial"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:27Z",
+    "returncode": 0,
+    "wall_seconds": 5.12,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17839,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 53,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "737411a47ebd46a8a54fec358a3bc68d8eb5fa77be89ae83fbd5be1e6f267d58",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": "unit-record",
+        "key": "units",
+        "value": "metric"
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "normalized_operations_sha256": "d0e80b98ef4498b2b332d9ebaa13db90bdd3cfd27c26124701e111503411ec05"
+  },
+  {
+    "trial": "correction-original-1",
+    "scenario": "correction",
+    "condition": "original",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "ba75c172f486e4a376d178695ba25e02d4151bba3a4781471f5a4509829f7153",
+    "records": [
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "imperial"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:32Z",
+    "returncode": 0,
+    "wall_seconds": 4.825,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 16985,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 53,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "7ca860d6ba34c15d65c07079607cba4aee69e70cec71c744d1688f5b590356c2",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": "unit-record",
+        "key": "units",
+        "value": "metric"
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_length",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "normalized_operations_sha256": "17d142d4a1f62d0f4b3d33fe8f7f1bffd51f1f36788b610132c23b7a1ab9e1ce"
+  },
+  {
+    "trial": "correction-partial-0",
+    "scenario": "correction",
+    "condition": "partial",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "aceeb84d37b17b3ae528c171687df3589056e6fc25cc7ea1c7d3adccfe2de482",
+    "records": [
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:49Z",
+    "returncode": 0,
+    "wall_seconds": 5.796,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17836,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 36,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "169c7061913cf3916b67756d44583dda7b9e7a19bf2d790cf2b2ddf94fcc511d",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "normalized_operations_sha256": "57b721987a7940096b9674d2b3c93002e4faf22d214d725317bfdf978557218b"
+  },
+  {
+    "trial": "correction-partial-1",
+    "scenario": "correction",
+    "condition": "partial",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "aceeb84d37b17b3ae528c171687df3589056e6fc25cc7ea1c7d3adccfe2de482",
+    "records": [
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:54Z",
+    "returncode": 0,
+    "wall_seconds": 3.759,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17836,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 36,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "0d3b9a2dfe33e2d9fb619c200a15c57c71f6fdf61e786c928fda85706d73d8a2",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_length",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "normalized_operations_sha256": "208aa2fac7190c6907679917c21b340e265dec7d86475ae3d91e41b8572dd518"
+  },
+  {
+    "trial": "mixed-original-0",
+    "scenario": "mixed",
+    "condition": "original",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "8374b0716ac78009ddc3b4befa8c293d0703cb3f78095d1901af68f3f4169bc4",
+    "records": [
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "imperial"
+      },
+      {
+        "id": "diet-record",
+        "key": "diet",
+        "value": "vegetarian"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:36Z",
+    "returncode": 0,
+    "wall_seconds": 4.455,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17009,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 71,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "5f7d140de2eb51323cbc161716e85bce38edb84509e79a1bb84169a8aecf38b8",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": "unit-record",
+        "key": "units",
+        "value": "metric"
+      },
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_preference",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "normalized_operations_sha256": "316b38ce4c3f43324e68b18d7393efa542a278523e47efb424e9de31eb92ca40"
+  },
+  {
+    "trial": "mixed-original-1",
+    "scenario": "mixed",
+    "condition": "original",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "8374b0716ac78009ddc3b4befa8c293d0703cb3f78095d1901af68f3f4169bc4",
+    "records": [
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "imperial"
+      },
+      {
+        "id": "diet-record",
+        "key": "diet",
+        "value": "vegetarian"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:37Z",
+    "returncode": 0,
+    "wall_seconds": 8.284,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17007,
+          "cached_input_tokens": 15872,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 70,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "0aa1e5b7e104d03b2de76b1219f83556b52829d7372c34fcadcb0315bd02f28c",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": "unit-record",
+        "key": "units",
+        "value": "metric"
+      },
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "normalized_operations_sha256": "cb510e2b997c6319d04eab5bf2b89b9f71420819e6ac2e5126edc13984334381"
+  },
+  {
+    "trial": "mixed-partial-0",
+    "scenario": "mixed",
+    "condition": "partial",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "d930b251791a80ccb08aef81af3639c6acd9558ad6559da71db4c1f849e48479",
+    "records": [
+      {
+        "id": "diet-record",
+        "key": "diet",
+        "value": "vegetarian"
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:58Z",
+    "returncode": 0,
+    "wall_seconds": 6.494,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17862,
+          "cached_input_tokens": 12288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 54,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "a44ed059bf1150df2e9a33467c871d322a6d5777c5b865faf778c53fb91d7398",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_preference",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "normalized_operations_sha256": "21f28dfe405aeeef5eff6948c0779ed52f53ae95045118413b556a20408f1998"
+  },
+  {
+    "trial": "mixed-partial-1",
+    "scenario": "mixed",
+    "condition": "partial",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "d930b251791a80ccb08aef81af3639c6acd9558ad6559da71db4c1f849e48479",
+    "records": [
+      {
+        "id": "diet-record",
+        "key": "diet",
+        "value": "vegetarian"
+      },
+      {
+        "id": "unit-record",
+        "key": "units",
+        "value": "metric"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:20:00Z",
+    "returncode": 0,
+    "wall_seconds": 7.379,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17010,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 53,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "1cb8955c439f039656d5b4beea883024ef3b383b4bd75a6e0f36c0b686ee7077",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "normalized_operations_sha256": "d7ea3b18f49c6a34b955b71e1b67b450e41c078b697fc1894aa6c36458122a74"
+  },
+  {
+    "trial": "preferences-original-0",
+    "scenario": "preferences",
+    "condition": "original",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "958e8ac70380e8e8daf53759306a2a310ccd91694f13e92333f612b8d37cbd73",
+    "records": [],
+    "started_at_utc": "2026-10-30T04:19:27Z",
+    "returncode": 0,
+    "wall_seconds": 5.828,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17821,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 80,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "8836ba4857694e17338d830fa159fd267bf5040fe10b42c33dbdf9dc9d4a22ee",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      }
+    ],
+    "normalized_operations_sha256": "af95714faf7ed0bbca86452996cf34e5d781cb1f4d3407f1e1d807ddcbebca35"
+  },
+  {
+    "trial": "preferences-original-1",
+    "scenario": "preferences",
+    "condition": "original",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "958e8ac70380e8e8daf53759306a2a310ccd91694f13e92333f612b8d37cbd73",
+    "records": [],
+    "started_at_utc": "2026-10-30T04:19:27Z",
+    "returncode": 0,
+    "wall_seconds": 4.882,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17819,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 80,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "8836ba4857694e17338d830fa159fd267bf5040fe10b42c33dbdf9dc9d4a22ee",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      }
+    ],
+    "normalized_operations_sha256": "af95714faf7ed0bbca86452996cf34e5d781cb1f4d3407f1e1d807ddcbebca35"
+  },
+  {
+    "trial": "preferences-partial-0",
+    "scenario": "preferences",
+    "condition": "partial",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "0352671fd33c232358e7983301a7ce9ac52fe8dc6a4f1788f368a7bfc9226acd",
+    "records": [
+      {
+        "id": "preferences-first-effect",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:49Z",
+    "returncode": 0,
+    "wall_seconds": 4.971,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17846,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 58,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "1bfd24596077fc341b6c90a2f8bc6b67ecb9e75d17520009870bf758ecae16b0",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Favorite hobby is cycling."
+      }
+    ],
+    "normalized_operations_sha256": "5e1a7cbe4e24cf764f6b2dde24cdb752ab6dba6f2160e46efa4351f9382ec01e"
+  },
+  {
+    "trial": "preferences-partial-1",
+    "scenario": "preferences",
+    "condition": "partial",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "0352671fd33c232358e7983301a7ce9ac52fe8dc6a4f1788f368a7bfc9226acd",
+    "records": [
+      {
+        "id": "preferences-first-effect",
+        "key": "reply_style",
+        "value": "Prefers concise replies."
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:49Z",
+    "returncode": 0,
+    "wall_seconds": 5.32,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17846,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 60,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "eec43342df348b4be70e13f95da4a3b9f87b97d8390f53cc1406f3721b2ac5ff",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "preferred_units",
+        "value": "Prefers metric units."
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "favorite_hobby",
+        "value": "Cycling is their favorite hobby."
+      }
+    ],
+    "normalized_operations_sha256": "77c13192943df6036fe286a9e4b3916f7223eaff44bb911bcc45226193d5c2b5"
+  },
+  {
+    "trial": "retirement-original-0",
+    "scenario": "retirement",
+    "condition": "original",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "85236b7f1f405b14b08ef9345af8ce05738cba7eceb6e7a880c73a16c504cf70",
+    "records": [
+      {
+        "id": "diet-record",
+        "key": "diet",
+        "value": "vegetarian"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:32Z",
+    "returncode": 0,
+    "wall_seconds": 4.317,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 16986,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 56,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "b8bf1a95c4394954ca5a3c260cdb902af876ec4dc0f4c6e399c3a6c3bbb9e404",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "enjoys_cycling",
+        "value": "Enjoys cycling."
+      }
+    ],
+    "normalized_operations_sha256": "683c7b4e576dcdabebb6d1fac6d61d52cda9a43252deae18e6b28230b75ef3e4"
+  },
+  {
+    "trial": "retirement-original-1",
+    "scenario": "retirement",
+    "condition": "original",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "85236b7f1f405b14b08ef9345af8ce05738cba7eceb6e7a880c73a16c504cf70",
+    "records": [
+      {
+        "id": "diet-record",
+        "key": "diet",
+        "value": "vegetarian"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:33Z",
+    "returncode": 0,
+    "wall_seconds": 4.772,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17842,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 56,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "b8bf1a95c4394954ca5a3c260cdb902af876ec4dc0f4c6e399c3a6c3bbb9e404",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "delete",
+        "target": "diet-record",
+        "key": null,
+        "value": null
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "enjoys_cycling",
+        "value": "Enjoys cycling."
+      }
+    ],
+    "normalized_operations_sha256": "683c7b4e576dcdabebb6d1fac6d61d52cda9a43252deae18e6b28230b75ef3e4"
+  },
+  {
+    "trial": "retirement-partial-0",
+    "scenario": "retirement",
+    "condition": "partial",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "9703fb017c3a1360dc0573ab1787b3daa224dedd3fbaf7c621464ed7e4d17ac2",
+    "records": [],
+    "started_at_utc": "2026-10-30T04:19:54Z",
+    "returncode": 0,
+    "wall_seconds": 5.67,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17817,
+          "cached_input_tokens": 12288,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 60,
+          "reasoning_output_tokens": 18
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "827d6e12a3606fcd3756c7386d7491d5e68ac6c7eb7c8635ce8b203b77c5baa7",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "enjoys_cycling",
+        "value": "The user enjoys cycling."
+      }
+    ],
+    "normalized_operations_sha256": "7bad9aeb9d091114876a874aa7f3ecfa584345da773690721eade241dfbfba4e"
+  },
+  {
+    "trial": "retirement-partial-1",
+    "scenario": "retirement",
+    "condition": "partial",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "9703fb017c3a1360dc0573ab1787b3daa224dedd3fbaf7c621464ed7e4d17ac2",
+    "records": [],
+    "started_at_utc": "2026-10-30T04:19:55Z",
+    "returncode": 0,
+    "wall_seconds": 4.879,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17817,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 40,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "827d6e12a3606fcd3756c7386d7491d5e68ac6c7eb7c8635ce8b203b77c5baa7",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "enjoys_cycling",
+        "value": "The user enjoys cycling."
+      }
+    ],
+    "normalized_operations_sha256": "7bad9aeb9d091114876a874aa7f3ecfa584345da773690721eade241dfbfba4e"
+  },
+  {
+    "trial": "temporal_correction-original-0",
+    "scenario": "temporal_correction",
+    "condition": "original",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "c763841660f313c018003301b0503ea0c5981f0d27e629c6c477c5691cad629a",
+    "records": [
+      {
+        "id": "city-record",
+        "key": "city",
+        "value": "Oslo"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:38Z",
+    "returncode": 0,
+    "wall_seconds": 5.022,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17844,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 53,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "36a2aae1cb6c6011b25a629f316c41a3ffc751ed27dd01e33190e25d129797f7",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ],
+    "normalized_operations_sha256": "059ae3a84d9187a6a84d655992f28d31e1bdaafc2e0b1c0c73c192acdbb919d1"
+  },
+  {
+    "trial": "temporal_correction-original-1",
+    "scenario": "temporal_correction",
+    "condition": "original",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "c763841660f313c018003301b0503ea0c5981f0d27e629c6c477c5691cad629a",
+    "records": [
+      {
+        "id": "city-record",
+        "key": "city",
+        "value": "Oslo"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:19:41Z",
+    "returncode": 0,
+    "wall_seconds": 5.923,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17846,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 53,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "36a2aae1cb6c6011b25a629f316c41a3ffc751ed27dd01e33190e25d129797f7",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      },
+      {
+        "kind": "put",
+        "target": null,
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ],
+    "normalized_operations_sha256": "059ae3a84d9187a6a84d655992f28d31e1bdaafc2e0b1c0c73c192acdbb919d1"
+  },
+  {
+    "trial": "temporal_correction-partial-0",
+    "scenario": "temporal_correction",
+    "condition": "partial",
+    "repeat": 0,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "cdddfa710fb7d3d2a6929793ce15f98a611b54ed4c061d2cd14ca2a24b3c8dcc",
+    "records": [
+      {
+        "id": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:20:00Z",
+    "returncode": 0,
+    "wall_seconds": 4.504,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17848,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 35,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "d32f475a04762e461640dc92db9ab95f5aba006aae818dc5e8cde7b193cbbda5",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ],
+    "normalized_operations_sha256": "8cdd9d52d7ea9ec5ebb673171ff1d5d93b57c1facd80f5e17078a22d193cfdee"
+  },
+  {
+    "trial": "temporal_correction-partial-1",
+    "scenario": "temporal_correction",
+    "condition": "partial",
+    "repeat": 1,
+    "requested_model": "gpt-6.1-sol",
+    "prompt_sha256": "cdddfa710fb7d3d2a6929793ce15f98a611b54ed4c061d2cd14ca2a24b3c8dcc",
+    "records": [
+      {
+        "id": "city-record",
+        "key": "city",
+        "value": "Lisbon"
+      }
+    ],
+    "started_at_utc": "2026-10-30T04:20:04Z",
+    "returncode": 0,
+    "wall_seconds": 5.135,
+    "public_events": [
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 17844,
+          "cached_input_tokens": 16768,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 35,
+          "reasoning_output_tokens": 0
+        }
+      }
+    ],
+    "tool_events": [],
+    "response_sha256": "d32f475a04762e461640dc92db9ab95f5aba006aae818dc5e8cde7b193cbbda5",
+    "schema_valid": true,
+    "operations": [
+      {
+        "kind": "put",
+        "target": null,
+        "key": "likes_walking",
+        "value": "Likes walking."
+      }
+    ],
+    "normalized_operations_sha256": "8cdd9d52d7ea9ec5ebb673171ff1d5d93b57c1facd80f5e17078a22d193cfdee"
+  }
+]

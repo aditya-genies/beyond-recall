@@ -1,0 +1,11 @@
+{
+  "cli_version": "codex-cli 0.165.0-alpha.1.2",
+  "requested_model": "gpt-6.1-sol",
+  "auth": "Existing personal Codex account; no API key used",
+  "configuration": "Fresh temporary cwd, ephemeral sessions, ignored user config, project documents disabled, read-only, requested medium reasoning; no resumed conversations",
+  "backend_model_snapshot": "not exposed by retained CLI events",
+  "temperature": "not controlled",
+  "seed": "not controlled",
+  "system_prompt": "Codex harness, not controlled; user/project instructions disabled where exposed",
+  "provenance": "Raw final responses, prompts and usage are archived; hidden reasoning, local paths/session ids and local diagnostics are intentionally excluded."
+}

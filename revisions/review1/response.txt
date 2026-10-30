@@ -1,0 +1,87 @@
+Revision response: Beyond Recall
+Working title: Beyond Recall: Recovery Contracts for Agent Memory Mutations
+Author: Aditya Mantri
+
+The review correctly identified overbroad framing, a synthetic-only evaluation,
+dense prose, a figure defect, and limited external inspectability. The revision
+addresses those concrete issues while retaining the original data unchanged.
+
+1. Title and central claim
+The title now names memory-mutation recovery contracts. The abstract identifies
+the synthetic factorial, native reference and recorded-model pilot separately.
+It claims no new recovery algorithm, semantic improvement, general exactly-once
+guarantee, or publication readiness. The opening uses a concrete partial-write
+example. The combined TeX source is about 38% shorter than the prior source
+while adding completed extensions.
+
+2. Evidence close to construction
+The controlled decision tape is still explicit. Changed-tape tests do not stand
+in for natural model drift. Twenty-four actual fresh Codex requests using the
+user-requested gpt-6.1-sol alias supply recorded operation lists. Seven of twelve
+same-prompt pairs differ literally; these often use synonymous labels/wording.
+All twelve partial-snapshot comparisons use changed inputs. Neither is a harmful
+semantic drift rate. Raw prompts, responses and the pre-request protocol remain
+available, with unknown backend/harness parameters disclosed.
+
+3. Real framework comparison
+A genuine LangGraph StateGraph/SqliteSaver reference executes all 66 matched
+D1P1R1 cells. All seven metrics and attempt schedules agree. The application
+decision/receipt tables remain empty; native checkpoints contain chosen plans
+and completion state. Source/generation guards and the completed-checkpoint
+fast path are application code. A single effects node deliberately matches the
+original decomposition; per-operation task optimality is not claimed.
+
+4. Stronger counterexamples and controls
+Twelve recorded plan pairs produce 36 SQLite integrations. Two responses of one
+at-risk preferences scenario overwrite a completed style record under positional
+address reuse after plan compaction. The identical replans with fresh addresses
+and retained original plans with stable addresses preserve it. No model semantic
+error or new general idempotency failure is claimed; direct ordering/identity
+antecedents are cited.
+
+Eighty-four separate conflict-contract cases, including sixteen two-process
+races, distinguish stale overwrites, value ABA, own-effect replay recognition,
+and atomic effect receipts. Original-intent content equality can reward erasing
+a newer value. Version comparison alone cannot recognize its own committed
+effect; versioned atomic receipts can acknowledge that historical effect while
+preserving the newer state under their stated assumptions. These are tests of
+established techniques. Reissued-call witnesses do not simulate transport drops.
+
+5. Checking and replication language
+Separate checkers are described as separate implementations by the same study.
+Same-host Python/SQLite and Ubuntu CI checks are environment reproductions, not
+independent third-party replications. Verifiers read actual SQLite/checkpoint
+evidence. Adversarial verifier tests reject forged statuses, receipts, snapshots,
+coverage and source pins. Original 528-case data and source hashes are unchanged.
+
+6. Figure defect
+Figure 2 legends are outside the axes and the footer has a reserved band. The
+earlier visual acceptance missed the overlap and is explicitly superseded.
+Coordinate-based spacing checks and page-level pixel inspection accompany the
+corrected figure. Primary raw data and numerical figure values remain unchanged.
+
+7. Literature
+The three questioned arXiv identities were freshly verified using landing pages,
+actual PDFs, DataCite and DOI resolution. The Permission to Retry landing-page
+DOI annotation discrepancy is retained rather than hidden. A direct additional
+predecessor, Verified Tool Calls, and relevant LangGraph/AWS identity guidance
+are now cited. All 36 bibliography entries are cited: 31 research sources and
+five primary documentation sources. This is focused coverage, not an exhaustive
+survey. Unrelated self-publications were not added for citation metrics.
+
+8. Availability and authorship
+The user subsequently authorized making the companion repository public. Public
+release includes only this synthetic study and public-dependency references,
+without company application code, private PRs/data, credentials, installed
+environments or reference full texts. The supplied sole author, independent
+researcher role and background footnote remain. No venue or university research
+affiliation has been invented.
+
+Remaining journal question
+The added evidence makes the working manuscript more concrete and inspectable.
+It does not establish a leading-journal advance. Close prior art, one native
+framework, one small model/harness pilot, authored workloads, local storage and
+same-author checking still constrain the claim. A broader contribution needs
+cross-system validation, realistic workloads and semantic adjudication, bounded
+concurrency/retention specifications and outside replication. No acceptance
+forecast, automated peer-review score, or actual journal review is asserted.

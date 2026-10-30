@@ -140,14 +140,98 @@ def clean(ax):
 
 
 def count_labels(ax, bars):
+    labels = []
     for b in bars:
-        ax.annotate(str(int(b.get_height())),(b.get_x()+b.get_width()/2,b.get_height()),
-                    xytext=(0,2),textcoords="offset points",ha="center",va="bottom",fontsize=6.3,color=INK)
+        labels.append(ax.annotate(str(int(b.get_height())),(b.get_x()+b.get_width()/2,b.get_height()),
+                    xytext=(0,2),textcoords="offset points",ha="center",va="bottom",fontsize=6.3,color=INK))
+    return labels
+
+
+def check_factorial_spacing(fig, axes, legends, labels, panel_titles, header, footers):
+    """Check the actual Agg-rendered artist extents, in 300-DPI pixels.
+
+    Bounding boxes complement, rather than replace, visual inspection. Legends
+    have their own figure-coordinate bands above the plotting areas; the footer
+    band is below the policy-axis label. This gate rejects a future font/layout
+    change that causes any of those bands to touch.
+    """
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    boxes = {}
+
+    def register(name, artist):
+        box = artist.get_window_extent(renderer)
+        boxes[name] = box
+        return name
+
+    for i, ax in enumerate(axes):
+        register(f"panel_{i}_axes", ax)
+        register(f"panel_{i}_legend", legends[i])
+        register(f"panel_{i}_title", panel_titles[i])
+        register(f"panel_{i}_ylabel", ax.yaxis.label)
+        for j, label in enumerate(labels[i]):
+            register(f"panel_{i}_value_{j}", label)
+    for i, artist in enumerate(header):
+        register(f"header_{i}", artist)
+    register("policy_xlabel", axes[1].xaxis.label)
+    for i, artist in enumerate(axes[1].get_xticklabels()):
+        register(f"policy_tick_{i}", artist)
+    for i, artist in enumerate(footers):
+        register(f"footer_{i}", artist)
+
+    checks = []
+
+    def separated(first, second, minimum_gap=6):
+        a, b = boxes[first], boxes[second]
+        dx = max(a.x0-b.x1, b.x0-a.x1, 0)
+        dy = max(a.y0-b.y1, b.y0-a.y1, 0)
+        gap = max(dx, dy)
+        overlap = a.x0 < b.x1 and b.x0 < a.x1 and a.y0 < b.y1 and b.y0 < a.y1
+        checks.append(dict(first=first, second=second,
+                           gap_px=round(gap, 3), required_gap_px=minimum_gap,
+                           overlap=bool(overlap), passed=bool(not overlap and gap >= minimum_gap)))
+
+    for i in range(2):
+        legend = f"panel_{i}_legend"
+        separated(legend, f"panel_{i}_axes")
+        separated(legend, f"panel_{i}_title")
+        for j in range(len(labels[i])):
+            separated(legend, f"panel_{i}_value_{j}")
+    separated("header_0", "header_1")
+    separated("header_1", "panel_0_title")
+    separated("panel_0_axes", "panel_1_title")
+    for i in range(len(axes[1].get_xticklabels())):
+        separated("policy_xlabel", f"policy_tick_{i}")
+    for i in range(len(footers)):
+        footer = f"footer_{i}"
+        for name in boxes:
+            if name != footer and not name.startswith("footer_"):
+                separated(footer, name)
+    separated("footer_0", "footer_1")
+    frame = fig.bbox
+    outside = [name for name, box in boxes.items()
+               if box.x0 < frame.x0 or box.y0 < frame.y0
+               or box.x1 > frame.x1 or box.y1 > frame.y1]
+    report = dict(
+        status="PASS" if all(c["passed"] for c in checks) and not outside else "FAIL",
+        figure="fig_factorial_oracles", coordinate_system="300-DPI pixels, origin bottom-left",
+        canvas_px=[int(frame.width), int(frame.height)],
+        method="Agg renderer get_window_extent after a completed canvas draw",
+        legend_placement="Outside axes, in separately reserved figure-coordinate bands",
+        footer_placement="Reserved figure-coordinate band below policy-axis label",
+        minimum_tested_gap_px=6,
+        bboxes={name:[round(v,3) for v in box.extents] for name,box in boxes.items()},
+        checks=checks, outside_canvas=outside,
+        visual_review_required=True,
+        scope="Legend/value/axes/title and footer/axis-label/tick-label non-overlap; not a scientific-result validity test.",
+    )
+    (OUT/"factorial_spacing_check.json").write_text(json.dumps(report,indent=2)+"\n")
+    assert report["status"] == "PASS", "Factorial figure spacing failed; see factorial_spacing_check.json"
 
 
 # One figure, two count panels with distinct and explicitly named axes.
-fig,axes=plt.subplots(2,1,figsize=(5.6,4.2),sharex=True)
-fig.subplots_adjust(left=.11,right=.985,bottom=.16,top=.83,hspace=.43)
+fig=plt.figure(figsize=(5.6,4.2))
+axes=[fig.add_axes([.11,.58,.875,.23]), fig.add_axes([.11,.21,.875,.23])]
 x=np.arange(len(POLICIES)); width=.32
 for ax in axes:
     clean(ax)
@@ -156,22 +240,28 @@ for ax in axes:
 ax=axes[0]
 a=ax.bar(x-width/2,[r["content_pass"] for r in totals],width,color=PALE_BLUE,label="Content oracle")
 b=ax.bar(x+width/2,[r["selected_terminal_pass"] for r in totals],width,color=BLUE,label="Selected terminal")
-count_labels(ax,a);count_labels(ax,b)
+value_labels=[count_labels(ax,a)+count_labels(ax,b)]
 ax.set_ylim(0,88);ax.set_yticks([0,22,44,66]);ax.set_ylabel("Passing runs (of 66)")
-ax.set_title("(a) Content and selected terminal contract",loc="left",pad=5)
-ax.legend(frameon=False,ncol=2,loc="upper left",bbox_to_anchor=(0,1.04))
+ax.tick_params(axis="x",labelbottom=False)
+panel_titles=[fig.text(.11,.89,"(a) Content and selected terminal contract",fontsize=7.5,fontweight="bold",color=INK,va="top")]
+legends=[fig.legend(handles=[a,b],labels=["Content oracle","Selected terminal"],
+                    frameon=False,ncol=2,loc="upper left",bbox_to_anchor=(.11,.851),
+                    borderaxespad=0,borderpad=0)]
 ax=axes[1]
 a=ax.bar(x-width/2,[r["planning_invocations"] for r in totals],width,color=GREEN,label="Scripted planning invocations")
 b=ax.bar(x+width/2,[r["committed_effect_calls"] for r in totals],width,color=CLAY,label="Committed put/delete calls")
-count_labels(ax,a);count_labels(ax,b)
+value_labels.append(count_labels(ax,a)+count_labels(ax,b))
 ax.set_ylim(0,390);ax.set_yticks([0,100,200,300]);ax.set_ylabel("Invocation / commit count")
-ax.set_title("(b) Planning and committed mutation work",loc="left",pad=5)
-ax.legend(frameon=False,ncol=2,loc="upper left",bbox_to_anchor=(0,1.04),fontsize=5.8)
+panel_titles.append(fig.text(.11,.525,"(b) Planning and committed mutation work",fontsize=7.5,fontweight="bold",color=INK,va="top"))
+legends.append(fig.legend(handles=[a,b],labels=["Scripted planning invocations","Committed put/delete calls"],
+                          frameon=False,ncol=2,loc="upper left",bbox_to_anchor=(.11,.487),
+                          borderaxespad=0,borderpad=0,fontsize=5.8))
 ax.set_xticks(x,POLICIES,fontsize=6.1);ax.set_xlabel("Policy: D = stable addresses; P = retained plan; R = receipt",fontsize=6.4,labelpad=6)
-fig.text(.02,.976,"State correctness and execution history are separate observations",fontsize=8.3,fontweight="bold",color=INK,va="top")
-fig.text(.02,.927,"Shaded pair: D1P1 has 66/66 terminal passes with either R; put/delete commits differ.",fontsize=6.1,color=GRAY,va="top")
-fig.text(.02,.065,"528 specified structural runs; 66 per policy. Counts are not independent statistical samples.",fontsize=6.0,color=GRAY)
-fig.text(.02,.025,"Committed calls include participant put/delete only; reset and cleanup mutations are excluded.",fontsize=5.9,color=GRAY)
+header=[fig.text(.02,.976,"State correctness and execution history are separate observations",fontsize=8.3,fontweight="bold",color=INK,va="top"),
+        fig.text(.02,.927,"Shaded pair: D1P1 has 66/66 terminal passes with either R; put/delete commits differ.",fontsize=6.1,color=GRAY,va="top")]
+footers=[fig.text(.02,.065,"528 specified structural runs; 66 per policy. Counts are not independent statistical samples.",fontsize=6.0,color=GRAY),
+         fig.text(.02,.025,"Committed calls include participant put/delete only; reset and cleanup mutations are excluded.",fontsize=5.9,color=GRAY)]
+check_factorial_spacing(fig,axes,legends,value_labels,panel_titles,header,footers)
 save(fig,"fig_factorial_oracles")
 
 labels={

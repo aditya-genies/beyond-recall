@@ -1,0 +1,79 @@
+Journal-readiness and novelty gap audit
+Date: 2026-10-29 America/Los_Angeles (retrievals extend into 2026-10-30 UTC).
+Scope: current independent manuscript, public primary literature, planned native LangGraph 66-cell baseline and at least 12 fresh Sol 6.1 prompt calls. Proposed experiments below have not been performed by this audit. No manuscript, bibliography, repository visibility, or author identity was changed.
+
+Assessment
+The present work is a transparent synthetic conformance study, with useful distinctions between terminal state, decision continuity, and committed work. Its strongest defensible contribution is the independently inspectable factorial artifact and controlled contrasts. The current evidence does not establish a leading-journal research advance. More runs of the same authored contracts would improve regression confidence without resolving the principal gap: a useful finding that survives a change of implementation, operation contract, and realistic decision source. A journal contribution can be empirical or conceptual; it need not invent an algorithm. It must explain what an informed reader learns beyond the close predecessors.
+
+Overlap that must remain explicit
+RIFL already combines stable request identity, durable completion records, retry routing and safe reclamation. Its Figure 2 explicitly shows why replaying an apparently idempotent write after an intervening writer can violate linearizability. Beldi already logs nondeterministic results for replay. Thus neither stable addresses, remembered LLM choices, receipts, nor the intervening-write phenomenon is a newly discovered recovery principle [1,2]. LIMBO already grades ambiguous writes, delayed commits, redelivery and partial batches against effect ledgers. Permission to Retry already studies authored recovery policies on native persistence hosts, including framework equivalence. Agentic Transaction already includes memory among semantic transaction concerns; its preliminary prototype is not a universal recovery guarantee [3–5]. These three arXiv records were freshly verified against actual PDFs, landing pages and DataCite; that verifies identity and cited descriptions, not peer review or correctness of all results (references/citation_audit.txt).
+
+Memora and TimlMemBench establish that memory evaluation extends beyond recall. ACRFence studies replay and authority-resurrection failures; its proposed analyzer was not implemented in that evaluation. Consequently, a broad “first memory failure semantics” or “first beyond-recall benchmark” claim is unsafe. A title such as “Recovery Semantics of Memory Mutations: A Synthetic Factorial Study” better matches the present evidence. No exhaustive-literature claim is warranted.
+
+Experiments most likely to yield an informative result
+H1 — Receipt effects depend on the observation contract. Hold stable addressing, full decision retention and decision lifetime fixed. Complete an intent, allow a second writer to update the same target, then redeliver the completed intent, with and without a receipt. Score both the original-intent terminal oracle and preservation of the intervening writer using an independently specified version history. The testable prediction is that receipts can change later-writer preservation even when the old terminal oracle calls their effect “work only.” Equal preservation across the specified interleavings falsifies this prediction for that setting. This is principally a replication/qualification of RIFL, so cannot alone support novelty. Its value is delimiting precisely when the existing receipt conclusion holds.
+
+H2 — Persisting an operation description is weaker than persisting its dependencies. Compare operation text/types only, resolved target identities, and target identities plus expected versions. Keep D and R identical; permute retrieval order, rebind an ambiguous reference, and change the target version between preparation and replay. Define identity/version correctness independently of final fact equality. The prediction is that text-only retention can pass a fact oracle while mutating a different entity, and that ID retention alone cannot prevent stale overwrites. Counterexamples to the predicted separations must be retained. Logged dependency capture is established prior art; a useful new result would identify and validate a minimal memory-interface contract across independent implementations, rather than rename logging.
+
+H3 — Terminal cleanup and reset visibility are distinct. Run an independent reader and an in-flight old-generation mutation around a declared reset linearization point. Compare the current post-loop cleanup with a participant-side generation/version condition checked atomically with each effect. Include lost responses and two overlapping attempts. The prediction is that cleanup can pass terminal checks while an old-generation value is transiently observable; a correctly scoped atomic guard should prevent the specified forbidden observation. Any forbidden read under the guarded contract falsifies that sufficiency claim. A coordinator-only check is not the atomic guard. Fencing is prior art; the potential contribution is a precise composition condition, its countermodels, and evidence under independently enumerated interleavings.
+
+H4 — A faithfully replayed decision can remain semantically wrong. Use fresh, independently authored conversations with unambiguous ground truth, controlled ambiguous targets, supersession and revocation. Pair fault-free execution with the same saved model decision under faults; separately record semantic correctness, target binding, operational recovery, and changed-decision incidence. Compare fresh choice with retained choice; evaluate both correct and incorrect initial choices. The testable prediction is that persistence improves continuity conditional on preparation while neither guaranteeing semantic correctness nor repairing a wrong initial choice. A null or contrary result is reportable. Predeclare sampling units, prompt/model versions, annotation criteria and precision goals before a larger run; use independent semantic adjudication. This would connect the mechanism study to actual agent behavior without claiming to replace lifecycle benchmarks.
+
+Across H1–H3, include an atomic participant effect-plus-deduplication baseline and distinguish it from a separately committed coordinator receipt. Vary at least overwrite, conditional/versioned write, and non-idempotent append. Use a bounded model or independently generated interleaving checker to derive schedules, then replay counterexamples in two implementations. State the exploration bounds; this would not establish unrestricted completeness or a new impossibility theorem. Freeze contracts and counterexample oracles before confirmatory runs. Prioritize a discriminating result over a larger total test count.
+
+What the planned additions establish
+A native LangGraph baseline using real persistence and actual fresh-process resumption can test portability across 66 matched cells and catch an integration mistake. Equal outcomes are valuable and should be reported. They do not show that the mechanism is new, that every LangGraph application is safe, or that an independently written oracle is correct. Permission to Retry already makes framework equivalence a known methodological possibility. A failure should first be examined for adapter, task-boundary and contract mismatches before being attributed to the framework.
+
+At least 12 fresh Sol 6.1 calls are a live-planner pilot. Retained prompts, raw responses, model identification, extraction rules and all errors can demonstrate feasibility or the existence of a changed decision. They do not estimate natural drift frequency precisely, establish model diversity, validate semantic memory quality, or become independent samples merely by replaying each output across faults. Zero observed variation would not disprove a scripted counterexample; observed variation would not validate its population prevalence. Report these calls separately from structural fault cells.
+
+Two conditional journal fits, verified on official pages
+1. IEEE Transactions on Software Engineering (TSE). Its official scope includes theoretical and empirical software engineering, testing/validation, reliability, and distributed-system tools. This is the stronger disciplinary fit if a generalizable recovery-testing result emerges across contracts and implementations; present evidence alone does not establish readiness. Official scope: https://www.computer.org/digital-library/journals/ts/cfp-ieee-transactions-on-software-engineering . Official peer-review context: https://www.computer.org/publications/tech-news/insider-membership-news/tse-distinguished-reviewer-board-members . Scope HTML was retrieved directly with HTTP 200 and archived; a separate browser fetch returned 403, a transport limitation.
+2. Transactions on Machine Learning Research (TMLR). Its scope permits experimental insight into intelligent systems and useful reproducibility studies. Its stated criteria emphasize accurate evidence and audience interest rather than a mandatory new algorithm or state-of-the-art score. This becomes plausible only with a clear lesson for ML/agent researchers; a small synthetic implementation and twelve model calls do not establish that lesson by themselves. Official scope/review policy: https://jmlr.org/tmlr/editorial-policies.html . Official criteria: https://jmlr.org/tmlr/acceptance-criteria.html . Both pages were freshly retrieved with HTTP 200 and archived.
+
+These are research targets to assess, not submission recommendations or acceptance forecasts. ACM TOSEM was considered but its official page returned 403; it is not counted as independently scope-verified here. No venue has been selected. Venue-specific anonymity, formatting, originality and disclosure checks should be applied only if a venue is selected; this audit does not change the user-authorized public artifact or biography. A public GitHub artifact would improve inspectability and enable replication, but is not itself independent replication or evidence of publication readiness.
+
+Primary sources for overlap
+[1] RIFL, author PDF: https://web.stanford.edu/~ouster/cgi-bin/papers/rifl.pdf
+[2] Beldi, official OSDI paper page: https://www.usenix.org/conference/osdi20/presentation/zhang-haoran
+[3] LIMBO: https://arxiv.org/abs/2609.29095
+[4] Permission to Retry: https://arxiv.org/abs/2610.31916
+[5] Agentic Transaction: https://arxiv.org/abs/2608.13900
+[6] Memora, official ACL paper: https://aclanthology.org/2026.findings-acl.1337/
+[7] TimlMemBench, official ACL paper: https://aclanthology.org/2026.findings-emnlp.507/
+[8] ACRFence: https://arxiv.org/abs/2603.20625
+
+Provenance
+Venue raw pages and status/hash manifest: journal_sources/manifest.json. Fresh flagged-paper audit: references/citation_audit.json and references/citation_audit.txt. This is a focused novelty/gap assessment, not an exhaustive systematic review. Proposed hypotheses may reproduce known principles; only completed experiments and a subsequent novelty comparison can determine their added value.
+
+
+Update: live-planner compaction and positional identity (exploratory)
+The reported pilot now contains 24 valid model responses. The seven changed identical-prompt pairs were literal changes, often synonymous keys or phrasing; they must not be relabeled as seven semantic disagreements. Changed output after observing partial completion may be correct adaptation rather than erroneous drift. Recorded-output integration experiments are being run separately; this audit does not claim their outcomes in advance or count them as live end-to-end crash recovery.
+
+A concrete risk is that omitting a completed fact shifts a different logical mutation into the same (intent, ordinal) address. The identifier remains textually stable while its referent changes. LangGraph explicitly warns that changing task/interrupt order before resume can mismatch cached values. Temporal similarly requires command replay to respect recorded sequence. AWS documents the complementary same-key/different-parameters hazard and rejects mismatched requests after retaining their original parameters. These are direct primary antecedents, so “first positional identity failure” is not supported.
+
+The distinction matters operationally: the study's stable address is an upsert location. It is not a server-side idempotency protocol that validates an operation's parameters. Reusing an upsert address for a different fact can overwrite the first fact; a parameter-validating deduplication API may instead reject it or return the recorded first result. Therefore this witness does not show that conforming idempotency keys are intrinsically unsafe, or that LangGraph has this defect.
+
+Retain the fixed-slot, fresh-address and retained-original-plan controls; add a logical-operation-identity or same-key/parameter-mismatch control if feasible. Score omitted completed facts, duplicate records and eventual completion separately using predeclared semantic normalization for synonymous labels. Confirm that the original and compacted plans intend the same overall facts before assigning the cause to positional reuse. The valuable measured statement would be an application-level witness and contract boundary; the general cure of retaining choices/identities is established logged recovery.
+
+A material additional scholarly predecessor is Verified Tool Calls Improve LLM Agent Reliability Under Non-Atomic Failures (Mansoor, Phadke and Rana; arXiv:2608.02645). Its action/payload-derived key protocol and simulated agent/tool failures warrant a concise related-work comparison. A full-text check did not identify the specific compacted-plan/ordinal-address experiment. Its paper identity was verified from the fresh PDF, arXiv and DataCite; no peer-reviewed venue is asserted. Proposed entries and narrowly grounded citation wording are in references/additions.bib and references/additions_claim_map.json. Fresh public artifacts, hashes and transport status are in references/positional_identity/manifest.json. Main references remain untouched.
+
+Additional primary antecedents:
+https://docs.langchain.com/oss/python/langgraph/graph-api#re-execution-and-idempotency
+https://docs.temporal.io/workflow-definition#deterministic-constraints
+https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/
+https://arxiv.org/abs/2608.02645
+
+Completion addendum (root, 2026-10-29 America/Los_Angeles)
+The formerly planned additions are now complete: 66 matched native cases with
+all seven metrics equal, 24 archived Sol6.1/Codex requests, 36 SQLite integrations
+of twelve recorded plan pairs, and 84 conflict-contract cases including sixteen
+two-process races. The model pilot observes literal variation, not semantic
+failure rates. The positional witness involves two responses of one at-risk
+scenario. New primary antecedents are integrated into the 36-source bibliography.
+Native task-boundary fairness, source-cache exclusion, and application-owned
+completion recognition are explicit. The expanded evidence improves grounding
+but does not remove the novelty/generalization gap identified above. Source
+full texts and venue HTML are retained in the author's reference cache; the
+public package contains their primary URLs, hashes and audit summaries rather
+than redistributing full texts. The user explicitly authorized public GitHub;
+publication status remains a working manuscript without journal acceptance.

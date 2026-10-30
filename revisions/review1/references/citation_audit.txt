@@ -1,0 +1,44 @@
+Fresh bounded audit of three flagged references
+
+The retrieval occurred on October 29, 2026 in America/Los_Angeles (October 30 UTC).
+
+Outcome: all three canonical pages, PDFs and DataCite records returned HTTP 200. Title, author, year and arXiv identifier match the bibliography; DOI registry identities agree and all three DOIs resolve to their matching primary pages.
+
+li2026where — arXiv:2609.29095
+Where Does Exactly-Once Live? Model, Harness, and Tool-Contract Effects on Duplicate Side Effects in LLM Agents
+Authors: Jiapeng Li
+Primary: https://arxiv.org/abs/2609.29095
+DOI: https://doi.org/10.48550/arxiv.2609.29095
+Fresh PDF pages: 23; DOI state: findable; abstract normalization agreement: 1.0
+The manuscript describes deterministic service contracts, committed-effect grading, and ambiguous-write/late-commit/redelivery/partial-batch evaluations.
+Supported as a description of the published preprint. The current manuscript neither reproduces its experiments nor claims superior performance.
+Body support: §3 Recovery under uncertain side effects (PDF pp. 3,4); §4 The Limbo benchmark and Table 2 fault modes (PDF pp. 5,6); §5 setup and §6.5 harness comparisons (PDF pp. 7,13,14)
+
+marla2026permission — arXiv:2610.31916
+Permission to Retry: A Study of Authorization and Recovery in AI Agent Workflows
+Authors: Deekshith Marla, Kushagra Bhatnagar
+Primary: https://arxiv.org/abs/2610.31916
+DOI: https://doi.org/10.48550/arxiv.2610.31916
+Fresh PDF pages: 7; DOI state: findable; abstract normalization agreement: 1.0
+The manuscript describes authored recovery policies on native persistence hosts and the separation of observations, authority, completed work and unresolved outcomes.
+Supported as a description of the preprint. Its provider/authority contract and paired native-host experiment are not attributed to this local factorial study.
+Body support: Abstract; §3 Model and conformance contract; §4.1 Matched applications (PDF pp. 1,2); §4.2 corpus; §5 native results (PDF pp. 3,4); §7 Threats to validity (PDF pp. 6)
+The freshly fetched arXiv landing page retains a pending-registration annotation. The fresh DataCite API reports active/findable and registration 2026-10-26; the DOI resolver now redirects successfully to the matching primary page. Both records are retained; the landing-page annotation appears stale.
+
+sun2026agentic — arXiv:2608.13900
+Agentic Transaction: Towards ACID-Compliant Agent Systems
+Authors: Zhaoyan Sun, Xiaoxiao Wang, Guoliang Li
+Primary: https://arxiv.org/abs/2608.13900
+DOI: https://doi.org/10.48550/arxiv.2608.13900
+Fresh PDF pages: 6; DOI state: findable; abstract normalization agreement: 1.0
+The manuscript describes semantic transaction properties, including memory, as conceptual prior work.
+Supported. Transaction-aware memory and persistent traces appear in the body. The manuscript does not adopt its numerical performance claims or establish that its semantic ACID guarantees hold generally.
+Body support: Introduction and Table 1 semantic ACID properties (PDF pp. 1,2); §2 Agentic Transaction; §2.2.4 Semantic Durability (PDF pp. 3,4,5); §3 preliminary experiments and §4 open problems (PDF pp. 5,6)
+
+The browser web tool reported all three DataCite API URLs inaccessible; this was a tool access limitation, not proof of absent DOI records. Direct HTTPS requests returned HTTP 200 and matching JSON, and DOI resolution succeeded.
+
+No observed canonical-page/PDF/registry identity mismatch or inaccessible primary paper in this bounded audit. Source availability and consistent metadata do not certify research validity or peer review.
+
+All three source identities and the narrow cited descriptions are supported by the fresh primary PDFs and matching DOI metadata. No bibliographic correction is indicated by this retrieval. They remain arXiv preprints, not established peer-reviewed venue publications.
+
+No manuscript or bibliography edits were made. Machine-readable checks, relative artifact paths, response metadata, full public primary PDFs and SHA-256 digests accompany this report.

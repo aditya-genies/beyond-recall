@@ -1,0 +1,48 @@
+{
+  "trial": "retirement-original-1",
+  "scenario": "retirement",
+  "condition": "original",
+  "repeat": 1,
+  "requested_model": "gpt-6.1-sol",
+  "prompt_sha256": "85236b7f1f405b14b08ef9345af8ce05738cba7eceb6e7a880c73a16c504cf70",
+  "records": [
+    {
+      "id": "diet-record",
+      "key": "diet",
+      "value": "vegetarian"
+    }
+  ],
+  "started_at_utc": "2026-10-30T04:19:33Z",
+  "returncode": 0,
+  "wall_seconds": 4.772,
+  "public_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 17842,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 56,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "tool_events": [],
+  "response_sha256": "b8bf1a95c4394954ca5a3c260cdb902af876ec4dc0f4c6e399c3a6c3bbb9e404",
+  "schema_valid": true,
+  "operations": [
+    {
+      "kind": "delete",
+      "target": "diet-record",
+      "key": null,
+      "value": null
+    },
+    {
+      "kind": "put",
+      "target": null,
+      "key": "enjoys_cycling",
+      "value": "Enjoys cycling."
+    }
+  ],
+  "normalized_operations_sha256": "683c7b4e576dcdabebb6d1fac6d61d52cda9a43252deae18e6b28230b75ef3e4"
+}

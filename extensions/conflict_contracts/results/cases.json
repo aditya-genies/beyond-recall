@@ -1,0 +1,6617 @@
+[
+  {
+    "case": "schedule_put_A0-A1-B0-B1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "metric",
+          "before_version": 1,
+          "after_value": "metric",
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "metric",
+          "before_version": 2,
+          "after_value": "foreign",
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "foreign",
+          "before_version": 3,
+          "after_value": "foreign",
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "A1",
+        "B0",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_A0-B0-A1-B1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "metric",
+          "before_version": 1,
+          "after_value": "foreign",
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "foreign",
+          "before_version": 2,
+          "after_value": "metric",
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "metric",
+          "before_version": 3,
+          "after_value": "foreign",
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "A1",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_A0-B0-B1-A1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "metric",
+          "before_version": 1,
+          "after_value": "foreign",
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "foreign",
+          "before_version": 2,
+          "after_value": "foreign",
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "foreign",
+          "before_version": 3,
+          "after_value": "metric",
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "B1",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-A0-A1-B1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "foreign",
+          "before_version": 1,
+          "after_value": "metric",
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "metric",
+          "before_version": 2,
+          "after_value": "metric",
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "metric",
+          "before_version": 3,
+          "after_value": "foreign",
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "A1",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-A0-B1-A1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "foreign",
+          "before_version": 1,
+          "after_value": "metric",
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "metric",
+          "before_version": 2,
+          "after_value": "foreign",
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "foreign",
+          "before_version": 3,
+          "after_value": "metric",
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "B1",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-B1-A0-A1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "foreign",
+          "before_version": 1,
+          "after_value": "foreign",
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "foreign",
+          "before_version": 2,
+          "after_value": "metric",
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "metric",
+          "before_version": 3,
+          "after_value": "metric",
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "B1",
+        "A0",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-A1-B0-B1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": null,
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 2,
+          "after_value": null,
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 3,
+          "after_value": null,
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "A1",
+        "B0",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-B0-A1-B1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": null,
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 2,
+          "after_value": null,
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 3,
+          "after_value": null,
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "A1",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-B0-B1-A1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": null,
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 2,
+          "after_value": null,
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 3,
+          "after_value": null,
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "B1",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-A0-A1-B1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": null,
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 2,
+          "after_value": null,
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 3,
+          "after_value": null,
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "A1",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-A0-B1-A1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": null,
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 2,
+          "after_value": null,
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 3,
+          "after_value": null,
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "B1",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-B1-A0-A1",
+    "mode": "upsert",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 4,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": null,
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 2,
+          "after_value": null,
+          "after_version": 3
+        },
+        {
+          "serial": 4,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 3,
+          "after_value": null,
+          "after_version": 4
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "B1",
+        "A0",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "own_committed_reply_lost",
+    "mode": "upsert",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "metric",
+          "before_version": 1,
+          "after_value": "metric",
+          "after_version": 2
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "newer_write_between_commit_and_retry",
+    "mode": "upsert",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 1,
+          "expected_value": "metric"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 3,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"metric\",\"expected_version\":1,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "metric",
+          "before_version": 1,
+          "after_value": "foreign",
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "foreign",
+          "before_version": 2,
+          "after_value": "metric",
+          "after_version": 3
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "foreign_write_before_first_effect",
+    "mode": "upsert",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "foreign",
+          "before_version": 1,
+          "after_value": "metric",
+          "after_version": 2
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "value_ABA",
+    "mode": "upsert",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "C",
+          "id": "unit",
+          "value": "imperial",
+          "expected_version": 1,
+          "expected_value": "foreign"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 3,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "C",
+          "body": "{\"expected_value\":\"foreign\",\"expected_version\":1,\"id\":\"unit\",\"value\":\"imperial\"}",
+          "before_value": "foreign",
+          "before_version": 1,
+          "after_value": "imperial",
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 2,
+          "after_value": "metric",
+          "after_version": 3
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "delete_recreate_ABA",
+    "mode": "upsert",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "C",
+          "id": "unit",
+          "value": "imperial",
+          "expected_version": 1,
+          "expected_value": null
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 3,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "C",
+          "body": "{\"expected_value\":null,\"expected_version\":1,\"id\":\"unit\",\"value\":\"imperial\"}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": "imperial",
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 2,
+          "after_value": "metric",
+          "after_version": 3
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "race_put_same_identity",
+    "mode": "upsert",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "metric",
+          "before_version": 1,
+          "after_value": "metric",
+          "after_version": 2
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": true,
+      "verb": "put",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_put_distinct_identity",
+    "mode": "upsert",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "metric",
+          "before_version": 1,
+          "after_value": "foreign",
+          "after_version": 2
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": false,
+      "verb": "put",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_delete_same_identity",
+    "mode": "upsert",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": null,
+          "after_version": 2
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": true,
+      "verb": "delete",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_delete_distinct_identity",
+    "mode": "upsert",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": null,
+          "after_version": 2
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": false,
+      "verb": "delete",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "schedule_put_A0-A1-B0-B1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "A1",
+        "B0",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_A0-B0-A1-B1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "A1",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_A0-B0-B1-A1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "B1",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-A0-A1-B1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "A1",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-A0-B1-A1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "B1",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-B1-A0-A1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "B1",
+        "A0",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-A1-B0-B1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "A1",
+        "B0",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-B0-A1-B1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "A1",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-B0-B1-A1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "B1",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-A0-A1-B1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "A1",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-A0-B1-A1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "B1",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-B1-A0-A1",
+    "mode": "value_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "B1",
+        "A0",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "own_committed_reply_lost",
+    "mode": "value_cas",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "newer_write_between_commit_and_retry",
+    "mode": "value_cas",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 1,
+          "expected_value": "metric"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"metric\",\"expected_version\":1,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "metric",
+          "before_version": 1,
+          "after_value": "foreign",
+          "after_version": 2
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "foreign_write_before_first_effect",
+    "mode": "value_cas",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "value_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "value_ABA",
+    "mode": "value_cas",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "C",
+          "id": "unit",
+          "value": "imperial",
+          "expected_version": 1,
+          "expected_value": "foreign"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 3,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "C",
+          "body": "{\"expected_value\":\"foreign\",\"expected_version\":1,\"id\":\"unit\",\"value\":\"imperial\"}",
+          "before_value": "foreign",
+          "before_version": 1,
+          "after_value": "imperial",
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 2,
+          "after_value": "metric",
+          "after_version": 3
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "delete_recreate_ABA",
+    "mode": "value_cas",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "C",
+          "id": "unit",
+          "value": "imperial",
+          "expected_version": 1,
+          "expected_value": null
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 3,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "C",
+          "body": "{\"expected_value\":null,\"expected_version\":1,\"id\":\"unit\",\"value\":\"imperial\"}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": "imperial",
+          "after_version": 2
+        },
+        {
+          "serial": 3,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 2,
+          "after_value": "metric",
+          "after_version": 3
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "race_put_same_identity",
+    "mode": "value_cas",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "value_conflict"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": true,
+      "verb": "put",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_put_distinct_identity",
+    "mode": "value_cas",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "value_conflict"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": false,
+      "verb": "put",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_delete_same_identity",
+    "mode": "value_cas",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "value_conflict"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": true,
+      "verb": "delete",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_delete_distinct_identity",
+    "mode": "value_cas",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "value_conflict"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": false,
+      "verb": "delete",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "schedule_put_A0-A1-B0-B1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "A1",
+        "B0",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_A0-B0-A1-B1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "A1",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_A0-B0-B1-A1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "B1",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-A0-A1-B1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "A1",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-A0-B1-A1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "B1",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-B1-A0-A1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "B1",
+        "A0",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-A1-B0-B1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "A1",
+        "B0",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-B0-A1-B1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "A1",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-B0-B1-A1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "B1",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-A0-A1-B1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "A1",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-A0-B1-A1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "B1",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-B1-A0-A1",
+    "mode": "version_cas",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "B1",
+        "A0",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "own_committed_reply_lost",
+    "mode": "version_cas",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "newer_write_between_commit_and_retry",
+    "mode": "version_cas",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 1,
+          "expected_value": "metric"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"metric\",\"expected_version\":1,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "metric",
+          "before_version": 1,
+          "after_value": "foreign",
+          "after_version": 2
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "foreign_write_before_first_effect",
+    "mode": "version_cas",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "value_ABA",
+    "mode": "version_cas",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "C",
+          "id": "unit",
+          "value": "imperial",
+          "expected_version": 1,
+          "expected_value": "foreign"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "imperial",
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "C",
+          "body": "{\"expected_value\":\"foreign\",\"expected_version\":1,\"id\":\"unit\",\"value\":\"imperial\"}",
+          "before_value": "foreign",
+          "before_version": 1,
+          "after_value": "imperial",
+          "after_version": 2
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "delete_recreate_ABA",
+    "mode": "version_cas",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "C",
+          "id": "unit",
+          "value": "imperial",
+          "expected_version": 1,
+          "expected_value": null
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "imperial",
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "C",
+          "body": "{\"expected_value\":null,\"expected_version\":1,\"id\":\"unit\",\"value\":\"imperial\"}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": "imperial",
+          "after_version": 2
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {}
+  },
+  {
+    "case": "race_put_same_identity",
+    "mode": "version_cas",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "version_conflict"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": true,
+      "verb": "put",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_put_distinct_identity",
+    "mode": "version_cas",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "version_conflict"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": false,
+      "verb": "put",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_delete_same_identity",
+    "mode": "version_cas",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "version_conflict"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": true,
+      "verb": "delete",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_delete_distinct_identity",
+    "mode": "version_cas",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "version_conflict"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 0
+    },
+    "metadata": {
+      "same_identity": false,
+      "verb": "delete",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "schedule_put_A0-A1-B0-B1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "A1",
+        "B0",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_A0-B0-A1-B1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "A1",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_A0-B0-B1-A1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "B1",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-A0-A1-B1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "A1",
+        "B1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-A0-B1-A1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "B1",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_put_B0-B1-A0-A1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "B1",
+        "A0",
+        "A1"
+      ],
+      "verb": "put"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-A1-B0-B1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "A1",
+        "B0",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-B0-A1-B1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "A1",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_A0-B0-B1-A1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "A0",
+        "B0",
+        "B1",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-A0-A1-B1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "A1",
+        "B1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-A0-B1-A1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "A0",
+        "B1",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "schedule_delete_B0-B1-A0-A1",
+    "mode": "version_cas_dedup",
+    "kind": "schedule",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "order": [
+        "B0",
+        "B1",
+        "A0",
+        "A1"
+      ],
+      "verb": "delete"
+    }
+  },
+  {
+    "case": "own_committed_reply_lost",
+    "mode": "version_cas_dedup",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {}
+  },
+  {
+    "case": "newer_write_between_commit_and_retry",
+    "mode": "version_cas_dedup",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 1,
+          "expected_value": "metric"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "replay",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "B",
+          "body": "{\"expected_value\":\"metric\",\"expected_version\":1,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "metric",
+          "before_version": 1,
+          "after_value": "foreign",
+          "after_version": 2
+        }
+      ],
+      "receipts": 2
+    },
+    "metadata": {}
+  },
+  {
+    "case": "foreign_write_before_first_effect",
+    "mode": "version_cas_dedup",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "foreign",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {}
+  },
+  {
+    "case": "value_ABA",
+    "mode": "version_cas_dedup",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "C",
+          "id": "unit",
+          "value": "imperial",
+          "expected_version": 1,
+          "expected_value": "foreign"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "imperial",
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"foreign\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "foreign",
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "C",
+          "body": "{\"expected_value\":\"foreign\",\"expected_version\":1,\"id\":\"unit\",\"value\":\"imperial\"}",
+          "before_value": "foreign",
+          "before_version": 1,
+          "after_value": "imperial",
+          "after_version": 2
+        }
+      ],
+      "receipts": 2
+    },
+    "metadata": {}
+  },
+  {
+    "case": "delete_recreate_ABA",
+    "mode": "version_cas_dedup",
+    "kind": "witness",
+    "observations": [
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "C",
+          "id": "unit",
+          "value": "imperial",
+          "expected_version": 1,
+          "expected_value": null
+        },
+        "result": {
+          "status": "applied",
+          "changed": true
+        }
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "status": "version_conflict",
+          "changed": false
+        }
+      }
+    ],
+    "snapshot": {
+      "value": "imperial",
+      "version": 2,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        },
+        {
+          "serial": 2,
+          "opid": "C",
+          "body": "{\"expected_value\":null,\"expected_version\":1,\"id\":\"unit\",\"value\":\"imperial\"}",
+          "before_value": null,
+          "before_version": 1,
+          "after_value": "imperial",
+          "after_version": 2
+        }
+      ],
+      "receipts": 2
+    },
+    "metadata": {}
+  },
+  {
+    "case": "race_put_same_identity",
+    "mode": "version_cas_dedup",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "replay"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "same_identity": true,
+      "verb": "put",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_put_distinct_identity",
+    "mode": "version_cas_dedup",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": "metric",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": "foreign",
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "version_conflict"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": "metric",
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":\"metric\"}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": "metric",
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "same_identity": false,
+      "verb": "put",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_delete_same_identity",
+    "mode": "version_cas_dedup",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "replay"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "A",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "same_identity": true,
+      "verb": "delete",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  },
+  {
+    "case": "race_delete_distinct_identity",
+    "mode": "version_cas_dedup",
+    "kind": "process_race",
+    "observations": [
+      {
+        "operation": {
+          "opid": "A",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": false,
+          "status": "version_conflict"
+        },
+        "returncode": 0
+      },
+      {
+        "operation": {
+          "opid": "B",
+          "id": "unit",
+          "value": null,
+          "expected_version": 0,
+          "expected_value": "imperial"
+        },
+        "result": {
+          "changed": true,
+          "status": "applied"
+        },
+        "returncode": 0
+      }
+    ],
+    "snapshot": {
+      "value": null,
+      "version": 1,
+      "effects": [
+        {
+          "serial": 1,
+          "opid": "B",
+          "body": "{\"expected_value\":\"imperial\",\"expected_version\":0,\"id\":\"unit\",\"value\":null}",
+          "before_value": "imperial",
+          "before_version": 0,
+          "after_value": null,
+          "after_version": 1
+        }
+      ],
+      "receipts": 1
+    },
+    "metadata": {
+      "same_identity": false,
+      "verb": "delete",
+      "rendezvous": "both fresh processes ready before releasing writes; SQLite serializes transactions; winner not controlled"
+    }
+  }
+]

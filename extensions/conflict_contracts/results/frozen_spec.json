@@ -1,0 +1,25 @@
+{
+  "prepared_at_utc": "2026-10-30T04:20:40Z",
+  "source_sha256": "4555c55a83b5a2c734a50592f584e54bc24955be707467755088d91b93f9660d",
+  "modes": [
+    "upsert",
+    "value_cas",
+    "version_cas",
+    "version_cas_dedup"
+  ],
+  "schedule_design": "6 linearizations preserving first-before-retry for each of two intents, x 2 put/delete profiles x 4 contracts =48",
+  "witnesses": [
+    "own_committed_reply_lost",
+    "newer_write_between_commit_and_retry",
+    "foreign_write_before_first_effect",
+    "value_ABA",
+    "delete_recreate_ABA"
+  ],
+  "witness_design": "5 specified witnesses x4 contracts =20",
+  "process_design": "4 two-process races (same/distinct operation ids xput/delete) x4 contracts =16; arrival order uncontrolled, assertions invariant to either winner",
+  "total": 84,
+  "source": "Synthetic facts only; no external model or application code",
+  "assumptions": "One target with monotonically increasing durable version, tombstone on deletion, atomic SQLite transactions, collision-free synthetic operation identities. Value null denotes a tombstone. Receipts retained forever for this bounded experiment.",
+  "contract": "A receipt on exact successful replay acknowledges without mutation; first use requires expected version; changed arguments under same operation id rejected. Rejected operations are not stored as successful receipts.",
+  "limits": "No distributed messages, mid-commit crash, arbitrary schedules, whole-plan atomicity, identity-allocation service, production performance, or new recovery algorithm claimed."
+}
