@@ -1,0 +1,58 @@
+{
+  "records": [
+    {
+      "key": "li2026where",
+      "requested_url": "https://doi.org/10.48550/arXiv.2609.29095",
+      "retrieved_utc": "2026-10-30T04:14:38.084332+00:00",
+      "status": "resolved",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2609.29095",
+      "path": "revisions/review1/references/li2026where.doi_resolution.html",
+      "bytes": 44818,
+      "sha256": "90637c52c11e8c8f1d0264037ca5f4a51d62875f650070c804fed0634b0ad1c3",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://doi.org/10.48550/arXiv.2609.29095",
+          "to": "https://arxiv.org/abs/2609.29095"
+        }
+      ]
+    },
+    {
+      "key": "marla2026permission",
+      "requested_url": "https://doi.org/10.48550/arXiv.2610.31916",
+      "retrieved_utc": "2026-10-30T04:14:38.084546+00:00",
+      "status": "resolved",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2610.31916",
+      "path": "revisions/review1/references/marla2026permission.doi_resolution.html",
+      "bytes": 43645,
+      "sha256": "51c9b9b198c2881a2436592efaba22216db257a468d5c73ce0b83340571f5461",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://doi.org/10.48550/arXiv.2610.31916",
+          "to": "https://arxiv.org/abs/2610.31916"
+        }
+      ]
+    },
+    {
+      "key": "sun2026agentic",
+      "requested_url": "https://doi.org/10.48550/arXiv.2608.13900",
+      "retrieved_utc": "2026-10-30T04:14:38.084599+00:00",
+      "status": "resolved",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2608.13900",
+      "path": "revisions/review1/references/sun2026agentic.doi_resolution.html",
+      "bytes": 42837,
+      "sha256": "9c8312a74ef68dc7b8f8c580e0cafdc436234b651e377af89e1d3f7367652911",
+      "redirects": [
+        {
+          "status": 302,
+          "from": "https://doi.org/10.48550/arXiv.2608.13900",
+          "to": "https://arxiv.org/abs/2608.13900"
+        }
+      ]
+    }
+  ]
+}

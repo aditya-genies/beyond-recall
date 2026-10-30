@@ -20,7 +20,7 @@
   "replications_not_pooled": true,
   "local_reproduction": "checks/reproduction_equivalence.json",
   "ubuntu_actions_reproduction": "checks/github_actions/equivalence.json",
-  "repository_visibility_verified": "Private at prior check; public release explicitly authorized and pending final verification",
+  "repository_visibility_verified": "public",
   "bibliography_sources": 36,
   "research_papers": 31,
   "runtime_documentation": 5,
@@ -50,5 +50,17 @@
   "latest_scientific_review": "revisions/review1/final_scientific_review.json",
   "latest_review_response": "revisions/review1/response.txt",
   "journal_readiness": "Novelty/external validity gap remains; no acceptance forecast",
-  "plan_binding_source_sha256": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088"
+  "plan_binding_source_sha256": "33c0ce7cf040d559ad0c5afd223bfa09748635284858c171680b1d158e8e0088",
+  "public_access_verification": "checks/public_github_verification.json",
+  "revised_experiment_commit": "4f2516de55acb404e76c83a9b21b546758b9c7a7",
+  "focused_tests_detail": {
+    "primary": 10,
+    "native": 9,
+    "plan_binding": 3,
+    "conflict_contract": 8,
+    "conflict_verifier_and_boundaries": 11,
+    "total_unique_methods": 41
+  },
+  "expanded_ubuntu_ci": "checks/review_revision_ci.json",
+  "expanded_ubuntu_ci_result": "Four successful jobs on the experimental source commit; original campaign and all extension checks reproduced on Python3.12 and3.14. No model calls rerun by CI."
 }

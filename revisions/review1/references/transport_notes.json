@@ -1,0 +1,7 @@
+{
+  "browser_tool_api_access": "The browser web tool reported all three DataCite API URLs inaccessible; this was a tool access limitation, not proof of absent DOI records. Direct HTTPS requests returned HTTP 200 and matching JSON, and DOI resolution succeeded.",
+  "local_tooling": "An initial local interpreter lacked pypdf before requests ran. Re-execution with an available pypdf interpreter completed the fresh fetch. This is unrelated to source availability.",
+  "source_mismatches_found": false,
+  "unavailable_sources": [],
+  "interpretation": "No observed canonical-page/PDF/registry identity mismatch or inaccessible primary paper in this bounded audit. Source availability and consistent metadata do not certify research validity or peer review."
+}

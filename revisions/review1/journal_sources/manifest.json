@@ -1,0 +1,45 @@
+{
+  "records": [
+    {
+      "key": "tse_scope",
+      "url": "https://www.computer.org/digital-library/journals/ts/cfp-ieee-transactions-on-software-engineering",
+      "retrieved_utc": "2026-10-30T04:19:10.383611+00:00",
+      "http_status": 200,
+      "final_url": "https://www.computer.org/digital-library/journals/ts/cfp-ieee-transactions-on-software-engineering",
+      "status": "saved",
+      "path": "revisions/review1/journal_sources/tse_scope.html",
+      "sha256": "b5f37d17b860a74acbee6a267b5a886cdea6cf6ef8db834b9a8fd86e48e652da",
+      "bytes": 374463
+    },
+    {
+      "key": "tmlr_scope",
+      "url": "https://jmlr.org/tmlr/editorial-policies.html",
+      "retrieved_utc": "2026-10-30T04:19:10.383914+00:00",
+      "http_status": 200,
+      "final_url": "https://jmlr.org/tmlr/editorial-policies.html",
+      "status": "saved",
+      "path": "revisions/review1/journal_sources/tmlr_scope.html",
+      "sha256": "4b00d2432e0c56acd424302c4653300ed2d0d72aa61be10dcd54e1dcff450955",
+      "bytes": 32465
+    },
+    {
+      "key": "tmlr_criteria",
+      "url": "https://jmlr.org/tmlr/acceptance-criteria.html",
+      "retrieved_utc": "2026-10-30T04:19:10.383979+00:00",
+      "http_status": 200,
+      "final_url": "https://jmlr.org/tmlr/acceptance-criteria.html",
+      "status": "saved",
+      "path": "revisions/review1/journal_sources/tmlr_criteria.html",
+      "sha256": "14acb90e1530e6f318164e6f6e1ac2d954a8fba7f65ac58a7dca125bbebf8be7",
+      "bytes": 8430
+    },
+    {
+      "key": "tosem_scope",
+      "url": "https://dl.acm.org/journal/tosem/about",
+      "retrieved_utc": "2026-10-30T04:19:10.384023+00:00",
+      "status": "http_error",
+      "http_status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ]
+}

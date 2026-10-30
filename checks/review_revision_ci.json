@@ -1,0 +1,364 @@
+{
+  "status": "PASS",
+  "run_url": "https://github.com/aditya-genies/beyond-recall/actions/runs/41003933924",
+  "tested_commit": "4f2516de55acb404e76c83a9b21b546758b9c7a7",
+  "interpretation": "Same-study Ubuntu software-environment reproduction; not outside replication or added independent samples.",
+  "unique_focused_test_methods": 41,
+  "model_requests_repeated_in_ci": 0,
+  "jobs": [
+    {
+      "id": 123894416334,
+      "name": "extensions (3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/aditya-genies/beyond-recall/actions/runs/41003933924/job/123894416334",
+      "started_at": "2026-10-30T04:37:35Z",
+      "completed_at": "2026-10-30T04:39:33Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install pinned public framework dependencies",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run native checkpoint tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run address-binding controls",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run conflict-contract and verifier negative tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify archived model outputs without credentials",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce native framework reference",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify native checkpoints and matched metrics",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce recorded-plan integration",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify integration records and controls",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Freeze and reproduce bounded conflict schedules",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Execute bounded schedules and process races",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify raw conflict journals",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Retain extension verification evidence",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 123894416692,
+      "name": "reproduce (3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/aditya-genies/beyond-recall/actions/runs/41003933924/job/123894416692",
+      "started_at": "2026-10-30T04:37:35Z",
+      "completed_at": "2026-10-30T04:38:29Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record software versions",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run ten focused tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce all 528 structural cases and five probes",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Independently check states and event witnesses",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Compare frozen aggregate outcomes",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Retain verification evidence",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 123894416711,
+      "name": "extensions (3.12)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/aditya-genies/beyond-recall/actions/runs/41003933924/job/123894416711",
+      "started_at": "2026-10-30T04:37:35Z",
+      "completed_at": "2026-10-30T04:39:38Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install pinned public framework dependencies",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run native checkpoint tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run address-binding controls",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run conflict-contract and verifier negative tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify archived model outputs without credentials",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce native framework reference",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify native checkpoints and matched metrics",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce recorded-plan integration",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify integration records and controls",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Freeze and reproduce bounded conflict schedules",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Execute bounded schedules and process races",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify raw conflict journals",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Retain extension verification evidence",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 123894416899,
+      "name": "reproduce (3.12)",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/aditya-genies/beyond-recall/actions/runs/41003933924/job/123894416899",
+      "started_at": "2026-10-30T04:37:35Z",
+      "completed_at": "2026-10-30T04:38:30Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record software versions",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run ten focused tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce all 528 structural cases and five probes",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Independently check states and event witnesses",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Compare frozen aggregate outcomes",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Retain verification evidence",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}

@@ -77,7 +77,7 @@ account and may return different outputs. No model API-key fallback is used.
 [protocol audit](checks/audit_protocol.py), [figures](figures/), and
 [provenance](PROVENANCE.json) preserve source/result pins. GitHub Actions
 reproduces the primary campaign and runs extension checks; archived older CI
-evidence is tied to its commit.
+evidence is tied to its commit. The [expanded verification run](https://github.com/aditya-genies/beyond-recall/actions/runs/41003933924) passed all four jobs on Python 3.12 and 3.14, including the complete primary campaign and every extension.
 
 This public repository accompanies a working manuscript. It has not been
 accepted or published by a peer-reviewed journal. The study uses local SQLite,

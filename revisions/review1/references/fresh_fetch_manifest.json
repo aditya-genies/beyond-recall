@@ -1,0 +1,898 @@
+{
+  "fetch_policy": "New requests to public canonical primary URLs and the DOI registration agency, with no-cache request headers. Earlier cached reports/PDFs were not read as evidence. HTTP errors are retained and not relabeled as absence or fabrication.",
+  "records": [
+    {
+      "key": "li2026where",
+      "arxiv_id": "2609.29095",
+      "kind": "abs",
+      "requested_url": "https://arxiv.org/abs/2609.29095",
+      "retrieved_utc": "2026-10-30T04:13:42.443586+00:00",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2609.29095",
+      "response_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Fri, 30 Oct 2026 04:13:42 GMT",
+        "Last-Modified": "Fri, 25 Sep 2026 00:32:10 GMT",
+        "Age": "827084",
+        "Via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish"
+      },
+      "status": "saved",
+      "path": "revisions/review1/references/li2026where.abs.html",
+      "bytes": 44818,
+      "sha256": "90637c52c11e8c8f1d0264037ca5f4a51d62875f650070c804fed0634b0ad1c3",
+      "citation_metadata": {
+        "viewport": [
+          "width=device-width, initial-scale=1"
+        ],
+        "msapplication-TileColor": [
+          "#da532c"
+        ],
+        "theme-color": [
+          "#ffffff"
+        ],
+        "description": [
+          "Abstract page for arXiv paper 2609.29095: Where Does Exactly-Once Live? Model, Harness, and Tool-Contract Effects on Duplicate Side Effects in LLM Agents"
+        ],
+        "twitter:site": [
+          "@arxiv"
+        ],
+        "twitter:card": [
+          "summary"
+        ],
+        "twitter:title": [
+          "Where Does Exactly-Once Live? Model, Harness, and Tool-Contract..."
+        ],
+        "twitter:description": [
+          "When a tool-using agent's write times out or returns a server error, the action may already have taken effect. Retrying blindly duplicates it -- a second charge, a second announcement, a second..."
+        ],
+        "twitter:image": [
+          "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+        ],
+        "twitter:image:alt": [
+          "arXiv logo"
+        ],
+        "citation_title": [
+          "Where Does Exactly-Once Live? Model, Harness, and Tool-Contract Effects on Duplicate Side Effects in LLM Agents"
+        ],
+        "citation_author": [
+          "Li, Jiapeng"
+        ],
+        "citation_date": [
+          "2026/09/24"
+        ],
+        "citation_online_date": [
+          "2026/09/24"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/2609.29095"
+        ],
+        "citation_arxiv_id": [
+          "2609.29095"
+        ],
+        "citation_abstract": [
+          "When a tool-using agent's write times out or returns a server error, the action may already have taken effect. Retrying blindly duplicates it -- a second charge, a second announcement, a second deployment -- while giving up skips required work. We ask where exactly-once behaviour should be enforced: in the model, in the agent harness, or in the tool contract. We introduce LIMBO, a deterministic sandbox of six services with realistic contracts (optional idempotency keys, eventually consistent and missing read paths) and twelve fault modes injected at the service boundary, including late commits, redelivery and partial batches; every episode is graded against a ledger of committed effects. Across 25,930 episodes spanning nine recent models, three production agent harnesses, two contract variants and fifteen recovery conditions, the answer depends on the fault. When an immediate read-back can reveal what happened, the model decides: frontier models instructed to act exactly once almost never duplicate a write whose acknowledgement was lost (0.5%), weaker models often do, and the model explains 53% of the explained variance. When it cannot -- the request is still in flight, or the transport delivered it twice -- the same frontier models duplicate in 56% and 74% of episodes, and the contract explains 81%. We prove that no verification-only policy is exactly-once under late commits without a bound on in-flight time. Waiting works when such a bound is short and known, but with heavy-tailed in-flight delays even an hour of waiting per episode falls short of offering an idempotency key on every write, which lowers the duplicate rate from 28% to 4% because agents use keys when they exist. The harness barely matters, a guard that attaches keys transfers across harnesses unchanged, and agents reported success in 90% of the episodes in which they had duplicated an effect."
+        ]
+      }
+    },
+    {
+      "key": "li2026where",
+      "arxiv_id": "2609.29095",
+      "kind": "pdf",
+      "requested_url": "https://arxiv.org/pdf/2609.29095",
+      "retrieved_utc": "2026-10-30T04:13:42.443996+00:00",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/pdf/2609.29095",
+      "response_headers": {
+        "Content-Type": "application/pdf",
+        "Date": "Fri, 30 Oct 2026 04:13:42 GMT",
+        "Last-Modified": "Fri, 25 Sep 2026 00:38:35 GMT",
+        "ETag": "CLSDof6+iJcDEAI=",
+        "Age": "337217",
+        "Via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish"
+      },
+      "status": "saved",
+      "path": "revisions/review1/references/li2026where.pdf.pdf",
+      "bytes": 718108,
+      "sha256": "e3bad2caf7041a4a0db5b15fad343098742ba17221bbfd77716b43fba5916d94",
+      "pdf_pages": 23,
+      "text_path": "revisions/review1/references/li2026where.fresh.txt",
+      "text_chars": 85498,
+      "first_page": "Where Does Exactly-Once Live?\nModel, Harness, and Tool-Contract Effects\non Duplicate Side Effects in LLM Agents\nJiapeng Li jiapengli@microsoft.com\nMicrosoft\nAbstract\nWhen a tool-using agent\u2019s write times out or returns a server error, the action may already\nhave taken effect. Retrying blindly duplicates it\u2014a second charge, a second announcement,\na second deployment\u2014while giving up skips required work. We ask where exactly-once be-\nhaviour should be enforced: in the model, in the agent harness, or in the tool contract. We\nintroduceLimbo, a deterministic sandbox of six services with realistic contracts (optional\nidempotency keys, eventually consistent and missing read paths) and twelve fault modes\ninjected at the service boundary, including late commits, redelivery and partial batches;\nevery episode is graded against a ledger of committed effects. Across 25,930 episodes span-\nning nine recent models, three production agent harnesses, two contract variants and fifteen\nrecovery conditions, the answer depends on the fault. When an immediate read-back can\nreveal what happened, the model decides: frontier models instructed to act exactly once al-\nmost never duplicate a write whose acknowledgement was lost (0.5%), weaker models often\ndo, and the model explains 53% of the explained variance. When it cannot\u2014the request is\nstill in flight, or the transport delivered it twice\u2014the same frontier models duplicate in 56%\nand 74% of episodes, and the contract explains 81%. We prove that no verification-only\npolicy is exactly-once under late commits without a bound on in-flight time. Waiting works\nwhen such a bound is short and known, but with heavy-tailed in-flight delays even an hour\nof waiting per episode falls short of offering an idempotency key on every write, which lowers\nthe duplicate rate from 28% to 4% because agents use keys when they exist. The harness\nbarely matters, a guard that attaches keys transfers across harnesses unchanged, and agents\nreported success in 90% of the episodes in which they had duplicated an effect.\n1 Introduction\nLanguage-model agents increasingly act on external systems: they publish posts, charge cards, send email,\nopen tickets and trigger deployments through tool calls. Those calls cross a network, and networks lose\nmessages. When a write times out or returns a server error, the action may or may not have taken effect.\nA client that retries blindly can charge a customer twice or announce a release twice; a client that gives up\ncan silently skip required work. Distributed systems treat this ambiguity as fundamental\u2014a client cannot\ndistinguish a lost request from a lost acknowledgement\u2014and have converged on remedies that live in the\ninterfacerather than in the client: idempotency keys, conditional writes and queryable operation status\n(Helland, 2012; Stripe, 2026; Featonby, 2020).\nAgents inherit the ambiguity, but not by default the remedies. Concurrent work has begun to document the\nconsequences. Sun (2026) constructs observation-equivalent counterfactual pairs\u2014identical timeouts with\nand without a hidden commit\u2014and finds that five open and API models retry blindly about half the time\nunless they are given a status query or a stable key. IdempotencyBench (Gopnal Swamy, 2026) argues\nfrom scripted agents that exactly-once behaviour is a property of the execution substrate rather than of\nprompting, and Mansoor et al. (2026) show that a verify-then-retry wrapper around a single model lowers\nduplicate rates. These studies leave the central engineering question open:where should exactly-once be\n1\narXiv:2609.29095v1  [cs.LG]  24 Sep 2026"
+    },
+    {
+      "key": "li2026where",
+      "arxiv_id": "2609.29095",
+      "kind": "datacite",
+      "requested_url": "https://api.datacite.org/dois/10.48550/arxiv.2609.29095",
+      "retrieved_utc": "2026-10-30T04:13:42.444157+00:00",
+      "http_status": 200,
+      "final_url": "https://api.datacite.org/dois/10.48550/arxiv.2609.29095",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 30 Oct 2026 04:13:43 GMT",
+        "ETag": "W/\"8de025675302f2a7ce63e606b59d07d9\""
+      },
+      "status": "saved",
+      "path": "revisions/review1/references/li2026where.datacite.json",
+      "bytes": 9752,
+      "sha256": "8de025675302f2a7ce63e606b59d07d9a39e3d58b807c58fe5e1ef3ae5da46c5",
+      "registry_metadata": {
+        "data": {
+          "id": "10.48550/arxiv.2609.29095",
+          "type": "dois",
+          "attributes": {
+            "doi": "10.48550/arxiv.2609.29095",
+            "prefix": "10.48550",
+            "suffix": "arxiv.2609.29095",
+            "identifiers": [
+              {
+                "identifier": "2609.29095",
+                "identifierType": "arXiv"
+              }
+            ],
+            "alternateIdentifiers": [
+              {
+                "alternateIdentifierType": "arXiv",
+                "alternateIdentifier": "2609.29095"
+              }
+            ],
+            "creators": [
+              {
+                "name": "Li, Jiapeng",
+                "nameType": "Personal",
+                "givenName": "Jiapeng",
+                "familyName": "Li",
+                "affiliation": [],
+                "nameIdentifiers": []
+              }
+            ],
+            "titles": [
+              {
+                "title": "Where Does Exactly-Once Live? Model, Harness, and Tool-Contract Effects on Duplicate Side Effects in LLM Agents"
+              }
+            ],
+            "publisher": "arXiv",
+            "container": {},
+            "publicationYear": 2026,
+            "subjects": [
+              {
+                "lang": "en",
+                "subject": "Machine Learning (cs.LG)",
+                "subjectScheme": "arXiv"
+              },
+              {
+                "lang": "en",
+                "subject": "Artificial Intelligence (cs.AI)",
+                "subjectScheme": "arXiv"
+              },
+              {
+                "lang": "en",
+                "subject": "Software Engineering (cs.SE)",
+                "subjectScheme": "arXiv"
+              },
+              {
+                "subject": "FOS: Computer and information sciences",
+                "subjectScheme": "Fields of Science and Technology (FOS)"
+              }
+            ],
+            "contributors": [],
+            "dates": [
+              {
+                "date": "2026-09-24T06:24:16Z",
+                "dateType": "Submitted",
+                "dateInformation": "v1"
+              },
+              {
+                "date": "2026-09-25T00:32:08Z",
+                "dateType": "Updated",
+                "dateInformation": "v1"
+              },
+              {
+                "date": "2026-09",
+                "dateType": "Available",
+                "dateInformation": "v1"
+              }
+            ],
+            "language": null,
+            "types": {
+              "ris": "GEN",
+              "bibtex": "misc",
+              "citeproc": "article",
+              "schemaOrg": "CreativeWork",
+              "resourceType": "Article",
+              "resourceTypeGeneral": "Preprint"
+            },
+            "relatedIdentifiers": [],
+            "relatedItems": [],
+            "sizes": [],
+            "formats": [],
+            "version": "1",
+            "rightsList": [
+              {
+                "rights": "arXiv.org perpetual, non-exclusive license",
+                "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+              }
+            ],
+            "descriptions": [
+              {
+                "description": "When a tool-using agent's write times out or returns a server error, the action may already have taken effect. Retrying blindly duplicates it -- a second charge, a second announcement, a second deployment -- while giving up skips required work. We ask where exactly-once behaviour should be enforced: in the model, in the agent harness, or in the tool contract. We introduce LIMBO, a deterministic sandbox of six services with realistic contracts (optional idempotency keys, eventually consistent and missing read paths) and twelve fault modes injected at the service boundary, including late commits, redelivery and partial batches; every episode is graded against a ledger of committed effects. Across 25,930 episodes spanning nine recent models, three production agent harnesses, two contract variants and fifteen recovery conditions, the answer depends on the fault. When an immediate read-back can reveal what happened, the model decides: frontier models instructed to act exactly once almost never duplicate a write whose acknowledgement was lost (0.5%), weaker models often do, and the model explains 53% of the explained variance. When it cannot -- the request is still in flight, or the transport delivered it twice -- the same frontier models duplicate in 56% and 74% of episodes, and the contract explains 81%. We prove that no verification-only policy is exactly-once under late commits without a bound on in-flight time. Waiting works when such a bound is short and known, but with heavy-tailed in-flight delays even an hour of waiting per episode falls short of offering an idempotency key on every write, which lowers the duplicate rate from 28% to 4% because agents use keys when they exist. The harness barely matters, a guard that attaches keys transfers across harnesses unchanged, and agents reported success in 90% of the episodes in which they had duplicated an effect.",
+                "descriptionType": "Abstract"
+              },
+              {
+                "description": "23 pages, 6 figures, 13 tables",
+                "descriptionType": "Other"
+              }
+            ],
+            "geoLocations": [],
+            "fundingReferences": [],
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA5LjI5MDk1PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwOS4yOTA5NTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5MaSwgSmlhcGVuZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+SmlhcGVuZzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MaTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+V2hlcmUgRG9lcyBFeGFjdGx5LU9uY2UgTGl2ZT8gTW9kZWwsIEhhcm5lc3MsIGFuZCBUb29sLUNvbnRyYWN0IEVmZmVjdHMgb24gRHVwbGljYXRlIFNpZGUgRWZmZWN0cyBpbiBMTE0gQWdlbnRzPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPmFyWGl2PC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI2PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+TWFjaGluZSBMZWFybmluZyAoY3MuTEcpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+QXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgKGNzLkFJKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPlNvZnR3YXJlIEVuZ2luZWVyaW5nIChjcy5TRSk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJGaWVsZHMgb2YgU2NpZW5jZSBhbmQgVGVjaG5vbG9neSAoRk9TKSI+Rk9TOiBDb21wdXRlciBhbmQgaW5mb3JtYXRpb24gc2NpZW5jZXM8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iU3VibWl0dGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA5LTI0VDA2OjI0OjE2WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA5LTI1VDAwOjMyOjA4WjwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjYtMDk8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlByZXByaW50Ij5BcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHZlcnNpb24+MTwvdmVyc2lvbj4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vYXJ4aXYub3JnL2xpY2Vuc2VzL25vbmV4Y2x1c2l2ZS1kaXN0cmliLzEuMC8iPmFyWGl2Lm9yZyBwZXJwZXR1YWwsIG5vbi1leGNsdXNpdmUgbGljZW5zZTwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPldoZW4gYSB0b29sLXVzaW5nIGFnZW50J3Mgd3JpdGUgdGltZXMgb3V0IG9yIHJldHVybnMgYSBzZXJ2ZXIgZXJyb3IsIHRoZSBhY3Rpb24gbWF5IGFscmVhZHkgaGF2ZSB0YWtlbiBlZmZlY3QuIFJldHJ5aW5nIGJsaW5kbHkgZHVwbGljYXRlcyBpdCAtLSBhIHNlY29uZCBjaGFyZ2UsIGEgc2Vjb25kIGFubm91bmNlbWVudCwgYSBzZWNvbmQgZGVwbG95bWVudCAtLSB3aGlsZSBnaXZpbmcgdXAgc2tpcHMgcmVxdWlyZWQgd29yay4gV2UgYXNrIHdoZXJlIGV4YWN0bHktb25jZSBiZWhhdmlvdXIgc2hvdWxkIGJlIGVuZm9yY2VkOiBpbiB0aGUgbW9kZWwsIGluIHRoZSBhZ2VudCBoYXJuZXNzLCBvciBpbiB0aGUgdG9vbCBjb250cmFjdC4gV2UgaW50cm9kdWNlIExJTUJPLCBhIGRldGVybWluaXN0aWMgc2FuZGJveCBvZiBzaXggc2VydmljZXMgd2l0aCByZWFsaXN0aWMgY29udHJhY3RzIChvcHRpb25hbCBpZGVtcG90ZW5jeSBrZXlzLCBldmVudHVhbGx5IGNvbnNpc3RlbnQgYW5kIG1pc3NpbmcgcmVhZCBwYXRocykgYW5kIHR3ZWx2ZSBmYXVsdCBtb2RlcyBpbmplY3RlZCBhdCB0aGUgc2VydmljZSBib3VuZGFyeSwgaW5jbHVkaW5nIGxhdGUgY29tbWl0cywgcmVkZWxpdmVyeSBhbmQgcGFydGlhbCBiYXRjaGVzOyBldmVyeSBlcGlzb2RlIGlzIGdyYWRlZCBhZ2FpbnN0IGEgbGVkZ2VyIG9mIGNvbW1pdHRlZCBlZmZlY3RzLiBBY3Jvc3MgMjUsOTMwIGVwaXNvZGVzIHNwYW5uaW5nIG5pbmUgcmVjZW50IG1vZGVscywgdGhyZWUgcHJvZHVjdGlvbiBhZ2VudCBoYXJuZXNzZXMsIHR3byBjb250cmFjdCB2YXJpYW50cyBhbmQgZmlmdGVlbiByZWNvdmVyeSBjb25kaXRpb25zLCB0aGUgYW5zd2VyIGRlcGVuZHMgb24gdGhlIGZhdWx0LiBXaGVuIGFuIGltbWVkaWF0ZSByZWFkLWJhY2sgY2FuIHJldmVhbCB3aGF0IGhhcHBlbmVkLCB0aGUgbW9kZWwgZGVjaWRlczogZnJvbnRpZXIgbW9kZWxzIGluc3RydWN0ZWQgdG8gYWN0IGV4YWN0bHkgb25jZSBhbG1vc3QgbmV2ZXIgZHVwbGljYXRlIGEgd3JpdGUgd2hvc2UgYWNrbm93bGVkZ2VtZW50IHdhcyBsb3N0ICgwLjUlKSwgd2Vha2VyIG1vZGVscyBvZnRlbiBkbywgYW5kIHRoZSBtb2RlbCBleHBsYWlucyA1MyUgb2YgdGhlIGV4cGxhaW5lZCB2YXJpYW5jZS4gV2hlbiBpdCBjYW5ub3QgLS0gdGhlIHJlcXVlc3QgaXMgc3RpbGwgaW4gZmxpZ2h0LCBvciB0aGUgdHJhbnNwb3J0IGRlbGl2ZXJlZCBpdCB0d2ljZSAtLSB0aGUgc2FtZSBmcm9udGllciBtb2RlbHMgZHVwbGljYXRlIGluIDU2JSBhbmQgNzQlIG9mIGVwaXNvZGVzLCBhbmQgdGhlIGNvbnRyYWN0IGV4cGxhaW5zIDgxJS4gV2UgcHJvdmUgdGhhdCBubyB2ZXJpZmljYXRpb24tb25seSBwb2xpY3kgaXMgZXhhY3RseS1vbmNlIHVuZGVyIGxhdGUgY29tbWl0cyB3aXRob3V0IGEgYm91bmQgb24gaW4tZmxpZ2h0IHRpbWUuIFdhaXRpbmcgd29ya3Mgd2hlbiBzdWNoIGEgYm91bmQgaXMgc2hvcnQgYW5kIGtub3duLCBidXQgd2l0aCBoZWF2eS10YWlsZWQgaW4tZmxpZ2h0IGRlbGF5cyBldmVuIGFuIGhvdXIgb2Ygd2FpdGluZyBwZXIgZXBpc29kZSBmYWxscyBzaG9ydCBvZiBvZmZlcmluZyBhbiBpZGVtcG90ZW5jeSBrZXkgb24gZXZlcnkgd3JpdGUsIHdoaWNoIGxvd2VycyB0aGUgZHVwbGljYXRlIHJhdGUgZnJvbSAyOCUgdG8gNCUgYmVjYXVzZSBhZ2VudHMgdXNlIGtleXMgd2hlbiB0aGV5IGV4aXN0LiBUaGUgaGFybmVzcyBiYXJlbHkgbWF0dGVycywgYSBndWFyZCB0aGF0IGF0dGFjaGVzIGtleXMgdHJhbnNmZXJzIGFjcm9zcyBoYXJuZXNzZXMgdW5jaGFuZ2VkLCBhbmQgYWdlbnRzIHJlcG9ydGVkIHN1Y2Nlc3MgaW4gOTAlIG9mIHRoZSBlcGlzb2RlcyBpbiB3aGljaCB0aGV5IGhhZCBkdXBsaWNhdGVkIGFuIGVmZmVjdC48L2Rlc2NyaXB0aW9uPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iT3RoZXIiPjIzIHBhZ2VzLCA2IGZpZ3VyZXMsIDEzIHRhYmxlczwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+",
+            "url": "https://arxiv.org/abs/2609.29095",
+            "contentUrl": null,
+            "metadataVersion": 0,
+            "schemaVersion": "http://datacite.org/schema/kernel-4",
+            "source": "mds",
+            "isActive": true,
+            "state": "findable",
+            "reason": null,
+            "viewCount": 0,
+            "viewsOverTime": [],
+            "downloadCount": 0,
+            "downloadsOverTime": [],
+            "referenceCount": 0,
+            "citationCount": 0,
+            "citationsOverTime": [],
+            "partCount": 0,
+            "partOfCount": 0,
+            "versionCount": 0,
+            "versionOfCount": 0,
+            "created": "2026-09-25T02:22:46.000Z",
+            "registered": "2026-09-25T02:22:46.000Z",
+            "published": "2026",
+            "updated": "2026-09-25T02:22:46.000Z"
+          },
+          "relationships": {
+            "client": {
+              "data": {
+                "id": "arxiv.content",
+                "type": "clients"
+              }
+            },
+            "provider": {
+              "data": {
+                "id": "arxiv",
+                "type": "providers"
+              }
+            },
+            "media": {
+              "data": {
+                "id": "10.48550/arxiv.2609.29095",
+                "type": "media"
+              }
+            },
+            "references": {
+              "data": []
+            },
+            "citations": {
+              "data": []
+            },
+            "parts": {
+              "data": []
+            },
+            "partOf": {
+              "data": []
+            },
+            "versions": {
+              "data": []
+            },
+            "versionOf": {
+              "data": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "marla2026permission",
+      "arxiv_id": "2610.31916",
+      "kind": "abs",
+      "requested_url": "https://arxiv.org/abs/2610.31916",
+      "retrieved_utc": "2026-10-30T04:13:42.600731+00:00",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2610.31916",
+      "response_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Fri, 30 Oct 2026 04:13:42 GMT",
+        "Last-Modified": "Mon, 26 Oct 2026 00:12:21 GMT",
+        "Age": "353498",
+        "Via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish"
+      },
+      "status": "saved",
+      "path": "revisions/review1/references/marla2026permission.abs.html",
+      "bytes": 43645,
+      "sha256": "51c9b9b198c2881a2436592efaba22216db257a468d5c73ce0b83340571f5461",
+      "citation_metadata": {
+        "viewport": [
+          "width=device-width, initial-scale=1"
+        ],
+        "msapplication-TileColor": [
+          "#da532c"
+        ],
+        "theme-color": [
+          "#ffffff"
+        ],
+        "description": [
+          "Abstract page for arXiv paper 2610.31916: Permission to Retry: A Study of Authorization and Recovery in AI Agent Workflows"
+        ],
+        "twitter:site": [
+          "@arxiv"
+        ],
+        "twitter:card": [
+          "summary"
+        ],
+        "twitter:title": [
+          "Permission to Retry: A Study of Authorization and Recovery in AI..."
+        ],
+        "twitter:description": [
+          "A durable agent can resume a consequential action while its authority changes and the action's external outcome remains uncertain. We study execution-time reliability of tool-using AI agents,..."
+        ],
+        "twitter:image": [
+          "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+        ],
+        "twitter:image:alt": [
+          "arXiv logo"
+        ],
+        "citation_title": [
+          "Permission to Retry: A Study of Authorization and Recovery in AI Agent Workflows"
+        ],
+        "citation_author": [
+          "Marla, Deekshith",
+          "Bhatnagar, Kushagra"
+        ],
+        "citation_date": [
+          "2026/10/22"
+        ],
+        "citation_online_date": [
+          "2026/10/22"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/2610.31916"
+        ],
+        "citation_arxiv_id": [
+          "2610.31916"
+        ],
+        "citation_abstract": [
+          "A durable agent can resume a consequential action while its authority changes and the action's external outcome remains uncertain. We study execution-time reliability of tool-using AI agents, isolating recovery decisions from language-model behavior. Checkpoint state, permission to dispatch, evidence of an external effect and permission to reconcile are distinct obligations. We present a finite conformance study that checks these obligations through histories scored against a provider effect ledger hidden from the recovering application. A prospectively frozen campaign executes 336 histories on native LangGraph and Temporal hosts, crossing 14 schedules, three provider contracts and four matched application policies. All 168 paired host cells have identical checked outcomes. Per host, retained-ledger reconciliation passes all 42 histories: 21 checked completions, 15 denials and six unknown outcomes with reservations retained. Cached retry, revalidation before retry and stable-key retry pass 30, 36 and 31 histories respectively. A separate 16-case component study of InfinityOS, an enterprise AI platform developed by Arya.ai, exercises exported authority, worker, recovery and settlement code over repository fakes. The results isolate the roles of current authority, provider contracts and retained observations in recovery, with safety, completion and unresolved obligations reported separately for the declared application profile."
+        ]
+      }
+    },
+    {
+      "key": "marla2026permission",
+      "arxiv_id": "2610.31916",
+      "kind": "pdf",
+      "requested_url": "https://arxiv.org/pdf/2610.31916",
+      "retrieved_utc": "2026-10-30T04:13:42.689875+00:00",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/pdf/2610.31916",
+      "response_headers": {
+        "Content-Type": "application/pdf",
+        "Date": "Fri, 30 Oct 2026 04:13:42 GMT",
+        "Last-Modified": "Mon, 26 Oct 2026 00:15:00 GMT",
+        "ETag": "CI7R28Oz1pcDEAI=",
+        "Age": "353426",
+        "Via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish"
+      },
+      "status": "saved",
+      "path": "revisions/review1/references/marla2026permission.pdf.pdf",
+      "bytes": 413248,
+      "sha256": "d7651b65c1fcbbbba0f57440ec43de30c4a1f3548e81972a08792ba1971b2a1d",
+      "pdf_pages": 7,
+      "text_path": "revisions/review1/references/marla2026permission.fresh.txt",
+      "text_chars": 24508,
+      "first_page": "23 October 2026\nPermission to Retry:\nA Study of Authorization and Recovery\nin AI Agent Workflows\nDeekshith Marla Kushagra Bhatnagar\nArya.ai\nABSTRACT\nA durable agent can resume a consequential action while its authority changes and the action\u2019s external outcome remains\nuncertain. We study execution-time reliability of tool-using AI agents, isolating recovery decisions from language-model\nbehavior. Checkpoint state, permission to dispatch, evidence of an external effect and permission to reconcile are distinct\nobligations. We present a finite conformance study that checks these obligations through histories scored against a provider\neffect ledger hidden from the recovering application. A prospectively frozen campaign executes 336 histories on native\nLangGraph and Temporal hosts, crossing 14 schedules, three provider contracts and four matched application policies. All\n168 paired host cells have identical checked outcomes. Per host, retained-ledger reconciliation passes all 42 histories: 21\nchecked completions, 15 denials and six unknown outcomes with reservations retained. Cached retry, revalidation before\nretry and stable-key retry pass 30, 36 and 31 histories respectively. A separate 16-case component study of InfinityOS,\nan enterprise AI platform developed by Arya.ai, exercises exported authority, worker, recovery and settlement code over\nrepository fakes. The results isolate the roles of current authority, provider contracts and retained observations in recovery,\nwith safety, completion and unresolved obligations reported separately for the declared application profile.\nKeywords:AI agent reliability; tool use; authorization; durable execution; recovery; uncertain outcomes.\n1 Introduction\nConsider a refund for an approved recipient and amount.\nThe service commits the refund, but the acknowledgement\ndisappears. Before a replacement worker resumes, the ini-\ntiating principal loses write permission. Repeating the re-\nquest can create a duplicate; treating a missing acknowl-\nedgement as proof of failure can release an obligation pre-\nmaturely; abandoning every continuation can prevent legit-\nimate recovery. Recovering evidence of an existing effect\nand obtaining authority for a new dispatch are separate de-\ncisions.\nFor a tool-using AI agent, resuming a workflow requires\ndeciding what actions remain permitted and what can be\nconcluded from earlier observations. We isolate this execu-\ntion layer to examine how changing authority and uncertain\ntool outcomes affect recovery.\nThis is a distributed execution problem with established\nfoundations. Fault-tolerant workflows already separate\ndurable state from external effects [8]. Agent research di-\nrectly addresses semantic replay, consumed authority and\nuncertain outcomes [1, 2, 3, 6]. These foundations moti-\nvate evaluating their composition at agent recovery bound-\naries. The practical question is which obligations an appli-\ncation preserves at each recovery boundary, under an ex-\nplicit provider contract.\nWe study three questions. RQ1: Which configured recov-\nery policies preserve the declared safety conditions while\ncompleting legitimate work? RQ2: Do paired applications\non two independently maintained execution hosts differ un-\nder the same policy facts and provider schedules? RQ3:\nHow does the location of a confirmed observation relative\nto settlement change recoverability?\nOur contribution is a bounded conformance artifact and\nits measured application: a history specification separat-\ning admission, effects and settlement; a prospective native-\nhost campaign; and a separately qualified InfinityOS com-\nponent case study. The evaluation record preserves raw ob-\nservations, exact versions and data digests, with a recon-\nstruction checker and explicit exclusions. The policies are\nauthored ablations, not framework defaults or independent\nimplementations of published security protocols. Paired\nhost outcomes are reported alongside policy differences and\nprogress measures.\n1\narXiv:2610.31916v1  [cs.AI]  22 Oct 2026"
+    },
+    {
+      "key": "marla2026permission",
+      "arxiv_id": "2610.31916",
+      "kind": "datacite",
+      "requested_url": "https://api.datacite.org/dois/10.48550/arxiv.2610.31916",
+      "retrieved_utc": "2026-10-30T04:13:43.068680+00:00",
+      "http_status": 200,
+      "final_url": "https://api.datacite.org/dois/10.48550/arxiv.2610.31916",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 30 Oct 2026 04:13:43 GMT",
+        "ETag": "W/\"f63854556177e81c54b37d3f2e3677f4\""
+      },
+      "status": "saved",
+      "path": "revisions/review1/references/marla2026permission.datacite.json",
+      "bytes": 8863,
+      "sha256": "f63854556177e81c54b37d3f2e3677f494af19e3050d63b4d2c557389040f9e1",
+      "registry_metadata": {
+        "data": {
+          "id": "10.48550/arxiv.2610.31916",
+          "type": "dois",
+          "attributes": {
+            "doi": "10.48550/arxiv.2610.31916",
+            "prefix": "10.48550",
+            "suffix": "arxiv.2610.31916",
+            "identifiers": [
+              {
+                "identifier": "2610.31916",
+                "identifierType": "arXiv"
+              }
+            ],
+            "alternateIdentifiers": [
+              {
+                "alternateIdentifierType": "arXiv",
+                "alternateIdentifier": "2610.31916"
+              }
+            ],
+            "creators": [
+              {
+                "name": "Marla, Deekshith",
+                "nameType": "Personal",
+                "givenName": "Deekshith",
+                "familyName": "Marla",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Bhatnagar, Kushagra",
+                "nameType": "Personal",
+                "givenName": "Kushagra",
+                "familyName": "Bhatnagar",
+                "affiliation": [],
+                "nameIdentifiers": []
+              }
+            ],
+            "titles": [
+              {
+                "title": "Permission to Retry: A Study of Authorization and Recovery in AI Agent Workflows"
+              }
+            ],
+            "publisher": "arXiv",
+            "container": {},
+            "publicationYear": 2026,
+            "subjects": [
+              {
+                "lang": "en",
+                "subject": "Artificial Intelligence (cs.AI)",
+                "subjectScheme": "arXiv"
+              },
+              {
+                "lang": "en",
+                "subject": "Software Engineering (cs.SE)",
+                "subjectScheme": "arXiv"
+              },
+              {
+                "subject": "FOS: Computer and information sciences",
+                "subjectScheme": "Fields of Science and Technology (FOS)"
+              }
+            ],
+            "contributors": [],
+            "dates": [
+              {
+                "date": "2026-10-22T21:09:22Z",
+                "dateType": "Submitted",
+                "dateInformation": "v1"
+              },
+              {
+                "date": "2026-10-26T00:12:20Z",
+                "dateType": "Updated",
+                "dateInformation": "v1"
+              },
+              {
+                "date": "2026-10",
+                "dateType": "Available",
+                "dateInformation": "v1"
+              }
+            ],
+            "language": null,
+            "types": {
+              "ris": "GEN",
+              "bibtex": "misc",
+              "citeproc": "article",
+              "schemaOrg": "CreativeWork",
+              "resourceType": "Article",
+              "resourceTypeGeneral": "Preprint"
+            },
+            "relatedIdentifiers": [],
+            "relatedItems": [],
+            "sizes": [],
+            "formats": [],
+            "version": "1",
+            "rightsList": [
+              {
+                "rights": "arXiv.org perpetual, non-exclusive license",
+                "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+              }
+            ],
+            "descriptions": [
+              {
+                "description": "A durable agent can resume a consequential action while its authority changes and the action's external outcome remains uncertain. We study execution-time reliability of tool-using AI agents, isolating recovery decisions from language-model behavior. Checkpoint state, permission to dispatch, evidence of an external effect and permission to reconcile are distinct obligations. We present a finite conformance study that checks these obligations through histories scored against a provider effect ledger hidden from the recovering application. A prospectively frozen campaign executes 336 histories on native LangGraph and Temporal hosts, crossing 14 schedules, three provider contracts and four matched application policies. All 168 paired host cells have identical checked outcomes. Per host, retained-ledger reconciliation passes all 42 histories: 21 checked completions, 15 denials and six unknown outcomes with reservations retained. Cached retry, revalidation before retry and stable-key retry pass 30, 36 and 31 histories respectively. A separate 16-case component study of InfinityOS, an enterprise AI platform developed by Arya.ai, exercises exported authority, worker, recovery and settlement code over repository fakes. The results isolate the roles of current authority, provider contracts and retained observations in recovery, with safety, completion and unresolved obligations reported separately for the declared application profile.",
+                "descriptionType": "Abstract"
+              },
+              {
+                "description": "7 pages, 2 figures, 3 tables",
+                "descriptionType": "Other"
+              }
+            ],
+            "geoLocations": [],
+            "fundingReferences": [],
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjEwLjMxOTE2PC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYxMC4zMTkxNjwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5NYXJsYSwgRGVla3NoaXRoPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5EZWVrc2hpdGg8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TWFybGE8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+QmhhdG5hZ2FyLCBLdXNoYWdyYTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+S3VzaGFncmE8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+QmhhdG5hZ2FyPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5QZXJtaXNzaW9uIHRvIFJldHJ5OiBBIFN0dWR5IG9mIEF1dGhvcml6YXRpb24gYW5kIFJlY292ZXJ5IGluIEFJIEFnZW50IFdvcmtmbG93czwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNjwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkFydGlmaWNpYWwgSW50ZWxsaWdlbmNlIChjcy5BSSk8L3N1YmplY3Q+CiAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW4iIHN1YmplY3RTY2hlbWU9ImFyWGl2Ij5Tb2Z0d2FyZSBFbmdpbmVlcmluZyAoY3MuU0UpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0xMC0yMlQyMTowOToyMlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0xMC0yNlQwMDoxMjoyMFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTEwPC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5BIGR1cmFibGUgYWdlbnQgY2FuIHJlc3VtZSBhIGNvbnNlcXVlbnRpYWwgYWN0aW9uIHdoaWxlIGl0cyBhdXRob3JpdHkgY2hhbmdlcyBhbmQgdGhlIGFjdGlvbidzIGV4dGVybmFsIG91dGNvbWUgcmVtYWlucyB1bmNlcnRhaW4uIFdlIHN0dWR5IGV4ZWN1dGlvbi10aW1lIHJlbGlhYmlsaXR5IG9mIHRvb2wtdXNpbmcgQUkgYWdlbnRzLCBpc29sYXRpbmcgcmVjb3ZlcnkgZGVjaXNpb25zIGZyb20gbGFuZ3VhZ2UtbW9kZWwgYmVoYXZpb3IuIENoZWNrcG9pbnQgc3RhdGUsIHBlcm1pc3Npb24gdG8gZGlzcGF0Y2gsIGV2aWRlbmNlIG9mIGFuIGV4dGVybmFsIGVmZmVjdCBhbmQgcGVybWlzc2lvbiB0byByZWNvbmNpbGUgYXJlIGRpc3RpbmN0IG9ibGlnYXRpb25zLiBXZSBwcmVzZW50IGEgZmluaXRlIGNvbmZvcm1hbmNlIHN0dWR5IHRoYXQgY2hlY2tzIHRoZXNlIG9ibGlnYXRpb25zIHRocm91Z2ggaGlzdG9yaWVzIHNjb3JlZCBhZ2FpbnN0IGEgcHJvdmlkZXIgZWZmZWN0IGxlZGdlciBoaWRkZW4gZnJvbSB0aGUgcmVjb3ZlcmluZyBhcHBsaWNhdGlvbi4gQSBwcm9zcGVjdGl2ZWx5IGZyb3plbiBjYW1wYWlnbiBleGVjdXRlcyAzMzYgaGlzdG9yaWVzIG9uIG5hdGl2ZSBMYW5nR3JhcGggYW5kIFRlbXBvcmFsIGhvc3RzLCBjcm9zc2luZyAxNCBzY2hlZHVsZXMsIHRocmVlIHByb3ZpZGVyIGNvbnRyYWN0cyBhbmQgZm91ciBtYXRjaGVkIGFwcGxpY2F0aW9uIHBvbGljaWVzLiBBbGwgMTY4IHBhaXJlZCBob3N0IGNlbGxzIGhhdmUgaWRlbnRpY2FsIGNoZWNrZWQgb3V0Y29tZXMuIFBlciBob3N0LCByZXRhaW5lZC1sZWRnZXIgcmVjb25jaWxpYXRpb24gcGFzc2VzIGFsbCA0MiBoaXN0b3JpZXM6IDIxIGNoZWNrZWQgY29tcGxldGlvbnMsIDE1IGRlbmlhbHMgYW5kIHNpeCB1bmtub3duIG91dGNvbWVzIHdpdGggcmVzZXJ2YXRpb25zIHJldGFpbmVkLiBDYWNoZWQgcmV0cnksIHJldmFsaWRhdGlvbiBiZWZvcmUgcmV0cnkgYW5kIHN0YWJsZS1rZXkgcmV0cnkgcGFzcyAzMCwgMzYgYW5kIDMxIGhpc3RvcmllcyByZXNwZWN0aXZlbHkuIEEgc2VwYXJhdGUgMTYtY2FzZSBjb21wb25lbnQgc3R1ZHkgb2YgSW5maW5pdHlPUywgYW4gZW50ZXJwcmlzZSBBSSBwbGF0Zm9ybSBkZXZlbG9wZWQgYnkgQXJ5YS5haSwgZXhlcmNpc2VzIGV4cG9ydGVkIGF1dGhvcml0eSwgd29ya2VyLCByZWNvdmVyeSBhbmQgc2V0dGxlbWVudCBjb2RlIG92ZXIgcmVwb3NpdG9yeSBmYWtlcy4gVGhlIHJlc3VsdHMgaXNvbGF0ZSB0aGUgcm9sZXMgb2YgY3VycmVudCBhdXRob3JpdHksIHByb3ZpZGVyIGNvbnRyYWN0cyBhbmQgcmV0YWluZWQgb2JzZXJ2YXRpb25zIGluIHJlY292ZXJ5LCB3aXRoIHNhZmV0eSwgY29tcGxldGlvbiBhbmQgdW5yZXNvbHZlZCBvYmxpZ2F0aW9ucyByZXBvcnRlZCBzZXBhcmF0ZWx5IGZvciB0aGUgZGVjbGFyZWQgYXBwbGljYXRpb24gcHJvZmlsZS48L2Rlc2NyaXB0aW9uPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iT3RoZXIiPjcgcGFnZXMsIDIgZmlndXJlcywgMyB0YWJsZXM8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+            "url": "https://arxiv.org/abs/2610.31916",
+            "contentUrl": null,
+            "metadataVersion": 0,
+            "schemaVersion": "http://datacite.org/schema/kernel-4",
+            "source": "mds",
+            "isActive": true,
+            "state": "findable",
+            "reason": null,
+            "viewCount": 0,
+            "viewsOverTime": [],
+            "downloadCount": 0,
+            "downloadsOverTime": [],
+            "referenceCount": 0,
+            "citationCount": 0,
+            "citationsOverTime": [],
+            "partCount": 0,
+            "partOfCount": 0,
+            "versionCount": 0,
+            "versionOfCount": 0,
+            "created": "2026-10-26T02:06:23.000Z",
+            "registered": "2026-10-26T02:06:23.000Z",
+            "published": "2026",
+            "updated": "2026-10-26T02:06:23.000Z"
+          },
+          "relationships": {
+            "client": {
+              "data": {
+                "id": "arxiv.content",
+                "type": "clients"
+              }
+            },
+            "provider": {
+              "data": {
+                "id": "arxiv",
+                "type": "providers"
+              }
+            },
+            "media": {
+              "data": {
+                "id": "10.48550/arxiv.2610.31916",
+                "type": "media"
+              }
+            },
+            "references": {
+              "data": []
+            },
+            "citations": {
+              "data": []
+            },
+            "parts": {
+              "data": []
+            },
+            "partOf": {
+              "data": []
+            },
+            "versions": {
+              "data": []
+            },
+            "versionOf": {
+              "data": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "sun2026agentic",
+      "arxiv_id": "2608.13900",
+      "kind": "abs",
+      "requested_url": "https://arxiv.org/abs/2608.13900",
+      "retrieved_utc": "2026-10-30T04:13:43.164494+00:00",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2608.13900",
+      "response_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Fri, 30 Oct 2026 04:13:43 GMT",
+        "Last-Modified": "Mon, 24 Aug 2026 21:28:12 GMT",
+        "Age": "825125",
+        "Via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish"
+      },
+      "status": "saved",
+      "path": "revisions/review1/references/sun2026agentic.abs.html",
+      "bytes": 42837,
+      "sha256": "9c8312a74ef68dc7b8f8c580e0cafdc436234b651e377af89e1d3f7367652911",
+      "citation_metadata": {
+        "viewport": [
+          "width=device-width, initial-scale=1"
+        ],
+        "msapplication-TileColor": [
+          "#da532c"
+        ],
+        "theme-color": [
+          "#ffffff"
+        ],
+        "description": [
+          "Abstract page for arXiv paper 2608.13900: Agentic Transaction: Towards ACID-Compliant Agent Systems"
+        ],
+        "twitter:site": [
+          "@arxiv"
+        ],
+        "twitter:card": [
+          "summary"
+        ],
+        "twitter:title": [
+          "Agentic Transaction: Towards ACID-Compliant Agent Systems"
+        ],
+        "twitter:description": [
+          "Large language model (LLM) agents are evolving from conversational assistants into autonomous systems that execute long-horizon tasks through reasoning, tool use, code generation, and workspace..."
+        ],
+        "twitter:image": [
+          "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png"
+        ],
+        "twitter:image:alt": [
+          "arXiv logo"
+        ],
+        "citation_title": [
+          "Agentic Transaction: Towards ACID-Compliant Agent Systems"
+        ],
+        "citation_author": [
+          "Sun, Zhaoyan",
+          "Wang, Xiaoxiao",
+          "Li, Guoliang"
+        ],
+        "citation_date": [
+          "2026/08/14"
+        ],
+        "citation_online_date": [
+          "2026/08/14"
+        ],
+        "citation_pdf_url": [
+          "https://arxiv.org/pdf/2608.13900"
+        ],
+        "citation_arxiv_id": [
+          "2608.13900"
+        ],
+        "citation_abstract": [
+          "Large language model (LLM) agents are evolving from conversational assistants into autonomous systems that execute long-horizon tasks through reasoning, tool use, code generation, and workspace manipulation. As agents increasingly operate over persistent environments and multi-step workflows, they face challenges analogous to those addressed by transactional database systems: reliable execution, consistent outcomes, safe concurrency, and durable state management. We introduce the concept of an agentic transaction and propose an ACID-compliant agent system framework that reinterprets the classical ACID properties for agent execution through four semantic guarantees: Semantic Atomicity, Semantic Consistency, Semantic Isolation, and Semantic Durability. Together, these properties provide a principled foundation for building reliable agent systems despite model uncertainty and dynamic execution environments. To instantiate this framework, we develop an ACID-compliant data agent that realizes these guarantees through transactional exploration-execution-validation cycles, transactional skill hubs, confidence divergence-based validation, semantic dependency-aware isolation, and transaction-aware semantic state management. Experimental results on widely used benchmarks show that our system achieves a 10.6% improvement over state-of-the-art agents, including Claude Code. This work opens a broader research agenda on extending transactional principles and system architectures toward building trustworthy, scalable, and self-evolving AI agent systems."
+        ]
+      }
+    },
+    {
+      "key": "sun2026agentic",
+      "arxiv_id": "2608.13900",
+      "kind": "pdf",
+      "requested_url": "https://arxiv.org/pdf/2608.13900",
+      "retrieved_utc": "2026-10-30T04:13:43.254605+00:00",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/pdf/2608.13900",
+      "response_headers": {
+        "Content-Type": "application/pdf",
+        "Date": "Fri, 30 Oct 2026 04:13:43 GMT",
+        "Last-Modified": "Mon, 17 Aug 2026 00:22:07 GMT",
+        "ETag": "\"sha256:149683eb80c58fb6825f00fafb60b1df3f4153507d13247ff82a46b9326f3b41\"",
+        "Age": "526103",
+        "Via": "1.1 google, 1.1 varnish, 1.1 varnish, 1.1 varnish"
+      },
+      "status": "saved",
+      "path": "revisions/review1/references/sun2026agentic.pdf.pdf",
+      "bytes": 2187131,
+      "sha256": "7ea69c3898af476afc643239270247fddc0901687f71aee74fa53517f62e9ba6",
+      "pdf_pages": 6,
+      "text_path": "revisions/review1/references/sun2026agentic.fresh.txt",
+      "text_chars": 37909,
+      "first_page": "Agentic Transaction: Towards ACID-Compliant Agent Systems\nZhaoyan Sun\nTsinghua University\nszy22@mails.tsinghua.edu.cn\nXiaoxiao Wang\nTsinghua University\nxw724@cornell.edu\nGuoliang Li\nTsinghua University\nliguoliang@tsinghua.edu.cn\nABSTRACT\nLarge language model (LLM) agents are evolving from conver-\nsational assistants into autonomous systems that execute long-\nhorizon tasks through reasoning, tool use, code generation, and\nworkspace manipulation. As agents increasingly operate over per-\nsistent environments and multi-step workflows, they face chal-\nlenges analogous to those addressed by transactional database sys-\ntems: reliable execution, consistent outcomes, safe concurrency,\nand durable state management. We introduce the concept of an\nagentic transactionand propose anACID-compliant agent system\nframework that reinterprets the classical ACID properties for agent\nexecution through four semantic guarantees:Semantic Atomic-\nity,Semantic Consistency,Semantic Isolation, andSemantic\nDurability. Together, these properties provide a principled founda-\ntion for building reliable agent systems despite model uncertainty\nand dynamic execution environments. To instantiate this frame-\nwork, we develop an ACID-compliant data agent that realizes these\nguarantees through transactional exploration-execution-validation\ncycles, transactional skill hubs, confidence divergence-based valida-\ntion, semantic dependency-aware isolation, and transaction-aware\nsemantic state management. Experimental results on widely used\nbenchmarks show that our system achieves a 10.6% improvement\nover state-of-the-art agents, including Claude Code. This work\nopens a broader research agenda on extending transactional princi-\nples and system architectures toward building trustworthy, scalable,\nand self-evolving AI agent systems.\n1 INTRODUCTION\nRecent advances in large language models (LLMs) have demon-\nstrated strong capabilities in instruction following, planning, rea-\nsoning, coding, tool use, and data processing [12, 18\u201322, 24, 25]. As\na result, LLM usage is shifting from single-round conversational\ninteractions toward long-horizon production tasks, where agents\noperate over repository-level workspaces and autonomously co-\nordinate iterative reasoning, code execution, and feedback-driven\nrefinement over extended periods. We refer to such a multi-round\ntask-centered interactions between LLMs and execution environ-\nments as anagentic transaction(see Figure 1), where execution\noperates over semantic task states rather than structured database\nstates. Although agent systems differ fundamentally from databases,\nthey face analogous challenges in ensuringreliable execution, con-\nsistent outcomes, safe concurrency, and persistent state management.\nMotivated by these parallels, we envision anACID-Compliant Agent\nSystemthat reinterprets the classical ACID properties [10] for agen-\ntic transactions:\nSemantic Atomicity.Similar to how database systems encapsulate\nrecurring application logic into reusable procedures and transaction\nabstractions, agent systems increasingly rely on reusable skills that\npackage tools, workflows, and domain knowledge into coherent op-\nerational units [1]. We definesemantic atomicityas the property that\nUser Question\nFor Boston Harbor beaches located in communities with more than 90% \nEJ populations, what is the Pearson correlation, rounded to 3 decimal \nplaces, between rainfall in the past 3 days and Enterococcus levels?\nAtomic Semantic Transaction Unit\nData Exploration (Wollaston Beach)\n1-Day\nRain\n2-Day\nRain\n3-Day\nRain\nEntero-\ncoccus\n\u2026 \u2026 \u2026 \u2026\nDatasheets:\nMilton Road, Channing Street,\nSachem Street, Rice Road\nDate\n\u2026\nAggregate 4 locations \ninto one daily \nEnterococcus value.\nClaude Code\n#Observations: 1904\nAnswer: 0.261\nConsistency Validation\nAggregate 4 locations \nwithin each date.\nCurrent Decision Alternative\nEach location-date \nas an observation. \nvs\n Low LLM Con\ufb01dence !\n(Evidence-based)\nKeep each location-\ndate separately.\nACID-Agent (Retry)\n#Observations: 7585\nAnswer: 0.206\n\u00b7 Add validated steps to context memory.\nDurability\n\u00b7 Commit to append-only workspace.\n(7.7k \u2192 0.7k tokens)Isolation\n\u00b7 No failed steps in workspace & memory.\nFigure 1: An Example of ACID-Compliant Data Agent.\nan agent transaction treats a dependency-aware sequence of model\ninvocations, tool calls, document mutations, and external actions\nas a single semantic unit of execution: its effects become visible\nonly after required operations and validations succeed; otherwise,\nrecoverable effects are rolled back or compensated. The challenge\nis that agent workflows are long-running, dynamically generated,\nand often involve non-transactional external resources, where par-\ntial execution may leave inconsistent workspaces or unsupported\nresults [8, 17]. For example, as shown in Figure 1, conventional\ncoding agents such as Claude Code may propagate intermediate\ndecisions directly. In contrast, ACID-Agent treats each exploration-\nexecution-validation cycle as a semantic transaction, and onlyvali-\ndated updatesare committed and propagated to subsequent steps.\nSemantic Consistency.Similar to consistency guarantees in databases,\nagent systems must ensure that committed results remain aligned\nwith intended semantics despite potentially non-deterministic exe-\ncution [11]. We definesemantic consistencyas the property that an\nagent transaction produces outcomes that satisfy task objectives,\nexecution constraints, and available evidence, even when inter-\nmediate reasoning traces vary across executions. This property is\nchallenging because LLM-driven agents may generate syntactically\nexecutable plans that are semantically invalid due to incorrect tool\nselection, unsupported claims, stale observations, or divergence\nbetween user intent and execution results. For example, as shown\narXiv:2608.13900v1  [cs.DB]  14 Aug 2026"
+    },
+    {
+      "key": "sun2026agentic",
+      "arxiv_id": "2608.13900",
+      "kind": "datacite",
+      "requested_url": "https://api.datacite.org/dois/10.48550/arxiv.2608.13900",
+      "retrieved_utc": "2026-10-30T04:13:43.347422+00:00",
+      "http_status": 200,
+      "final_url": "https://api.datacite.org/dois/10.48550/arxiv.2608.13900",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Fri, 30 Oct 2026 04:13:43 GMT",
+        "ETag": "W/\"1794e06a2206868923f6553ebd33a1f6\""
+      },
+      "status": "saved",
+      "path": "revisions/review1/references/sun2026agentic.datacite.json",
+      "bytes": 9564,
+      "sha256": "1794e06a2206868923f6553ebd33a1f619e4813a5cf7ba9006c38c1ac96cebcc",
+      "registry_metadata": {
+        "data": {
+          "id": "10.48550/arxiv.2608.13900",
+          "type": "dois",
+          "attributes": {
+            "doi": "10.48550/arxiv.2608.13900",
+            "prefix": "10.48550",
+            "suffix": "arxiv.2608.13900",
+            "identifiers": [
+              {
+                "identifier": "2608.13900",
+                "identifierType": "arXiv"
+              }
+            ],
+            "alternateIdentifiers": [
+              {
+                "alternateIdentifierType": "arXiv",
+                "alternateIdentifier": "2608.13900"
+              }
+            ],
+            "creators": [
+              {
+                "name": "Sun, Zhaoyan",
+                "nameType": "Personal",
+                "givenName": "Zhaoyan",
+                "familyName": "Sun",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Wang, Xiaoxiao",
+                "nameType": "Personal",
+                "givenName": "Xiaoxiao",
+                "familyName": "Wang",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Li, Guoliang",
+                "nameType": "Personal",
+                "givenName": "Guoliang",
+                "familyName": "Li",
+                "affiliation": [],
+                "nameIdentifiers": []
+              }
+            ],
+            "titles": [
+              {
+                "title": "Agentic Transaction: Towards ACID-Compliant Agent Systems"
+              }
+            ],
+            "publisher": "arXiv",
+            "container": {},
+            "publicationYear": 2026,
+            "subjects": [
+              {
+                "lang": "en",
+                "subject": "Databases (cs.DB)",
+                "subjectScheme": "arXiv"
+              },
+              {
+                "lang": "en",
+                "subject": "Artificial Intelligence (cs.AI)",
+                "subjectScheme": "arXiv"
+              },
+              {
+                "lang": "en",
+                "subject": "Computation and Language (cs.CL)",
+                "subjectScheme": "arXiv"
+              },
+              {
+                "lang": "en",
+                "subject": "Machine Learning (cs.LG)",
+                "subjectScheme": "arXiv"
+              },
+              {
+                "subject": "FOS: Computer and information sciences",
+                "subjectScheme": "Fields of Science and Technology (FOS)"
+              }
+            ],
+            "contributors": [],
+            "dates": [
+              {
+                "date": "2026-08-14T03:13:54Z",
+                "dateType": "Submitted",
+                "dateInformation": "v1"
+              },
+              {
+                "date": "2026-08-17T00:18:12Z",
+                "dateType": "Updated",
+                "dateInformation": "v1"
+              },
+              {
+                "date": "2026-08",
+                "dateType": "Available",
+                "dateInformation": "v1"
+              }
+            ],
+            "language": null,
+            "types": {
+              "ris": "GEN",
+              "bibtex": "misc",
+              "citeproc": "article",
+              "schemaOrg": "CreativeWork",
+              "resourceType": "Article",
+              "resourceTypeGeneral": "Preprint"
+            },
+            "relatedIdentifiers": [],
+            "relatedItems": [],
+            "sizes": [],
+            "formats": [],
+            "version": "1",
+            "rightsList": [
+              {
+                "rights": "arXiv.org perpetual, non-exclusive license",
+                "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+              }
+            ],
+            "descriptions": [
+              {
+                "description": "Large language model (LLM) agents are evolving from conversational assistants into autonomous systems that execute long-horizon tasks through reasoning, tool use, code generation, and workspace manipulation. As agents increasingly operate over persistent environments and multi-step workflows, they face challenges analogous to those addressed by transactional database systems: reliable execution, consistent outcomes, safe concurrency, and durable state management. We introduce the concept of an agentic transaction and propose an ACID-compliant agent system framework that reinterprets the classical ACID properties for agent execution through four semantic guarantees: Semantic Atomicity, Semantic Consistency, Semantic Isolation, and Semantic Durability. Together, these properties provide a principled foundation for building reliable agent systems despite model uncertainty and dynamic execution environments. To instantiate this framework, we develop an ACID-compliant data agent that realizes these guarantees through transactional exploration-execution-validation cycles, transactional skill hubs, confidence divergence-based validation, semantic dependency-aware isolation, and transaction-aware semantic state management. Experimental results on widely used benchmarks show that our system achieves a 10.6% improvement over state-of-the-art agents, including Claude Code. This work opens a broader research agenda on extending transactional principles and system architectures toward building trustworthy, scalable, and self-evolving AI agent systems.",
+                "descriptionType": "Abstract"
+              }
+            ],
+            "geoLocations": [],
+            "fundingReferences": [],
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yNjA4LjEzOTAwPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjYwOC4xMzkwMDwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5TdW4sIFpoYW95YW48L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlpoYW95YW48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+U3VuPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPldhbmcsIFhpYW94aWFvPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5YaWFveGlhbzwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5XYW5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkxpLCBHdW9saWFuZzwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+R3VvbGlhbmc8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TGk8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkFnZW50aWMgVHJhbnNhY3Rpb246IFRvd2FyZHMgQUNJRC1Db21wbGlhbnQgQWdlbnQgU3lzdGVtczwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyNjwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkRhdGFiYXNlcyAoY3MuREIpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+QXJ0aWZpY2lhbCBJbnRlbGxpZ2VuY2UgKGNzLkFJKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkNvbXB1dGF0aW9uIGFuZCBMYW5ndWFnZSAoY3MuQ0wpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+TWFjaGluZSBMZWFybmluZyAoY3MuTEcpPC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc3ViamVjdFNjaGVtZT0iRmllbGRzIG9mIFNjaWVuY2UgYW5kIFRlY2hub2xvZ3kgKEZPUykiPkZPUzogQ29tcHV0ZXIgYW5kIGluZm9ybWF0aW9uIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IlN1Ym1pdHRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wOC0xNFQwMzoxMzo1NFo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyNi0wOC0xN1QwMDoxODoxMlo8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQXZhaWxhYmxlIiBkYXRlSW5mb3JtYXRpb249InYxIj4yMDI2LTA4PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJQcmVwcmludCI+QXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDx2ZXJzaW9uPjE8L3ZlcnNpb24+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2FyeGl2Lm9yZy9saWNlbnNlcy9ub25leGNsdXNpdmUtZGlzdHJpYi8xLjAvIj5hclhpdi5vcmcgcGVycGV0dWFsLCBub24tZXhjbHVzaXZlIGxpY2Vuc2U8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5MYXJnZSBsYW5ndWFnZSBtb2RlbCAoTExNKSBhZ2VudHMgYXJlIGV2b2x2aW5nIGZyb20gY29udmVyc2F0aW9uYWwgYXNzaXN0YW50cyBpbnRvIGF1dG9ub21vdXMgc3lzdGVtcyB0aGF0IGV4ZWN1dGUgbG9uZy1ob3Jpem9uIHRhc2tzIHRocm91Z2ggcmVhc29uaW5nLCB0b29sIHVzZSwgY29kZSBnZW5lcmF0aW9uLCBhbmQgd29ya3NwYWNlIG1hbmlwdWxhdGlvbi4gQXMgYWdlbnRzIGluY3JlYXNpbmdseSBvcGVyYXRlIG92ZXIgcGVyc2lzdGVudCBlbnZpcm9ubWVudHMgYW5kIG11bHRpLXN0ZXAgd29ya2Zsb3dzLCB0aGV5IGZhY2UgY2hhbGxlbmdlcyBhbmFsb2dvdXMgdG8gdGhvc2UgYWRkcmVzc2VkIGJ5IHRyYW5zYWN0aW9uYWwgZGF0YWJhc2Ugc3lzdGVtczogcmVsaWFibGUgZXhlY3V0aW9uLCBjb25zaXN0ZW50IG91dGNvbWVzLCBzYWZlIGNvbmN1cnJlbmN5LCBhbmQgZHVyYWJsZSBzdGF0ZSBtYW5hZ2VtZW50LiBXZSBpbnRyb2R1Y2UgdGhlIGNvbmNlcHQgb2YgYW4gYWdlbnRpYyB0cmFuc2FjdGlvbiBhbmQgcHJvcG9zZSBhbiBBQ0lELWNvbXBsaWFudCBhZ2VudCBzeXN0ZW0gZnJhbWV3b3JrIHRoYXQgcmVpbnRlcnByZXRzIHRoZSBjbGFzc2ljYWwgQUNJRCBwcm9wZXJ0aWVzIGZvciBhZ2VudCBleGVjdXRpb24gdGhyb3VnaCBmb3VyIHNlbWFudGljIGd1YXJhbnRlZXM6IFNlbWFudGljIEF0b21pY2l0eSwgU2VtYW50aWMgQ29uc2lzdGVuY3ksIFNlbWFudGljIElzb2xhdGlvbiwgYW5kIFNlbWFudGljIER1cmFiaWxpdHkuIFRvZ2V0aGVyLCB0aGVzZSBwcm9wZXJ0aWVzIHByb3ZpZGUgYSBwcmluY2lwbGVkIGZvdW5kYXRpb24gZm9yIGJ1aWxkaW5nIHJlbGlhYmxlIGFnZW50IHN5c3RlbXMgZGVzcGl0ZSBtb2RlbCB1bmNlcnRhaW50eSBhbmQgZHluYW1pYyBleGVjdXRpb24gZW52aXJvbm1lbnRzLiBUbyBpbnN0YW50aWF0ZSB0aGlzIGZyYW1ld29yaywgd2UgZGV2ZWxvcCBhbiBBQ0lELWNvbXBsaWFudCBkYXRhIGFnZW50IHRoYXQgcmVhbGl6ZXMgdGhlc2UgZ3VhcmFudGVlcyB0aHJvdWdoIHRyYW5zYWN0aW9uYWwgZXhwbG9yYXRpb24tZXhlY3V0aW9uLXZhbGlkYXRpb24gY3ljbGVzLCB0cmFuc2FjdGlvbmFsIHNraWxsIGh1YnMsIGNvbmZpZGVuY2UgZGl2ZXJnZW5jZS1iYXNlZCB2YWxpZGF0aW9uLCBzZW1hbnRpYyBkZXBlbmRlbmN5LWF3YXJlIGlzb2xhdGlvbiwgYW5kIHRyYW5zYWN0aW9uLWF3YXJlIHNlbWFudGljIHN0YXRlIG1hbmFnZW1lbnQuIEV4cGVyaW1lbnRhbCByZXN1bHRzIG9uIHdpZGVseSB1c2VkIGJlbmNobWFya3Mgc2hvdyB0aGF0IG91ciBzeXN0ZW0gYWNoaWV2ZXMgYSAxMC42JSBpbXByb3ZlbWVudCBvdmVyIHN0YXRlLW9mLXRoZS1hcnQgYWdlbnRzLCBpbmNsdWRpbmcgQ2xhdWRlIENvZGUuIFRoaXMgd29yayBvcGVucyBhIGJyb2FkZXIgcmVzZWFyY2ggYWdlbmRhIG9uIGV4dGVuZGluZyB0cmFuc2FjdGlvbmFsIHByaW5jaXBsZXMgYW5kIHN5c3RlbSBhcmNoaXRlY3R1cmVzIHRvd2FyZCBidWlsZGluZyB0cnVzdHdvcnRoeSwgc2NhbGFibGUsIGFuZCBzZWxmLWV2b2x2aW5nIEFJIGFnZW50IHN5c3RlbXMuPC9kZXNjcmlwdGlvbj4KICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4=",
+            "url": "https://arxiv.org/abs/2608.13900",
+            "contentUrl": null,
+            "metadataVersion": 0,
+            "schemaVersion": "http://datacite.org/schema/kernel-4",
+            "source": "mds",
+            "isActive": true,
+            "state": "findable",
+            "reason": null,
+            "viewCount": 0,
+            "viewsOverTime": [],
+            "downloadCount": 0,
+            "downloadsOverTime": [],
+            "referenceCount": 0,
+            "citationCount": 0,
+            "citationsOverTime": [],
+            "partCount": 0,
+            "partOfCount": 0,
+            "versionCount": 0,
+            "versionOfCount": 0,
+            "created": "2026-08-17T01:47:09.000Z",
+            "registered": "2026-08-17T01:47:09.000Z",
+            "published": "2026",
+            "updated": "2026-08-17T01:47:09.000Z"
+          },
+          "relationships": {
+            "client": {
+              "data": {
+                "id": "arxiv.content",
+                "type": "clients"
+              }
+            },
+            "provider": {
+              "data": {
+                "id": "arxiv",
+                "type": "providers"
+              }
+            },
+            "media": {
+              "data": {
+                "id": "10.48550/arxiv.2608.13900",
+                "type": "media"
+              }
+            },
+            "references": {
+              "data": []
+            },
+            "citations": {
+              "data": []
+            },
+            "parts": {
+              "data": []
+            },
+            "partOf": {
+              "data": []
+            },
+            "versions": {
+              "data": []
+            },
+            "versionOf": {
+              "data": []
+            }
+          }
+        }
+      }
+    }
+  ]
+}

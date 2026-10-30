@@ -1,0 +1,88 @@
+{
+  "records": [
+    {
+      "key": "langgraph_graph",
+      "url": "https://docs.langchain.com/oss/python/langgraph/graph-api",
+      "retrieved_utc": "2026-10-30T04:23:02.807065+00:00",
+      "http_status": 200,
+      "final_url": "https://docs.langchain.com/oss/python/langgraph/graph-api",
+      "content_type": "text/html; charset=utf-8",
+      "status": "saved",
+      "path": "revisions/review1/references/positional_identity/langgraph_graph.html",
+      "sha256": "9d6acc04f87885ff2245525970c112a3aef3fc01f28e5fcfd78ded594bd4a9e9",
+      "bytes": 1373310
+    },
+    {
+      "key": "temporal_definition",
+      "url": "https://docs.temporal.io/workflow-definition",
+      "retrieved_utc": "2026-10-30T04:23:02.807392+00:00",
+      "http_status": 200,
+      "final_url": "https://docs.temporal.io/workflow-definition",
+      "content_type": "text/html; charset=utf-8",
+      "status": "saved",
+      "path": "revisions/review1/references/positional_identity/temporal_definition.html",
+      "sha256": "432b2c700a806ce83640e51edd0d54f936a043d46f50adde6edf3775327e9d77",
+      "bytes": 103689
+    },
+    {
+      "key": "aws_idempotency",
+      "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "retrieved_utc": "2026-10-30T04:23:02.807469+00:00",
+      "http_status": 200,
+      "final_url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "content_type": "text/html;charset=utf-8",
+      "status": "saved",
+      "path": "revisions/review1/references/positional_identity/aws_idempotency.html",
+      "sha256": "91c5e61042e27df7cecd9440949033323cb2c7fba12eaa176f74e3c024116fdd",
+      "bytes": 456055
+    },
+    {
+      "key": "verified_tool_calls_abs",
+      "url": "https://arxiv.org/abs/2608.02645",
+      "retrieved_utc": "2026-10-30T04:23:02.807523+00:00",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/abs/2608.02645",
+      "content_type": "text/html; charset=utf-8",
+      "status": "saved",
+      "path": "revisions/review1/references/positional_identity/verified_tool_calls_abs.html",
+      "sha256": "59e29d2c593b01f674d7331a3bd920ee3723b45b9bdb9db6201e9f4a2632d539",
+      "bytes": 41591
+    },
+    {
+      "key": "verified_tool_calls_body",
+      "url": "https://arxiv.org/html/2608.02645v1",
+      "retrieved_utc": "2026-10-30T04:23:03.001579+00:00",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/html/2608.02645v1",
+      "content_type": "text/html; charset=utf-8",
+      "status": "saved",
+      "path": "revisions/review1/references/positional_identity/verified_tool_calls_body.html",
+      "sha256": "92adbf68ee175dd5fc97584311b03b91294390ec5631406122ba4ecc78f41666",
+      "bytes": 147648
+    },
+    {
+      "key": "verified_tool_calls_pdf",
+      "url": "https://arxiv.org/pdf/2608.02645",
+      "retrieved_utc": "2026-10-30T04:23:03.046385+00:00",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/pdf/2608.02645",
+      "content_type": "application/pdf",
+      "status": "saved",
+      "path": "revisions/review1/references/positional_identity/verified_tool_calls_pdf.pdf",
+      "sha256": "dee29b0250eb6d40677b1477184662073d995053f28ae111a98dc83b759b74ac",
+      "bytes": 428545
+    },
+    {
+      "key": "verified_tool_calls_datacite",
+      "url": "https://api.datacite.org/dois/10.48550/arXiv.2608.02645",
+      "retrieved_utc": "2026-10-30T04:23:03.132749+00:00",
+      "http_status": 200,
+      "final_url": "https://api.datacite.org/dois/10.48550/arXiv.2608.02645",
+      "content_type": "application/json; charset=utf-8",
+      "status": "saved",
+      "path": "revisions/review1/references/positional_identity/verified_tool_calls_datacite.json",
+      "sha256": "99f348bb1bb808111b9719b0a4c2052c6c44661ea1a2e4c28fef6ca241205866",
+      "bytes": 8419
+    }
+  ]
+}

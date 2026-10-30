@@ -37,6 +37,9 @@ def main():
   files.append(ROOT/'revisions/review1'/name)
  for name in ['citation_audit.json','citation_audit.txt','scope_and_workshop_note.txt','additions.bib','additions_claim_map.json']:
   files.append(ROOT/'revisions/review1/references'/name)
+ for name in ['additions_verification.json','doi_resolution.json','fresh_fetch_manifest.json','transport_notes.json','li2026where.datacite.json','marla2026permission.datacite.json','sun2026agentic.datacite.json','check_doi_resolution.py','fetch_flagged_sources.py','write_citation_audit.py','positional_identity/manifest.json']:
+  files.append(ROOT/'revisions/review1/references'/name)
+ files.append(ROOT/'revisions/review1/journal_sources/manifest.json')
  for name in ['checks/figure_revision/fig_factorial_oracles_before.png','checks/figure_revision/fig_factorial_oracles_pdf_render.png','extensions/conflict_contracts/audit_tests.log','extensions/conflict_contracts/audit_verification.log','extensions/langgraph_reference/campaign.log','extensions/langgraph_reference/dependency_install.log','extensions/langgraph_reference/tests.log','extensions/langgraph_reference/tests_initial.log','extensions/langgraph_reference/verification.log']:
   files.append(ROOT/name)
  assert len(set(files))==len(files)

@@ -1,0 +1,48 @@
+{
+  "source_checks": [
+    {
+      "key": "langgraph_graph",
+      "saved_http_200": true,
+      "sha256_matches": true
+    },
+    {
+      "key": "temporal_definition",
+      "saved_http_200": true,
+      "sha256_matches": true
+    },
+    {
+      "key": "aws_idempotency",
+      "saved_http_200": true,
+      "sha256_matches": true
+    },
+    {
+      "key": "verified_tool_calls_abs",
+      "saved_http_200": true,
+      "sha256_matches": true
+    },
+    {
+      "key": "verified_tool_calls_body",
+      "saved_http_200": true,
+      "sha256_matches": true
+    },
+    {
+      "key": "verified_tool_calls_pdf",
+      "saved_http_200": true,
+      "sha256_matches": true
+    },
+    {
+      "key": "verified_tool_calls_datacite",
+      "saved_http_200": true,
+      "sha256_matches": true
+    }
+  ],
+  "bibliography_keys": [
+    "mansoor2026verified",
+    "langchainGraphAPI",
+    "featonbyIdempotentAPIs"
+  ],
+  "bibliography_key_check": true,
+  "unknown_document_dates_not_invented": true,
+  "main_manuscript_or_bibliography_modified_by_this_audit": false,
+  "all_pass": true
+}
