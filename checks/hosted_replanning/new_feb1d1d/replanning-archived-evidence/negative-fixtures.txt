@@ -1,0 +1,15 @@
+[0;93m2026-10-30 05:38:51.830548968 [W:onnxruntime:Default, device_discovery.cc:95 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0004:00/MSFT1000:00/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename "5620e0c7-8062-4dce-aeb7-520c7ef76171" did not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+test_rejects_forged_candidate_hash (test_check.RawEvidenceForgeryTests.test_rejects_forged_candidate_hash) ... ok
+test_rejects_forged_duplicate_metric (test_check.RawEvidenceForgeryTests.test_rejects_forged_duplicate_metric) ... ok
+test_rejects_hidden_physical_point_without_history (test_check.RawEvidenceForgeryTests.test_rejects_hidden_physical_point_without_history) ... ok
+test_rejects_copied_baseline_value_change (test_check_live.LiveEvidenceForgeries.test_rejects_copied_baseline_value_change) ... ok
+test_rejects_false_success_instead_of_actual_baseline_exit (test_check_live.LiveEvidenceForgeries.test_rejects_false_success_instead_of_actual_baseline_exit) ... ok
+test_rejects_used_response_bypassing_exact_filter (test_check_live.LiveEvidenceForgeries.test_rejects_used_response_bypassing_exact_filter) ... ok
+test_rejects_favorable_query_omission_even_with_rewritten_summary (test_check_retrieval.RetrievalEvidenceForgeryTests.test_rejects_favorable_query_omission_even_with_rewritten_summary) ... ok
+test_rejects_forged_returned_literal_and_diversity_metric (test_check_retrieval.RetrievalEvidenceForgeryTests.test_rejects_forged_returned_literal_and_diversity_metric) ... ok
+test_rejects_mutated_frozen_source_database (test_check_retrieval.RetrievalEvidenceForgeryTests.test_rejects_mutated_frozen_source_database) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.157s
+
+OK

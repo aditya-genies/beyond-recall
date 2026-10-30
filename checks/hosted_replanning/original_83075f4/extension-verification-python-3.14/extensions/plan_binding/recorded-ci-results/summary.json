@@ -1,0 +1,23 @@
+[
+  {
+    "arm": "replan_positional",
+    "plan_pairs": 12,
+    "structural_alias_cases": 2,
+    "prefix_binding_preserved": 10,
+    "literal_prefix_record_preserved": 10
+  },
+  {
+    "arm": "replan_fresh",
+    "plan_pairs": 12,
+    "structural_alias_cases": 0,
+    "prefix_binding_preserved": 12,
+    "literal_prefix_record_preserved": 12
+  },
+  {
+    "arm": "retained_positional",
+    "plan_pairs": 12,
+    "structural_alias_cases": 0,
+    "prefix_binding_preserved": 12,
+    "literal_prefix_record_preserved": 12
+  }
+]

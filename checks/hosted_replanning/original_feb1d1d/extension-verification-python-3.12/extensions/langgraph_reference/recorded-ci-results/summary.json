@@ -1,0 +1,13 @@
+{
+  "reference": "langgraph_native",
+  "structural_cases": 66,
+  "content_pass": 66,
+  "cardinality_pass": 66,
+  "selected_terminal_pass": 66,
+  "decision_continuity_pass": 66,
+  "acknowledged": 66,
+  "planning_invocations": 66,
+  "committed_effect_calls": 275,
+  "process_attempts": 116,
+  "abrupt_exits": 32
+}

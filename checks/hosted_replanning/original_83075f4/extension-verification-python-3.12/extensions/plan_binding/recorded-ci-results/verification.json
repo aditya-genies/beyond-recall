@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "integration_count": 36,
+  "plan_pairs": 12,
+  "arms": 3,
+  "checker_implementation": "Separate implementation; no replay functions imported. Same author and host; not external replication.",
+  "checks": [
+    "frozen code/design and all protected inputs unchanged",
+    "all output hashes",
+    "all physical SQLite records and bindings",
+    "all committed before/after audit rows",
+    "exact archived partial snapshots",
+    "raw recorded response operation lists",
+    "prefix and cross-key alias observations",
+    "aggregate and counterexample reconciliation"
+  ],
+  "summary": [
+    {
+      "arm": "replan_positional",
+      "plan_pairs": 12,
+      "structural_alias_cases": 2,
+      "prefix_binding_preserved": 10,
+      "literal_prefix_record_preserved": 10
+    },
+    {
+      "arm": "replan_fresh",
+      "plan_pairs": 12,
+      "structural_alias_cases": 0,
+      "prefix_binding_preserved": 12,
+      "literal_prefix_record_preserved": 12
+    },
+    {
+      "arm": "retained_positional",
+      "plan_pairs": 12,
+      "structural_alias_cases": 0,
+      "prefix_binding_preserved": 12,
+      "literal_prefix_record_preserved": 12
+    }
+  ],
+  "semantic_accuracy_graded": false,
+  "additional_model_calls": 0,
+  "design_freeze_sha256": "e4ed851befcd1ddf183bf0a8315588df91b8faed706648fbdacb53eb0a26df22"
+}

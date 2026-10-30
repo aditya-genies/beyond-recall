@@ -1,0 +1,491 @@
+{
+  "status": "PASS",
+  "source_commit": "feb1d1d2dc8409bf755d62bc30b7aecfe6abf505",
+  "scientific_data_commit": "83075f43f4054b834e1c1c22bda2918988112a80",
+  "runs": [
+    {
+      "id": 41009518298,
+      "url": "https://github.com/aditya-genies/beyond-recall/actions/runs/41009518298",
+      "scope": "Primary campaign and four earlier extensions on Python3.12/3.14"
+    },
+    {
+      "id": 41009518307,
+      "url": "https://github.com/aditya-genies/beyond-recall/actions/runs/41009518307",
+      "scope": "Native-memory archive/forgery checks and fresh SQLite/Redis reproduction"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 123911989516,
+      "name": "extensions (3.12)",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install pinned public framework dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run native checkpoint tests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run address-binding controls",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run conflict-contract and verifier negative tests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify archived model outputs without credentials",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce native framework reference",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify native checkpoints and matched metrics",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce recorded-plan integration",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify integration records and controls",
+          "conclusion": "success"
+        },
+        {
+          "name": "Freeze and reproduce bounded conflict schedules",
+          "conclusion": "success"
+        },
+        {
+          "name": "Execute bounded schedules and process races",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify raw conflict journals",
+          "conclusion": "success"
+        },
+        {
+          "name": "Retain extension verification evidence",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 123911989840,
+      "name": "reproduce (3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record software versions",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run ten focused tests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce all 528 structural cases and five probes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Independently check states and event witnesses",
+          "conclusion": "success"
+        },
+        {
+          "name": "Compare frozen aggregate outcomes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Retain verification evidence",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 123911989884,
+      "name": "extensions (3.14)",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install pinned public framework dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run native checkpoint tests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run address-binding controls",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run conflict-contract and verifier negative tests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify archived model outputs without credentials",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce native framework reference",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify native checkpoints and matched metrics",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce recorded-plan integration",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify integration records and controls",
+          "conclusion": "success"
+        },
+        {
+          "name": "Freeze and reproduce bounded conflict schedules",
+          "conclusion": "success"
+        },
+        {
+          "name": "Execute bounded schedules and process races",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify raw conflict journals",
+          "conclusion": "success"
+        },
+        {
+          "name": "Retain extension verification evidence",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 123911989899,
+      "name": "reproduce (3.12)",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Record software versions",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run ten focused tests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce all 528 structural cases and five probes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Independently check states and event witnesses",
+          "conclusion": "success"
+        },
+        {
+          "name": "Compare frozen aggregate outcomes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Retain verification evidence",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 123911989896,
+      "name": "Reproduce bounded native SQLite and Redis contracts",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Initialize evidence directory on the runner",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install the pinned public Redis client",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run native backend and negative-checker tests",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify archived raw SQLite databases and native Redis AOF",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce the frozen 104-cell matrix with fresh owned resources",
+          "conclusion": "success"
+        },
+        {
+          "name": "Independently verify reproduced physical state and compare bounded outcomes",
+          "conclusion": "success"
+        },
+        {
+          "name": "Confirm tracked frozen backend evidence was not rewritten",
+          "conclusion": "success"
+        },
+        {
+          "name": "Retain backend verification and native raw evidence",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 123911990222,
+      "name": "Check archived Mem0 and MemTX evidence without model calls",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Initialize evidence directory on the runner",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install recorded public runtime packages",
+          "conclusion": "success"
+        },
+        {
+          "name": "Exercise controlled, live and retrieval forgery fixtures",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify archived controlled Mem0 stores and calls",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify archived live Mem0 evidence without a live request",
+          "conclusion": "success"
+        },
+        {
+          "name": "Audit retrieval stores and retained reproduction with a declared runtime limit",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify archived MemTX traces in a temporary copy",
+          "conclusion": "success"
+        },
+        {
+          "name": "Confirm tracked frozen evidence was not rewritten",
+          "conclusion": "success"
+        },
+        {
+          "name": "Retain archive verification reports",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "authored_unique_test_methods": 71,
+  "earlier_test_methods": 41,
+  "new_test_methods": 30,
+  "new_model_calls_in_ci": 0,
+  "primary_cases_per_reproduction": 528,
+  "new_backend_reproduction": {
+    "declared": 104,
+    "executed": 96,
+    "not_applicable": 8,
+    "request_processes": 154,
+    "actual_exit87": 10,
+    "aggregate_outcomes_match": true
+  },
+  "retrieval_runtime_limit": {
+    "status": "NOT_RUN",
+    "scope": "Exact macOS Python/SQLite equality in retrieval CLI is not asserted on Ubuntu. Unchanged raw audit and retained-store reconciliation run separately; all six frozen package versions match.",
+    "ubuntu_sqlite": "3.45.1",
+    "original_sqlite": "3.51.2",
+    "native_searches_or_embedding_inference_rerun": false
+  },
+  "initial_failed_workflow": "checks/replanning_ci_workflow_failure.json",
+  "hosted_artifacts": [
+    {
+      "id": 12957350582,
+      "name": "extension-verification-python-3.14",
+      "size_in_bytes": 4684,
+      "digest": "sha256:abdd14a5ed53e5031dd3cf413420d80c389256b9203e05ebc229c5178d1e8dcd"
+    },
+    {
+      "id": 12956897999,
+      "name": "independent-verification-python-3.14",
+      "size_in_bytes": 54128,
+      "digest": "sha256:6e93d032652f5fc4465af5342f39ad64b75f925d4e4a9e766bc3b353a937b2bf"
+    },
+    {
+      "id": 12956588053,
+      "name": "extension-verification-python-3.12",
+      "size_in_bytes": 4691,
+      "digest": "sha256:14f3d5c1321385c7d068e6069fb115ba1dcecab84d9851e4aa56d08b9e515087"
+    },
+    {
+      "id": 12956569681,
+      "name": "independent-verification-python-3.12",
+      "size_in_bytes": 54129,
+      "digest": "sha256:a8e73e13731d01bad1364cfaf756d831122f89ca035a8b77b7fa879a34807822"
+    },
+    {
+      "id": 12957041424,
+      "name": "replanning-archived-evidence",
+      "size_in_bytes": 128193,
+      "digest": "sha256:7e4baeeb3c09892b1e3f8a315bfd8e90cc98331b4b974deb42177a70e38614cd"
+    },
+    {
+      "id": 12956744040,
+      "name": "replanning-backend-reproduction",
+      "size_in_bytes": 550002,
+      "digest": "sha256:912bfabd760b623dfbcd694bc4240f72d00b2ccabd87ce229a63e7f604e862e0"
+    }
+  ],
+  "interpretation": "Same-study computational/hosted reproduction and evidence checking; no additional independent statistical samples, external peer review, industry certification or acceptance claim."
+}

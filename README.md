@@ -4,7 +4,7 @@
 
 Aditya Mantri · Independent Researcher · Working research manuscript
 
-[Paper](manuscript/main.pdf) · [Editable source](manuscript/main.tex) ·
+[Paper](manuscript/main.pdf) · [Download paper and complete reproducibility package](https://github.com/aditya-genies/beyond-recall/releases/tag/v0.3.0) · [Editable source](manuscript/main.tex) ·
 [Review response](revisions/review1/response.txt) ·
 [Current research readiness](extensions/replanning_contracts/review/journal_readiness.txt)
 
@@ -107,7 +107,7 @@ account and may return different outputs. No model API-key fallback is used.
 [protocol audit](checks/audit_protocol.py), [figures](figures/), and
 [provenance](PROVENANCE.json) preserve source/result pins. GitHub Actions
 reproduces the primary campaign and runs extension checks; archived older CI
-evidence is tied to its commit. The [expanded verification run](https://github.com/aditya-genies/beyond-recall/actions/runs/41003933924) passed all four jobs on Python 3.12 and 3.14, including the complete primary campaign and the four earlier extensions. The new public-memory verification has its own workflow and explicit platform scope in [CI scope](extensions/replanning_contracts/ci/README.md).
+evidence is tied to its commit. The [expanded verification run](https://github.com/aditya-genies/beyond-recall/actions/runs/41003933924) passed all four jobs on Python 3.12 and 3.14, including the complete primary campaign and the four earlier extensions. The new [hosted verification](https://github.com/aditya-genies/beyond-recall/actions/runs/41009518307) passed both jobs, and the [original study workflow](https://github.com/aditya-genies/beyond-recall/actions/runs/41009518298) passed all four jobs on the tested workflow commit. Together they exercise all 71 distinct authored test methods. Full hosted native-backend evidence and archive checks are permanently retained as digest-verified ZIPs under checks/hosted_replanning/. See [CI scope](extensions/replanning_contracts/ci/README.md) and [verification record](checks/replanning_ci.json), including the initial rejected workflow and Ubuntu runtime limitation. Repeated runs are not additional independent samples.
 
 This public repository accompanies a working manuscript. It has not been
 accepted or published by a peer-reviewed journal. The study uses authored inputs, declared fault barriers and pinned public

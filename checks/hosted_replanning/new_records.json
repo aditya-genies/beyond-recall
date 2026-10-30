@@ -1,0 +1,29 @@
+{
+  "scope": "Compact hosted records from actual source commit feb1d1d; full source/model data remain separately pinned.",
+  "files": [
+    {
+      "path": "checks/hosted_replanning/new_feb1d1d/replanning-archived-evidence/mem0-controlled.json",
+      "sha256": "b56462a12b52b5d46459143e9fbeaae940bc8bf75bcecdf541540fd2997b2cbe"
+    },
+    {
+      "path": "checks/hosted_replanning/new_feb1d1d/replanning-archived-evidence/mem0-live.json",
+      "sha256": "9dda43346d70c035d2fa2f40658ce844f1000a6856eb69259b1609a9fbe772be"
+    },
+    {
+      "path": "checks/hosted_replanning/new_feb1d1d/replanning-archived-evidence/mem0-retrieval-raw-audit.json",
+      "sha256": "9d39909b7992ba478aa3335b40d98e8ef806c246ae3ae91f0f93a97455b40829"
+    },
+    {
+      "path": "checks/hosted_replanning/new_feb1d1d/replanning-archived-evidence/negative-fixtures.txt",
+      "sha256": "b33c6c41b3ba724d9ca36fa9caffb1307d89463244df85d4176b78df5a304b95"
+    },
+    {
+      "path": "checks/hosted_replanning/new_feb1d1d/replanning-archived-evidence/platform.txt",
+      "sha256": "edd4f57544f6fbec412000d7f69103a25b12a84b99becde55148f1325cff3eee"
+    },
+    {
+      "path": "checks/hosted_replanning/new_feb1d1d/replanning-archived-evidence/resolved-runtime.txt",
+      "sha256": "7fe5ccabfc136a87808c20789ff87b734a1fb89a9ceb60b5b16ae8641425e4c5"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "run_id": 41009274140,
+  "url": "https://github.com/aditya-genies/beyond-recall/actions/runs/41009274140",
+  "source_commit": "83075f43f4054b834e1c1c22bda2918988112a80",
+  "jobs": 4,
+  "python_versions": [
+    "3.12",
+    "3.14"
+  ],
+  "primary_outcomes_match": true,
+  "boundary_probe_outcomes_match": true,
+  "scope": "Original primary and four earlier extensions; new native-memory workflow initially rejected configuration separately. Reproductions do not add independent experimental samples.",
+  "files": [
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.12/extensions/conflict_contracts/recorded-ci-results/environment.json",
+      "sha256": "93b868edf075576097cd7dcfa0c3659243c8920bea7bccc75fb2b8efa87614b5"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.12/extensions/conflict_contracts/recorded-ci-results/verification.json",
+      "sha256": "5b9e98bab763d70533e0ffdb72e1242587d190f71ae3f4755a2b5e953fb7b65b"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.12/extensions/langgraph_reference/recorded-ci-results/summary.json",
+      "sha256": "26ca4e7328f89100edbb736236bf49d1542abea9a192689bcfbbad9b7a0c0c1c"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.12/extensions/plan_binding/recorded-ci-results/summary.json",
+      "sha256": "9a7d545b501ba6ae3c94278a4e4d84e7279b7bf8a46294a82e32c07eb4f333d0"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.12/extensions/plan_binding/recorded-ci-results/verification.json",
+      "sha256": "a6726d80182aae56d56c2a66b9dfcb394acfdaed0cc9cfcf3c2aa4ebc3f961bc"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.12/native-ci-verification.json",
+      "sha256": "4fda0b3f0c0edc6be1be07e394017b896e374cc7cab618220bcd3469693ca7b4"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.14/extensions/conflict_contracts/recorded-ci-results/environment.json",
+      "sha256": "908df06bb10fa96d1e7fa43b62cff4e746bc140d6fa230a01a5120d1ed050c13"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.14/extensions/conflict_contracts/recorded-ci-results/verification.json",
+      "sha256": "ce6961240fab465a91eee5fd1f7288e97e978625a19e3803517582c09dc3d26c"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.14/extensions/langgraph_reference/recorded-ci-results/summary.json",
+      "sha256": "26ca4e7328f89100edbb736236bf49d1542abea9a192689bcfbbad9b7a0c0c1c"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.14/extensions/plan_binding/recorded-ci-results/summary.json",
+      "sha256": "9a7d545b501ba6ae3c94278a4e4d84e7279b7bf8a46294a82e32c07eb4f333d0"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.14/extensions/plan_binding/recorded-ci-results/verification.json",
+      "sha256": "a6726d80182aae56d56c2a66b9dfcb394acfdaed0cc9cfcf3c2aa4ebc3f961bc"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/extension-verification-python-3.14/native-ci-verification.json",
+      "sha256": "4fda0b3f0c0edc6be1be07e394017b896e374cc7cab618220bcd3469693ca7b4"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/independent-verification-python-3.12/recorded-ci-results/summary.json",
+      "sha256": "4d56dceb0a677f6f1bb1d67d037004bf2364080aaf9e03784cbbf5f02cb8ed5f"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/independent-verification-python-3.12/ci-verification.json",
+      "sha256": "faffe7bbf52fb182209f1fc7e436be920d826a589616e126bcf473caf53bc067"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/independent-verification-python-3.14/recorded-ci-results/summary.json",
+      "sha256": "4d56dceb0a677f6f1bb1d67d037004bf2364080aaf9e03784cbbf5f02cb8ed5f"
+    },
+    {
+      "path": "checks/hosted_replanning/original_83075f4/independent-verification-python-3.14/ci-verification.json",
+      "sha256": "75c0027f5ef305b90b27d35f71fdb859d6a6a14f51a32fcde8fdee6ba236fbed"
+    }
+  ]
+}

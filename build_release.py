@@ -40,7 +40,7 @@ def main():
  for p in (ROOT/'checks').rglob('*'):
   if not p.is_file() or '__pycache__' in p.parts or 'initial' in p.name:continue
   if p.suffix=='.py' and p.name not in {'__init__.py','check_results.py','audit_protocol.py','derive_factors.py','public_release_audit.py'}:continue
-  if p.suffix in {'.py','.json','.txt','.log','.csv'}:files.append(p)
+  if p.suffix in {'.py','.json','.txt','.log','.csv'} or (p.parent==ROOT/'checks/hosted_replanning' and p.suffix=='.zip'):files.append(p)
  for name in ['selected_primary_manifest.json','selected_manuscript_sources.json','academic_claim_map.json']:
   files.append(ROOT/'literature'/name)
  for name in ['campaign.log','reproduction.log']:files.append(ROOT/name)

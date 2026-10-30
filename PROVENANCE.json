@@ -94,10 +94,15 @@
     "manuscript/public_memory.tex": "1760543d8131d5f8de66bda6cd89e29bc441d9b381b3ecb38e43f19bb5e410eb"
   },
   "bibliography_sha256": "a39d5ab800a2a419c85f497d8f37119f0d9060b1790de9048b935df424349bfe",
-  "new_ubuntu_ci": "Pending first hosted run; local exact workflow commands validated in extensions/replanning_contracts/ci/local_validation.json",
+  "new_ubuntu_ci": "checks/replanning_ci.json",
   "latest_pdf_visual_qa": "checks/pdf_visual_qa.json",
   "paper_pages": 19,
   "paper_main_pages": 14,
   "new_evidence_verification": "checks/new_evidence_verification.json",
-  "new_public_release_audit": "checks/new_public_release_audit.json"
+  "new_public_release_audit": "checks/new_public_release_audit.json",
+  "new_ubuntu_ci_result": "All six jobs succeeded on tested scientific/workflow commit feb1d1d: original primary/four earlier extensions on Python3.12/3.14, nine new native-memory checker tests and archived stores, plus21 backend tests and fresh96-executable-cell SQLite/Redis reproduction. No model calls.",
+  "new_ubuntu_ci_runtime_limit": "Exact original macOS retrieval-runtime equality NOT_RUN on Ubuntu; raw audit and retained-store reconciliation ran separately. UbuntuSQLite3.45.1 versus original3.51.2. All six frozen package versions matched.",
+  "archived_hosted_raw_artifacts": "checks/hosted_replanning/archived_artifact_integrity.json",
+  "scientific_data_commit": "83075f43f4054b834e1c1c22bda2918988112a80",
+  "tested_workflow_commit": "feb1d1d2dc8409bf755d62bc30b7aecfe6abf505"
 }

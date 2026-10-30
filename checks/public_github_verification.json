@@ -1,14 +1,35 @@
 {
+  "verified_at_utc": "2026-10-30T05:43:33.720414+00:00",
   "status": "PASS",
-  "checked_at_utc": "2026-10-30T04:37:51.552608+00:00",
-  "anonymous_http_status": 200,
   "repository": "https://github.com/aditya-genies/beyond-recall",
-  "visibility": "public",
-  "authenticated_request_used": false,
-  "main_commit": "4f2516de55acb404e76c83a9b21b546758b9c7a7",
-  "verified_raw_file_sha256": {
-    "manuscript/main.pdf": "6c8979aef737a914c16d7d4c8058ae309e1feb927b23f7440e9bad76a84fb658",
-    "study.py": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
-    "extensions/sol_pilot/registered/protocol.json": "74880b11a22860ee07deecc74aefa2f56ae4b9621a6a76bf49c76813a69dedc7"
-  }
+  "private": false,
+  "artifact_ref": "feb1d1d2dc8409bf755d62bc30b7aecfe6abf505",
+  "authentication": "None on these HTTP requests",
+  "files": [
+    {
+      "path": "manuscript/main.pdf",
+      "url": "https://raw.githubusercontent.com/aditya-genies/beyond-recall/feb1d1d2dc8409bf755d62bc30b7aecfe6abf505/manuscript/main.pdf",
+      "anonymous_http_status": 200,
+      "bytes": 760592,
+      "sha256": "1b0ee9d72012fca1baca952e901e22aaf73ea048fa4eb4f76d9aa1f9089f4dc1",
+      "matches_local": true
+    },
+    {
+      "path": "manuscript/main.tex",
+      "url": "https://raw.githubusercontent.com/aditya-genies/beyond-recall/feb1d1d2dc8409bf755d62bc30b7aecfe6abf505/manuscript/main.tex",
+      "anonymous_http_status": 200,
+      "bytes": 35516,
+      "sha256": "45e6f655177de8f40695e1b9d005f6b1799f9710db76bf1d4aab23cbd25d1fb8",
+      "matches_local": true
+    },
+    {
+      "path": "study.py",
+      "url": "https://raw.githubusercontent.com/aditya-genies/beyond-recall/feb1d1d2dc8409bf755d62bc30b7aecfe6abf505/study.py",
+      "anonymous_http_status": 200,
+      "bytes": 15384,
+      "sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+      "matches_local": true
+    }
+  ],
+  "scope": "Public source/PDF identity at the immutable tested commit. Default-branch promotion/release are separate publication actions; this record does not anticipate their completion."
 }

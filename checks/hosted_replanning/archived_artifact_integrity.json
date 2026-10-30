@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "source_run": 41009518307,
+  "scope": "Complete hosted artifact ZIPs preserved beyond GitHub retention; every uncompressed member scanned and archive digests match GitHub metadata.",
+  "artifacts": [
+    {
+      "path": "checks/hosted_replanning/replanning-backend-reproduction.zip",
+      "sha256": "912bfabd760b623dfbcd694bc4240f72d00b2ccabd87ce229a63e7f604e862e0",
+      "github_digest_matches": true,
+      "members": 996,
+      "uncompressed_credential_path_findings": [],
+      "zip_integrity": "PASS"
+    },
+    {
+      "path": "checks/hosted_replanning/replanning-archived-evidence.zip",
+      "sha256": "7e4baeeb3c09892b1e3f8a315bfd8e90cc98331b4b974deb42177a70e38614cd",
+      "github_digest_matches": true,
+      "members": 18,
+      "uncompressed_credential_path_findings": [],
+      "zip_integrity": "PASS"
+    }
+  ]
+}
