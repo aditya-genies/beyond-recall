@@ -1,0 +1,51 @@
+{
+  "policies": [
+    "D0P0R0",
+    "D0P0R1",
+    "D0P1R0",
+    "D0P1R1",
+    "D1P0R0",
+    "D1P0R1",
+    "D1P1R0",
+    "D1P1R1"
+  ],
+  "histories": [
+    "normal",
+    "redelivery_fixed",
+    "redelivery_drift",
+    "exit_after_prepare_fixed",
+    "exit_after_prepare_drift",
+    "exit_after_first_put_fixed",
+    "exit_after_first_put_drift",
+    "lost_put_reply_fixed",
+    "lost_put_reply_drift",
+    "exit_after_effects_fixed",
+    "exit_after_effects_drift",
+    "exit_after_finalize_drift",
+    "bounded_input",
+    "superseded_input",
+    "reset_before_retry",
+    "reset_during_effects",
+    "lost_delete_reply"
+  ],
+  "profiles": [
+    "insert",
+    "revise",
+    "retire",
+    "mixed"
+  ],
+  "structural_cases": 528,
+  "source_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+  "plan_retention": "Plans retained after completion for both receipt settings",
+  "seed_data": [
+    "tone=concise",
+    "unit=metric",
+    "topic=cycling"
+  ],
+  "python": "3.14.9",
+  "sqlite": "3.45.1",
+  "clock": "finite specified schedules; no statistical sampling",
+  "power_loss_tested": false,
+  "effect_call_definition": "Committed participant put/delete operations; excludes reset and cleanup SQL mutations",
+  "source_control_definition": "Latest selected fact per attribute; bounded and disabled-source controls affect the decision if their filters are removed"
+}
