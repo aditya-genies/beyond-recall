@@ -1,0 +1,23 @@
+{
+  "status": "WORKFLOW_VALIDATION_FAILURE_BEFORE_TEST_EXECUTION",
+  "run_id": 41009272908,
+  "url": "https://github.com/aditya-genies/beyond-recall/actions/runs/41009272908",
+  "source_commit": "83075f43f4054b834e1c1c22bda2918988112a80",
+  "workflow_sha256": "f51b60234eb54eaa01dbfb008413d3149671f0a95b0627a203fb422f020fa334",
+  "jobs_created": 0,
+  "annotations": [
+    {
+      "line": 38,
+      "column": 20,
+      "message": "Unrecognized named-value: 'runner'. Located at position 1 within expression: runner.temp"
+    },
+    {
+      "line": 121,
+      "column": 20,
+      "message": "Unrecognized named-value: 'runner'. Located at position 1 within expression: runner.temp"
+    }
+  ],
+  "evidence": "REST run metadata and anonymous public HTML annotation; generic repository connector omits validation annotation text.",
+  "interpretation": "Configuration validation failure, not an experimental outcome. Local shell/YAML/AST checks did not cover GitHub expression context availability.",
+  "correction": "Initialize CI_EVIDENCE at step runtime from RUNNER_TEMP and GITHUB_ENV; native drivers/data/model outputs/PDF unchanged."
+}

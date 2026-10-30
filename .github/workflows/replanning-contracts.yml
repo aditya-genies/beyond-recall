@@ -34,9 +34,13 @@ jobs:
     name: Check archived Mem0 and MemTX evidence without model calls
     runs-on: ubuntu-24.04
     timeout-minutes: 20
-    env:
-      CI_EVIDENCE: ${{ runner.temp }}/replanning-archive-evidence
     steps:
+      - name: Initialize evidence directory on the runner
+        timeout-minutes: 1
+        run: |
+          study_evidence_dir="${RUNNER_TEMP:?}/replanning-archive-evidence"
+          mkdir -p "$study_evidence_dir"
+          printf 'CI_EVIDENCE=%s\n' "$study_evidence_dir" >> "$GITHUB_ENV"
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
@@ -117,9 +121,13 @@ jobs:
     name: Reproduce bounded native SQLite and Redis contracts
     runs-on: ubuntu-24.04
     timeout-minutes: 15
-    env:
-      CI_EVIDENCE: ${{ runner.temp }}/replanning-backend-evidence
     steps:
+      - name: Initialize evidence directory on the runner
+        timeout-minutes: 1
+        run: |
+          study_evidence_dir="${RUNNER_TEMP:?}/replanning-backend-evidence"
+          mkdir -p "$study_evidence_dir"
+          printf 'CI_EVIDENCE=%s\n' "$study_evidence_dir" >> "$GITHUB_ENV"
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false

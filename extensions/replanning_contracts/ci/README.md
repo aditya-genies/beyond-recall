@@ -77,3 +77,28 @@ results, and platform limits. GitHub runner provisioning, action execution,
 Ubuntu dependency installation and artifact upload require a hosted run and
 remain unclaimed until that run completes. Workflow settings follow the
 [official GitHub workflow syntax](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax).
+
+## Initial hosted rejection and configuration repair
+
+Hosted run [41009272908](https://github.com/aditya-genies/beyond-recall/actions/runs/41009272908)
+at commit `83075f43f4054b834e1c1c22bda2918988112a80` was rejected before
+creating any jobs. GitHub annotated line 38/column 20 and line 121/column 20 with
+`Unrecognized named-value: 'runner'` for the two `runner.temp` expressions.
+Initial YAML, shell and Python parsing did not test GitHub context availability;
+the earlier successful local research commands did not establish workflow validity.
+
+The [official context table](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#context-availability)
+excludes `runner` from job-level `env`. Both declarations were replaced with a
+first runner step that creates its evidence directory using shell `RUNNER_TEMP`
+and writes `CI_EVIDENCE` through
+[`GITHUB_ENV`](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#setting-an-environment-variable).
+Subsequent step expressions continue to use the allowed `env` context.
+
+Pinned public actionlint v1.7.7 reproduced both original context errors and
+returned zero for the corrected workflow. Its shellcheck/pyflakes integrations
+were disabled; separate `bash -n` checks passed all 15 shell blocks and embedded
+Python parsed successfully. Both new initialization steps passed a local
+`GITHUB_ENV` roundtrip, including paths containing spaces. No research experiment,
+source driver, raw data, frozen protocol or PDF changed during this repair. The
+failed hosted run is retained in `local_validation.json`; successful hosted retry
+remains unclaimed pending the next run.

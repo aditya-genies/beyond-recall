@@ -90,6 +90,46 @@
       "step": "Confirm tracked frozen backend evidence was not rewritten"
     }
   ],
+  "configuration_repair": {
+    "actionlint": {
+      "fixed": {
+        "returncode": 0,
+        "stderr": "",
+        "stdout": ""
+      },
+      "rejected": {
+        "returncode": 1,
+        "stderr": "",
+        "stdout": "[rejected-workflow.yml]:38:24: context \"runner\" is not allowed here. available contexts are \"github\", \"inputs\", \"matrix\", \"needs\", \"secrets\", \"strategy\", \"vars\". see https://docs.github.com/en/actions/learn-github-actions/contexts#context-availability for more details [expression]\n   |\n38 |       CI_EVIDENCE: ${{ runner.temp }}/replanning-archive-evidence\n   |                        ^~~~~~~~~~~\n[rejected-workflow.yml]:121:24: context \"runner\" is not allowed here. available contexts are \"github\", \"inputs\", \"matrix\", \"needs\", \"secrets\", \"strategy\", \"vars\". see https://docs.github.com/en/actions/learn-github-actions/contexts#context-availability for more details [expression]\n    |\n121 |       CI_EVIDENCE: ${{ runner.temp }}/replanning-backend-evidence\n    |                        ^~~~~~~~~~~\n"
+      },
+      "version": "v1.7.7\ninstalled by building from source\nbuilt with go1.26.5 compiler for darwin/arm64\n"
+    },
+    "cause": "runner is not allowed in jobs.<job_id>.env; initial YAML/bash/AST checks did not validate GitHub context availability.",
+    "committed_or_pushed_by_this_agent": false,
+    "environment_setup_checks": {
+      "roundtrip": [
+        {
+          "github_env_roundtrip": true,
+          "job": "archived-evidence",
+          "path_with_spaces": true,
+          "setup_returncode": 0,
+          "subsequent_step_directory_available": true
+        },
+        {
+          "github_env_roundtrip": true,
+          "job": "backend-reproduction",
+          "path_with_spaces": true,
+          "setup_returncode": 0,
+          "subsequent_step_directory_available": true
+        }
+      ],
+      "shell_blocks": 15
+    },
+    "experiments_rerun": false,
+    "fix": "First runner step creates a directory from RUNNER_TEMP and writes CI_EVIDENCE to GITHUB_ENV. Subsequent step contexts use env.CI_EVIDENCE.",
+    "frozen_driver_data_spec_pdf_modified": false,
+    "hosted_retry": "NOT_RUN by this agent"
+  },
   "counts": {
     "archived_fresh_model_request_statuses": 28,
     "backend_actual_abrupt_exits": 10,
@@ -219,11 +259,37 @@
     "retrieval_unique_baseline_queries": 84
   },
   "docs_consulted": [
-    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#context-availability",
+    "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#setting-an-environment-variable",
+    "https://github.com/rhysd/actionlint/releases/tag/v1.7.7"
   ],
   "existing_reproduce_workflow_modified": false,
   "existing_reproduce_workflow_sha256": "d9334e536e007120367fdfad3659f6f98b04f68c36c785b1d2e213b6f3d64ca3",
   "hosted_github_actions_executed_by_this_agent": false,
+  "hosted_initial_rejection": {
+    "annotations": [
+      {
+        "column": 20,
+        "expression": "runner.temp",
+        "line": 38,
+        "message": "Unrecognized named-value: 'runner'"
+      },
+      {
+        "column": 20,
+        "expression": "runner.temp",
+        "line": 121,
+        "message": "Unrecognized named-value: 'runner'"
+      }
+    ],
+    "head_sha": "83075f43f4054b834e1c1c22bda2918988112a80",
+    "jobs_created": 0,
+    "run_id": 41009272908,
+    "source": "Parent independently confirmed anonymous hosted HTML annotations.",
+    "status": "REJECTED_BEFORE_JOBS",
+    "url": "https://github.com/aditya-genies/beyond-recall/actions/runs/41009272908"
+  },
+  "initial_local_validation_workflow_sha256": "f51b60234eb54eaa01dbfb008413d3149671f0a95b0627a203fb422f020fa334",
   "local_platform": {
     "platform": "macOS-27.2-arm64-arm-64bit-Mach-O",
     "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
@@ -254,13 +320,13 @@
     "Reproductions compare bounded aggregate outcomes; race winners/raw bytes may differ. Counts are not pooled with original observations."
   ],
   "static_validation": {
-    "actionlint": "NOT_RUN: not installed",
+    "actionlint": "PASS v1.7.7: original workflow rejected at both invalid contexts, corrected workflow returncode0; shellcheck/pyflakes integrations explicitly disabled.",
     "bash_syntax": "PASS",
-    "bash_syntax_blocks": 13,
+    "bash_syntax_blocks": 15,
     "embedded_python_ast": "PASS",
     "yaml_parse": "PASS using PyYAML BaseLoader"
   },
-  "status": "LOCAL_COMMANDS_PASS_HOSTED_CI_NOT_RUN",
+  "status": "CONFIGURATION_FIX_VALIDATED_HOSTED_RETRY_PENDING",
   "workflow": "../../../.github/workflows/replanning-contracts.yml",
-  "workflow_sha256": "f51b60234eb54eaa01dbfb008413d3149671f0a95b0627a203fb422f020fa334"
+  "workflow_sha256": "c0bdcbb0c93a3046385410c24f91d4268b12d63ac95dcee554e7d174046a6fc3"
 }
