@@ -1,0 +1,2672 @@
+{
+  "status": "MEASURED_STRUCTURAL_DEVELOPMENT_PILOT_ONLY",
+  "protocol_sha256": "dd5280476348b1b60ec9bd91626b6b909b8ae4697233f1a6f8a0a8631035d9ea",
+  "question_order_rule": "dataset, source scope, question key; no effect-based ordering",
+  "coverage": {
+    "all_context_cells_recomputed": 336,
+    "selected_pair_rows": 48,
+    "selected_question_state_cells": 96,
+    "unique_questions": 24,
+    "source_history_scopes": 14
+  },
+  "groups": [
+    {
+      "source_group": "28673fa5300899df1a86e99b",
+      "dataset": "locomo",
+      "start": 0,
+      "keys": [
+        "5fe9391211fab56f013723dc",
+        "71f2c50355d904ef22227b9f",
+        "8d9b7553e7fa287865b99a89",
+        "90324c842b8c639dd5f9c64e",
+        "cc0ee5087da7d3dbc235b522",
+        "da048100f815b0b6053249be"
+      ],
+      "label": "LoCoMo A (6)",
+      "end": 6
+    },
+    {
+      "source_group": "e6ffd0b1c7bbd33bb33059e5",
+      "dataset": "locomo",
+      "start": 6,
+      "keys": [
+        "2287005572e58d8bf2b8224d",
+        "41e10336201fb48b881ffd62",
+        "48896517eb3f808b700db75a",
+        "6b96e5f3ff7a4bc9dd8987ef",
+        "6d46d28e7c102966729a0465",
+        "9c76bcd39a32cff2a23fd1af"
+      ],
+      "label": "LoCoMo B (6)",
+      "end": 12
+    },
+    {
+      "source_group": "LME",
+      "dataset": "longmemeval",
+      "start": 12,
+      "keys": [
+        "1ccc73aa74937ff44a3288aa",
+        "860844fe3208d148e1c1da34",
+        "2e30e5259de20e00b9d77771",
+        "064fa3fba4852f160d6a2fa6",
+        "ae84b3a2891958cd95a9b36d",
+        "c8197b92a19c4e5397698e79",
+        "bb1890e0d3db6db4af515091",
+        "a5305ee34f0b5b8fc2861a2b",
+        "4d4bc3134f55a0ec7bf740cc",
+        "2939d3302377fd9baf96eb5c",
+        "f65dcff812445376dbc709ef",
+        "f83b349de8fe6415c75f1b17"
+      ],
+      "label": "LongMemEval (12)",
+      "end": 24
+    }
+  ],
+  "question_map": [
+    {
+      "label": "Q01",
+      "key": "5fe9391211fab56f013723dc",
+      "dataset": "locomo",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "group": "conv-30"
+    },
+    {
+      "label": "Q02",
+      "key": "71f2c50355d904ef22227b9f",
+      "dataset": "locomo",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "group": "conv-30"
+    },
+    {
+      "label": "Q03",
+      "key": "8d9b7553e7fa287865b99a89",
+      "dataset": "locomo",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "group": "conv-30"
+    },
+    {
+      "label": "Q04",
+      "key": "90324c842b8c639dd5f9c64e",
+      "dataset": "locomo",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "group": "conv-30"
+    },
+    {
+      "label": "Q05",
+      "key": "cc0ee5087da7d3dbc235b522",
+      "dataset": "locomo",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "group": "conv-30"
+    },
+    {
+      "label": "Q06",
+      "key": "da048100f815b0b6053249be",
+      "dataset": "locomo",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "group": "conv-30"
+    },
+    {
+      "label": "Q07",
+      "key": "2287005572e58d8bf2b8224d",
+      "dataset": "locomo",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "group": "conv-41"
+    },
+    {
+      "label": "Q08",
+      "key": "41e10336201fb48b881ffd62",
+      "dataset": "locomo",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "group": "conv-41"
+    },
+    {
+      "label": "Q09",
+      "key": "48896517eb3f808b700db75a",
+      "dataset": "locomo",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "group": "conv-41"
+    },
+    {
+      "label": "Q10",
+      "key": "6b96e5f3ff7a4bc9dd8987ef",
+      "dataset": "locomo",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "group": "conv-41"
+    },
+    {
+      "label": "Q11",
+      "key": "6d46d28e7c102966729a0465",
+      "dataset": "locomo",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "group": "conv-41"
+    },
+    {
+      "label": "Q12",
+      "key": "9c76bcd39a32cff2a23fd1af",
+      "dataset": "locomo",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "group": "conv-41"
+    },
+    {
+      "label": "Q13",
+      "key": "1ccc73aa74937ff44a3288aa",
+      "dataset": "longmemeval",
+      "source_scope": "127fd5b12992e06ef73ffdf1",
+      "group": "17a201f8b671efd5ff6eb9f9"
+    },
+    {
+      "label": "Q14",
+      "key": "860844fe3208d148e1c1da34",
+      "dataset": "longmemeval",
+      "source_scope": "31e124fd59eef3fbcd3f7cc9",
+      "group": "fbb047e718dad88bf4a08a7f"
+    },
+    {
+      "label": "Q15",
+      "key": "2e30e5259de20e00b9d77771",
+      "dataset": "longmemeval",
+      "source_scope": "37705b6dbab0f17f1dd0df5c",
+      "group": "40367b1b8e9db2b713d81796"
+    },
+    {
+      "label": "Q16",
+      "key": "064fa3fba4852f160d6a2fa6",
+      "dataset": "longmemeval",
+      "source_scope": "448ec51ce086e539ee6e96df",
+      "group": "a202eec7723f3bafc15ac8c1"
+    },
+    {
+      "label": "Q17",
+      "key": "ae84b3a2891958cd95a9b36d",
+      "dataset": "longmemeval",
+      "source_scope": "4cd478ac1dd80377debacab3",
+      "group": "e03b3345f5acc56498e6dd27"
+    },
+    {
+      "label": "Q18",
+      "key": "c8197b92a19c4e5397698e79",
+      "dataset": "longmemeval",
+      "source_scope": "65abf4b85eba5db9fb2fdd24",
+      "group": "00ba77ed4b4c716d02156d17"
+    },
+    {
+      "label": "Q19",
+      "key": "bb1890e0d3db6db4af515091",
+      "dataset": "longmemeval",
+      "source_scope": "6c6d7df085f9bb70dabbca95",
+      "group": "fbbe9508d8ae2b5b04684ad8"
+    },
+    {
+      "label": "Q20",
+      "key": "a5305ee34f0b5b8fc2861a2b",
+      "dataset": "longmemeval",
+      "source_scope": "aae430d9d67e69bda41ac41a",
+      "group": "1e3f4028a76282af70080db6"
+    },
+    {
+      "label": "Q21",
+      "key": "4d4bc3134f55a0ec7bf740cc",
+      "dataset": "longmemeval",
+      "source_scope": "b755e29a6a4ac983085a290b",
+      "group": "5455f9e9475ddb3777df98dc"
+    },
+    {
+      "label": "Q22",
+      "key": "2939d3302377fd9baf96eb5c",
+      "dataset": "longmemeval",
+      "source_scope": "c51d7aba76d4c2255a1e65f5",
+      "group": "ae59ce68d01148fafbd5703e"
+    },
+    {
+      "label": "Q23",
+      "key": "f65dcff812445376dbc709ef",
+      "dataset": "longmemeval",
+      "source_scope": "efb54cd83102afc483f7ebdf",
+      "group": "17658ed25b7e90e73c486b3e"
+    },
+    {
+      "label": "Q24",
+      "key": "f83b349de8fe6415c75f1b17",
+      "dataset": "longmemeval",
+      "source_scope": "eff09dd0c838ebc48b4d9ad3",
+      "group": "a993327fea29bde877afe30c"
+    }
+  ],
+  "pairs": [
+    {
+      "question_label": "Q01",
+      "question_key": "5fe9391211fab56f013723dc",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "7ee647fa03fe56eb41c72a34",
+        "question_key": "5fe9391211fab56f013723dc",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2936,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "ef7660b726d643192e479a46",
+        "question_key": "5fe9391211fab56f013723dc",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2959,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q02",
+      "question_key": "71f2c50355d904ef22227b9f",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "e1b6004665ba83aaebab445a",
+        "question_key": "71f2c50355d904ef22227b9f",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3181,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "3cf0fce18bd654ce9d8ee770",
+        "question_key": "71f2c50355d904ef22227b9f",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 8,
+          "distinct_exact_strings": 8,
+          "duplicate_event_slots": 2,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2793,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -2,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q03",
+      "question_key": "8d9b7553e7fa287865b99a89",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "5422b8734dbd79ee106d127c",
+        "question_key": "8d9b7553e7fa287865b99a89",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3050,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "076235ca758b0cacd1d19630",
+        "question_key": "8d9b7553e7fa287865b99a89",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2784,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q04",
+      "question_key": "90324c842b8c639dd5f9c64e",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "10679ad0d705e0c519418c2f",
+        "question_key": "90324c842b8c639dd5f9c64e",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3791,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "4e60be84f63a47beda773da5",
+        "question_key": "90324c842b8c639dd5f9c64e",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3685,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q05",
+      "question_key": "cc0ee5087da7d3dbc235b522",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "8e773665a8a87055e55d0bbb",
+        "question_key": "cc0ee5087da7d3dbc235b522",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3038,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "54ce005341539a28c173a31c",
+        "question_key": "cc0ee5087da7d3dbc235b522",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 5,
+          "distinct_exact_strings": 5,
+          "duplicate_event_slots": 5,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2837,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -5,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q06",
+      "question_key": "da048100f815b0b6053249be",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "a3d522586f9703d8969e9881",
+        "question_key": "da048100f815b0b6053249be",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.6666666666666666
+        },
+        "serialized_context_bytes": 3159,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 3,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "9e320615d049ff441f06da85",
+        "question_key": "da048100f815b0b6053249be",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 8,
+          "distinct_exact_strings": 8,
+          "duplicate_event_slots": 2,
+          "positive_support_coverage": 0.6666666666666666
+        },
+        "serialized_context_bytes": 2992,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 3,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -2,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q07",
+      "question_key": "2287005572e58d8bf2b8224d",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "8dfdc45f42862001e96cb9b9",
+        "question_key": "2287005572e58d8bf2b8224d",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3225,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "8459ace4aa428cb360e99d08",
+        "question_key": "2287005572e58d8bf2b8224d",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 3402,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": -1.0
+    },
+    {
+      "question_label": "Q08",
+      "question_key": "41e10336201fb48b881ffd62",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "38b405472a61745acec3afa2",
+        "question_key": "41e10336201fb48b881ffd62",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3912,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "0b67e8b26d65e9385991f667",
+        "question_key": "41e10336201fb48b881ffd62",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 4041,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q09",
+      "question_key": "48896517eb3f808b700db75a",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "497cff66e9c043883bc91aa7",
+        "question_key": "48896517eb3f808b700db75a",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2920,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "1efb39227d4484bed042b2e5",
+        "question_key": "48896517eb3f808b700db75a",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 8,
+          "distinct_exact_strings": 8,
+          "duplicate_event_slots": 2,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2978,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -2,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q10",
+      "question_key": "6b96e5f3ff7a4bc9dd8987ef",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "0ea023ba2f648b50e6a601ce",
+        "question_key": "6b96e5f3ff7a4bc9dd8987ef",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3483,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "562ce2bb0315d8f8189edc42",
+        "question_key": "6b96e5f3ff7a4bc9dd8987ef",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 8,
+          "distinct_exact_strings": 8,
+          "duplicate_event_slots": 2,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3536,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -2,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q11",
+      "question_key": "6d46d28e7c102966729a0465",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "fa6473bbc4812c38e55f9bd6",
+        "question_key": "6d46d28e7c102966729a0465",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 3062,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "08351ee351ca907b53e4bf6e",
+        "question_key": "6d46d28e7c102966729a0465",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 2935,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q12",
+      "question_key": "9c76bcd39a32cff2a23fd1af",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "9ba4b19d013d312156917bde",
+        "question_key": "9c76bcd39a32cff2a23fd1af",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2969,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "ac7ecb8642dc4e2bb66cafbc",
+        "question_key": "9c76bcd39a32cff2a23fd1af",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3082,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q13",
+      "question_key": "1ccc73aa74937ff44a3288aa",
+      "dataset": "longmemeval",
+      "group": "17a201f8b671efd5ff6eb9f9",
+      "source_scope": "127fd5b12992e06ef73ffdf1",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "0933bdbe7818a8eba5546f0e",
+        "question_key": "1ccc73aa74937ff44a3288aa",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "127fd5b12992e06ef73ffdf1",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11500,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "70aedfc3400f0437cf98b8e1",
+        "question_key": "1ccc73aa74937ff44a3288aa",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "127fd5b12992e06ef73ffdf1",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11500,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q14",
+      "question_key": "860844fe3208d148e1c1da34",
+      "dataset": "longmemeval",
+      "group": "fbb047e718dad88bf4a08a7f",
+      "source_scope": "31e124fd59eef3fbcd3f7cc9",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "d0af3c5ed754233ac73b1256",
+        "question_key": "860844fe3208d148e1c1da34",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "31e124fd59eef3fbcd3f7cc9",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 11168,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "2e513eeb68fe189edb3f1c55",
+        "question_key": "860844fe3208d148e1c1da34",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "31e124fd59eef3fbcd3f7cc9",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 8,
+          "distinct_exact_strings": 8,
+          "duplicate_event_slots": 2,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 10209,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -2,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q15",
+      "question_key": "2e30e5259de20e00b9d77771",
+      "dataset": "longmemeval",
+      "group": "40367b1b8e9db2b713d81796",
+      "source_scope": "37705b6dbab0f17f1dd0df5c",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "70bd04e6817245fcc8c66c43",
+        "question_key": "2e30e5259de20e00b9d77771",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "37705b6dbab0f17f1dd0df5c",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 8,
+          "distinct_event_ids": 8,
+          "distinct_exact_strings": 8,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11984,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "90d438eecc0821a64dad77b4",
+        "question_key": "2e30e5259de20e00b9d77771",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "37705b6dbab0f17f1dd0df5c",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 7,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 1,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11948,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -2,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q16",
+      "question_key": "064fa3fba4852f160d6a2fa6",
+      "dataset": "longmemeval",
+      "group": "a202eec7723f3bafc15ac8c1",
+      "source_scope": "448ec51ce086e539ee6e96df",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "4b870107b31931eab83f7042",
+        "question_key": "064fa3fba4852f160d6a2fa6",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "448ec51ce086e539ee6e96df",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 10781,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "2521b551ed9464c327b1bbd7",
+        "question_key": "064fa3fba4852f160d6a2fa6",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "448ec51ce086e539ee6e96df",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11717,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q17",
+      "question_key": "ae84b3a2891958cd95a9b36d",
+      "dataset": "longmemeval",
+      "group": "e03b3345f5acc56498e6dd27",
+      "source_scope": "4cd478ac1dd80377debacab3",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "53738672bfed75aa303092a6",
+        "question_key": "ae84b3a2891958cd95a9b36d",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "4cd478ac1dd80377debacab3",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 8,
+          "distinct_event_ids": 8,
+          "distinct_exact_strings": 8,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11832,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "6465c1592e4fb785815425a2",
+        "question_key": "ae84b3a2891958cd95a9b36d",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "4cd478ac1dd80377debacab3",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 8,
+          "distinct_event_ids": 8,
+          "distinct_exact_strings": 8,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11832,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q18",
+      "question_key": "c8197b92a19c4e5397698e79",
+      "dataset": "longmemeval",
+      "group": "00ba77ed4b4c716d02156d17",
+      "source_scope": "65abf4b85eba5db9fb2fdd24",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "e7931c5b9107f4739e2d3f03",
+        "question_key": "c8197b92a19c4e5397698e79",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "65abf4b85eba5db9fb2fdd24",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 8,
+          "distinct_event_ids": 8,
+          "distinct_exact_strings": 8,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.25
+        },
+        "serialized_context_bytes": 11896,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 4,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "9f8dc7a41d3cb6b81ae52847",
+        "question_key": "c8197b92a19c4e5397698e79",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "65abf4b85eba5db9fb2fdd24",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 8,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 2,
+          "positive_support_coverage": 0.25
+        },
+        "serialized_context_bytes": 11978,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 4,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -2,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q19",
+      "question_key": "bb1890e0d3db6db4af515091",
+      "dataset": "longmemeval",
+      "group": "fbbe9508d8ae2b5b04684ad8",
+      "source_scope": "6c6d7df085f9bb70dabbca95",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "81e888e649ea4a10584b26b8",
+        "question_key": "bb1890e0d3db6db4af515091",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "6c6d7df085f9bb70dabbca95",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": null
+        },
+        "serialized_context_bytes": 8729,
+        "annotated_support_available": false,
+        "visible_annotated_support_events": null,
+        "annotated_gold_event_count": null,
+        "support_null_reason": "unanswerable"
+      },
+      "retry": {
+        "case": "e5f05e9f35ec096e66814e09",
+        "question_key": "bb1890e0d3db6db4af515091",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "6c6d7df085f9bb70dabbca95",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": null
+        },
+        "serialized_context_bytes": 10749,
+        "annotated_support_available": false,
+        "visible_annotated_support_events": null,
+        "annotated_gold_event_count": null,
+        "support_null_reason": "unanswerable"
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": null
+    },
+    {
+      "question_label": "Q20",
+      "question_key": "a5305ee34f0b5b8fc2861a2b",
+      "dataset": "longmemeval",
+      "group": "1e3f4028a76282af70080db6",
+      "source_scope": "aae430d9d67e69bda41ac41a",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "3af4696a96a4ee95dccbb9dd",
+        "question_key": "a5305ee34f0b5b8fc2861a2b",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "aae430d9d67e69bda41ac41a",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 7182,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "9dc68181910e1fe1f88769a1",
+        "question_key": "a5305ee34f0b5b8fc2861a2b",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "aae430d9d67e69bda41ac41a",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 7182,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q21",
+      "question_key": "4d4bc3134f55a0ec7bf740cc",
+      "dataset": "longmemeval",
+      "group": "5455f9e9475ddb3777df98dc",
+      "source_scope": "b755e29a6a4ac983085a290b",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "966f0c7c1d078dc7ca8cda6b",
+        "question_key": "4d4bc3134f55a0ec7bf740cc",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "b755e29a6a4ac983085a290b",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 9,
+          "distinct_event_ids": 9,
+          "distinct_exact_strings": 9,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11880,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "df0d73f8bf21a4a57668591a",
+        "question_key": "4d4bc3134f55a0ec7bf740cc",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "b755e29a6a4ac983085a290b",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 4,
+          "distinct_exact_strings": 4,
+          "duplicate_event_slots": 6,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 7165,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -5,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q22",
+      "question_key": "2939d3302377fd9baf96eb5c",
+      "dataset": "longmemeval",
+      "group": "ae59ce68d01148fafbd5703e",
+      "source_scope": "c51d7aba76d4c2255a1e65f5",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "abd098286a0662f3667ac81f",
+        "question_key": "2939d3302377fd9baf96eb5c",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "c51d7aba76d4c2255a1e65f5",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11285,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "b68cca3d28ffa32a0a968b4b",
+        "question_key": "2939d3302377fd9baf96eb5c",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "c51d7aba76d4c2255a1e65f5",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 9,
+          "distinct_exact_strings": 9,
+          "duplicate_event_slots": 1,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 10821,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -1,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q23",
+      "question_key": "f65dcff812445376dbc709ef",
+      "dataset": "longmemeval",
+      "group": "17658ed25b7e90e73c486b3e",
+      "source_scope": "efb54cd83102afc483f7ebdf",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "195fa7a23c4b22735dd2b401",
+        "question_key": "f65dcff812445376dbc709ef",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "efb54cd83102afc483f7ebdf",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 10771,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "feb7d3d1a310909ee654a273",
+        "question_key": "f65dcff812445376dbc709ef",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "efb54cd83102afc483f7ebdf",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 4,
+          "distinct_exact_strings": 4,
+          "duplicate_event_slots": 6,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 8723,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -6,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q24",
+      "question_key": "f83b349de8fe6415c75f1b17",
+      "dataset": "longmemeval",
+      "group": "a993327fea29bde877afe30c",
+      "source_scope": "eff09dd0c838ebc48b4d9ad3",
+      "backend": "mem0_raw",
+      "clean": {
+        "case": "c146f0d11f3587346463565c",
+        "question_key": "f83b349de8fe6415c75f1b17",
+        "backend": "mem0_raw",
+        "arm": "clean",
+        "source_scope": "eff09dd0c838ebc48b4d9ad3",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11181,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "18e5537b853d66bd396f4c7f",
+        "question_key": "f83b349de8fe6415c75f1b17",
+        "backend": "mem0_raw",
+        "arm": "retry",
+        "source_scope": "eff09dd0c838ebc48b4d9ad3",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 8,
+          "distinct_exact_strings": 8,
+          "duplicate_event_slots": 2,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11260,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -2,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q01",
+      "question_key": "5fe9391211fab56f013723dc",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "llama_index",
+      "clean": {
+        "case": "7fa8fcadf99f101de0941449",
+        "question_key": "5fe9391211fab56f013723dc",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2211,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "87c231827efbc173b49339b6",
+        "question_key": "5fe9391211fab56f013723dc",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 4,
+          "distinct_exact_strings": 4,
+          "duplicate_event_slots": 6,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 1915,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -6,
+      "annotated_support_delta": -1.0
+    },
+    {
+      "question_label": "Q02",
+      "question_key": "71f2c50355d904ef22227b9f",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "llama_index",
+      "clean": {
+        "case": "438e089fee69d7e61fd27191",
+        "question_key": "71f2c50355d904ef22227b9f",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 1859,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "07329ebf63037774e722c418",
+        "question_key": "71f2c50355d904ef22227b9f",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 7,
+          "distinct_exact_strings": 7,
+          "duplicate_event_slots": 3,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 1827,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -3,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q03",
+      "question_key": "8d9b7553e7fa287865b99a89",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "llama_index",
+      "clean": {
+        "case": "e5c5534bf712ec0054bf8c73",
+        "question_key": "8d9b7553e7fa287865b99a89",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2989,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "7f094839b4e5e6ce776a9d73",
+        "question_key": "8d9b7553e7fa287865b99a89",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2581,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q04",
+      "question_key": "90324c842b8c639dd5f9c64e",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "llama_index",
+      "clean": {
+        "case": "9eb73fb68209db45730ef387",
+        "question_key": "90324c842b8c639dd5f9c64e",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 2864,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "75d24a15b53244cccd2760db",
+        "question_key": "90324c842b8c639dd5f9c64e",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 5,
+          "distinct_exact_strings": 5,
+          "duplicate_event_slots": 5,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 3342,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -5,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q05",
+      "question_key": "cc0ee5087da7d3dbc235b522",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "llama_index",
+      "clean": {
+        "case": "80c136750f3432af1b48efd6",
+        "question_key": "cc0ee5087da7d3dbc235b522",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.5
+        },
+        "serialized_context_bytes": 2650,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "fab1cd2b3786e0da7f3667c7",
+        "question_key": "cc0ee5087da7d3dbc235b522",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 2532,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": -0.5
+    },
+    {
+      "question_label": "Q06",
+      "question_key": "da048100f815b0b6053249be",
+      "dataset": "locomo",
+      "group": "conv-30",
+      "source_scope": "28673fa5300899df1a86e99b",
+      "backend": "llama_index",
+      "clean": {
+        "case": "241f57f181b6be55aa0d5517",
+        "question_key": "da048100f815b0b6053249be",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 2659,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 3,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "5bf81d0ed4a0b80493599d7a",
+        "question_key": "da048100f815b0b6053249be",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "28673fa5300899df1a86e99b",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 2445,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 3,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q07",
+      "question_key": "2287005572e58d8bf2b8224d",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "llama_index",
+      "clean": {
+        "case": "d5ff2a103b39a55851c07ead",
+        "question_key": "2287005572e58d8bf2b8224d",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2839,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "3319bffa936f5b5447e862b9",
+        "question_key": "2287005572e58d8bf2b8224d",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 7,
+          "distinct_exact_strings": 7,
+          "duplicate_event_slots": 3,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 2693,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -3,
+      "annotated_support_delta": -1.0
+    },
+    {
+      "question_label": "Q08",
+      "question_key": "41e10336201fb48b881ffd62",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "llama_index",
+      "clean": {
+        "case": "f6f2d50b7c538031cfe19ca1",
+        "question_key": "41e10336201fb48b881ffd62",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 3060,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "5344603bb16a243980ee8b39",
+        "question_key": "41e10336201fb48b881ffd62",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 3060,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q09",
+      "question_key": "48896517eb3f808b700db75a",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "llama_index",
+      "clean": {
+        "case": "612dca83fc8c716573c0955e",
+        "question_key": "48896517eb3f808b700db75a",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2895,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "825dd066b669257ca45b5e4c",
+        "question_key": "48896517eb3f808b700db75a",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 8,
+          "distinct_exact_strings": 8,
+          "duplicate_event_slots": 2,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3104,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -2,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q10",
+      "question_key": "6b96e5f3ff7a4bc9dd8987ef",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "llama_index",
+      "clean": {
+        "case": "62a44b6cb269d8c0a1c7d632",
+        "question_key": "6b96e5f3ff7a4bc9dd8987ef",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3102,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "92b3761daebce9df8b3441a3",
+        "question_key": "6b96e5f3ff7a4bc9dd8987ef",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 7,
+          "distinct_exact_strings": 7,
+          "duplicate_event_slots": 3,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 2783,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -3,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q11",
+      "question_key": "6d46d28e7c102966729a0465",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "llama_index",
+      "clean": {
+        "case": "c6378b69b6e24c21b968b2fe",
+        "question_key": "6d46d28e7c102966729a0465",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 2522,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "961003daa1793199d855ad66",
+        "question_key": "6d46d28e7c102966729a0465",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.0
+        },
+        "serialized_context_bytes": 2522,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 0,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q12",
+      "question_key": "9c76bcd39a32cff2a23fd1af",
+      "dataset": "locomo",
+      "group": "conv-41",
+      "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+      "backend": "llama_index",
+      "clean": {
+        "case": "0ff5d6b83ba68462d2e5aa3a",
+        "question_key": "9c76bcd39a32cff2a23fd1af",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3068,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "e26cea42086819cbd79f6e21",
+        "question_key": "9c76bcd39a32cff2a23fd1af",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "e6ffd0b1c7bbd33bb33059e5",
+        "dataset": "locomo",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3144,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q13",
+      "question_key": "1ccc73aa74937ff44a3288aa",
+      "dataset": "longmemeval",
+      "group": "17a201f8b671efd5ff6eb9f9",
+      "source_scope": "127fd5b12992e06ef73ffdf1",
+      "backend": "llama_index",
+      "clean": {
+        "case": "be8271485f081de24d1603a4",
+        "question_key": "1ccc73aa74937ff44a3288aa",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "127fd5b12992e06ef73ffdf1",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11500,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "b178a26a181cfd1c47683c02",
+        "question_key": "1ccc73aa74937ff44a3288aa",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "127fd5b12992e06ef73ffdf1",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 11500,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q14",
+      "question_key": "860844fe3208d148e1c1da34",
+      "dataset": "longmemeval",
+      "group": "fbb047e718dad88bf4a08a7f",
+      "source_scope": "31e124fd59eef3fbcd3f7cc9",
+      "backend": "llama_index",
+      "clean": {
+        "case": "90160844c78a4e0e8197c3ec",
+        "question_key": "860844fe3208d148e1c1da34",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "31e124fd59eef3fbcd3f7cc9",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 5001,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "baf6cfa350b0d0911c393300",
+        "question_key": "860844fe3208d148e1c1da34",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "31e124fd59eef3fbcd3f7cc9",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 5001,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q15",
+      "question_key": "2e30e5259de20e00b9d77771",
+      "dataset": "longmemeval",
+      "group": "40367b1b8e9db2b713d81796",
+      "source_scope": "37705b6dbab0f17f1dd0df5c",
+      "backend": "llama_index",
+      "clean": {
+        "case": "7ff6a7d7debf9602310d7430",
+        "question_key": "2e30e5259de20e00b9d77771",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "37705b6dbab0f17f1dd0df5c",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 6912,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "647e43c0741bbec6f0c08225",
+        "question_key": "2e30e5259de20e00b9d77771",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "37705b6dbab0f17f1dd0df5c",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 7,
+          "distinct_exact_strings": 7,
+          "duplicate_event_slots": 3,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 4178,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -3,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q16",
+      "question_key": "064fa3fba4852f160d6a2fa6",
+      "dataset": "longmemeval",
+      "group": "a202eec7723f3bafc15ac8c1",
+      "source_scope": "448ec51ce086e539ee6e96df",
+      "backend": "llama_index",
+      "clean": {
+        "case": "d85e9fce583c92b871719ef9",
+        "question_key": "064fa3fba4852f160d6a2fa6",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "448ec51ce086e539ee6e96df",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 9759,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "88a74310c8941ee66a03b0eb",
+        "question_key": "064fa3fba4852f160d6a2fa6",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "448ec51ce086e539ee6e96df",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 5,
+          "distinct_exact_strings": 5,
+          "duplicate_event_slots": 5,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 9549,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -5,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q17",
+      "question_key": "ae84b3a2891958cd95a9b36d",
+      "dataset": "longmemeval",
+      "group": "e03b3345f5acc56498e6dd27",
+      "source_scope": "4cd478ac1dd80377debacab3",
+      "backend": "llama_index",
+      "clean": {
+        "case": "c0c139da50aa509947c7a025",
+        "question_key": "ae84b3a2891958cd95a9b36d",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "4cd478ac1dd80377debacab3",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 7893,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "9e328169f12399b8b6fde735",
+        "question_key": "ae84b3a2891958cd95a9b36d",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "4cd478ac1dd80377debacab3",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 7893,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q18",
+      "question_key": "c8197b92a19c4e5397698e79",
+      "dataset": "longmemeval",
+      "group": "00ba77ed4b4c716d02156d17",
+      "source_scope": "65abf4b85eba5db9fb2fdd24",
+      "backend": "llama_index",
+      "clean": {
+        "case": "82f65745223f2f82adc8ea38",
+        "question_key": "c8197b92a19c4e5397698e79",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "65abf4b85eba5db9fb2fdd24",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.5
+        },
+        "serialized_context_bytes": 11816,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 4,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "39ed33e311241a10868a5394",
+        "question_key": "c8197b92a19c4e5397698e79",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "65abf4b85eba5db9fb2fdd24",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 0.5
+        },
+        "serialized_context_bytes": 11816,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 4,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q19",
+      "question_key": "bb1890e0d3db6db4af515091",
+      "dataset": "longmemeval",
+      "group": "fbbe9508d8ae2b5b04684ad8",
+      "source_scope": "6c6d7df085f9bb70dabbca95",
+      "backend": "llama_index",
+      "clean": {
+        "case": "3ea5fe2ede1b015809183ced",
+        "question_key": "bb1890e0d3db6db4af515091",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "6c6d7df085f9bb70dabbca95",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": null
+        },
+        "serialized_context_bytes": 5309,
+        "annotated_support_available": false,
+        "visible_annotated_support_events": null,
+        "annotated_gold_event_count": null,
+        "support_null_reason": "unanswerable"
+      },
+      "retry": {
+        "case": "f994d5c60c608aff8c39affa",
+        "question_key": "bb1890e0d3db6db4af515091",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "6c6d7df085f9bb70dabbca95",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": null
+        },
+        "serialized_context_bytes": 5579,
+        "annotated_support_available": false,
+        "visible_annotated_support_events": null,
+        "annotated_gold_event_count": null,
+        "support_null_reason": "unanswerable"
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": null
+    },
+    {
+      "question_label": "Q20",
+      "question_key": "a5305ee34f0b5b8fc2861a2b",
+      "dataset": "longmemeval",
+      "group": "1e3f4028a76282af70080db6",
+      "source_scope": "aae430d9d67e69bda41ac41a",
+      "backend": "llama_index",
+      "clean": {
+        "case": "9fd4059e024a39a31823ecc6",
+        "question_key": "a5305ee34f0b5b8fc2861a2b",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "aae430d9d67e69bda41ac41a",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 6559,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "9e964853cc9bb1d2b121aa5b",
+        "question_key": "a5305ee34f0b5b8fc2861a2b",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "aae430d9d67e69bda41ac41a",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 6559,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q21",
+      "question_key": "4d4bc3134f55a0ec7bf740cc",
+      "dataset": "longmemeval",
+      "group": "5455f9e9475ddb3777df98dc",
+      "source_scope": "b755e29a6a4ac983085a290b",
+      "backend": "llama_index",
+      "clean": {
+        "case": "40d2efc778a7f981cf9e24b1",
+        "question_key": "4d4bc3134f55a0ec7bf740cc",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "b755e29a6a4ac983085a290b",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 7308,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "8183aecf8c59e088b73ccdc4",
+        "question_key": "4d4bc3134f55a0ec7bf740cc",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "b755e29a6a4ac983085a290b",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 4,
+          "distinct_exact_strings": 4,
+          "duplicate_event_slots": 6,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 7165,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 1,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -6,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q22",
+      "question_key": "2939d3302377fd9baf96eb5c",
+      "dataset": "longmemeval",
+      "group": "ae59ce68d01148fafbd5703e",
+      "source_scope": "c51d7aba76d4c2255a1e65f5",
+      "backend": "llama_index",
+      "clean": {
+        "case": "1dc586866b403e3f7d2b9fde",
+        "question_key": "2939d3302377fd9baf96eb5c",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "c51d7aba76d4c2255a1e65f5",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 10168,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "c91144febd46a54545cf4588",
+        "question_key": "2939d3302377fd9baf96eb5c",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "c51d7aba76d4c2255a1e65f5",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 10168,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": 0,
+      "annotated_support_delta": 0.0
+    },
+    {
+      "question_label": "Q23",
+      "question_key": "f65dcff812445376dbc709ef",
+      "dataset": "longmemeval",
+      "group": "17658ed25b7e90e73c486b3e",
+      "source_scope": "efb54cd83102afc483f7ebdf",
+      "backend": "llama_index",
+      "clean": {
+        "case": "35715f28afdec9f925d54a4f",
+        "question_key": "f65dcff812445376dbc709ef",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "efb54cd83102afc483f7ebdf",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 3271,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "ce8a74a7d2ba4915928d5504",
+        "question_key": "f65dcff812445376dbc709ef",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "efb54cd83102afc483f7ebdf",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 4,
+          "distinct_exact_strings": 4,
+          "duplicate_event_slots": 6,
+          "positive_support_coverage": 0.5
+        },
+        "serialized_context_bytes": 3252,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 1,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -6,
+      "annotated_support_delta": -0.5
+    },
+    {
+      "question_label": "Q24",
+      "question_key": "f83b349de8fe6415c75f1b17",
+      "dataset": "longmemeval",
+      "group": "a993327fea29bde877afe30c",
+      "source_scope": "eff09dd0c838ebc48b4d9ad3",
+      "backend": "llama_index",
+      "clean": {
+        "case": "acfa440815029932e70966e8",
+        "question_key": "f83b349de8fe6415c75f1b17",
+        "backend": "llama_index",
+        "arm": "clean",
+        "source_scope": "eff09dd0c838ebc48b4d9ad3",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 10,
+          "distinct_exact_strings": 10,
+          "duplicate_event_slots": 0,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 10571,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "retry": {
+        "case": "102914428484ec9196622427",
+        "question_key": "f83b349de8fe6415c75f1b17",
+        "backend": "llama_index",
+        "arm": "retry",
+        "source_scope": "eff09dd0c838ebc48b4d9ad3",
+        "dataset": "longmemeval",
+        "metrics": {
+          "context_records": 10,
+          "distinct_event_ids": 6,
+          "distinct_exact_strings": 6,
+          "duplicate_event_slots": 4,
+          "positive_support_coverage": 1.0
+        },
+        "serialized_context_bytes": 5893,
+        "annotated_support_available": true,
+        "visible_annotated_support_events": 2,
+        "annotated_gold_event_count": 2,
+        "support_null_reason": null
+      },
+      "distinct_event_delta": -4,
+      "annotated_support_delta": 0.0
+    }
+  ],
+  "summary": {
+    "mem0_raw": {
+      "distinct_events": {
+        "lower": 20,
+        "unchanged": 4,
+        "higher": 0,
+        "unavailable": 0,
+        "total_questions": 24
+      },
+      "annotated_support": {
+        "lower": 1,
+        "unchanged": 22,
+        "higher": 0,
+        "unavailable": 1,
+        "total_questions": 24
+      }
+    },
+    "llama_index": {
+      "distinct_events": {
+        "lower": 16,
+        "unchanged": 8,
+        "higher": 0,
+        "unavailable": 0,
+        "total_questions": 24
+      },
+      "annotated_support": {
+        "lower": 4,
+        "unchanged": 19,
+        "higher": 0,
+        "unavailable": 1,
+        "total_questions": 24
+      }
+    }
+  },
+  "interpretation": "Exact finite context observations, not reader quality, semantic support completeness, significance or an IID population estimate."
+}

@@ -1,0 +1,256 @@
+{
+  "records": [
+    {
+      "key": "ke2024bridging_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=Bridging+the+Preference+Gap+between+Retrievers+and+LLMs&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds&limit=5",
+      "retrieved_utc": "2026-10-30T06:32:46.965134+00:00",
+      "unauthenticated": true,
+      "http_status": 200,
+      "status": "retrieved",
+      "sha256": "3038360fd36d117cd154c6a2b273a2564d8b6cec2a1f690abf5607fb88022ce9",
+      "verified_hit": {
+        "paperId": "f65ecb65d00f2e69a49465debfdd78efa0838cec",
+        "title": "Bridging the Preference Gap between Retrievers and LLMs",
+        "year": 2024,
+        "authors": [
+          {
+            "authorId": "9623089",
+            "name": "Zi-Xuan Ke"
+          },
+          {
+            "authorId": "2275163940",
+            "name": "Wei-Ze Kong"
+          },
+          {
+            "authorId": "2249775049",
+            "name": "Cheng Li"
+          },
+          {
+            "authorId": "2249838528",
+            "name": "Mingyang Zhang"
+          },
+          {
+            "authorId": "2253452633",
+            "name": "Qiao-Zhu Mei"
+          },
+          {
+            "authorId": "2240516450",
+            "name": "Michael Bendersky"
+          }
+        ],
+        "venue": "Annual Meeting of the Association for Computational Linguistics",
+        "externalIds": {
+          "ArXiv": "2401.06954",
+          "DBLP": "journals/corr/abs-2401-06954",
+          "DOI": "10.48550/arXiv.2401.06954",
+          "CorpusId": 266998785
+        },
+        "title_match_ratio": 100.0,
+        "nonempty_abstract_confirmed": true,
+        "abstract_redistributed": false
+      }
+    },
+    {
+      "key": "ke2024bridging_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.18653/v1/2024.acl-long.562",
+      "retrieved_utc": "2026-10-30T06:32:47.217586+00:00",
+      "unauthenticated": true,
+      "http_status": 200,
+      "status": "retrieved",
+      "sha256": "8dfd3d536878fa0dc530af97fbf69d96c8440735ef4578f1f15e284ea9c0daac",
+      "title_match_ratio": 100.0,
+      "matched_doi": "https://doi.org/10.18653/v1/2024.acl-long.562"
+    },
+    {
+      "key": "jain2026cuer_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=CUE-R%3A+Beyond+the+Final+Answer+in+Retrieval-Augmented+Generation&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds&limit=5",
+      "retrieved_utc": "2026-10-30T06:32:48.767254+00:00",
+      "unauthenticated": true,
+      "status": "unavailable",
+      "error": "HTTP Error 429: ",
+      "http_status": 429,
+      "verified_hit": null
+    },
+    {
+      "key": "jain2026cuer_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.48550/arxiv.2604.05467",
+      "retrieved_utc": "2026-10-30T06:32:48.847081+00:00",
+      "unauthenticated": true,
+      "http_status": 200,
+      "status": "retrieved",
+      "sha256": "f915770b1dec714c328b00c9b4b434b0cf06767b102814891c2bf3f6e746407e",
+      "title_match_ratio": 100.0,
+      "matched_doi": "https://doi.org/10.48550/arxiv.2604.05467"
+    },
+    {
+      "key": "ross2026redundancy_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=How+retriever+redundancy+and+diversity+impact+RAG+effectiveness&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds&limit=5",
+      "retrieved_utc": "2026-10-30T06:32:50.135083+00:00",
+      "unauthenticated": true,
+      "status": "unavailable",
+      "error": "HTTP Error 429: ",
+      "http_status": 429,
+      "verified_hit": null
+    },
+    {
+      "key": "ross2026redundancy_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.48550/arxiv.2608.13956",
+      "retrieved_utc": "2026-10-30T06:32:50.261751+00:00",
+      "unauthenticated": true,
+      "http_status": 200,
+      "status": "retrieved",
+      "sha256": "193387a2663d6ca42a4064c10fe0f608ff0ac9c94f80d9f4ff0c3eb6f5f8aa52",
+      "title_match_ratio": 100.0,
+      "matched_doi": "https://doi.org/10.48550/arxiv.2608.13956"
+    },
+    {
+      "key": "brouillette2026balance_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=Finding+the+Right+Balance%3A+Relevance+and+Diversity+in+LLM+Retrieval&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds&limit=5",
+      "retrieved_utc": "2026-10-30T06:32:51.683018+00:00",
+      "unauthenticated": true,
+      "status": "unavailable",
+      "error": "HTTP Error 429: ",
+      "http_status": 429,
+      "verified_hit": null
+    },
+    {
+      "key": "brouillette2026balance_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.48550/arxiv.2610.09412",
+      "retrieved_utc": "2026-10-30T06:32:51.772904+00:00",
+      "unauthenticated": true,
+      "http_status": 200,
+      "status": "retrieved",
+      "sha256": "61fbfd3e5afe194bcc0a32b79e4093ef40d5601128b58f75e5f7c470d4e33705",
+      "title_match_ratio": 100.0,
+      "matched_doi": "https://doi.org/10.48550/arxiv.2610.09412"
+    },
+    {
+      "key": "cho2026rare_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=RARE%3A+Redundancy-Aware+Retrieval+Evaluation+Framework+for+High-Similarity+Corpora&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds&limit=5",
+      "retrieved_utc": "2026-10-30T06:32:53.084951+00:00",
+      "unauthenticated": true,
+      "status": "unavailable",
+      "error": "HTTP Error 429: ",
+      "http_status": 429,
+      "verified_hit": null
+    },
+    {
+      "key": "cho2026rare_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.18653/v1/2026.acl-long.923",
+      "retrieved_utc": "2026-10-30T06:32:53.168828+00:00",
+      "unauthenticated": true,
+      "http_status": 200,
+      "status": "retrieved",
+      "sha256": "82e96e252989cb3dea066ae231c85d8439cf9154e32b5c00fc20fa3754f215f3",
+      "title_match_ratio": 100.0,
+      "matched_doi": "https://doi.org/10.18653/v1/2026.acl-long.923"
+    },
+    {
+      "key": "schuster2026whose_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=Whose+Facts+Win%3F+LLM+Source+Preferences+under+Knowledge+Conflicts&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds&limit=5",
+      "retrieved_utc": "2026-10-30T06:32:54.449259+00:00",
+      "unauthenticated": true,
+      "status": "unavailable",
+      "error": "HTTP Error 429: ",
+      "http_status": 429,
+      "verified_hit": null
+    },
+    {
+      "key": "schuster2026whose_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.18653/v1/2026.acl-long.1357",
+      "retrieved_utc": "2026-10-30T06:32:54.540544+00:00",
+      "unauthenticated": true,
+      "http_status": 200,
+      "status": "retrieved",
+      "sha256": "e6a2e30a05ea74ab47ae50803f418c5df763786b7f847268623ea13cd57b59a3",
+      "title_match_ratio": 100.0,
+      "matched_doi": "https://doi.org/10.18653/v1/2026.acl-long.1357"
+    },
+    {
+      "key": "chauhan2026sleep_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=Let+Them+Sleep%3A+Recursive+Self-Pruning+Memory+for+Long-Horizon+LLM+Agents&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds&limit=5",
+      "retrieved_utc": "2026-10-30T06:32:55.834454+00:00",
+      "unauthenticated": true,
+      "status": "unavailable",
+      "error": "HTTP Error 429: ",
+      "http_status": 429,
+      "verified_hit": null
+    },
+    {
+      "key": "chauhan2026sleep_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.48550/arxiv.2610.25561",
+      "retrieved_utc": "2026-10-30T06:32:56.012872+00:00",
+      "unauthenticated": true,
+      "http_status": 200,
+      "status": "retrieved",
+      "sha256": "ce40d7ae4fa48a4802ac57ee0651168f6010bd2ebe6f16fb7452bcc0e6432f40",
+      "title_match_ratio": 100.0,
+      "matched_doi": "https://doi.org/10.48550/arxiv.2610.25561"
+    },
+    {
+      "key": "wu2026longmemevalv2_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=LongMemEval-V2%3A+Evaluating+Long-Term+Agent+Memory+Toward+Experienced+Colleagues&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds&limit=5",
+      "retrieved_utc": "2026-10-30T06:32:57.443425+00:00",
+      "unauthenticated": true,
+      "status": "unavailable",
+      "error": "HTTP Error 429: ",
+      "http_status": 429,
+      "verified_hit": null
+    },
+    {
+      "key": "wu2026longmemevalv2_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.48550/arxiv.2605.12493",
+      "retrieved_utc": "2026-10-30T06:32:57.532642+00:00",
+      "unauthenticated": true,
+      "http_status": 200,
+      "status": "retrieved",
+      "sha256": "7066656611a03a0c1bfd8cd8e1852fcae7b33c7e35de21eb1c461db21b35eba7",
+      "title_match_ratio": 100.0,
+      "matched_doi": "https://doi.org/10.48550/arxiv.2605.12493"
+    },
+    {
+      "key": "wu2024longmemeval_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=LongMemEval%3A+Benchmarking+Chat+Assistants+on+Long-Term+Interactive+Memory&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds&limit=5",
+      "retrieved_utc": "2026-10-30T06:32:58.810072+00:00",
+      "unauthenticated": true,
+      "status": "unavailable",
+      "error": "HTTP Error 429: ",
+      "http_status": 429,
+      "verified_hit": null
+    },
+    {
+      "key": "wu2024longmemeval_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.48550/arxiv.2410.10813",
+      "retrieved_utc": "2026-10-30T06:32:58.895287+00:00",
+      "unauthenticated": true,
+      "http_status": 200,
+      "status": "retrieved",
+      "sha256": "a967b454ae4271ad40936f32ecd9d0e453f0026eacb949e92b9cc4491e077af8",
+      "title_match_ratio": 100.0,
+      "matched_doi": "https://doi.org/10.48550/arxiv.2410.10813"
+    },
+    {
+      "key": "maharana2024evaluating_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=Evaluating+Very+Long-Term+Conversational+Memory+of+LLM+Agents&fields=title%2Cabstract%2Cyear%2Cauthors%2Cvenue%2CexternalIds&limit=5",
+      "retrieved_utc": "2026-10-30T06:33:00.371942+00:00",
+      "unauthenticated": true,
+      "status": "unavailable",
+      "error": "HTTP Error 429: ",
+      "http_status": 429,
+      "verified_hit": null
+    },
+    {
+      "key": "maharana2024evaluating_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.48550/arxiv.2402.17753",
+      "retrieved_utc": "2026-10-30T06:33:00.464197+00:00",
+      "unauthenticated": true,
+      "http_status": 200,
+      "status": "retrieved",
+      "sha256": "3c63827d5a014982434614619166b480c219820dd0ffc2bf833a745ff64238c0",
+      "title_match_ratio": 100.0,
+      "matched_doi": "https://doi.org/10.48550/arxiv.2402.17753"
+    }
+  ],
+  "index_failures_are_not_fabrication_evidence": true,
+  "public_unauthenticated_only": true
+}

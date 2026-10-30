@@ -1,0 +1,83 @@
+name: Check benchmark-impact measurement boundaries
+
+on:
+  push:
+    paths:
+      - 'extensions/benchmark_impact/**'
+      - '.github/workflows/benchmark-impact.yml'
+  pull_request:
+    paths:
+      - 'extensions/benchmark_impact/**'
+      - '.github/workflows/benchmark-impact.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  PIP_CONFIG_FILE: /dev/null
+  PIP_INDEX_URL: https://pypi.org/simple
+  PIP_EXTRA_INDEX_URL: ''
+  PIP_FIND_LINKS: ''
+  PIP_KEYRING_PROVIDER: disabled
+  HF_HUB_OFFLINE: '1'
+  MEM0_TELEMETRY: 'false'
+
+jobs:
+  offline-boundaries:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: '3.12.12'
+      - name: Create isolated public-package checker environment
+        run: |
+          python -m venv .venv-impact
+          .venv-impact/bin/python -m pip install --index-url https://pypi.org/simple -r extensions/benchmark_impact/requirements-checks.txt
+          .venv-impact/bin/python -m pip check
+      - name: Retrieve and verify the published metric source
+        run: |
+          .venv-impact/bin/python - <<'PY'
+          import hashlib
+          from pathlib import Path
+          import urllib.request
+          path=Path('/tmp/beyond-recall-benchmark-feasibility-20261029/locomo_scorer.py')
+          path.parent.mkdir(parents=True,exist_ok=True)
+          url='https://raw.githubusercontent.com/snap-research/locomo/3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376/task_eval/evaluation.py'
+          body=urllib.request.urlopen(url,timeout=60).read()
+          assert hashlib.sha256(body).hexdigest()=='8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd'
+          path.write_bytes(body)
+          PY
+      - name: Exercise data, worker, grading and raw-audit negative fixtures
+        run: |
+          set -o pipefail
+          .venv-impact/bin/python -m unittest -v extensions.benchmark_impact.test_data extensions.benchmark_impact.test_worker.WorkerBoundaryTests extensions.benchmark_impact.test_worker.GradeBoundaryTests extensions.benchmark_impact.test_worker.PilotEvidenceAuditorTests 2>&1 | tee benchmark-impact-boundaries.txt
+      - name: Record scope and unavailable native reproduction
+        if: always()
+        run: |
+          .venv-impact/bin/python - <<'PY'
+          import json,platform
+          from pathlib import Path
+          report={'job_scope':'Offline boundary and scorer-negative fixtures; no benchmark model or embedding inference.',
+            'native_storage_campaign':'NOT_RUN: the archived macOS native runtimes and model assets are not installed by this job.',
+            'reader_campaign':'NOT_RUN: personal Codex and local MLX inference are not used in CI.',
+            'python':platform.python_version(),'platform':platform.platform()}
+          Path('benchmark-impact-ci-scope.json').write_text(json.dumps(report,indent=2)+'\n')
+          PY
+      - name: Retain checker reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        with:
+          name: benchmark-impact-boundary-checks
+          path: |
+            benchmark-impact-boundaries.txt
+            benchmark-impact-ci-scope.json
+          retention-days: 7

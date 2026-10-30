@@ -1,0 +1,11 @@
+{
+  "backend": "llama_index",
+  "scope": "efb54cd83102afc483f7ebdf",
+  "action": "initial",
+  "mode": "native_once",
+  "tag": "initial",
+  "returncode": 0,
+  "expected_returncode": 0,
+  "wall_seconds": 20.5878,
+  "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"native_once\", \"phase\": \"initial\", \"before_count\": 0, \"after_count\": 485, \"submitted_events\": 485, \"redeliveries\": 1, \"wall_seconds\": 19.5256, \"extraction_calls\": 0, \"fault\": null}\n"
+}

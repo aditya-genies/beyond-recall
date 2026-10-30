@@ -1,0 +1,55 @@
+{
+  "prepared_utc": "2026-10-30T06:39:28.212151+00:00",
+  "records": [
+    {
+      "source": "LongMemEval pinned official scorer",
+      "contract": "Category-dependent yes/no grading; keep official label and model configuration separately.",
+      "pitfalls": [
+        "Knowledge-update scoring can accept a correct updated value alongside old information.",
+        "Historical explanation is not a contradictory-current assertion.",
+        "Temporal count tolerance and preference-rubric partial coverage are explicit.",
+        "An adapted Sol judge is neither the official gpt-4o endpoint nor independent human validation."
+      ],
+      "evidence": [
+        {
+          "key": "lme_evaluate_qa",
+          "url": "https://raw.githubusercontent.com/xiaowu0162/LongMemEval/9e0b455f4ef0e2ab8f2e582289761153549043fc/src/evaluation/evaluate_qa.py",
+          "sha256": "ecce9c4c79dc89d99534ac17b383a5cbb5b9f0c69ee98adaf0684742e3d95251",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "retrieved_utc": "2026-10-30T06:28:27.867211+00:00"
+        }
+      ]
+    },
+    {
+      "source": "LoCoMo pinned official scorer",
+      "contract": "Category-specific stemmed token F1/multi-answer matching and special adversarial abstention handling.",
+      "pitfalls": [
+        "Preserve denominator/category and distinguish scores from exact accuracy.",
+        "Token overlap can miss unsupported extra assertions; stricter outcomes must be separately defined.",
+        "Gold evidence labels may not exhaust alternative support."
+      ],
+      "evidence": [
+        {
+          "key": "locomo_evaluation",
+          "url": "https://raw.githubusercontent.com/snap-research/locomo/3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376/task_eval/evaluation.py",
+          "sha256": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd",
+          "http_status": 200,
+          "status": "saved_external_cache",
+          "retrieved_utc": "2026-10-30T06:28:28.007425+00:00"
+        }
+      ]
+    },
+    {
+      "source": "LongMemEval-V2 primary protocol",
+      "contract": "Fixed-reader context gathering; deterministic structured scoring, semantic judges for gotchas/abstention.",
+      "pitfalls": [
+        "UNKNOWN is not a substitute for diagnosing a flawed premise.",
+        "Oracle and no-history pilots are not full-history results.",
+        "The resource-heavy multimodal haystack is not automatically reproduced by text-only adaptation."
+      ]
+    }
+  ],
+  "recommended_new_outcome": "Evidence-supported correctness and explicit conflicting CURRENT assertions, separately reported from official scoring. Preserve legitimate past-state explanation and history-targeted questions.",
+  "adjudication": "Freeze rubrics; blind arm identity/order; preserve raw grading outputs; obtain authorized independent adjudication for disputed/sampled cases. No reviewers have been invented or contacted."
+}

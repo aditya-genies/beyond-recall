@@ -1,0 +1,32 @@
+{
+  "phase": "Pre-experiment public-source feasibility",
+  "code_repository_pins": [
+    {
+      "source": "locomo_head",
+      "url": "https://api.github.com/repos/snap-research/locomo/commits/main",
+      "commit": "3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376",
+      "date": "2024-08-13T03:21:21Z"
+    },
+    {
+      "source": "longmemeval_head",
+      "url": "https://api.github.com/repos/xiaowu0162/LongMemEval/commits/main",
+      "commit": "9e0b455f4ef0e2ab8f2e582289761153549043fc",
+      "date": "2026-05-11T22:49:24Z"
+    },
+    {
+      "source": "longmemeval_v2_head",
+      "url": "https://api.github.com/repos/xiaowu0162/LongMemEval-V2/commits/main",
+      "commit": "2cc8c540bdb87fe6761629b585e727e1c4704520",
+      "date": "2026-08-09T22:31:22Z"
+    }
+  ],
+  "raw_data_redistributed": false,
+  "model_experiments_run": 0,
+  "published_paper_changed": false,
+  "notes": [
+    "LongMemEval code license is separate from hosted dataset license; verify the dataset card.",
+    "LoCoMo pinned LICENSE.txt states Attribution-NonCommercial4.0.",
+    "LongMemEval-V2 README was inspected, but full native runtime/model/large-data feasibility has not been established.",
+    "These are current public source identities, not first-discovery or journal-readiness evidence."
+  ]
+}

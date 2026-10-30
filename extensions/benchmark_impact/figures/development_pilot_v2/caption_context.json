@@ -1,0 +1,20 @@
+{
+  "task_type": "Frozen development-pilot methods and structural observations",
+  "caption_prompt_identifier": "PaperOrchestra/skills/plotting-agent/references/caption-prompt.md",
+  "anti_leakage_identifier": "PaperOrchestra/skills/paper-orchestra/references/anti-leakage-prompt.md",
+  "contextual_sources": [
+    "extensions/benchmark_impact/development_pilot_v2/protocol.json",
+    "extensions/benchmark_impact/analysis_plan.json",
+    "extensions/benchmark_impact/development_pilot_v2/grading_calibration_report.json",
+    "extensions/benchmark_impact/worker_review_pilot_v2.json",
+    "extensions/benchmark_impact/development_pilot_v2/contexts.json"
+  ],
+  "actual_rendered_figures": {
+    "fig_frozen_development_pilot_design": "Five-stage frozen design diagram with separated gold/query paths, raw native backends, fixed byte/record budgets, seven reader arms and provisional calibration limitation.",
+    "fig_pilot_context_structure": "Four-row,24-column matrix of exact clean/retry distinct-event counts and annotated support percentages, with source grouping, all unchanged cells and two backend-specific NA support cells."
+  },
+  "captions": {
+    "fig_frozen_development_pilot_design": "Overview of the frozen development-pilot design, not held-out confirmation or a task-performance result. Fourteen source-history scopes contain 24 selected questions nested in two LoCoMo conversations and twelve LongMemEval evidence components. Permitted full-history text and ordinary source identity enter raw-document participants; Mem0 infer=False and a persisted LlamaIndex index use local BGE embeddings without an extraction LLM. Closed native baselines are cloned into native-retry and authored sequential event/text admission variants. Fixed-source redelivery commits before an exit87 cut and resumes in a fresh process. Retrieval uses a common 60-candidate limit and at most ten records within 12,000 serialized UTF-8 bytes, not a token budget. Seven reader arms include no-context and gold-support diagnostic controls; oracle support deliberately uses gold locations and is not a deployed memory method. Two Sol repeats and one Qwen repeat are specified per unique prompt, with exact prompt aliases sharing responses. Paired task outcomes remain separate from state/context observations and clean-reader variation. Automated grading is provisional: twelve authored task labels match calibration expectations, but two auxiliary current-conflict labels mismatch; this is not human validation. The displayed phase and cut counts are design inventory, not a run-completion claim.",
+    "fig_pilot_context_structure": "Clean and post-cut/retry retrieval contexts for every selected development question in both local raw-document backends. Each cell shows clean above retry; colors indicate the exact paired direction, with annotated-support percentages rounded only for display. Distinct event counts decrease for 20 of 24 Mem0 questions and 16 of 24 LlamaIndex questions. Annotated source-support coverage decreases for one and four of the 23 available pairs, respectively; all remaining available comparisons are unchanged. One unavailable-support question per backend remains NA rather than zero. All conditions use the same 60-candidate, ten-record and 12,000-byte context limits. Questions are grouped by the two LoCoMo conversations and LongMemEval evidence components, whose background sessions can overlap. These are finite structural observations with no reader-accuracy, harm, semantic-coverage completeness, significance or population-rate claim."
+  }
+}

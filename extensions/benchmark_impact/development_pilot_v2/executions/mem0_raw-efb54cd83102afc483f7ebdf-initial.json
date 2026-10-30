@@ -1,0 +1,11 @@
+{
+  "backend": "mem0_raw",
+  "scope": "efb54cd83102afc483f7ebdf",
+  "action": "initial",
+  "mode": "native_once",
+  "tag": "initial",
+  "returncode": 0,
+  "expected_returncode": 0,
+  "wall_seconds": 16.026,
+  "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"native_once\", \"phase\": \"initial\", \"before_count\": 0, \"after_count\": 485, \"submitted_events\": 485, \"redeliveries\": 1, \"wall_seconds\": 15.2284, \"extraction_calls\": 0, \"fault\": null}\n"
+}

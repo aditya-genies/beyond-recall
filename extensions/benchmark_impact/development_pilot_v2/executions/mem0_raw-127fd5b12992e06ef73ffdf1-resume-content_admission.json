@@ -1,0 +1,11 @@
+{
+  "backend": "mem0_raw",
+  "scope": "127fd5b12992e06ef73ffdf1",
+  "action": "retry",
+  "mode": "content_admission",
+  "tag": "resume-content_admission",
+  "returncode": 0,
+  "expected_returncode": 0,
+  "wall_seconds": 0.8819,
+  "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"content_admission\", \"phase\": \"retry\", \"before_count\": 522, \"after_count\": 522, \"submitted_events\": 150, \"redeliveries\": 1, \"wall_seconds\": 0.0212, \"extraction_calls\": 0, \"fault\": null}\n"
+}

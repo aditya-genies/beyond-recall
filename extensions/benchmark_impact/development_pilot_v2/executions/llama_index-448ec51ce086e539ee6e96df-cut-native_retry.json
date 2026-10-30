@@ -1,0 +1,11 @@
+{
+  "backend": "llama_index",
+  "scope": "448ec51ce086e539ee6e96df",
+  "action": "retry",
+  "mode": "native_retry",
+  "tag": "cut-native_retry",
+  "returncode": 87,
+  "expected_returncode": 87,
+  "wall_seconds": 1.8448,
+  "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 502, \"after_count\": 550, \"submitted_events\": 48, \"redeliveries\": 1, \"wall_seconds\": 0.4424, \"extraction_calls\": 0, \"fault\": \"Actual os._exit87 after native writes/persistence and raw witness, before logical batch acknowledgement\"}\n"
+}

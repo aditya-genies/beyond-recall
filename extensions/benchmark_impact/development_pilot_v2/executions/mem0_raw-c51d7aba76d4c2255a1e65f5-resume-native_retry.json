@@ -1,0 +1,11 @@
+{
+  "backend": "mem0_raw",
+  "scope": "c51d7aba76d4c2255a1e65f5",
+  "action": "retry",
+  "mode": "native_retry",
+  "tag": "resume-native_retry",
+  "returncode": 0,
+  "expected_returncode": 0,
+  "wall_seconds": 1.2116,
+  "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 695, \"after_count\": 907, \"submitted_events\": 212, \"redeliveries\": 1, \"wall_seconds\": 0.3564, \"extraction_calls\": 0, \"fault\": null}\n"
+}

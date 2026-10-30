@@ -1,0 +1,8 @@
+{
+  "status": "ABORTED_HARNESS_INITIALIZATION_RACE",
+  "reader_calls": 0,
+  "grading_calls": 0,
+  "cause": "Concurrent PRAGMA journal_mode=WAL on first opening of shared embedding cache raised sqlite3.OperationalError database is locked.",
+  "action": "Terminated the orchestration process. Previously observed child PIDs had already exited; one later observed orphan also exited before its termination attempt. Verified no matching pipeline/worker process remained. Preserve partial native records and frozen source; no primary study completion claim.",
+  "source_copies_match_protocol": true
+}

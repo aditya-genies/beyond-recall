@@ -1,0 +1,110 @@
+{
+  "actual_v2_calibration": {
+    "current_conflict_matches": 10,
+    "definitive_auxiliary_semantic_claims_allowed": false,
+    "expected_labels_changed": false,
+    "fixtures": 12,
+    "mismatches": [
+      {
+        "expected": "no",
+        "fixture_name": "temporal-tolerance",
+        "label": "current_conflict",
+        "observed": "yes"
+      },
+      {
+        "expected": "no",
+        "fixture_name": "temporal-wrong",
+        "label": "current_conflict",
+        "observed": "yes"
+      }
+    ],
+    "status": "CALIBRATION_MISMATCH",
+    "task_matches": 12
+  },
+  "actual_v2_native_audit": {
+    "actual_expected_exit87": 84,
+    "auditor_sha256": "8ea66382ca77213ccb23626fe6745cb073c760b67f7fd26e8c38add85621396b",
+    "execution_manifests": 308,
+    "interpretation": "Raw event/physical-state/count/clone/receipt/candidate consistency only. No reader quality, causal decision harm, official benchmark score, outside replication or definitive auxiliary-grading claim.",
+    "model_calls": 0,
+    "native_participants": 28,
+    "native_queries_or_remeasurement": 0,
+    "phase": "Independent same-study raw native evidence audit, no native/model API invocation",
+    "protocol_sha256": "dd5280476348b1b60ec9bd91626b6b909b8ae4697233f1a6f8a0a8631035d9ea",
+    "source_history_scopes": 14,
+    "status": "PASS",
+    "totals": {
+      "native_stores_checked": 196,
+      "original_events_across_native_participants": 14320,
+      "replay_events_per_delivery_across_native_participants": 3840
+    }
+  },
+  "checked_candidate_rows": 11520,
+  "checked_native_query_invocations": 192,
+  "earlier_not_ready": "worker_review_pilot_v2_not_ready.json",
+  "local_embedding_manifest": "worker_review_embedding_manifest.json",
+  "logs": [
+    "worker_review_full.log",
+    "worker_review_native.log",
+    "worker_review_grade.log",
+    "worker_review_final_unit.log"
+  ],
+  "native_fixture": {
+    "fresh_cache_per_store_fixture": true,
+    "model_scope": "Tiny synthetic runtime feasibility; no LLM/API calls; actual cached BGE CPU inference.",
+    "processes": 24,
+    "returncode_counts": {
+      "0": 18,
+      "1": 2,
+      "87": 4
+    }
+  },
+  "official_locomo_proxy": {
+    "bert_imported": false,
+    "pinned_official_source_sha256": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd",
+    "proxy_comparisons": 65,
+    "status": "PASS"
+  },
+  "offline_embedding_inference_in_tiny_runtime_fixtures": true,
+  "preserved_initial_errors": {
+    "first_native_round": "worker_review_native_initial.json/log:less strict shared fixture cache, not pooled with reported round",
+    "grading_fixture_metadata_error": "worker_review_grade_packet_fixture_initial.log:fixture omitted reader grading-protocol hash, then corrected",
+    "harness_path_error": "worker_review_harness_attempt1.log",
+    "pilot_v1": "Root-retained partial run and abandoned_run.json; shared WAL initialization race; no reader/grader calls.",
+    "unit_negative_failures": "worker_review_unit_initial.log:2formerly accepted verifier forgeries, now rejected"
+  },
+  "released_v0_3_0_modified_by_this_reviewer": false,
+  "remaining_interpretation_constraints": [
+    "Exploratory pilot only; failed auxiliary calibration retained",
+    "No definitive stale-state/semantic intervention efficacy claim",
+    "No native inferred-memory/default managed-service equivalence",
+    "Sequential admission guards do not establish concurrent uniqueness",
+    "Warm-cache and whole-process timing reported separately",
+    "No p-values/IID population intervals from reused episodes/prompts",
+    "No raw native API or model queries during independent artifact audit"
+  ],
+  "review_scope": "Same-study runtime/evidence audit, not outside replication or benchmark efficacy",
+  "reviewer_llm_calls": 0,
+  "reviewer_native_remeasurement_during_artifact_audit": 0,
+  "source_sha256": {
+    "grade.py": "aa9903a5d74744cec2572627c79b08f034e1e9f310a0d2f940ff72d223cf6768",
+    "memory_worker.py": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+    "pipeline.py": "fc98e49cb0e026fa2a73abe2efb65b4203ca32e5d7b58e13fd1ab9f7e4866a71",
+    "reader.py": "4fd4d1dd20a9a77b91cc1c5b0ab5a0dd5bdc26ace548ed84a74e5c9c572d3866",
+    "summarize_pilot.py": "b7acfc70e5ea095f060077510c1d1195d1f5b045332be5a02487184199fe9f1a",
+    "test_worker.py": "fda7611e6f1d3ede23fc3d765b47ddbe589ba1a139fdecf7ab025b90c0776476",
+    "worker_review_pilot_audit.py": "8ea66382ca77213ccb23626fe6745cb073c760b67f7fd26e8c38add85621396b"
+  },
+  "status": "WORKER_AND_NATIVE_EVIDENCE_PASS_AUXILIARY_CALIBRATION_FAILED",
+  "tested_methods": {
+    "errors": 0,
+    "execution": "Full21worker suite, then8grading and3raw-audit methods in separate subsequent executions; final26non-native methods also run together.",
+    "failures": 0,
+    "grade_boundary": 8,
+    "independent_raw_auditor": 3,
+    "native_runtime": 6,
+    "skips": 0,
+    "total": 32,
+    "worker_pipeline_boundary": 15
+  }
+}

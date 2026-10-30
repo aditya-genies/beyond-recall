@@ -1,0 +1,1255 @@
+{
+  "phase": "Tiny synthetic native runtime feasibility only; no primary study cells",
+  "llm_calls": 0,
+  "offline_local_embedding_inference": true,
+  "attempts": [
+    {
+      "backend": "mem0_raw",
+      "action": "initial",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 1.426,
+      "fresh_fixture_cache_file": "clean-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"native_once\", \"phase\": \"initial\", \"before_count\": 0, \"after_count\": 4, \"submitted_events\": 4, \"redeliveries\": 1, \"wall_seconds\": 0.0797, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "initial",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 1.177,
+      "fresh_fixture_cache_file": "clean-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"native_once\", \"phase\": \"initial\", \"before_count\": 0, \"after_count\": 4, \"submitted_events\": 4, \"redeliveries\": 1, \"wall_seconds\": 0.02, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": true,
+      "returncode": 87,
+      "expected_returncode": 87,
+      "seconds": 0.535,
+      "fresh_fixture_cache_file": "event-cut-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 4, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0005, \"extraction_calls\": 0, \"fault\": \"Actual os._exit87 after native writes/persistence and raw witness, before logical batch acknowledgement\"}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.621,
+      "fresh_fixture_cache_file": "event-cut-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 4, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0004, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": true,
+      "returncode": 87,
+      "expected_returncode": 87,
+      "seconds": 0.676,
+      "fresh_fixture_cache_file": "event-cut-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 4, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0032, \"extraction_calls\": 0, \"fault\": \"Actual os._exit87 after native writes/persistence and raw witness, before logical batch acknowledgement\"}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.78,
+      "fresh_fixture_cache_file": "event-cut-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 4, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.003, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "native_retry",
+      "cut": true,
+      "returncode": 87,
+      "expected_returncode": 87,
+      "seconds": 0.573,
+      "fresh_fixture_cache_file": "native-cut-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        },
+        {
+          "physical_id": "bcc1b4d2-adeb-44c3-b455-fbc145c37a78",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        }
+      ],
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 5, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0632, \"extraction_calls\": 0, \"fault\": \"Actual os._exit87 after native writes/persistence and raw witness, before logical batch acknowledgement\"}\n",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "native_retry",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.688,
+      "fresh_fixture_cache_file": "native-cut-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        },
+        {
+          "physical_id": "bcc1b4d2-adeb-44c3-b455-fbc145c37a78",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "24390363-001b-4694-8dd1-927fe73ff457",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        }
+      ],
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 5, \"after_count\": 6, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.06, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "native_retry",
+      "cut": true,
+      "returncode": 87,
+      "expected_returncode": 87,
+      "seconds": 0.687,
+      "fresh_fixture_cache_file": "native-cut-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        },
+        {
+          "physical_id": "fa857baf-a4ad-4cf9-833f-b43da3723238",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 5, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.009, \"extraction_calls\": 0, \"fault\": \"Actual os._exit87 after native writes/persistence and raw witness, before logical batch acknowledgement\"}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "native_retry",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.78,
+      "fresh_fixture_cache_file": "native-cut-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        },
+        {
+          "physical_id": "fa857baf-a4ad-4cf9-833f-b43da3723238",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "ba8ed357-1c19-44c4-92c8-9ffd766c8689",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 5, \"after_count\": 6, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0044, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.685,
+      "fresh_fixture_cache_file": "clone-reopen-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\nFailed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.809,
+      "fresh_fixture_cache_file": "clone-reopen-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.677,
+      "fresh_fixture_cache_file": "legitimate-event_admission-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        },
+        {
+          "physical_id": "7ff25220-7c96-42de-acc0-65d3e3431acc",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000005",
+          "source_id": "000000000000000000000069",
+          "occurred_at": "2024/04/04",
+          "body_sha256": "f4642f6db427e04604dd8e34421cb236cf16524cdc426b2910c7f8f61e8bbec2"
+        },
+        {
+          "physical_id": "a90b1b24-f3ec-4163-822c-53e587077e71",
+          "text": "user: A later correction: the notebook is now turquoise.",
+          "event_id": "000000000000000000000006",
+          "source_id": "00000000000000000000006a",
+          "occurred_at": "2024/05/05",
+          "body_sha256": "14c0eebcd5c4a040d62b01c7a2c00b8ab99b7a7f4776cd32d22289298bde439a"
+        }
+      ],
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 6, \"submitted_events\": 3, \"redeliveries\": 1, \"wall_seconds\": 0.0688, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "content_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.701,
+      "fresh_fixture_cache_file": "legitimate-content_admission-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        },
+        {
+          "physical_id": "f75181e5-2ca5-487c-8eb0-783a94b30564",
+          "text": "user: A later correction: the notebook is now turquoise.",
+          "event_id": "000000000000000000000006",
+          "source_id": "00000000000000000000006a",
+          "occurred_at": "2024/05/05",
+          "body_sha256": "14c0eebcd5c4a040d62b01c7a2c00b8ab99b7a7f4776cd32d22289298bde439a"
+        }
+      ],
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"content_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 5, \"submitted_events\": 3, \"redeliveries\": 1, \"wall_seconds\": 0.0648, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.79,
+      "fresh_fixture_cache_file": "legitimate-event_admission-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        },
+        {
+          "physical_id": "9e27e318-7496-40d5-b1f3-9e0bc9b5cca3",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000005",
+          "source_id": "000000000000000000000069",
+          "occurred_at": "2024/04/04",
+          "body_sha256": "f4642f6db427e04604dd8e34421cb236cf16524cdc426b2910c7f8f61e8bbec2"
+        },
+        {
+          "physical_id": "a124781f-5d3b-4c6b-a1c7-9ab132ff0486",
+          "text": "user: A later correction: the notebook is now turquoise.",
+          "event_id": "000000000000000000000006",
+          "source_id": "00000000000000000000006a",
+          "occurred_at": "2024/05/05",
+          "body_sha256": "14c0eebcd5c4a040d62b01c7a2c00b8ab99b7a7f4776cd32d22289298bde439a"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 6, \"submitted_events\": 3, \"redeliveries\": 1, \"wall_seconds\": 0.013, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "content_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.788,
+      "fresh_fixture_cache_file": "legitimate-content_admission-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        },
+        {
+          "physical_id": "a43f6c18-3986-4078-98ac-d917099c3af6",
+          "text": "user: A later correction: the notebook is now turquoise.",
+          "event_id": "000000000000000000000006",
+          "source_id": "00000000000000000000006a",
+          "occurred_at": "2024/05/05",
+          "body_sha256": "14c0eebcd5c4a040d62b01c7a2c00b8ab99b7a7f4776cd32d22289298bde439a"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"content_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 5, \"submitted_events\": 3, \"redeliveries\": 1, \"wall_seconds\": 0.0081, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.718,
+      "fresh_fixture_cache_file": "clean-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\nFailed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.819,
+      "fresh_fixture_cache_file": "clean-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.7,
+      "fresh_fixture_cache_file": "cache-mismatch-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\nFailed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 1,
+      "expected_returncode": 1,
+      "seconds": 0.645,
+      "fresh_fixture_cache_file": "cache-mismatch-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "88ee54bfb298b72675746a6d9b72a7a1658f569fb885bada50122b396776db87",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"[repository]/extensions/benchmark_impact/memory_worker.py\", line 143, in <module>\n    p.add_argument('--embedding-manifest',type=Path,required=True);p.add_argument('--episode',type=Path);p.add_argument('--retry-sources',type=Path);p.add_argument('--queries',type=Path);p.add_argument('--output',type=Path);p.add_argument('--redeliveries',type=int,default=2);p.add_argument('--limit',type=int,default=60);p.add_argument('--cut',action='store_true');run(p.parse_args())\n                                                                                                                                                                                                                                                                                                                                                                              ~~~^^^^^^^^^^^^^^^^\n  File \"[repository]/extensions/benchmark_impact/memory_worker.py\", line 118, in run\n    participant=(Mem0Participant if args.backend=='mem0_raw' else LlamaParticipant)(folder,args.cache.resolve(),args.embedding_manifest)\n  File \"[repository]/extensions/benchmark_impact/memory_worker.py\", line 53, in __init__\n    self.cache=EmbeddingCache(cache,'mem0-fastembed-bge-small-en-v1.5',lambda text:original.embed(text,'add'),lambda text:original.embed(text,'search'),manifest)\n               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"[repository]/extensions/benchmark_impact/memory_worker.py\", line 33, in __init__\n    if prior and prior!=[(h,)]:raise ValueError('Embedding cache manifest differs')\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Embedding cache manifest differs\nException ignored while calling deallocator <function QdrantClient.__del__ at 0x117ecd850>:\nTraceback (most recent call last):\n  File \"[repository]/.venv-memory/lib/python3.14/site-packages/qdrant_client/qdrant_client.py\", line 172, in __del__\n  File \"[repository]/.venv-memory/lib/python3.14/site-packages/qdrant_client/qdrant_client.py\", line 181, in close\n  File \"[repository]/.venv-memory/lib/python3.14/site-packages/qdrant_client/local/qdrant_local.py\", line 113, in close\nImportError: sys.meta_path is None, Python is likely shutting down\n"
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.882,
+      "fresh_fixture_cache_file": "cache-mismatch-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "a18b4be9-54cb-4854-9c8f-049dca792f76",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "907ef29f-9730-4262-b51b-5672c45dde9b",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "92fa66b1-4271-4cc2-bb4a-aac759232586",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "68e798e9-591a-4721-a138-ac7e55ad8ba6",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\nFailed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.844,
+      "fresh_fixture_cache_file": "cache-mismatch-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n",
+      "stderr": ""
+    },
+    {
+      "backend": "llama_index",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 1,
+      "expected_returncode": 1,
+      "seconds": 0.748,
+      "fresh_fixture_cache_file": "cache-mismatch-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "88ee54bfb298b72675746a6d9b72a7a1658f569fb885bada50122b396776db87",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n",
+      "stderr": "Traceback (most recent call last):\n  File \"[repository]/extensions/benchmark_impact/memory_worker.py\", line 143, in <module>\n    p.add_argument('--embedding-manifest',type=Path,required=True);p.add_argument('--episode',type=Path);p.add_argument('--retry-sources',type=Path);p.add_argument('--queries',type=Path);p.add_argument('--output',type=Path);p.add_argument('--redeliveries',type=int,default=2);p.add_argument('--limit',type=int,default=60);p.add_argument('--cut',action='store_true');run(p.parse_args())\n                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^^^\n  File \"[repository]/extensions/benchmark_impact/memory_worker.py\", line 118, in run\n    participant=(Mem0Participant if args.backend=='mem0_raw' else LlamaParticipant)(folder,args.cache.resolve(),args.embedding_manifest)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"[repository]/extensions/benchmark_impact/memory_worker.py\", line 82, in __init__\n    self.cache=EmbeddingCache(cache,'llama-index-fastembed-bge-small-en-v1.5',self.embedding.get_text_embedding,self.embedding.get_query_embedding,manifest)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"[repository]/extensions/benchmark_impact/memory_worker.py\", line 33, in __init__\n    if prior and prior!=[(h,)]:raise ValueError('Embedding cache manifest differs')\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Embedding cache manifest differs\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.786,
+      "fresh_fixture_cache_file": "cache-mismatch-embedding-cache.sqlite",
+      "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+      "embedding_manifest_sha256": "3fb52c2904843156e98ce6f3a9755e0344bc98221cbd99f636c76d2a0813265a",
+      "physical_records": [
+        {
+          "physical_id": "f90d6c6c-5672-4a30-8de9-8a3446e2eef1",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000001",
+          "source_id": "000000000000000000000065",
+          "occurred_at": "2024/01/01",
+          "body_sha256": "d5dc98bfe0cb6d12a8b24cf1fdb66be507965601dabeb946ad580a9981fa14e7"
+        },
+        {
+          "physical_id": "bd67352f-8ed1-4e33-a561-a0eb8d8dcc8f",
+          "text": "user: The lighthouse notebook is cobalt blue.",
+          "event_id": "000000000000000000000002",
+          "source_id": "000000000000000000000066",
+          "occurred_at": "2024/02/02",
+          "body_sha256": "57efa93aafb08d474e05afa5e5b5a45dcab6a5adc37e3c343d8c9926a028d032"
+        },
+        {
+          "physical_id": "5919479a-d5e4-4061-83ab-59b156efbe6b",
+          "text": "user: Correction: the lighthouse notebook is now amber.",
+          "event_id": "000000000000000000000003",
+          "source_id": "000000000000000000000067",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "07bee22e90f183b53e5b1175ba2201b62eec5f3ce1a28f731fa25ed8b32ec06e"
+        },
+        {
+          "physical_id": "c6727271-a4b3-4dbd-b698-24b196710b10",
+          "text": "assistant: The current notebook is amber.",
+          "event_id": "000000000000000000000004",
+          "source_id": "000000000000000000000068",
+          "occurred_at": "2024/03/03",
+          "body_sha256": "c6ed41e218decd7c11707ef1ecd355714a62e1bc375ac457c8c5de7dcd8acd26"
+        }
+      ],
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n",
+      "stderr": ""
+    }
+  ]
+}

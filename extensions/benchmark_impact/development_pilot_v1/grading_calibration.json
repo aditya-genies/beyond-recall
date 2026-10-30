@@ -1,0 +1,244 @@
+[
+  {
+    "id": "4a1370b5dc6c5a37b144254b",
+    "fixture_name": "update-current",
+    "question": "What is my current drink preference?",
+    "question_date": "2026-01-03",
+    "reference": "coffee",
+    "answer": "Coffee.",
+    "evidence": [
+      {
+        "date": "2026-01-01",
+        "text": "My only current drink preference is tea."
+      },
+      {
+        "date": "2026-01-02",
+        "text": "Correction: my only current drink preference is coffee, replacing tea."
+      }
+    ],
+    "dataset": "longmemeval",
+    "category": "knowledge-update",
+    "unanswerable": false,
+    "expected_task_correct": true,
+    "expected_current_conflict": "no"
+  },
+  {
+    "id": "e5a3744df8f04503be601d9e",
+    "fixture_name": "update-history-explained",
+    "question": "What is my current drink preference?",
+    "question_date": "2026-01-03",
+    "reference": "coffee",
+    "answer": "Previously tea; now coffee.",
+    "evidence": [
+      {
+        "date": "2026-01-01",
+        "text": "My only current drink preference is tea."
+      },
+      {
+        "date": "2026-01-02",
+        "text": "Correction: my only current drink preference is coffee, replacing tea."
+      }
+    ],
+    "dataset": "longmemeval",
+    "category": "knowledge-update",
+    "unanswerable": false,
+    "expected_task_correct": true,
+    "expected_current_conflict": "no"
+  },
+  {
+    "id": "e29c6b5f4943e965322e0282",
+    "fixture_name": "update-two-current",
+    "question": "What is my only current drink preference?",
+    "question_date": "2026-01-03",
+    "reference": "coffee",
+    "answer": "Your current preference is coffee and tea.",
+    "evidence": [
+      {
+        "date": "2026-01-01",
+        "text": "My only current drink preference is tea."
+      },
+      {
+        "date": "2026-01-02",
+        "text": "Correction: my only current drink preference is coffee, replacing tea."
+      }
+    ],
+    "dataset": "longmemeval",
+    "category": "knowledge-update",
+    "unanswerable": false,
+    "expected_task_correct": false,
+    "expected_current_conflict": "yes"
+  },
+  {
+    "id": "d86b3098bb7f710bcd1995d6",
+    "fixture_name": "update-stale",
+    "question": "What is my current drink preference?",
+    "question_date": "2026-01-03",
+    "reference": "coffee",
+    "answer": "Your current preference is tea.",
+    "evidence": [
+      {
+        "date": "2026-01-01",
+        "text": "My only current drink preference is tea."
+      },
+      {
+        "date": "2026-01-02",
+        "text": "Correction: my only current drink preference is coffee, replacing tea."
+      }
+    ],
+    "dataset": "longmemeval",
+    "category": "knowledge-update",
+    "unanswerable": false,
+    "expected_task_correct": false,
+    "expected_current_conflict": "yes"
+  },
+  {
+    "id": "9a5213613ec2903a9aa6357d",
+    "fixture_name": "historical-question",
+    "question": "What was my preference on January 1?",
+    "question_date": "2026-01-03",
+    "reference": "tea",
+    "answer": "Tea on January 1; it later changed to coffee.",
+    "evidence": [
+      {
+        "date": "2026-01-01",
+        "text": "My only current drink preference is tea."
+      },
+      {
+        "date": "2026-01-02",
+        "text": "Correction: my only current drink preference is coffee, replacing tea."
+      }
+    ],
+    "dataset": "longmemeval",
+    "category": "single-session-user",
+    "unanswerable": false,
+    "expected_task_correct": true,
+    "expected_current_conflict": "no"
+  },
+  {
+    "id": "60012e52c3288a644d174b19",
+    "fixture_name": "missing-answer",
+    "question": "What is my current drink preference?",
+    "question_date": "2026-01-03",
+    "reference": "coffee",
+    "answer": "I do not know.",
+    "evidence": [
+      {
+        "date": "2026-01-01",
+        "text": "My only current drink preference is tea."
+      },
+      {
+        "date": "2026-01-02",
+        "text": "Correction: my only current drink preference is coffee, replacing tea."
+      }
+    ],
+    "dataset": "longmemeval",
+    "category": "knowledge-update",
+    "unanswerable": false,
+    "expected_task_correct": false,
+    "expected_current_conflict": "no"
+  },
+  {
+    "id": "c9a67b62292a20aa1132ce81",
+    "fixture_name": "multihop-complete",
+    "question": "Which two colors are required?",
+    "question_date": "2026-01-03",
+    "reference": "red and blue",
+    "answer": "Red and blue.",
+    "evidence": [
+      {
+        "date": "2026-01-01",
+        "text": "The two required colors are red and blue."
+      }
+    ],
+    "dataset": "longmemeval",
+    "category": "multi-session",
+    "unanswerable": false,
+    "expected_task_correct": true,
+    "expected_current_conflict": "no"
+  },
+  {
+    "id": "3778518314ec7cf1574ddc38",
+    "fixture_name": "multihop-subset",
+    "question": "Which two colors are required?",
+    "question_date": "2026-01-03",
+    "reference": "red and blue",
+    "answer": "Red.",
+    "evidence": [
+      {
+        "date": "2026-01-01",
+        "text": "The two required colors are red and blue."
+      }
+    ],
+    "dataset": "longmemeval",
+    "category": "multi-session",
+    "unanswerable": false,
+    "expected_task_correct": false,
+    "expected_current_conflict": "no"
+  },
+  {
+    "id": "625db9ba9122cc9342ce5168",
+    "fixture_name": "temporal-tolerance",
+    "question": "How many days elapsed?",
+    "question_date": "2026-01-03",
+    "reference": "18 days",
+    "answer": "19 days.",
+    "evidence": [
+      {
+        "date": "2026-01-01",
+        "text": "The elapsed interval is eighteen days."
+      }
+    ],
+    "dataset": "longmemeval",
+    "category": "temporal-reasoning",
+    "unanswerable": false,
+    "expected_task_correct": true,
+    "expected_current_conflict": "no"
+  },
+  {
+    "id": "e3cd6f47f59a67437521897e",
+    "fixture_name": "temporal-wrong",
+    "question": "How many days elapsed?",
+    "question_date": "2026-01-03",
+    "reference": "18 days",
+    "answer": "80 days.",
+    "evidence": [
+      {
+        "date": "2026-01-01",
+        "text": "The elapsed interval is eighteen days."
+      }
+    ],
+    "dataset": "longmemeval",
+    "category": "temporal-reasoning",
+    "unanswerable": false,
+    "expected_task_correct": false,
+    "expected_current_conflict": "no"
+  },
+  {
+    "id": "b57abb6d26601af9701f032a",
+    "fixture_name": "unknown-abstain",
+    "question": "What is the unrevealed access code?",
+    "question_date": "2026-01-03",
+    "reference": "The code was never stated.",
+    "answer": "Not mentioned in the evidence.",
+    "evidence": [],
+    "dataset": "longmemeval",
+    "category": "knowledge-update",
+    "unanswerable": true,
+    "expected_task_correct": true,
+    "expected_current_conflict": "no"
+  },
+  {
+    "id": "2b724576ed07d41c717480aa",
+    "fixture_name": "unknown-guess",
+    "question": "What is the unrevealed access code?",
+    "question_date": "2026-01-03",
+    "reference": "The code was never stated.",
+    "answer": "The code is seventeen.",
+    "evidence": [],
+    "dataset": "longmemeval",
+    "category": "knowledge-update",
+    "unanswerable": true,
+    "expected_task_correct": false,
+    "expected_current_conflict": "uncertain"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "backend": "mem0_raw",
+  "scope": "28673fa5300899df1a86e99b",
+  "action": "retry",
+  "mode": "native_retry",
+  "tag": "cut-native_retry",
+  "returncode": 87,
+  "expected_returncode": 87,
+  "wall_seconds": 0.8665,
+  "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 369, \"after_count\": 499, \"submitted_events\": 130, \"redeliveries\": 1, \"wall_seconds\": 0.211, \"extraction_calls\": 0, \"fault\": \"Actual os._exit87 after native writes/persistence and raw witness, before logical batch acknowledgement\"}\n"
+}

@@ -1,0 +1,11 @@
+{
+  "backend": "llama_index",
+  "scope": "6c6d7df085f9bb70dabbca95",
+  "action": "query",
+  "mode": "native_retry",
+  "tag": "query-native_retry",
+  "returncode": 0,
+  "expected_returncode": 0,
+  "wall_seconds": 1.4878,
+  "stdout": "LLM is explicitly disabled. Using MockLLM.\n"
+}

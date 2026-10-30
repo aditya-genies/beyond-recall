@@ -1,0 +1,11 @@
+{
+  "backend": "llama_index",
+  "scope": "e6ffd0b1c7bbd33bb33059e5",
+  "action": "retry",
+  "mode": "event_admission",
+  "tag": "resume-event_admission",
+  "returncode": 0,
+  "expected_returncode": 0,
+  "wall_seconds": 1.9092,
+  "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 663, \"after_count\": 663, \"submitted_events\": 131, \"redeliveries\": 1, \"wall_seconds\": 0.397, \"extraction_calls\": 0, \"fault\": null}\n"
+}

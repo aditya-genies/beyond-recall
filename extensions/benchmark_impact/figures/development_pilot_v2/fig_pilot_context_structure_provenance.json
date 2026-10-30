@@ -1,0 +1,67 @@
+{
+  "status": "MEASURED_STRUCTURAL_DEVELOPMENT_PILOT_ONLY",
+  "inputs": {
+    "extensions/benchmark_impact/development_pilot_v2/protocol.json": "dd5280476348b1b60ec9bd91626b6b909b8ae4697233f1a6f8a0a8631035d9ea",
+    "extensions/benchmark_impact/development_pilot_v2/protocol.sha256": "d93a0093a70ff2eb17cb4d0608506eae2bef27c4db668bda1c27991c7766d003",
+    "extensions/benchmark_impact/development_pilot_v2/reader_protocol.json": "5aaec84c7946bfeb8d227373888daec75f780319715a87f46f2ba2ceb423a071",
+    "extensions/benchmark_impact/development_pilot_v2/reader_protocol.sha256": "113f29b25c63349232c6b1069d1c5ea2f8cb4127dc502089778a51ccfebd7f04",
+    "extensions/benchmark_impact/development_pilot_v2/contexts.json": "030283af4416425724a5a62bb4ebeef1f2e2f1654604c8f89452a42f9d6eb258",
+    "extensions/benchmark_impact/development_pilot_v2/evaluator_questions.json": "2748e09455c64b2b44560843cf4ecf38656d05935fcb749c2849eeaf1e60498c",
+    "extensions/benchmark_impact/worker_review_pilot_v2.json": "81fe921f5e7f7ac92fb698341f46cda61fc509b34713d90e161882384f603072",
+    "extensions/benchmark_impact/worker_review_pilot_audit.py": "8ea66382ca77213ccb23626fe6745cb073c760b67f7fd26e8c38add85621396b"
+  },
+  "renderer_sha256": "cfcd12e9449153eea0671c7619c20c6749c5018488bb17675acc2a883efd5fad",
+  "source_data_sha256": "e30ed0341227b39ff92b286b37f02d43a2bb82a7dd4d2544afe8a37abc0d6c03",
+  "all_context_recomputation_sha256": "441551048b689f02f1d964410bc8c44867dafdfd10d4a9e5765416eae812b336",
+  "outputs": {
+    "png": "87aa059fd81c4e0f28a17f1e861947c0c442aef1090415aa623aeac0bcbb1fe9",
+    "pdf": "6efd36088cb5487a0d955986584eb0f9c2a21cef25e96e7c79d31a85cbcea43e",
+    "svg": "0eea43f4ab8f1ac47efb2cf150464ef8d0ea1163b0afa03c9f44b7de555663d7"
+  },
+  "coverage": {
+    "all_context_cells_recomputed": 336,
+    "selected_pair_rows": 48,
+    "selected_question_state_cells": 96,
+    "unique_questions": 24,
+    "source_history_scopes": 14
+  },
+  "summary": {
+    "mem0_raw": {
+      "distinct_events": {
+        "lower": 20,
+        "unchanged": 4,
+        "higher": 0,
+        "unavailable": 0,
+        "total_questions": 24
+      },
+      "annotated_support": {
+        "lower": 1,
+        "unchanged": 22,
+        "higher": 0,
+        "unavailable": 1,
+        "total_questions": 24
+      }
+    },
+    "llama_index": {
+      "distinct_events": {
+        "lower": 16,
+        "unchanged": 8,
+        "higher": 0,
+        "unavailable": 0,
+        "total_questions": 24
+      },
+      "annotated_support": {
+        "lower": 4,
+        "unchanged": 19,
+        "higher": 0,
+        "unavailable": 1,
+        "total_questions": 24
+      }
+    }
+  },
+  "native_store_audit_scope": "Raw event/physical-state/count/clone/receipt/candidate consistency only. No reader quality, causal decision harm, official benchmark score, outside replication or definitive auxiliary-grading claim.",
+  "additional_verification": "All336 frozen context metric rows reconstructed independently from visible event IDs/text and separately pinned evaluator gold IDs; all48clean/retry pairs and both null support cases preserved.",
+  "answer_outcomes_or_grades_read": false,
+  "benchmark_or_source_files_modified": false,
+  "inference": "Finite paired structural observations; no answer quality, harm, semantic completeness, independent-sample or population claim."
+}

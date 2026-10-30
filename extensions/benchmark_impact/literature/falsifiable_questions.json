@@ -1,0 +1,53 @@
+{
+  "prepared_utc": "2026-10-30T06:39:28.212151+00:00",
+  "novelty_not_assumed": true,
+  "hypotheses": [
+    {
+      "id": "H1_delivery_effect",
+      "claim_to_test": "Identical logical source histories can yield different task outcomes under actual repeated delivery.",
+      "falsifier": "Paired differences remain within a preregistered practical equivalence region, including clean repeated-reader variation.",
+      "required_controls": [
+        "No-context reader",
+        "Clean repeated reader",
+        "Captured extraction versus fresh extraction",
+        "Native raw-document versus inferred ingestion",
+        "Fixed logical source timestamps and provenance"
+      ]
+    },
+    {
+      "id": "H2_event_vs_content",
+      "claim_to_test": "A documented event-identity control can suppress retries while preserving new same-content observations and updates.",
+      "falsifier": "Strong native behavior already satisfies all declared cases, or the adapter rejects legitimate new events.",
+      "required_controls": [
+        "Same event ID redelivery",
+        "New event ID identical text",
+        "Correction",
+        "Reaffirmation",
+        "Expiry/regrant within declared identity lifetime"
+      ]
+    },
+    {
+      "id": "H3_support_not_ids",
+      "claim_to_test": "Returned physical IDs, independent root evidence and answer-supported correctness can disagree.",
+      "falsifier": "Canonical provenance/support and task labels agree under all tested regimes.",
+      "required_controls": [
+        "Collapse aliases to original event IDs",
+        "Grade all required evidence pieces",
+        "Permit alternative valid support",
+        "Treat self-reported citations as claims to verify"
+      ]
+    },
+    {
+      "id": "H4_regime_direction",
+      "claim_to_test": "Repetition effects depend on evidence needs, context budget and presentation, and can be beneficial, harmful or negligible.",
+      "falsifier": "A purported directional benefit disappears under held-out episodes or matched budget/position controls.",
+      "required_controls": [
+        "Matched token budget",
+        "Reported slot budget",
+        "Duplicate placement",
+        "Single- versus multi-evidence tasks",
+        "Strong exact/text and retrieval-time dedup baselines"
+      ]
+    }
+  ]
+}

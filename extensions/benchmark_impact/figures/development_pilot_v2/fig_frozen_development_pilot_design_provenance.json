@@ -1,0 +1,31 @@
+{
+  "status": "FROZEN_DEVELOPMENT_DESIGN_NOT_CONFIRMATION",
+  "protocol_sha256": "dd5280476348b1b60ec9bd91626b6b909b8ae4697233f1a6f8a0a8631035d9ea",
+  "inputs": {
+    "extensions/benchmark_impact/development_pilot_v2/protocol.json": "dd5280476348b1b60ec9bd91626b6b909b8ae4697233f1a6f8a0a8631035d9ea",
+    "extensions/benchmark_impact/development_pilot_v2/protocol.sha256": "d93a0093a70ff2eb17cb4d0608506eae2bef27c4db668bda1c27991c7766d003",
+    "extensions/benchmark_impact/development_pilot_v2/grading_protocol.json": "fe0c798aecc7b1a33d9ff6bcf093a5d97591cf74a0a43b625e644948a84083e9",
+    "extensions/benchmark_impact/development_pilot_v2/grading_protocol.sha256": "6f12faa7eca1c35da00e01f946597a03b8e7f03d23c2e8e872eb8e936a683374",
+    "extensions/benchmark_impact/development_pilot_v2/grading_calibration.json": "132937328c9e01e4a9b051f8ca2ca0b8bc82082e588c230bd732f2f0c569da11",
+    "extensions/benchmark_impact/development_pilot_v2/grading_results/calibration/parsed.json": "ac6ecf462c7d818c6e6e659a637dab5aa29f150a161f26fa3b02163fe3117c63",
+    "extensions/benchmark_impact/development_pilot_v2/grading_calibration_report.json": "333eb2d99bd64997659697b77261c3bf17d18388c3197702ff4ee61541760dde",
+    "extensions/benchmark_impact/development_pilot_v2/split.json": "b34e49fce7c32d057666921d3d2282aecbfbbd01d85fa37f383a74ac376defa9",
+    "extensions/benchmark_impact/analysis_plan.json": "4fe618898bdc451321cb979b49a7206ba3ef43be793a09a3ba1904425eeda2eb",
+    "extensions/benchmark_impact/pipeline.py": "fc98e49cb0e026fa2a73abe2efb65b4203ca32e5d7b58e13fd1ab9f7e4866a71",
+    "extensions/benchmark_impact/memory_worker.py": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+    "extensions/benchmark_impact/reader.py": "4fd4d1dd20a9a77b91cc1c5b0ab5a0dd5bdc26ace548ed84a74e5c9c572d3866"
+  },
+  "renderer_sha256": "a965cb0fa0d9db75754eeb4376b95120591098de0df04112c9b0cdb54f400e5e",
+  "spec_sha256": "0af4d054f0620f065dfec0a892af7888b9a9831f8f72b395a0c968e6e54e877f",
+  "outputs": {
+    "png": "7cd0bab81e039af2544db86b9fc7431ac3120eb461f22ae16c28d039db6f89ae",
+    "pdf": "3f8b3a7b80b5514517b3953716bd0bf161a6f228b2680edf835cbedab6b483b0",
+    "svg": "e684acc9cb1339c344ebcb7823d915982bc08a469400d93e0f84f870d0099d59"
+  },
+  "design_values_sha256": "482af3c9c3bca5dde3ddd7bc22ba6e609c1373906061dc178f484bda0f382e4c",
+  "previous_planned_files_preserved": true,
+  "benchmark_task_performance_rows_consumed": 0,
+  "structural_results_not_yet_plotted": true,
+  "grading_calibration_observation": "Authored fixtures only; 12 task-label matches, two auxiliary current-conflict mismatches. No semantic outcome validation or human review asserted.",
+  "scope": "Actual frozen design only. Expected phase/cut inventory does not assert completed runs."
+}

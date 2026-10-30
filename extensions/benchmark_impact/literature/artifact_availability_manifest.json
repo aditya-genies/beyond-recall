@@ -1,0 +1,69 @@
+{
+  "records": [
+    {
+      "key": "balance_repo",
+      "url": "https://api.github.com/repos/GuillaumeBrouillette/finding-the-right-balance",
+      "retrieved_utc": "2026-10-30T06:34:04.204852+00:00",
+      "full_text_or_code_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/GuillaumeBrouillette/finding-the-right-balance",
+      "content_type": "application/json; charset=utf-8",
+      "status": "saved_external_cache",
+      "sha256": "62fe037dfd78447c65469c1e232306248d55b98814801a0662de16dd6daa21d8",
+      "bytes": 6805,
+      "cache_filename": "balance_repo.json"
+    },
+    {
+      "key": "balance_commits",
+      "url": "https://api.github.com/repos/GuillaumeBrouillette/finding-the-right-balance/commits?per_page=1",
+      "retrieved_utc": "2026-10-30T06:34:04.205189+00:00",
+      "full_text_or_code_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/GuillaumeBrouillette/finding-the-right-balance/commits?per_page=1",
+      "content_type": "application/json; charset=utf-8",
+      "status": "saved_external_cache",
+      "sha256": "dd6017d7071e0bb232dc3c21b7afe42f61e61408ff276c14e8234380b42e5365",
+      "bytes": 3770,
+      "cache_filename": "balance_commits.json"
+    },
+    {
+      "key": "ross_artifact_landing",
+      "url": "https://anonymous.4open.science/r/rag-redunancy-C8BC",
+      "retrieved_utc": "2026-10-30T06:34:04.205276+00:00",
+      "full_text_or_code_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://anonymous.4open.science/r/rag-redunancy-C8BC",
+      "content_type": "text/html; charset=utf-8",
+      "status": "saved_external_cache",
+      "sha256": "3d97894e6ef70c86a43dbf9465df67dad255092414c104b1cb54b567094e50ea",
+      "bytes": 16574,
+      "cache_filename": "ross_artifact_landing.html"
+    },
+    {
+      "key": "pi_repo",
+      "url": "https://api.github.com/repos/btnalit/pi-memory-evolution",
+      "retrieved_utc": "2026-10-30T06:34:04.205331+00:00",
+      "full_text_or_code_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/btnalit/pi-memory-evolution",
+      "content_type": "application/json; charset=utf-8",
+      "status": "saved_external_cache",
+      "sha256": "06b7bebb5f35b8e8b1887ecf09e85f274618e3be470cf1a11dfa5e255224ca3c",
+      "bytes": 5756,
+      "cache_filename": "pi_repo.json"
+    },
+    {
+      "key": "pi_head",
+      "url": "https://api.github.com/repos/btnalit/pi-memory-evolution/commits?per_page=1",
+      "retrieved_utc": "2026-10-30T06:34:04.494032+00:00",
+      "full_text_or_code_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://api.github.com/repos/btnalit/pi-memory-evolution/commits?per_page=1",
+      "content_type": "application/json; charset=utf-8",
+      "status": "saved_external_cache",
+      "sha256": "79f25416f6ddd45f74aa7f2f40cda90aaea6b4e4f011611192f607ba8c34b867",
+      "bytes": 6083,
+      "cache_filename": "pi_head.json"
+    }
+  ]
+}

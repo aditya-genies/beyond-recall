@@ -1,0 +1,410 @@
+[
+  {
+    "key": "48896517eb3f808b700db75a",
+    "dataset": "locomo",
+    "group": "conv-41",
+    "source_question_id": "60",
+    "question": "What are Maria's dogs' names?",
+    "reference": "Coco, Shadow",
+    "category": "1",
+    "expected_events": [
+      "1e87d3c8ab732ac33481afc7",
+      "f9553979d8ce520e00d6d97d"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "e6ffd0b1c7bbd33bb33059e5",
+    "question_date": ""
+  },
+  {
+    "key": "6d46d28e7c102966729a0465",
+    "dataset": "locomo",
+    "group": "conv-41",
+    "source_question_id": "3",
+    "question": "What type of volunteering have John and Maria both done?",
+    "reference": "Volunteering at a homeless shelter",
+    "category": "1",
+    "expected_events": [
+      "5464a8da60be38f5624bd9ed",
+      "0683fdc2bcc0f2521324d896"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "e6ffd0b1c7bbd33bb33059e5",
+    "question_date": ""
+  },
+  {
+    "key": "2287005572e58d8bf2b8224d",
+    "dataset": "locomo",
+    "group": "conv-41",
+    "source_question_id": "31",
+    "question": "When did John get his dog Max?",
+    "reference": "In 2013",
+    "category": "2",
+    "expected_events": [
+      "65d2b1c6602ba314608d636d"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "e6ffd0b1c7bbd33bb33059e5",
+    "question_date": ""
+  },
+  {
+    "key": "9c76bcd39a32cff2a23fd1af",
+    "dataset": "locomo",
+    "group": "conv-41",
+    "source_question_id": "0",
+    "question": "Who did Maria have dinner with on May 3, 2023?",
+    "reference": "her mother",
+    "category": "2",
+    "expected_events": [
+      "0788b0609ee6cfa4a2cd4c7c"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "e6ffd0b1c7bbd33bb33059e5",
+    "question_date": ""
+  },
+  {
+    "key": "6b96e5f3ff7a4bc9dd8987ef",
+    "dataset": "locomo",
+    "group": "conv-41",
+    "source_question_id": "101",
+    "question": "What event is Maria getting ready for at the shelter on May 25, 2023?",
+    "reference": "fundraiser",
+    "category": "4",
+    "expected_events": [
+      "16fcd6e546c6334ecc26cf9a"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "e6ffd0b1c7bbd33bb33059e5",
+    "question_date": ""
+  },
+  {
+    "key": "41e10336201fb48b881ffd62",
+    "dataset": "locomo",
+    "group": "conv-41",
+    "source_question_id": "85",
+    "question": "What event did John volunteer at last weekend?",
+    "reference": "career fair at a local school",
+    "category": "4",
+    "expected_events": [
+      "ce3d1cd215ee9a63f8e72a8c"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "e6ffd0b1c7bbd33bb33059e5",
+    "question_date": ""
+  },
+  {
+    "key": "da048100f815b0b6053249be",
+    "dataset": "locomo",
+    "group": "conv-30",
+    "source_question_id": "24",
+    "question": "Which events has Jon participated in to promote his business venture?",
+    "reference": "fair, networking events, dance competition",
+    "category": "1",
+    "expected_events": [
+      "6ecf44938c4f6b8880e22e74",
+      "237bade3e52238ab7ebd8fa5",
+      "516dc40931901ebf73894003"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "28673fa5300899df1a86e99b",
+    "question_date": ""
+  },
+  {
+    "key": "cc0ee5087da7d3dbc235b522",
+    "dataset": "locomo",
+    "group": "conv-30",
+    "source_question_id": "25",
+    "question": "What does Jon's dance studio offer?",
+    "reference": "one-on-one metoring and training to dancers,  workshops and classes to local schools and centers",
+    "category": "1",
+    "expected_events": [
+      "2a000a4c26a52720d2caba0a",
+      "2234130fee9ca31ef60aceab"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "28673fa5300899df1a86e99b",
+    "question_date": ""
+  },
+  {
+    "key": "8d9b7553e7fa287865b99a89",
+    "dataset": "locomo",
+    "group": "conv-30",
+    "source_question_id": "19",
+    "question": "When did Gina interview for a design internship?",
+    "reference": "10 May, 2023",
+    "category": "2",
+    "expected_events": [
+      "8b8ac51a57d1346c36a3e12d"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "28673fa5300899df1a86e99b",
+    "question_date": ""
+  },
+  {
+    "key": "90324c842b8c639dd5f9c64e",
+    "dataset": "locomo",
+    "group": "conv-30",
+    "source_question_id": "38",
+    "question": "When did Gina go to a dance class with a group of friends?",
+    "reference": "21 July 2023",
+    "category": "2",
+    "expected_events": [
+      "15212378f4caef088f80fb9b"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "28673fa5300899df1a86e99b",
+    "question_date": ""
+  },
+  {
+    "key": "5fe9391211fab56f013723dc",
+    "dataset": "locomo",
+    "group": "conv-30",
+    "source_question_id": "78",
+    "question": "According to Gina, what makes Jon a perfect mentor and guide?",
+    "reference": "His positivity and determination",
+    "category": "4",
+    "expected_events": [
+      "3daad0e285d8e03d6ab89d6a"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "28673fa5300899df1a86e99b",
+    "question_date": ""
+  },
+  {
+    "key": "71f2c50355d904ef22227b9f",
+    "dataset": "locomo",
+    "group": "conv-30",
+    "source_question_id": "69",
+    "question": "What did Jon take a trip to Rome for?",
+    "reference": "To clear his mind",
+    "category": "4",
+    "expected_events": [
+      "468f3f16ba5f871dcbfb0b1e"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "28673fa5300899df1a86e99b",
+    "question_date": ""
+  },
+  {
+    "key": "2939d3302377fd9baf96eb5c",
+    "dataset": "longmemeval",
+    "group": "ae59ce68d01148fafbd5703e",
+    "source_question_id": "0ddfec37",
+    "question": "How many autographed baseballs have I added to my collection in the first three months of collection?",
+    "reference": "15",
+    "category": "knowledge-update",
+    "expected_events": [
+      "188b09ef060a1b7e88e9e1e4",
+      "485bd5e0a2e6c2c91f3d8835"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "c51d7aba76d4c2255a1e65f5",
+    "question_date": "2024/01/08 (Mon) 09:27"
+  },
+  {
+    "key": "f65dcff812445376dbc709ef",
+    "dataset": "longmemeval",
+    "group": "17658ed25b7e90e73c486b3e",
+    "source_question_id": "45dc21b6",
+    "question": "How many of Emma's recipes have I tried out?",
+    "reference": "3",
+    "category": "knowledge-update",
+    "expected_events": [
+      "f36100b59a26e63666fe32cd",
+      "c013be29cdabd2738e96a10d"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "efb54cd83102afc483f7ebdf",
+    "question_date": "2023/06/16 (Fri) 17:33"
+  },
+  {
+    "key": "c8197b92a19c4e5397698e79",
+    "dataset": "longmemeval",
+    "group": "00ba77ed4b4c716d02156d17",
+    "source_question_id": "c4a1ceb8",
+    "question": "How many different types of citrus fruits have I used in my cocktail recipes?",
+    "reference": "3",
+    "category": "multi-session",
+    "expected_events": [
+      "4d12e00ffdb1f27b4bb534f8",
+      "5a0c5185dccc65aed9c0b7d6",
+      "2c2bc7a58439386ddfbee474",
+      "6e0507b24820cd78052802a2"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "65abf4b85eba5db9fb2fdd24",
+    "question_date": "2023/05/30 (Tue) 23:22"
+  },
+  {
+    "key": "1ccc73aa74937ff44a3288aa",
+    "dataset": "longmemeval",
+    "group": "17a201f8b671efd5ff6eb9f9",
+    "source_question_id": "1f2b8d4f",
+    "question": "What is the difference in price between my luxury boots and the similar pair found at the budget store?",
+    "reference": "$750",
+    "category": "multi-session",
+    "expected_events": [
+      "3c0c5bdb3e79e5282418b32b",
+      "afcc0ee02e32adf80945715b"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "127fd5b12992e06ef73ffdf1",
+    "question_date": "2023/05/30 (Tue) 21:36"
+  },
+  {
+    "key": "a5305ee34f0b5b8fc2861a2b",
+    "dataset": "longmemeval",
+    "group": "1e3f4028a76282af70080db6",
+    "source_question_id": "488d3006",
+    "question": "I'm planning to go back to the Natural Park of Moncayo mountain in Arag\u00f3n and I was wondering, what was the name of that hiking trail you recommended that takes you through the park's most stunning landscapes and offers panoramic views of the surrounding mountainside?",
+    "reference": "The GR-90 trail.",
+    "category": "single-session-assistant",
+    "expected_events": [
+      "34267e75270093091385283a"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "aae430d9d67e69bda41ac41a",
+    "question_date": "2023/05/30 (Tue) 23:03"
+  },
+  {
+    "key": "2e30e5259de20e00b9d77771",
+    "dataset": "longmemeval",
+    "group": "40367b1b8e9db2b713d81796",
+    "source_question_id": "41275add",
+    "question": "I wanted to follow up on our previous conversation about YouTube videos for workplace posture. Can you remind me of the Mayo Clinic video you recommended?",
+    "reference": "The video is 'How to Sit Properly at a Desk to Avoid Back Pain' and the link is https://www.youtube.com/watch?v=UfOvNlX9Hh0.",
+    "category": "single-session-assistant",
+    "expected_events": [
+      "5c1266b763f31c6368613e20"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "37705b6dbab0f17f1dd0df5c",
+    "question_date": "2023/05/30 (Tue) 14:25"
+  },
+  {
+    "key": "064fa3fba4852f160d6a2fa6",
+    "dataset": "longmemeval",
+    "group": "a202eec7723f3bafc15ac8c1",
+    "source_question_id": "b0479f84",
+    "question": "I've got some free time tonight, any documentary recommendations?",
+    "reference": "The user would prefer documentary recommendations that are similar in style and theme to 'Our Planet', 'Free Solo', and 'Tiger King', which they have previously enjoyed. They might not prefer recommendations of documentaries that are vastly different in tone or subject matter from these titles. The preferred response utilizes the user's previously mentioned viewing history to suggest documentaries that cater to their tastes.",
+    "category": "single-session-preference",
+    "expected_events": [
+      "597e300af21d60e435628834"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "448ec51ce086e539ee6e96df",
+    "question_date": "2023/05/30 (Tue) 22:56"
+  },
+  {
+    "key": "860844fe3208d148e1c1da34",
+    "dataset": "longmemeval",
+    "group": "fbb047e718dad88bf4a08a7f",
+    "source_question_id": "1a1907b4",
+    "question": "I've been thinking about making a cocktail for an upcoming get-together, but I'm not sure which one to choose. Any suggestions?",
+    "reference": "Considering their mixology class background, the user would prefer cocktail suggestions that build upon their existing skills and interests, such as creative variations of classic cocktails or innovative twists on familiar flavors. They might appreciate recommendations that incorporate their experience with refreshing summer drinks like Pimm's Cup. The user would not prefer overly simplistic or basic cocktail recipes, and may not be interested in suggestions that don't take into account their mixology class background.",
+    "category": "single-session-preference",
+    "expected_events": [
+      "21fe2fac2d208684bebe6d42"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "31e124fd59eef3fbcd3f7cc9",
+    "question_date": "2023/05/30 (Tue) 22:31"
+  },
+  {
+    "key": "4d4bc3134f55a0ec7bf740cc",
+    "dataset": "longmemeval",
+    "group": "5455f9e9475ddb3777df98dc",
+    "source_question_id": "3d86fd0a",
+    "question": "Where did I meet Sophia?",
+    "reference": "a coffee shop in the city",
+    "category": "single-session-user",
+    "expected_events": [
+      "3bed0e9a0e7811677b1c096d"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "b755e29a6a4ac983085a290b",
+    "question_date": "2023/05/30 (Tue) 11:59"
+  },
+  {
+    "key": "bb1890e0d3db6db4af515091",
+    "dataset": "longmemeval",
+    "group": "fbbe9508d8ae2b5b04684ad8",
+    "source_question_id": "0862e8bf_abs",
+    "question": "What is the name of my hamster?",
+    "reference": "You did not mention this information. You mentioned your cat Luna but not your hamster.",
+    "category": "single-session-user",
+    "expected_events": [
+      "d45fbcddf10ba0b2fcaff4e5",
+      "eb4c4ca60553a4b16bb41eb6",
+      "0db87e7bd3776853b6252ce2",
+      "48a9838dfb5c041a953c984c",
+      "eee3ae902467f21a25e84c85",
+      "4edee236afb6e81105d5532d",
+      "a3964173c18354ddeced1c81",
+      "f212bbaf85823af5a06c15df",
+      "7ce33131d9e1e71ee86e7f1c",
+      "98fa25c008366e191b623c0e",
+      "747344734805bef5e919810f",
+      "1df46943959353d4c0f9e3ee"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": true,
+    "episode_scope": "6c6d7df085f9bb70dabbca95",
+    "question_date": "2023/05/30 (Tue) 21:39"
+  },
+  {
+    "key": "ae84b3a2891958cd95a9b36d",
+    "dataset": "longmemeval",
+    "group": "e03b3345f5acc56498e6dd27",
+    "source_question_id": "gpt4_fa19884c",
+    "question": "How many days passed between the day I started playing along to my favorite songs on my old keyboard and the day I discovered a bluegrass band?",
+    "reference": "6 days. 7 days (including the last day) is also acceptable.",
+    "category": "temporal-reasoning",
+    "expected_events": [
+      "855533a9e4da50a03d844f22",
+      "4023bec25178b5e2a55f4554"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "4cd478ac1dd80377debacab3",
+    "question_date": "2023/04/05 (Wed) 09:11"
+  },
+  {
+    "key": "f83b349de8fe6415c75f1b17",
+    "dataset": "longmemeval",
+    "group": "a993327fea29bde877afe30c",
+    "source_question_id": "gpt4_4ef30696",
+    "question": "How many days passed between the day I finished reading 'The Nightingale' and the day I started reading 'The Hitchhiker's Guide to the Galaxy'?",
+    "reference": "1 day. 2 days (including the last day) is also acceptable.",
+    "category": "temporal-reasoning",
+    "expected_events": [
+      "336a4104c05e0d012c007ae0",
+      "7daf40338a027367c9959330"
+    ],
+    "missing_gold_locations": [],
+    "unanswerable": false,
+    "episode_scope": "eff09dd0c838ebc48b4d9ad3",
+    "question_date": "2022/05/01 (Sun) 04:58"
+  }
+]

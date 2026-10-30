@@ -1,0 +1,21 @@
+{
+  "phase": "Development pilot; no held-out or external-preregistration claim",
+  "selection": "Fixed data.select_development hashes, before reader outcomes; retain every selected question and every intervention arm.",
+  "primary_descriptive_contrast": "Within each backend and reader, retry minus clean in adapted task correctness. Average Sol's two repeats within question before averaging questions. Qwen has one deterministic decoding repeat.",
+  "paired_transitions": "Report question-repeat correct-to-incorrect, incorrect-to-correct, both-correct and both-incorrect counts, with the number of unique questions separately. These repeated transitions are not independent samples.",
+  "reader_variation_control": "Report disagreement of clean Sol repeat0 versus repeat1. Identical complete prompts explicitly share archived responses across aliases, not additional calls.",
+  "secondary_endpoints": [
+    "Distinct source-event coverage and duplicate event slots, measured without reader judgement",
+    "Adapted task_correct AND evidence_supported=yes, with uncertain evidence labels reported separately",
+    "Current-conflict labels, preserving historical explanations and uncertainty",
+    "LoCoMo published category-specific stemmed token F1 proxy, never called semantic accuracy",
+    "Malformed outputs, transport failures, abstention and out-of-context citation counts",
+    "Native writes, runtime, candidate-pool and serialized context byte counts"
+  ],
+  "support_coverage": "Null for unanswerable questions, missing gold locations or absent gold; annotated sources may not exhaust alternative support.",
+  "missingness": "Keep all condition denominators. Report missing or malformed reader/grade outcomes explicitly, available-case estimates separately, and a response-failure-as-incorrect sensitivity. A failed grade is not automatically a wrong answer.",
+  "semantic_grade_gate": "Before benchmark reader calls, score the twelve authored calibration fixtures against frozen expected task/conflict labels. Retain all mismatches; failure blocks definitive semantic outcome claims until an explicitly versioned development repair. Same-family automated judging is not human validation.",
+  "inference": "Descriptive finite-pilot estimates only; no p-values, population failure-rate estimate or IID confidence interval. LoCoMo questions share two conversations; LME gold components can share full-history background sessions.",
+  "confirmation": "Freeze a separate held-out protocol after pilot variance, throughput and grading failures are assessed. No confirmatory answers inspected in this pilot.",
+  "interpretation": "Repetition may help, harm or have no effect. Counts of tests, model calls and references do not establish novelty. Raw-document participants do not reproduce inferred-memory defaults or managed cloud services."
+}

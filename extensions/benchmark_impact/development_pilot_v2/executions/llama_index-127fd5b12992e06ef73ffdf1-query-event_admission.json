@@ -1,0 +1,11 @@
+{
+  "backend": "llama_index",
+  "scope": "127fd5b12992e06ef73ffdf1",
+  "action": "query",
+  "mode": "event_admission",
+  "tag": "query-event_admission",
+  "returncode": 0,
+  "expected_returncode": 0,
+  "wall_seconds": 3.3013,
+  "stdout": "LLM is explicitly disabled. Using MockLLM.\n"
+}

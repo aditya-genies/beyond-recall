@@ -1,0 +1,19 @@
+{
+  "status": "CALIBRATION_MISMATCH",
+  "fixtures": 12,
+  "mismatches": [
+    {
+      "id": "625db9ba9122cc9342ce5168",
+      "label": "current_conflict",
+      "expected": "no",
+      "observed": "yes"
+    },
+    {
+      "id": "e3cd6f47f59a67437521897e",
+      "label": "current_conflict",
+      "expected": "no",
+      "observed": "yes"
+    }
+  ],
+  "interpretation": "Authored rubric fixtures, not benchmark task samples or independent expert validation."
+}

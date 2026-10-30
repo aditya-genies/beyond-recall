@@ -1,0 +1,45 @@
+{
+  "prepared_utc": "2026-10-30T06:39:28.212151+00:00",
+  "status": "PRIMARY_IDENTITIES_VERIFIED_WITH_EXPLICIT_METADATA_CONFLICT",
+  "paper_count": 10,
+  "pdf_title_identity_matches": 10,
+  "all_pdf_author_full_names_found": true,
+  "author_order_agreements": 9,
+  "author_order_conflicts": [
+    {
+      "key": "chauhan2026sleep",
+      "type": "author_order",
+      "arxiv_landing_and_datacite_order": [
+        "Chauhan, Kargi",
+        "Nur, Sadiba Nusrat",
+        "Revankar, Pratibha",
+        "Montgomery, Kyle",
+        "Wang, Chenguang"
+      ],
+      "pdf_and_html_order": [
+        "Chauhan, Kargi",
+        "Revankar, Pratibha",
+        "Nur, Sadiba Nusrat",
+        "Montgomery, Kyle",
+        "Wang, Chenguang"
+      ],
+      "handling": "Preserve both. BibTeX follows arXiv/DataCite with an explicit audit comment; inspect before main integration. No fabrication inference."
+    }
+  ],
+  "semantic_scholar_verified": 1,
+  "semantic_scholar_http429": 9,
+  "openalex_exact_title_doi_corroborations": 10,
+  "workflow_scope": "Literature discovery/verification/design critique only. No section draft or citation-count gate is fabricated.",
+  "index_deviation": "One S2 success, nine public rate limits. Ten primary PDFs plus DataCite/Crossref and exact OpenAlex corroboration retained; never fabricate S2 IDs/abstracts.",
+  "full_text_redistribution": false,
+  "model_calls": 0,
+  "outputs": {
+    "grading_contracts.json": "52a58273fbcb5f3c9c53cfb5b8dc0b0b2f6c45bb6ec067da44c7a4ab3786ddb8",
+    "cue_r_protocol_audit.json": "604c0619e40e186be9312c0d87754f6a39d0cc707509d7a5a83acd0f71fa55bd",
+    "public_contract_sources.bib": "d4bab874ceed3dbe50f5a8ad2033710128dd5f226f81367361ba5b9492cf9512",
+    "contribution_assessment.txt": "6436b6e2e233bed7c54b634e2f5ba7ea0326dd83545f54156d4a46c9a891c970",
+    "new_sources.bib": "5fd9439a00cea2048cce14179757029a8e4654fa0a8a18d1d9cd9389760e8e5e",
+    "source_claim_map.json": "1157db237313ae0e07939b12617fcd3171bce716c01884616a019a6d0c0452ad",
+    "falsifiable_questions.json": "96dec518f07a8dc0c326a7c808564999bfb338565bf794199ff95af8681c87f9"
+  }
+}

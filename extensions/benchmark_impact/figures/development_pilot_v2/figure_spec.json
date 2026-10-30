@@ -1,0 +1,15 @@
+{
+  "figure_id": "fig_frozen_development_pilot_design",
+  "title": "Frozen development pilot: public-history recovery and readers",
+  "plot_type": "diagram",
+  "aspect_ratio": "21:9",
+  "pixel_target": [2100, 900],
+  "dpi": 300,
+  "status": "FROZEN_DEVELOPMENT_DESIGN_NOT_CONFIRMATION",
+  "protocol_sha256": "dd5280476348b1b60ec9bd91626b6b909b8ae4697233f1a6f8a0a8631035d9ea",
+  "source_protocol": "../../development_pilot_v2/protocol.json",
+  "objective": "Describe the actual frozen development-pilot source/participant boundary, native raw-document storage and retry controls, bounded retrieval, reader arms and provisional automated grading. Display design inventory and calibration limitations without presenting benchmark task performance or claiming completion.",
+  "performance_values_shown": false,
+  "calibration_summary_is_benchmark_result": false,
+  "run_completion_claim": false
+}

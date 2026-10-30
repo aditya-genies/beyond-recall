@@ -28,3 +28,6 @@ revisions/review1/references/**/*.txt
 revisions/review1/main_before.pdf
 revisions/review1/main_before.tex
 revisions/replanning_contracts/pdf_qa_*/
+extensions/benchmark_impact/development_pilot_v*/stores/
+extensions/benchmark_impact/development_pilot_v*/embedding_caches/
+extensions/benchmark_impact/development_pilot_v*/*-embedding-cache.sqlite*

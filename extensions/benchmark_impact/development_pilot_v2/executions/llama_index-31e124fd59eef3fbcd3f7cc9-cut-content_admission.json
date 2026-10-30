@@ -1,0 +1,11 @@
+{
+  "backend": "llama_index",
+  "scope": "31e124fd59eef3fbcd3f7cc9",
+  "action": "retry",
+  "mode": "content_admission",
+  "tag": "cut-content_admission",
+  "returncode": 87,
+  "expected_returncode": 87,
+  "wall_seconds": 1.7418,
+  "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"content_admission\", \"phase\": \"retry\", \"before_count\": 532, \"after_count\": 532, \"submitted_events\": 135, \"redeliveries\": 1, \"wall_seconds\": 0.3043, \"extraction_calls\": 0, \"fault\": \"Actual os._exit87 after native writes/persistence and raw witness, before logical batch acknowledgement\"}\n"
+}

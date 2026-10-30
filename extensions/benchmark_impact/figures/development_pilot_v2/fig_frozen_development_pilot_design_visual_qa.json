@@ -1,0 +1,270 @@
+{
+  "status": "PASS_FOR_FROZEN_DEVELOPMENT_DESIGN",
+  "reviewed_at_utc": "2026-10-30T07:14:34.656816+00:00",
+  "figure": "fig_frozen_development_pilot_design",
+  "outputs": {
+    "png": "7cd0bab81e039af2544db86b9fc7431ac3120eb461f22ae16c28d039db6f89ae",
+    "pdf": "3f8b3a7b80b5514517b3953716bd0bf161a6f228b2680edf835cbedab6b483b0",
+    "svg": "e684acc9cb1339c344ebcb7823d915982bc08a469400d93e0f84f870d0099d59"
+  },
+  "png_pixels": [
+    2100,
+    900
+  ],
+  "png_dpi": [
+    299.9994,
+    299.9994
+  ],
+  "pixel_inspection": {
+    "final_png": true,
+    "poppler_render_of_final_pdf": true,
+    "no_visible_clipping": true,
+    "no_visible_overlap": true,
+    "title_and_scope_readable": true,
+    "captions_fit_scope": true,
+    "history_ingestion_excludes_query_and_gold": true,
+    "oracle_gold_support_bypass_labelled": true,
+    "byte_budget_not_token_claim": true,
+    "separate_state_and_task_comparisons": true,
+    "automated_grader_limitation_visible": true,
+    "phase_and_cut_numbers_labelled_inventory": true
+  },
+  "pdf_render": {
+    "path": "qa/design_pdf_render.png",
+    "sha256": "0cb948ed4072c2cd08c795979e06c6abe65e2811da9f7e0febb7f61c681fc72e"
+  },
+  "mechanical_spacing": {
+    "status": "PASS",
+    "canvas_px": [
+      2100,
+      900
+    ],
+    "text_pair_checks": 190,
+    "text_overlaps": [],
+    "inside_box_checks": [
+      {
+        "text": "input_title",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      },
+      {
+        "text": "input_body",
+        "minimum_margin_px": 6.0,
+        "passed": true
+      },
+      {
+        "text": "native_title",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      },
+      {
+        "text": "native_body",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      },
+      {
+        "text": "delivery_title",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      },
+      {
+        "text": "delivery_body",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      },
+      {
+        "text": "context_title",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      },
+      {
+        "text": "context_body",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      },
+      {
+        "text": "judge_title",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      },
+      {
+        "text": "judge_body",
+        "minimum_margin_px": 12.5,
+        "passed": true
+      },
+      {
+        "text": "state_title",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      },
+      {
+        "text": "state_body",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      },
+      {
+        "text": "comparison_title",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      },
+      {
+        "text": "comparison_body",
+        "minimum_margin_px": 23.4,
+        "passed": true
+      }
+    ],
+    "required_box_margin_px": 6,
+    "outside_canvas": [],
+    "text_bboxes": {
+      "title": [
+        37.8,
+        821.289,
+        1677.987,
+        868.5
+      ],
+      "status": [
+        37.8,
+        777.193,
+        1347.8,
+        807.3
+      ],
+      "input_title": [
+        88.3,
+        579.267,
+        302.3,
+        647.1
+      ],
+      "input_body": [
+        43.8,
+        387.9,
+        346.8,
+        522.45
+      ],
+      "native_title": [
+        472.8,
+        579.267,
+        757.8,
+        647.1
+      ],
+      "native_body": [
+        450.3,
+        387.9,
+        780.3,
+        522.45
+      ],
+      "delivery_title": [
+        934.6,
+        579.267,
+        1253.6,
+        647.1
+      ],
+      "delivery_body": [
+        920.1,
+        387.9,
+        1268.1,
+        522.45
+      ],
+      "context_title": [
+        1432.8,
+        579.267,
+        1666.8,
+        647.1
+      ],
+      "context_body": [
+        1396.8,
+        387.9,
+        1702.8,
+        522.45
+      ],
+      "judge_title": [
+        1857.2,
+        579.267,
+        1994.2,
+        647.1
+      ],
+      "judge_body": [
+        1801.7,
+        387.9,
+        2049.7,
+        522.45
+      ],
+      "question": [
+        1368.5,
+        691.883,
+        1592.5,
+        753.3
+      ],
+      "labels": [
+        1725.3,
+        691.883,
+        2088.3,
+        753.3
+      ],
+      "state_title": [
+        218.3,
+        271.183,
+        760.3,
+        305.1
+      ],
+      "state_body": [
+        213.3,
+        162.9,
+        765.3,
+        230.175
+      ],
+      "comparison_title": [
+        1210.914,
+        271.183,
+        1855.086,
+        305.1
+      ],
+      "comparison_body": [
+        1118.5,
+        162.9,
+        1947.5,
+        263.812
+      ],
+      "inventory": [
+        37.8,
+        62.083,
+        1709.8,
+        90.0
+      ],
+      "calibration": [
+        37.8,
+        20.683,
+        1876.644,
+        48.6
+      ]
+    },
+    "scope": "Mechanical text clearance and canvas bounds; inspect actual pixels for arrow routing and semantics."
+  },
+  "provenance": {
+    "path": "fig_frozen_development_pilot_design_provenance.json",
+    "sha256": "701dc774455d51dbb369b7ad513b5263c7e98065c29adde79b976e53124f1fa3"
+  },
+  "source_hash_guard": "All listed repository-relative inputs unchanged through pixel review",
+  "figure_lint": {
+    "report": "figure_lint.txt",
+    "errors": 0,
+    "warnings": 0
+  },
+  "skill_repository": "https://github.com/a-mantri/PaperOrchestra",
+  "skill_input_sha256": {
+    "skills/plotting-agent/SKILL.md": "34c5fae63a611892eb9e7d49aba93be2a706667525e4d0d00d9bb3109805c3b9",
+    "skills/paper-orchestra/references/anti-leakage-prompt.md": "426bb3a5f410ab6ad64678f6bad8642c511c8e1bb65ee5ba83199e20467b6598",
+    "skills/plotting-agent/references/caption-prompt.md": "a9b7f4016a13f2ae40666b82de23d0bc2a52a479421e037091d9384c942747ab"
+  },
+  "captions_sha256": "9ebb6ba0b78c89876ff76b1595e41788b01648ac081fe5f81693eb4c26cacec4",
+  "previous_planned_files_preserved": true,
+  "benchmark_task_performance_consumed": false,
+  "manuscript_or_raw_data_modified": false,
+  "publication_scope": "Development-pilot artifact only; no held-out, semantic-quality, harm, population-rate or journal-acceptance inference.",
+  "calibration_only": {
+    "fixtures": 12,
+    "task_labels_matching": 12,
+    "current_conflict_mismatches": 2,
+    "not_benchmark_task_performance": true,
+    "not_human_validation": true
+  }
+}

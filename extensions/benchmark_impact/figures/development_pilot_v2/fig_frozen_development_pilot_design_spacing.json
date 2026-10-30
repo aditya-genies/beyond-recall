@@ -1,0 +1,206 @@
+{
+  "status": "PASS",
+  "canvas_px": [
+    2100,
+    900
+  ],
+  "text_pair_checks": 190,
+  "text_overlaps": [],
+  "inside_box_checks": [
+    {
+      "text": "input_title",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    },
+    {
+      "text": "input_body",
+      "minimum_margin_px": 6.0,
+      "passed": true
+    },
+    {
+      "text": "native_title",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    },
+    {
+      "text": "native_body",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    },
+    {
+      "text": "delivery_title",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    },
+    {
+      "text": "delivery_body",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    },
+    {
+      "text": "context_title",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    },
+    {
+      "text": "context_body",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    },
+    {
+      "text": "judge_title",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    },
+    {
+      "text": "judge_body",
+      "minimum_margin_px": 12.5,
+      "passed": true
+    },
+    {
+      "text": "state_title",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    },
+    {
+      "text": "state_body",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    },
+    {
+      "text": "comparison_title",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    },
+    {
+      "text": "comparison_body",
+      "minimum_margin_px": 23.4,
+      "passed": true
+    }
+  ],
+  "required_box_margin_px": 6,
+  "outside_canvas": [],
+  "text_bboxes": {
+    "title": [
+      37.8,
+      821.289,
+      1677.987,
+      868.5
+    ],
+    "status": [
+      37.8,
+      777.193,
+      1347.8,
+      807.3
+    ],
+    "input_title": [
+      88.3,
+      579.267,
+      302.3,
+      647.1
+    ],
+    "input_body": [
+      43.8,
+      387.9,
+      346.8,
+      522.45
+    ],
+    "native_title": [
+      472.8,
+      579.267,
+      757.8,
+      647.1
+    ],
+    "native_body": [
+      450.3,
+      387.9,
+      780.3,
+      522.45
+    ],
+    "delivery_title": [
+      934.6,
+      579.267,
+      1253.6,
+      647.1
+    ],
+    "delivery_body": [
+      920.1,
+      387.9,
+      1268.1,
+      522.45
+    ],
+    "context_title": [
+      1432.8,
+      579.267,
+      1666.8,
+      647.1
+    ],
+    "context_body": [
+      1396.8,
+      387.9,
+      1702.8,
+      522.45
+    ],
+    "judge_title": [
+      1857.2,
+      579.267,
+      1994.2,
+      647.1
+    ],
+    "judge_body": [
+      1801.7,
+      387.9,
+      2049.7,
+      522.45
+    ],
+    "question": [
+      1368.5,
+      691.883,
+      1592.5,
+      753.3
+    ],
+    "labels": [
+      1725.3,
+      691.883,
+      2088.3,
+      753.3
+    ],
+    "state_title": [
+      218.3,
+      271.183,
+      760.3,
+      305.1
+    ],
+    "state_body": [
+      213.3,
+      162.9,
+      765.3,
+      230.175
+    ],
+    "comparison_title": [
+      1210.914,
+      271.183,
+      1855.086,
+      305.1
+    ],
+    "comparison_body": [
+      1118.5,
+      162.9,
+      1947.5,
+      263.812
+    ],
+    "inventory": [
+      37.8,
+      62.083,
+      1709.8,
+      90.0
+    ],
+    "calibration": [
+      37.8,
+      20.683,
+      1876.644,
+      48.6
+    ]
+  },
+  "scope": "Mechanical text clearance and canvas bounds; inspect actual pixels for arrow routing and semantics."
+}

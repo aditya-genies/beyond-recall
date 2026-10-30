@@ -1,0 +1,19 @@
+{
+  "questions": 24,
+  "source_history_scopes": 14,
+  "locomo_conversations": 2,
+  "lme_evidence_components": 12,
+  "native_backends": 2,
+  "storage_modes": 3,
+  "reader_arms": 7,
+  "expected_native_process_phases": 308,
+  "scheduled_exit87_phases": 84,
+  "candidate_limit": 60,
+  "context_record_limit": 10,
+  "serialized_context_byte_limit": 12000,
+  "calibration_fixtures": 12,
+  "calibration_task_label_matches": 12,
+  "calibration_current_conflict_mismatches": 2,
+  "benchmark_task_performance_rows_consumed": 0,
+  "interpretation": "Design inventory and authored grading calibration only; no run-completion or benchmark-performance observation."
+}

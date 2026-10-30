@@ -1,0 +1,11 @@
+{
+  "backend": "llama_index",
+  "scope": "127fd5b12992e06ef73ffdf1",
+  "action": "retry",
+  "mode": "native_retry",
+  "tag": "resume-native_retry",
+  "returncode": 0,
+  "expected_returncode": 0,
+  "wall_seconds": 2.3221,
+  "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 672, \"after_count\": 822, \"submitted_events\": 150, \"redeliveries\": 1, \"wall_seconds\": 0.7477, \"extraction_calls\": 0, \"fault\": null}\n"
+}
