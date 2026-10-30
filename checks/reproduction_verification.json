@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "primary_cases": 528,
+  "reproduced_cases": 528,
+  "counts_are_not_combined": true,
+  "primary_environment": {
+    "python": "3.12.13",
+    "sqlite": "3.53.1"
+  },
+  "reproduction_environment": {
+    "python": "3.14.3",
+    "sqlite": "3.51.2"
+  },
+  "same_host": true,
+  "aggregate_metrics_match": true,
+  "boundary_metrics_match": true,
+  "source_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+  "note": "Fresh independently created stores and fresh subprocesses; random addresses may differ; not third-party replication or operating-system diversity."
+}

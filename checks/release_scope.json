@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "text_files_scanned": 116,
+  "findings": [],
+  "allowed_author_background_mentions": [
+    {
+      "file": "inputs/guidelines.md",
+      "line": 6,
+      "category": "prior_application_identity"
+    },
+    {
+      "file": "inputs/idea.md",
+      "line": 5,
+      "category": "prior_application_identity"
+    },
+    {
+      "file": "inputs/template.tex",
+      "line": 19,
+      "category": "prior_application_identity"
+    }
+  ],
+  "approved_exception": "Human-supplied employment/degree background only in author biography and its input instructions; no current university affiliation inferred.",
+  "standalone_study_imports": [
+    "__future__",
+    "argparse",
+    "concurrent",
+    "contextlib",
+    "hashlib",
+    "itertools",
+    "json",
+    "os",
+    "pathlib",
+    "secrets",
+    "sqlite3",
+    "subprocess",
+    "sys",
+    "time"
+  ],
+  "nonstdlib_study_imports": [],
+  "study_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+  "manuscript_sha256": "25eb5fd3b4df69a51fc048efc6ea5a8e2dd126a8cfdd1633ec9a40bc254aa071",
+  "scope": "Known prior application identities/evidence paths/campaign digests scanned in text artifacts. The study is freshly authored standalone code; this is not a formal legal clean-room certification.",
+  "database_content": "Primary and reproduction case rows/actions independently verified as synthetic; no private application implementation is loaded.",
+  "release_packaging": "Only selected public-source manifests belong in the distributable bibliography package; unused documentation and private working review records are not needed for reproduction."
+}

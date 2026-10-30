@@ -1,0 +1,87 @@
+Independent scientific and implementation audit — standalone study
+
+Disposition
+===========
+PASS for the declared finite mechanism study. No source/result inconsistency was found in the frozen implementation or archived primary campaign. This is freshly authored standalone code using standard-library Python and synthetic SQLite state. It is not described as a formal clean-room process, a production-system evaluation, a new exactly-once theorem, or evidence of real-model recall quality. The tested mechanism interaction is concrete and inspectable; its general principles have public prior art.
+
+Frozen implementation and primary evidence
+==========================================
+Participant source SHA256:
+98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9
+Primary raw cases SHA256:
+6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01
+
+The primary campaign contains 528 unique policy/profile/history cells: eight factorial policies, each with 66 cells. These are 17 authored histories crossed with four operation profiles, excluding the two profiles without deletion from the lost-delete-response history. There are no entity-renaming replicates and no population sampling. The 928 process attempts are recovery attempts belonging to those 528 cases, not additional independent cases.
+
+All 528 final main deliveries acknowledge. There are 592 process exits with code 0, 256 abrupt exits with code 87, and 80 controlled exception exits with code 74. The abrupt exits occur at the observed named barriers: 64 after preparation, 96 after the first committed put (including the reset-before-retry cases), 64 after all effects, and 32 after finalization. The checker verifies the declared first fault, its committed operation prefix, subsequent fault-free completion, and adversarial tape setting in every case.
+
+These are genuine subprocess terminations using os._exit with a newly launched worker for retry. The code exits at semantic barriers after the relevant SQLite commit or before the next action. It does not terminate in the middle of SQLite commit, kill the operating system, interrupt host storage, test machine power loss, or measure a remote provider's durability. Recovery state and external-effect state are separate SQLite files, so a single participant transaction does not atomically settle both stores.
+
+Independent validation
+======================
+checks/check_results.py imports no participant code or participant metric function. It reopens the archived databases read-only and independently checks:
+- The exact 528 unique keys and expected 66-cell coverage for every factorial policy.
+- Serialized physical rows and committed-operation ledgers against the actual databases.
+- Exact expected fixture facts, physical cardinality, final process/event acknowledgement, and their selected terminal conjunction.
+- Per-intent chosen/loaded decision hashes, planning invocations, literal target bindings, and deterministic addresses where enabled.
+- Effect witnesses against committed ledger operations, including committed fact text and operation slots.
+- The actual final generation and all 688 main source-selection observations against an independent bounded/enabled SQLite query.
+- Every reported policy aggregate against independently checked raw rows.
+- All five additional boundary probes, kept outside the main denominator.
+- The participant file digest against the frozen specification and the explicit exclusion of reset/cleanup from the operation-call metric.
+
+checks/audit_protocol.py separately reconstructs every final main physical state from the observed ordered effects plus the declared reset schedule. It verifies the actual reset handshake files, conceptual decision/receipt retention state, literal saved-plan identity, receipt decision/outcome, first-attempt barriers and process codes, and fault-free resumed attempts. All checks pass in both recorded runtime environments.
+
+Metrics and what they do not prove
+=================================
+The terminal conjunction is exact fixture fact-set equality, expected physical row cardinality, and final worker acknowledgement. Content equality collapses identical stored duplicates. Cardinality does not establish provenance, isolation or semantic truth. All final main acknowledgements are true, so that conjunct has no differential effect in the reported primary outcomes. Interim unsuccessful attempts remain visible in traces.
+
+Decision continuity hashes all chosen/loaded decisions for the one declared logical intent in each case. It is a direct observed one-intent replay property, not a multi-job scheduling invariant. The script's alternate tape deliberately changes one fact; it measures response to an adversarial changed decision, not the frequency of stochastic LLM drift. No LLM, semantic retrieval, natural-language QA, external queue or remote vector service is evaluated.
+
+Committed-effect calls means committed participant put/delete operations in the effect ledger. It excludes fixture setup, reset deletion, cleanup SQL and the separate intervening-write boundary operation. A repeated delete of an already absent row is still an operation. Repeated idempotent calls must not be relabeled duplicate stored rows. The saved-plan and receipt stores have identical plan retention wherever P is enabled; receipt comparisons do not gain an artificial advantage by deleting the no-receipt plan.
+
+Verified factorial results
+==========================
+Terminal passes out of 66 structural cases:
+D0P0R0: 29; D0P0R1: 41; D0P1R0: 37; D0P1R1: 49;
+D1P0R0: 42; D1P0R1: 50; D1P1R0: 66; D1P1R1: 66.
+
+checks/derive_factors.py derives all twelve conditional factor contrasts, each using the same 66 matched profile/history cells and identical first decisions, fault schedules and decision tapes. Its 792 pair comparisons are reused comparisons of the same 528 cases, not 792 additional experiments. There are no significance tests or population confidence intervals.
+
+The main interaction is important: D1P1R0 and D1P1R1 both pass all 66 terminal cases, with 66 planning invocations each. Adding a receipt reduces participant committed operations from 317 to 275 (42 fewer). Thus a receipt is useful without being necessary for this selected final-state invariant under retained plans and deterministic addresses. The paper must not claim that all three mechanisms are universally necessary.
+
+Address determinism improves cardinality without changing the content score or reducing operation counts in the paired cells. Retaining the decision improves content/continuity and reduces replanning but does not eliminate duplicate stored insertions when fresh addresses remain enabled. Receipt effects depend on the other settings. Those are isolated implementation contrasts within this finite model; they do not establish universal component necessity across other effect contracts, retention policies or providers.
+
+Controls and retained negative boundaries
+========================================
+The source controls are discriminating. The planner reduces selected chronological facts to the latest value for each attribute. Removing the boundary predicate admits a future fact and changes the chosen result; removing the enabled predicate admits a later retracted fact and changes the result. The focused tests verify both counterfactual controls without modifying the frozen source. All variants use the same actual source/generation logic; these controls are not separate treatments in the D/P/R factorial.
+
+The five boundary probes preserve limits rather than hiding them:
+- Removing only the receipt leaves the retained decision and yields correct state after replay, with more calls.
+- Removing only the decision leaves the receipt and suppresses replanning.
+- Removing both permits a changed plan and changes final content despite correct cardinality.
+- Abrupt exit before the decision is stored loses the unpersisted decision. This is outside the prepared-decision guarantee and is not counted as a main-regression failure.
+- A resumed retained decision overwrites a newer intervening external value. The selected terminal fixture score can pass while that external write is lost. Therefore stable IDs and saved plans do not establish concurrency isolation or preservation of newer writers.
+
+No coordination lease, concurrent-worker protocol, multiple-intent ordering, reclamation timer, native-framework comparison or arbitrary-generation advancement is claimed by this standalone model. It is a single-intent, specified-generation experiment. The reset checks demonstrate selected cancellation/cleanup histories, not transient-read consistency or atomic reset across stores.
+
+Tests and separate reproduction
+===============================
+Ten meaningful standard-library test methods pass with zero failures, errors or skips. They cover oracle counterexamples; retained-plan/receipt independence; actual child exit/restart; cell coverage; unpersisted-decision loss; forged-metric rejection; both source controls; generation handshake; lost-delete response; and changed decisions under stable addresses. These are ten test methods, not a duplicate count of their repeated executions in several environments.
+
+The primary campaign records Python 3.12.13 / SQLite 3.53.1. A separately recorded reproduction uses Python 3.14.3 / SQLite 3.51.2. The reproduction independently passes all database/trace/summary and protocol checks. Its policy totals and all five boundary observations match the primary campaign exactly. Its different random addresses yield a different raw-file digest, as expected:
+e6ea7658cbdf772632e59641b1aa0baf012d9a7dc321d9f429e580c34f1de84b
+
+Reproduction rows are not pooled with the 528 primary rows. The two runs provide evidence of observed runtime portability for this model, not statistical replication over a sampled population. Initial pre-freeze diagnostic logs are separate from the frozen primary evidence.
+
+Independence and release scope
+==============================
+AST inspection finds only Python standard-library imports in study.py. No application implementation, prior private evidence path or prior campaign digest is loaded or present in the checked text artifacts. The archived case databases contain the declared synthetic rows and operations. The audit uses relative evidence paths in its outputs. checks/release_scope.json records the scan and the narrow, human-approved author-biography exception for supplied employment/degree background. That biography does not make the employer or university an institutional author or experimental source.
+
+Only selected public-source literature belongs in the distributable reference package; unused vendor documentation, private working review records, caches and unrelated development materials are unnecessary. A source-ownership review and final release-manifest check remain human responsibilities. The scope scan is not a legal certification or an exhaustive guarantee about arbitrary binary files.
+
+Scientific interpretation
+=========================
+This is a reproducible finite mechanism/contract study with meaningful factorial interactions and genuinely abrupt subprocess recovery. It supports exact statements about its selected state, decision and call-count properties. Its principles have close prior work in RPC uncertainty, completion records, logged replay, idempotency and agent side-effect conformance. New code and more crash points alone do not establish a new recovery theory. A paper should emphasize the explicit invariant differences, the receipt redundancy interaction, and the retained negative boundaries, without promising selective-venue acceptance or production reliability.
+
+No new scientific experiment was added by this audit. All factorial and reproduction summaries are read-only analysis of already recorded runs. No participant source, frozen specification, raw case or database was changed.

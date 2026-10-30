@@ -1,0 +1,49 @@
+{
+  "status": "PASS_FOR_DECLARED_FINITE_STUDY",
+  "study_source_modified_by_auditor": false,
+  "new_experiments_added_by_final_audit": false,
+  "main_cases": 528,
+  "policies": 8,
+  "main_attempts": 928,
+  "main_abrupt_exits": 256,
+  "main_controlled_exception_exits": 80,
+  "boundary_probes": 5,
+  "tests": {
+    "methods": 10,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0
+  },
+  "reproduction_pooled_into_main": false,
+  "reproduction_aggregate_and_boundaries_match": true,
+  "factorial_pair_comparisons": 792,
+  "receipt_redundancy_for_D1P1": {
+    "both_terminal_passes": 66,
+    "no_receipt_calls": 317,
+    "receipt_calls": 275,
+    "reduced_calls": 42
+  },
+  "artifact_hashes": {
+    "study.py": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+    "results/frozen_spec.json": "f5dac100857d093a865b10ff525aaf48fa862f8eb6125cc6771517de6d5c6306",
+    "results/cases.jsonl": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
+    "results/summary.json": "4d56dceb0a677f6f1bb1d67d037004bf2364080aaf9e03784cbbf5f02cb8ed5f",
+    "results/boundary_probes.json": "f3f02785a6ef5aa91f53bf87e2b604096605831013c06254e64b8f92d4d1d429",
+    "checks/check_results.py": "3873378b7414b8c83f12ab61e6e16902faff40db683043faa82b8ad9ef2a43a7",
+    "checks/audit_protocol.py": "495ebc7d07db3d237cc5b7db7fa4f2a47dc5f44584210ef2ee58014181e71e6d",
+    "checks/derive_factors.py": "b2e4f338de2e530d5941a9ba5601a331129941993d2668629da38c468f743d51",
+    "test_study.py": "1e01678fa80819e662e12ad0f69913f712aa0c4af9fea86cc7238e1642cd4511"
+  },
+  "limitations": [
+    "Finite authored cases",
+    "One logical intent per case",
+    "Scripted decisions and local effect provider",
+    "Named post-commit process exits rather than mid-commit or power loss",
+    "No concurrency isolation",
+    "No LLM or QA quality claim",
+    "No general exactly-once theorem"
+  ],
+  "release_scope_report": "checks/release_scope.json",
+  "detailed_review": "checks/scientific_audit.txt",
+  "structural_cells_per_policy": 66
+}

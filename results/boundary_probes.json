@@ -1,0 +1,1150 @@
+[
+  {
+    "probe": "receipt_only",
+    "expected_facts": [
+      "tone=concise",
+      "topic=cycling",
+      "unit=metric"
+    ],
+    "physical_records": [
+      {
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=cycling",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      }
+    ],
+    "content_correct": true,
+    "cardinality_correct": true,
+    "acknowledged": true,
+    "selected_terminal": true,
+    "decision_continuity": true,
+    "planning_invocations": 1,
+    "committed_effect_calls": 8,
+    "committed_actions": [
+      {
+        "serial": 1,
+        "attempt": 0,
+        "kind": "put",
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 2,
+        "attempt": 0,
+        "kind": "put",
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 3,
+        "attempt": 0,
+        "kind": "delete",
+        "address": "retired-entry",
+        "fact": null,
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 4,
+        "attempt": 0,
+        "kind": "put",
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=cycling",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 5,
+        "attempt": 1,
+        "kind": "put",
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 6,
+        "attempt": 1,
+        "kind": "put",
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 7,
+        "attempt": 1,
+        "kind": "delete",
+        "address": "retired-entry",
+        "fact": null,
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 8,
+        "attempt": 1,
+        "kind": "put",
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=cycling",
+        "origin": "intent-alpha",
+        "epoch": 0
+      }
+    ],
+    "attempts": [
+      {
+        "attempt": 0,
+        "returncode": 0,
+        "fault": "",
+        "alternative": false,
+        "events": [
+          {
+            "event": "source_selected",
+            "facts": [
+              "tone=concise",
+              "unit=metric",
+              "topic=cycling"
+            ],
+            "intent": "intent-alpha"
+          },
+          {
+            "digest": "584ca8e576074136399766a1f3e0a8cf597a6952413070ddb85fa63ad3760426",
+            "event": "decision_chosen",
+            "intent": "intent-alpha",
+            "operations": [
+              {
+                "fact": "unit=metric",
+                "kind": "put",
+                "target": "existing-unit"
+              },
+              {
+                "fact": "tone=concise",
+                "kind": "put",
+                "target": null
+              },
+              {
+                "kind": "delete",
+                "target": "retired-entry"
+              },
+              {
+                "fact": "topic=cycling",
+                "kind": "put",
+                "target": null
+              }
+            ]
+          },
+          {
+            "digest": "584ca8e576074136399766a1f3e0a8cf597a6952413070ddb85fa63ad3760426",
+            "event": "decision_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "address": "existing-unit",
+            "event": "effect_committed",
+            "fact": "unit=metric",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 0
+          },
+          {
+            "address": "a5abf7e9de1f676c9f316d15",
+            "event": "effect_committed",
+            "fact": "tone=concise",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 1
+          },
+          {
+            "address": "retired-entry",
+            "event": "effect_committed",
+            "intent": "intent-alpha",
+            "kind": "delete",
+            "slot": 2
+          },
+          {
+            "address": "5d6b57a4b78e2edac8520a90",
+            "event": "effect_committed",
+            "fact": "topic=cycling",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 3
+          },
+          {
+            "event": "receipt_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "event": "ack",
+            "intent": "intent-alpha",
+            "outcome": "applied"
+          }
+        ],
+        "stderr": "",
+        "acknowledged": true
+      },
+      {
+        "attempt": 1,
+        "returncode": 0,
+        "fault": "",
+        "alternative": true,
+        "events": [
+          {
+            "digest": "584ca8e576074136399766a1f3e0a8cf597a6952413070ddb85fa63ad3760426",
+            "event": "decision_loaded",
+            "intent": "intent-alpha"
+          },
+          {
+            "address": "existing-unit",
+            "event": "effect_committed",
+            "fact": "unit=metric",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 0
+          },
+          {
+            "address": "a5abf7e9de1f676c9f316d15",
+            "event": "effect_committed",
+            "fact": "tone=concise",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 1
+          },
+          {
+            "address": "retired-entry",
+            "event": "effect_committed",
+            "intent": "intent-alpha",
+            "kind": "delete",
+            "slot": 2
+          },
+          {
+            "address": "5d6b57a4b78e2edac8520a90",
+            "event": "effect_committed",
+            "fact": "topic=cycling",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 3
+          },
+          {
+            "event": "receipt_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "event": "ack",
+            "intent": "intent-alpha",
+            "outcome": "applied"
+          }
+        ],
+        "stderr": "",
+        "acknowledged": true
+      }
+    ]
+  },
+  {
+    "probe": "decision_only",
+    "expected_facts": [
+      "tone=concise",
+      "topic=cycling",
+      "unit=metric"
+    ],
+    "physical_records": [
+      {
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=cycling",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      }
+    ],
+    "content_correct": true,
+    "cardinality_correct": true,
+    "acknowledged": true,
+    "selected_terminal": true,
+    "decision_continuity": true,
+    "planning_invocations": 1,
+    "committed_effect_calls": 4,
+    "committed_actions": [
+      {
+        "serial": 1,
+        "attempt": 0,
+        "kind": "put",
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 2,
+        "attempt": 0,
+        "kind": "put",
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 3,
+        "attempt": 0,
+        "kind": "delete",
+        "address": "retired-entry",
+        "fact": null,
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 4,
+        "attempt": 0,
+        "kind": "put",
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=cycling",
+        "origin": "intent-alpha",
+        "epoch": 0
+      }
+    ],
+    "attempts": [
+      {
+        "attempt": 0,
+        "returncode": 0,
+        "fault": "",
+        "alternative": false,
+        "events": [
+          {
+            "event": "source_selected",
+            "facts": [
+              "tone=concise",
+              "unit=metric",
+              "topic=cycling"
+            ],
+            "intent": "intent-alpha"
+          },
+          {
+            "digest": "584ca8e576074136399766a1f3e0a8cf597a6952413070ddb85fa63ad3760426",
+            "event": "decision_chosen",
+            "intent": "intent-alpha",
+            "operations": [
+              {
+                "fact": "unit=metric",
+                "kind": "put",
+                "target": "existing-unit"
+              },
+              {
+                "fact": "tone=concise",
+                "kind": "put",
+                "target": null
+              },
+              {
+                "kind": "delete",
+                "target": "retired-entry"
+              },
+              {
+                "fact": "topic=cycling",
+                "kind": "put",
+                "target": null
+              }
+            ]
+          },
+          {
+            "digest": "584ca8e576074136399766a1f3e0a8cf597a6952413070ddb85fa63ad3760426",
+            "event": "decision_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "address": "existing-unit",
+            "event": "effect_committed",
+            "fact": "unit=metric",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 0
+          },
+          {
+            "address": "a5abf7e9de1f676c9f316d15",
+            "event": "effect_committed",
+            "fact": "tone=concise",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 1
+          },
+          {
+            "address": "retired-entry",
+            "event": "effect_committed",
+            "intent": "intent-alpha",
+            "kind": "delete",
+            "slot": 2
+          },
+          {
+            "address": "5d6b57a4b78e2edac8520a90",
+            "event": "effect_committed",
+            "fact": "topic=cycling",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 3
+          },
+          {
+            "event": "receipt_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "event": "ack",
+            "intent": "intent-alpha",
+            "outcome": "applied"
+          }
+        ],
+        "stderr": "",
+        "acknowledged": true
+      },
+      {
+        "attempt": 1,
+        "returncode": 0,
+        "fault": "",
+        "alternative": true,
+        "events": [
+          {
+            "event": "receipt_hit",
+            "intent": "intent-alpha"
+          },
+          {
+            "event": "ack",
+            "intent": "intent-alpha",
+            "outcome": "applied"
+          }
+        ],
+        "stderr": "",
+        "acknowledged": true
+      }
+    ]
+  },
+  {
+    "probe": "both",
+    "expected_facts": [
+      "tone=concise",
+      "topic=cycling",
+      "unit=metric"
+    ],
+    "physical_records": [
+      {
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=running",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      }
+    ],
+    "content_correct": false,
+    "cardinality_correct": true,
+    "acknowledged": true,
+    "selected_terminal": false,
+    "decision_continuity": false,
+    "planning_invocations": 2,
+    "committed_effect_calls": 8,
+    "committed_actions": [
+      {
+        "serial": 1,
+        "attempt": 0,
+        "kind": "put",
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 2,
+        "attempt": 0,
+        "kind": "put",
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 3,
+        "attempt": 0,
+        "kind": "delete",
+        "address": "retired-entry",
+        "fact": null,
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 4,
+        "attempt": 0,
+        "kind": "put",
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=cycling",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 5,
+        "attempt": 1,
+        "kind": "put",
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 6,
+        "attempt": 1,
+        "kind": "put",
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 7,
+        "attempt": 1,
+        "kind": "delete",
+        "address": "retired-entry",
+        "fact": null,
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 8,
+        "attempt": 1,
+        "kind": "put",
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=running",
+        "origin": "intent-alpha",
+        "epoch": 0
+      }
+    ],
+    "attempts": [
+      {
+        "attempt": 0,
+        "returncode": 0,
+        "fault": "",
+        "alternative": false,
+        "events": [
+          {
+            "event": "source_selected",
+            "facts": [
+              "tone=concise",
+              "unit=metric",
+              "topic=cycling"
+            ],
+            "intent": "intent-alpha"
+          },
+          {
+            "digest": "584ca8e576074136399766a1f3e0a8cf597a6952413070ddb85fa63ad3760426",
+            "event": "decision_chosen",
+            "intent": "intent-alpha",
+            "operations": [
+              {
+                "fact": "unit=metric",
+                "kind": "put",
+                "target": "existing-unit"
+              },
+              {
+                "fact": "tone=concise",
+                "kind": "put",
+                "target": null
+              },
+              {
+                "kind": "delete",
+                "target": "retired-entry"
+              },
+              {
+                "fact": "topic=cycling",
+                "kind": "put",
+                "target": null
+              }
+            ]
+          },
+          {
+            "digest": "584ca8e576074136399766a1f3e0a8cf597a6952413070ddb85fa63ad3760426",
+            "event": "decision_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "address": "existing-unit",
+            "event": "effect_committed",
+            "fact": "unit=metric",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 0
+          },
+          {
+            "address": "a5abf7e9de1f676c9f316d15",
+            "event": "effect_committed",
+            "fact": "tone=concise",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 1
+          },
+          {
+            "address": "retired-entry",
+            "event": "effect_committed",
+            "intent": "intent-alpha",
+            "kind": "delete",
+            "slot": 2
+          },
+          {
+            "address": "5d6b57a4b78e2edac8520a90",
+            "event": "effect_committed",
+            "fact": "topic=cycling",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 3
+          },
+          {
+            "event": "receipt_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "event": "ack",
+            "intent": "intent-alpha",
+            "outcome": "applied"
+          }
+        ],
+        "stderr": "",
+        "acknowledged": true
+      },
+      {
+        "attempt": 1,
+        "returncode": 0,
+        "fault": "",
+        "alternative": true,
+        "events": [
+          {
+            "event": "source_selected",
+            "facts": [
+              "tone=concise",
+              "unit=metric",
+              "topic=cycling"
+            ],
+            "intent": "intent-alpha"
+          },
+          {
+            "digest": "466be10e7fe11e280b88db67749c48768e00456792efd69a445dfc1334b1fec3",
+            "event": "decision_chosen",
+            "intent": "intent-alpha",
+            "operations": [
+              {
+                "fact": "unit=metric",
+                "kind": "put",
+                "target": "existing-unit"
+              },
+              {
+                "fact": "tone=concise",
+                "kind": "put",
+                "target": null
+              },
+              {
+                "kind": "delete",
+                "target": "retired-entry"
+              },
+              {
+                "fact": "topic=running",
+                "kind": "put",
+                "target": null
+              }
+            ]
+          },
+          {
+            "digest": "466be10e7fe11e280b88db67749c48768e00456792efd69a445dfc1334b1fec3",
+            "event": "decision_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "address": "existing-unit",
+            "event": "effect_committed",
+            "fact": "unit=metric",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 0
+          },
+          {
+            "address": "a5abf7e9de1f676c9f316d15",
+            "event": "effect_committed",
+            "fact": "tone=concise",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 1
+          },
+          {
+            "address": "retired-entry",
+            "event": "effect_committed",
+            "intent": "intent-alpha",
+            "kind": "delete",
+            "slot": 2
+          },
+          {
+            "address": "5d6b57a4b78e2edac8520a90",
+            "event": "effect_committed",
+            "fact": "topic=running",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 3
+          },
+          {
+            "event": "receipt_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "event": "ack",
+            "intent": "intent-alpha",
+            "outcome": "applied"
+          }
+        ],
+        "stderr": "",
+        "acknowledged": true
+      }
+    ]
+  },
+  {
+    "probe": "before_decision_store",
+    "outside_prepared_decision_guarantee": true,
+    "expected_facts": [
+      "tone=concise",
+      "topic=cycling",
+      "unit=metric"
+    ],
+    "physical_records": [
+      {
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=running",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      }
+    ],
+    "content_correct": false,
+    "cardinality_correct": true,
+    "acknowledged": true,
+    "selected_terminal": false,
+    "decision_continuity": false,
+    "planning_invocations": 2,
+    "committed_effect_calls": 4,
+    "committed_actions": [
+      {
+        "serial": 1,
+        "attempt": 1,
+        "kind": "put",
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 2,
+        "attempt": 1,
+        "kind": "put",
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 3,
+        "attempt": 1,
+        "kind": "delete",
+        "address": "retired-entry",
+        "fact": null,
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 4,
+        "attempt": 1,
+        "kind": "put",
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=running",
+        "origin": "intent-alpha",
+        "epoch": 0
+      }
+    ],
+    "attempts": [
+      {
+        "attempt": 0,
+        "returncode": 87,
+        "fault": "before_decision_store",
+        "alternative": false,
+        "events": [
+          {
+            "event": "source_selected",
+            "facts": [
+              "tone=concise",
+              "unit=metric",
+              "topic=cycling"
+            ],
+            "intent": "intent-alpha"
+          },
+          {
+            "digest": "584ca8e576074136399766a1f3e0a8cf597a6952413070ddb85fa63ad3760426",
+            "event": "decision_chosen",
+            "intent": "intent-alpha",
+            "operations": [
+              {
+                "fact": "unit=metric",
+                "kind": "put",
+                "target": "existing-unit"
+              },
+              {
+                "fact": "tone=concise",
+                "kind": "put",
+                "target": null
+              },
+              {
+                "kind": "delete",
+                "target": "retired-entry"
+              },
+              {
+                "fact": "topic=cycling",
+                "kind": "put",
+                "target": null
+              }
+            ]
+          },
+          {
+            "event": "abrupt_exit",
+            "point": "before_decision_store"
+          }
+        ],
+        "stderr": "",
+        "acknowledged": false
+      },
+      {
+        "attempt": 1,
+        "returncode": 0,
+        "fault": "",
+        "alternative": true,
+        "events": [
+          {
+            "event": "source_selected",
+            "facts": [
+              "tone=concise",
+              "unit=metric",
+              "topic=cycling"
+            ],
+            "intent": "intent-alpha"
+          },
+          {
+            "digest": "466be10e7fe11e280b88db67749c48768e00456792efd69a445dfc1334b1fec3",
+            "event": "decision_chosen",
+            "intent": "intent-alpha",
+            "operations": [
+              {
+                "fact": "unit=metric",
+                "kind": "put",
+                "target": "existing-unit"
+              },
+              {
+                "fact": "tone=concise",
+                "kind": "put",
+                "target": null
+              },
+              {
+                "kind": "delete",
+                "target": "retired-entry"
+              },
+              {
+                "fact": "topic=running",
+                "kind": "put",
+                "target": null
+              }
+            ]
+          },
+          {
+            "digest": "466be10e7fe11e280b88db67749c48768e00456792efd69a445dfc1334b1fec3",
+            "event": "decision_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "address": "existing-unit",
+            "event": "effect_committed",
+            "fact": "unit=metric",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 0
+          },
+          {
+            "address": "a5abf7e9de1f676c9f316d15",
+            "event": "effect_committed",
+            "fact": "tone=concise",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 1
+          },
+          {
+            "address": "retired-entry",
+            "event": "effect_committed",
+            "intent": "intent-alpha",
+            "kind": "delete",
+            "slot": 2
+          },
+          {
+            "address": "5d6b57a4b78e2edac8520a90",
+            "event": "effect_committed",
+            "fact": "topic=running",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 3
+          },
+          {
+            "event": "receipt_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "event": "ack",
+            "intent": "intent-alpha",
+            "outcome": "applied"
+          }
+        ],
+        "stderr": "",
+        "acknowledged": true
+      }
+    ]
+  },
+  {
+    "probe": "external_interleaving",
+    "newer_external_write_preserved": false,
+    "expected_facts": [
+      "tone=concise",
+      "topic=cycling",
+      "unit=metric"
+    ],
+    "physical_records": [
+      {
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=cycling",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      }
+    ],
+    "content_correct": true,
+    "cardinality_correct": true,
+    "acknowledged": true,
+    "selected_terminal": true,
+    "decision_continuity": true,
+    "planning_invocations": 1,
+    "committed_effect_calls": 5,
+    "committed_actions": [
+      {
+        "serial": 1,
+        "attempt": 0,
+        "kind": "put",
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 2,
+        "attempt": 1,
+        "kind": "put",
+        "address": "existing-unit",
+        "fact": "unit=metric",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 3,
+        "attempt": 1,
+        "kind": "put",
+        "address": "a5abf7e9de1f676c9f316d15",
+        "fact": "tone=concise",
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 4,
+        "attempt": 1,
+        "kind": "delete",
+        "address": "retired-entry",
+        "fact": null,
+        "origin": "intent-alpha",
+        "epoch": 0
+      },
+      {
+        "serial": 5,
+        "attempt": 1,
+        "kind": "put",
+        "address": "5d6b57a4b78e2edac8520a90",
+        "fact": "topic=cycling",
+        "origin": "intent-alpha",
+        "epoch": 0
+      }
+    ],
+    "attempts": [
+      {
+        "attempt": 0,
+        "returncode": 87,
+        "fault": "after_first_put",
+        "alternative": false,
+        "events": [
+          {
+            "event": "source_selected",
+            "facts": [
+              "tone=concise",
+              "unit=metric",
+              "topic=cycling"
+            ],
+            "intent": "intent-alpha"
+          },
+          {
+            "digest": "584ca8e576074136399766a1f3e0a8cf597a6952413070ddb85fa63ad3760426",
+            "event": "decision_chosen",
+            "intent": "intent-alpha",
+            "operations": [
+              {
+                "fact": "unit=metric",
+                "kind": "put",
+                "target": "existing-unit"
+              },
+              {
+                "fact": "tone=concise",
+                "kind": "put",
+                "target": null
+              },
+              {
+                "kind": "delete",
+                "target": "retired-entry"
+              },
+              {
+                "fact": "topic=cycling",
+                "kind": "put",
+                "target": null
+              }
+            ]
+          },
+          {
+            "digest": "584ca8e576074136399766a1f3e0a8cf597a6952413070ddb85fa63ad3760426",
+            "event": "decision_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "address": "existing-unit",
+            "event": "effect_committed",
+            "fact": "unit=metric",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 0
+          },
+          {
+            "event": "abrupt_exit",
+            "point": "after_first_put"
+          }
+        ],
+        "stderr": "",
+        "acknowledged": false
+      },
+      {
+        "attempt": 1,
+        "returncode": 0,
+        "fault": "",
+        "alternative": false,
+        "events": [
+          {
+            "digest": "584ca8e576074136399766a1f3e0a8cf597a6952413070ddb85fa63ad3760426",
+            "event": "decision_loaded",
+            "intent": "intent-alpha"
+          },
+          {
+            "address": "existing-unit",
+            "event": "effect_committed",
+            "fact": "unit=metric",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 0
+          },
+          {
+            "address": "a5abf7e9de1f676c9f316d15",
+            "event": "effect_committed",
+            "fact": "tone=concise",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 1
+          },
+          {
+            "address": "retired-entry",
+            "event": "effect_committed",
+            "intent": "intent-alpha",
+            "kind": "delete",
+            "slot": 2
+          },
+          {
+            "address": "5d6b57a4b78e2edac8520a90",
+            "event": "effect_committed",
+            "fact": "topic=cycling",
+            "intent": "intent-alpha",
+            "kind": "put",
+            "slot": 3
+          },
+          {
+            "event": "receipt_stored",
+            "intent": "intent-alpha"
+          },
+          {
+            "event": "ack",
+            "intent": "intent-alpha",
+            "outcome": "applied"
+          }
+        ],
+        "stderr": "",
+        "acknowledged": true
+      }
+    ]
+  }
+]

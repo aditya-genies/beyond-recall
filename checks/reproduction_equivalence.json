@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "primary_campaign": "results",
+  "reproduction_campaign": "reproduction",
+  "primary_case_count": 528,
+  "reproduction_case_count": 528,
+  "counts_combined": false,
+  "policy_totals_identical": true,
+  "boundary_observations_identical": true,
+  "primary_cases_sha256": "6714681fbefcbdf63334f76b95410aa1c2bc620ce8b7511fadb0c91354b72d01",
+  "reproduction_cases_sha256": "e6ea7658cbdf772632e59641b1aa0baf012d9a7dc321d9f429e580c34f1de84b",
+  "primary_environment": {
+    "python": "3.12.13",
+    "sqlite": "3.53.1"
+  },
+  "reproduction_environment": {
+    "python": "3.14.3",
+    "sqlite": "3.51.2"
+  }
+}

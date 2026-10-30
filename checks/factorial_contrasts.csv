@@ -1,0 +1,13 @@
+factor,low_policy,high_policy,paired_cells,content_gain,terminal_gain,continuity_gain,planning_calls_saved,committed_operations_saved,terminal_improved_cells,terminal_regressed_cells
+D,D0P0R0,D1P0R0,66,0,13,0,0,0,13,0
+D,D0P0R1,D1P0R1,66,0,9,0,0,0,9,0
+D,D0P1R0,D1P1R0,66,0,29,0,0,0,29,0
+D,D0P1R1,D1P1R1,66,0,17,0,0,0,17,0
+P,D0P0R0,D0P1R0,66,24,8,24,46,0,8,0
+P,D0P0R1,D0P1R1,66,16,8,16,34,0,8,0
+P,D1P0R0,D1P1R0,66,24,24,24,46,0,24,0
+P,D1P0R1,D1P1R1,66,16,16,16,34,0,16,0
+R,D0P0R0,D0P0R1,66,8,12,8,12,42,12,0
+R,D0P1R0,D0P1R1,66,0,12,0,0,42,12,0
+R,D1P0R0,D1P0R1,66,8,8,8,12,42,8,0
+R,D1P1R0,D1P1R1,66,0,0,0,0,42,0,0

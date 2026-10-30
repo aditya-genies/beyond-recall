@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "campaign": "reproduction",
+  "cases_audited": 528,
+  "process_attempts": 928,
+  "observed_returncodes": {
+    "0": 592,
+    "87": 256,
+    "74": 80
+  },
+  "observed_abrupt_barriers": {
+    "after_effects": 64,
+    "after_finalize": 32,
+    "after_first_put": 96,
+    "after_prepare": 64
+  },
+  "decision_retention_matches_factor": true,
+  "receipt_state_matches_factor": true,
+  "literal_retained_plans_verified": true,
+  "final_state_reconstructed_from_events": true,
+  "actual_generation_handshakes_verified": true,
+  "boundary_scope": "Named post-commit semantic barriers; not interruption inside SQLite commit or machine power loss"
+}

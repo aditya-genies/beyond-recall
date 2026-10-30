@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "command": "python3 -W error::ResourceWarning -m unittest -v test_study",
+  "python": "3.14.3",
+  "sqlite": "3.51.2",
+  "platform": "Darwin arm64",
+  "study_sha256": "98378f217f0dae050dbc07aa04e1121ed9bc73862c2ee35a2e31a7a464f4e9b9",
+  "test_sha256": "1e01678fa80819e662e12ad0f69913f712aa0c4af9fea86cc7238e1642cd4511",
+  "checker_sha256": "3873378b7414b8c83f12ab61e6e16902faff40db683043faa82b8ad9ef2a43a7",
+  "log": "checks/unit_tests.log",
+  "test_module": "test_study.py",
+  "checker": "checks/check_results.py",
+  "scope": "Meaningful synthetic stdlib checks including actual abrupt child exit and resumed process; no power-loss/remote-provider claim"
+}

@@ -1,0 +1,15 @@
+test_abrupt_exit_and_new_process_resume_reuses_decision (test_study.StandaloneStudyTests.test_abrupt_exit_and_new_process_resume_reuses_decision) ... ok
+test_bounded_and_disabled_source_controls_are_discriminating (test_study.StandaloneStudyTests.test_bounded_and_disabled_source_controls_are_discriminating) ... ok
+test_duplicate_and_wrong_content_oracles_are_distinct (test_study.StandaloneStudyTests.test_duplicate_and_wrong_content_oracles_are_distinct) ... ok
+test_full_finite_coverage_is_66_cells_for_each_of_eight_policies (test_study.StandaloneStudyTests.test_full_finite_coverage_is_66_cells_for_each_of_eight_policies) ... ok
+test_generation_handshake_removes_stale_rows_and_excludes_cleanup_from_calls (test_study.StandaloneStudyTests.test_generation_handshake_removes_stale_rows_and_excludes_cleanup_from_calls) ... ok
+test_independent_checker_rejects_forged_metric (test_study.StandaloneStudyTests.test_independent_checker_rejects_forged_metric) ... ok
+test_lost_delete_reply_repeats_a_call_without_duplicate_rows (test_study.StandaloneStudyTests.test_lost_delete_reply_repeats_a_call_without_duplicate_rows) ... ok
+test_receipt_preserves_same_plan_retention_but_suppresses_calls (test_study.StandaloneStudyTests.test_receipt_preserves_same_plan_retention_but_suppresses_calls) ... ok
+test_stable_addresses_do_not_preserve_unsaved_changed_decision (test_study.StandaloneStudyTests.test_stable_addresses_do_not_preserve_unsaved_changed_decision) ... ok
+test_unpersisted_decision_remains_a_real_boundary (test_study.StandaloneStudyTests.test_unpersisted_decision_remains_a_real_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.609s
+
+OK
