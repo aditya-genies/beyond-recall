@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "5373e32a282111d89516c4e2",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference and the user's explicit account of meeting Sophia."
+    },
+    {
+      "id": "aef8de625e9c4b5369df87a0",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "The interview was yesterday relative to May 11, so May 10. The error concerns a historical date."
+    },
+    {
+      "id": "7c0296db72323e5ec052e6db",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Uses the user's interest in creative summer cocktails with Hendrick's, including a Pimm's Cup variation; the evidence lists these suggestions."
+    },
+    {
+      "id": "ef7ca87c867df55e6f1662c4",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference; Maria's May 25 message says she is preparing for a fundraiser."
+    },
+    {
+      "id": "7e7096bf002fa0f0ef459d83",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Both volunteered at a homeless shelter, and the evidence supports the additional details."
+    },
+    {
+      "id": "6c03438321f060392cbec784",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "Does not supply the required $750 difference. No evidence is supplied to verify the underlying prices, and no conflicting current value is asserted."
+    }
+  ]
+}

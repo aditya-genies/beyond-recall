@@ -59,7 +59,7 @@ jobs:
       - name: Exercise data, worker, grading and raw-audit negative fixtures
         run: |
           set -o pipefail
-          .venv-impact/bin/python -m unittest -v extensions.benchmark_impact.test_data extensions.benchmark_impact.test_worker.WorkerBoundaryTests extensions.benchmark_impact.test_worker.GradeBoundaryTests extensions.benchmark_impact.test_worker.PilotEvidenceAuditorTests 2>&1 | tee benchmark-impact-boundaries.txt
+          .venv-impact/bin/python -m unittest -v extensions.benchmark_impact.test_data extensions.benchmark_impact.test_worker.WorkerBoundaryTests extensions.benchmark_impact.test_worker.GradeBoundaryTests extensions.benchmark_impact.test_worker.PilotEvidenceAuditorTests extensions.benchmark_impact.test_corrected_official_metric extensions.benchmark_impact.worker_review_ranking_audit.AuditorNegativeTests extensions.benchmark_impact.test_grading_audit 2>&1 | tee benchmark-impact-boundaries.txt
       - name: Record scope and unavailable native reproduction
         if: always()
         run: |

@@ -1,0 +1,187 @@
+{
+  "claims_not_supported": [
+    "Model decision harm or benefit",
+    "Intervention efficacy or novel algorithm",
+    "Default inferred-agent equivalence",
+    "Natural production retry rates",
+    "External replication or journal acceptance",
+    "Unqualified IID inference across reused conversational sources"
+  ],
+  "development_errors_retained": {
+    "initial_adapter_sha256": "344efbd9e368e99bead59c47af1febf306fdc7ce983b1653a62ece943a550a5b",
+    "initial_auditor_report": "source_data_audit_initial.json",
+    "initial_findings": 10,
+    "initial_report_sha256": "715bef7e5ea0a917bc2644646afbc8d005a40f4347e6344d475edab015ee5fb5",
+    "interpretation": "Initial oracle omitted newly declared released captions; ten LoCoMo findings were auditor errors against already repaired adapter, corrected without data change.",
+    "module_path_attempt_interpretation": "Test discovery/path error, not semantic fixture failure.",
+    "module_path_attempt_log": "test_data_harness_attempt1.log"
+  },
+  "embedding_calls": 0,
+  "model_calls": 0,
+  "opaque_quality_score": null,
+  "primary_sources": [
+    "https://github.com/xiaowu0162/LongMemEval/blob/9e0b455f4ef0e2ab8f2e582289761153549043fc/README.md",
+    "https://github.com/snap-research/locomo/blob/3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376/task_eval/evaluation.py"
+  ],
+  "projection_counts": {
+    "lme_episodes": 500,
+    "lme_events": 246750,
+    "locomo_category5_not_distractor_gold": 446,
+    "locomo_episodes": 10,
+    "locomo_events": 5882
+  },
+  "projection_report": "source_data_audit.json",
+  "projection_status": "PASS",
+  "published_release_modified_by_this_work": false,
+  "required_before_pilot_freeze": [
+    {
+      "evidence": "Reviewed memory_worker.py accepts event extras into body digest. Projection tests do not certify every future caller.",
+      "id": "E1",
+      "issue": "Worker ingestion should enforce exact episode/event schema before provider construction/writes; query path already rejects extra fields.",
+      "priority": "high",
+      "status": "IMPLEMENTATION_REVIEW_PENDING"
+    },
+    {
+      "evidence": "Initial currently applies passed admission mode; exact-content admission can change legitimate original history.",
+      "id": "E2",
+      "issue": "Common native-once baseline and physical-ID-preserving source2 clone control before retry arms, or explicitly paired method-specific clean controls.",
+      "priority": "high",
+      "status": "PLANNED_NOT_YET_EXECUTED"
+    },
+    {
+      "evidence": "validate_support_metric and targeted negative fixtures; upstream adversarial antecedent IDs are not positive answer support.",
+      "id": "E3",
+      "issue": "Unanswerable/unknown-evidence support coverage must be null, abstention scored separately; assertion must be applied by actual grader/output checker.",
+      "priority": "high",
+      "status": "CONTRACT_AGREED_ASSERTION_PROVIDED"
+    },
+    {
+      "evidence": "Reviewed cache key contains model-name namespace, action kind and text; construction excluded from wall_seconds.",
+      "id": "E4",
+      "issue": "Bind cache to loaded public model/runtime/config identity or fresh manifest-bound cache; measure cache hits and label warm application timing.",
+      "priority": "medium",
+      "status": "MANIFEST_AND_COST_SCOPE_PENDING"
+    },
+    {
+      "evidence": "284eligible LME questions,495gold components; all500connected by any full-history reuse; no IID/source-disjoint population claim.",
+      "id": "E5",
+      "issue": "Freeze strict development-source-disjoint candidate set and dependent paired analysis before any confirmatory outcomes.",
+      "priority": "high",
+      "status": "AGREED_FORMAL_FREEZE_PENDING"
+    }
+  ],
+  "resolved_source_findings": [
+    {
+      "id": "S1",
+      "issue": "Question-local occurrence identity prevents143differently-dated sid/turn aliases.",
+      "status": "VERIFIED_FIXED"
+    },
+    {
+      "id": "S2",
+      "issue": "Selected full-row question_date preserved query-side; no oracle timeline borrowed; unknown variants fail.",
+      "status": "VERIFIED_FIXED"
+    },
+    {
+      "id": "S3",
+      "issue": "All446LoCoMocategory5 references use abstention, never adversarial distractor asgold.",
+      "status": "VERIFIED"
+    }
+  ],
+  "reviewer": "Same-study skeptical/Devils-Advocate review; not outside replication",
+  "skill": {
+    "application": "Pre-experiment design/measurement critique using DA priorities; no manuscript acceptance loop or invented experiment scores.",
+    "path": "PaperOrchestra content-refinement guidance (local path omitted)"
+  },
+  "source_observations": {
+    "all_history_overlap_component_sizes": [
+      500
+    ],
+    "cross_question_reuse": {
+      "reused_session_content_mismatches": 0,
+      "reused_session_date_mismatches": 4672,
+      "reused_session_occurrences": 4672
+    },
+    "gold_evidence_components": 495,
+    "identity_collision_metadata_examples": [
+      {
+        "first_date": "2023/05/23 (Tue) 23:54",
+        "later_date": "2023/05/29 (Mon) 13:56",
+        "question_id": "58bf7951",
+        "turn_index": 0,
+        "upstream_session_id": "07b7a667_1"
+      },
+      {
+        "first_date": "2023/05/23 (Tue) 23:54",
+        "later_date": "2023/05/29 (Mon) 13:56",
+        "question_id": "58bf7951",
+        "turn_index": 1,
+        "upstream_session_id": "07b7a667_1"
+      },
+      {
+        "first_date": "2023/05/23 (Tue) 23:54",
+        "later_date": "2023/05/29 (Mon) 13:56",
+        "question_id": "58bf7951",
+        "turn_index": 2,
+        "upstream_session_id": "07b7a667_1"
+      }
+    ],
+    "oracle_full_answer_session_list_order_mismatches": 122,
+    "oracle_full_answer_session_set_mismatches": 0,
+    "oracle_full_question_date_mismatches": 500,
+    "oracle_full_session_comparison": {
+      "matched_session_occurrences": 948,
+      "oracle_full_session_content_mismatches": 0,
+      "oracle_full_session_date_mismatches": 948
+    },
+    "questions": 500,
+    "unique_upstream_session_ids": 19195,
+    "within_question_reused_raw_identity": {
+      "conflicting_global_sid_turn_occurrences": 143,
+      "repeated_global_sid_turn_occurrences": 143,
+      "repeated_session_occurrences": 13
+    }
+  },
+  "split": {
+    "declared_held_out_questions": 488,
+    "development_questions": 12,
+    "full_history_overlap_held_questions": 204,
+    "held_out_gold_component_questions": 488,
+    "interpretation": "Gold-evidence components and full-history source overlap are different partitions. Strict candidates exclude all overlap with development, not overlap among confirmation questions.",
+    "shared_full_history_session_ids": 216,
+    "shared_gold_session_ids": 0,
+    "strict_candidate_abstention_questions": 16,
+    "strict_candidate_categories": {
+      "knowledge-update": 41,
+      "multi-session": 76,
+      "single-session-assistant": 31,
+      "single-session-preference": 17,
+      "single-session-user": 38,
+      "temporal-reasoning": 81
+    },
+    "strict_source_disjoint_candidate_questions": 284
+  },
+  "status": "SOURCE_PROJECTION_VERIFIED_EXECUTION_GATES_STILL_REQUIRED",
+  "tests": {
+    "coverage": [
+      "Field and content leakage forgeries",
+      "Date/speaker/order alignment",
+      "Opaque occurrence identity, replay and same-text independent events",
+      "Source digest corruption",
+      "Full versus oracle row/date selection",
+      "Category5 distractor separation",
+      "Unanswerable/missing-reference null-support assertion",
+      "Gold versus full-history source split overlap"
+    ],
+    "errors": 0,
+    "failures": 0,
+    "log": "test_data.log",
+    "methods": 31,
+    "skips": 0
+  },
+  "verified_source_sha256": {
+    "audit_source_data.py": "1cdce3d0e5dea7be69fd6d5940a080fe194b0fa38d3e89acc89c69c314f956f0",
+    "data.py": "344efbd9e368e99bead59c47af1febf306fdc7ce983b1653a62ece943a550a5b",
+    "memory_worker.py": "56d8c71987fbfd86c4f23e460c1df82214e89ce0c8d34faed1a8115ad1a8886b",
+    "test_data.py": "6029fe06d1a563de645385e84af51532b1299ffdd9a38fd694cda30879292a7c"
+  }
+}

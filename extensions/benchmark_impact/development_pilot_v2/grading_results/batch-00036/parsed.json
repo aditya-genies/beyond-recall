@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "c05fc62b4d5f9a18087d7b6b",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference; Jon explicitly says he visited Rome to clear his mind."
+    },
+    {
+      "id": "0f93a600d401475961b0c65f",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference and is directly supported by Jon's June 19 statement."
+    },
+    {
+      "id": "0554ed8793dd0230bdfdcbdf",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not provide the required six or seven days. Its statement that the supplied evidence lacks the dates is supported by the empty evidence list."
+    },
+    {
+      "id": "bc1c9913792097942d458a0b",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Omits the fair and dance competition required by the reference. The supplied evidence supports its networking and investor details; it asserts no conflicting current value."
+    },
+    {
+      "id": "d2bcc90b3bd0285e5ce7e6a0",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Provides networking events but omits the required fair and dance competition. Its stated details are supported by the evidence, with no conflicting current assertion."
+    },
+    {
+      "id": "2965a037bda31b451d75024b",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Fails to supply the required six or seven days. The empty evidence list supports its claim of insufficient supplied evidence."
+    }
+  ]
+}

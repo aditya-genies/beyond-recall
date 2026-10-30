@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "b27c413b2a24a9ac039c7285",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Omits the required count of 3. Empty evidence supports abstaining; no conflicting value is asserted."
+    },
+    {
+      "id": "a490561ef918798c9d4732a7",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "Evidence explicitly states 15 baseballs in the first three months. The answer overlooks this; its separately scoped claim of 20 is not a current conflict."
+    },
+    {
+      "id": "e525cdb1843a90298fd696ab",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Uses the relevant interest in creative summer cocktails by identifying a Hendrick's Pimm's Cup variation, supported by the evidence."
+    },
+    {
+      "id": "3feaa2bd40ff2cc2cca89070",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Last Friday relative to 23 July 2023 supplies the equivalent date, 21 July 2023. The evidence directly supports it."
+    },
+    {
+      "id": "aa8cbb3089bd4556701c134f",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Recalls the relevant preference for documentaries similar to the three named titles, satisfying the preference rubric despite offering no new recommendations."
+    },
+    {
+      "id": "12ecada6f825e1efe6878e26",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not supply the required year, 2013. The supplied evidence contains no acquisition date and supports the answer's limited evidence claim."
+    }
+  ]
+}

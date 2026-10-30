@@ -1,0 +1,35 @@
+{
+  "json_parse_pass": [
+    "reported_counter_recheck.json",
+    "new_source_metadata.json",
+    "claim_ledger.json",
+    "source_hashes.json",
+    "fetch_manifest.json",
+    "overlap_matrix.json",
+    "index_fetch_manifest.json"
+  ],
+  "proposed_bib_keys": [
+    "frieder2003scalable",
+    "robertson2009probabilistic",
+    "schelpe2026byte"
+  ],
+  "duplicate_keys": false,
+  "balanced_bib_braces": true,
+  "assessment_words": 888,
+  "output_hashes": {
+    "novelty_assessment.txt": "24b1eceaca2cbe98f70fbf07d9ec335919a84740d66cf0903ef513408519cc23",
+    "build_audit.py": "ea618ae94cb0b8b524a44308a320a1c4c5cc4c3b0634cc826e2705ef89e01aae",
+    "additions.bib": "3d0fb5dc99ffa9dfc1f4871b64d2e588b266fe52d14309e1b08ffe7f5abdaf92",
+    "reported_counter_recheck.json": "a64a8f339651aef5537eabebc792ed711653dc8be5346d949076ca3069005c5b",
+    "new_source_metadata.json": "87f59ca876834b07d80d6d7f558baad1c31188e714a1b56220e7f14a70c0ee81",
+    "claim_ledger.json": "4c451c0a373905cc02010fbb9a78c016ab2e8d868a22d46e0806e6f511757ea2",
+    "source_hashes.json": "f04d84492177bd71a52c9cf1ab6add216ce1dd0469fbcf38158e5a90ce5ce99d",
+    "fetch_manifest.json": "671968e9ee946c94820a6e2386d330feb0a233e93a785519fa7de84cb40d5794",
+    "overlap_matrix.json": "d3fe159053737bf7e7749b51b63158c9be890960bff4293adfe80bafe9d9c162",
+    "index_fetch_manifest.json": "6afcc0d901d23a687e25d82ad80275ed649636b983887c3175696e2102709b3e"
+  },
+  "full_third_party_bodies_in_output": false,
+  "manuscript_edited": false,
+  "reader_grades_read": false,
+  "model_calls": 0
+}

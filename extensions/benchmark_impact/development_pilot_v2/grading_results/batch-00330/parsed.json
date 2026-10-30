@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "8737023d903466d92ef8190e",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "The interview was yesterday relative to 11 May, meaning 10 May 2023. The incorrect assertion concerns a historical event."
+    },
+    {
+      "id": "47fa14875d055360d77b9129",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Shadow and Coco match the reference and are both named in the evidence."
+    },
+    {
+      "id": "a239db8e0001e7858d887265",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The latest explicit count is three recipes, matching the answer and reference."
+    },
+    {
+      "id": "a91b0cd308a514bc092b4caa",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The evidence explicitly identifies a coffee shop in the city as where you met Sophia."
+    },
+    {
+      "id": "e28b8cc93502fca617035b22",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The answer omits the required count of three. However, the supplied evidence lists suggestions without establishing how many citrus types the user actually used, supporting its evidence-insufficiency claim."
+    },
+    {
+      "id": "6c4a5ea97530a69740ff94d5",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "The evidence gives 15 January as the finishing date and 16 January as the starting date, establishing one day. The answer supplies no conflicting current value."
+    }
+  ]
+}

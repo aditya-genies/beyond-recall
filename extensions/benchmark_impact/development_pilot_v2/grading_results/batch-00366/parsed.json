@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "70497af0d5c97c9149064a3b",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "Matches the reference, but the evidence explicitly establishes shelter volunteering only for Maria, not John."
+    },
+    {
+      "id": "3e06f155e2a22162b1f5b8f1",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Last Friday relative to 23 July 2023 is 21 July 2023, matching the reference and evidence."
+    },
+    {
+      "id": "96b835210793703f5c103ccf",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Fails to provide the required coffee shop location, but accurately states that no evidence was supplied; abstention asserts no conflicting current location."
+    },
+    {
+      "id": "1667af68fc9816744ea2d73e",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly recognizes the hamster's name is unavailable; the evidence names only the cat, Luna."
+    },
+    {
+      "id": "2dd3a780d0dbb67e7ce92614",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "The evidence supplies both $800 and $50, establishing the required $750 difference. The answer omits that value without asserting a conflicting current price."
+    },
+    {
+      "id": "51db44fe0937c79a3c08e333",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Uses the user's interest in creative Hendrick's summer cocktails and Pimm's Cup variations; the listed suggestions are explicitly supported."
+    }
+  ]
+}

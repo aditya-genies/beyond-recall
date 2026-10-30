@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "78521ddc2fb360f839480539",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The title and URL match the reference and the recorded recommendation; no current-state contradiction is asserted."
+    },
+    {
+      "id": "0e1ae2ed553374e1414df723",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The location matches the reference and the user's explicit account of the historical meeting."
+    },
+    {
+      "id": "0a64edb27c67bd872fff7344",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The complete title and URL match both the reference and supplied recommendation."
+    },
+    {
+      "id": "7fe076211af9a95412961f43",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The answer supplies the full reference location, directly supported by the user's account."
+    },
+    {
+      "id": "7a9d181475378a2291f281f7",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The answer omits the required information, her mother. Its statement that the supplied evidence does not identify the companion is supported by the empty evidence list."
+    },
+    {
+      "id": "e61a7c0c7521ee01434fad4c",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The answer does not supply her mother as required. Its limited claim about the absence of supporting evidence accurately describes the empty evidence list."
+    }
+  ]
+}

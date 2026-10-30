@@ -1,0 +1,119 @@
+{
+  "prepared_utc": "2026-10-30T07:42:51.490774+00:00",
+  "source_cutoff": "2026-10-29 inclusive for cited prior work; this focused diagnostic audit was prepared October 30 UTC.",
+  "source_body_cache": "external only; filenames and hashes in fetch_manifest.json",
+  "exhaustive_coverage_claimed": false,
+  "papers": [
+    {
+      "key": "frieder2003scalable",
+      "title": "On Scalable Information Retrieval Systems",
+      "authors": [
+        "Ophir Frieder",
+        "David Grossman",
+        "Abdur Chowdhury"
+      ],
+      "year": 2003,
+      "doi": "10.1109/NCA.2003.1201162",
+      "url": "https://ir.cs.georgetown.edu/publications/downloads/NCA03-Keynote.pdf",
+      "source_prefix": "frieder2003",
+      "pdf_pages": 5,
+      "locations": [
+        "§2, PDF pp.1–2"
+      ],
+      "summary": "Maintaining duplicate documents changes collection term frequencies and IDF, distorting retrieval relevance; this is an explicit antecedent to the proposed mechanism.",
+      "scope_limit": "No LLM-memory runtime, delivery-failure injection, or native fixed-IDF recovery diagnostic is presented.",
+      "metadata_resolution": "Crossref page range 241–245 and three-author order match the primary five-page paper. Do not confuse the distinct single-author CIKM 2002 same-title abstract.",
+      "pdf_sha256": "e465fcbf12ca452a9e3e8945a8d901cc834ce22fbfcb48a1f799987988424e0c",
+      "third_party_full_text_redistributed": false,
+      "openalex": {
+        "id": "https://openalex.org/W2104349080",
+        "title": "On scalable information retrieval systems",
+        "doi": "https://doi.org/10.1109/nca.2003.1201162",
+        "exact_normalized_title_match": true,
+        "year_match": true
+      },
+      "semantic_scholar": {
+        "verified": false,
+        "status": "unavailable",
+        "error": "HTTP Error 429: ",
+        "note": "Public title request returned HTTP429; no fabricated S2 identifier or abstract is supplied."
+      },
+      "abstract": null,
+      "verification_status": "Primary full text and DOI identity checked; exact-title OpenAlex corroboration. S2 unavailable. Bibliographic-field conflict explicitly retained where present."
+    },
+    {
+      "key": "robertson2009probabilistic",
+      "title": "The Probabilistic Relevance Framework: BM25 and Beyond",
+      "authors": [
+        "Stephen Robertson",
+        "Hugo Zaragoza"
+      ],
+      "year": 2009,
+      "doi": "10.1561/1500000019",
+      "url": "https://www.ccs.neu.edu/home/vip/teach/IRcourse/IR_surveys/robertson_foundations.pdf",
+      "source_prefix": "robertson2009",
+      "pdf_pages": 59,
+      "locations": [
+        "§3.1, equation (3.3), printed pp.348–349",
+        "§3.4"
+      ],
+      "summary": "The probabilistic retrieval account makes collection size and document frequency explicit inputs to IDF/BM25. Fixed document content therefore does not imply fixed lexical scores after collection changes.",
+      "scope_limit": "Use as mathematical foundation, not a new empirical retry benchmark or proof that all duplication worsens QA.",
+      "metadata_resolution": "Primary PDF prints volume 3, number 4, pages 333–389. Current Crossref and OpenAlex instead attach volume 4, issues 1–2, pages 1–174 to the matching title/DOI. Preserve this conflict; bibliography fields below follow the printed primary work.",
+      "pdf_sha256": "11a9ef825dfd3fe50c8621273d02ea26b6f502b60379db9519d6c5c10de4fd25",
+      "third_party_full_text_redistributed": false,
+      "openalex": {
+        "id": "https://openalex.org/W4252076394",
+        "title": "The Probabilistic Relevance Framework: BM25 and Beyond",
+        "doi": "https://doi.org/10.1561/1500000019",
+        "exact_normalized_title_match": true,
+        "year_match": true
+      },
+      "semantic_scholar": {
+        "verified": false,
+        "status": "unavailable",
+        "error": "HTTP Error 429: ",
+        "note": "Public title request returned HTTP429; no fabricated S2 identifier or abstract is supplied."
+      },
+      "abstract": null,
+      "verification_status": "Primary full text and DOI identity checked; exact-title OpenAlex corroboration. S2 unavailable. Bibliographic-field conflict explicitly retained where present."
+    },
+    {
+      "key": "schelpe2026byte",
+      "title": "Byte-Exact Deduplication in Retrieval-Augmented Generation: A Three-Regime Empirical Analysis Across Public Benchmarks",
+      "authors": [
+        "Sietse Schelpe"
+      ],
+      "year": 2026,
+      "doi": "10.48550/arXiv.2605.09611",
+      "url": "https://arxiv.org/abs/2605.09611v1",
+      "source_prefix": "2605_09611",
+      "pdf_pages": 26,
+      "locations": [
+        "§§2.5, 3.1–3.3",
+        "§4.5b",
+        "§§5.1,5.6"
+      ],
+      "summary": "Defines byte-exact filtering over retrieved chunks. It acknowledges indexed duplicates and describes a triple-indexed synthetic corpus (§5.1); its scaling condition also triples a saturated retrieved set (§3.3).",
+      "scope_limit": "No traced ordinary-delivery-failure→physical-corpus→original-record-IDF chain or clean-IDF counterfactual was located in the inspected body. Its output-quality claims concern its own regimes; filtering a retrieved multiset is not rebuilding the canonical retrieval corpus.",
+      "metadata_resolution": "Version-1 landing/PDF and DataCite agree on title, sole author and May 10, 2026 submission; no peer-reviewed venue is asserted.",
+      "pdf_sha256": "ae04e3b14149e2e5723f37c7667cfa0a8bd7a59050c35282c0f75b86cee2d617",
+      "third_party_full_text_redistributed": false,
+      "openalex": {
+        "id": "https://openalex.org/W7160950105",
+        "title": "Byte-Exact Deduplication in Retrieval-Augmented Generation: A Three-Regime Empirical Analysis Across Public Benchmarks",
+        "doi": "https://doi.org/10.48550/arxiv.2605.09611",
+        "exact_normalized_title_match": true,
+        "year_match": true
+      },
+      "semantic_scholar": {
+        "verified": false,
+        "status": "unavailable",
+        "error": "HTTP Error 429: ",
+        "note": "Public title request returned HTTP429; no fabricated S2 identifier or abstract is supplied."
+      },
+      "abstract": null,
+      "verification_status": "Primary full text and DOI identity checked; exact-title OpenAlex corroboration. S2 unavailable. Bibliographic-field conflict explicitly retained where present."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "model": "mlx-community/Qwen3-4B-4bit",
+  "revision": "4dcb3d101c2a062e5c1d4bb173588c54ea6c4d25",
+  "wall_seconds": 2.985,
+  "prompt_sha256": "b212a616e281856a6864ead2377cce9518baf983109c517f25b6cd21b0e91b96",
+  "response_sha256": "978d9e9440661511bfcde7776ca06225e7778b662edada479e74abc129cbd4a0",
+  "input_tokens": 1261,
+  "output_tokens": 86,
+  "invalid_citations": []
+}

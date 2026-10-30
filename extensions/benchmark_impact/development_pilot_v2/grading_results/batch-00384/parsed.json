@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "54c42836afd1c42b38176024",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference and John's explicit statement about volunteering at a local school career fair."
+    },
+    {
+      "id": "4580bf5c5c3d589dda1eb1c0",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Omits the required year, 2013. Its observation that the supplied evidence gives no acquisition date is supported."
+    },
+    {
+      "id": "a148c671c03a42d0c6ebdad2",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "Does not supply the required one-day interval. No evidence is supplied to verify the answer."
+    },
+    {
+      "id": "0696368ae7007c3cc9f8006c",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "Omits the fair, networking events, and dance competition. No evidence is supplied for verification."
+    },
+    {
+      "id": "50d2ad80ac733aff5c05a0e6",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Supplies the required count of three, explicitly supported by the May 30 statement."
+    },
+    {
+      "id": "c307599527961971cfe0a648",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "The May 11 statement places the interview on May 10, not May 11. This is a historical date error, not a current-state conflict."
+    }
+  ]
+}

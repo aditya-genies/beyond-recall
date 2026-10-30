@@ -1,0 +1,518 @@
+{
+  "answers": [
+    {
+      "abstain": false,
+      "answer": "You\u2019d tried 3 of Emma\u2019s recipes as of May 30, 2023, the latest count supplied.",
+      "arm": "clean",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "0146749640257b826425198d5c4c4462de35a20a33348e6c4f6c6f2d170cccd7",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "sol",
+      "repeat": 0,
+      "response_path": "reader_results/sol/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r0/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You had tried two of Emma\u2019s recipes as of May 29, 2023; no later count is supplied.",
+      "arm": "retry",
+      "automated_task_correct": false,
+      "cited_event_ids": [
+        "f36100b59a26e63666fe32cd"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "ca753aac2df767c20b0ad2cb94d6967515be8dbe0f3df19bdf5f51b39c768ffc",
+      "prompt_sha256": "df1d4a86591c467a06623e24b1231bdd022143b16ac592df4976419fa9d0ab03",
+      "reader": "sol",
+      "repeat": 0,
+      "response_path": "reader_results/sol/df1d4a86591c467a06623e24b1231bdd022143b16ac592df4976419fa9d0ab03/r0/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You\u2019d tried 3 of Emma\u2019s recipes as of May 30, 2023, the latest count supplied.",
+      "arm": "read_event_dedup",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "0146749640257b826425198d5c4c4462de35a20a33348e6c4f6c6f2d170cccd7",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "sol",
+      "repeat": 0,
+      "response_path": "reader_results/sol/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r0/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You\u2019d tried 3 of Emma\u2019s recipes as of May 30, 2023, the latest count supplied.",
+      "arm": "event_admission",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "0146749640257b826425198d5c4c4462de35a20a33348e6c4f6c6f2d170cccd7",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "sol",
+      "repeat": 0,
+      "response_path": "reader_results/sol/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r0/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You\u2019d tried 3 of Emma\u2019s recipes as of May 30, 2023, the latest count supplied.",
+      "arm": "content_admission",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "0146749640257b826425198d5c4c4462de35a20a33348e6c4f6c6f2d170cccd7",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "sol",
+      "repeat": 0,
+      "response_path": "reader_results/sol/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r0/parsed.json"
+    },
+    {
+      "abstain": true,
+      "answer": "There is no supplied evidence to determine how many of Emma\u2019s recipes you\u2019ve tried.",
+      "arm": "no_context",
+      "automated_task_correct": false,
+      "cited_event_ids": [],
+      "evidence_supported": "uncertain",
+      "parsed_sha256": "66e4c1acc9a9ecda82c05390b1abe13fb337179d566af4e5ac24d87cb226174c",
+      "prompt_sha256": "ca5785ff48949daba94ec37f9af9746baa7b71667bbe4ca5e4112b53bf9e15f5",
+      "reader": "sol",
+      "repeat": 0,
+      "response_path": "reader_results/sol/ca5785ff48949daba94ec37f9af9746baa7b71667bbe4ca5e4112b53bf9e15f5/r0/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You\u2019d tried 3 of Emma\u2019s recipes as of May 30, 2023, the latest supplied update.",
+      "arm": "oracle_support",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "c34c12c0cd42f289faf6648e08388bf657934d0671fce0e46299e1ef9e940809",
+      "prompt_sha256": "ef786ff91aebc09ad9e06c0e03ad95ea0fac53afc2dbea37cd0bba18c072c04e",
+      "reader": "sol",
+      "repeat": 0,
+      "response_path": "reader_results/sol/ef786ff91aebc09ad9e06c0e03ad95ea0fac53afc2dbea37cd0bba18c072c04e/r0/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You last reported trying 3 of Emma\u2019s recipes on May 30, 2023.",
+      "arm": "clean",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "503218bba70fff5959996cadaffb79cd7b87299775f75c213e74248b62083102",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "sol",
+      "repeat": 1,
+      "response_path": "reader_results/sol/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r1/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You had tried two of Emma\u2019s recipes as of May 29, 2023; no later count is supplied.",
+      "arm": "retry",
+      "automated_task_correct": false,
+      "cited_event_ids": [
+        "f36100b59a26e63666fe32cd"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "ca753aac2df767c20b0ad2cb94d6967515be8dbe0f3df19bdf5f51b39c768ffc",
+      "prompt_sha256": "df1d4a86591c467a06623e24b1231bdd022143b16ac592df4976419fa9d0ab03",
+      "reader": "sol",
+      "repeat": 1,
+      "response_path": "reader_results/sol/df1d4a86591c467a06623e24b1231bdd022143b16ac592df4976419fa9d0ab03/r1/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You last reported trying 3 of Emma\u2019s recipes on May 30, 2023.",
+      "arm": "read_event_dedup",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "503218bba70fff5959996cadaffb79cd7b87299775f75c213e74248b62083102",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "sol",
+      "repeat": 1,
+      "response_path": "reader_results/sol/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r1/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You last reported trying 3 of Emma\u2019s recipes on May 30, 2023.",
+      "arm": "event_admission",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "503218bba70fff5959996cadaffb79cd7b87299775f75c213e74248b62083102",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "sol",
+      "repeat": 1,
+      "response_path": "reader_results/sol/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r1/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You last reported trying 3 of Emma\u2019s recipes on May 30, 2023.",
+      "arm": "content_admission",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "503218bba70fff5959996cadaffb79cd7b87299775f75c213e74248b62083102",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "sol",
+      "repeat": 1,
+      "response_path": "reader_results/sol/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r1/parsed.json"
+    },
+    {
+      "abstain": true,
+      "answer": "The supplied evidence is insufficient to determine how many of Emma's recipes you've tried.",
+      "arm": "no_context",
+      "automated_task_correct": false,
+      "cited_event_ids": [],
+      "evidence_supported": "uncertain",
+      "parsed_sha256": "10a9b22512f201a62b40627b851ad6dc3fe806b9330870ff48b684a2a699b361",
+      "prompt_sha256": "ca5785ff48949daba94ec37f9af9746baa7b71667bbe4ca5e4112b53bf9e15f5",
+      "reader": "sol",
+      "repeat": 1,
+      "response_path": "reader_results/sol/ca5785ff48949daba94ec37f9af9746baa7b71667bbe4ca5e4112b53bf9e15f5/r1/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You had tried 3 of Emma\u2019s recipes as of May 30, 2023, the latest supplied update.",
+      "arm": "oracle_support",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "2419e57553fea5c0ed52e6d06f2607a0c9fd34d9fc65a959aa0b510f1a5d6333",
+      "prompt_sha256": "ef786ff91aebc09ad9e06c0e03ad95ea0fac53afc2dbea37cd0bba18c072c04e",
+      "reader": "sol",
+      "repeat": 1,
+      "response_path": "reader_results/sol/ef786ff91aebc09ad9e06c0e03ad95ea0fac53afc2dbea37cd0bba18c072c04e/r1/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You have tried out 3 of Emma's recipes so far.",
+      "arm": "clean",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "10ccc7b9a491a70e242c926f65dfff29576356a11ed5b97f3a7ec9e3cd07fa38",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "qwen",
+      "repeat": 0,
+      "response_path": "reader_results/qwen/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r0/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "2",
+      "arm": "retry",
+      "automated_task_correct": false,
+      "cited_event_ids": [
+        "f36100b59a26e63666fe32cd",
+        "9ac3c6eb7ec23c404acb1641"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "467295bd46a0fbcebbb5a764c58870ca0b05369426f81757ed2ab464e8dc2e8a",
+      "prompt_sha256": "df1d4a86591c467a06623e24b1231bdd022143b16ac592df4976419fa9d0ab03",
+      "reader": "qwen",
+      "repeat": 0,
+      "response_path": "reader_results/qwen/df1d4a86591c467a06623e24b1231bdd022143b16ac592df4976419fa9d0ab03/r0/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You have tried out 3 of Emma's recipes so far.",
+      "arm": "read_event_dedup",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "10ccc7b9a491a70e242c926f65dfff29576356a11ed5b97f3a7ec9e3cd07fa38",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "qwen",
+      "repeat": 0,
+      "response_path": "reader_results/qwen/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r0/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You have tried out 3 of Emma's recipes so far.",
+      "arm": "event_admission",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "10ccc7b9a491a70e242c926f65dfff29576356a11ed5b97f3a7ec9e3cd07fa38",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "qwen",
+      "repeat": 0,
+      "response_path": "reader_results/qwen/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r0/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You have tried out 3 of Emma's recipes so far.",
+      "arm": "content_admission",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "10ccc7b9a491a70e242c926f65dfff29576356a11ed5b97f3a7ec9e3cd07fa38",
+      "prompt_sha256": "4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f",
+      "reader": "qwen",
+      "repeat": 0,
+      "response_path": "reader_results/qwen/4c4f48567626ff32087bc5c1d47e935e81cede31ac00262fe32fbe4a510bfa9f/r0/parsed.json"
+    },
+    {
+      "abstain": true,
+      "answer": "The question cannot be answered with the provided evidence.",
+      "arm": "no_context",
+      "automated_task_correct": false,
+      "cited_event_ids": [],
+      "evidence_supported": "yes",
+      "parsed_sha256": "2debf14c26e6f0cc3b59a2d57f0aa7069a86035511c6be5031b9babccab796a6",
+      "prompt_sha256": "ca5785ff48949daba94ec37f9af9746baa7b71667bbe4ca5e4112b53bf9e15f5",
+      "reader": "qwen",
+      "repeat": 0,
+      "response_path": "reader_results/qwen/ca5785ff48949daba94ec37f9af9746baa7b71667bbe4ca5e4112b53bf9e15f5/r0/parsed.json"
+    },
+    {
+      "abstain": false,
+      "answer": "You have tried out 3 of Emma's recipes.",
+      "arm": "oracle_support",
+      "automated_task_correct": true,
+      "cited_event_ids": [
+        "c013be29cdabd2738e96a10d"
+      ],
+      "evidence_supported": "yes",
+      "parsed_sha256": "aee972a8c0b97a1f1ba7ceae4ff5b7e206783a5c485b2b82d08fe223f1b99fc3",
+      "prompt_sha256": "ef786ff91aebc09ad9e06c0e03ad95ea0fac53afc2dbea37cd0bba18c072c04e",
+      "reader": "qwen",
+      "repeat": 0,
+      "response_path": "reader_results/qwen/ef786ff91aebc09ad9e06c0e03ad95ea0fac53afc2dbea37cd0bba18c072c04e/r0/parsed.json"
+    }
+  ],
+  "backend": "llama_index",
+  "caution": "Clean and read-event-dedup complete prompt bytes are identical and intentionally alias the same archived response. Restoration is not a new independent reader run. No claim is made that every retry failure is stale-state conflict; failed auxiliary calibration remains applicable.",
+  "contexts": {
+    "clean": {
+      "case": "35715f28afdec9f925d54a4f",
+      "context_sha256": "7a82e8d69c39c287e7d1469281ebea103109905af5e01ed058de5a29aaca13f8",
+      "event_ids": [
+        "f36100b59a26e63666fe32cd",
+        "9ac3c6eb7ec23c404acb1641",
+        "6d762e821e39193ad4920ca6",
+        "aaf31e1abd9c874803fc957d",
+        "c013be29cdabd2738e96a10d",
+        "7f6baef045040979870fedde",
+        "55b8ab3762d42104cf522465",
+        "bb3f7ce39356c16613d0ac60",
+        "d40c13b76eaf9464db7b3327",
+        "5d35dccf02c0e717053aefcc"
+      ],
+      "metrics": {
+        "context_records": 10,
+        "distinct_event_ids": 10,
+        "distinct_exact_strings": 10,
+        "duplicate_event_slots": 0,
+        "positive_support_coverage": 1.0
+      }
+    },
+    "content_admission": {
+      "case": "8d2d9241ace2bc05570c2122",
+      "context_sha256": "7a82e8d69c39c287e7d1469281ebea103109905af5e01ed058de5a29aaca13f8",
+      "event_ids": [
+        "f36100b59a26e63666fe32cd",
+        "9ac3c6eb7ec23c404acb1641",
+        "6d762e821e39193ad4920ca6",
+        "aaf31e1abd9c874803fc957d",
+        "c013be29cdabd2738e96a10d",
+        "7f6baef045040979870fedde",
+        "55b8ab3762d42104cf522465",
+        "bb3f7ce39356c16613d0ac60",
+        "d40c13b76eaf9464db7b3327",
+        "5d35dccf02c0e717053aefcc"
+      ],
+      "metrics": {
+        "context_records": 10,
+        "distinct_event_ids": 10,
+        "distinct_exact_strings": 10,
+        "duplicate_event_slots": 0,
+        "positive_support_coverage": 1.0
+      }
+    },
+    "event_admission": {
+      "case": "427c8ace0a00df12cc75eef9",
+      "context_sha256": "7a82e8d69c39c287e7d1469281ebea103109905af5e01ed058de5a29aaca13f8",
+      "event_ids": [
+        "f36100b59a26e63666fe32cd",
+        "9ac3c6eb7ec23c404acb1641",
+        "6d762e821e39193ad4920ca6",
+        "aaf31e1abd9c874803fc957d",
+        "c013be29cdabd2738e96a10d",
+        "7f6baef045040979870fedde",
+        "55b8ab3762d42104cf522465",
+        "bb3f7ce39356c16613d0ac60",
+        "d40c13b76eaf9464db7b3327",
+        "5d35dccf02c0e717053aefcc"
+      ],
+      "metrics": {
+        "context_records": 10,
+        "distinct_event_ids": 10,
+        "distinct_exact_strings": 10,
+        "duplicate_event_slots": 0,
+        "positive_support_coverage": 1.0
+      }
+    },
+    "no_context": {
+      "case": "fc1639394a14d297128fd5f8",
+      "context_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "event_ids": [],
+      "metrics": {
+        "context_records": 0,
+        "distinct_event_ids": 0,
+        "distinct_exact_strings": 0,
+        "duplicate_event_slots": 0,
+        "positive_support_coverage": 0.0
+      }
+    },
+    "oracle_support": {
+      "case": "58d35e291f3a28cc4f9e6204",
+      "context_sha256": "9a522da95a922a68f9915a5323c12031b1351eae35619c2b2dc2e5d5877af978",
+      "event_ids": [
+        "f36100b59a26e63666fe32cd",
+        "c013be29cdabd2738e96a10d"
+      ],
+      "metrics": {
+        "context_records": 2,
+        "distinct_event_ids": 2,
+        "distinct_exact_strings": 2,
+        "duplicate_event_slots": 0,
+        "positive_support_coverage": 1.0
+      }
+    },
+    "read_event_dedup": {
+      "case": "300b8c10fa59ef7d3676310e",
+      "context_sha256": "7a82e8d69c39c287e7d1469281ebea103109905af5e01ed058de5a29aaca13f8",
+      "event_ids": [
+        "f36100b59a26e63666fe32cd",
+        "9ac3c6eb7ec23c404acb1641",
+        "6d762e821e39193ad4920ca6",
+        "aaf31e1abd9c874803fc957d",
+        "c013be29cdabd2738e96a10d",
+        "7f6baef045040979870fedde",
+        "55b8ab3762d42104cf522465",
+        "bb3f7ce39356c16613d0ac60",
+        "d40c13b76eaf9464db7b3327",
+        "5d35dccf02c0e717053aefcc"
+      ],
+      "metrics": {
+        "context_records": 10,
+        "distinct_event_ids": 10,
+        "distinct_exact_strings": 10,
+        "duplicate_event_slots": 0,
+        "positive_support_coverage": 1.0
+      }
+    },
+    "retry": {
+      "case": "ce8a74a7d2ba4915928d5504",
+      "context_sha256": "053b0ce79cfed0c7b9da98bf0f0b11767e7d1d09a3f90bee70726efe22e02980",
+      "event_ids": [
+        "f36100b59a26e63666fe32cd",
+        "f36100b59a26e63666fe32cd",
+        "f36100b59a26e63666fe32cd",
+        "9ac3c6eb7ec23c404acb1641",
+        "9ac3c6eb7ec23c404acb1641",
+        "9ac3c6eb7ec23c404acb1641",
+        "6d762e821e39193ad4920ca6",
+        "6d762e821e39193ad4920ca6",
+        "6d762e821e39193ad4920ca6",
+        "aaf31e1abd9c874803fc957d"
+      ],
+      "metrics": {
+        "context_records": 10,
+        "distinct_event_ids": 4,
+        "distinct_exact_strings": 4,
+        "duplicate_event_slots": 6,
+        "positive_support_coverage": 0.5
+      }
+    }
+  },
+  "mechanism": "The later count remains in the physical replay store and native top60 candidates, at rank11. Three copies of each of the first three occurrences fill9 of10 context positions. Selecting distinct events restores the clean context, including the later count.",
+  "official_reference": "3",
+  "phase": "Public development-pilot witness selected after outcomes; not an independent sample or external human assessment",
+  "physical_states": {
+    "clean": {
+      "latest_evidence_records": 1,
+      "latest_native_candidate_ranks": [
+        5
+      ],
+      "older_evidence_records": 1,
+      "older_native_candidate_ranks": [
+        1
+      ],
+      "physical_records": 485
+    },
+    "native_retry": {
+      "latest_evidence_records": 1,
+      "latest_native_candidate_ranks": [
+        11
+      ],
+      "older_evidence_records": 3,
+      "older_native_candidate_ranks": [
+        1,
+        2,
+        3
+      ],
+      "physical_records": 737
+    }
+  },
+  "query_date": "2023/06/16 (Fri) 17:33",
+  "question": "How many of Emma's recipes have I tried out?",
+  "question_key": "f65dcff812445376dbc709ef",
+  "source_evidence": [
+    {
+      "date": "2023/05/29 (Mon) 04:51",
+      "event_id": "f36100b59a26e63666fe32cd",
+      "full_text_sha256": "70ebb9c8835320d5e554aa91888be123397121b69820289bc47454bd517e7c31",
+      "session_position": 15,
+      "speaker": "user",
+      "turn_index": 0,
+      "upstream_session_id": "answer_07664d43_1"
+    },
+    {
+      "date": "2023/05/30 (Tue) 06:32",
+      "event_id": "c013be29cdabd2738e96a10d",
+      "full_text_sha256": "cc1c11730384015bf29ee5692f2a9940c6b2ec747548f917bad09a7020f865e3",
+      "session_position": 44,
+      "speaker": "user",
+      "turn_index": 2,
+      "upstream_session_id": "answer_07664d43_2"
+    }
+  ],
+  "source_excerpts": {
+    "c013be29cdabd2738e96a10d": "I've tried out 3 of Emma's recipes so far",
+    "f36100b59a26e63666fe32cd": "I've already tried out two of them"
+  },
+  "source_file_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "source_question_id": "45dc21b6"
+}

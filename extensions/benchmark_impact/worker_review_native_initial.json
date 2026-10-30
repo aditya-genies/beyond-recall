@@ -1,0 +1,249 @@
+{
+  "phase": "Tiny synthetic native runtime feasibility only; no primary study cells",
+  "llm_calls": 0,
+  "offline_local_embedding_inference": true,
+  "attempts": [
+    {
+      "backend": "mem0_raw",
+      "action": "initial",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 1.023,
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"native_once\", \"phase\": \"initial\", \"before_count\": 0, \"after_count\": 4, \"submitted_events\": 4, \"redeliveries\": 1, \"wall_seconds\": 0.0786, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "initial",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 1.219,
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"native_once\", \"phase\": \"initial\", \"before_count\": 0, \"after_count\": 4, \"submitted_events\": 4, \"redeliveries\": 1, \"wall_seconds\": 0.02, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": true,
+      "returncode": 87,
+      "expected_returncode": 87,
+      "seconds": 0.56,
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 4, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0005, \"extraction_calls\": 0, \"fault\": \"Actual os._exit87 after native writes/persistence and raw witness, before logical batch acknowledgement\"}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.662,
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 4, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0004, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": true,
+      "returncode": 87,
+      "expected_returncode": 87,
+      "seconds": 0.687,
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 4, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0039, \"extraction_calls\": 0, \"fault\": \"Actual os._exit87 after native writes/persistence and raw witness, before logical batch acknowledgement\"}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.788,
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 4, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0031, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "native_retry",
+      "cut": true,
+      "returncode": 87,
+      "expected_returncode": 87,
+      "seconds": 0.582,
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 5, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0618, \"extraction_calls\": 0, \"fault\": \"Actual os._exit87 after native writes/persistence and raw witness, before logical batch acknowledgement\"}\n",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "native_retry",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.665,
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 5, \"after_count\": 6, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0581, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "native_retry",
+      "cut": true,
+      "returncode": 87,
+      "expected_returncode": 87,
+      "seconds": 0.714,
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 5, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0042, \"extraction_calls\": 0, \"fault\": \"Actual os._exit87 after native writes/persistence and raw witness, before logical batch acknowledgement\"}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "native_retry",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.786,
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"native_retry\", \"phase\": \"retry\", \"before_count\": 5, \"after_count\": 6, \"submitted_events\": 1, \"redeliveries\": 1, \"wall_seconds\": 0.0045, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.673,
+      "stdout": "",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\nFailed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.787,
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.718,
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 6, \"submitted_events\": 3, \"redeliveries\": 1, \"wall_seconds\": 0.0656, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "retry",
+      "mode": "content_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.711,
+      "stdout": "{\"backend\": \"mem0_raw\", \"mode\": \"content_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 5, \"submitted_events\": 3, \"redeliveries\": 1, \"wall_seconds\": 0.0622, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "event_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.831,
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"event_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 6, \"submitted_events\": 3, \"redeliveries\": 1, \"wall_seconds\": 0.0106, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "llama_index",
+      "action": "retry",
+      "mode": "content_admission",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.839,
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n{\"backend\": \"llama_index\", \"mode\": \"content_admission\", \"phase\": \"retry\", \"before_count\": 4, \"after_count\": 5, \"submitted_events\": 3, \"redeliveries\": 1, \"wall_seconds\": 0.0041, \"extraction_calls\": 0, \"fault\": null}\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.689,
+      "stdout": "",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\nFailed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.799,
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n",
+      "stderr": ""
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 1,
+      "expected_returncode": 1,
+      "seconds": 0.619,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<workspace>/extensions/benchmark_impact/memory_worker.py\", line 143, in <module>\n    p.add_argument('--embedding-manifest',type=Path,required=True);p.add_argument('--episode',type=Path);p.add_argument('--retry-sources',type=Path);p.add_argument('--queries',type=Path);p.add_argument('--output',type=Path);p.add_argument('--redeliveries',type=int,default=2);p.add_argument('--limit',type=int,default=60);p.add_argument('--cut',action='store_true');run(p.parse_args())\n                                                                                                                                                                                                                                                                                                                                                                              ~~~^^^^^^^^^^^^^^^^\n  File \"<workspace>/extensions/benchmark_impact/memory_worker.py\", line 118, in run\n    participant=(Mem0Participant if args.backend=='mem0_raw' else LlamaParticipant)(folder,args.cache.resolve(),args.embedding_manifest)\n  File \"<workspace>/extensions/benchmark_impact/memory_worker.py\", line 53, in __init__\n    self.cache=EmbeddingCache(cache,'mem0-fastembed-bge-small-en-v1.5',lambda text:original.embed(text,'add'),lambda text:original.embed(text,'search'),manifest)\n               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<workspace>/extensions/benchmark_impact/memory_worker.py\", line 33, in __init__\n    if prior and prior!=[(h,)]:raise ValueError('Embedding cache manifest differs')\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Embedding cache manifest differs\nException ignored while calling deallocator <function QdrantClient.__del__ at 0x115a1d850>:\nTraceback (most recent call last):\n  File \"<workspace>/.venv-memory/lib/python3.14/site-packages/qdrant_client/qdrant_client.py\", line 172, in __del__\n  File \"<workspace>/.venv-memory/lib/python3.14/site-packages/qdrant_client/qdrant_client.py\", line 181, in close\n  File \"<workspace>/.venv-memory/lib/python3.14/site-packages/qdrant_client/local/qdrant_local.py\", line 113, in close\nImportError: sys.meta_path is None, Python is likely shutting down\n"
+    },
+    {
+      "backend": "mem0_raw",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.67,
+      "stdout": "",
+      "stderr": "Failed to load spaCy lemma model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\nFailed to load spaCy full model: spaCy is not installed. Install it with: pip install mem0ai[nlp]\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 1,
+      "expected_returncode": 1,
+      "seconds": 0.728,
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n",
+      "stderr": "Traceback (most recent call last):\n  File \"<workspace>/extensions/benchmark_impact/memory_worker.py\", line 143, in <module>\n    p.add_argument('--embedding-manifest',type=Path,required=True);p.add_argument('--episode',type=Path);p.add_argument('--retry-sources',type=Path);p.add_argument('--queries',type=Path);p.add_argument('--output',type=Path);p.add_argument('--redeliveries',type=int,default=2);p.add_argument('--limit',type=int,default=60);p.add_argument('--cut',action='store_true');run(p.parse_args())\n                                                                                                                                                                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^^^\n  File \"<workspace>/extensions/benchmark_impact/memory_worker.py\", line 118, in run\n    participant=(Mem0Participant if args.backend=='mem0_raw' else LlamaParticipant)(folder,args.cache.resolve(),args.embedding_manifest)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<workspace>/extensions/benchmark_impact/memory_worker.py\", line 82, in __init__\n    self.cache=EmbeddingCache(cache,'llama-index-fastembed-bge-small-en-v1.5',self.embedding.get_text_embedding,self.embedding.get_query_embedding,manifest)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<workspace>/extensions/benchmark_impact/memory_worker.py\", line 33, in __init__\n    if prior and prior!=[(h,)]:raise ValueError('Embedding cache manifest differs')\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Embedding cache manifest differs\n"
+    },
+    {
+      "backend": "llama_index",
+      "action": "query",
+      "mode": "native_once",
+      "cut": false,
+      "returncode": 0,
+      "expected_returncode": 0,
+      "seconds": 0.825,
+      "stdout": "LLM is explicitly disabled. Using MockLLM.\n",
+      "stderr": ""
+    }
+  ]
+}

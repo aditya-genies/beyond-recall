@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "bbd543da8f10f2bfc8897615",
+      "task_correct": false,
+      "current_conflict": "yes",
+      "evidence_supported": "yes",
+      "reason": "The answer asserts 2 as the current count, contradicting the required 3. The supplied evidence supports the earlier count of 2."
+    },
+    {
+      "id": "200477fb7c3465cdc3ccb3da",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The answer matches the reference traits, positivity and determination, supported by Gina's statement."
+    },
+    {
+      "id": "1bc94ff76ec1354a0f4ebfc3",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Both the video title and URL match the reference and the recorded recommendation."
+    },
+    {
+      "id": "ccbff13ae5e6d8d7d19f2c94",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The answer supplies both required traits, supported by Gina's statement."
+    },
+    {
+      "id": "78f53dafb1cff270e75820f2",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The answer correctly recognizes that the hamster's name is unavailable; the evidence names only the cat, Luna."
+    },
+    {
+      "id": "40338e4a66a4e600769939b7",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "The evidence gives January 15 and January 16, establishing 1 day. The answer incorrectly claims insufficient evidence, but asserts no conflicting current value."
+    }
+  ]
+}

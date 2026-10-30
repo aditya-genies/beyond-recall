@@ -1,0 +1,9 @@
+{
+  "status": "AVAILABLE_ALTERNATIVE_COMPILER",
+  "compiler": "Tectonic 0.17.0",
+  "binary_sha256": "b52b5a730e2b0b33087304f7720f649603953f270a6b1c88bb031e1ae01f7f9c",
+  "version_output": "Tectonic 0.17.0",
+  "original_probe": "tex_profile.json reports missing pdflatex, not missing Tectonic packages. Preserve that original report.",
+  "allowed_packages_evidence": "The immutable compiled v0.3.0 manuscript uses article,geometry,amsmath,amssymb,booktabs,graphicx,tabularx,array,natbib,xurl,hyperref,enumitem. Same verified Tectonic engine is available; actual new-document compilation remains required.",
+  "rule": "Do not add cleveref,nicefrac,microtype,or T1/font overrides based only on this alternative profile."
+}

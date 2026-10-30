@@ -1,0 +1,155 @@
+{
+  "prepared_utc": "2026-10-30T07:42:51.491468+00:00",
+  "source_files": [
+    {
+      "path": "extensions/benchmark_impact/probe_ranking.py",
+      "sha256": "94369c501ec03aa5f5a174f42a2a91febda7fd07f7cb6f08393464992064af2c"
+    },
+    {
+      "path": "extensions/benchmark_impact/probe_fixed_idf.py",
+      "sha256": "d3a8c68260c209026f216058569a276229e77fd2c72b5159793b158dbbe384a2"
+    },
+    {
+      "path": "extensions/benchmark_impact/memory_worker.py",
+      "sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660"
+    },
+    {
+      "path": "extensions/benchmark_impact/pipeline.py",
+      "sha256": "fc98e49cb0e026fa2a73abe2efb65b4203ca32e5d7b58e13fd1ab9f7e4866a71"
+    },
+    {
+      "path": "extensions/benchmark_impact/posthoc_ranking_probe_v1/protocol.json",
+      "sha256": "68f243c8ebe69eb69defc2358ecbc58ac194c3bd7d0f3571bee787f9fef72a2c"
+    },
+    {
+      "path": "extensions/benchmark_impact/posthoc_ranking_probe_v1/protocol.sha256",
+      "sha256": "cdf4dd48b4971f85ac657bae6b2e314148f595cde019705a6b74c8c1b6313b5e"
+    },
+    {
+      "path": "extensions/benchmark_impact/posthoc_ranking_probe_v1/report.json",
+      "sha256": "4e5b12537b42538930aa2e5816ff09876062dd14f629a36f4c58e4633b50c3f4"
+    },
+    {
+      "path": "extensions/benchmark_impact/posthoc_ranking_probe_v1/summary.json",
+      "sha256": "4bab47bb94ee2d29ca0c61415cf4ce1f01b2d152e8c710bbfb999a3ab28b429b"
+    },
+    {
+      "path": "extensions/benchmark_impact/posthoc_fixed_idf_v1/protocol.json",
+      "sha256": "b2d9972706a5de194408c54907c2c2f89074bcfd6399ad172e6b133d1920ff35"
+    },
+    {
+      "path": "extensions/benchmark_impact/posthoc_fixed_idf_v1/protocol.sha256",
+      "sha256": "5956451776aaf1d86f8414f3119f965dab37c6bde9301386652489e638da2e18"
+    },
+    {
+      "path": "extensions/benchmark_impact/posthoc_fixed_idf_v1/report.json",
+      "sha256": "a76b894b111bb18d53aa40bbe32493238888cff4ff8f4b0445ba40d64d609e9a"
+    },
+    {
+      "path": ".venv-memory/lib/python3.14/site-packages/mem0/memory/main.py",
+      "sha256": "f329ca4a17af1fbefb32ac10d4cc7ae7ddbdb7435a87eb74c30915cff98b8b7c"
+    },
+    {
+      "path": ".venv-memory/lib/python3.14/site-packages/mem0/utils/scoring.py",
+      "sha256": "9a4313fda723ad05cb52278e9ef0b9b5792b71fb3b41ba6318410121022e4527"
+    },
+    {
+      "path": ".venv-memory/lib/python3.14/site-packages/mem0/vector_stores/qdrant.py",
+      "sha256": "da570579d5cad69e6f123fdfe32b725235a25604e70047666bec763ba6e2bf43"
+    },
+    {
+      "path": ".venv-memory/lib/python3.14/site-packages/qdrant_client/local/local_collection.py",
+      "sha256": "3e58b78928049acf7e46f4961693babe8ab4f03e416a7274aed8e73ff1deccb3"
+    },
+    {
+      "path": "extensions/benchmark_impact/literature/source_claim_map.json",
+      "sha256": "1157db237313ae0e07939b12617fcd3171bce716c01884616a019a6d0c0452ad"
+    },
+    {
+      "path": "extensions/benchmark_impact/literature/cue_r_protocol_audit.json",
+      "sha256": "604c0619e40e186be9312c0d87754f6a39d0cc707509d7a5a83acd0f71fa55bd"
+    }
+  ],
+  "public_third_party_bodies": [
+    {
+      "key": "2605_09611_abs",
+      "url": "https://arxiv.org/abs/2605.09611v1",
+      "sha256": "d684a7760b8c64a762cf59647f91024f4c0890bfdc467090fbabc1fe4b82288f",
+      "full_text_in_checkout": false,
+      "external_cache_filename": "2605_09611_abs.html"
+    },
+    {
+      "key": "2605_09611_html",
+      "url": "https://arxiv.org/html/2605.09611v1",
+      "sha256": "9c6f0387c8b889a3cff70fcf72f79a7735e7745c24d0d21c5f6eb9c706581c07",
+      "full_text_in_checkout": false,
+      "external_cache_filename": "2605_09611_html.html"
+    },
+    {
+      "key": "2605_09611_pdf",
+      "url": "https://arxiv.org/pdf/2605.09611v1",
+      "sha256": "ae04e3b14149e2e5723f37c7667cfa0a8bd7a59050c35282c0f75b86cee2d617",
+      "full_text_in_checkout": false,
+      "external_cache_filename": "2605_09611_pdf.pdf"
+    },
+    {
+      "key": "2605_09611_datacite",
+      "url": "https://api.datacite.org/dois/10.48550/arXiv.2605.09611",
+      "sha256": "9686c81034ecf69f07040df2cfec7ccb906b15bbd367d9cd62b910eedc70c044",
+      "full_text_in_checkout": false,
+      "external_cache_filename": "2605_09611_datacite.json"
+    },
+    {
+      "key": "robertson2009_pdf",
+      "url": "https://www.ccs.neu.edu/home/vip/teach/IRcourse/IR_surveys/robertson_foundations.pdf",
+      "sha256": "11a9ef825dfd3fe50c8621273d02ea26b6f502b60379db9519d6c5c10de4fd25",
+      "full_text_in_checkout": false,
+      "external_cache_filename": "robertson2009_pdf.pdf"
+    },
+    {
+      "key": "robertson2009_crossref",
+      "url": "https://api.crossref.org/works/10.1561/1500000019",
+      "sha256": "d329624b502a7fd5b40baee6e4340b68b8b3847f2d85e202bb67c957e2657151",
+      "full_text_in_checkout": false,
+      "external_cache_filename": "robertson2009_crossref.json"
+    },
+    {
+      "key": "grossman_publications",
+      "url": "https://www.grossmanlabs.com/publications/",
+      "sha256": "a4fdbb1626f0240cfaf0f0ce4a99081417b6dbd203cd9d510e864226a67e85f1",
+      "full_text_in_checkout": false,
+      "external_cache_filename": "grossman_publications.html"
+    },
+    {
+      "key": "qdrant_indexing_docs",
+      "url": "https://qdrant.tech/documentation/manage-data/indexing/",
+      "sha256": "25693e02043941a1c0c040f93d9b16eb3623b10e55b94cb53abb53ce7a3c85fb",
+      "full_text_in_checkout": false,
+      "external_cache_filename": "qdrant_indexing_docs.html"
+    },
+    {
+      "key": "frieder2003_pdf",
+      "url": "https://ir.cs.georgetown.edu/publications/downloads/NCA03-Keynote.pdf",
+      "sha256": "e465fcbf12ca452a9e3e8945a8d901cc834ce22fbfcb48a1f799987988424e0c",
+      "full_text_in_checkout": false,
+      "external_cache_filename": "frieder2003_pdf.pdf"
+    },
+    {
+      "key": "frieder2003_crossref",
+      "url": "https://api.crossref.org/works/10.1109/NCA.2003.1201162",
+      "sha256": "fbc39738e31144baed5e6fb1f57aee5d7d3eeedf7184a0b84c273a025c66f2a5",
+      "full_text_in_checkout": false,
+      "external_cache_filename": "frieder2003_crossref.json"
+    },
+    {
+      "key": "chowdhury2002_pdf",
+      "url": "https://ir.cs.georgetown.edu/downloads/p171-chowdhury.pdf",
+      "sha256": "0456dc816807e61b6273153d1f3ad005eac2cd228616d14db0cd226a8562b2bb",
+      "full_text_in_checkout": false,
+      "external_cache_filename": "chowdhury2002_pdf.pdf"
+    }
+  ],
+  "audit_read_boundary": "Protocols, native source, score/context report fields and public literature only; no generated reader-answer or grade files read.",
+  "no_manuscript_edits": true,
+  "model_calls_by_this_agent": 0
+}

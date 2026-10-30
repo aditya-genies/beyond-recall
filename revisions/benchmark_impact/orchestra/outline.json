@@ -1,0 +1,330 @@
+{
+  "plotting_plan": [
+    {
+      "figure_id": "fig_frozen_development_pilot_design",
+      "title": "Frozen development protocol",
+      "plot_type": "diagram",
+      "data_source": "both",
+      "objective": "Use the verified existing design figure; separate ingestion-only input, query date, oracle support and blinded judging; label raw native APIs and failed auxiliary calibration.",
+      "aspect_ratio": "21:9"
+    },
+    {
+      "figure_id": "fig_pilot_context_structure",
+      "title": "All clean/retry context pairs",
+      "plot_type": "plot",
+      "data_source": "experimental_log.md",
+      "objective": "Heatmap. Use the verified existing full24question\u00d72backend matrix, all lower/unchanged and null annotated-support cells. Counts are dependent finite-pilot observations, not a population estimate.",
+      "aspect_ratio": "21:9"
+    },
+    {
+      "figure_id": "fig_pilot_task_outcomes",
+      "title": "Exploratory task labels under every intervention",
+      "plot_type": "plot",
+      "data_source": "experimental_log.md",
+      "objective": "Heatmap of complete intervention means. Render all56dataset/backend/reader/arm means from the audited summary, retaining no-context/oracle diagnostics and task-label recoveries. Sol averages repeats within question; show no CI/p-value, expose aliases and failed auxiliary calibration. Do not rank vendor systems.",
+      "aspect_ratio": "16:9"
+    },
+    {
+      "figure_id": "fig_replay_causal_witnesses",
+      "title": "Distinct dense-displacement and hybrid-statistics mechanisms",
+      "plot_type": "diagram",
+      "data_source": "experimental_log.md",
+      "objective": "Keep the LlamaIndex recipe rank5\u219211 and3\u21922 answer trace separate from the Mem0 full-pool10/24 context-set drift and fixed-IDF24/24 restoration. Do not attribute the recipe error to BM25. Label post-hoc selection, native IDF oracle diagnostic and dependent denominators.",
+      "aspect_ratio": "16:9"
+    }
+  ],
+  "intro_related_work_plan": {
+    "introduction_strategy": {
+      "hook_hypothesis": "Preserving every memory does not guarantee preserving the evidence needed by a later answer.",
+      "problem_gap_hypothesis": "Native recovery-to-evidence causal conformance remains a candidate bounded empirical contribution; duplicate harm and IDF sensitivity are established, and novelty must not be inferred from renaming.",
+      "search_directions": [
+        "Use provided persistent conversational memory foundations and public memory benchmarks for context.",
+        "Use provided reliable-effect/RPC replay papers for recovery obligations.",
+        "Use exact verified classicIR and duplicate-evidence antecedents through2026-10-30; no unexecuted method is a defeated baseline."
+      ]
+    },
+    "related_work_strategy": {
+      "overview": "Three methodological clusters with concrete primary-source overlap; bibliography size does not substitute for novelty or empirical breadth.",
+      "subsections": [
+        {
+          "subsection_title": "Persistent memory and lifecycle evaluation",
+          "methodology_cluster": "Conversational memory architectures and benchmarks",
+          "sota_investigation_mission": "Use verified supplied papers through2026-10-30, including the user-linked Memora solely as published prior art/structural reference. Do not introduce unexecuted competitors as defeated baselines.",
+          "limitation_hypothesis": "Memory mutation and governed use are already evaluated. The specific operational replay-to-index-to-reader trace is a narrower conformance measurement, not the invention of evaluation beyond recall.",
+          "limitation_search_queries": [
+            "LongMemEval LoCoMo MemoryAgentBench mutation retention evaluation",
+            "Memora FAMA governed agent memory benchmarks recovery"
+          ],
+          "bridge_to_our_method": "Separate physical records, selected evidence and task labels while preserving existing semantic/lifecycle antecedents."
+        },
+        {
+          "subsection_title": "Repetition, ranking and corpus statistics",
+          "methodology_cluster": "Duplicate evidence and information retrieval",
+          "sota_investigation_mission": "Integrate the primary-source duplicate/IDF antecedent, BM25 reference, CUE-R, Schelpe indexed/postretrieval settings and current redundancy/diversity studies. Use precise reported scopes, including beneficial/null effects.",
+          "limitation_hypothesis": "Duplicate harm and IDF sensitivity are established. Native recovery origin and controlled causal localization are candidate application/conformance evidence, not a new ranking principle.",
+          "limitation_search_queries": [
+            "Frieder Grossman Chowdhury On Scalable Information Retrieval Systems duplicates IDF",
+            "Schelpe Byte-Exact Deduplication triple-indexed corpus CUE-R evidence duplication"
+          ],
+          "bridge_to_our_method": "Trace real native repeated writes and preserve raw point identities; distinguish visible event collapse from restoration of clean corpus statistics."
+        },
+        {
+          "subsection_title": "Reliable effects and recovery contracts",
+          "methodology_cluster": "Idempotency, replay, lineage and agent effect uncertainty",
+          "sota_investigation_mission": "Use supplied RPC, RIFL, Beldi and agent-recovery papers plus documented capture contracts. Cite mechanisms as prior art, never a proposed new transaction algorithm.",
+          "limitation_hypothesis": "Durable operation identity and completion evidence are established. The question is their observation boundary across memory effects, representation and later use.",
+          "limitation_search_queries": [
+            "RIFL completion record idempotent retry Beldi replay nondeterministic decisions",
+            "Permission to Retry LIMBO agent effect uncertainty memory recovery"
+          ],
+          "bridge_to_our_method": "Ground source-event controls and logical acknowledgement boundary; keep earlier D/P/R study separately denominated."
+        }
+      ]
+    }
+  },
+  "section_plan": [
+    {
+      "section_title": "Introduction",
+      "subsections": [],
+      "content_bullets": [
+        "Lead with the audited Emma recipe3\u21922 witness as a post-hoc example, not a new sample.",
+        "State the bounded native replay-to-evidence conformance contribution and known duplicate/IDF antecedents; no new algorithm/Q1-readiness claim."
+      ],
+      "citation_hints": [
+        "Uddin et al. (From Recall to Forgetting: Benchmarking Long-Term Memory for Personalized Agents)",
+        "Packer et al. (MemGPT: Towards LLMs as Operating Systems)",
+        "Lee et al. (Implementing Linearizability at Large Scale and Low Latency)"
+      ]
+    },
+    {
+      "section_title": "Related Work",
+      "subsections": [
+        {
+          "subsection_title": "Persistent memory and lifecycle evaluation",
+          "content_bullets": [
+            "Memory mutation and governed use are already evaluated. The specific operational replay-to-index-to-reader trace is a narrower conformance measurement, not the invention of evaluation beyond recall.",
+            "Separate physical records, selected evidence and task labels while preserving existing semantic/lifecycle antecedents."
+          ],
+          "citation_hints": [
+            "Verified sources in literature/source_claim_map.json and literature/posthoc_ranking_probe_v1_audit/claim_ledger.json"
+          ]
+        },
+        {
+          "subsection_title": "Repetition, ranking and corpus statistics",
+          "content_bullets": [
+            "Duplicate harm and IDF sensitivity are established. Native recovery origin and controlled causal localization are candidate application/conformance evidence, not a new ranking principle.",
+            "Trace real native repeated writes and preserve raw point identities; distinguish visible event collapse from restoration of clean corpus statistics."
+          ],
+          "citation_hints": [
+            "Verified sources in literature/source_claim_map.json and literature/posthoc_ranking_probe_v1_audit/claim_ledger.json"
+          ]
+        },
+        {
+          "subsection_title": "Reliable effects and recovery contracts",
+          "content_bullets": [
+            "Durable operation identity and completion evidence are established. The question is their observation boundary across memory effects, representation and later use.",
+            "Ground source-event controls and logical acknowledgement boundary; keep earlier D/P/R study separately denominated."
+          ],
+          "citation_hints": [
+            "Verified sources in literature/source_claim_map.json and literature/posthoc_ranking_probe_v1_audit/claim_ledger.json"
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "Delivery and Evidence Contracts",
+      "subsections": [
+        {
+          "subsection_title": "Occurrence identity and physical state",
+          "content_bullets": [
+            "Formalize logical event, physical point and fact projection from idea.md; same-word fresh occurrences retain distinct identities.",
+            "Distinguish delivery replay from a new independent observation, and authored sequential guards from concurrency guarantees."
+          ],
+          "citation_hints": [
+            "Lee et al. (Implementing Linearizability at Large Scale and Low Latency)",
+            "Zhang et al. (Fault-tolerant and transactional stateful serverless workflows)"
+          ]
+        },
+        {
+          "subsection_title": "Selection and task observations",
+          "content_bullets": [
+            "Define ordered context under whole-record/byte limits using the actual pipeline selector.",
+            "Define source-event-set and order conformance separately from task labels; explain stochastic repeats and complete-prompt aliases."
+          ],
+          "citation_hints": [
+            "Schelpe (Byte-Exact Deduplication in Retrieval-Augmented Generation: A Three-Regime Empirical Analysis Across Public Benchmarks)",
+            "Jain and Vedam (CUE-R: Beyond the Final Answer in Retrieval-Augmented Generation)"
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "Study Design",
+      "subsections": [
+        {
+          "subsection_title": "Public histories and native storage participants",
+          "content_bullets": [
+            "Use24developmentquestions/14histories, full cleanedLME and twoLoCoMoconversations; strip evaluator fields and preserve dated source-occurrence identity.",
+            "Document Mem0 infer=False,Qdrantlocal,LlamaIndex native persistence, realBGE and absence of an extractionLLM. Frame as local raw-document participants, not vendor inferred-memory defaults."
+          ],
+          "citation_hints": [
+            "Maharana et al. (Evaluating Very Long-Term Conversational Memory of LLM Agents)",
+            "Wu et al. (LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory)",
+            "BAAI (bge-small-en-v1.5 Model Card)",
+            "Qdrant contributors (FastEmbed)",
+            "Primary pinned LlamaIndex core0.14.25 software documentation"
+          ]
+        },
+        {
+          "subsection_title": "Failure schedule and intervention arms",
+          "content_bullets": [
+            "Use common closed physical-ID-preserving baseline clones and hash-selected occurrence redeliveries.",
+            "Describe actual post-effect/pre-logical-batch-ack exit87, fresh-process retry, seven arms and returned60/record10/evidence12000-byte limits."
+          ],
+          "citation_hints": [
+            "Python Software Foundation (os._exit documentation)",
+            "Fielding et al. (HTTP Semantics)",
+            "rohitg00 (agentmemory: Capture Delivery Contract)"
+          ]
+        },
+        {
+          "subsection_title": "Readers, grading and inference units",
+          "content_bullets": [
+            "Report149distinctprompts,298Sol/149Qwenrequests,336aliases,1008dependentobservations.",
+            "Describe blinded adapted grading75batches/447decisions, failedauxiliarycalibration, literal/token proxies and explicit metric correction.",
+            "State Sol requestedalias/unknownbackend and Qwen revision/configs; shared-source dependence/no population significance or human adjudication."
+          ],
+          "citation_hints": [
+            "OpenAI (Non-interactive Mode)",
+            "MLX Community (Qwen3-4B-4bit pinned Model Card)",
+            "LoCoMo pinned task_eval/evaluation.py",
+            "LongMemEval pinned evaluation/evaluate_qa.py"
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "Pilot Results",
+      "subsections": [
+        {
+          "subsection_title": "Physical preservation and context exposure",
+          "content_bullets": [
+            "Present native308process/84cut/196storeaudit and N/N+M/N+2M versus guard preservation.",
+            "Useall24pairsperbackend and nullsupport handling; distinguish20/24,16/24 diversity losses from1/23,4/23 support losses."
+          ],
+          "citation_hints": [
+            "Primary source data and evaluator protocol references supplied in experimental_log.md"
+          ]
+        },
+        {
+          "subsection_title": "Task labels, controls and inspectable failure",
+          "content_bullets": [
+            "Present allsevenarms and allmodel/backend/datasetmeans, gains/nulls as well as losses.",
+            "Report7losscombinations/4questions/11dependenttransitions; allread-eventdedup labels recover;5combinationrecoveriesaliascleanresponse.",
+            "Trace recipe latestcount rank5\u219211; bothreaders3\u21922; physically retainedMay30record. Label allsemanticjudgementsexploratory underfailedauxgate."
+          ],
+          "citation_hints": [
+            "Maharana et al. (Evaluating Very Long-Term Conversational Memory of LLM Agents)",
+            "Wu et al. (LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory)"
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "Mechanistic Diagnostics",
+      "subsections": [
+        {
+          "subsection_title": "Full-pool scoring with duplicate records",
+          "content_bullets": [
+            "Declare the diagnosticposthoc aftercontextdifferences,96technicalqueriesover24reusedQs.",
+            "Use nativeadditivesemantic+sigmoidBM25/entity decomposition, full-pool10set/17orderchanges andstrictreversalchecks.",
+            "Explain classicalphysicalN/df IDF dependence from source; do not confuse with RRF or infer readerharmfromeverychangedcontext."
+          ],
+          "citation_hints": [
+            "Frieder et al. (On Scalable Information Retrieval Systems)",
+            "Robertson and Zaragoza (The Probabilistic Relevance Framework: BM25 and Beyond)",
+            "Schelpe (Byte-Exact Deduplication in Retrieval-Augmented Generation: A Three-Regime Empirical Analysis Across Public Benchmarks)"
+          ]
+        },
+        {
+          "subsection_title": "Fixed-corpus counterfactual and its limits",
+          "content_bullets": [
+            "Use native Qdrant IDF corpusfilter on originalcleanIDs whileduplicatepointsremainsearchable.",
+            "Report24queries/restored24eventorders and allfivecomponents across12320original-pointcomparisons; label oracle mechanismcontrolnotdeployablepolicy.",
+            "Contrast rankinginvariance with pilot taskrecoveryunderordinaryread-eventdedup."
+          ],
+          "citation_hints": [
+            "Qdrant native IdfCorpusParams and local_collection.py primary source, hashes in diagnostic protocol",
+            "Frieder et al. (On Scalable Information Retrieval Systems)"
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "Validity and Limitations",
+      "subsections": [
+        {
+          "subsection_title": "Measurement and dependence",
+          "content_bullets": [
+            "Keep failedauxcalibration,samefamilyjudge,sourceoverlap,modelaliasuncertainty,1physicalinvalidcitation/4aliases and lackrawCLIstream visible.",
+            "Explain Unicodeproxycorrection/norawoutputchanges/no material measured differences; raw sparse-dot reconstruction not retained."
+          ],
+          "citation_hints": [
+            "Supplied corrected metric and independent audit sources"
+          ]
+        },
+        {
+          "subsection_title": "External scope and contribution boundary",
+          "content_bullets": [
+            "Two local rawdocumentAPIs,one publiccorpusdevelopmentselection,controlledfailurefrequency; not nativeinferred defaults,cloudvendorcomparison or externally replicated study.",
+            "Distinguish established IR/RPC mechanisms from application/conformance evidence; no first/breakthrough/acceptanceclaim.",
+            "Specify held-outconfirmation and independentexpertreviewstillneeded; no irrelevant self-citations."
+          ],
+          "citation_hints": [
+            "Frieder et al. (On Scalable Information Retrieval Systems)",
+            "Jain and Vedam (CUE-R: Beyond the Final Answer in Retrieval-Augmented Generation)"
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "Conclusion",
+      "subsections": [],
+      "content_bullets": [
+        "Lead with bounded evidence that preserved records need not preserve usable context or finite-pilot task labels.",
+        "Retain the useful finding that basicread-eventdeduprecoverspilotlabels although hybridstatisticsmaystilldrift.",
+        "State researchstatusandneedforconfirmation, not a journal-readiness verdict."
+      ]
+    },
+    {
+      "section_title": "Artifacts and Additional Evidence",
+      "subsections": [
+        {
+          "subsection_title": "Independent source and reproducibility",
+          "content_bullets": [
+            "Link publicGitHubbranch, frozenprotocols,licenses,model/runtimepins,rawnativearchive,reader/grade inputs and checkers.",
+            "Keepv0.3.0legacyD/P/Randinferred-Mem0countsseparate,oromitdetailedoldresultsifnotneededforthisfocusedpaper."
+          ],
+          "citation_hints": [
+            "OpenAI (Non-interactive Mode)",
+            "Qdrant contributors (FastEmbed)",
+            "BAAI (bge-small-en-v1.5 Model Card)"
+          ]
+        },
+        {
+          "subsection_title": "Authorship and assistance",
+          "content_bullets": [
+            "Useuser-suppliedAdityaMantri/IndependentResearcher/backgroundfootnote. Noemployerdata/code or funding/institutionalendorsementinference.",
+            "DisclosePaperOrchestra and AIimplementation/writingassistance, solehumanresponsibility, and automatedreviewsnotindependentpeerreview."
+          ],
+          "citation_hints": [
+            "Song et al. (PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing)"
+          ]
+        }
+      ]
+    }
+  ],
+  "research_cutoff": "2026-10-30",
+  "author_identity_override": "User explicitly requests Aditya Mantri as primary/sole author; independent affiliation plus supplied background footnote.",
+  "abstract_plan": "State local raw-document/development scope, allphysicalpreserved, concrete taskwitness, posthocIDFcounterfactual, knownmechanisms, failedauxgradinggate and no readinessclaim."
+}

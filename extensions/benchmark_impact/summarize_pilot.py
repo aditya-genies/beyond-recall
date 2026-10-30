@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 import argparse,collections,json,statistics
 import grade,pipeline,reader
+from corrected_official_metric import locomo_proxy as official_locomo_proxy,provenance as metric_provenance
 
 def load(p):return json.loads(p.read_text())
 def mean(values):
@@ -45,7 +46,8 @@ def summarize(out):
      'supported_task_correct':None if d is None else d['task_correct'] and d['evidence_supported']=='yes',
      'evidence_supported':None if d is None else d['evidence_supported'],'current_conflict_unvalidated':None if d is None else d['current_conflict'],
      'abstain':None if response is None else response['abstain'],'invalid_citation_count':None if response is None else len([c for c in response['cited_event_ids'] if c not in {e['event_id'] for e in context['context']}]),
-     'locomo_token_proxy':grade.locomo_proxy(response['answer'],q['reference'],q['category']) if response is not None and q['dataset']=='locomo' else None,
+     'locomo_token_proxy':official_locomo_proxy(response['answer'],q['reference'],q['category']) if response is not None and q['dataset']=='locomo' else None,
+     'frozen_development_proxy':grade.locomo_proxy(response['answer'],q['reference'],q['category']) if response is not None and q['dataset']=='locomo' else None,
      'context_serialized_utf8_bytes':len(json.dumps(context['context'],ensure_ascii=True,separators=(',',':')).encode()),**context['metrics']})
  groups=collections.defaultdict(list)
  for r in rows:groups[(r['backend'],r['reader'],r['dataset'],r['arm'])].append(r)
@@ -106,6 +108,7 @@ def summarize(out):
   'unique_request_status_counts':dict(transport_counts),'expected_unique_prompts':spec['unique_prompt_count'],'unique_questions':len(questions),'condition_observations':len(rows),'graded_unique_answer_question_pairs':len(decisions),'grade_failures':grade_failures,
   'summaries':summaries,'paired':paired,'clean_repeat_variation':clean_variation,
   'native_metrics':'native_phase_metrics.json: application phase includes native persistence and study witness export; whole-process time includes startup. Pure query application latency was not separately recorded. Record-count deltas are not physical disk-write counts.',
+  'token_metric_development_correction':{'reason':'The frozen proxy used stdlib re instead of upstream regex for article word boundaries. A separate corrected helper implements the intended published metric; frozen source and old proxy values are retained.','provenance':metric_provenance(),'material_tolerance':1e-12,'measured_material_differences':sum(r['locomo_token_proxy'] is not None and abs(r['locomo_token_proxy']-r['frozen_development_proxy'])>1e-12 for r in rows),'measured_bit_level_inequalities':sum(r['locomo_token_proxy'] is not None and r['locomo_token_proxy']!=r['frozen_development_proxy'] for r in rows),'maximum_absolute_difference':max(abs(r['locomo_token_proxy']-r['frozen_development_proxy']) for r in rows if r['locomo_token_proxy'] is not None)},
   'interpretation':'No p-values or population/IID interval; repetitions and shared-prompt aliases are dependent. Support annotations may be incomplete. Raw-document backends do not represent vendor inferred-memory defaults.'}
  pipeline.write(out/'observations.json',rows);pipeline.write(out/'pilot_summary.json',report)
  print(json.dumps({k:v for k,v in report.items() if k not in ('summaries','paired','grading_calibration')},indent=2))

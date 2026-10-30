@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "ef4586266bf5e244b3a48cf9",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference; Jon explicitly says he visited Rome to clear his mind."
+    },
+    {
+      "id": "cb7e0e170d27f570c387807c",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference and Jon's stated reason for the trip."
+    },
+    {
+      "id": "7434babdea8e48f0c28698d9",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Identifies the fundraiser; the May 25 evidence also supports its timing, chili cook-off, and purpose."
+    },
+    {
+      "id": "2580af2783ba35756b8ad9e1",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Around 2013 matches the reference and follows from Max being part of the family for 10 years by June 2023."
+    },
+    {
+      "id": "4c6f227c5c80e8aed5db7ac1",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly identifies the fundraiser, with additional details supported by the May 25 evidence."
+    },
+    {
+      "id": "6fd1ba1773607bf49944707e",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Around 2013 matches the reference and is supported by the stated 10 years with Max as of June 2023."
+    }
+  ]
+}

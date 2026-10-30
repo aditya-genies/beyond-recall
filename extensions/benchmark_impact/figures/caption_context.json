@@ -1,0 +1,11 @@
+{
+  "task_type": "Proposed experimental design",
+  "contextual_section_sources": [
+    "../RESEARCH_DESIGN.md",
+    "../feasibility.json"
+  ],
+  "overall_figure_intent": "Show proposed public-history ingestion, delivery conditions, memory/control variants, fixed-budget retrieval, reader and blinded evaluator while isolating evaluator labels. Separate state invariance from paired stochastic task outcomes without presenting results.",
+  "detailed_figure_description": "A labeled planned left-to-right design takes public histories through a separate history-only participant, delivery conditions, native memory/control variants, fixed-budget retrieval, reader and blinded evaluator. A query-time question path and evaluator-only reference path are separate; lower observation boxes distinguish state/context checks from stochastic paired task outcomes. No numeric performance values are shown.",
+  "caption_prompt_source": "PaperOrchestra skills/plotting-agent/references/caption-prompt.md",
+  "caption": "Overview of the proposed benchmark-impact design, not a frozen protocol or executed result. A separate ingestion participant receives permitted public-history text, dates and source identity without task questions or evaluator labels. Proposed delivery conditions include clean delivery and clean repeats, repetition of the same logical event, and process cuts after effects but before acknowledgement followed by retry. Native memory and candidate authored controls feed fixed-budget retrieval and a reader; task questions enter only at query time and reference labels remain with an evaluator blinded to arm identity. State replay invariance and paired QA/action changes against stochastic clean-repeat controls are separate checks. Legitimate new observations and updates are planned controls; no intervention advantage is asserted."
+}

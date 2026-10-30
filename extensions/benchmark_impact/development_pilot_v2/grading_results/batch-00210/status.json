@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "requested_model": "gpt-6.1-sol",
+  "returncode": 0,
+  "wall_seconds": 15.456,
+  "usage": [
+    {
+      "input_tokens": 25036,
+      "cached_input_tokens": 12288,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 435,
+      "reasoning_output_tokens": 55
+    }
+  ],
+  "item_types": [
+    "agent_message"
+  ],
+  "tool_event_types": [],
+  "prompt_sha256": "c90aa83f48cb0b4b15b7e7f554d2a098237444111a3a6bcc1c04ccac3c89f210",
+  "response_sha256": "0cdf82e194f240c065da4141da2f7d8ef375e25a09a8f5779061c6fdc259de6b"
+}

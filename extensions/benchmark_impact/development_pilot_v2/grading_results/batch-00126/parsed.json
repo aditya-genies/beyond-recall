@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "c7cb3a4d3ede8365cdfa6dc1",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not recall or use the user's mixology background or preferences. The empty evidence supports the stated lack of supplied information; no conflicting current value is asserted."
+    },
+    {
+      "id": "096d7ae0acf03106e3ffec2e",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not supply positivity and determination as the reason. The evidence supports the praise described and lacks an explicit mentoring connection; no current-state contradiction is asserted."
+    },
+    {
+      "id": "b284ff1dc85d175ade03840e",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not answer with positivity and determination. The supplied praise supports its summary and contains no explicit mentoring explanation; no conflicting current value is asserted."
+    },
+    {
+      "id": "d0d44b117169b9adbb0ce015",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Gives the complete reference location, directly supported by the user's statement about meeting Sophia."
+    },
+    {
+      "id": "0cb09d568d57992fe289e579",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Omits the required personal preference and recommendation. Its statement that no preference evidence was supplied matches the empty evidence; omission is not a current conflict."
+    },
+    {
+      "id": "66ee20a3cfcac53deaed7dd6",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the complete reference answer and the user's explicit statement that they met Sophia at a coffee shop in the city."
+    }
+  ]
+}

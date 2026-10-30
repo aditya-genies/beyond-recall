@@ -1,0 +1,31 @@
+{
+  "phase": "Post-hoc mechanistic diagnostic after seeing pilot context-set differences, before interpreting task grades; not held-out confirmation.",
+  "questions": 24,
+  "native_search_calls": 96,
+  "by_pool": {
+    "60": {
+      "different_selected_event_sets": 16,
+      "different_selected_event_orders": 19,
+      "questions_with_component_changes": {
+        "semantic_score": 0,
+        "bm25_score": 24,
+        "entity_boost": 0,
+        "max_possible_score": 0,
+        "final_score": 24
+      },
+      "common_original_points_compared": 944
+    },
+    "10000": {
+      "different_selected_event_sets": 10,
+      "different_selected_event_orders": 17,
+      "questions_with_component_changes": {
+        "semantic_score": 0,
+        "bm25_score": 24,
+        "entity_boost": 0,
+        "max_possible_score": 0,
+        "final_score": 24
+      },
+      "common_original_points_compared": 12320
+    }
+  }
+}

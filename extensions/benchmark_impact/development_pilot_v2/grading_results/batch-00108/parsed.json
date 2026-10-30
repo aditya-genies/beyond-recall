@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "c7b5b50eda26e06b2538ffb9",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference; 'yesterday' on May 11, 2023 establishes May 10. No conflicting current assertion."
+    },
+    {
+      "id": "004807660f29cb4444495f34",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference and Jon's explicit statement that he visited Rome to clear his mind."
+    },
+    {
+      "id": "48d39ccc7af8680b393720f9",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Includes the required positivity and determination; Gina's July 9 message also supports the added qualities. No current contradiction."
+    },
+    {
+      "id": "d7596eb3ce550217ad670478",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference; Gina's May 11 statement places the interview on May 10. No conflicting current assertion."
+    },
+    {
+      "id": "0c4bb298ff2352bd159d9db2",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference and Jon's explicit explanation for his Rome trip."
+    },
+    {
+      "id": "634ebf867ddebdadba11b436",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Supplies positivity and determination as required; the additional qualities are supported by Gina's July 9 message. No current contradiction."
+    }
+  ]
+}

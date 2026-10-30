@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "0d5a7ee7861599af5d126551",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "Matches the reference, but the evidence establishes Maria's shelter volunteering without establishing John's."
+    },
+    {
+      "id": "fa8e0bde1b8f291f9b3a63b6",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "The dated statements establish March 25 and March 31, a six-day interval. The question concerns historical events."
+    },
+    {
+      "id": "a427f5fd9bb717fe64606c3e",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Fails to provide the required count of three. The supplied evidence does not clearly establish how many citrus types the user actually used, as suggestions do not establish use."
+    },
+    {
+      "id": "b5767f72fee36588af3e57ca",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly recognizes the information is unavailable; the evidence names a cat, Luna, but no hamster."
+    },
+    {
+      "id": "32d7ee537dd339542757cad4",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not supply the required date, May 10, 2023. With no supplied evidence, its statement about evidentiary insufficiency is supported."
+    },
+    {
+      "id": "a7c3fe4c81c02bd316b9ad9e",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not provide the required six-day interval. With no supplied evidence, its statement about evidentiary insufficiency is supported."
+    }
+  ]
+}

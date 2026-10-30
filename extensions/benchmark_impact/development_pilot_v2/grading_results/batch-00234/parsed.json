@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "d888546348e51c2c195628f5",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly recognizes that the supplied evidence gives no hamster name."
+    },
+    {
+      "id": "8be6f871b3ba31cb24cbe4eb",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Includes positivity and determination; the additional qualities also appear in Gina\u2019s praise."
+    },
+    {
+      "id": "2f800360841b2bc32e0ca961",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Provides the exact required title and link, supported by the May 23 recommendation."
+    },
+    {
+      "id": "f5559f58a6d3e522daf9d042",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Supplies both reference qualities, with additional qualities supported by Gina\u2019s statement."
+    },
+    {
+      "id": "ac3a7de62907cb0118e07233",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the required video title and URL and the dated recommendation."
+    },
+    {
+      "id": "26b6f19b91807b0f18017595",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly states that the supplied evidence does not identify the hamster\u2019s name."
+    }
+  ]
+}

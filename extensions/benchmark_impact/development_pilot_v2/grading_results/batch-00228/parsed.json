@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "db004109b234eca6f518592c",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "Uses the documented viewing preference appropriately, but the supplied evidence does not establish the recommended titles' themes."
+    },
+    {
+      "id": "b5148acd1f3b777a186729b3",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Omits the required year, 2013. Its statement that the supplied evidence lacks the acquisition date is supported."
+    },
+    {
+      "id": "fb4b8851017fc5dbd5c74c58",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The dated reading statements establish January 15 and January 16, supporting the one-day interval."
+    },
+    {
+      "id": "2a2ac9cc4c5749cf268fec9e",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Omits the required year, 2013. The supplied evidence indeed does not state when John got Max."
+    },
+    {
+      "id": "41ef83ec56c0d2602489f943",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly supplies the one-day interval and both dates directly supported by the evidence."
+    },
+    {
+      "id": "721f6ff062bc54d78c166001",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Recalls and uses the relevant viewing preference, satisfying the supplied rubric. The evidence contains no additional documentary recommendations."
+    }
+  ]
+}

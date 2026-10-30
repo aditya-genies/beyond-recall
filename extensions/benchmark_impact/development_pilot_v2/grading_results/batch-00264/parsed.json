@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "6e5525d6a15c1e3bd8624498",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly recognizes that the hamster\u2019s name is unavailable; the evidence only names the cat Luna."
+    },
+    {
+      "id": "966daee3ac0e4d9317b39f9b",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Uses the user\u2019s documented interest in a creative Pimm\u2019s Cup variation, grapefruit syrup, muddled cucumber, and a Collins glass."
+    },
+    {
+      "id": "8d212d9f118125e2fafcaaf0",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly states that the supplied evidence does not provide the hamster\u2019s name."
+    },
+    {
+      "id": "28fe5b51c194e6a6ddd1053f",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Recommends the preferred cocktail variation using the documented recipe and the user\u2019s planned customizations."
+    },
+    {
+      "id": "4807f618608535bea7746366",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Gives the required count of 3 and accurately dates it to the latest supplied update."
+    },
+    {
+      "id": "aba90d8d61862e26af5440d1",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Reports the updated count of 3, supported by the May 30 statement, with no conflicting current assertion."
+    }
+  ]
+}

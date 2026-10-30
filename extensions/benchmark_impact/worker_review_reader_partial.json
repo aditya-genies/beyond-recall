@@ -1,0 +1,9 @@
+{
+  "status": "NOT_READY",
+  "phase": "Initial inventory only, before reader audit implementation; not a partial correctness certificate",
+  "observed_sol_statuses": 219,
+  "observed_qwen_statuses": 149,
+  "declared_statuses": 447,
+  "missing_at_that_inventory": 79,
+  "model_calls_by_this_inventory": 0
+}

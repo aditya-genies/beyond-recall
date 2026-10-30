@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "f720a97ca846b93fa5bec817",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Mom is equivalent to mother; the May 4 statement places their dinner on May 3."
+    },
+    {
+      "id": "f93dd51005c89e4870a7e5bf",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The answer omits the required count of 15. Its statement that the supplied evidence is insufficient is supported by the empty evidence list."
+    },
+    {
+      "id": "09e1f3d2a039c555563da4dd",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The July 11 statement explicitly reports 15 baseballs in the first three months. This historical count asserts no conflicting current value."
+    },
+    {
+      "id": "2c768175dc1cd928f0439613",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Mom is equivalent to mother; the May 4 statement places their dinner on May 3."
+    },
+    {
+      "id": "8c10f74b0afd28259efb2305",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The answer omits the required count of 15. Its statement that the supplied evidence is insufficient is supported by the empty evidence list."
+    },
+    {
+      "id": "cace0612525d2c03b9306975",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The July 11 statement explicitly supports 15 baseballs during the first three months; the later count concerns a different period."
+    }
+  ]
+}

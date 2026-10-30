@@ -1,0 +1,49 @@
+{
+  "prepared_utc": "2026-10-30T07:42:51.489466+00:00",
+  "scope": "Recompute supplied case counters only. This does not substitute for the independent raw-store/vector/trace audit.",
+  "reader_answers_or_grades_read": false,
+  "model_calls": 0,
+  "ranking_probe": {
+    "60": {
+      "questions": 24,
+      "different_selected_event_sets": 16,
+      "different_selected_event_orders": 19,
+      "questions_with_component_changes": {
+        "semantic_score": 0,
+        "bm25_score": 24,
+        "entity_boost": 0,
+        "max_possible_score": 0,
+        "final_score": 24
+      },
+      "summed_common_original_point_comparisons": 944
+    },
+    "10000": {
+      "questions": 24,
+      "different_selected_event_sets": 10,
+      "different_selected_event_orders": 17,
+      "questions_with_component_changes": {
+        "semantic_score": 0,
+        "bm25_score": 24,
+        "entity_boost": 0,
+        "max_possible_score": 0,
+        "final_score": 24
+      },
+      "summed_common_original_point_comparisons": 12320
+    }
+  },
+  "fixed_idf": {
+    "questions": 24,
+    "different_event_sets": 0,
+    "different_event_orders": 0,
+    "questions_with_component_changes": {
+      "semantic_score": 0,
+      "bm25_score": 0,
+      "entity_boost": 0,
+      "max_possible_score": 0,
+      "final_score": 0
+    },
+    "summed_original_point_comparisons": 12320
+  },
+  "denominators": "24 pilot questions in 14 scopes; repeated original-point/query comparisons are not distinct documents or independent task samples.",
+  "independent_evidence_audit_status_at_review": "Reported by parent as in progress; not asserted passed here."
+}

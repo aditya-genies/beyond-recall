@@ -1,0 +1,88 @@
+{
+  "decisions": [
+    {
+      "id": "e5a3744df8f04503be601d9e",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly distinguishes previous tea from current coffee."
+    },
+    {
+      "id": "e29c6b5f4943e965322e0282",
+      "task_correct": false,
+      "current_conflict": "yes",
+      "evidence_supported": "no",
+      "reason": "Asserts tea remains current despite the exclusive correction to coffee."
+    },
+    {
+      "id": "4a1370b5dc6c5a37b144254b",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Coffee matches the reference and latest evidence."
+    },
+    {
+      "id": "e3cd6f47f59a67437521897e",
+      "task_correct": false,
+      "current_conflict": "yes",
+      "evidence_supported": "no",
+      "reason": "The asserted interval of 80 days contradicts the established 18 days."
+    },
+    {
+      "id": "625db9ba9122cc9342ce5168",
+      "task_correct": true,
+      "current_conflict": "yes",
+      "evidence_supported": "no",
+      "reason": "The rubric accepts an off-by-one count, but 19 still contradicts the evidenced 18."
+    },
+    {
+      "id": "2b724576ed07d41c717480aa",
+      "task_correct": false,
+      "current_conflict": "uncertain",
+      "evidence_supported": "uncertain",
+      "reason": "Fails to recognize unavailable information; no evidence establishes or refutes seventeen."
+    },
+    {
+      "id": "b57abb6d26601af9701f032a",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly recognizes that the empty evidence supplies no code."
+    },
+    {
+      "id": "c9a67b62292a20aa1132ce81",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Provides both required colors, exactly as evidenced."
+    },
+    {
+      "id": "d86b3098bb7f710bcd1995d6",
+      "task_correct": false,
+      "current_conflict": "yes",
+      "evidence_supported": "no",
+      "reason": "Asserts the superseded preference as current."
+    },
+    {
+      "id": "3778518314ec7cf1574ddc38",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Red is supported, but omitting blue makes the answer incomplete without asserting a conflicting value."
+    },
+    {
+      "id": "9a5213613ec2903a9aa6357d",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Accurately answers the historical question and describes the later change."
+    },
+    {
+      "id": "60012e52c3288a644d174b19",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "Omits the required coffee answer without asserting a conflicting preference; the evidence supplies the answer."
+    }
+  ]
+}

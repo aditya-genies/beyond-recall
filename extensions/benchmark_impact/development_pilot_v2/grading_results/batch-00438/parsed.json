@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "178f1c79c80d53160f087d31",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference and the user's explicit statement about meeting Sophia."
+    },
+    {
+      "id": "c1edfbc0848a30abb10a810a",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "Dated statements establish January 15 and January 16, a one-day gap. The question concerns historical events."
+    },
+    {
+      "id": "7948dac985c15b74b5fba7e3",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "The evidence establishes a one-day gap, contradicting the claim that it cannot be determined. No current state is asserted."
+    },
+    {
+      "id": "fda538e89f1abecb6072ae81",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Supplies both required names, Coco and Shadow, supported by Maria's statements."
+    },
+    {
+      "id": "d6c54be046eb8f2d45ec2ab8",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Fails to supply 2013, inferable from ten years together as of 2023. Its narrower statement that no specific date is provided is supported."
+    },
+    {
+      "id": "c2181964c555a7ecbdd9d416",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly identifies the fundraiser Maria was preparing for on May 25; the evidence explicitly states this."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+Focused novelty assessment: post-hoc ranking and fixed-IDF diagnostics
+Prepared October 30, 2026 UTC. Public sources and independent study inputs only.
+
+VERDICT
+The duplicate-document→IDF→changed ranking phenomenon is established information retrieval, not a new discovery. A defensible contribution here is a reproducible, narrowly scoped native-runtime witness: a modeled ordinary post-effect delivery retry changes corpus statistics and thus scores of untouched original memories; event deduplication after ranking does not always restore clean contexts. The fixed-IDF counterfactual strengthens this causal explanation in the pinned implementation. It does not make the phenomenon, recovery protocol, or remedy algorithm new. This result alone does not establish leading-journal novelty or practical reader harm.
+
+DIRECT ANTECEDENTS
+Frieder, Grossman and Chowdhury (NCA 2003), §2, directly explain that maintained document duplicates distort IDF and relevance. Credit this explicitly. Primary author-institution PDF: https://ir.cs.georgetown.edu/publications/downloads/NCA03-Keynote.pdf
+
+Robertson and Zaragoza (2009) provide the collection-dependent probabilistic retrieval foundation. This supports the score dependency, rather than an empirical delivery-fault claim. Primary text: https://www.ccs.neu.edu/home/vip/teach/IRcourse/IR_surveys/robertson_foundations.pdf
+
+Schelpe (2026) is a close RAG predecessor: retrieved-chunk deduplication, indexed-duplicate discussion, a synthetic triple-indexed corpus, and separate post-retrieval repetition. Its inspected body does not trace recovery-driven IDF drift or compare original-record score components under clean-statistics restoration. https://arxiv.org/abs/2605.09611v1
+
+CUE-R perturbs evidence after retrieval. RNG-Score investigates diversification on fixed pools and expressly excludes exactly coincident copies from its suppression mechanism. Ross et al. study constructed redundancy/diversity contexts; Ke et al. permit repeated passages within a jointly learned bridge. These predecessors rule out broad novelty claims about repetition, context composition or diversity affecting RAG. Relevant source details/hashes are in overlap_matrix.json and the earlier preserved literature audit. Do not contrast all prior work as prompt-only: Schelpe explicitly discusses indexed duplicates.
+
+WHAT THE SUPPLIED EVIDENCE SUPPORTS
+The ranking report contains 24 pilot questions in 14 scopes, with 96 native searches across clean/retry states and two requested depths. Re-adding its case counters gives:
+- At requested top_k=60: 16 changed selected-event sets and 19 changed orders.
+- At top_k=10000: 10 changed sets and 17 changed orders after the same event-dedup/packing rule.
+- At both depths, every query has some changed original-point BM25 and final components; compared semantic/entity/divisor components remain unchanged at 1e-12 tolerance.
+These are query counts, not counts of unique documents or independent experimental units. The 12,320 full-pool common-point comparisons repeatedly compare originals across questions.
+
+The fixed-IDF diagnostic retains duplicate points as searchable candidates but scopes native lexical statistics to known original clean physical IDs. Its 24 reused questions report zero residual changed original-point score components and zero changed selected-event orders/sets. In the pinned scorer, this is a strong causal layer intervention: the observed full-pool differences depend on corpus statistics, beyond candidate crowding alone. It is explicitly post hoc, reuses the development pilot, and uses clean-ID information unavailable to an ordinary deployment. It is not another 24 independent samples or a demonstrated operational policy.
+
+The dense-only LlamaIndex comparison is a reference contrast. Changing retrieval engines is not by itself a controlled IDF ablation; the within-native fixed-IDF intervention supplies the stronger evidence. This literature audit re-adds reported counters and reads source code; it does not replace the separate raw-store/vector/trace audit, which was still underway when this report was prepared. No reader-answer or grade files were inspected.
+
+PRECISE IMPLEMENTATION INTERPRETATION
+The inspected Mem0 2.2.1 public-source path uses a query-length-dependent sigmoid on raw keyword scores, then additive semantic + normalized-BM25 + entity scoring with a semantic gate and signal-dependent divisor. It is not reciprocal-rank fusion or min/max normalization. The pinned Qdrant-local IDF implementation counts live physical points possessing sparse vectors. Its official documentation already states that IDF depends on currently stored documents. Changing physical multiplicity can therefore change retrieval state while preserving original text and vector bytes. Late result collapse does not recompute those earlier statistics. Conditional algebra is recorded in claim_ledger.json; it is not a new theorem.
+
+CLAIMS TO REJECT
+Do not call this the first duplicate-induced ranking effect, a new idempotency solution, semantic corruption, proof that hybrid retrieval is inferior, or proof that dense retrieval is universally invariant. Do not infer that changed contexts lose relevant evidence or change answer correctness, safety, latency or token use. The 10/24 set difference is not a QA failure rate or a production prevalence estimate. A same-text new observation need not be a retry; legitimate event identity and lifetime controls remain necessary. No conclusion about other Mem0 releases, server/cloud Qdrant, or all memory architectures follows from local evidence.
+
+WHAT REMAINS A RESEARCH GAP
+The measured engineering boundary is useful: logical-event dedup after ranking can leave recovery-induced lexical-state effects intact. A stronger general empirical claim would require a separately frozen held-out campaign, meaningful event/source clusters, clean-repeat variability controls, multiple documented retrieval configurations, and independent task/evidence evaluation. Such evidence may show gains, losses or negligible effects. It should test this explanation rather than search for favorable failures. These are research limitations, not missing evidence to be concealed with a broader title or more citations.
+
+VERIFICATION NOTES
+Three added scholarly identities were checked against primary bodies and DOI metadata; exact-title/year OpenAlex matches corroborate them. All three fresh public Semantic Scholar requests returned HTTP429; no S2 IDs or abstracts are fabricated. Robertson's printed PDF bibliographic fields conflict with current Crossref/OpenAlex fields; additions.bib follows the primary printed work and preserves the conflict in new_source_metadata.json. Full third-party texts remain outside the repository. No manuscript, experiment, or prior evidence file was edited. This is a targeted closest-source audit, not exhaustive coverage.

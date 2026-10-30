@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "b9750b1a4036068a25cb3766",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference; Jon explicitly says he visited Rome to clear his mind."
+    },
+    {
+      "id": "eeba2ffeef6a38c5561757d4",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Supplies the complete location, directly confirmed by the user's statement about meeting Sophia."
+    },
+    {
+      "id": "f53cd706a49eb347e44d810d",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference; Jon explicitly states the trip was to clear his mind."
+    },
+    {
+      "id": "5c7e12eb11897bb2f2f53195",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Gives the complete reference location, which the user explicitly supplies in the evidence."
+    },
+    {
+      "id": "06f0fee744d6e041081ba1da",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Includes both required names, Coco and Shadow, supported by Maria's August statements."
+    },
+    {
+      "id": "ebe07bc88604184de4d58066",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Includes both reference names, each supported by the supplied August evidence."
+    }
+  ]
+}

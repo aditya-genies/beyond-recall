@@ -1,0 +1,69 @@
+{
+  "semantic_scholar_requests_sequential_min_spacing_seconds": 1.1,
+  "full_bodies_external": true,
+  "records": [
+    {
+      "key": "schelpe2026byte_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=Byte-Exact+Deduplication+in+Retrieval-Augmented+Generation%3A+A+Three-Regime+Empirical+Analysis+Across+Public+Benchmarks&limit=3&fields=title%2Cyear%2Cauthors%2Cabstract%2CexternalIds",
+      "retrieved_utc": "2026-10-30T07:39:53.253832+00:00",
+      "full_text_or_code_in_repository": false,
+      "status": "unavailable",
+      "error": "HTTP Error 429: "
+    },
+    {
+      "key": "schelpe2026byte_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2605.09611",
+      "retrieved_utc": "2026-10-30T07:39:54.487402+00:00",
+      "full_text_or_code_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.48550/arXiv.2605.09611",
+      "content_type": "application/json",
+      "status": "saved_external_cache",
+      "sha256": "23ef437370af78be04d4f64a8220a203eef2b44fb7feab43305a98683426161c",
+      "bytes": 11778,
+      "cache_filename": "schelpe2026byte_openalex.json"
+    },
+    {
+      "key": "frieder2003scalable_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=On+scalable+information+retrieval+systems&limit=3&fields=title%2Cyear%2Cauthors%2Cabstract%2CexternalIds",
+      "retrieved_utc": "2026-10-30T07:39:54.833682+00:00",
+      "full_text_or_code_in_repository": false,
+      "status": "unavailable",
+      "error": "HTTP Error 429: "
+    },
+    {
+      "key": "frieder2003scalable_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1109/NCA.2003.1201162",
+      "retrieved_utc": "2026-10-30T07:39:56.013336+00:00",
+      "full_text_or_code_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1109/NCA.2003.1201162",
+      "content_type": "application/json",
+      "status": "saved_external_cache",
+      "sha256": "5338c138b33e8fe503c4874d1b4ddc44d828e5f573e86f651189d64e01d76b9a",
+      "bytes": 11561,
+      "cache_filename": "frieder2003scalable_openalex.json"
+    },
+    {
+      "key": "robertson2009probabilistic_s2",
+      "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=The+Probabilistic+Relevance+Framework%3A+BM25+and+Beyond&limit=3&fields=title%2Cyear%2Cauthors%2Cabstract%2CexternalIds",
+      "retrieved_utc": "2026-10-30T07:39:56.195510+00:00",
+      "full_text_or_code_in_repository": false,
+      "status": "unavailable",
+      "error": "HTTP Error 429: "
+    },
+    {
+      "key": "robertson2009probabilistic_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1561/1500000019",
+      "retrieved_utc": "2026-10-30T07:39:57.420737+00:00",
+      "full_text_or_code_in_repository": false,
+      "http_status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1561/1500000019",
+      "content_type": "application/json",
+      "status": "saved_external_cache",
+      "sha256": "e8eb86fdc17f9b59c0dc6a0c07a00c0c75f8e1db584ae87d293ab90b536d1f53",
+      "bytes": 12659,
+      "cache_filename": "robertson2009probabilistic_openalex.json"
+    }
+  ]
+}

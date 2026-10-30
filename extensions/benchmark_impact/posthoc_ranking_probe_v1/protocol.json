@@ -1,0 +1,17 @@
+{
+  "phase": "Post-hoc mechanistic diagnostic after seeing pilot context-set differences, before interpreting task grades; not held-out confirmation.",
+  "pilot_protocol_sha256": "dd5280476348b1b60ec9bd91626b6b909b8ae4697233f1a6f8a0a8631035d9ea",
+  "pilot_contexts_sha256": "030283af4416425724a5a62bb4ebeef1f2e2f1654604c8f89452a42f9d6eb258",
+  "source_hashes": {
+    "probe_ranking.py": "94369c501ec03aa5f5a174f42a2a91febda7fd07f7cb6f08393464992064af2c",
+    "memory_worker.py": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+    "main.py": "f329ca4a17af1fbefb32ac10d4cc7ae7ddbdb7435a87eb74c30915cff98b8b7c",
+    "scoring.py": "9a4313fda723ad05cb52278e9ef0b9b5792b71fb3b41ba6318410121022e4527",
+    "qdrant.py": "da570579d5cad69e6f123fdfe32b725235a25604e70047666bec763ba6e2bf43",
+    "local_collection.py": "3e58b78928049acf7e46f4961693babe8ab4f03e416a7274aed8e73ff1deccb3"
+  },
+  "selection": "All24pilot questions/14scopes, Mem0 raw participant only. LlamaIndex visible-event dedup comparison uses retained pilot contexts.",
+  "interventions": "Copies of existing clean and native_retry stores; native explain=True queries at top_k60 and10000. Full pool removes finite semantic/keyword candidate truncation. No model extraction, original-store mutations or new task samples.",
+  "attribution": "Report score-component changes and contextual differences separately. Do not assume a fusion algorithm or attribute all ranking changes to IDF without matching component evidence.",
+  "claim_limit": "This diagnostic does not establish reader harm, novelty, production incidence or vendor-cloud behavior."
+}

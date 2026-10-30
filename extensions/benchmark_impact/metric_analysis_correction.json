@@ -1,0 +1,45 @@
+{
+  "analysis_version": "locomo-official-regex-v1",
+  "authored_unicode_edge_material_differences": 104,
+  "corrected_metric_source_sha256": "76cae0d1e562cc1c70e9bcc6b5b1c09b80e44b8fed01aa137fea565c27320239",
+  "corrected_total_official_ast_comparisons": 205,
+  "frozen_grade_source_sha256": "aa9903a5d74744cec2572627c79b08f034e1e9f310a0d2f940ff72d223cf6768",
+  "frozen_protocols_changed": false,
+  "interpretation": "No material measured pilot score change at tolerance1e-12;131rounding-only differences are not Unicode effect. Known global frozen-proxy limitation retained. Corrected evaluator version applied only in unfrozen analysis, with both values retained.",
+  "issue": "Frozen grade.locomo_proxy uses stdlib re word boundaries; pinned official code uses third-party regex. Combining marks/joiners can change article removal and token F1.",
+  "measured": {
+    "max_measured_frozen_absolute_difference": 1.1102230246251565e-16,
+    "measured_frozen_proxy_rounding_only_differences": 131,
+    "measured_locomo_condition_scores": 504,
+    "measured_locomo_unique_physical_response_files": 237,
+    "metric_comparison_tolerance": 1e-12
+  },
+  "measured_material_score_differences": 0,
+  "model_outputs_regenerated_or_changed": false,
+  "new_unicode_fixture_comparisons": 140,
+  "no_model_calls_by_metric_audit": true,
+  "not_outside_replication": true,
+  "original_ascii_fixture_comparisons": 65,
+  "original_frozen_metric_preserved": true,
+  "pure_test_methods": 6,
+  "reader_audit": "worker_review_reader_v2.json",
+  "source_and_runtime": {
+    "analysis_version": "locomo-official-regex-v1",
+    "correction": "Use official regex article word boundaries; retain frozen-proxy scores and all model outputs separately.",
+    "interpretation": "Category-specific published token overlap/abstention proxy, not semantic task accuracy.",
+    "official_commit": "3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376",
+    "official_repository": "https://github.com/snap-research/locomo",
+    "official_source_path": "task_eval/evaluation.py",
+    "official_source_sha256": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd",
+    "runtime_versions": {
+      "nltk": "3.10.4",
+      "numpy": "2.5.4",
+      "regex": "2026.9.29"
+    },
+    "source_url": "https://github.com/snap-research/locomo/blob/3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376/task_eval/evaluation.py"
+  },
+  "status": "EXPLICIT_DEVELOPMENT_ANALYSIS_CORRECTION",
+  "test_errors": 0,
+  "test_failures": 0,
+  "test_skips": 0
+}

@@ -1,0 +1,14 @@
+{
+  "phase": "Post-hoc diagnostic counterfactual after full-pool ranking probe; not new task samples or held-out confirmation.",
+  "runner_sha256": "d3a8c68260c209026f216058569a276229e77fd2c72b5159793b158dbbe384a2",
+  "worker_sha256": "e404166c8cca39ef893ca18a7812c15b43981112f13438bd0a157ae33c6ef660",
+  "pilot_protocol_sha256": "dd5280476348b1b60ec9bd91626b6b909b8ae4697233f1a6f8a0a8631035d9ea",
+  "parent_probe_protocol_sha256": "68f243c8ebe69eb69defc2358ecbc58ac194c3bd7d0f3571bee787f9fef72a2c",
+  "parent_report_sha256": "4e5b12537b42538930aa2e5816ff09876062dd14f629a36f4c58e4633b50c3f4",
+  "native_qdrant_adapter_sha256": "da570579d5cad69e6f123fdfe32b725235a25604e70047666bec763ba6e2bf43",
+  "native_idf_implementation_sha256": "3e58b78928049acf7e46f4961693babe8ab4f03e416a7274aed8e73ff1deccb3",
+  "selection": "All24pilot questions/14scopes, full native top_k10000. No questions selected by score/answer outcome.",
+  "intervention": "Replayed store copies retain every duplicate point; only sparse query search_params.idf is scoped via native IdfCorpusParams to original clean physical IDs. Dense search, query, embeddings, point payloads, semantic threshold and native additive scoring unchanged.",
+  "oracle_limit": "Uses the known clean physical-ID corpus as a mechanism diagnostic. Not claimed as a deployable remedy or a new IDF algorithm.",
+  "expected_falsifier": "If corpus statistics explain the residual full-pool scoring drift, original-point BM25/final components should return to clean values. Report any remaining context or tie-order differences without suppressing them."
+}

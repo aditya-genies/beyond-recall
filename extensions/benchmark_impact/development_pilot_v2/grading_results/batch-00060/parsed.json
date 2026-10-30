@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "28cf7eb251c0088557a67e9c",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference; 'yesterday' on May 11 establishes May 10, 2023. No current-state assertion."
+    },
+    {
+      "id": "a05fbb4bad4883126bfd11b0",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference; 'yesterday' on May 11 establishes May 10, 2023. No current-state assertion."
+    },
+    {
+      "id": "ac68104ae3d63549a54e8111",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "'Mom' matches 'mother'; the May 4 statement about dinner last night supports May 3. No current-state assertion."
+    },
+    {
+      "id": "e83edb67f786005525d8be66",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "'Mom' matches 'mother'; the May 4 statement about dinner last night supports May 3. No current-state assertion."
+    },
+    {
+      "id": "7fdccf159baed0f41aeb2306",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Omits the required July 21, 2023 date. The supplied evidence does lack that date, supporting the stated limitation; omission is not a current conflict."
+    },
+    {
+      "id": "7de4ef98f50de2761e9f1f39",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Omits the required July 21, 2023 date. The supplied evidence does lack that date, supporting the stated limitation; omission is not a current conflict."
+    }
+  ]
+}

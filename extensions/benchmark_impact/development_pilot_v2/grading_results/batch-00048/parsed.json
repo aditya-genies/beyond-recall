@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "eeb9f0d001da2b87eb498712",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Omits the required count of 3 without asserting a conflicting count. The supplied evidence is empty, supporting the stated inability to determine it."
+    },
+    {
+      "id": "a5cbab5b18b57ce57cfeeec9",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Omits the required count of 3 without asserting a conflicting count. The supplied evidence is empty, supporting the stated inability to determine it."
+    },
+    {
+      "id": "b3029228c64f0f20551fdc32",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not supply 10 May, 2023. It asserts no conflicting current value, and the empty evidence supports its statement about missing information."
+    },
+    {
+      "id": "824645796dcca9f1fb6afa3e",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not identify homeless-shelter volunteering as shared by both people. The evidence establishes Maria's volunteering but not John's, supporting the answer's limitation; no conflicting current value is asserted."
+    },
+    {
+      "id": "3c501b54a9276e0dff7a7889",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not supply 10 May, 2023. It asserts no conflicting current value, and the empty evidence supports its statement about missing information."
+    },
+    {
+      "id": "8944b3cd3d331c1dd47e3e61",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not identify homeless-shelter volunteering as shared by both people. The evidence establishes Maria's volunteering but not John's, supporting the answer's limitation; no conflicting current value is asserted."
+    }
+  ]
+}

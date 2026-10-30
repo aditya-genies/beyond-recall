@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "ec9789599b3cf2809098ac61",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference and John's April 7 report; describes a historical event."
+    },
+    {
+      "id": "3c615dbf732f522656110759",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Includes all reference offerings, supported by the April and June statements; asserts no contradictory current value."
+    },
+    {
+      "id": "a738956ca34c6068f16e3704",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not identify homeless-shelter volunteering as shared, as required. Its evidence limitation is supported: John's volunteering type is unspecified."
+    },
+    {
+      "id": "05b2581fe5bd3c8a8854f955",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Does not supply the reference's shared volunteering type. The evidence supports Maria's shelter work and their 2022 volunteering but does not explicitly connect John to shelter work."
+    },
+    {
+      "id": "1ad5ea8ff7e1e09ed72a7b63",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference and John's April 7 report; describes a historical event."
+    },
+    {
+      "id": "2059ac5c07b3feac9f554248",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Includes all reference offerings, supported by the April and June statements; asserts no contradictory current value."
+    }
+  ]
+}

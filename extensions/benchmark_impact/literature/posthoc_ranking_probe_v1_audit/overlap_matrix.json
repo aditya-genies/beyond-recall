@@ -1,0 +1,66 @@
+{
+  "scope": "Focused closest-source audit, not proof of global absence.",
+  "new_primary_sources": [
+    {
+      "key": "frieder2003scalable",
+      "details": "new_source_metadata.json"
+    },
+    {
+      "key": "robertson2009probabilistic",
+      "details": "new_source_metadata.json"
+    },
+    {
+      "key": "schelpe2026byte",
+      "details": "new_source_metadata.json"
+    }
+  ],
+  "existing_close_comparators": [
+    {
+      "key": "jain2026cuer",
+      "title": "CUE-R: Beyond the Final Answer in Retrieval-Augmented Generation",
+      "url": "https://arxiv.org/abs/2604.05467v1",
+      "pdf_sha256": "6aed47aaa019c93f54cba7c39e7fa37ebc0ff83be4ad1dcdec3a112fe47b152b",
+      "locations": "§§4.6,5.4–5.5,7",
+      "summary": "Evidence DUPLICATE is applied after a BM25 top-five retrieval. This is direct prior art for duplicate-evidence interventions, not an upstream corpus-statistics experiment.",
+      "scope_limit": "No native recovery/corpus mutation or IDF restoration diagnostic described.",
+      "verification_provenance": "Existing full-text audit and metadata in ../source_claim_map.json; body spot-checked again for this question."
+    },
+    {
+      "key": "brouillette2026balance",
+      "title": "Finding the Right Balance: Relevance and Diversity in LLM Retrieval",
+      "url": "https://arxiv.org/abs/2610.09412v1",
+      "pdf_sha256": "320e63df4224567e92cf4295eeda87930faec99e6a1df221058422ae3e0ba876",
+      "locations": "§§3.1–3.3,5–6",
+      "summary": "RNG-Score studies diversification on fixed embedded candidate pools. Its strict closer-neighbor condition deliberately leaves exactly coincident copies unsuppressed.",
+      "scope_limit": "No novelty claim for redundancy/diversity tradeoffs; do not score this near-copy method as a failed exact-copy filter.",
+      "verification_provenance": "Existing full-text audit and metadata in ../source_claim_map.json; body spot-checked again for this question."
+    },
+    {
+      "key": "ross2026redundancy",
+      "title": "How retriever redundancy and diversity impact RAG effectiveness",
+      "url": "https://arxiv.org/abs/2608.13956v1",
+      "pdf_sha256": "70a4e8841036455beea3617f6e9dda429b1e144fb652484de734bffc16d1b6d2",
+      "locations": "§§3.1–3.4,4.1",
+      "summary": "Constructed reader contexts compare exact repeats, paraphrases and diverse-genre evidence. This directly precedes broad claims about redundant context effects.",
+      "scope_limit": "Context construction is distinct from native failed-delivery admission and dynamic lexical statistics.",
+      "verification_provenance": "Existing full-text audit and metadata in ../source_claim_map.json; body spot-checked again for this question."
+    },
+    {
+      "key": "ke2024bridging",
+      "title": "Bridging the Preference Gap between Retrievers and LLMs",
+      "url": "https://aclanthology.org/2024.acl-long.562/",
+      "pdf_sha256": "23c24918d488485c1d1f4a4d718535addd2cf6dd848579ec96e3cbc4b3fde418",
+      "locations": "§§3–4,5.3",
+      "summary": "The learned bridge jointly selects/orders passages and permits repeated IDs. Repetition is not uniformly undesirable.",
+      "scope_limit": "No isolated repetition-only causal result; no physical retry/IDF intervention.",
+      "verification_provenance": "Existing full-text audit and metadata in ../source_claim_map.json; body spot-checked again for this question."
+    }
+  ],
+  "industry_implementation": {
+    "url": "https://qdrant.tech/documentation/manage-data/indexing/#idf-modifier",
+    "body_sha256": "25693e02043941a1c0c040f93d9b16eb3623b10e55b94cb53abb53ce7a3c85fb",
+    "location": "IDF Modifier",
+    "summary": "Official documentation explicitly treats IDF as a function of currently stored documents; current defaults are shard-wide, with optional corpus scoping. The local runtime examined here counts live physical sparse-vector points.",
+    "scope_limit": "Docs explain intended scoring, not a vendor exactly-once promise. Local and server deletion/index-maintenance semantics differ; do not extrapolate this local probe to cloud behavior."
+  }
+}

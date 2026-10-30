@@ -1,0 +1,1822 @@
+{
+  "phase": "Descriptive development pilot; NOT held-out confirmation or Q1-readiness evidence",
+  "grading_calibration": {
+    "status": "CALIBRATION_MISMATCH",
+    "fixtures": 12,
+    "mismatches": [
+      {
+        "id": "625db9ba9122cc9342ce5168",
+        "label": "current_conflict",
+        "expected": "no",
+        "observed": "yes"
+      },
+      {
+        "id": "e3cd6f47f59a67437521897e",
+        "label": "current_conflict",
+        "expected": "no",
+        "observed": "yes"
+      }
+    ],
+    "interpretation": "Authored rubric fixtures, not benchmark task samples or independent expert validation."
+  },
+  "semantic_claim_gate": "FAILED auxiliary calibration: task judgements exploratory; no definitive stale-state or semantic efficacy claim.",
+  "unique_request_status_counts": {
+    "sol/PASS": 298,
+    "qwen/PASS": 149
+  },
+  "expected_unique_prompts": 149,
+  "unique_questions": 24,
+  "condition_observations": 1008,
+  "graded_unique_answer_question_pairs": 447,
+  "grade_failures": [],
+  "summaries": [
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "clean",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5,
+      "reader_failure_as_incorrect": 0.5,
+      "supported_task_available_case": 0.4166666666666667,
+      "locomo_token_proxy": 0.26970645095645096,
+      "evidence_supported_counts": {
+        "yes": 9,
+        "uncertain": 2,
+        "no": 1
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 2726.5,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.625
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "content_admission",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5,
+      "reader_failure_as_incorrect": 0.5,
+      "supported_task_available_case": 0.4166666666666667,
+      "locomo_token_proxy": 0.26970645095645096,
+      "evidence_supported_counts": {
+        "yes": 9,
+        "uncertain": 2,
+        "no": 1
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 2726.5,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.625
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "event_admission",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5,
+      "reader_failure_as_incorrect": 0.5,
+      "supported_task_available_case": 0.4166666666666667,
+      "locomo_token_proxy": 0.26970645095645096,
+      "evidence_supported_counts": {
+        "yes": 9,
+        "uncertain": 2,
+        "no": 1
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 2726.5,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.625
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "no_context",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0,
+      "reader_failure_as_incorrect": 0,
+      "supported_task_available_case": 0,
+      "locomo_token_proxy": 0.008818342151675485,
+      "evidence_supported_counts": {
+        "uncertain": 8,
+        "yes": 4
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 2,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.0
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "oracle_support",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.6666666666666666,
+      "reader_failure_as_incorrect": 0.6666666666666666,
+      "supported_task_available_case": 0.6666666666666666,
+      "locomo_token_proxy": 0.33162035333087964,
+      "evidence_supported_counts": {
+        "yes": 9,
+        "no": 3
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 538.9166666666666,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 1.0
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "read_event_dedup",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5,
+      "reader_failure_as_incorrect": 0.5,
+      "supported_task_available_case": 0.4166666666666667,
+      "locomo_token_proxy": 0.26970645095645096,
+      "evidence_supported_counts": {
+        "yes": 9,
+        "uncertain": 2,
+        "no": 1
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 2726.5,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.625
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "retry",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.4166666666666667,
+      "reader_failure_as_incorrect": 0.4166666666666667,
+      "supported_task_available_case": 0.3333333333333333,
+      "locomo_token_proxy": 0.21200670590416507,
+      "evidence_supported_counts": {
+        "yes": 8,
+        "uncertain": 3,
+        "no": 1
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 2662.3333333333335,
+      "duplicate_event_slots": 3.1666666666666665,
+      "positive_support_coverage": 0.4166666666666667
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "clean",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 4,
+        "yes": 8
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 8005.583333333333,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.9545454545454546
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "content_admission",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 4,
+        "yes": 8
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 8005.583333333333,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.9545454545454546
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "event_admission",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 4,
+        "yes": 8
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 8005.583333333333,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.9545454545454546
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "no_context",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.08333333333333333,
+      "reader_failure_as_incorrect": 0.08333333333333333,
+      "supported_task_available_case": 0.08333333333333333,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "uncertain": 6,
+        "yes": 6
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 2,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.0
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "oracle_support",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 5,
+        "yes": 7
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 747,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 1.0
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "read_event_dedup",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 4,
+        "yes": 8
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 8005.583333333333,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.9545454545454546
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "retry",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5,
+      "reader_failure_as_incorrect": 0.5,
+      "supported_task_available_case": 0.5,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 4,
+        "yes": 8
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 11,
+        "yes": 1
+      },
+      "mean_context_serialized_utf8_bytes": 7379.416666666667,
+      "duplicate_event_slots": 2.3333333333333335,
+      "positive_support_coverage": 0.9090909090909091
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "clean",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": 0.3053246045893105,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 2726.5,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.625
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "content_admission",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": 0.3053246045893105,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 2726.5,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.625
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "event_admission",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": 0.3053246045893105,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 2726.5,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.625
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "no_context",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0,
+      "reader_failure_as_incorrect": 0,
+      "supported_task_available_case": 0,
+      "locomo_token_proxy": 0.04169497477353514,
+      "evidence_supported_counts": {
+        "yes": 17,
+        "uncertain": 7
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 2,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.0
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "oracle_support",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.9166666666666666,
+      "locomo_token_proxy": 0.34146345627769775,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 538.9166666666666,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 1.0
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "read_event_dedup",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": 0.3053246045893105,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 2726.5,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.625
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "retry",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.4166666666666667,
+      "reader_failure_as_incorrect": 0.4166666666666667,
+      "supported_task_available_case": 0.4166666666666667,
+      "locomo_token_proxy": 0.2476929932812286,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 2662.3333333333335,
+      "duplicate_event_slots": 3.1666666666666665,
+      "positive_support_coverage": 0.4166666666666667
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "clean",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.9166666666666666,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 8005.583333333333,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.9545454545454546
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "content_admission",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.9166666666666666,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 8005.583333333333,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.9545454545454546
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "event_admission",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.9166666666666666,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 8005.583333333333,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.9545454545454546
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "no_context",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.08333333333333333,
+      "reader_failure_as_incorrect": 0.08333333333333333,
+      "supported_task_available_case": 0.08333333333333333,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 16,
+        "uncertain": 8
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 2,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.0
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "oracle_support",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.875,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 23,
+        "uncertain": 1
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 747,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 1.0
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "read_event_dedup",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.9166666666666666,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 8005.583333333333,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.9545454545454546
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "retry",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.8333333333333334,
+      "reader_failure_as_incorrect": 0.8333333333333334,
+      "supported_task_available_case": 0.8333333333333334,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 7379.416666666667,
+      "duplicate_event_slots": 2.3333333333333335,
+      "positive_support_coverage": 0.9090909090909091
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "clean",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.6666666666666666,
+      "reader_failure_as_incorrect": 0.6666666666666666,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": 0.3167249417249417,
+      "evidence_supported_counts": {
+        "yes": 9,
+        "uncertain": 1,
+        "no": 2
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 3227.1666666666665,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8888888888888888
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "content_admission",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.6666666666666666,
+      "reader_failure_as_incorrect": 0.6666666666666666,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": 0.3167249417249417,
+      "evidence_supported_counts": {
+        "yes": 9,
+        "uncertain": 1,
+        "no": 2
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 3227.1666666666665,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8888888888888888
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "event_admission",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.6666666666666666,
+      "reader_failure_as_incorrect": 0.6666666666666666,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": 0.3167249417249417,
+      "evidence_supported_counts": {
+        "yes": 9,
+        "uncertain": 1,
+        "no": 2
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 3227.1666666666665,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8888888888888888
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "no_context",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0,
+      "reader_failure_as_incorrect": 0,
+      "supported_task_available_case": 0,
+      "locomo_token_proxy": 0.008818342151675485,
+      "evidence_supported_counts": {
+        "uncertain": 8,
+        "yes": 4
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 2,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.0
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "oracle_support",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.6666666666666666,
+      "reader_failure_as_incorrect": 0.6666666666666666,
+      "supported_task_available_case": 0.6666666666666666,
+      "locomo_token_proxy": 0.33162035333087964,
+      "evidence_supported_counts": {
+        "yes": 9,
+        "no": 3
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 538.9166666666666,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 1.0
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "read_event_dedup",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.6666666666666666,
+      "reader_failure_as_incorrect": 0.6666666666666666,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": 0.3474765974765975,
+      "evidence_supported_counts": {
+        "yes": 9,
+        "uncertain": 1,
+        "no": 2
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 3212.0833333333335,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8888888888888888
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "retry",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.6666666666666666,
+      "reader_failure_as_incorrect": 0.6666666666666666,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": 0.34660996729962246,
+      "evidence_supported_counts": {
+        "yes": 10,
+        "uncertain": 1,
+        "no": 1
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 3168.6666666666665,
+      "duplicate_event_slots": 3.0833333333333335,
+      "positive_support_coverage": 0.8055555555555556
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "clean",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 4,
+        "yes": 8
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 10849.083333333334,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8409090909090909
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "content_admission",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 4,
+        "yes": 8
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 10849.083333333334,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8409090909090909
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "event_admission",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 4,
+        "yes": 8
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 10849.083333333334,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8409090909090909
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "no_context",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.08333333333333333,
+      "reader_failure_as_incorrect": 0.08333333333333333,
+      "supported_task_available_case": 0.08333333333333333,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "uncertain": 6,
+        "yes": 6
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 2,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.0
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "oracle_support",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 5,
+        "yes": 7
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 747,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 1.0
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "read_event_dedup",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5833333333333334,
+      "reader_failure_as_incorrect": 0.5833333333333334,
+      "supported_task_available_case": 0.5833333333333334,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 4,
+        "yes": 8
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 10647.083333333334,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8409090909090909
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "retry",
+      "unique_questions": 12,
+      "condition_observations": 12,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.5,
+      "reader_failure_as_incorrect": 0.5,
+      "supported_task_available_case": 0.5,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "no": 4,
+        "yes": 7,
+        "uncertain": 1
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 12
+      },
+      "mean_context_serialized_utf8_bytes": 10423.666666666666,
+      "duplicate_event_slots": 2.3333333333333335,
+      "positive_support_coverage": 0.8409090909090909
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "clean",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.8333333333333334,
+      "reader_failure_as_incorrect": 0.8333333333333334,
+      "supported_task_available_case": 0.8333333333333334,
+      "locomo_token_proxy": 0.34259541752889894,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 3227.1666666666665,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8888888888888888
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "content_admission",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.8333333333333334,
+      "reader_failure_as_incorrect": 0.8333333333333334,
+      "supported_task_available_case": 0.8333333333333334,
+      "locomo_token_proxy": 0.34259541752889894,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 3227.1666666666665,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8888888888888888
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "event_admission",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.8333333333333334,
+      "reader_failure_as_incorrect": 0.8333333333333334,
+      "supported_task_available_case": 0.8333333333333334,
+      "locomo_token_proxy": 0.34259541752889894,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 3227.1666666666665,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8888888888888888
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "no_context",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0,
+      "reader_failure_as_incorrect": 0,
+      "supported_task_available_case": 0,
+      "locomo_token_proxy": 0.04169497477353514,
+      "evidence_supported_counts": {
+        "yes": 17,
+        "uncertain": 7
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 2,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.0
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "oracle_support",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.9166666666666666,
+      "locomo_token_proxy": 0.34146345627769775,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 538.9166666666666,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 1.0
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "read_event_dedup",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.8333333333333334,
+      "reader_failure_as_incorrect": 0.8333333333333334,
+      "supported_task_available_case": 0.8333333333333334,
+      "locomo_token_proxy": 0.2927902953475036,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 3212.0833333333335,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8888888888888888
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "retry",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.75,
+      "reader_failure_as_incorrect": 0.75,
+      "supported_task_available_case": 0.75,
+      "locomo_token_proxy": 0.3399441913224051,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 3168.6666666666665,
+      "duplicate_event_slots": 3.0833333333333335,
+      "positive_support_coverage": 0.8055555555555556
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "clean",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.9166666666666666,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 10849.083333333334,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8409090909090909
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "content_admission",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.9166666666666666,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 10849.083333333334,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8409090909090909
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "event_admission",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.9166666666666666,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 10849.083333333334,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8409090909090909
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "no_context",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.08333333333333333,
+      "reader_failure_as_incorrect": 0.08333333333333333,
+      "supported_task_available_case": 0.08333333333333333,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 16,
+        "uncertain": 8
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 2,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.0
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "oracle_support",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.875,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 23,
+        "uncertain": 1
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 747,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 1.0
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "read_event_dedup",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.9166666666666666,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 10647.083333333334,
+      "duplicate_event_slots": 0,
+      "positive_support_coverage": 0.8409090909090909
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "retry",
+      "unique_questions": 12,
+      "condition_observations": 24,
+      "missing_reader": 0,
+      "missing_grade": 0,
+      "task_correct_available_case": 0.9166666666666666,
+      "reader_failure_as_incorrect": 0.9166666666666666,
+      "supported_task_available_case": 0.9166666666666666,
+      "locomo_token_proxy": null,
+      "evidence_supported_counts": {
+        "yes": 24
+      },
+      "current_conflict_unvalidated_counts": {
+        "no": 24
+      },
+      "mean_context_serialized_utf8_bytes": 10423.666666666666,
+      "duplicate_event_slots": 2.3333333333333335,
+      "positive_support_coverage": 0.8409090909090909
+    }
+  ],
+  "paired": [
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "retry",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": -0.08333333333333333,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 18,
+        "0_to_0": 4,
+        "1_to_0": 2
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "event_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 20,
+        "0_to_0": 4
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "content_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 20,
+        "0_to_0": 4
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "read_event_dedup",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 20,
+        "0_to_0": 4
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "retry",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 22,
+        "0_to_0": 2
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "event_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 22,
+        "0_to_0": 2
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "content_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 22,
+        "0_to_0": 2
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "read_event_dedup",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 22,
+        "0_to_0": 2
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "retry",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 8,
+        "0_to_0": 4
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "event_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 8,
+        "0_to_0": 4
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "content_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 8,
+        "0_to_0": 4
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "read_event_dedup",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 8,
+        "0_to_0": 4
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "retry",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": -0.08333333333333333,
+      "dependent_question_repeat_transitions": {
+        "0_to_0": 5,
+        "1_to_1": 6,
+        "1_to_0": 1
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "event_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "0_to_0": 5,
+        "1_to_1": 7
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "content_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "0_to_0": 5,
+        "1_to_1": 7
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "read_event_dedup",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "0_to_0": 5,
+        "1_to_1": 7
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "retry",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": -0.16666666666666666,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 10,
+        "0_to_0": 10,
+        "1_to_0": 4
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "event_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 14,
+        "0_to_0": 10
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "content_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 14,
+        "0_to_0": 10
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "arm": "read_event_dedup",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 14,
+        "0_to_0": 10
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "retry",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": -0.08333333333333333,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 20,
+        "1_to_0": 2,
+        "0_to_0": 2
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "event_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 22,
+        "0_to_0": 2
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "content_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 22,
+        "0_to_0": 2
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "arm": "read_event_dedup",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 22,
+        "0_to_0": 2
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "retry",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": -0.08333333333333333,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 5,
+        "0_to_0": 6,
+        "1_to_0": 1
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "event_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 6,
+        "0_to_0": 6
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "content_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 6,
+        "0_to_0": 6
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "locomo",
+      "arm": "read_event_dedup",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "1_to_1": 6,
+        "0_to_0": 6
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "retry",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": -0.08333333333333333,
+      "dependent_question_repeat_transitions": {
+        "0_to_0": 5,
+        "1_to_0": 1,
+        "1_to_1": 6
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "event_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "0_to_0": 5,
+        "1_to_1": 7
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "content_admission",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "0_to_0": 5,
+        "1_to_1": 7
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "qwen",
+      "dataset": "longmemeval",
+      "arm": "read_event_dedup",
+      "unique_questions_with_paired_grades": 12,
+      "mean_paired_task_difference": 0,
+      "dependent_question_repeat_transitions": {
+        "0_to_0": 5,
+        "1_to_1": 7
+      }
+    }
+  ],
+  "clean_repeat_variation": [
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "locomo",
+      "clean_repeat_task_transitions": {
+        "1_to_1": 10,
+        "0_to_0": 2
+      }
+    },
+    {
+      "backend": "mem0_raw",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "clean_repeat_task_transitions": {
+        "1_to_1": 11,
+        "0_to_0": 1
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "locomo",
+      "clean_repeat_task_transitions": {
+        "1_to_1": 7,
+        "0_to_0": 5
+      }
+    },
+    {
+      "backend": "llama_index",
+      "reader": "sol",
+      "dataset": "longmemeval",
+      "clean_repeat_task_transitions": {
+        "1_to_1": 11,
+        "0_to_0": 1
+      }
+    }
+  ],
+  "native_metrics": "native_phase_metrics.json: application phase includes native persistence and study witness export; whole-process time includes startup. Pure query application latency was not separately recorded. Record-count deltas are not physical disk-write counts.",
+  "token_metric_development_correction": {
+    "reason": "The frozen proxy used stdlib re instead of upstream regex for article word boundaries. A separate corrected helper implements the intended published metric; frozen source and old proxy values are retained.",
+    "provenance": {
+      "analysis_version": "locomo-official-regex-v1",
+      "official_repository": "https://github.com/snap-research/locomo",
+      "official_commit": "3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376",
+      "official_source_path": "task_eval/evaluation.py",
+      "official_source_sha256": "8e3be5d57ff2ff9ec5cd05939592f468c5f3f1fd95d13e431932bdf6bf0fd6fd",
+      "source_url": "https://github.com/snap-research/locomo/blob/3eb6f2c585f5e1699204e3c3bdf7adc5c28cb376/task_eval/evaluation.py",
+      "runtime_versions": {
+        "regex": "2026.9.29",
+        "nltk": "3.10.4",
+        "numpy": "2.5.4"
+      },
+      "correction": "Use official regex article word boundaries; retain frozen-proxy scores and all model outputs separately.",
+      "interpretation": "Category-specific published token overlap/abstention proxy, not semantic task accuracy."
+    },
+    "material_tolerance": 1e-12,
+    "measured_material_differences": 0,
+    "measured_bit_level_inequalities": 131,
+    "maximum_absolute_difference": 1.1102230246251565e-16
+  },
+  "interpretation": "No p-values or population/IID interval; repetitions and shared-prompt aliases are dependent. Support annotations may be incomplete. Raw-document backends do not represent vendor inferred-memory defaults."
+}

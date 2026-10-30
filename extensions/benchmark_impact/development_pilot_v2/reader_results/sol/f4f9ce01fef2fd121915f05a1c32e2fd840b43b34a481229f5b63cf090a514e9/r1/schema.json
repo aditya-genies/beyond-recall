@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "answer": {
+      "type": "string"
+    },
+    "cited_event_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "abstain": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "answer",
+    "cited_event_ids",
+    "abstain"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,105 @@
+{
+  "claims": [
+    {
+      "id": "C1",
+      "status": "ESTABLISHED_PRIOR_ART",
+      "claim": "Duplicates can change IDF and scores of unchanged documents.",
+      "basis": [
+        "frieder2003scalable §2",
+        "robertson2009probabilistic §3.1",
+        "Qdrant IDF docs/runtime"
+      ],
+      "forbidden_upgrade": "New IR mechanism, first discovery, or unexpected mathematical principle."
+    },
+    {
+      "id": "C2",
+      "status": "BOUNDED_EMPIRICAL_WITNESS_PENDING_RAW_AUDIT",
+      "claim": "In this pinned Mem0 raw/Qdrant-local pilot, ordinary post-commit redelivery admits extra physical records; all 24 queries have some original-record BM25/final changes while compared semantic/entity components stay fixed.",
+      "basis": [
+        "posthoc_ranking_probe_v1/report.json; counters independently re-added here"
+      ],
+      "forbidden_upgrade": "All records changed, semantic corruption, or production incidence."
+    },
+    {
+      "id": "C3",
+      "status": "BOUNDED_EMPIRICAL_WITNESS_PENDING_RAW_AUDIT",
+      "claim": "At nonbinding full retrieval depth, later source-event dedup still yields different sets in 10/24 questions and different orders in 17/24 under the study packing rule.",
+      "basis": [
+        "posthoc_ranking_probe_v1/report.json"
+      ],
+      "forbidden_upgrade": "10/24 QA failures, missing relevant facts, universal inadequacy of all read-time dedup or 24 independent domains."
+    },
+    {
+      "id": "C4",
+      "status": "CAUSAL_MECHANISM_DIAGNOSTIC_PENDING_RAW_AUDIT",
+      "claim": "Keeping duplicate points searchable while restricting native IDF statistics to known clean physical IDs restores all compared original BM25/final components within 1e-12 and all 24 clean event orders/sets.",
+      "basis": [
+        "posthoc_fixed_idf_v1/protocol.json",
+        "posthoc_fixed_idf_v1/report.json",
+        "probe_fixed_idf.py"
+      ],
+      "forbidden_upgrade": "Deployable oracle-free remedy, new IDF algorithm, preregistered held-out confirmation, or new task samples."
+    },
+    {
+      "id": "C5",
+      "status": "REFERENCE_CONTRAST_ONLY",
+      "claim": "Dense-only LlamaIndex read-event dedup reportedly restores 24/24 retained pilot contexts.",
+      "basis": [
+        "Parent-reported retained pilot comparison; not independently recomputed in this literature audit."
+      ],
+      "forbidden_upgrade": "Dense retrieval is always retry-invariant, dense is superior, or this cross-engine comparison alone isolates IDF."
+    },
+    {
+      "id": "C6",
+      "status": "IMPLEMENTATION_VERIFIED",
+      "claim": "This native Mem0 path uses fixed query-length sigmoid BM25 normalization and additive semantic/BM25/entity scoring, with a semantic gate.",
+      "basis": [
+        "mem0/utils/scoring.py",
+        "mem0/memory/main.py _search_vector_store"
+      ],
+      "forbidden_upgrade": "RRF, min/max-normalized fusion, or a guarantee shared by every Mem0 release/configuration."
+    },
+    {
+      "id": "C7",
+      "status": "UNSUPPORTED",
+      "claim": "The changed contexts harm or help answer correctness, safety, user outcomes, tokens or latency.",
+      "basis": [
+        "No reader grades or performance outcomes inspected."
+      ],
+      "forbidden_upgrade": "Infer value/harm from context-set difference or literal diversity alone."
+    },
+    {
+      "id": "C8",
+      "status": "UNSUPPORTED",
+      "claim": "No prior work has connected duplicate ingestion, retrieval or RAG quality; this is publication-ready by novelty/count alone.",
+      "basis": [
+        "Direct classical IDF antecedent plus close RAG studies; targeted search is not exhaustive."
+      ],
+      "forbidden_upgrade": "First/breakthrough/new algorithm/acceptance forecast."
+    },
+    {
+      "id": "C9",
+      "status": "KNOWN_SYSTEMS_DESIGN_PRINCIPLE",
+      "claim": "Preventing repeated delivery admission requires an operation/event identity contract with explicit retention/lifetime semantics; exact-content filtering conflates legitimate same-content events.",
+      "basis": [
+        "Existing RFC9110, agentmemory, PLUR and durable-execution literature audit."
+      ],
+      "forbidden_upgrade": "New idempotency protocol or treat all same-text observations as one event."
+    }
+  ],
+  "conditional_math": {
+    "source": "Qdrant local _compute_idf; algebraic rearrangement, not a new theorem.",
+    "idf": "I(N,d)=ln((N-d+0.5)/(d+0.5)+1)=ln((N+1)/(d+0.5))",
+    "duplicate_increment": "I(N+m,d+a)-I(N,d)=ln((N+m+1)/(N+1))-ln((d+a+0.5)/(d+0.5)), where m extra physical sparse-vector documents are admitted and a of them contain the query term (0<=a<=m).",
+    "implication": "Different term frequencies can change relative lexical contributions without changing original vectors. Score/rank changes are conditional; duplication need not change a given order, and either QA direction or no effect is possible.",
+    "composition": "Collapsing source-event copies after native scoring changes the returned multiset but does not retroactively recompute the IDF statistics used to rank originals. This noncommutation is established reasoning, not a new recovery algorithm."
+  },
+  "remaining_limits": [
+    "Same 24 pilot questions in 14 scopes; post-hoc diagnostics and counterfactuals reuse them.",
+    "Known clean physical IDs are an oracle for the counterfactual.",
+    "Physical duplicate IDs are distinguished from legitimate fresh observations with identical bytes.",
+    "Ranking and context changes alone do not measure evidence usefulness, reader outcomes or independent corroboration.",
+    "Full-pool evidence must be checked against actual stored/candidate counts by the independent raw auditor.",
+    "Pinned Mem0 2.2.1 installed from the public source cache; qdrant-client1.20.0/fastembed0.9.1 local runtime. Do not generalize to all versions or cloud services."
+  ]
+}

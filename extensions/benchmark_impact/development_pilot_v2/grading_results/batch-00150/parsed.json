@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "38381f5b9bc922b91bb7b6d7",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly recognizes that the evidence names the cat Luna but provides no hamster name."
+    },
+    {
+      "id": "4f071cce929765a30fda9e04",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly states that the hamster's name is unavailable in the supplied evidence."
+    },
+    {
+      "id": "86ffb556e4a0a925dfbd142f",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference: Gina's May 11 statement places the interview yesterday, May 10, 2023."
+    },
+    {
+      "id": "79760687db9cf1a6dfbfa83c",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Two evidenced types does not supply the required count of three. The evidence confirms orange and lime use; the answer makes no conflicting current-state assertion."
+    },
+    {
+      "id": "beef75a73b3a0b0e5538d1b4",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Fails the reference count of three, but accurately distinguishes documented orange and lime use from suggestions of other citrus. No current-state conflict is asserted."
+    },
+    {
+      "id": "399befe4dc44cc3099f78958",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "May 10, 2023 matches the reference and follows directly from Gina saying 'yesterday' on May 11."
+    }
+  ]
+}

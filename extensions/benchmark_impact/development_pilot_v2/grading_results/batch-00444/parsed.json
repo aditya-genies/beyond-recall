@@ -1,0 +1,25 @@
+{
+  "decisions": [
+    {
+      "id": "cd3a0a3ec80342b0feb56bce",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "\u201cMom\u201d matches \u201cmother\u201d; Maria's May 4 message says they made dinner together last night, supporting May 3."
+    },
+    {
+      "id": "d9bc28d2a5d27e4c042af5ee",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference; the May 25 message explicitly says Maria is preparing for a fundraiser next week."
+    },
+    {
+      "id": "5b3a4101b1d50fdfefac9648",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Matches the reference and Jon's explicit statement that he visited Rome to clear his mind."
+    }
+  ]
+}

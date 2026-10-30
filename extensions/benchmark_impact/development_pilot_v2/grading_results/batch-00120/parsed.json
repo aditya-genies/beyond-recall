@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "8846c06cbfbfe27b2394ed16",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The complete location matches the reference and the user's explicit account."
+    },
+    {
+      "id": "433a6c5b0a1f914734b92465",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The answer gives the updated count of 3, supported by the May 30 report."
+    },
+    {
+      "id": "1421a6eeed02f2e931a47489",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The latest supplied report is May 30 and states 3 recipes, matching the answer and reference."
+    },
+    {
+      "id": "27030dba2396bac49bd42dc7",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The complete location matches the reference and is explicitly supported by the user's statement."
+    },
+    {
+      "id": "0f8a7b3d548a94332e63e5ba",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The dated statements establish January 15 and January 16, a one-day interval; the answer concerns historical events."
+    },
+    {
+      "id": "f08fdb1d84013823bcaafb69",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The evidence supports both dates and the one-day interval, matching the reference without asserting a conflicting current state."
+    }
+  ]
+}

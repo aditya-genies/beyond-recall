@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "b938a4f65d40a1925b007a0c",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "Omits the required count of 3. Evidence mentions citrus ingredients but does not clearly distinguish suggested ingredients from those actually used."
+    },
+    {
+      "id": "33a63d51482b9cf8e54bc2d0",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Uses the user's documented nature and wildlife preference and recalls supported recommendations."
+    },
+    {
+      "id": "67bbe04feee0411ee4044bbe",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Correctly identifies the supported title but omits the required URL; mentioning a provided link does not supply it."
+    },
+    {
+      "id": "659cab54e38f772a24a7b491",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "Omits 15 and incorrectly claims the first-three-month count is unstated despite explicit July evidence. No contradictory current count is asserted."
+    },
+    {
+      "id": "7ca8365012df795a8c187932",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Recalls and uses the user's documentary preferences with recommendations present in the evidence."
+    },
+    {
+      "id": "939d4f842c8acf73cb25faf2",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Mom is equivalent to mother, and the May 4 statement places their dinner on May 3."
+    }
+  ]
+}

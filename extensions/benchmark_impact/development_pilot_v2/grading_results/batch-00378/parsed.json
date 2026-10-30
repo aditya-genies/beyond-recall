@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "52b8711d9adcb50bfbf3aa42",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "The dated evidence establishes six days, March 25\u201331; the answer incorrectly claims this cannot be determined."
+    },
+    {
+      "id": "2e4b2534cd2d9726ae3eb204",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "The answer does not use the user's mixology experience to recommend a cocktail, and overlooks the named Pimm's Cup with a Twist suggestion."
+    },
+    {
+      "id": "280cdcf1706e353befaaf16a",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The listed offerings are supported, but the answer omits that workshops and classes serve local schools and centers."
+    },
+    {
+      "id": "39eaae85d3ebdd15826d896e",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Both Shadow and Coco are explicitly named in the evidence and match the reference."
+    },
+    {
+      "id": "e9cbff2747848dd73986fcbb",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "Last Friday relative to July 23 was July 21. The answer mistakes the message timestamp for the historical event date."
+    },
+    {
+      "id": "23900d5b3833d669988a5ff8",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "The May 4 message describes dinner with her mother the previous night, supporting May 3."
+    }
+  ]
+}

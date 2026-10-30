@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "1748ddbb0a7558fb934818d7",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Includes all reference offerings; evidence also supports the planned dance competition."
+    },
+    {
+      "id": "eeb11c2a7fbae5122e9f0471",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Mom is equivalent to mother; the May 4 account identifies dinner together the previous night."
+    },
+    {
+      "id": "2d206878905192dd42dcc934",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "June 13 differs from the required July 21. The evidence does not establish when the outing with friends occurred; this is a historical question."
+    },
+    {
+      "id": "b96072eab12e7eac530262e0",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "no",
+      "reason": "The May 11 message says the interview was yesterday, establishing May 10. The error concerns a historical date."
+    },
+    {
+      "id": "53b99ca9701e7648b76cf5d1",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "The answer omits the required count of three. No evidence is supplied, and abstention asserts no conflicting current value."
+    },
+    {
+      "id": "4446764d7e6c8afddff7f88d",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Evidence supports the networking events and investor interactions, but the answer omits the fair and dance competition required by the reference."
+    }
+  ]
+}

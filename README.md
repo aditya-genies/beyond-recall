@@ -13,6 +13,27 @@ application code, internal PRs, nonpublic conversations, or company credentials
 are included. The author's supplied employment/education biography identifies
 background; it does not assert an employer or university research affiliation.
 
+## Delivery replay development pilot (separate working paper)
+
+The versioned [development manuscript and reproducibility materials](revisions/benchmark_impact/)
+report a second, separate public-history study of controlled post-effect memory
+delivery replay. In one dated LongMemEval trace, the later recipe count remains
+stored but moves from native rank 5 to 11; duplicated older events fill six of
+ten context slots, and two readers answer 2 rather than the reference answer 3.
+Across the finite 24-question pilot, event deduplication restores every
+automated task label flagged as a loss, but does not always restore retrieval
+order. A post-hoc fixed-IDF diagnostic restores all 24 Mem0 contexts in the
+pinned local configuration. Duplicate-sensitive IDF is established IR prior
+art, and the diagnostic uses clean IDs; neither is presented as a new algorithm.
+
+This is exploratory development evidence, not external replication, a
+population estimate, Q1 journal readiness, or peer review. The study has 24
+questions from overlapping histories, a failed current-conflict grading
+calibration, and a same-family automated judge. The original v0.3.0 paper and
+its experiments remain separately versioned and are not pooled with this pilot.
+Download the [compiled working paper](revisions/benchmark_impact/manuscript/main.pdf)
+and inspect the [pilot findings and audits](extensions/benchmark_impact/PILOT_FINDINGS.md).
+
 ## New public-implementation findings
 
 The [admission and recovery extension](extensions/replanning_contracts/README.md)

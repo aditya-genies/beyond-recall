@@ -1,0 +1,46 @@
+{
+  "decisions": [
+    {
+      "id": "97928177c48d635d78a1b05d",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "Does not supply the required fundraiser answer. It asserts no conflicting event, and no evidence is supplied."
+    },
+    {
+      "id": "a8e8ddd8073c8301e2097fa8",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Uses the user's summer cocktail interests to recommend a creative Pimm's Cup variation. The prior discussion supports the recipe, grapefruit syrup, and presentation."
+    },
+    {
+      "id": "8db433a0aae25bc94df3e70b",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "Omits the required GR-90 trail answer without asserting an alternative. No evidence is supplied."
+    },
+    {
+      "id": "6f4d6f65338ddef1b09f23c2",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "Does not identify the GR-90 trail. The abstention asserts no conflicting value, and no evidence is supplied."
+    },
+    {
+      "id": "e628433158dabf75b6fbdd8e",
+      "task_correct": true,
+      "current_conflict": "no",
+      "evidence_supported": "yes",
+      "reason": "Recalls and uses the user's interest in Hendrick's summer cocktails with a creative Pimm's Cup recommendation. The evidence supports the recipe and serving suggestions."
+    },
+    {
+      "id": "fad6771a48e1e86ae7edbf78",
+      "task_correct": false,
+      "current_conflict": "no",
+      "evidence_supported": "uncertain",
+      "reason": "Fails to provide fundraiser as required. It asserts no alternative event, and no evidence is supplied."
+    }
+  ]
+}
